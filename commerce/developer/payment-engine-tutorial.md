@@ -1,6 +1,10 @@
 # Implementing a New Payment Method
 
-Liferay Commerce provides several out of the box payment methods including Paypal, Mercanet, Authorizenet thing, and Money Orders. This tutorial will show you how to extend Liferay Commerce and add your own Payment Method.
+Liferay Commerce provides several out of the box payment methods including _Authorize.Net_, _Mercanet_, _Money Order_, and _PayPal_.
+
+![Out of the box payment methods](./images/payment-engine-tutorial-1.png "Out of the box payment methods")
+
+This tutorial will show you how to extend Liferay Commerce by adding a Payment Method.
 
 To add a new Payment Method:
 
