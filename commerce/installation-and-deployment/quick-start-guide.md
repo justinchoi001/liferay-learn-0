@@ -4,9 +4,9 @@ Follow these steps to download the latest release of Liferay Commerce and get st
 
 ## Let's Go!
 
-1. Get Liferay Commerce | Pull the Docker image: `docker pull liferay/commerce:1.1.6`
+1. Get Liferay Commerce | Pull the Docker image: `docker pull liferay/commerce:2.0.0`
     - _Don't have Docker_? Go here first: [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/) | [Windows](https://docs.docker.com/docker-for-windows/install/) | [OSX](https://docs.docker.com/docker-for-mac/install/)
-2. Start Liferay Commerce | Run: `docker run -it -p 8080:8080 liferay/commerce:1.1.6`
+2. Start Liferay Commerce | Run: `docker run -it -p 8080:8080 liferay/commerce:2.0.0`
 3. Open Liferay Commerce | Open your browser ... `http://localhost:8080`
 
 ## What's Next
