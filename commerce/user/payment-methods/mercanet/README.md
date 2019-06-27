@@ -49,6 +49,6 @@ Mercanet is now enabled for your store.
 ## Additional Information
 
 * [Currencies Administration]()
-* [Authorize.Net](../authorize.net/authorize.net.md)
-* [PayPal](../paypal/paypal.md)
+* [Authorize.Net](../authorize.net/README.md)
+* [PayPal](../paypal/README.md)
 * [Learn how to add other 3rd party payment systems.]()

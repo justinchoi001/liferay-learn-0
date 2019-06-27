@@ -27,6 +27,6 @@ Once finished, Authorize.Net is now enabled.
 ## Additional Information
 
 * [Currencies Administration]()
-* [Mercanet](../mercanet/mercanet.md)
-* [PayPal](../paypal/paypal.md)
+* [Mercanet](../mercanet/README.md)
+* [PayPal](../paypal/README.md)
 * [Learn how to add other 3rd party payment systems.]()
