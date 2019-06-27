@@ -40,11 +40,7 @@ _Euro_ is now set as the primary currency.
     * Your _Secret Key_
     * Your _Key Version_
 1. Select _Production_ if it is a live site or _Test_ or _Simulation_ if it is a test environment.
-<br>
-<br>
     ![Mercanet settings](./images/02.png)
-<br>
-<br>
 1. Click _Save_.
 1. Click the _3-dot icon_ next to _Mercanet_ then _Activate_.
 
