@@ -12,7 +12,7 @@ Learn how to set up and maintain Liferay Commerce for the long haul.
 
 The Authoritative Guide to Using Liferay Commerce.
 
-## [Developing on Liferay Commerce]()
+## [Developing on Liferay Commerce](./developer/README.md)
 
 Tutorials and Guides to Extend and Customize Liferay Commerce.
 
