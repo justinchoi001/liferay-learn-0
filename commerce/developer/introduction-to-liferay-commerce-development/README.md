@@ -10,7 +10,7 @@
 
 In a project directory of your choosing, create the following subdirectory structure; for example, with `mkdir -p src/main/java/hello` on *nix systems:
 
-```
+```bash
     └── src
         └── main
             └── java
