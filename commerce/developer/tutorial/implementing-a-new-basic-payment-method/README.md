@@ -4,25 +4,32 @@ Liferay Commerce provides several out of the box payment methods including _Auth
 
 ![Out of the box payment methods](./images/01.png "Out of the box payment methods")
 
-This tutorial will introduce you to implementing the  `CommercePaymentMethod` interface by customizing an existing payment method.
+This tutorial will introduce you to implementing the `CommercePaymentMethod` interface by adding a new basic payment method.
 
-## Roadmap
+>First time going through a Tutorial? Check our [Introduction to Liferay Commerce Development](../../introduction-to-liferay-commerce-development/README.md) first, to get started.
 
-1. Implement Required Methods
-1. Implement Optional Methods
-1. Put it Together
-1. Deploy and Test
+## Road Map
 
->DIY Sample or Go Straight In to the Sample
->If you go DIY then you need to setup your dev env
->Once you run the gradle command to create the project module you need to manually create bnd.bnd to enable `./gradlew deploy` so gradle sees the module as an OSGI module.
+* Fast Route
+* Slow Route
 
->You also need to update your build.gradle file to point to all the dependencies in your java class I had no idea. I had to copy from the moneyorder class in the original source repo. I don't know what versions are correct.
+## Fast Route
 
->If i want to control where gradle deploy sends the file to, I have to set in build.gradle w/ `deployDir`
+1. Get Liferay Commerce | Pull the Docker image: `docker pull liferay/commerce:2.0.0`
+1. Start Liferay Commerce | Run `docker run -it -p 8080:8080 liferay/commerce:2.0.0`
+1. Download and unzip the sample | [sample-offline-commerce-payment-method.zip]()
+1. Navigate to the sample directory | CD into `/sample-offline-commerce-payment-method/`
+1. Build the sample | `./gradlew deploy`
+1. Deploy the sample | `docker cp ../bundles/osgi/modules/com.liferay.commerce.sample.payment.method.jar $(docker ps -q):/opt/liferay/osgi/modules`
+    >If you are running more than one docker container, then you will need to supply the correct container hash yourself.
+1. Confirm the deployment | Review console for `STARTED com.liferay.commerce.sample.payment.method_1.0.0`.
+1. Validate in Liferay Commerce | Open browser `https://localhost:8080`
 
+![Sample Payment Method Added](./images/02.png "Sample Payment Method Added")
 
-## Implement the Required Methods
+Congratulations, you've successfully built and deployed a new basic payment method that implements `CommercePaymentMethod`. Now let's dive in deeper.
+
+## Slow Route
 
 Implement [`com.liferay.commerce.payment.method.CommercePaymentMethod`]()
 
@@ -162,31 +169,17 @@ The following optional methods should be implemented. There are many more method
 ```java
 @Component(
 	immediate = true,
-	property = "commerce.payment.engine.method.key=" + MoneyOrderCommercePaymentMethod.KEY,
+	property = "commerce.payment.engine.method.key=" + SampleOfflineCommercePaymentMethod.KEY,
 	service = CommercePaymentMethod.class
 )
-public class MoneyOrderCommercePaymentMethod implements CommercePaymentMethod {
+public class SampleOfflineCommercePaymentMethod implements CommercePaymentMethod {
 ```
 
 ## Putting it Together
 
-View the full example class: [SampleOfflineCommercePaymentMethod.java]().
-
-## Deploy and Test
-
->First time going through a Tutorial? Check our [Introduction to Liferay Development]() first, to get started.
-
-1. Start Liferay Commerce | `docker run -it -p 8080:8080 liferay/commerce:2.0.0`
-1. Download and unzip the sample | [sample-offline-commerce-payment-method.zip]()
-1. Build the sample | `./gradlew deploy`
-1. Deploy the sample | In the $dir.sample.was.built run: `docker cp ../bundles/osgi/modules/com.liferay.commerce.sample.payment.method.jar $(docker ps -q):/opt/liferay/osgi/modules`
-    >If you are running more than one docker container, then you will need to supply the correct container hash yourself.
-1. Review the deployment | Review console for `STARTED STARTED com.liferay.commerce.sample.payment.method_1.0.0`.
-1. Validate in Liferay Commerce | Open browser `https://localhost:8080`
-
-"After" Screenshot Here
+View the full example class: [SampleOfflineCommercePaymentMethod.java](.\sample-offline-commerce-payment-method.zip\sample-offline-commerce-payment-method\src\main\java\com\liferay\commerce\sample\payment\method\SampleOfflineCommercePaymentMethod.java).
 
 ## More Information
 
-- [Introduction to Liferay Development]()
+- [Introduction to Liferay Commerce Development](../../introduction-to-liferay-commerce-development/README.md)
 - [Supporting Multiple Locales on Liferay]()

@@ -6,7 +6,7 @@
 
 ## Extending and Customizing Liferay Commerce
 
-* [Implementing a New Basic Payment Method]()
+* [Implementing a New Basic Payment Method](./tutorial/implementing-a-new-basic-payment-method/README.md)
 
 ## Leveraging Liferay Commerce APIs
 
