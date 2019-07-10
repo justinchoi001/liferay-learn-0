@@ -76,7 +76,7 @@ First implement the following required methods for `com.liferay.commerce.payment
 
 To learn more about `com.liferay.commerce.payment.method.CommercePaymentMethod`, let's look at the sample we just deployed:
 
-[`B1C3CommercePaymentMethod.java`](.\liferay-b1c3.zip\b1c3-impl\src\main\java\com\acme\b1c3\internal\commerce\payment\method\B1C3CommercePaymentMethod.java)
+[`B1C3CommercePaymentMethod.java`](./liferay-b1c3.zip/b1c3-impl/src/main/java/com/acme/b1c3/internal/commerce/payment/method/B1C3CommercePaymentMethod.java)
 
 ```java
 	@Override
@@ -206,7 +206,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 
 ### Putting it Together
 
-View the full sample class: [B1C3CommercePaymentMethod.java](.\liferay-b1c3.zip\b1c3-impl\src\main\java\com\acme\b1c3\internal\commerce\payment\method\B1C3CommercePaymentMethod.java).
+View the full sample class: [B1C3CommercePaymentMethod.java](./liferay-b1c3.zip/b1c3-impl/src/main/java/com/acme/b1c3/internal/commerce/payment/method/B1C3CommercePaymentMethod.java).
 
 ## Summary
 
