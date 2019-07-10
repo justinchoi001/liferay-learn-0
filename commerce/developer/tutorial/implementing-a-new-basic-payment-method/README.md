@@ -20,7 +20,7 @@ This tutorial will introduce you to implementing the `CommercePaymentMethod` int
     docker run -it -p 8080:8080 liferay/commerce:2.0.1
     ```
 
-1. Download and unzip [liferay-b1c3.zip]().
+1. Download and unzip the [Acme Commerce Payment Method Sample]() to your project directory.
 
     ```bash
     curl liferay-b1c3.zip
@@ -44,7 +44,7 @@ This tutorial will introduce you to implementing the `CommercePaymentMethod` int
 
     >Note: This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
-1. Confirm the deployment in the Liferay console.
+1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
     STARTED com.acme.b1c3.internal.commerce.payment.method_1.0.0
@@ -74,7 +74,7 @@ First implement the following required methods for `com.liferay.commerce.payment
 
 #### Understanding the Required Methods
 
-To learn more about `com.liferay.commerce.payment.method.CommercePaymentMethod` let's look at the sample we just deployed:
+To learn more about `com.liferay.commerce.payment.method.CommercePaymentMethod`, let's look at the sample we just deployed:
 
 [`B1C3CommercePaymentMethod.java`](.\liferay-b1c3.zip\b1c3-impl\src\main\java\com\acme\b1c3\internal\commerce\payment\method\B1C3CommercePaymentMethod.java)
 
@@ -208,6 +208,11 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 
 View the full sample class: [B1C3CommercePaymentMethod.java](.\liferay-b1c3.zip\b1c3-impl\src\main\java\com\acme\b1c3\internal\commerce\payment\method\B1C3CommercePaymentMethod.java).
 
+## Summary
+
+Congratulations! You now know the basics for implementing the `CommercePaymentMethod` interface and have added a new basic payment method to Liferay Commerce.
+
 ## Additional Information
 
 * [Supporting Multiple Locales on Liferay]()
+* [Implementing a New Online Payment Method]()
