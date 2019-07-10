@@ -12,7 +12,7 @@
  * details.
  */
 
-package com.liferay.commerce.sample.payment.method;
+package com.acme.b1c3.internal.commerce.payment.method;
 
 import com.liferay.commerce.constants.CommerceOrderConstants;
 import com.liferay.commerce.constants.CommercePaymentConstants;
@@ -30,12 +30,12 @@ import org.osgi.service.component.annotations.Component;
 
 @Component(
 	immediate = true,
-	property = "commerce.payment.engine.method.key=" + SampleOfflineCommercePaymentMethod.KEY,
+	property = "commerce.payment.engine.method.key=" + B1C3CommercePaymentMethod.KEY,
 	service = CommercePaymentMethod.class
 )
-public class SampleOfflineCommercePaymentMethod implements CommercePaymentMethod {
+public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 
-	public static final String KEY = "sample-offline-commerce-payment-method";
+	public static final String KEY = "b1c3-commerce-payment-method";
 
 	@Override
 	public CommercePaymentResult completePayment(
@@ -52,19 +52,19 @@ public class SampleOfflineCommercePaymentMethod implements CommercePaymentMethod
 	public String getDescription(Locale locale) {
 		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "sample-offline-commerce-payment-method-description");
+		return LanguageUtil.get(resourceBundle, "b1c3-commerce-payment-method-description");
 	}
 
 	@Override
 	public String getKey() {
-		return "sample-offline-commerce-payment-method-registry-key";
+		return "b1c3-commerce-payment-method-registry-key";
 	}
 
 	@Override
 	public String getName(Locale locale) {
 		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "sample-offline-commerce-payment-method-name");
+		return LanguageUtil.get(resourceBundle, "b1c3-commerce-payment-method-name");
 	}
 
 	@Override

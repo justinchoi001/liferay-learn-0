@@ -6,7 +6,7 @@ Liferay Commerce provides several out of the box payment methods including _Auth
 
 This tutorial will introduce you to implementing the `CommercePaymentMethod` interface by adding a new basic payment method.
 
-## Road Map
+## Roadmap
 
 * Deploy the Sample
 * Walkthrough
@@ -14,21 +14,47 @@ This tutorial will introduce you to implementing the `CommercePaymentMethod` int
 
 ### Deploy the Sample
 
-1. Get Liferay Commerce | Pull the Docker image: `docker pull liferay/commerce:2.0.0`
-1. Start Liferay Commerce | Run `docker run -it -p 8080:8080 liferay/commerce:2.0.0`
-1. Download and unzip the sample | [sample-offline-commerce-payment-method.zip]()
-1. Navigate to the sample directory | CD into `/sample-offline-commerce-payment-method/`
-1. Build the sample | `./gradlew deploy`
-1. Deploy the sample | `docker cp ../bundles/osgi/modules/com.liferay.commerce.sample.payment.method.jar $(docker ps -q):/opt/liferay/osgi/modules`
+1. Start Liferay Commerce.
 
-    >If you are running more than one docker container, you will need to supply the correct container hash yourself.
+    ```bash
+    docker run -it -p 8080:8080 liferay/commerce:2.0.1
+    ```
 
-1. Confirm the deployment | Review console for `STARTED com.liferay.commerce.sample.payment.method_1.0.0`.
-1. Validate in Liferay Commerce | Open browser `https://localhost:8080` and navigate to Payment Methods.
+1. Download and unzip [liferay-b1c3.zip]().
 
-![Sample Payment Method Added](./images/02.png "Sample Payment Method Added")
+    ```bash
+    curl liferay-b1c3.zip
+    ```
 
-Congratulations, you've successfully built and deployed a new basic payment method that implements `CommercePaymentMethod`. Now let's dive deeper.
+    ```bash
+    unzip liferay-b1c3.zip
+    ```
+
+1. Go to `/b1c3-impl/`.
+
+    ```bash
+    cd b1c3-impl/
+    ```
+
+1. Build and deploy the sample.
+
+    ```bash
+    ./gradlew deploy -DdockerContainerId=$(docker ps -lq)
+    ```
+
+    >Note: This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+
+1. Confirm the deployment in the Liferay console.
+
+    ```bash
+    STARTED com.acme.b1c3.internal.commerce.payment.method_1.0.0
+    ```
+
+1. Validate in Liferay Commerce | Open browser to `https://localhost:8080` and navigate to Payment Methods.
+
+![Acme Commerce Payment Method Added](./images/02.png "Acme Commerce Payment Method Added")
+
+Congratulations, you've successfully built and deployed a new basic payment method that implements `CommercePaymentMethod`. Now, let's dive deeper.
 
 ### Walkthrough
 
@@ -48,18 +74,19 @@ First implement the following required methods for `com.liferay.commerce.payment
 
 #### Understanding the Required Methods
 
-To learn more about `com.liferay.commerce.payment.method.CommercePaymentMethod` let's look at the sample we deployed to learn more.
+To learn more about `com.liferay.commerce.payment.method.CommercePaymentMethod` let's look at the sample we just deployed:
 
-[`SampleOfflineCommercePaymentMethod.java`](.\sample-offline-commerce-payment-method.zip\sample-offline-commerce-payment-method\src\main\java\com\liferay\commerce\sample\payment\method\SampleOfflineCommercePaymentMethod.java).
+[`B1C3CommercePaymentMethod.java`](.\liferay-b1c3.zip\b1c3-impl\src\main\java\com\acme\b1c3\internal\commerce\payment\method\B1C3CommercePaymentMethod.java)
 
 ```java
 	@Override
 	public String getDescription(Locale locale) {
 		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "sample-offline-commerce-payment-method-description");
+		return LanguageUtil.get(resourceBundle, "b1c3-commerce-payment-method-description");
 	}
 ```
+
 >Populates the "Description" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Supporting Multiple Locales on Liferay]() for more information.
 
 <br>
@@ -67,9 +94,10 @@ To learn more about `com.liferay.commerce.payment.method.CommercePaymentMethod` 
 ```java
 	@Override
 	public String getKey() {
-		return "sample-offline-commerce-payment-method-registry-key";
+		return "b1c3-commerce-payment-method-registry-key";
 	}
 ```
+
 >A unique identifier for the payment method. Reusing a key that is already in use will override the existing associated method. In the registry, this key will be associated with the payment method. The key can be used to fetch the payment method from the registry programmatically if necessary.
 
 <br>
@@ -79,9 +107,10 @@ To learn more about `com.liferay.commerce.payment.method.CommercePaymentMethod` 
 	public String getName(Locale locale) {
 		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "sample-offline-commerce-payment-method-name");
+		return LanguageUtil.get(resourceBundle, "b1c3-commerce-payment-method-name");
 	}
 ```
+
 >Populates the "Name" column in the Payment Methods Administration Page.`ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Supporting Multiple Locales on Liferay]() for more information.
 
 <br>
@@ -164,22 +193,20 @@ The following optional methods should be implemented. There are many more method
 
 >Short description
 
-<br>
-
 #### Annotate Your Class for OSGI Registration
 
 ```java
 @Component(
 	immediate = true,
-	property = "commerce.payment.engine.method.key=" + SampleOfflineCommercePaymentMethod.KEY,
+	property = "commerce.payment.engine.method.key=" + B1C3CommercePaymentMethod.KEY,
 	service = CommercePaymentMethod.class
 )
-public class SampleOfflineCommercePaymentMethod implements CommercePaymentMethod {
+public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 ```
 
 ### Putting it Together
 
-View the full sample class: [SampleOfflineCommercePaymentMethod.java](.\sample-offline-commerce-payment-method.zip\sample-offline-commerce-payment-method\src\main\java\com\liferay\commerce\sample\payment\method\SampleOfflineCommercePaymentMethod.java).
+View the full sample class: [B1C3CommercePaymentMethod.java](.\liferay-b1c3.zip\b1c3-impl\src\main\java\com\acme\b1c3\internal\commerce\payment\method\B1C3CommercePaymentMethod.java).
 
 ## Additional Information
 
