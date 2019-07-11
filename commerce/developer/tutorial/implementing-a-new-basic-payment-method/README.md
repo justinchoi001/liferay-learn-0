@@ -177,7 +177,7 @@ The following methods are not required to implement the interface but are requir
 		}
     ```
 
-    >Because we are defining our own custom payment logic, this must be set to true.
+    >When defining custom payment logic, this must be set to true.
 
 1. `public CommercePaymentResult completePayment()`
 
@@ -194,7 +194,7 @@ The following methods are not required to implement the interface but are requir
 		}
     ```
 
-    >This is where we have defined our custom payment logic.
+    >This is where custom payment logic will be implemented.
 
 1. `public boolean isProcessPaymentEnabled()`
 
@@ -205,7 +205,7 @@ The following methods are not required to implement the interface but are requir
 		}
     ```
 
-    >Because we are defining our own custom payment processing logic, this must be set to true.
+    >When defining custom payment processing logic, this must be set to true.
 
 1. `public CommercePaymentResult processPayment()`
 
@@ -222,7 +222,7 @@ The following methods are not required to implement the interface but are requir
 		}
     ```
 
-    >This is where we have defined our custom payment processing logic.
+    >This is where custom payment processing logic will be implemented.
 
 ## Conclusion
 
