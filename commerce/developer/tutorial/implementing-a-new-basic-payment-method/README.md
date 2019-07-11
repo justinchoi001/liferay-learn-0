@@ -41,7 +41,7 @@ In this section, we will get an example payment method up and running on your in
 1. Build and deploy the sample.
 
     ```bash
-    ./gradlew deploy -DdockerContainerId=$(docker ps -lq)
+    ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
     >Note: This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
