@@ -20,3 +20,4 @@ test-coverage/
 test-results/
 tmp/
 **/bundles
+.markdownlint.json
