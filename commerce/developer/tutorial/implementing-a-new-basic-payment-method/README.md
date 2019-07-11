@@ -62,7 +62,22 @@ Next, let's dive deeper to learn more.
 
 ## Walkthrough the Example
 
-In this section, we will take a more in-depth review of what happened in the above sample. First, we will implement and understand the required methods; second, we will implement and understand the optional methods; and third, we will annotate the class for OSGi registration.
+In this section, we will take a more in-depth review of what happened in the above sample. First, we will annotate the class for OSGi registration; second we will implement and understand the required methods; and third, we will implement and understand the optional methods.
+
+### Annotate Your Class for OSGi Registration
+
+```java
+@Component(
+	immediate = true,
+	property = "commerce.payment.engine.method.key=" + B1C3CommercePaymentMethod.KEY,
+	service = CommercePaymentMethod.class
+)
+public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
+
+	public static final String KEY = "b1c3-commerce-payment-method";
+```
+
+>It is important to provide a distinct key for your payment method so that Liferay Commerce can distinguish your new payment method from others in the payment method registry. Reusing a key that is already in use will override the existing associated method.
 
 ### Required Methods
 
@@ -151,7 +166,18 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Optional Methods
 
-The following four optional methods should be implemented. There are many more methods that can be implemented that provide additional functionality. These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
+The following methods are not required to implement the interface but are required to implement your custom payment logic. There are many more methods that can be implemented that provide additional functionality - such as subscriptions, recurring payments, and refunds. These can be seen in the [`CommercePaymentMethod`](https://github.com/liferay/com-liferay-commerce/blob/7.1.x/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) interface. These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
+
+1. `public boolean isCompleteEnabled()`
+
+    ```java
+		@Override
+		public boolean isCompleteEnabled() {
+			return true;
+		}
+    ```
+
+    >Because we are defining our own custom payment logic, this must be set to true.
 
 1. `public CommercePaymentResult completePayment()`
 
@@ -168,18 +194,7 @@ The following four optional methods should be implemented. There are many more m
 		}
     ```
 
-    >Short description
-
-1. `public boolean isCompleteEnabled()`
-
-    ```java
-		@Override
-		public boolean isCompleteEnabled() {
-			return true;
-		}
-    ```
-
-    >Short description
+    >This is where we have defined our custom payment logic.
 
 1. `public boolean isProcessPaymentEnabled()`
 
@@ -190,7 +205,7 @@ The following four optional methods should be implemented. There are many more m
 		}
     ```
 
-    >Short description
+    >Because we are defining our own custom payment processing logic, this must be set to true.
 
 1. `public CommercePaymentResult processPayment()`
 
@@ -207,20 +222,7 @@ The following four optional methods should be implemented. There are many more m
 		}
     ```
 
-    >Short description
-
-### Annotate Your Class for OSGi Registration
-
-```java
-@Component(
-	immediate = true,
-	property = "commerce.payment.engine.method.key=" + B1C3CommercePaymentMethod.KEY,
-	service = CommercePaymentMethod.class
-)
-public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
-```
-
->Short description
+    >This is where we have defined our custom payment processing logic.
 
 ## Conclusion
 
