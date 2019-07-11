@@ -81,7 +81,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 
 ### Implement the `CommercePaymentMethod` Interface
 
-The following five methods are required to implement the `CommercePaymentMethod` interface:
+The following five methods are required:
 
 ```java
 	public String getDescription(Locale locale);
