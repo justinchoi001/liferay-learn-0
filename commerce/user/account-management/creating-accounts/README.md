@@ -1,6 +1,6 @@
 # Creating a New Account
 
-Visitors to your store can open an account to manage their purchases and activities. Using their account, buyers can place and change orders in the B2B or B2C environment. Accounts such as those for corporations can have multiple users as points of contact for the entity to conduct their activities. 
+Visitors to your store can open an account to manage their purchases and activities. Using their account, buyers can place and change orders in the B2B or B2C environment. Accounts such as those for corporations can have multiple users as points of contact for the entity to conduct their activities.
 
 This article documents how to create a new account.
 
