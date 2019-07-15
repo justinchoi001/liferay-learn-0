@@ -8,14 +8,14 @@ Want to kick the tires? Get started [here](./installation-and-deployment/quick-s
 
 Learn how to set up and maintain Liferay Commerce for the long haul.
 
-## [Using Liferay Commerce](./user/README.md)
+## [User Guide](./user-guide/README.md)
 
 The authoritative guide to using Liferay Commerce.
 
-## [Developing on Liferay Commerce](./developer/README.md)
+## [Developer Guide](./developer-guide/README.md)
 
-Tutorials and guides to extend and customize Liferay Commerce.
+Tutorials and guides to extend and customize your Liferay Commerce experience.
 
-## [Get Help]()
+## [Get Help](./get-help/README.md)
 
 Need a little bit more help? Liferay has training, support, and consulting resources for all your needs.
