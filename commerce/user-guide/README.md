@@ -22,7 +22,7 @@
 
 ## Sales
 
-* [Managing Payment Methods](./payment-methods/README.md)
+* [Shipping](./sales/shipping/README.md)
 
 ## Operations
 
