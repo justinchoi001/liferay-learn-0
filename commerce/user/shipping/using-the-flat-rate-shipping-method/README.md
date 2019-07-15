@@ -1,4 +1,4 @@
-# Using the Flat Rate Shipping Option
+# Using the Flat Rate Shipping Method
 
 Buyers can choose a flat rate shipping option to ship any product. By creating multiple flat rate options, you can give customers choices of cost, speed, or security.
 
@@ -8,8 +8,8 @@ By default, the Flat Rate shipping method is enabled.
 
 To add a new Flat Rate Shipping Option:
 
-1. Navigate to the _Control Panel_ → _(your site)_ → _Commerce_ → _Settings_. 
-1. Click the _Shipping Methods_ tab. 
+1. Navigate to the _Control Panel_ → _(your site)_ → _Commerce_ → _Settings_.
+1. Click the _Shipping Methods_ tab.
 1. Click _Flat Rate_.
 1. Click the _Shipping Options_ tab. (If using the Minium accelerator, the _Standard Delivery_ and _Expedited Delivery_ are created by default.)
 1. Click the (+) button to add a new Shipping option:
@@ -18,18 +18,15 @@ To add a new Flat Rate Shipping Option:
     * **Description**:  
     * **Amount**: 3.95
     * **Priority**: 0.0
-1. Click _Save_. 
-
+1. Click _Save_.
 
 The new Shipping Option has been added and is available during the checkout process.
-    
-   <img src="./images/01.png" width="700px" style="border: #E9EBF0 1px solid;">
 
-_Figure 1: The new 7-Day Shipping option is selected during checkout._
+   <img src="./images/01.png" width="700px" style="border: #E9EBF0 1px solid;">
 
 ## Additional Information
 
 * [Using the Variable Rate Shipping Method]()
-* [Using Fedex Carrier Shipping Method]()
-* [Applying Shipping Restrictions]()
+* [Using FedEx as a Carrier Method](../using-fedex-as-a-carrier-method/README.md)
+* [Applying Shipping Method Restrictions](../applying-shipping-method-restrictions/README.md)
 * [Creating New Shipping Methods](https://help.liferay.com/hc/en-us/articles/360020751831)
