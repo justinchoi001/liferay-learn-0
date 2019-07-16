@@ -1,4 +1,4 @@
-# Customizing Your Product with Product Options
+# Customizing Your Products with Product Options
 
 Option Templates and Product Options provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color.
 

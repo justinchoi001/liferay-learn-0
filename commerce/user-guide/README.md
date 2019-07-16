@@ -2,11 +2,6 @@
 
 ## [Getting Started](./getting-started/README.md)
 
-* [Overview of Liferay Commerce]()
-* [Quick Tour]()
-* [What's New in Liferay Commerce 2.0.1]()
-* [Basic Configuration]()
-
 ## [Catalog](./catalog/README.md)
 
 * [Managing Warehouses](./catalog/managing-inventory/warehouses/README.md)
