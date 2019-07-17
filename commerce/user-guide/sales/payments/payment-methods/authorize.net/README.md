@@ -26,6 +26,6 @@ Once finished, Authorize.Net is now enabled.
 
 ## Additional Information
 
-* [Currencies](../../currencies/README.md)
+* [Currencies](../../../../getting-started/currencies/README.md)
 * [Mercanet](../mercanet/README.md)
 * [PayPal](../paypal/README.md)

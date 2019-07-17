@@ -25,6 +25,5 @@ Here is more information about adding other payment methods:
 
 * [Authorize.net](../authorize.net/README.md)
 * [Mercanet](../mercanet/README.md)
-* [Currencies Administration]()
+* [Currencies](../../../../getting-started/currencies/)
 * [Reattempt failed recurring payments with Subscribe buttons](https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/reattempt-failed-payment/)
-* [Learn how to add other 3rd party payment systems.]()

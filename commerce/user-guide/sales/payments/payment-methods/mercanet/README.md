@@ -48,6 +48,6 @@ Mercanet is now enabled for your store.
 
 ## Additional Information
 
-* [Currencies](../../currencies/README.md)
+* [Currencies](../../../../getting-started/currencies/README.md)
 * [Authorize.Net](../authorize.net/README.md)
 * [PayPal](../paypal/README.md)
