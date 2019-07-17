@@ -36,7 +36,7 @@ The Option Template has been added and can be applied to all products.
 
 **Note 1**: When _Use in Faceted Navigation_ is switched to _Active_, this enable to allow search results to be filtered for this option.
 
-**Note 2**: A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](https://help.liferay.com/hc/en-us/articles/360017869972-SKUs-). If enabled, the option must have an SKU in order to be sold.
+**Note 2**: A SKU contributor can be assigned a unique price and other attributes for each variant via [SKUs](../adding-skus-to-your-products/README.md). If enabled, the option must have a SKU in order to be sold.
 
 ## Adding Option Values
 
@@ -65,7 +65,7 @@ To apply an option template to a product:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click the _Products_ tab.
-1. Click on any product listed there. For example, if the Minium.com accelerator was used to create the site, one sample product is the _Torque Converters_.
+1. Click on any product listed there. For example, if the Minium accelerator was used to create the site, one sample product is the _Torque Converters_.
 
     <img src="./images/03.png" width="700px"> 
 

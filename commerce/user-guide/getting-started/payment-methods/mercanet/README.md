@@ -1,4 +1,4 @@
-# Activating Mercanet as a Payment Method
+# Mercanet
 
 This article details how to enable Mercanet as a payment method. Because Mercanet accepts **only EUR**, the store's primary currency must be EUR.
 
@@ -20,7 +20,7 @@ Before configuring your store to use [Mercanet](https://documentation.mercanet.b
 
 When using Mercanet, your store must use Euros as the primary currency. To change the primary currency:
 
-1. Navigate to the _Control Panel → Commerce → Settings_. 
+1. Navigate to the _Control Panel → Commerce → Settings_.
 1. Click _Currencies_.
 1. Click the _3-dot icon_ next to Euro.
 1. Click _Set as Primary_.
@@ -48,7 +48,6 @@ Mercanet is now enabled for your store.
 
 ## Additional Information
 
-* [Currencies Administration]()
+* [Currencies](../../currencies/README.md)
 * [Authorize.Net](../authorize.net/README.md)
 * [PayPal](../paypal/README.md)
-* [Learn how to add other 3rd party payment systems.]()

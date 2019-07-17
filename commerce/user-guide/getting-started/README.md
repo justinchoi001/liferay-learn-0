@@ -8,6 +8,6 @@
 
 ## Basic Configuration
 
-* [Countries Administration](./countries-administration/README.md)
-* [Currencies Administration](./currencies-administration/README.md)
+* [Country Options](./country-options/README.md)
+* [Currencies](./currencies/README.md)
 * [Payment Methods](./payment-methods/README.md)

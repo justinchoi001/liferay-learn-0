@@ -1,4 +1,4 @@
-# Activating Authorize.net as a Payment Method
+# Authorize.net
 
 This article details how to enable Authorize.Net as a payment method. [Authorize.Net](https://www.authorize.net/about-us/) is a subsidiary of Visa and a provider of payment gateway services that manages the submission of billions of transactions to processing networks on behalf of merchant customers.
 
@@ -26,7 +26,6 @@ Once finished, Authorize.Net is now enabled.
 
 ## Additional Information
 
-* [Currencies Administration]()
+* [Currencies](../../currencies/README.md)
 * [Mercanet](../mercanet/README.md)
 * [PayPal](../paypal/README.md)
-* [Learn how to add other 3rd party payment systems.]()

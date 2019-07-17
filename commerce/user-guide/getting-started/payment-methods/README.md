@@ -1,4 +1,4 @@
-# Managing Payment Methods
+# Payment Methods
 
 * [Authorize.net](./authorize.net/README.md)
 * [Mercanet](./mercanet/README.md)

@@ -1,4 +1,4 @@
-# Activating PayPal as a Payment Method
+# PayPal
 
 This article details how to enable PayPal as a payment method.
 

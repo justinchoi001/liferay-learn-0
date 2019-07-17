@@ -31,4 +31,4 @@ _Format Pattern_ requires the currency’s sign, the number of digits to come be
 
 _Rounding Mode_ requires a type of [rounding mode](https://en.wikipedia.org/wiki/Rounding#Directed_rounding_to_an_integer) from the drop-down menu.
 
-Using [Mercanet](./../payment-methods/mercanet/README.md) requires EUR as the primary currency. Therefore, leave the default settings for Primary Currency to _No_ if using Mercanet.
+Using [Mercanet](../../payment-methods/mercanet/README.md) requires EUR as the primary currency. Therefore, leave the default settings for Primary Currency to _No_ if using Mercanet.
