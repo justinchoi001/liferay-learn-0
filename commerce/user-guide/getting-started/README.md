@@ -10,4 +10,4 @@
 
 * [Country Options](./country-options/README.md)
 * [Currencies](./currencies/README.md)
-* [Payment Methods](./payment-methods/README.md)
+* [Payments](./payments/README.md)
