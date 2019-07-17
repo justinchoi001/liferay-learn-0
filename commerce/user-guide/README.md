@@ -7,7 +7,7 @@
 * [Managing Warehouses](./catalog/managing-inventory/adding-a-new-warehouse/README.md)
 * [Customizing Your Product With Product Options](./catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md)
 
-## Marketing
+## [Marketing](./marketing/README.md)
 
 ## Content
 
