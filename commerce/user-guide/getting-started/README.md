@@ -11,3 +11,4 @@
 * [Country Options](./country-options/README.md)
 * [Currencies](./currencies/README.md)
 * [Payments](./payments/README.md)
+* [Sites and Site Types](./site-management-basics/sites-and-site-types/README.md)

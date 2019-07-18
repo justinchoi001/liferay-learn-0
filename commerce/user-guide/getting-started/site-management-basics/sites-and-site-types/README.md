@@ -1,6 +1,14 @@
-# Site Types
+# Sites and Site Types
 
-Your site type should match your store's business model: B2B, B2C, or B2X.
+## Sites
+
+In order to go live with your store, it is necessary to create a site in Liferay Commerce. You may use an [Accelerator]() to build the site with sample data, or create a blank site and then add the necessary Commerce Widgets and pages. For more information about how sites in general work, see "[Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)".
+
+## Site Types
+
+Liferay Commerce extends Sites through the use of Site Types. Site Types designate your store's business model and adjusts the site and store configurations accordingly.
+
+The following site types are available:
 
 **B2B**: A business-to-business site only recognizes business accounts, which means that a user must be explicitly associated with a business account in order to make purchases. This is recommended for B2B sellers or B2C sellers whose customers are grouped into a single buying unit, for example households.
 
