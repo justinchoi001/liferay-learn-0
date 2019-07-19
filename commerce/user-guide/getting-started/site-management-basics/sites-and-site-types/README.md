@@ -2,21 +2,27 @@
 
 ## Sites
 
-In order to go live with your store, it is necessary to create a site in Liferay Commerce. You may use an [Accelerator]() to build the site with sample data, or create a blank site and then add the necessary Commerce Widgets and pages. For more information about how sites in general work, see "[Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)".
+Liferay Commerce deployments consist of a hierarchy of Sites, Pages, Widgets, and Accounts. Creating and configuring a site in Liferay Commerce is one of the first steps to launching a store. You may use an [Accelerator]() to jump start your site, or create a blank site and add the Commerce widgets and pages you require.
+
+Liferay Commerce is built on Liferay DXP; For more information about how Liferay DXP Sites work, see "[Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)".
+
+For a complete walk through of creating a B2B or B2C store from scratch see [User Guide Tutorials]().
 
 ## Site Types
 
-Liferay Commerce extends Sites through the use of Site Types. Site Types designate your store's business model and adjusts the site and store configurations accordingly.
+Liferay Commerce uses Liferay Sites in combination with Site Types. Site Types designate your store's business model and will determine how your storefront works with [Accounts](../../../customers/account-management/introduction-to-accounts/README.md).
 
 The following site types are available:
 
-**B2B**: A business-to-business site only recognizes business accounts, which means that a user must be explicitly associated with a business account in order to make purchases. This is recommended for B2B sellers or B2C sellers whose customers are grouped into a single buying unit, for example households.
+* **B2B**: A business-to-business site that requires business accounts. In order to make purchases, individual user accounts _must_ be associated with a business account. Using the _Minium_ accelerator will jump start a site using the B2B site type.
 
-**B2C**: A business-to-consumer site only recognizes personal accounts, which means that any authenticated user can make purchases. This is recommended for B2C sellers or B2B sellers who do not care to support multiple users on a single account.
+* **B2C**: A business-to-consumer site that requires personal accounts. Any authenticated user may make a purchase. Using the _Speedwell_ accelerator (coming soon) will jump start a site using the B2C site type.
 
-**B2X**: A B2C-B2B site recognizes both personal and business accounts. Users can be associated with business accounts, but can also make purchases individually. This is recommended for sellers who want to support both account types on the same site.
+* **B2X**: A B2C-B2B site recognizes personal and business accounts. Users may be associated with business accounts, but may also make purchases individually.
 
-## Changing Site Types
+## Setting a Site Type
+
+It is best practice to set a site's type as soon as you create it and avoid changing it in the future.
 
 To set your site's type, navigate to the _Control Panel_ → _(your site)_ → _Commerce_ → __Settings_ and select the Site Type tab. Select a type from the dropdown menu and click _Save_.
 
@@ -24,4 +30,8 @@ To set your site's type, navigate to the _Control Panel_ → _(your site)_ → _
 
 Changing a site's type also changes which accounts appear in its Accounts widget. If an instance contains business accounts but a site's type is set to B2C, those accounts still exist in the database but do not appear in the Accounts widget and are inaccessible to users.
 
-It is best practice to set a site's type as soon as you create it and avoid changing it in the future.
+## Additional Information
+
+* [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)
+* [Introduction to Accounts](../../../customers/account-management/introduction-to-accounts/README.md)
+* [User Guide Tutorials]()

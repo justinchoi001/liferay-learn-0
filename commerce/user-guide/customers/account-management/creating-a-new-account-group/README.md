@@ -1,6 +1,6 @@
 # Creating a New Account Group
 
-This article documents how to create an account group. Account Groups allows accounts to be grouped based on your needs, such as grouping accounts by geographic region (US West Coast, the Midwest, and the South). Vendors can then apply discounts or target marketing campaigns to specific Account Groups.
+This article documents how to create an account group. Account Groups allows accounts to be grouped based on your criteria, such as grouping accounts by geographic region (US West Coast, the Midwest, and the South). Vendors can then apply discounts or target marketing campaigns to specific Account Groups.
 
 To create an account group:
 

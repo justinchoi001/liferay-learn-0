@@ -1,16 +1,16 @@
 # Account Roles
 
-> Still reviewing
+Account Roles are sets of permissions provided by Liferay Commerce to empower users to have great customer service experiences through self-service and flexible workflows.
 
-A role is a group of permissions collected around a particular purpose. The following is a description of each Account Roles. After assigning the appropriate roles, store administrators can allow customers to manage their own accounts and orders.
+The following Account Roles are available for use:
 
-* **Account Administrator** : Account admins can do anything. They can modify the account, invite users to join the account, and assign roles to other members. They also have all the other permissions that other account roles have.
+* **Account Administrator** : Users with this role have permissions to modify the account, invite and add users to join the account, and assign roles to other account members. This role also includes the permissions for all other Account Roles listed.
 
-* **Buyers**: Buyers can view, create, and check out orders.
+* **Buyers**: Users with this role can view, create, and check out orders.
 
 * **Order Manager**: Order Managers have all the permissions of buyers, and can also manage, delete and approve orders.
 
-A typical approach would be to enable a workflow on your site such that Account Administrators assign the roles, Buyers create orders, and Order Managers approve them. However, you can customize or create new roles as needed; see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) for more information.
+These roles, out of the box, can be utilized to enable a workflow on your site such that Account Administrators assign the roles, Buyers create orders, and Order Managers approve them. Roles may be created and customized as needed to achieve a workflow that meets specific business needs. For more information see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) for more information.
 
 ## Seller-side Account Management Roles
 
@@ -20,5 +20,7 @@ To give a sales agent access to accounts:
 
 1. Group your accounts in organizations using the Accounts Widget.
 1. Associate sales agents with the same organizations.
+
+<img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
 Sales agents can access any account within any of their associated organizations.
