@@ -4,7 +4,7 @@
 
 Want to kick the tires? Get started [here](./installation-and-deployment/quick-start-guide/README.md)!
 
-## [Installation and Deployment]()
+## [Installation and Upgrades](./installation-and-upgrades/README.md)
 
 Learn how to set up and maintain Liferay Commerce for the long haul.
 
