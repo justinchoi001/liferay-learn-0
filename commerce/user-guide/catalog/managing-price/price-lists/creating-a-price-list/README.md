@@ -1,7 +1,6 @@
 # Creating a Price List
 
-
-A price list is an easy way to set alternate prices (higher or lower than the base price) for a given product or allow use of a currency other than the store’s default for selected Accounts and Account Groups.
+Price Lists are an easy way to set alternate prices (higher or lower than the base price) for a given product or allow use of a currency other than the store’s default for selected Accounts and Account Groups.
 
 This article describes how to create a price list.
 

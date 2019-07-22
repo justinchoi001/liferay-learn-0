@@ -13,4 +13,8 @@
 
 ## Managing Price
 
+* [Creating a Price List](./managing-price/price-lists/creating-a-price-list/README.md)
+* [Adding Products to a Price List](./managing-price/price-lists/adding-products-to-a-price-list/README.md)
+* [Adding Tiered Pricing](./managing-price/price-lists/adding-tiered-pricing/README.md)
+
 ## Other Settings

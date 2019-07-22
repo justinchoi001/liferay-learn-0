@@ -1,6 +1,6 @@
 # Adding Products to a Price List
 
-Once you have a [price list]() created, you can add products to it. This article describes two ways to add products to a price list.
+Once you have a [price list](../creating-a-price-list/README.md) created, you can add products to it. This article describes two ways to add products to a price list. Prices that are set via a Price List will take precedence over prices set directly against a given SKU for the associated users.
 
 ## Adding Products to a Price List Through the Price Lists Menu
 
@@ -14,15 +14,15 @@ When adding a large number of existing products to a new price list, populate th
 1. Click _Add_.
 1. Click on a product (_Premium Brake Fluid_ in this example).
 1. Enter the following fields:
-    * **Price**: 100 (If you enter this field and not the promo price, the price you enter here will be the new price on the price list.)
-    * **Promo Price**: 95 (If you also enter this field, then both the price above and the promo price will appear on the product page so that buyers can see the markdown.)
+    * **Price**: 100
+    * **Promo Price**: 95
 
-    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+        <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
 1. Click _Save_.
 
-The product is now added to the price list. Repeat the steps to add additional products to this, or another, price list.
- 
+The product is now added to the price list. Repeat as necessary.
+
 ## Adding Products to a Price List Through the Products Menu
 
 When creating a new product, you can easily add it to an existing price list using this method:
@@ -37,8 +37,8 @@ When creating a new product, you can easily add it to an existing price list usi
 1. Click _Add_.
 1. Click on a price list (_VIP Customers_ in this example).
 1. Enter the following fields (example values shown below):
-    * **Price**: 100 (If you enter this field and not the promo price, the price you enter here will be the new price on the price list.)
-    * **Promo Price**: 95 (If you also enter this field, then both the price above and promo price will appear on the product page so that buyers can see the markdown.)
+    * **Price**: 100
+    * **Promo Price**: 95
 
     <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
