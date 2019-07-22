@@ -14,16 +14,15 @@ The _Edit Payment Method_ UI has three tabs: _Details_, _Configuration_ and _Res
 |----- | ----------- |
 |Name  | Name of the Payment Method |
 |Description | Short description of the payment method |
-|Icon| Allows you to upload a small image or logo for the payment method |
-|Priority | Allows you to determine the order of that the payment method is display; lower numbers are displayed higher|
-|Active | Toggles the button to activate or deactive a payment method|  
+|Icon| Upload a small image or logo to represent the payment method |
+|Priority | Determines the order in which the payment method is displayed in the checkout process; lower numbers are displayed higher |
+|Active | Switch the toggle to activate or deactivate a payment method |  
 
-**Configuration**: For information about payment method configuration please see the Additional Information.
+**Configuration**: For information about each available payment method configuration screen please see the Additional Information for each payment method.
 
 **Restrictions**: A restriction deactivates a payment method for buyers in specified countries.
 
 <img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
-
 
 ## Additional Information
 
