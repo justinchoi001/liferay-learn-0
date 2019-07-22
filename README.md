@@ -4,7 +4,7 @@ Welcome to Liferay Help. This repository represents an initiative to organize, c
 
 ## [Analytics Cloud]()
 
-## [Commerce](https://github.com/liferay/liferay-help/tree/master/commerce)
+## [Commerce](./commerce/README.md)
 
 ## [DXP]()
 

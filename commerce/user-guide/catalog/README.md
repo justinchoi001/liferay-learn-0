@@ -8,6 +8,8 @@
 
 * [Customizing Your Products with Product Options](./creating-and-managing-products/customizing-your-product-with-product-options/README.md)
 * [Adding SKUs to Your Products](./creating-and-managing-products/adding-skus-to-your-products/README.md)
+* [Organizing Your Catalog With Product Categories](./creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md)
+* [Creating a New Product Category](./creating-and-managing-products/categories/creating-a-new-product-category/README.md)
 
 ## Managing Price
 
