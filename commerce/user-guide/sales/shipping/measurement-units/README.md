@@ -28,10 +28,6 @@ _Centimeters_ has been added to the list of dimensions.
 
 **Note**: Although the key is generated based on the Name field, it is best practice to replace the key with the accepted short hand for that measurement unit such as **cm** instead.
 
-## Adding a New Measurement Type
-
->TODO
-
 ## Additional Information
 
 If you use the Carrier shipping method to integrate your shipping cost calculations with a shipping provider's system, you must have the provider's units defined as well. If the provider uses units that are different from your primary, the conversion is handled automatically.
