@@ -71,7 +71,7 @@
 
 * Product Types
 * Product Information
-* Product Specifications
+* [Product Specifications](./catalog/creating-and-managing-products/product-information/specifications/README.md)
 * Product Folders
 * [Adding SKUs to Your Products](./catalog/creating-and-managing-products/adding-skus-to-your-products/README.md)
 * [Creating a New Product Category](./catalog/creating-and-managing-products/categories/creating-a-new-product-category/README.md)
