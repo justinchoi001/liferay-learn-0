@@ -6,18 +6,18 @@ Want to kick the tires? Get started [here](./installation-and-deployment/quick-s
 
 ## Installation Guide
 
-* [System Requirements]()
-* [Installation Overview]()
-* [Installing Liferay Commerce Using Docker]()
-* [Deploying Liferay Commerce to an Existing Liferay Installation]()
-* [Deploying to Liferay DXP Cloud]()
-* [Deploying and Configuring Addons]()
+* System Requirements
+* Installation Overview
+* Installing Liferay Commerce Using Docker
+* Deploying Liferay Commerce to an Existing Liferay Installation
+* Deploying to Liferay DXP Cloud
+* Deploying and Configuring Addons
 
 ## Upgrades and Updates
 
-* [Upgrades]()
-* [Maintenance Versions]()
-* [Hotfixes]()
-* [Migrations]()
+* Upgrades
+* Maintenance Versions
+* Hotfixes
+* Migrations
 
-## [Deploying to Liferay DXP Cloud]()
+## Deploying to Liferay DXP Cloud
