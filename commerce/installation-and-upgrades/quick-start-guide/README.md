@@ -24,6 +24,6 @@ Follow these steps to download the latest release of Liferay Commerce and get st
 
 ## What's Next
 
-Doing more than just checking things out? Learn more about [Installation and Deployment]().
+Doing more than just checking things out? Learn more about [Installation and Upgrades](../../installation-and-upgrades/README.md).
 
 Want to get a store up and running in minutes? Learn about [Using Accelerators to Jump Start Your Store]()

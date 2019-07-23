@@ -1,24 +1,234 @@
 # Using Liferay Commerce
 
-## [Getting Started](./getting-started/README.md)
+## Getting Started
 
-## [Catalog](./catalog/README.md)
+* Introduction to Liferay Commerce
+* What's New in Liferay Commerce 2.0.1
 
-* [Managing Warehouses](./catalog/managing-inventory/adding-a-new-warehouse/README.md)
+### Quick Tour
+
+#### Path to Purchase
+
+* Catalog Page
+* Product Detail Page
+* Pending Orders Page
+* Placed Orders Page
+* Checkout Page
+* Account Management Page
+* User Management Page
+* Comparison Page
+* Lists Page
+* Search Page
+
+#### The Customer Journey with Liferay Commerce
+
+* Attract New Customers
+* Engage Your Customers
+* Increase Average Order Value
+* Moment of Purchase
+* Retain Customers
+* Build Loyalty & Advocacy
+* Success!
+
+### Basic Configuration
+
+#### Using Accelerators
+
+* Using an Accelerator to Jump Start Your B2B Store
+* Using an Accelerator to Jump Start You B2C Store
+
+#### Store Administration Basics
+
+* Admin Log In
+* Admin Account
+* Liferay Commerce Control Panel
+* Store Setup Basics
+* Store Information
+* Locale Options
+* Store Notifications
+* Store Email Addresses
+* [Deactivating a Country for Billing or Shipping](./getting-started/country-options/deactivating-a-country-for-billing-or-shipping/README.md)
+* [Adding Regions](./getting-started/country-options/adding-regions/README.md)
+* [Adding a New Currency](./getting-started/currencies/adding-a-new-currency/README.md)
+* [Managing Exchange Rates](./getting-started/currencies/managing-exchange-rates/README.md)
+* [Introduction to Payments](./getting-started/payments/README.md)
+* [Managing Payment Methods](./getting-started/payments/managing-payment-methods/README.md)
+
+#### Store Branding Basics
+
+* Logo
+* Favicon
+* Welcome Message
+* Copyright Notice
+
+#### Site Management Basics
+
+* [Sites and Site Types](./getting-started/site-management-basics/sites-and-site-types/README.md)
+
+## Catalog
+
+### Creating and Managing Products
+
+* Product Types
+* Product Information
+* Product Specifications
+* Product Folders
+* [Adding SKUs to Your Products](./catalog/creating-and-managing-products/adding-skus-to-your-products/README.md)
+* [Creating a New Product Category](./catalog/creating-and-managing-products/categories/creating-a-new-product-category/README.md)
+* [Organizing Your Catalog With Product Categories](./catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md)
 * [Customizing Your Product With Product Options](./catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md)
+* Subscriptions
+* Other Configurations
 
-## [Marketing](./marketing/README.md)
+### Managing Inventory
+
+* [Adding a New Warehouse](./catalog/managing-inventory/adding-a-new-warehouse/README.md)
+* Setting up Multiple Warehouses
+* Low Inventory Activity
+* Availability Estimates
+
+### Managing Price
+
+* Introduction to Pricing
+* [Setting a Product's Base Price](./catalog/managing-price/base-price/setting-a-products-base-price/README.md)
+* [Creating a Price List](./catalog/managing-price/price-lists/creating-a-price-list/README.md)
+* [Adding Products to a Price List](./catalog/managing-price/price-lists/adding-products-to-a-price-list/README.md)
+* [Adding Tiered Pricing](./catalog/managing-price/price-lists/adding-tiered-pricing/README.md)
+
+#### Other Settings
+
+* Related Products, Up-sells, and Cross-sells
+* Catalog Visibility
+* Creating and Applying Catalog Rules
+
+## Marketing
+
+### Communications
+
+* Email Notifications
+* Supported Email Clients
+* Logo
+* Templates
+
+### Promotions
+
+* [Adding Discounts by Product](./marketing/promotions/adding-discounts-by-product/README.md)
+* Adding Discount Forms
+
+### SEO
+
+* Catalog Navigation
+* Catalog Search
+* SEO Best Practices
+
+### Reporting and Analytics
+
+* Forecasts
+* Loyalty Score Alerts
+
+### Shopping Tools
+
+#### Product Recommendations
+
+* Also Bought Product Recommendations
+* User Based Product Recommendations
+* Content Based Product Recommendations
 
 ## Content
 
+### Pages
+
+* Widget Reference Guide
+
+#### Commerce Core Pages
+
+* Catalog Page
+* Product Detail Page
+* Pending Orders Page
+* Placed Orders Page
+* Checkout Page
+* Account Management Page
+* User Management Page
+* Comparison Page
+* Lists Page
+* Search Page
+* BOM / Spare Parts Finder
+
+#### Using Liferay Site Builder
+
+* Using Page Fragments
+* Widget Templates
+* Navigation Menus
+
+#### Design and Theme
+
+* Page Setup and Layout
+
 ## Customers
 
-* [Account Management](./customers/account-management/README.md)
+* Creating Order Workflows
+
+### Account Management
+
+* [Introduction to Accounts](./customers/account-management/introduction-to-accounts/README.md)
+* [Creating a new Account](./customers/account-management/creating-a-new-account/README.md)
+* [Creating a new Account Group](./customers/account-management/creating-a-new-account-group/README.md)
+* [Account Roles](./customers/account-management/account-roles/README.md)
+* Organizations and Accounts
 
 ## Sales
 
-* [Shipping](./sales/shipping/README.md)
+### Payments
+
+#### Payment Methods
+
+* [Authorize.net](./sales/payments/payment-methods/authorize.net/README.md)
+* [Mercanet](./sales/payments/payment-methods/mercanet/README.md)
+* [Money Orders](./sales/payments/payment-methods/money-orders/README.md)
+* [Paypal](./sales/payments/payment-methods/paypal/README.md)
+
+### Shipping
+
+* [Shipping Method Reference](./sales/shipping/shipping-method-reference/README.md)
+* [Measurement Units](./sales/shipping/measurement-units/README.md)
+* [Using FedEx as a Carrier Method](./sales/shipping/using-fedex-as-a-carrier-method/README.md)
+* [Using the Flat Rate Shipping Method](./sales/shipping/using-the-flat-rate-shipping-method/README.md)
+* [Applying Shipping Method Restrictions](./sales/shipping/applying-shipping-method-restrictions/README.md)
+
+### Order Management
+
+* Order Life Cycle
+* Processing an Order
+* Order Status
+* Subscription Management
+* Quotes
+
+#### Managing Shipments
+
+* Shipment Workflow
+* Creating a Shipment
+* Cancelling a Shipment
+
+#### Invoices
+
+* Creating an Invoice
+* Printing Multiple Invoices
 
 ## Operations
 
-* [Taxes](./operations/taxes/README.md)
+### Taxes
+
+* [Creating Tax Categories](./operations/taxes/creating-tax-categories/README.md)
+* [Setting Tax Rate by Address](./operations/taxes/setting-tax-rate-by-address/README.md)
+* [Setting Tax Rate by Fixed Rate](./operations/taxes/setting-tax-rate-by-fixed-rate/README.md)
+
+### Import
+
+* Import History
+* Product Images
+* Import Guidelines
+
+### Export
+
+* Exporting Data
+* Export Criteria
