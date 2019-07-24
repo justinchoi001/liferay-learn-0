@@ -32,9 +32,10 @@
 
 ### Basic Configuration
 
-#### Using Accelerators
+#### Accelerators
 
-* Using an Accelerator to Jump Start Your B2B Store
+* [Accelerators](./getting-started/accelerators/README.md)
+* [Using an Accelerator to Jump Start Your B2B Store](./getting-started/accelerators/using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md)
 * Using an Accelerator to Jump Start You B2C Store
 
 #### Store Administration Basics
@@ -185,7 +186,7 @@
 * [Authorize.net](./sales/payments/payment-methods/authorize.net/README.md)
 * [Mercanet](./sales/payments/payment-methods/mercanet/README.md)
 * [Money Orders](./sales/payments/payment-methods/money-orders/README.md)
-* [Paypal](./sales/payments/payment-methods/paypal/README.md)
+* [PayPal](./sales/payments/payment-methods/paypal/README.md)
 
 ### Shipping
 
