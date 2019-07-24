@@ -11,6 +11,9 @@ To use an Accelerator:
 1. Go to _Control Panel_ → _Sites_ → _Sites_.
 1. Click the (+) button to add a new site.
 1. Choose an Accelerator (Minium or Speedwell)
+
+    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+
 1. Enter a name: _Your Site_.
 1. Click _Save_.
 
