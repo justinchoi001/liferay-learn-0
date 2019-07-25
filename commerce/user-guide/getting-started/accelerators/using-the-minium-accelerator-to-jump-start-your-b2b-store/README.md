@@ -43,7 +43,7 @@ Sample products also come with pre-set with [Options](../../../catalog/creating-
 Minium applies a number of other site configurations that are not set out of the box for a blank site. The following table provides a list of notable additions or configurations that Minium makes to jump start a B2B store:
 
 | Name | Value |
-| --- | --- | --- |
+| --- | --- |
 | [Warehouses](../../../catalog/managing-inventory/adding-a-new-warehouse/README.md) | Italy, United States Northeast, United States Southwest |
 | [Site Type](../../../getting-started/site-management-basics/sites-and-site-types/README.md) | B2B |
 | [Shipping Method Options](../../../sales/shipping/using-the-flat-rate-shipping-method/README.md) | Standard Delivery, Expedited Delivery |

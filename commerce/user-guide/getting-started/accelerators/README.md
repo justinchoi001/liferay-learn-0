@@ -1,6 +1,6 @@
 # Accelerators
 
-Liferay Commerce Accelerators make building stores and learning about Liferay Commerce fast and easy. Users who want to build their store from scratch are recommended to walk through the [Getting Started]() portion of the User Guide.
+Liferay Commerce Accelerators make building stores and learning about Liferay Commerce fast and easy. Users who want to build their store from scratch are recommended to walk through the [Getting Started](../../README.md) portion of the User Guide.
 
 Stores in Liferay Commerce are comprised of an interrelated hierarchy of components: Sites, Catalogs, Channels, Products, Pages, and Widgets—all of which may be configured as needed. An Accelerator is a type of Site Template that establishes this base hierarchy of store components and adds a theme, sample configurations, and sample data to create a functional store.
 
