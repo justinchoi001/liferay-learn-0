@@ -1,6 +1,6 @@
 # Using the Minium Accelerator to Jump Start Your B2B Store
 
-Minium is a Liferay Commerce Accelerator that quickly creates a business-to-business store intended to meet the needs of a wholesale distributor. The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium highlights Liferay Commerce's B2B Account Management functionality—enabling streamlined account management and self-service through use of [Account Roles](../../../customers/account-management/account-roles/README.md), [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md), and Order Workflows.
+Minium is a Liferay Commerce Accelerator that quickly creates a business-to-business store intended to meet the needs of a wholesale distributor. The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium highlights Liferay Commerce's B2B Account Management functionality—enabling streamlined account management and self-service through the use of [Account Roles](../../../customers/account-management/account-roles/README.md), [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md), and Order Workflows.
 
 This article serves as a walk through for the main features of the Minium Accelerator.
 
@@ -8,7 +8,7 @@ This article serves as a walk through for the main features of the Minium Accele
 
 ### Pages
 
-Minium populates a site with several pages and widgets, providing a complete user experience for buyers. To see the full list of pages created, go to Site Menu → Build → Pages.
+Minium populates a site with several pages and widgets, providing a complete user experience for buyers. To see the full list of pages created, go to *Site Menu → Build → Pages*.
 
 <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
@@ -42,7 +42,7 @@ Sample products also come with pre-set with [Options](../../../catalog/creating-
 
 Minium applies a number of other site configurations that are not set out of the box for a blank site. The following table provides a list of notable additions or configurations that Minium makes to jump start a B2B store:
 
-| Name | Value |
+| Feature | Details |
 | --- | --- |
 | [Warehouses](../../../catalog/managing-inventory/adding-a-new-warehouse/README.md) | Italy, United States Northeast, United States Southwest |
 | [Site Type](../../../getting-started/site-management-basics/sites-and-site-types/README.md) | B2B |
