@@ -4,7 +4,7 @@ Products can be organized into Categories. These groupings allow multiple produc
 
 Categories may also be organized hierarchically to form a taxonomy of categories. To organize products into categories, you must create the categories first and then assign products to them. Furthermore, because all Liferay Commerce Products are handled at the global level, all Vocabularies and Categories have to be at the global scope level.
 
-> (What is scope? What is the global scope level?) (Cross reference placeholder)
+For more information about global scope and site management, see this article about [Data Scopes](https://help.liferay.com/hc/articles/360018168991-Data-Scopes) and [Configuration Scope](https://help.liferay.com/hc/articles/360017895452-Introduction-to-Setting-Up#configuration-scope)
 
 ## Creating Categories
 
