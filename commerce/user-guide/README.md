@@ -25,8 +25,8 @@
 #### Accelerators
 
 * [Accelerators](./getting-started/accelerators/README.md)
-* [Using an Accelerator to Jump Start Your B2B Store](./getting-started/accelerators/using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md)
-* Using an Accelerator to Jump Start You B2C Store
+* [Using the Minium Accelerator to Jump Start Your B2B Store](./getting-started/accelerators/using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md)
+* Using the Speedwell Accelerator to Jump Start You B2C Store
 
 #### Store Administration Basics
 
