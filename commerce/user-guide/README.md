@@ -90,7 +90,7 @@
 
 ### Managing Price
 
-* Introduction to Pricing
+* [Introduction to Product Pricing Methods](./catalog/managing-price/introduction-to-product-pricing-methods/README.md)
 * [Setting a Product's Base Price](./catalog/managing-price/base-price/setting-a-products-base-price/README.md)
 * [Creating a Price List](./catalog/managing-price/price-lists/creating-a-price-list/README.md)
 * [Adding Products to a Price List](./catalog/managing-price/price-lists/adding-products-to-a-price-list/README.md)
