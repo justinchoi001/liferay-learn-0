@@ -1,4 +1,4 @@
-# Creating a Notification Template
+# Automating Store Emails by Using Notification Templates
 
 Notifications are automated emails sent to buyers. By default, notifications can only be sent to inform buyers when an order has been received. Notifications require a Notification Template, which defines the notification sender, trigger, content. To use Liferay Commerce's Notifications feature, system administrators _first_ have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See the article [User Subscriptions and Mailing Lists](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP#configuring-mail) for more information.
 

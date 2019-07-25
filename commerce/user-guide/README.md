@@ -106,7 +106,7 @@
 
 ### Communications
 
-* Email Notifications
+* [Automating Store Emails by Using Notification Templates](./marketing/email-notifications/automating-store-emails-by-using-notification-templates/README.md)
 * Supported Email Clients
 * Logo
 * Templates
