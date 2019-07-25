@@ -25,6 +25,7 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ### Marketing
 
+* [Adding Notification Types in the Notifications Template (TODO)](./tutorial/adding-notification-types-in-the-notifications-template/README.md)
 * [Adding Related Products to the Product Relations Widget (TODO)](./tutorial/adding-related-products-to-the-product-relations-widget/README.md)
 
 ### Promotions
