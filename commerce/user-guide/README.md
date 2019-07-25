@@ -20,16 +20,6 @@
 * Lists Page
 * Search Page
 
-#### The Customer Journey with Liferay Commerce
-
-* Attract New Customers
-* Engage Your Customers
-* Increase Average Order Value
-* Moment of Purchase
-* Retain Customers
-* Build Loyalty & Advocacy
-* Success!
-
 ### Basic Configuration
 
 #### Accelerators
