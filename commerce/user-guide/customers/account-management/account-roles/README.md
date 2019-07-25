@@ -6,7 +6,7 @@ The following Account Roles are available for use:
 
 * **Account Administrator** : Users with this role have permissions to modify the account, invite and add users to join the account, and assign roles to other account members. This role also includes the permissions for all other Account Roles listed.
 
-* **Buyers**: Users with this role can view, create, and check out orders.
+* **Buyer**: Users with this role can view, create, and check out orders.
 
 * **Order Manager**: Order Managers have all the permissions of buyers, and can also manage, delete and approve orders.
 
