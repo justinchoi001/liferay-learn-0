@@ -172,8 +172,8 @@
 ### Account Management
 
 * [Introduction to Accounts](./customers/account-management/introduction-to-accounts/README.md)
-* [Creating a new Account](./customers/account-management/creating-a-new-account/README.md)
-* [Creating a new Account Group](./customers/account-management/creating-a-new-account-group/README.md)
+* [Creating a New Account](./customers/account-management/creating-a-new-account/README.md)
+* [Creating a New Account Group](./customers/account-management/creating-a-new-account-group/README.md)
 * [Account Roles](./customers/account-management/account-roles/README.md)
 * Organizations and Accounts
 

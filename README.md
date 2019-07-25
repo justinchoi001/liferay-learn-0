@@ -2,15 +2,15 @@
 
 Welcome to Liferay Help. This repository represents an initiative to organize, create, and curate resources for learning Liferay that are discoverable, readable, and practical.
 
-## [Analytics Cloud]()
+## Analytics Cloud
 
 ## [Commerce](./commerce/README.md)
 
-## [DXP]()
+## DXP
 
-## [DXP Cloud]()
+## DXP Cloud
 
-## [Other Projects]()
+## Other Projects
 
 ## Who's Involved
 
