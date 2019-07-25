@@ -5,21 +5,6 @@
 * Introduction to Liferay Commerce
 * What's New in Liferay Commerce 2.0.1
 
-### Quick Tour
-
-#### Path to Purchase
-
-* Catalog Page
-* Product Detail Page
-* Pending Orders Page
-* Placed Orders Page
-* Checkout Page
-* Account Management Page
-* User Management Page
-* Comparison Page
-* Lists Page
-* Search Page
-
 ### Basic Configuration
 
 #### Accelerators
