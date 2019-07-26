@@ -1,17 +1,17 @@
-# Adding Discounts by Product
+# Adding Discounts to the Subtotal
 
 A discount applies a modifier to a product’s base price. It can be an absolute number or a percentage, and can be applied to a limited number of products or to the entire catalog. It can be available to all buyers, a defined Account Group, or to a more narrowly defined group of customers that meet certain qualifications. Unlike a price list, a discount always _reduces_ the base price.
 
-There are five different types of discounts: Categories, Products, Shipment, Subtotal, and Total. This article is a walk through on how to add discounts by Product.
+There are five different types of discounts: Categories, Products, Shipment, Subtotal, and Total. This article is a walk through on how to add discounts to the Subtotal.
 
-## Creating a Discount by Product
+## Creating a Discount to the Subtotal
 
-To create a discount by product:
+To create this type of discount:
 
 1. Go to the _Control Panel_ → _Commerce_ → _Discounts_.
 1. Click the (+) button to add a new Discount.
-1. Enter a name: _Christmas Sale_.
-1. Select a discount type from the _Target_ drop down. Select _Apply to Product_.
+1. Enter a name: _Spring Sale_.
+1. Select a discount type from the _Target_ drop down. Select _Apply to Subtotal_.
 1. Check the box for which channel this discount applies to.
 1. Select which [Account Groups](../../../customers/account-management/creating-a-new-account-group//README.md) this discount applies to. In this example, _US East Coast_.
 1. Switch the _Use Percentage_ toggle to _Yes_.
@@ -37,7 +37,7 @@ You can create rules that limit the buyer's discount conditions. There are three
 
 These rules may be combined as needed to meet your sales and marketing goals.
 
-1. Once the discount has been created, there are 3 tabs: _Detail_, _Rules_, and _Products_. Click on the _Rules_ tab.
+1. Once the discount has been created, there are 2 tabs: _Detail_, and _Rules_. Click on the _Rules_ tab.
 
     <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
 
