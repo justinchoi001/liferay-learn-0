@@ -89,7 +89,7 @@
 ### Promotions
 
 * [Adding Discounts by Product](./marketing/promotions/adding-discounts-by-product/README.md)
-* Adding Discount Forms
+* [Adding Discount to the Subtotal](./marketing/promotions/adding-discounts-to-the-subtotal/README.md)
 
 ### SEO
 
