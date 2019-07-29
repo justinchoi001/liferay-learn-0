@@ -35,24 +35,26 @@ As noted above, multiple product images can be associated with the same product.
 
 ### Prerequisites
 
-1. Product Options have been created for this product.
-2. Multiple SKUs have been generated for this product.
+1. [Product Options](../../customizing-your-product-with-product-options/README.md) have been created for this product.
+2. [Multiple SKUs](../../adding-skus-to-your-products/README.md) have been generated for this product.
 
-### Associating a Product Image With a SKU
-
-In this example, we can update an existing product image's settings so that this image is associated with this product SKU. 
+Once you have created Product Options and then generated the corresponding SKUs, you can add then associate different product images. To add multiple images to the different SKUs:  
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (in this example, _Microfiber Cloth_).
+1. Click on a product (in this example, _Hoses_). (If you had used Minium to create your store and sample data, this product was added by the Minium accelerator).
 1. Click the _Images_ sub-tab.
+1. Click the (+) button to add a Product Image.
+1. Drag and Drop or click _Select File_ to insert an image.
 1. Click on the existing image.
-1. Select _Blue_ under the _Cloth Colors_ Options.
+1. Select _6_ under the _Package Quantity_ Options.
 
     <img src="./images/04.png" width="700px" style="border: #000000 1px solid;">
 
 1. Click _Publish_.
 
-This product image has been updated with the respective Product Option. Repeat these steps for all other available product images. Alternately, you can associate the product image with the Product Option when uploading the image for the first time.
+This product image has been updated with the respective Product Option. Repeat these steps for all other available SKUs such as another package quantity. In this example, different images could used for the different package quantities. When searching for a product, you can see that all images have been included inside the Product Detail widget.
+
+<img src="./images/05.png" width="700px" style="border: #000000 1px solid;">
 
 ## Additional Information
 
