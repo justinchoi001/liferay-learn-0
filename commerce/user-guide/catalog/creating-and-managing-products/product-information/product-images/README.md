@@ -1,14 +1,15 @@
 # Product Images
 
-Adding a product image helps potential customers view the product looks like. Viewing a product's image ensures that customers know what they are buying and at the same increases the likelihood of a sale. Store administrators can upload multiple images for all product variants (different SKUs).
+Product Images ensure that customers know what they are buying and increases the likelihood of a sale. Store administrators can upload multiple images for each product variant (different SKUs).
 
 This article documents how to add images to a product.
 
-Roadmap:
-1. Adding a single product image
-1. Adding multiple product images. 
+## Roadmap
 
-## Adding a single product image
+1. Adding a single product image.
+1. Adding multiple product images.
+
+## Adding a Single Product Image
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product (in this example, _Microfiber Cloth_).
@@ -22,22 +23,22 @@ Roadmap:
 
 1. Click _Publish_.
 
-The new product image has been added to the product. Note that under _Options_, the message "_There are no options set as the SKU contributor._" appears. This means this particular product does not have multiple SKUs and thus this image is the only one associated with this product. See the section below on how to associate multiple product images to other product variants. 
+The new product image has been added to the product. Note that under _Options_, the message "_There are no options set as the SKU contributor._" appears. This means this particular product does not have additional associated SKUs and the image is the only one associated with the product. See the section below on how to associate multiple product images to product variants.
 
-To view the image in the catalog, go to the store site and then search for the product (_Microfiber Cloth_). 
-    <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
+To view the image in the catalog, go to the store site and then search for the product (_Microfiber Cloth_).
 
+<img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
 
-## Adding multiple product images
+## Adding Multiple Product Images
 
-As noted above, multiple product images can be associated with the same product. 
+As noted above, multiple product images can be associated with the same product.
 
-### Prerequisite
+### Prerequisites
 
 1. Product Options have been created for this product.
-1. Multiple SKUs have been generated for this product.
+2. Multiple SKUs have been generated for this product.
 
-### Associating a product image with a SKU
+### Associating a Product Image With a SKU
 
 In this example, we can update an existing product image's settings so that this image is associated with this product SKU. 
 
@@ -58,4 +59,3 @@ This product image has been updated with the respective Product Option. Repeat t
 **Note 1**: that this is not the same as the __Default Catalog Image__. The __Default Catalog Image__ is the image displayed if a product does not have its own product image.
 
    <img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
-
