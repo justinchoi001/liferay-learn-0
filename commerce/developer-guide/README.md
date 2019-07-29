@@ -20,7 +20,7 @@ Welcome to the Liferay Commerce Developer Guide.
 ### Managing Inventory
 
 * [Using a Custom Inventory Engine (TODO)](./tutorial/using-a-custom-inventory-engine/README.md)
-* [Implementing a Custom Low Stock Activity (TODO)](./tutorial/implementing-a-custom-low-stock-activity/README.md)
+* [Implementing a Custom Low Stock Activity](./tutorial/implementing-a-custom-low-stock-activity/README.md)
 * [Customizing Warehouse Sourcing Logic for Order Shipments (TODO)](./tutorial/customizing-warehouse-sourcing-logic-for-order-shipments/README.md)
 
 ### Marketing
