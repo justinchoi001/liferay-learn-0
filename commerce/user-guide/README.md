@@ -45,6 +45,7 @@
 
 ### Creating and Managing Products
 
+* [Channels](./catalog/creating-and-managing-products/channels/README.md)
 * Product Types
 * Product Information
 * [Product Specifications](./catalog/creating-and-managing-products/product-information/specifications/README.md)
