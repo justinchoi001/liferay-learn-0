@@ -54,7 +54,7 @@ In this section, we will get an example low stock activity up and running on you
 
 1. Verify that the example new low stock activity was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, for any product, click _Edit_ within its menu. If necessary, you can add a product to do this with (see [Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products) for help).
 
-   From there, navigate to _Configuration_. On this screen, under the _Low Stock Action_ dropdown, the new activity ("Add a warning message") will be present.
+   From there, navigate to _Configuration_. On this screen, under the _Low Stock Action_ dropdown, the new activity ("Log a warning message") will be present.
 
 ![New low stock activity](./images/02.png "New low stock activity")
 
@@ -80,7 +80,7 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
     public static final String KEY = "example";
 ```
 
-> It is important to provide a distinct key for your payment method so that Liferay Commerce can distinguish your new low stock activity from others in the [low stock activity registry](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivityRegistry.java). Reusing a key that is already in use will override the existing associated activity.
+> It is important to provide a distinct key for your low stock activity so that Liferay Commerce can distinguish your new activity from others in the [low stock activity registry](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivityRegistry.java). Reusing a key that is already in use will override the existing associated activity.
 
 ### Implement the `CommerceLowStockActivity` Interface
 
