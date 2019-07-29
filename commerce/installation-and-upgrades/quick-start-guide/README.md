@@ -9,13 +9,13 @@ Follow these steps to download the latest release of Liferay Commerce and get st
     >_Don't have Docker_? Go here first: [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/) | [Windows](https://docs.docker.com/docker-for-windows/install/) | [OSX](https://docs.docker.com/docker-for-mac/install/)
 
     ```bash
-    docker pull liferay/commerce:2.0.1
+    docker pull liferay/commerce:2.0.2
     ```
 
 1. Start Liferay Commerce
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.1
+    docker run -it -p 8080:8080 liferay/commerce:2.0.2
     ```
 
     > Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds`

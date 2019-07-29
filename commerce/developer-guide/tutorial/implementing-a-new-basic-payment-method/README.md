@@ -19,7 +19,7 @@ In this section, we will get an example payment method up and running on your in
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.1
+    docker run -it -p 8080:8080 liferay/commerce:2.0.2
     ```
 
 1. Download and unzip the [Acme Commerce Payment Method]() to your project directory.

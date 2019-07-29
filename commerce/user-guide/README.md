@@ -3,7 +3,7 @@
 ## Getting Started
 
 * Introduction to Liferay Commerce
-* What's New in Liferay Commerce 2.0.1
+* What's New in Liferay Commerce 2.0.2
 
 ### Basic Configuration
 
