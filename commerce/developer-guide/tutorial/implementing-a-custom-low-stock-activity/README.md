@@ -56,7 +56,7 @@ In this section, we will get an example low stock activity up and running on you
    
    From there, navigate to _Configuration_. On this screen, under the _Low Stock Action_ dropdown, the new activity ("Add a warning message") will be present.
 
-(Deployed Sample Image Placeholder)
+![New low stock activity](./images/02.png "New low stock activity")
 
 Next, let's dive deeper to learn more.
 
