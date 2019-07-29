@@ -6,14 +6,17 @@ import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.language.LanguageUtil;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
-import org.osgi.service.component.annotations.Component;
+import com.liferay.portal.kernel.util.ResourceBundleUtil;
 
 import java.util.Locale;
+import java.util.ResourceBundle;
+
+import org.osgi.service.component.annotations.Component;
 
 @Component(
 	immediate = true,
 	property = {
-		"commerce.low.stock.activity.key=" + ExampleLowStockActivity.KEY,
+		"commerce.low.stock.activity.key=" + J1E4CommerceLowStockActivity.KEY,
 		"commerce.low.stock.activity.priority:Integer=9"
 	},
 	service = CommerceLowStockActivity.class
@@ -36,7 +39,9 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
 
 	@Override
 	public String getLabel(Locale locale) {
-		return LanguageUtil.get(locale, "add-warning-message");
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+
+		return LanguageUtil.get(resourceBundle, "add-a-warning-message");
 	}
 
 	private static final Log _log = LogFactoryUtil.getLog(

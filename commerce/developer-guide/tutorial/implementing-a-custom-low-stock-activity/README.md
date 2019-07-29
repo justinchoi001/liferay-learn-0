@@ -22,20 +22,20 @@ In this section, we will get an example low stock activity up and running on you
     docker run -it -p 8080:8080 liferay/commerce:2.0.1
     ```
 
-1. Download and unzip the [Acme Commerce ...]() to your project directory.
+1. Download and unzip the [Acme Commerce Low Stock Activity]() to your project directory.
 
     ```bash
-    curl liferay-xxxx.zip
+    curl liferay-j1e4.zip
     ```
 
     ```bash
-    unzip liferay-xxxx.zip
+    unzip liferay-j1e4.zip
     ```
 
-1. Go to `xxxx-impl`.
+1. Go to `j1e4-impl`.
 
     ```bash
-    cd xxxx-impl
+    cd j1e4-impl
     ```
 
 1. Build and deploy the example.
@@ -49,7 +49,7 @@ In this section, we will get an example low stock activity up and running on you
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.xxxx.internal.commerce.foo.method_1.0.0
+    STARTED com.acme.j1e4.internal.commerce.stock.activity_1.0.0
     ```
 
 1. Verify that the example new low stock activity was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, for any product, click _Edit_ within its menu. If necessary, you can add a product to do this with (see [Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products) for help).
@@ -70,12 +70,12 @@ In this section, we will take a more in-depth review of the example we deployed.
 @Component(
     immediate = true,
     property = {
-        "commerce.low.stock.activity.key=" + ExampleLowStockActivity.KEY,
+        "commerce.low.stock.activity.key=" + J1E4CommerceLowStockActivity.KEY,
         "commerce.low.stock.activity.priority:Integer=9"
     },
     service = CommerceLowStockActivity.class
 )
-public class ExampleLowStockActivity implements CommerceLowStockActivity {
+public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
     
     public static final String KEY = "example";
 ```
@@ -99,7 +99,7 @@ public String getKey();
 public String getLabel(Locale locale);
 ```
 
-To better understand each of the required methods mentioned above, let's look at [example class]. We will review the implementation of each required method in sequence.
+To better understand each of the required methods mentioned above, let's look at [J1E4CommerceLowStockActivity.java](./liferay-j1e4.zip/j1e4-impl/src/main/java/com/acme/j1e4/internal/commerce/stock/activity/J1E4CommerceLowStockActivity.java). We will review the implementation of each required method in sequence.
 
 1. `public void execute(CPInstance cpInstance) throws PortalException;`
 
@@ -126,13 +126,17 @@ To better understand each of the required methods mentioned above, let's look at
 1. `public String getLabel(Locale locale);`
 
     ```java
-    @Overridea
+    @Override
     public String getLabel(Locale locale) {
-        return LanguageUtil.get(locale, "add-a-warning-message");
+        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+
+        return LanguageUtil.get(resourceBundle, "add-a-warning-message");
     }
     ```
     
-    > This returns a text label used to describe the low stock activity. Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
+    > This returns a text label used to describe the low stock activity. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales.
+    >
+    > Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
 ### Create Your Low Stock Activity
 
@@ -159,8 +163,9 @@ add-a-warning-message=Add a Warning Message
 
 ## Conclusion
 
-Congratulations! You now know the basics for implementing the `CommerceLowStockActivity` interface and have added a low stock activity to Liferay Commerce.
+Congratulations! You now know the basics for implementing the `CommerceLowStockActivity` interface and have added a new low stock activity to Liferay Commerce.
 
 ## Additional Information
 [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+
 [Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products)
