@@ -50,9 +50,11 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 
 	@Override
 	public String getDescription(Locale locale) {
-		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "b1c3-commerce-payment-method-description");
+		return LanguageUtil.get(
+			resourceBundle, "b1c3-commerce-payment-method-description");
 	}
 
 	@Override
@@ -62,9 +64,11 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 
 	@Override
 	public String getName(Locale locale) {
-		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "b1c3-commerce-payment-method-name");
+		return LanguageUtil.get(
+			resourceBundle, "b1c3-commerce-payment-method-name");
 	}
 
 	@Override
@@ -96,11 +100,6 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 			null, commercePaymentRequest.getCommerceOrderId(),
 			CommerceOrderConstants.PAYMENT_STATUS_AUTHORIZED, false, null, null,
 			Collections.emptyList(), true);
-	}
-
-	private ResourceBundle _getResourceBundle(Locale locale) {
-		return ResourceBundleUtil.getBundle(
-			"content.Language", locale, getClass());
 	}
 
 }
