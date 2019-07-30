@@ -51,10 +51,10 @@ In this section, we will get an example order validator up and running on your i
     ```
 
 1. Verify that the example order validator was added by viewing the failure message. Open your browser to `https://localhost:8080` and navigate to a catalog with at least one item priced over $100. If one does not exist, you may need to add it yourself; see [Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products) for more information on this.
-    
+
     Once in the catalog, search for the item with this price, then click "Add to Cart". Increase the quantity to 11 or more, then click the arrow to continue. The error message that appears shows that the custom order validator successfully rejected adding the item.
 
-![New order validation error message](./images/01.png "New order validation error message")
+    ![New order validation error message](./images/01.png "New order validation error message")
 
 Next, let's dive deeper to learn more.
 
@@ -106,7 +106,7 @@ To better understand each of the required methods mentioned above, let's look at
         return KEY;
     }
     ```
-    
+
     > This method provides a unique identifier for the order validator in the registry. The key can be used to fetch the validator from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated validator.
 
 1. `public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity) throws PortalException;`
@@ -117,7 +117,7 @@ To better understand each of the required methods mentioned above, let's look at
             Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance,
             int quantity)
         throws PortalException {
-        
+
         if (cpInstance == null) {
             return new CommerceOrderValidatorResult(false);
         }
@@ -125,7 +125,7 @@ To better understand each of the required methods mentioned above, let's look at
         return new CommerceOrderValidatorResult(true);
     }
     ```
-    
+
     > This is one of the two validation methods where we will add our custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to determine whether or not the result passes validation; see this class at [CommerceOrderValidatorResult.java](https://github.com/liferay/com-liferay-commerce/blob/7.1.x/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java).
     >
     > Note that this dummy implementation only has a simple check for a null value, which is a standard first step for this method.
@@ -175,7 +175,7 @@ The two `validate()` methods are where we define the custom validation logic for
         return new CommerceOrderValidatorResult(true);
     }
     ```
-    
+
     > After a standard null check for this method, the main validation check for our example is to check if both the price (stored as a [BigDecimal](https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html)) is more than $100, and the quantity is greater than ten. We get the price information from the CPInstance, which contains information about the order the customer has added; to find more methods you can use with a `CPInstance`, see [CPInstance](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
     >
     > Note that, for our main validation checks, it is best practice to include a localized message explaining why the validation failed. For this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
@@ -205,7 +205,7 @@ The two `validate()` methods are where we define the custom validation logic for
         return new CommerceOrderValidatorResult(true);
     }
     ```
-    
+
     > We can add the same validation logic to this method, since it will be called for the items in the customer's cart. The main difference in this case is we get the information from a `CommerceOrderItem` object; to find more methods you can use with a `CommerceOrderItem`, see [CommerceOrderItem](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java).
 
 We will also need to add the language keys for our validator's error messages. Add the keys and their values to a Language.properties file within our module:
@@ -221,6 +221,5 @@ Congratulations! You now know the basics for implementing the `CommerceOrderVali
 
 ## Additional Information
 
-[Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-
-[Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products)
+* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products)
