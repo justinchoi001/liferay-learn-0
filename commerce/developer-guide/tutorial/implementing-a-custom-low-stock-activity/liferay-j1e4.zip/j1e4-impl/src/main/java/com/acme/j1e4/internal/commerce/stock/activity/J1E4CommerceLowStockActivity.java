@@ -39,11 +39,13 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
 
 	@Override
 	public String getLabel(Locale locale) {
-		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+			"content.Language", locale, getClass());
 
 		return LanguageUtil.get(resourceBundle, "log-a-warning-message");
 	}
 
 	private static final Log _log = LogFactoryUtil.getLog(
 		J1E4CommerceLowStockActivity.class);
+
 }

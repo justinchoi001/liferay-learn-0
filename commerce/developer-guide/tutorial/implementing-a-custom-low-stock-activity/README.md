@@ -127,7 +127,8 @@ To better understand each of the required methods mentioned above, let's look at
     ```java
     @Override
     public String getLabel(Locale locale) {
-        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle("content.Language", locale, getClass());
+        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+            "content.Language", locale, getClass());
 
         return LanguageUtil.get(resourceBundle, "add-a-warning-message");
     }
@@ -156,7 +157,7 @@ To implement the low stock activity itself, we only need to add our business log
 
 We will also need to add the language key for our activity's label. Add the key and its value to a `Language.properties` file within our module:
 
-```java
+```
 log-a-warning-message=Log a Warning Message
 ```
 
