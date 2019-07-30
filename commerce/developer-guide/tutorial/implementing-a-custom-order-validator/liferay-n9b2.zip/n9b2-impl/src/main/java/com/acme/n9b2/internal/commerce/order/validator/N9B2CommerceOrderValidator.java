@@ -9,12 +9,12 @@ import com.liferay.portal.kernel.exception.PortalException;
 import com.liferay.portal.kernel.language.LanguageUtil;
 import com.liferay.portal.kernel.util.ResourceBundleUtil;
 
-import org.osgi.service.component.annotations.Component;
-
 import java.math.BigDecimal;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
+
+import org.osgi.service.component.annotations.Component;
 
 @Component(
 	immediate = true,
@@ -45,12 +45,13 @@ public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
 
 		BigDecimal price = cpInstance.getPrice();
 
-		if (price.doubleValue() > 100.0 && (quantity > 10)) {
+		if ((price.doubleValue() > 100.0) && (quantity > 10)) {
 			ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
 				"content.Language", locale, getClass());
 
 			return new CommerceOrderValidatorResult(
-				false, LanguageUtil.get(
+				false,
+				LanguageUtil.get(
 					resourceBundle, "this-item-has-a-maximum-quantity-of-10"));
 		}
 
@@ -64,18 +65,20 @@ public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
 
 		BigDecimal price = commerceOrderItem.getUnitPrice();
 
-		if (price.doubleValue() > 100.0 &&
-			commerceOrderItem.getQuantity() > 10) {
+		if ((price.doubleValue() > 100.0) &&
+			(commerceOrderItem.getQuantity() > 10)) {
 
 			ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
 				"content.Language", locale, getClass());
 
 			return new CommerceOrderValidatorResult(
-				false, LanguageUtil.get(
+				false,
+				LanguageUtil.get(
 					resourceBundle,
 					"expensive-items-have-a-maximum-quantity-of-10"));
 		}
 
 		return new CommerceOrderValidatorResult(true);
 	}
+
 }

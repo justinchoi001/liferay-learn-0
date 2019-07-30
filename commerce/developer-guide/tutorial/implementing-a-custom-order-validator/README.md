@@ -109,7 +109,9 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This method provides a unique identifier for the order validator in the registry. The key can be used to fetch the validator from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated validator.
 
-1. `public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity) throws PortalException;`
+1. `public CommerceOrderValidatorResult validate(
+            Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity)
+        throws PortalException;`
 
     ```java
     @Override
@@ -163,12 +165,13 @@ The two `validate()` methods are where we define the custom validation logic for
 
         BigDecimal price = cpInstance.getPrice();
 
-        if (price.doubleValue() > 100.0 && (quantity > 10)) {
+        if ((price.doubleValue() > 100.0) && (quantity > 10)) {
             ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
                 "content.Language", locale, getClass());
 
             return new CommerceOrderValidatorResult(
-                false, LanguageUtil.get(
+                false,
+                LanguageUtil.get(
                     resourceBundle, "this-item-has-a-maximum-quantity-of-10"));
         }
 
@@ -190,14 +193,15 @@ The two `validate()` methods are where we define the custom validation logic for
 
         BigDecimal price = commerceOrderItem.getUnitPrice();
 
-        if (price.doubleValue() > 100.0 &&
-            commerceOrderItem.getQuantity() > 10) {
+        if ((price.doubleValue() > 100.0) &&
+            (commerceOrderItem.getQuantity() > 10)) {
 
             ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
                 "content.Language", locale, getClass());
 
             return new CommerceOrderValidatorResult(
-                false, LanguageUtil.get(
+                false,
+                LanguageUtil.get(
                     resourceBundle,
                     "expensive-items-have-a-maximum-quantity-of-10"));
         }
@@ -210,7 +214,7 @@ The two `validate()` methods are where we define the custom validation logic for
 
 We will also need to add the language keys for our validator's error messages. Add the keys and their values to a Language.properties file within our module:
 
-```java
+```
 expensive-items-have-a-maximum-quantity-of-10=Expensive items have a maximum quantity of 10.
 this-item-has-a-maximum-quantity-of-10=This item has a maximum quantity of 10.
 ```
