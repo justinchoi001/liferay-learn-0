@@ -1,6 +1,6 @@
 # Introduction to Channels
 
-Liferay Commerce provides tools to enable a variety of store models - from simple B2C stores using a single catalog making sales solely through a single site to complex multi-region, multi-market, and multi-medium scenarios. Liferay Commerce enables a wide array of use cases by leveraging the power of Channels.
+Liferay Commerce provides tools to enable a variety of store models - from simple B2C stores using a single catalog making sales solely through a single site to complex multi-region, multi-market, and multi-medium scenarios. One way that Commerce enables this wide array of use cases is through the Channels feature.
 
 <img src="./images/01.png" width="700px">
 
@@ -19,3 +19,5 @@ Channels are also the primary method by which store administrators may configure
 >Product level configurations to scope product visibility to specific Channels.
 
 ## Additional Information
+
+* [Configuring Product Visibility by Site Using Channels](./configuring-product-visibility-by-site-using-channels/README.md)
