@@ -1,0 +1,69 @@
+package com.acme.n9b2.internal.commerce.order.validator;
+
+import com.liferay.commerce.model.CommerceOrder;
+import com.liferay.commerce.model.CommerceOrderItem;
+import com.liferay.commerce.order.CommerceOrderValidator;
+import com.liferay.commerce.order.CommerceOrderValidatorResult;
+import com.liferay.commerce.product.model.CPInstance;
+import com.liferay.portal.kernel.exception.PortalException;
+
+import org.osgi.service.component.annotations.Component;
+
+import java.math.BigDecimal;
+
+import java.util.Locale;
+
+@Component(
+	immediate = true,
+	property = {
+		"commerce.order.validator.key=" + N9B2CommerceOrderValidator.KEY,
+		"commerce.order.validator.priority:Integer=9"
+	},
+	service = CommerceOrderValidator.class
+)
+public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
+
+	public static final String KEY = "example";
+
+	@Override
+	public String getKey() {
+		return KEY;
+	}
+
+	@Override
+	public CommerceOrderValidatorResult validate(
+			Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance,
+			int quantity)
+		throws PortalException {
+
+		if (cpInstance == null) {
+			return new CommerceOrderValidatorResult(false);
+		}
+
+		BigDecimal price = cpInstance.getPrice();
+
+		if (price.doubleValue() > 100.0 && (quantity > 10)) {
+			return new CommerceOrderValidatorResult(
+				false, "this-item-has-a-maximum-quantity-of-10");
+		}
+
+		return new CommerceOrderValidatorResult(true);
+	}
+
+	@Override
+	public CommerceOrderValidatorResult validate(
+			Locale locale, CommerceOrderItem commerceOrderItem)
+		throws PortalException {
+
+		BigDecimal price = commerceOrderItem.getUnitPrice();
+
+		if (price.doubleValue() > 100.0 &&
+			commerceOrderItem.getQuantity() > 10) {
+
+			return new CommerceOrderValidatorResult(
+				false, "expensive-items-have-a-maximum-quantity-of-10");
+		}
+
+		return new CommerceOrderValidatorResult(true);
+	}
+}
