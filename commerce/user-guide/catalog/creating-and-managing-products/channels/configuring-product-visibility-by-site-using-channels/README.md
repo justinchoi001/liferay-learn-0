@@ -10,11 +10,13 @@ To learn more about the using Channels in Liferay Commerce, see: [Introduction t
 
 ## Prerequisites
 
-1. More than one site created
-1. One channel created per site
-1. Products added to a catalog
+1. More than one site has been created.
+1. Each site has an associated channel.
+1. Products have been added to a catalog.
 
 ## Configuring Product Filter Channels
+
+To configure a product to be available in a specific channel, follow these steps:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click a product (_Torque Converters_ in this example).

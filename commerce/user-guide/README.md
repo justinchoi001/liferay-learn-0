@@ -45,15 +45,21 @@
 
 ### Creating and Managing Products
 
+#### Channels
+
 * [Introduction to Channels](./catalog/creating-and-managing-products/channels/introduction-to-channels/README.md)
+* [Managing Channels](./catalog/creating-and-managing-products/channels/managing-channels/README.md)
 * [Managing Product Visibility by Site Using Channels](./catalog/creating-and-managing-products/channels/configuring-product-visibility-by-site-using-channels/README.md)
+
+#### Products
+
 * Product Types
 * Product Information
 * [Product Specifications](./catalog/creating-and-managing-products/product-information/specifications/README.md)
 * Product Folders
 * [Adding SKUs to Your Products](./catalog/creating-and-managing-products/adding-skus-to-your-products/README.md)
-* [Creating a New Product Category](./catalog/creating-and-managing-products/categories/creating-a-new-product-category/README.md)
 * [Organizing Your Catalog With Product Categories](./catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md)
+* [Creating a New Product Category](./catalog/creating-and-managing-products/categories/creating-a-new-product-category/README.md)
 * [Customizing Your Product With Product Options](./catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md)
 * Subscriptions
 * Other Configurations
