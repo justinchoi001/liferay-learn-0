@@ -10,7 +10,7 @@ In a simple store example, all of a company's products are managed in one catalo
 
 >A simple commerce store example.
 
-In a more complex multi-channel scenario, a company may to offer and customize the availability and marketing of certain products in its catalog for each of its various channels.
+In a more complex multi-channel scenario, a company may choose to customize the availability and marketing of certain products in its catalog for each of its various channels.
 
 <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
 
