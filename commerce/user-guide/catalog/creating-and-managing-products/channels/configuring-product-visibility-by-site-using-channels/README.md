@@ -6,7 +6,7 @@ For the purpose of this example, we will consider a scenario of a multi-region b
 
 <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
-To learn more about the Channels concept and feature in Liferay Commerce, see the article: [Introduction to Channels](../README.md).
+To learn more about the using Channels in Liferay Commerce, see: [Introduction to Channels](../introduction-to-channels/README.md).
 
 ## Prerequisites
 
@@ -14,10 +14,10 @@ To learn more about the Channels concept and feature in Liferay Commerce, see th
 1. One channel created per site
 1. Products added to a catalog
 
-## Configuring Filter Channels
+## Configuring Product Filter Channels
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (_Torque Converters_ in this example).
+1. Click a product (_Torque Converters_ in this example).
 1. Click the _Configuration_ sub-tab.
 1. Click the _Channels_ sidebar option.
 1. Switch the _Enable filter channels_ toggle to _Yes_.
@@ -32,3 +32,4 @@ The product will be visible only in the selected Channels.
 ## Additional Information
 
 * [Introduction to Channels](../introduction-to-channels/README.md)
+* [Managing Channels](../managing-channels/README.md)

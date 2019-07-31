@@ -45,7 +45,8 @@
 
 ### Creating and Managing Products
 
-* [Channels](./catalog/creating-and-managing-products/channels/README.md)
+* [Introduction to Channels](./catalog/creating-and-managing-products/channels/introduction-to-channels/README.md)
+* [Managing Product Visibility by Site Using Channels](./catalog/creating-and-managing-products/channels/configuring-product-visibility-by-site-using-channels/README.md)
 * Product Types
 * Product Information
 * [Product Specifications](./catalog/creating-and-managing-products/product-information/specifications/README.md)
