@@ -1,6 +1,6 @@
 # Product Images
 
-Using Product Images helps to ensure that customers know what they are buying and increases the likelihood of a sale. Store administrators can upload images for each product variant (different SKUs).
+Using product images helps to ensure that customers know what they are buying and increases the likelihood of a sale. Store administrators can upload images for each product variant (different SKUs).
 
 This article documents how to add images to a product.
 
@@ -14,8 +14,8 @@ This article documents how to add images to a product.
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product (in this example, _Microfiber Cloth_).
 1. Click the _Images_ sub-tab.
-1. Click the (+) button to add a Product Image.
-1. Drag and Drop or click _Select File_ to insert an image.
+1. Click the (+) button to add a product image.
+1. Drag and drop or click _Select File_ to insert an image.
 1. Enter a title: _Microfiber Cloth_.
 1. Set a priority: _1.0_.
 
@@ -44,7 +44,7 @@ Once you have created Product Options and generated the corresponding SKUs, you 
 2. Click on a product (in this example, _Hoses_). (If you had used Minium to create your store and sample data, this product was added by the Minium accelerator).
 3. Click the _Images_ sub-tab.
 4. Click the (+) button to add a Product Image.
-5. Drag and Drop or click _Select File_ to insert an image.
+5. Drag and drop or click _Select File_ to insert an image.
 6. Click on the existing image.
 7. Select _6_ under the _Package Quantity_ Options.
 
