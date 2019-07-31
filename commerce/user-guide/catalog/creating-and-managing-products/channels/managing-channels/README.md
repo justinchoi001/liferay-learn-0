@@ -16,7 +16,7 @@ To add a new Channel, follow these steps:
 
     <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
-The channel is created and associated with the selected site. Products may now be configured to be filtered by this new channel. See [Configuring Product Visibility by Site Using Channels](../configuring-product-visibility-by-site-using-channels/README.md) for more information on configuring product visibility using channels.
+The channel is created and associated with the selected site. Products may now be configured to be filtered by this new channel. See [Configuring Product Visibility by Site Using Channels](../configuring-product-visibility-by-site-using-channels/README.md) for more information.
 
 ## Additional Information
 
