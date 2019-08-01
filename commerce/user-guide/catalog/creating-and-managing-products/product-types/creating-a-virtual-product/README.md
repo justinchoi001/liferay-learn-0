@@ -4,7 +4,17 @@ A virtual product is any non-physical product. For example, the product is downl
 
 Note that when creating a Virtual Product in Liferay Commerce, there is an extra tab (_Virtual_) in its product tab bar which contains necessary configurations.
 
-To create a Virtual Product:
+## Roadmap
+
+* Create a Virtual Product
+* Associate Digital Assets
+* Apply Product Options
+* Set Prices and Quantities
+* Upload Product Images and Attachments
+* Organize with Categories
+* Associate with Related Products
+
+### Create a Virtual Product:
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click the (+) button then _Virtual_.
@@ -19,7 +29,11 @@ To create a Virtual Product:
     * **Meta Keywords**: warranty, goods, year
 1. Click _Publish_.
 
-Once this virtual product has been created initially, there are additional required configurations. Click the _Virtual_ sub-tab to continue.
+Once this virtual product has been created initially, store administators need to associate the digital asset and legal rights with the product. 
+
+### Associate Digital Assets
+
+1. Click the _Virtual_ sub-tab to continue.
 
    <img src="./images/01.png" width="700px" style="border: #000000 1px; solid;">
 
@@ -35,22 +49,53 @@ Once this virtual product has been created initially, there are additional requi
 
 1. Click _Save_.
 
-See the table below for more a detailed explanation of each field.
+For more information about each field, see the [Virtual Product Reference](../virtual-product-reference/README.md) article.
 
-## Virtual Product Reference
+### Apply Product Options
 
-|Field | Description |
-| --- | --- |
-| URL | Insert the URL where the file is located. |
-| Select File | Alternatively, upload the file that will be stored in the Liferay Commerce repository. |
-| Activation Status | Status of the order |
-| Duration | The number of days during which customers keep access to the file. Leave 0 for unlimited downloads. Please note: if product is subscription enabled, the subscription cycles duration will override it. |
-| Max Number of Downloads | Number of times a file can be downloaded. Leave 0 for unlimited downloads. |
-| Enable Sample | Checkbox to activate or deactivate the availability of a sample. |
-| Sample File URL | If _Enable Sample_ is active, this is the location of the Sample. |
-| Enable Terms of Use | Toggle to enable whether user must agree to Terms of Use; if enabled, either enter the terms of use directly in the text field or link to an existing Web Content article. |
+You can apply [Product Options](../../customizing-your-product-with-product-options/README.md) templates to the virtual product. For example, an e-book might have alternate front covers depending on different markets.
 
-Lastly, follow the rest of the steps found in [Creating a Simple Product](../creating-a-simple-product/README.md), such as adding SKUs and setting a base price. These are required when adding a Virtual Product to the catalog.
+Click the _Options_ sub-tab to continue.
+
+### Set Price and Quantities
+
+Usually, virtual products such as a music or video file, electronic publications, warranties, or service contracts are unique and thus might not have multiple product variations (multiple SKUs). Virtual products can still be sold in a batch liked a Grouped Product. 
+
+To set product prices and quantities:
+
+1. Click the _3-dot_ icon then _Edit_ next to _default_. (At this point, you can rename the SKU to something more descriptive like _3 Year Warranty_ on the _Details_ menu.)
+1. Click _Pricing_ on the left menu.
+1. Enter the following:
+    * **Price**: 12.00
+    * **Promo Price**:
+    * **Cost**: 
+1. Click _Save_. (If Promo Price and Cost fields are left as 00, no discounts or promotions are applied at this point.)
+1. Click _Price List_ to apply this product to any existing [Price Lists](../../../managing-price/price-lists/adding-products-to-a-price-list/README.md).
+
+The _Inventory_ menu is where store administrators manage the number of products available for sale in each warehouse. (If you had used the Minium Accelerator to create the store with sample data, there are three warehouses already created.)  
+
+1. Click _Inventory_ on the left menu.
+1. Enter a quantity for the corresponding warehouses.
+1. Click _Save_.
+1. Repeat these steps for the all the other product variants (SKUs) associated with this product.
+
+### Add Product Specifications
+
+[Product specifications](../../product-information/specifications/README.md) contain useful pieces of product information about the product, such as dimensions, color, weight, capacity, or almost any other attribute. Click the _Specifications_ sub-tab to add specifications.
+
+### Upload Product Images and Attachments
+
+[Product images](../../product-information/product-images/README.md) help to ensure that customers know what they are buying. Each product variant (SKU) can have their own associated product image. Click the _Images_ sub-tab to add all product images.
+
+Store administrators can also add attachments that are associated with a particular product. Click the _Attachments_ sub-tab to add documents.   
+
+### Organize with Categories
+
+[Product Categories](../../categories/creating-a-new-product-category/README.md) are a great way to organize your products. Product categories could be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group. 
+
+### Associate with Related Products
+
+[Product Relations](../../product-information/product-relations/README.md) can be used to connect products. Once connected, a product displays the links to other products. Every related product must be assigned to a Product Relation Type.
 
 
 ## Additional Information
@@ -58,3 +103,4 @@ Lastly, follow the rest of the steps found in [Creating a Simple Product](../cre
 * [Introduction to Product Types](../introduction-to-product-types/README.md)
 * [Creating a Grouped Product](../creating-a-grouped-product/README.md)
 * [Creating a Simple Product](../creating-a-simple-product/README.md)
+* [Virtual Product Reference](../virtual-product-reference/README.md)

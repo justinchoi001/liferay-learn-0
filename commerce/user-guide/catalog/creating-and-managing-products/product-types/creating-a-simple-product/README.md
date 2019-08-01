@@ -1,15 +1,15 @@
 # Creating a Simple Product
 
-A Simple Product is any physical product for which inventory is tracked. This article is a full walk through on how to add a product to your store catalog. The walkthrough includes instructions on basic product settings (name and description), applying product options and generating SKUs, and other important considerations such as product image, specifications, and categorizations.
+A Simple Product is any physical product for which inventory is tracked. This article is a full walk through on how to add a product to your store catalog. The walkthrough includes comprehensive instructions on basic product settings (name and description), applying product options and generating SKUs, and other important considerations such as product image, specifications, and categorizations.
 
 ## Roadmap
 
 * Create a Simple Product
-* Set Product Options
+* Apply Product Options
 * Generate SKUs
-* Set Price and Quantity
+* Set Prices and Quantities in the Inventory
 * Configure Product Specifications
-* Upload Product Images
+* Upload Product Images and Attachments
 * Organize with Categories
 * Associate with Related Products
 
@@ -31,19 +31,23 @@ A Simple Product is any physical product for which inventory is tracked. This ar
 
 1. Click _Publish_.
 
-Once the product has been added, follow the next series of steps to finish configuring the product.
+The initial entity has been created and additional vital information need to be added. Follow the next series of steps to finish configuring the product.
 
-### Applying Product Options
+### Apply Product Options
 
-[Product Options](../../customizing-your-product-with-product-options/README.md) provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color. Click the _Options_ sub-tab to continue.
+[Product Options](../../customizing-your-product-with-product-options/README.md) provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color. Click the _Options_ sub-tab to add various options to the product.
 
-### SKUs and Setting Prices and Quantities
+### Generate SKUs 
 
-Once you have applied product options to the product, SKUs have to be generated. For more information about how to generate SKUs, see the article [Adding SKUs to Your Products](../../adding-skus-to-your-products/README.md). After the SKUs have been generated, set the base price and quantities for each item.
+Once you have applied product options to the product, SKUs have to be generated. For more information about how to generate SKUs, see the article [Adding SKUs to Your Products](../../adding-skus-to-your-products/README.md). Click the _SKUs_ sub-tab to generate the SKUs.
 
-In this example, one product is a package of 6 water bottles (SKU is called 6). 
+### Set Prices and Quantities in the Inventory
+
+After the SKUs have been generated, set the base price and quantities in the inventory for each item. Depending on how many SKUs were generated based on the various product options, each SKU can have its own prices. Some products are sold in bulk quantities while others are sold individually. 
 
    <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
+
+To set product prices and quantities:
 
 1. Click the _3-dot_ icon then _Edit_ next to _6_. (At this point, you can rename the SKU to something more descriptive like _6 Pack_ on the _Details_ menu.)
 1. Click _Pricing_ on the left menu.
@@ -53,18 +57,34 @@ In this example, one product is a package of 6 water bottles (SKU is called 6).
     * **Cost**: 
 1. Click _Save_. (If Promo Price and Cost fields are left as 00, no discounts or promotions are applied at this point.)
 1. Click _Price List_ to apply this product to any existing [Price Lists](../../../managing-price/price-lists/adding-products-to-a-price-list/README.md).
+
+The _Inventory_ menu is where store administrators manage the number of products available for sale in each warehouse. (If you had used the Minium Accelerator to create the store with sample data, there are three warehouses already created.)  
+
 1. Click _Inventory_ on the left menu.
 1. Enter a quantity for the corresponding warehouses.
 
     <img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
 
-1. Repeat these steps for the all the other product variants (SKUs) associated with this product.    
+1. Click _Save_.
+1. Repeat these steps for the all the other product variants (SKUs) associated with this product.
 
-These are the required mininum steps to create a basic product to be made available and sold in the catalog. 
+### Configure Product Specifications
 
-## Final Configurations
+[Product specifications](../../product-information/specifications/README.md) contain useful pieces of product information about the product, such as dimensions, color, weight, capacity, or almost any other attribute. Click the _Specifications_ sub-tab to add specifications.
 
-Lastly, add any [product specifications](../../product-information/specifications/README.md), [product images](../../product-information/product-images/README.md), attachments, [tags and categories](../../categories/creating-a-new-product-category/README.md), and create any [product relations](../../product-information/product-relations/README.md). These pieces of information are helpful in describing the product. These pieces of information are also applicable when creating the other product types (grouped and virtual).
+### Upload Product Images and Attachments
+
+[Product images](../../product-information/product-images/README.md) help to ensure that customers know what they are buying. Each product variant (SKU) can have their own associated product image. Click the _Images_ sub-tab to add all product images.
+
+Store administrators can also add attachments that are associated with a particular product. Click the _Attachments_ sub-tab to add documents.   
+
+### Organize with Categories
+
+[Product Categories](../../categories/creating-a-new-product-category/README.md) are a great way to organize your products. Product categories could be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group. 
+
+### Associate with Related Products
+
+[Product Relations](../../product-information/product-relations/README.md) can be used to connect products. Once connected, a product displays the links to other products. Every related product must be assigned to a Product Relation Type.
 
 ## Additional Information
 
