@@ -33,8 +33,6 @@ A Simple Product is any physical product for which inventory is tracked. This ar
 
 Once the product has been added, follow the next series of steps to finish configuring the product.
 
-## Additional Required Configurations
-
 ### Applying Product Options
 
 [Product Options](../../customizing-your-product-with-product-options/README.md) provide an easy and flexible way to offer products that have a variety of options such as size, quantity, and color. Click the _Options_ sub-tab to continue.
