@@ -112,7 +112,7 @@ To better understand each of the required methods mentioned above, let's look at
         return null;
     }
     ```
-    
+
     > This method will be where the business logic is implemented for our tax engine.
 
 1. `public String getDescription(Locale locale);`
@@ -126,7 +126,7 @@ To better understand each of the required methods mentioned above, let's look at
         return LanguageUtil.get(resourceBundle, "a-flat-tax-rate-that-does-not-adjust");
     }
     ```
-    
+
     > This returns a text description for the tax engine. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales.
     >
     > Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
@@ -142,8 +142,8 @@ To better understand each of the required methods mentioned above, let's look at
         return LanguageUtil.get(resourceBundle, "flat-tax");
     }
     ```
-    
-    > This returns the name of the tax engine, as a short String. It should work similarly to the `getDescription()` method.
+
+    > This returns the name of the tax engine, as a short String. It works similarly to the `getDescription()` method.
 
 ### Create Your Tax Calculation
 
@@ -179,5 +179,4 @@ Congratulations! You now know the basics for implementing the `CommerceTaxEngine
 ## Additional Information
 
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-
-* [Taxes](https://commerce.liferay.dev/web/commerce/documentation/-/knowledge_base/1-0/taxes)
+* [Taxes](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/taxes)
