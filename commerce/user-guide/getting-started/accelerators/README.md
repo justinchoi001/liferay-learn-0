@@ -4,7 +4,7 @@ Liferay Commerce Accelerators make building stores and learning about Liferay Co
 
 Stores in Liferay Commerce are comprised of an interrelated hierarchy of components: Sites, Catalogs, Channels, Products, Pages, and Widgets—all of which may be configured as needed. An Accelerator is a type of Site Template that establishes this base hierarchy of store components and adds a theme, sample configurations, and sample data to create a functional store.
 
-Liferay Commerce ships with Minium and Speedwell, B2B and B2C Accelerators respectively.
+Liferay Commerce ships with Minium, a B2B site accelerator.
 
 To use an Accelerator:
 
@@ -25,4 +25,3 @@ Your accelerated site has been created.
 To learn more about specific Accelerators see the following articles:
 
 * [Using the Minium Accelerator to Jump Start Your B2B Store](./using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md)
-* Using the Speedwell Accelerator to Jump Start Your B2C Store
