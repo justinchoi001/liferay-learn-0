@@ -55,3 +55,4 @@ Minium applies a number of other site configurations that are not set out of the
 | [Measurement Units](../../../sales/shipping/measurement-units/README.md) - Weight | ounces, pounds, kilograms, grams |
 | [Account Roles](../../../customers/account-management/account-roles/README.md) | Buyer, Account Manager, Sales Agent
 | Availability Estimates | 3-5 days, 5-7 days, 7-14 days |
+| [Product Relation Type](../../../catalog/creating-and-managing-products/product-information/related-products-up-sells-and-cross-sells/README.md) | Up-sell, Spare, Related, Accessories, Cross-sell  |

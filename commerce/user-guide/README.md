@@ -54,7 +54,7 @@
 #### Products
 
 * Product Types
-* Product Information
+* Product Images
 * [Product Specifications](./catalog/creating-and-managing-products/product-information/specifications/README.md)
 * Product Folders
 * [Adding SKUs to Your Products](./catalog/creating-and-managing-products/adding-skus-to-your-products/README.md)
@@ -62,6 +62,7 @@
 * [Creating a New Product Category](./catalog/creating-and-managing-products/categories/creating-a-new-product-category/README.md)
 * [Customizing Your Product With Product Options](./catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md)
 * Subscriptions
+* [Related Products, Up-sells, and Cross-sells](./catalog/creating-and-managing-products/product-information/related-products-up-sells-and-cross-sells/README.md)
 * Other Configurations
 
 ### Managing Inventory
@@ -81,7 +82,6 @@
 
 #### Other Settings
 
-* Related Products, Up-sells, and Cross-sells
 * Catalog Visibility
 * Creating and Applying Catalog Rules
 
