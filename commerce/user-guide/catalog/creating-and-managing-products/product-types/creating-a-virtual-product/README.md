@@ -6,7 +6,7 @@ Note that when creating a Virtual Product in Liferay Commerce, there is an extra
 
 To create a Virtual Product:
 
-1. Navigate to _Control Panel_ → _Commerce_ → _Products_. 
+1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click the (+) button then _Virtual_.
 1. Enter the following:
     * **Catalog**: Sahara.com
