@@ -53,8 +53,12 @@
 
 #### Products
 
-* Product Types
-* Product Images
+* [Introduction to Product Types](./catalog/creating-and-managing-products/product-types/introduction-to-product-types/README.md)
+* [Creating a Simple Product](./catalog/creating-and-managing-products/product-types/creating-a-simple-product/README.md)
+* [Creating a Grouped Product](./catalog/creating-and-managing-products/product-types/creating-a-grouped-product/README.md)
+* [Creating a Virtual Product](./catalog/creating-and-managing-products/product-types/creating-a-virtual-product/README.md)
+* [Virtual Product Reference](./catalog/creating-and-managing-products/product-types/virtual-product-reference/README.md)
+* [Product Images](./catalog/creating-and-managing-products/product-information/product-images/README.md)
 * [Product Specifications](./catalog/creating-and-managing-products/product-information/specifications/README.md)
 * Product Folders
 * [Adding SKUs to Your Products](./catalog/creating-and-managing-products/adding-skus-to-your-products/README.md)
@@ -122,7 +126,7 @@
 
 ### Pages
 
-* Widget Reference Guide
+* [Widget Reference Guide](./content/pages/widget-reference/README.md)
 
 #### Commerce Core Pages
 
