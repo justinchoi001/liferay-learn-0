@@ -74,7 +74,7 @@ In this section, we will take a more in-depth review of the example we deployed.
 )
 public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 
-	public static final String KEY = "b1c3-commerce-payment-method";
+	public static final String KEY = "Example";
 ```
 
 >It is important to provide a distinct key for your payment method so that Liferay Commerce can distinguish your new payment method from others in the [payment method registry](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethodRegistry.java). Reusing a key that is already in use will override the existing associated method.

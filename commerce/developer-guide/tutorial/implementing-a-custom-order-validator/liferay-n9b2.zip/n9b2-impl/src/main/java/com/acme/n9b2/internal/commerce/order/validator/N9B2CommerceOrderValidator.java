@@ -26,7 +26,7 @@ import org.osgi.service.component.annotations.Component;
 )
 public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
 
-	public static final String KEY = "example";
+	public static final String KEY = "Example";
 
 	@Override
 	public String getKey() {

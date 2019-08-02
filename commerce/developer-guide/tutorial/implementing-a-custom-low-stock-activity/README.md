@@ -77,7 +77,7 @@ In this section, we will take a more in-depth review of the example we deployed.
 )
 public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
 
-    public static final String KEY = "example";
+    public static final String KEY = "Example";
 ```
 
 > It is important to provide a distinct key for your low stock activity so that Liferay Commerce can distinguish your new activity from others in the [low stock activity registry](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivityRegistry.java). Reusing a key that is already in use will override the existing associated activity.

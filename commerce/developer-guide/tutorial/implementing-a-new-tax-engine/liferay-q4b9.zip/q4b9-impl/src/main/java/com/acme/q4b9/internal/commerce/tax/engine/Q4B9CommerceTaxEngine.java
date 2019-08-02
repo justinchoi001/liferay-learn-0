@@ -21,7 +21,7 @@ import org.osgi.service.component.annotations.Component;
 )
 public class Q4B9CommerceTaxEngine implements CommerceTaxEngine {
 
-	public static final String KEY = "example";
+	public static final String KEY = "Example";
 
 	@Override
 	public CommerceTaxValue getCommerceTaxValue(

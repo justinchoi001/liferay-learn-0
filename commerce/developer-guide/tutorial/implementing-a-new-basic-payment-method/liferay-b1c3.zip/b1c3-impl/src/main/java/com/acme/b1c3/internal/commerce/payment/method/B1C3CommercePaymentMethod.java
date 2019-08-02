@@ -35,7 +35,7 @@ import org.osgi.service.component.annotations.Component;
 )
 public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 
-	public static final String KEY = "b1c3-commerce-payment-method";
+	public static final String KEY = "Example";
 
 	@Override
 	public CommercePaymentResult completePayment(

@@ -23,7 +23,7 @@ import org.osgi.service.component.annotations.Component;
 )
 public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
 
-	public static final String KEY = "example";
+	public static final String KEY = "Example";
 
 	@Override
 	public void execute(CPInstance cpInstance) throws PortalException {

@@ -75,7 +75,7 @@ In this section, we will take a more in-depth review of the example we deployed.
 )
 public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
 
-    public static final String KEY = "example";
+    public static final String KEY = "Example";
 ```
 
 > It is important to provide a distinct key for your order validator so that Liferay Commerce can distinguish your new order validator from others in the [order validator registry](https://github.com/liferay/com-liferay-commerce/blob/7.1.x/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use will override the existing associated validator.

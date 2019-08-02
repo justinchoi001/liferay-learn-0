@@ -74,7 +74,7 @@ In this section, we will take a more in-depth review of the example we deployed.
 )
 public class Q4B9CommerceTaxEngine implements CommerceTaxEngine {
 
-    public static final String KEY = "example";
+    public static final String KEY = "Example";
 ```
 
 > It is important to provide a distinct key for your tax engine so that Liferay Commerce can distinguish your new engine from others in the [tax engine registry](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated tax engine.
