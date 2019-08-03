@@ -86,7 +86,6 @@
 #### Other Settings
 
 * Catalog Visibility
-* Creating and Applying Catalog Rules
 
 ## Marketing
 
@@ -141,7 +140,7 @@
 * Search Page
 * BOM / Spare Parts Finder
 
-#### Using Liferay Site Builder
+#### Using Liferay Modern Site Building
 
 * Using Page Fragments
 * Widget Templates
@@ -188,18 +187,12 @@
 * Processing an Order
 * Order Status
 * Subscription Management
-* Quotes
 
 #### Managing Shipments
 
 * Shipment Workflow
 * Creating a Shipment
 * Cancelling a Shipment
-
-#### Invoices
-
-* Creating an Invoice
-* Printing Multiple Invoices
 
 ## Operations
 
@@ -208,14 +201,3 @@
 * [Creating Tax Categories](./operations/taxes/creating-tax-categories/README.md)
 * [Setting Tax Rate by Address](./operations/taxes/setting-tax-rate-by-address/README.md)
 * [Setting Tax Rate by Fixed Rate](./operations/taxes/setting-tax-rate-by-fixed-rate/README.md)
-
-### Import
-
-* Import History
-* Product Images
-* Import Guidelines
-
-### Export
-
-* Exporting Data
-* Export Criteria
