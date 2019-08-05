@@ -171,7 +171,7 @@ public void render(
 
 For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name for our bundle, like the following:
 
-```
+```java
 @Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.internal.commerce.checkout.step)")
 private ServletContext _servletContext;
 ```

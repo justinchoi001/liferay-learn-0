@@ -7,5 +7,5 @@
 </div>
 
 <div class="journal-article-preview p-3">
-	<%= "(Dummy list of terms...)" %>
+	<%= "(Placeholder Terms and Conditions)" %>
 </div>

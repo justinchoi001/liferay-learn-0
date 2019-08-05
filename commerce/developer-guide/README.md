@@ -36,7 +36,7 @@ Welcome to the Liferay Commerce Developer Guide.
 ### Sales
 
 * [Implementing a Custom Order Validator](./tutorial/implementing-a-custom-order-validator/README.md)
-* [Implementing a Custom Checkout Step (TODO)](./tutorial/implementing-a-custom-checkout-step/README.md)
+* [Implementing a Custom Checkout Step](./tutorial/implementing-a-custom-checkout-step/README.md)
 * [Implementing a New Payment Engine (TODO)](./tutorial/implementing-a-new-payment-engine/README.md)
 * [Implementing a Tax Engine](./tutorial/implementing-a-new-tax-engine/README.md)
 * [Implementing a Shipping Engine (TODO)](./tutorial/implementing-a-new-shipping-engine/README.md)
