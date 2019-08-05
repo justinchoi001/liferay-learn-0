@@ -1,6 +1,8 @@
 # Creating Your Storefront
 
-Building a store in Liferay Commerce requires more than a complete catalog. Once the catalog is populated, store owners need to build a store front to display its contents to buyers. One way is to use an [Accelerator](../../../../getting-started/accelerators/README.md), such as Minium (B2B). Otherwise, without an Accelerator, store administrators need to create the display and landing pages manually.
+Building a store in Liferay Commerce requires more than a complete catalog. Store administrators need to build a series of landing pages to display all the products in the catalog. This article documents all the necessary pages that have to be created once the catalog is populated.
+
+One way is to use an [Accelerator](../../../../getting-started/accelerators/README.md), such as Minium (B2B). Otherwise, without an Accelerator, store administrators need to create the display and landing pages manually.
 
 The following types of pages have to be created:
 
