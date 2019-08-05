@@ -57,15 +57,15 @@
 * [Creating a Grouped Product](./catalog/creating-and-managing-products/product-types/creating-a-grouped-product/README.md)
 * [Creating a Virtual Product](./catalog/creating-and-managing-products/product-types/creating-a-virtual-product/README.md)
 * [Virtual Product Reference](./catalog/creating-and-managing-products/product-types/virtual-product-reference/README.md)
+* [Customizing Your Product With Product Options](./catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md)
+* [Adding SKUs to Your Products](./catalog/creating-and-managing-products/adding-skus-to-your-products/README.md)
 * [Product Images](./catalog/creating-and-managing-products/product-information/product-images/README.md)
 * [Product Specifications](./catalog/creating-and-managing-products/product-information/specifications/README.md)
-* Product Folders
-* [Adding SKUs to Your Products](./catalog/creating-and-managing-products/adding-skus-to-your-products/README.md)
-* [Organizing Your Catalog With Product Categories](./catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md)
 * [Creating a New Product Category](./catalog/creating-and-managing-products/categories/creating-a-new-product-category/README.md)
-* [Customizing Your Product With Product Options](./catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md)
+* [Organizing Your Catalog With Product Categories](./catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md)
 * Subscriptions
 * [Related Products, Up-sells, and Cross-sells](./catalog/creating-and-managing-products/product-information/related-products-up-sells-and-cross-sells/README.md)
+* Product Folders
 * Other Configurations
 
 ### Managing Inventory
@@ -124,6 +124,7 @@
 
 ### Pages
 
+* [Creating Your Storefront](./content/pages/creating-your-store-front/README.md)
 * [Widget Reference Guide](./content/pages/widget-reference/README.md)
 
 #### Commerce Core Pages
@@ -133,8 +134,7 @@
 * Pending Orders Page
 * Placed Orders Page
 * Checkout Page
-* Account Management Page
-* User Management Page
+* [Account Management Page](./content/pages/creating-your-store-front/account-management/README.md)
 * Comparison Page
 * Lists Page
 * Search Page
