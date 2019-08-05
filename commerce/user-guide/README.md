@@ -124,17 +124,17 @@
 
 ### Pages
 
-* [Creating Your Storefront](./content/pages/creating-your-store-front/README.md)
+* [Creating Your Storefront](./content/pages/creating-your-storefront/README.md)
 * [Widget Reference Guide](./content/pages/widget-reference/README.md)
 
-#### Commerce Core Pages
+#### Commerce Storefront Pages
 
 * Catalog Page
 * Product Detail Page
 * Pending Orders Page
 * Placed Orders Page
 * Checkout Page
-* [Account Management Page](./content/pages/creating-your-store-front/account-management/README.md)
+* [Account Management Page](./content/pages/creating-your-storefront/account-management/README.md)
 * Comparison Page
 * Lists Page
 * Search Page
