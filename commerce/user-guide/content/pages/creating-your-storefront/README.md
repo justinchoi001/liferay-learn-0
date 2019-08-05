@@ -8,7 +8,7 @@ The following types of pages may be created:
 
 | Page Name | Purpose | Widget(s) Used |
 | --- | --- | --- |
-| [Account Management](./account-management/README.md) | Page where store administrators can manage Users and Accounts | _Accounts_ |
+| [Account Management](../account-management/README.md) | Page where store administrators can manage Users and Accounts | _Accounts_ |
 | Catalog | Main page where customers can search for products and refine their search results. | _Search_, _Specification Facet_, _Category Facet_ and _Search Results_.|
 | Cart | Displays all items in the shopping cart | _Cart_ |
 | Checkout | Displays a summary of all selected goods for purchase | _Checkout_ |

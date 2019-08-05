@@ -134,7 +134,7 @@
 * Pending Orders Page
 * Placed Orders Page
 * Checkout Page
-* [Account Management](./content/pages/creating-your-storefront/account-management/README.md)
+* [Account Management](./content/pages/account-management/README.md)
 * Comparison Page
 * Lists Page
 * Search Page
