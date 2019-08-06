@@ -1,11 +1,11 @@
 # Low Stock Activity
 
-This article documents steps on how to set up automatic actions whenever a product’s inventory falls below a certain level. Setting up these steps in advance has the benefit of communicating quickly to customers that an order may not be able to be fulfilled due to low stock while ensuring them that the product might be available again in sufficient quantities in the near future. Store owners can also configure the catalog to display how many products are remaining.
+This article documents steps on how to set up automatic actions whenever product inventory falls below a certain threshold. Setting up these steps in advance has the benefit of communicating quickly to customers that an order may not be able to be fulfilled due to low stock while assuring users that the product might be available again in sufficient quantities in the near future. Store owners can also configure the catalog to display product quantity remaining in inventory.
 
-To set the Low Stock Activity:
+To configure a Low Stock Activity:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-1. Click on a product (for example, _U-Joint_)(This sample product was created by the Minium Accelerator).
+1. Click on a product (for example, _U-Joint_)
 1. Click the _Configurations_ sub-tab.
 1. Enter the following:
     * **Inventory Engine**: Default
@@ -26,9 +26,8 @@ To set the Low Stock Activity:
 
 The Low Stock Activity for this product has been configured. In the future, should the number of stock fall below the specified number, the automatic rules will be triggered.
 
-
 ## Additional Information
 
 Developers can implement a custom extension point to add additional types of behaviors when a product's inventory falls below the threshold.
 
-* [Implementing a Low Stock Activity](../../../../developer-guide/tutorial/implementing-a-custom-low-stock-activity/README.md)
+* [Implementing a Custom Low Stock Activity](../../../../developer-guide/tutorial/implementing-a-custom-low-stock-activity/README.md)
