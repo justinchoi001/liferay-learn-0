@@ -56,6 +56,8 @@ In this section, we will get an example order validator up and running on your i
 
     ![New order validation error message](./images/01.png "New order validation error message")
 
+Congratulations, you've successfully built and deployed a new order validator that implements `CommerceOrderValidator`.
+
 Next, let's dive deeper to learn more.
 
 ## Walk Through the Example

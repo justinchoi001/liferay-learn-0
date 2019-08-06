@@ -58,6 +58,8 @@ In this section, we will get an example low stock activity up and running on you
 
 ![New low stock activity](./images/02.png "New low stock activity")
 
+Congratulations, you've successfully built and deployed a new low stock activity that implements `CommerceLowStockActivity`.
+
 Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
