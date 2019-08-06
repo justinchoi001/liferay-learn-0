@@ -1,4 +1,4 @@
-package com.acme.f2y1.internal.commerce.exchange.rate.provider;
+package com.acme.f2y1.internal.commerce.currency.util;
 
 import com.liferay.commerce.currency.model.CommerceCurrency;
 import com.liferay.commerce.currency.util.ExchangeRateProvider;

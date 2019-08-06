@@ -1,4 +1,4 @@
-package com.acme.n9b2.internal.commerce.order.validator;
+package com.acme.n9b2.internal.commerce.order;
 
 import com.liferay.commerce.model.CommerceOrder;
 import com.liferay.commerce.model.CommerceOrderItem;

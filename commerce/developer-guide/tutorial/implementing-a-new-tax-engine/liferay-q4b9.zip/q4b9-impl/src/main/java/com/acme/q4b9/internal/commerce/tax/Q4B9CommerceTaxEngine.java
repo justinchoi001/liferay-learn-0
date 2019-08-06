@@ -1,4 +1,4 @@
-package com.acme.q4b9.internal.commerce.tax.engine;
+package com.acme.q4b9.internal.commerce.tax;
 
 import com.liferay.commerce.exception.CommerceTaxEngineException;
 import com.liferay.commerce.tax.CommerceTaxCalculateRequest;

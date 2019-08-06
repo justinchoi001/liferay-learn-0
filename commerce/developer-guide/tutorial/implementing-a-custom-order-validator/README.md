@@ -47,7 +47,7 @@ In this section, we will get an example order validator up and running on your i
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.n9b2.internal.commerce.order.validator_1.0.0
+    STARTED com.acme.n9b2.internal.commerce.order_1.0.0
     ```
 
 1. Verify that the example order validator was added by viewing the failure message. Open your browser to `https://localhost:8080` and navigate to a catalog with at least one item priced over $100. If one does not exist, you may need to add it yourself; see [Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products) for more information on this.
