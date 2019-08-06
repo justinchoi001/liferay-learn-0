@@ -281,7 +281,7 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
 
 > Finally, all we need to do to complete our processing logic is call our `_getCommerceShippingOptions` helper method, and handle any possible errors that may have occurred.
 
-As a last step, we will also need to add the language keys for our engine's name and description. Add the keys and their values to a `Language.properties` file within our module:
+As a last step, we will also need to add the language keys for our engine's name and description. Add the keys and their values to a [Language.properties](./liferay-j6x8/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 discounted-rate=Discounted Rate
