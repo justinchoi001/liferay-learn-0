@@ -150,7 +150,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Checkout Step
 
-To implement the checkout step itself, we need to add then implementation for the `processAction()` and `render()` methods, and then add a JSP to render the screen for the new checkout step. In our simple example, we will only display some text on our custom screen, so we do not need any special backend processing in our `processAction().
+To implement the checkout step itself, we need to add then implementation for the `processAction` and `render` methods, and then add a JSP to render the screen for the new checkout step. In our simple example, we will only display some text on our custom screen, so we do not need any special backend processing in our `processAction` implementation.
 
 `public void render(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception`
 

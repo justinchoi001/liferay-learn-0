@@ -148,7 +148,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Validation Steps
 
-The two `validate()` methods are where we define the custom validation logic for our order validator. In our simple example, we will add logic to reject orders with more than ten of an item over a certain price.
+The two `validate` methods are where we define the custom validation logic for our order validator. In our simple example, we will add logic to reject orders with more than ten of an item over a certain price.
 
 1. `public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity)`
 

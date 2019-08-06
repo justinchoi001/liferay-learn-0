@@ -143,11 +143,11 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
 
-    > This returns the name of the tax engine. It works similarly to the `getDescription()` method.
+    > This returns the name of the tax engine. It works similarly to the `getDescription` method.
 
 ### Create the Tax Calculation
 
-To implement the main logic of the tax engine, we need to add our business logic to the `getCommerceTaxValue()` method of our class. In our simple example, we will use a hard-coded rate as our flat value, although this will have limited use in a real world case.
+To implement the main logic of the tax engine, we need to add our business logic to the `getCommerceTaxValue` method of our class. In our simple example, we will use a hard-coded rate as our flat value, although this will have limited use in a real world case.
 
 `public CommerceTaxValue getCommerceTaxValue(CommerceTaxCalculateRequest commerceTaxCalculateRequest) throws CommerceTaxEngineException`
 

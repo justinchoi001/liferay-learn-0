@@ -140,7 +140,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Low Stock Activity
 
-To implement the low stock activity itself, we only need to add our business logic to the `execute()` method of our class. In our simple example, we will simply add a warning message that is added to Liferay's logs.
+To implement the low stock activity itself, we only need to add our business logic to the `execute` method of our class. In our simple example, we will simply add a warning message that is added to Liferay's logs.
 
 `public void execute(CPInstance cpInstance)`
 
