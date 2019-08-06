@@ -32,7 +32,7 @@ In this section, we will get an example checkout step up and running on your ins
     unzip liferay-n8n6.zip
     ```
 
-1. Go to `xxxx-impl`.
+1. Go to `n8n6-impl`.
 
     ```bash
     cd n8n6-impl
@@ -52,7 +52,7 @@ In this section, we will get an example checkout step up and running on your ins
     STARTED com.acme.n8n6.internal.commerce.util_1.0.0
     ```
 
-1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add any item to the cart, and then click on the cart, and then "Checkout". In the list of checkout steps shown on the screen, the new "Example step" will be present.
+1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add any item to the cart, and then click on the cart, and then click "Checkout". In the list of checkout steps shown on the screen, the new "Example Step" will be present.
 
 ![New checkout step](./images/02.png "New checkout step")
 
@@ -150,7 +150,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Checkout Step
 
-To implement the checkout step itself, we need to add then implementation for the `processAction` and `render` methods, and then add a JSP to render the screen for the new checkout step. In our simple example, we will only display some text on our custom screen, so we do not need any special backend processing in our `processAction` implementation.
+To implement the checkout step itself, we need to add the implementation for the `processAction` and `render` methods, and then add a JSP to render the screen for the new checkout step. In our simple example, we will only display some text on our custom screen, so we do not need any special backend processing in our `processAction` implementation.
 
 `public void render(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception`
 
@@ -176,16 +176,16 @@ For the JSP to be able to properly use the `ServletContext` to find the JSP in o
 private ServletContext _servletContext;
 ```
 
-> The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to look in the proper location for the JSP.
+> The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to look in the proper location for the JSP.
 >
-> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd. In our example, we have that set to the value `/commerce-checkout-step`. For a reference on these values, see [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for this example.
+> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file. In our example, we have that set to the value `/commerce-checkout-step`. For a reference on these values, see [the bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for this example.
 
 Next, we need to define the JSP for our checkout step's screen in the UI. In our example, we are simply adding placeholder text for some generic messages; you can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
 
 Lastly, we will need to add the language key for the name of our new checkout step. Add the key and its value to a [Language.properties](./liferay-n8n6.zip/n8n6-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
-example-step=Example step
+example-step=Example Step
 ```
 
 ## Conclusion
