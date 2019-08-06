@@ -228,7 +228,7 @@ The following methods are necessary to define our custom payment method logic. T
 
     >This is where custom payment logic will be implemented. This `CommercePaymentResult` should store information relevant to the processing of a payment. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java)
 
-We will also need to add the language key for our payment method's name and description. Add the keys and their values to a Language.properties file within our module:
+We will also need to add the language key for our payment method's name and description. Add the keys and their values to a [Language.properties](./liferay-b1c3.zip/b1c3-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 b1c3-commerce-payment-method-description=This is the Acme Commerce Payment Method.

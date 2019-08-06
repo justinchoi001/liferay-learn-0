@@ -167,7 +167,7 @@ public void render(
 }
 ```
 
-> We simply use a `JSPRenderer` to render the JSP for our (in this case, `terms_and_conditions.jsp`). We also give it a `ServletContext` parameter to give a context for where to find the JSP we have created.
+> We simply use a `JSPRenderer` to render the JSP for our (in this case, [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). We also give it a `ServletContext` parameter to give a context for where to find the JSP we have created.
 
 For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name of our bundle, like the following:
 
@@ -176,13 +176,13 @@ For the JSP to be able to properly use the `ServletContext` to find the JSP in o
 private ServletContext _servletContext;
 ```
 
-> The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our bnd.bnd. These values must match for the `ServletContext` to look in the proper location for the JSP.
+> The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to look in the proper location for the JSP.
 >
-> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd. In our example, we have that set to the value `/commerce-checkout-step`. For a reference on these values, see [the bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for this example.
+> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd. In our example, we have that set to the value `/commerce-checkout-step`. For a reference on these values, see [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for this example.
 
 Next, we need to define the JSP for our checkout step's screen in the UI. In our example, we are simply adding placeholder text for some generic messages; you can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
 
-Lastly, we will need to add the language key for the name of our new checkout step. Add the key and its value to a `Language.properties` file within our module:
+Lastly, we will need to add the language key for the name of our new checkout step. Add the key and its value to a [Language.properties](./liferay-n8n6.zip/n8n6-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example-step=Example step

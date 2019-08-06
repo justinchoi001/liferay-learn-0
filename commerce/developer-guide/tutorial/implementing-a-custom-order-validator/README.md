@@ -212,7 +212,7 @@ The two `validate` methods are where we define the custom validation logic for o
 
     > We can add the same validation logic to this method, since it will be called for the items in the customer's cart. The main difference in this case is we get the information from a `CommerceOrderItem` object; to find more methods you can use with a `CommerceOrderItem`, see [CommerceOrderItem](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java).
 
-We will also need to add the language keys for our validator's error messages. Add the keys and their values to a Language.properties file within our module:
+We will also need to add the language keys for our validator's error messages. Add the keys and their values to a [Language.properties](./liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 expensive-items-have-a-maximum-quantity-of-10=Expensive items have a maximum quantity of 10.

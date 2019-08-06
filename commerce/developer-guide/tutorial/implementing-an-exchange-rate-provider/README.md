@@ -98,7 +98,7 @@ public BigDecimal getExchangeRate(
 
 > This method is called to calculate the exchange rate between currencies. The chosen data source for the rates must be able to handle any of the currencies that may be used in your instance of Liferay Commerce.
 
-In our simple example, we will just use a data file with a static list of exchange rates as our data source; note that for a real world use case, though, an exchange rate provider with a static data source will have limited use, compared to an exchange rate provider like `ECBExchangeRateProvider`.
+In our simple example, we will just use a data file with a static list of exchange rates as our data source, [f2y1-exchange-rates.json](./liferay-f2y1.zip/f2y1-impl/src/main/resources/com/acme/f2y1/internal/commerce/exchange/rates/f2y1-exchange-rates.json). Note that for a real world use case, though, an exchange rate provider with a static data source will have limited use, compared to an exchange rate provider like `ECBExchangeRateProvider`.
 
 ```java
 @Override

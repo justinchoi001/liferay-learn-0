@@ -155,7 +155,7 @@ To implement the low stock activity itself, we only need to add our business log
 
 > The `cpInstance` object contains information about the item with low stock, that we can use. In our example, we are just using it to get the SKU for the item to add to our warning message. To find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
 
-We will also need to add the language key for our activity's label. Add the key and its value to a `Language.properties` file within our module:
+We will also need to add the language key for our activity's label. Add the key and its value to a [Language.properties](./liferay-j1e4.zip/j1e4-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 log-a-warning-message=Log a Warning Message
