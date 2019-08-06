@@ -52,7 +52,7 @@ In this section, we will get an example low stock activity up and running on you
     STARTED com.acme.j1e4.internal.commerce.stock.activity_1.0.0
     ```
 
-1. Verify that the example new low stock activity was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, for any product, click _Edit_ within its menu. If necessary, you can add a product to do this with (see [Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products) for help).
+1. Verify that the example new low stock activity was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, for any product, click _Edit_ within its menu. If necessary, you can add a product to do this with (see [Creating a Simple Product](../../../user-guide/catalog/creating-and-managing-products/product-types/creating-a-simple-product) for help).
 
    From there, navigate to _Configuration_. On this screen, under the _Low Stock Action_ dropdown, the new activity ("Log a warning message") will be present.
 
@@ -170,4 +170,4 @@ Congratulations! You now know the basics for implementing the `CommerceLowStockA
 ## Additional Information
 
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-* [Products](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/products)
+* [Creating a Simple Product](../../../user-guide/catalog/creating-and-managing-products/product-types/creating-a-simple-product)
