@@ -1,4 +1,4 @@
-# Implementing a Tax Engine
+# Implementing a Custom Tax Engine
 
 This tutorial will show you how to add a custom tax engine by implementing the `CommerceTaxEngine` interface.
 

@@ -1,6 +1,6 @@
-# Implementing an Exchange Rate Provider
+# Implementing an Custom Exchange Rate Provider
 
-This tutorial will show you how to add an exchange rate provider by implementing the `ExchangeRateProvider` interface.
+This tutorial will show you how to add a custom exchange rate provider by implementing the `ExchangeRateProvider` interface.
 
 An exchange rate provider uses a data source to perform the exchange calculation between currencies. Liferay Commerce provides one exchange rate provider out of the box, [ECBExchangeRateProvider](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java).
 
