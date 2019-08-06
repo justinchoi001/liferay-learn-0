@@ -22,7 +22,7 @@ In this section, we will get an example shipping engine up and running on your i
     docker run -it -p 8080:8080 liferay/commerce:2.0.2
     ```
 
-1. Download and unzip the [Acme Commerce Shipping Engine]() to your project directory.
+1. Download and unzip [Acme Commerce Shipping Engine](./liferay-j6x8.zip)
 
     ```bash
     curl liferay-j6x8.zip
