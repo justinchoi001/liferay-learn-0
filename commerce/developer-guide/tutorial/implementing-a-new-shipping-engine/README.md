@@ -64,7 +64,7 @@ Next, let's dive deeper to learn more.
 
 In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommerceShippingEngine` interface; and third, we will implement the logic for processing the shipping options.
 
-### Annotate Your Class for OSGi Registration
+### Annotate the Class for OSGi Registration
 
 ```java
 @Component(
@@ -77,7 +77,7 @@ public class J6X8CommerceShippingEngine implements CommerceShippingEngine {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for your shipping engine so that Liferay Commerce can distinguish your new engine from others in the [shipping engine registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceShippingEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated engine.
+> It is important to provide a distinct key for our shipping engine so that Liferay Commerce can distinguish the new engine from others in the [shipping engine registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceShippingEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated engine.
 
 ### Implement the `CommerceShippingEngine` Interface
 
@@ -148,7 +148,7 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
     
-    > This returns a description for our shipping engine to briefly explain what it does. It works similarly to the `getCommerceShippingOptionLabel()` method.
+    > This returns the description of our shipping engine to briefly explain what it does. It works similarly to the `getCommerceShippingOptionLabel()` method.
 
 1. `public String getName(Locale locale);`
 
@@ -164,11 +164,11 @@ To better understand each of the required methods mentioned above, let's look at
     
     > This returns the name of our shipping engine. It also works similarly to the `getCommerceShippingOptionLabel()` and `getDescription()` methods.
 
-### Create Your Logic to Process Shipping Options
+### Create the Logic to Process Shipping Options
 
 To implement the shipping engine itself, we need to add our business logic to the `getCommerceShippingOptions()` method of our class. We will first need to do several steps of processing to prepare the list of shipping options to be shown. Then, in our simple example, we will simply add an extra step to apply a discounted rate to the price of the options.
 
-Liferay Commerce's [fixed rate shipping engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java) is a good reference to see what processing steps are a good baseline to start with (which will be similar to most of the steps in our example).
+Liferay Commerce's [fixed rate shipping engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java) is a good reference to see what processing steps are a good baseline to start with. Our example will closely follow those same steps.
 
 ```java
 private List<CommerceShippingFixedOption> _getCommerceShippingFixedOptions(
