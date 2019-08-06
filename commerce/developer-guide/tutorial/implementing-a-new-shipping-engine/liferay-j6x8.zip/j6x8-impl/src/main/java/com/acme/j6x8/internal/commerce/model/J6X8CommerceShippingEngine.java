@@ -1,4 +1,4 @@
-package com.acme.j6x8.internal.commerce.shipping.engine;
+package com.acme.j6x8.internal.commerce.model;
 
 import com.liferay.commerce.context.CommerceContext;
 import com.liferay.commerce.exception.CommerceShippingEngineException;
