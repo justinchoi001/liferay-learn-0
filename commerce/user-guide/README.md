@@ -72,7 +72,7 @@
 
 * [Adding a New Warehouse](./catalog/managing-inventory/adding-a-new-warehouse/README.md)
 * Setting up Multiple Warehouses
-* Low Inventory Activity
+* [Low Inventory Activity](./catalog/managing-inventory/low-stock-activity/README.md)
 * Availability Estimates
 
 ### Managing Price
