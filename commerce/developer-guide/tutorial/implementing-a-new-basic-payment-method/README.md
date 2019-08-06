@@ -77,7 +77,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 	public static final String KEY = "Example";
 ```
 
->It is important to provide a distinct key for your payment method so that Liferay Commerce can distinguish your new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated method.
+>It is important to provide a distinct key for your payment method so that Liferay Commerce can distinguish your new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated payment method.
 
 ### Implement the `CommercePaymentMethod` Interface
 
@@ -129,7 +129,7 @@ To better understand each of the required methods mentioned above, let's look at
 	}
     ```
 
-    >Provides a unique identifier for the payment method in the registry. The key can be used to fetch the payment method from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated method.
+    >Provides a unique identifier for the payment method in the registry. The key can be used to fetch the payment method from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated payment method.
 
 1. `public String getName(Locale locale);`
 
@@ -155,7 +155,7 @@ To better understand each of the required methods mentioned above, let's look at
 	}
     ```
 
-    >Identifies the way in which the Payment Engine will use a given Payment Method. In this example, `COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE` informs the payment engine that there are no online processing requirements for this Payment Method. There are two other payment type constants available out of the box: `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_STANDARD` and `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_REDIRECT`. For more information see [Implementing a New Online Payment Method]().
+    >Identifies the way in which the payment engine will use a given payment method. In this example, `COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE` informs the payment engine that there are no online processing requirements for this payment method. There are two other payment type constants available out of the box: `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_STANDARD` and `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_REDIRECT`. For more information see [Implementing a New Online Payment Method]().
 
 1. `public String getServletPath()`
 
@@ -181,7 +181,7 @@ The following methods are necessary to define your custom payment method logic. 
 		}
     ```
 
-    >For the payment method to complete payments, this must return true. `completePayment` is invoked when the payment is fulfilled. In this way you are indicating to the Payment Engine what functionality is supported by your Payment Method.
+    >For the payment method to complete payments, this must return true. `completePayment` is invoked when the payment is fulfilled. In this way you are indicating to the Payment Engine what functionality is supported by your payment method.
 
 1. `public CommercePaymentResult completePayment()`
 
@@ -209,7 +209,7 @@ The following methods are necessary to define your custom payment method logic. 
 		}
     ```
 
-    >For the payment method to process payments, this must return true. `processPayment` is the initial step that is executed when a customer submits an order. In this way you are indicating to the Payment Engine what functionality is supported by your Payment Method.
+    >For the payment method to process payments, this must return true. `processPayment` is the initial step that is executed when a customer submits an order. In this way you are indicating to the Payment Engine what functionality is supported by your payment method.
 
 1. `public CommercePaymentResult processPayment()`
 

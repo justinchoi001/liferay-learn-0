@@ -52,7 +52,7 @@ In this section, we will get an example checkout step up and running on your ins
     STARTED com.acme.n8n6.internal.commerce.util_1.0.0
     ```
 
-1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add any item to the cart, and then click on the cart, and then "Checkout". In the list of steps shown on the screen, the new "Example step" will be present.
+1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add any item to the cart, and then click on the cart, and then "Checkout". In the list of checkout steps shown on the screen, the new "Example step" will be present.
 
 ![New checkout step](./images/02.png "New checkout step")
 
@@ -80,9 +80,9 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
     public static final String NAME = "example-step";
 ```
 
-> We must give the checkout step a name, which should be a unique value so that Liferay Commerce can distinguish your new step from other existing steps.
+> We must give the checkout step a name, which should be a unique value so that Liferay Commerce can distinguish your new checkout step from other existing checkout steps.
 >
-> The `commerce.checkout.step.order` value indicates how far into the checkout process the step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20; giving our checkout step a value of 21, then, will ensure that it appears immediately after the shipping method step.
+> The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20; giving our checkout step a value of 21, then, will ensure that it appears immediately after the shipping method step.
 
 ### Implement the `CommerceCheckoutStep` Interface
 
@@ -134,7 +134,7 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This will be called to take care of any special backend processing that may be needed for your checkout step. If any backend processing is required, then the business logic will be implemented here, using information passed in through the `ActionRequest`.
     >
-    > Note that, if no special processing is necessary for this step, then nothing needs to be added into this method.
+    > Note that, if no special processing is necessary for this checkout step, then nothing needs to be added into this method.
 
 1. `public void render(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception;`
 
@@ -150,7 +150,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create Your Checkout Step
 
-To implement the checkout step itself, we need to add then implementation for the `processAction()` and `render()` methods, and then add a JSP to render the screen for the new step. In our simple example, we will only display some text on our custom screen, so we do not need any special backend processing in our `processAction().
+To implement the checkout step itself, we need to add then implementation for the `processAction()` and `render()` methods, and then add a JSP to render the screen for the new checkout step. In our simple example, we will only display some text on our custom screen, so we do not need any special backend processing in our `processAction().
 
 `public void render(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception`
 

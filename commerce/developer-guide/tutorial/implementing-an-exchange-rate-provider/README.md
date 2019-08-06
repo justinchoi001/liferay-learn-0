@@ -54,7 +54,7 @@ In this section, we will get an example exchange rate provider up and running on
 
 1. Verify that the example exchange rate provider was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Settings_ → _Currencies_ → _Exchange Rate_.
 
-    On this screen, under the Exchange Rate Provider dropdown, the new provider ("Example") will be present.
+    On this screen, under the Exchange Rate Provider dropdown, the new exchange rate provider ("Example") will be present.
 
 ![New exchange rate provider](./images/02.png "New exchange rate provider")
 
@@ -79,7 +79,7 @@ public class F2Y1ExchangeRateProvider implements ExchangeRateProvider {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for your exchange rate provider so that Liferay Commerce can distinguish your new provider from others in the [exchange rate provider registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java). Reusing a key that is already in use will override the existing associated provider.
+> It is important to provide a distinct key for your exchange rate provider so that Liferay Commerce can distinguish your new exchange rate provider from others in the [exchange rate provider registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java). Reusing a key that is already in use will override the existing associated exchange rate provider.
 
 ### Implement the `ExchangeRateProvider` Interface and Exchange Logic
 
@@ -98,7 +98,7 @@ public BigDecimal getExchangeRate(
 
 > This method is called to calculate the exchange rate between currencies. The chosen data source for the rates must be able to handle any of the currencies that may be used in your instance of Liferay Commerce.
 
-In our simple example, we will just use a data file with a static list of exchange rates as our data source; note that for a real world use case, though, a provider with a static data source will have limited use, compared to a provider like `ECBExchangeRateProvider`.
+In our simple example, we will just use a data file with a static list of exchange rates as our data source; note that for a real world use case, though, an exchange rate provider with a static data source will have limited use, compared to an exchange rate provider like `ECBExchangeRateProvider`.
 
 ```java
 @Override
