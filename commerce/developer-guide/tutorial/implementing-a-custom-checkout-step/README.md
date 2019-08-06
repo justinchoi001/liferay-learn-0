@@ -22,7 +22,7 @@ In this section, we will get an example checkout step up and running on your ins
     docker run -it -p 8080:8080 liferay/commerce:2.0.2
     ```
 
-1. Download and unzip the [Acme Commerce Checkout Step]() to your project directory.
+1. Download and unzip [Acme Commerce Checkout Step](./liferay-n8n6.zip).
 
     ```bash
     curl liferay-n8n6.zip

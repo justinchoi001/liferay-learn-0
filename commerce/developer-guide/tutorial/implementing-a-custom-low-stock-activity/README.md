@@ -22,7 +22,7 @@ In this section, we will get an example low stock activity up and running on you
     docker run -it -p 8080:8080 liferay/commerce:2.0.2
     ```
 
-1. Download and unzip the [Acme Commerce Low Stock Activity]() to your project directory.
+1. Download and unzip [Acme Commerce Low Stock Activity](./liferay-j1e4.zip).
 
     ```bash
     curl liferay-j1e4.zip
