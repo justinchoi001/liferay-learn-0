@@ -64,7 +64,7 @@ Next, let's dive deeper to learn more.
 
 In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommerceCheckoutStep` interface; and third, we will implement the rendering logic and a JSP for the new screen.
 
-### Annotate Your Class for OSGi Registration
+### Annotate the Class for OSGi Registration
 
 ```java
 @Component(
@@ -80,7 +80,7 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
     public static final String NAME = "example-step";
 ```
 
-> We must give the checkout step a name, which should be a unique value so that Liferay Commerce can distinguish your new checkout step from other existing checkout steps.
+> We must give the checkout step a name, which should be a unique value so that Liferay Commerce can distinguish our new checkout step from other existing checkout steps.
 >
 > The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20; giving our checkout step a value of 21, then, will ensure that it appears immediately after the shipping method step.
 
@@ -118,7 +118,7 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
 
-    > This method returns the name for our checkout step. This name may be a language key that corresponds to the actual name that will appear in the UI.
+    > This method returns the name of our checkout step. This name may be a language key that corresponds to the actual name that will appear in the UI.
     >
     > Note that, for a language key to work correctly when used for this method, we will need to add it ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
@@ -132,7 +132,7 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
 
-    > This will be called to take care of any special backend processing that may be needed for your checkout step. If any backend processing is required, then the business logic will be implemented here, using information passed in through the `ActionRequest`.
+    > This will be called to take care of any special backend processing that may be needed for our checkout step. If any backend processing is required, then the business logic will be implemented here, using information passed in through the `ActionRequest`.
     >
     > Note that, if no special processing is necessary for this checkout step, then nothing needs to be added into this method.
 
@@ -146,9 +146,9 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
 
-    > This will be where we add the code to render our customized screen for our checkout step.
+    > This will be where we add the code to render a customized screen for our checkout step.
 
-### Create Your Checkout Step
+### Create the Checkout Step
 
 To implement the checkout step itself, we need to add then implementation for the `processAction()` and `render()` methods, and then add a JSP to render the screen for the new checkout step. In our simple example, we will only display some text on our custom screen, so we do not need any special backend processing in our `processAction().
 
@@ -169,7 +169,7 @@ public void render(
 
 > We simply use a `JSPRenderer` to render the JSP for our (in this case, `terms_and_conditions.jsp`). We also give it a `ServletContext` parameter to give a context for where to find the JSP we have created.
 
-For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name for our bundle, like the following:
+For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name of our bundle, like the following:
 
 ```java
 @Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.internal.commerce.util)")

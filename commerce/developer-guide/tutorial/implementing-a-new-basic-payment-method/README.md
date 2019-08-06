@@ -64,7 +64,7 @@ Next, let's dive deeper to learn more.
 
 In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommercePaymentMethod` interface; and third, we will implement the payment method logic.
 
-### Annotate Your Class for OSGi Registration
+### Annotate the Class for OSGi Registration
 
 ```java
 @Component(
@@ -77,7 +77,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 	public static final String KEY = "Example";
 ```
 
->It is important to provide a distinct key for your payment method so that Liferay Commerce can distinguish your new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated payment method.
+>It is important to provide a distinct key for our payment method so that Liferay Commerce can distinguish our new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated payment method.
 
 ### Implement the `CommercePaymentMethod` Interface
 
@@ -168,9 +168,9 @@ To better understand each of the required methods mentioned above, let's look at
 
     >When implementing an online payment method, a servlet may be required to enable proper interfacing with an external payment provider. Since no servlet path is required for an offline payment method, `getServletPath` should return `null`.
 
-### Create Your Payment Method
+### Create the Payment Method
 
-The following methods are necessary to define your custom payment method logic. There are many more methods that can be implemented that provide additional functionality - such as subscriptions, recurring payments, and refunds. These can be seen in [CommercePaymentMethod.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java). These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
+The following methods are necessary to define our custom payment method logic. There are many more methods that can be implemented that provide additional functionality - such as subscriptions, recurring payments, and refunds. These can be seen in [CommercePaymentMethod.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java). These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
 
 1. `public boolean isCompleteEnabled()`
 
@@ -181,7 +181,7 @@ The following methods are necessary to define your custom payment method logic. 
 		}
     ```
 
-    >For the payment method to complete payments, this must return true. `completePayment` is invoked when the payment is fulfilled. In this way you are indicating to the Payment Engine what functionality is supported by your payment method.
+    >For the payment method to complete payments, this must return true. `completePayment` is invoked when the payment is fulfilled. In this way we are indicating to the payment engine what functionality is supported by our payment method.
 
 1. `public CommercePaymentResult completePayment()`
 
@@ -209,7 +209,7 @@ The following methods are necessary to define your custom payment method logic. 
 		}
     ```
 
-    >For the payment method to process payments, this must return true. `processPayment` is the initial step that is executed when a customer submits an order. In this way you are indicating to the Payment Engine what functionality is supported by your payment method.
+    >For the payment method to process payments, this must return true. `processPayment` is the initial step that is executed when a customer submits an order. In this way we are indicating to the payment engine what functionality is supported by our payment method.
 
 1. `public CommercePaymentResult processPayment()`
 

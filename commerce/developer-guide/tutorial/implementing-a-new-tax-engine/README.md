@@ -64,7 +64,7 @@ Next, let's dive deeper to learn more.
 
 In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommerceTaxEngine` interface; and third, we will implement the tax calculation logic.
 
-### Annotate Your Class for OSGi Registration
+### Annotate the Class for OSGi Registration
 
 ```java
 @Component(
@@ -77,7 +77,7 @@ public class Q4B9CommerceTaxEngine implements CommerceTaxEngine {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for your tax engine so that Liferay Commerce can distinguish your new engine from others in the [tax engine registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated tax engine.
+> It is important to provide a distinct key for our tax engine so that Liferay Commerce can distinguish the new engine from others in the [tax engine registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated tax engine.
 
 ### Implement the `CommerceTaxEngine` Interface
 
@@ -127,7 +127,7 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
 
-    > This returns a text description for the tax engine. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales.
+    > This returns the description of the tax engine as text. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales.
     >
     > Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
@@ -143,9 +143,9 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
 
-    > This returns the name of the tax engine, as a short String. It works similarly to the `getDescription()` method.
+    > This returns the name of the tax engine. It works similarly to the `getDescription()` method.
 
-### Create Your Tax Calculation
+### Create the Tax Calculation
 
 To implement the main logic of the tax engine, we need to add our business logic to the `getCommerceTaxValue()` method of our class. In our simple example, we will use a hard-coded rate as our flat value, although this will have limited use in a real world case.
 

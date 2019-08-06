@@ -62,7 +62,7 @@ Next, let's dive deeper to learn more.
 
 In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommerceOrderValidator` interface; and third, we will implement the custom validation logic.
 
-### Annotate Your Class for OSGi Registration
+### Annotate the Class for OSGi Registration
 
 ```java
 @Component(
@@ -78,7 +78,7 @@ public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for your order validator so that Liferay Commerce can distinguish your new order validator from others in the [order validator registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use will override the existing associated validator.
+> It is important to provide a distinct key for our order validator so that Liferay Commerce can distinguish the new order validator from others in the [order validator registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use will override the existing associated validator.
 
 ### Implement the `CommerceOrderValidator` Interface
 
@@ -146,7 +146,7 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This is the second validation method where we can add custom validation logic. This method is called for items already in the cart, whenever a customer proceeds to a new step in checkout.
 
-### Create Your Validation Steps
+### Create the Validation Steps
 
 The two `validate()` methods are where we define the custom validation logic for our order validator. In our simple example, we will add logic to reject orders with more than ten of an item over a certain price.
 
@@ -181,7 +181,7 @@ The two `validate()` methods are where we define the custom validation logic for
 
     > After a standard null check for this method, the main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the CPInstance, which contains information about the order the customer has added; to find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
     >
-    > Note that, for our main validation checks, it is best practice to include a localized message explaining why the validation failed. For this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
+    > Note that, for the main validation checks, it is best practice to include a localized message explaining why the validation failed. For this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
 1. `public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem)`
 

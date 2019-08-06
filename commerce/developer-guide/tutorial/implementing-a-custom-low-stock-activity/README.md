@@ -64,7 +64,7 @@ Next, let's dive deeper to learn more.
 
 In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommerceLowStockActivity` interface; and third, we will implement the low stock activity logic.
 
-### Annotate Your Class for OSGi Registration
+### Annotate the Class for OSGi Registration
 
 ```java
 @Component(
@@ -80,7 +80,7 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for your low stock activity so that Liferay Commerce can distinguish your new activity from others in the [low stock activity registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
+> It is important to provide a distinct key for our low stock activity so that Liferay Commerce can distinguish the new activity from others in the [low stock activity registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
 
 ### Implement the `CommerceLowStockActivity` Interface
 
@@ -138,7 +138,7 @@ To better understand each of the required methods mentioned above, let's look at
     >
     > Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
-### Create Your Low Stock Activity
+### Create the Low Stock Activity
 
 To implement the low stock activity itself, we only need to add our business logic to the `execute()` method of our class. In our simple example, we will simply add a warning message that is added to Liferay's logs.
 

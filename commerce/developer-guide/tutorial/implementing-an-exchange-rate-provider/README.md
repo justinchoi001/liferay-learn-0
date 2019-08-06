@@ -66,7 +66,7 @@ Next, let's dive deeper to learn more.
 
 In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `ExchangeRateProvider` interface; and third, we will implement the exchange logic.
 
-### Annotate Your Class for OSGi Registration
+### Annotate the Class for OSGi Registration
 
 ```java
 @Component(
@@ -79,7 +79,7 @@ public class F2Y1ExchangeRateProvider implements ExchangeRateProvider {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for your exchange rate provider so that Liferay Commerce can distinguish your new exchange rate provider from others in the [exchange rate provider registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java). Reusing a key that is already in use will override the existing associated exchange rate provider.
+> It is important to provide a distinct key for our exchange rate provider so that Liferay Commerce can distinguish the new exchange rate provider from others in the [exchange rate provider registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java). Reusing a key that is already in use will override the existing associated exchange rate provider.
 
 ### Implement the `ExchangeRateProvider` Interface and Exchange Logic
 
