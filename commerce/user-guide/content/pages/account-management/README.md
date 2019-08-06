@@ -14,9 +14,13 @@ New accounts may be created and users may be assigned to accounts.
 
 <img src="./images/03.png" width="700px" style="borders: #000000 1px solid;">
 
-Account information like address, related organization(s), and phone number may also be added through the Account Management page.
+Account information like address, email address, and VAT number may also be added through the Account Management page.
 
-[Image Placeholder]()
+<img src="./images/07.png" width="700px" style="borders: #000000 1px solid;">
+
+Besides individual users, relationed organizations may be added to accounts.
+
+<img src="./images/06.png" width="700px" style="borders: #000000 1px solid;">
 
 Account specific roles may be assigned to users.
 
