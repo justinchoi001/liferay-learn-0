@@ -77,7 +77,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 	public static final String KEY = "Example";
 ```
 
->It is important to provide a distinct key for your payment method so that Liferay Commerce can distinguish your new payment method from others in the [payment method registry](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethodRegistry.java). Reusing a key that is already in use will override the existing associated method.
+>It is important to provide a distinct key for your payment method so that Liferay Commerce can distinguish your new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated method.
 
 ### Implement the `CommercePaymentMethod` Interface
 
@@ -118,7 +118,7 @@ To better understand each of the required methods mentioned above, let's look at
 	}
     ```
 
-    >Populates the "Description" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Supporting Multiple Locales on Liferay]() for more information.
+    >Populates the "Description" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 1. `public String getKey();`
 
@@ -144,7 +144,7 @@ To better understand each of the required methods mentioned above, let's look at
 	}
     ```
 
-    >Populates the "Name" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Supporting Multiple Locales on Liferay]() for more information.
+    >Populates the "Name" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 1. `public int getPaymentType();`
 
@@ -170,7 +170,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create Your Payment Method
 
-The following methods are necessary to define your custom payment method logic. There are many more methods that can be implemented that provide additional functionality - such as subscriptions, recurring payments, and refunds. These can be seen in the [`CommercePaymentMethod`](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) interface. These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
+The following methods are necessary to define your custom payment method logic. There are many more methods that can be implemented that provide additional functionality - such as subscriptions, recurring payments, and refunds. These can be seen in [CommercePaymentMethod.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java). These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
 
 1. `public boolean isCompleteEnabled()`
 
@@ -198,7 +198,7 @@ The following methods are necessary to define your custom payment method logic. 
 		}
     ```
 
-    >This is where custom payment logic will be implemented.  `CommercePaymentResult` is a simple container that should store information relevant to the completion of a payment process. For more information see [`CommercePaymentResult.java`](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java).
+    >This is where custom payment logic will be implemented.  `CommercePaymentResult` is a simple container that should store information relevant to the completion of a payment process. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java).
 
 1. `public boolean isProcessPaymentEnabled()`
 
@@ -226,7 +226,7 @@ The following methods are necessary to define your custom payment method logic. 
 		}
     ```
 
-    >This is where custom payment logic will be implemented. This `CommercePaymentResult` should store information relevant to the processing of a payment. For more information see [`CommercePaymentResult.java`](https://raw.githubusercontent.com/liferay/com-liferay-commerce/7.1.x/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java)
+    >This is where custom payment logic will be implemented. This `CommercePaymentResult` should store information relevant to the processing of a payment. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java)
 
 We will also need to add the language key for our payment method's name and description. Add the keys and their values to a Language.properties file within our module:
 
@@ -241,5 +241,5 @@ Congratulations! You now know the basics for implementing the `CommercePaymentMe
 
 ## Additional Information
 
-* [Supporting Multiple Locales on Liferay]()
 * [Implementing a New Online Payment Method]()
+* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
