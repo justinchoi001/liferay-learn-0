@@ -4,14 +4,13 @@ Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform bu
 
 ## Overview
 
-Liferay Commerce offers several major features:
-
-* Modern Storefront Pages and Content Management
-* Multi-Channel Catalog and Product Information Management
-* B2B Focused Account Management and Purchasing Workflow
-* Sales and Order Management
-* ML Powered Recommendations and Alerts
-* APIs and Integrations
+* [Modern Storefront Pages and Content Management](#modern-storefront-pages-and-content-management)
+* [Multi-Channel Catalog and Product Information Management](#multi-channel-catalog-and-product-information-management)
+* [B2B Focused Account Management and Purchasing Workflow](#b2b-focused-account-management-and-purchasing-workflow)
+* [Order Management and Sales](#order-management-and-sales)
+* [ML Powered Recommendations and Alerts](#ml-powered-recommendations-and-alerts)
+* [APIs and Integrations](#apis-and-integrations)
+* [Next Steps](#next-steps)
 
 Just want to get started? Launch Liferay Commerce in five minutes or less with our [Quick Start Guide](../../../installation-and-upgrades/quick-start-guide/README.md).
 
@@ -37,7 +36,7 @@ Liferay Commerce contains a catalog management system that supports a variety of
 
 Managing product pricing is flexible through the use of [Price Lists](../../catalog/managing-price/price-lists/creating-a-price-list/README.md) and [Tiered Pricing](../../catalog/managing-price/price-lists/adding-tiered-pricing/README.md) - all of which can be tailored to meet unique customer needs.
 
-## Account Management and Purchasing Workflows
+## B2B Focused Account Management and Purchasing Workflow
 
 Liferay Commerce is optimized for business-to-business transactions with features designed to address B2B needs. [Accounts](../../customers/account-management/introduction-to-accounts/README.md), [Account Groups](../../customers/account-management/creating-a-new-account-group/README.md), and [Account Roles](../../customers/account-management/account-roles/README.md) work together to ensure that customer needs are met with tailored experiences, self-service, and purchasing workflows.
 
