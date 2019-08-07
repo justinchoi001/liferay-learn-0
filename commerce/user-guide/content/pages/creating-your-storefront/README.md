@@ -16,7 +16,7 @@ The following types of pages may be created:
 | List | Displays the customer's Wish Lists | _Wish Lists_ and _Wish List Contents_ |
 | Pending Orders | Displays a list of all pending orders | _Open Carts_ |
 | Placed Orders | Displays a list of all orders in all statuses | _Orders_ |
-| Product Details | Displays information about the product and related products | _Product Details_ and _Product Publisher_ |
+| [Product Details](../product-details/README.md) | Displays information about the product and related products | _Product Details_ and _Product Publisher_ |
 | Search | Allows users to search | _Search_, _Category Facet_, _Option Facet_, _Specification Facet_ |
 
 ## Additional Information

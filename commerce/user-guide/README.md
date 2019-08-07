@@ -129,18 +129,19 @@
 
 #### Commerce Storefront Pages
 
-* [Catalog Page](./content/pages/catalog/README.md)
-* Product Detail Page
-* Pending Orders Page
-* Placed Orders Page
-* Checkout Page
 * [Account Management](./content/pages/account-management/README.md)
-* Comparison Page
-* Lists Page
-* Search Page
 * BOM / Spare Parts Finder
+* [Catalog](./content/pages/catalog/README.md)
+* Cart
+* Checkout
+* Compare
+* Lists
+* Pending Orders
+* Placed Orders
+* [Product Details Page](./content/pages/product-details/README.md)
+* Search
 
-#### Using Liferay Modern Site Building
+#### Using Modern Site Building
 
 * Using Page Fragments
 * Widget Templates
