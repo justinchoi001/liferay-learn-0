@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-* Introduction to Liferay Commerce
+* [Introduction to Liferay Commerce](./getting-started/introduction-to-liferay-commerce/README.md)
 * What's New in Liferay Commerce 2.0.2
 
 ### Basic Configuration
