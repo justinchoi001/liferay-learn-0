@@ -98,7 +98,7 @@ public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commer
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem) throws PortalException;
 ```
 
-To better understand each of the required methods mentioned above, let's look at [N9B2CommerceOrderValidator.java](./liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/validator/N9B2CommerceOrderValidator.java). We will review the implementation of each required method in sequence.
+To better understand each of the required methods mentioned above, let's look at [N9B2CommerceOrderValidator.java](./liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java). We will review the implementation of each required method in sequence.
 
 1. `public String getKey();`
 

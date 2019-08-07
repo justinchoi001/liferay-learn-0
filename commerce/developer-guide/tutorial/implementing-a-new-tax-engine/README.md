@@ -97,7 +97,7 @@ public String getDescription(Locale locale);`
 public String getName(Locale locale);`
 ```
 
-To better understand each of the required methods mentioned above, let's look at [Q4B9CommerceTaxEngine.java](./liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/engine/Q4B9CommerceTaxEngine.java). We will review the implementation of each required method in sequence.
+To better understand each of the required methods mentioned above, let's look at [Q4B9CommerceTaxEngine.java](./liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/Q4B9CommerceTaxEngine.java). We will review the implementation of each required method in sequence.
 
 1. `public CommerceTaxValue getCommerceTaxValue(CommerceTaxCalculateRequest commerceTaxCalculateRequest) throws CommerceTaxEngineException;`
 
