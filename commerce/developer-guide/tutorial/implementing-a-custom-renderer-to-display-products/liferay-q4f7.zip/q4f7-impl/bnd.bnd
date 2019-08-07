@@ -1,0 +1,4 @@
+Bundle-Name: Acme B1C3 Commerce Product Content Renderer
+Bundle-SymbolicName: com.acme.q4f7.internal.commerce.product.content.renderer
+Bundle-Version: 1.0.0
+Web-ContextPath: /commerce-product-content-renderer
