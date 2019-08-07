@@ -135,7 +135,7 @@
 * Cart
 * Checkout
 * [Compare](./content/pages/compare/README.md)
-* [Lists](./content/pages/lists/README.md)
+* [List](./content/pages/list/README.md)
 * Pending Orders
 * Placed Orders
 * [Product Details Page](./content/pages/product-details/README.md)
