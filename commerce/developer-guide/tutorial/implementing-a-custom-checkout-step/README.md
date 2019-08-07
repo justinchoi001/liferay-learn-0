@@ -107,7 +107,7 @@ public void render(
     throws Exception;
 ```
 
-To better understand each of the required methods mentioned above, let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/main/java/com/acme/n8n6/internal/commerce/checkout/step/N8N6CommerceCheckoutStep.java). We will review the implementation of each required method in sequence.
+To better understand each of the required methods mentioned above, let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/main/java/com/acme/n8n6/internal/commerce/util/N8N6CommerceCheckoutStep.java). We will review the implementation of each required method in sequence.
 
 1. `public String getName();`
 
