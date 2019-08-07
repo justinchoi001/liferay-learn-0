@@ -4,6 +4,8 @@ This tutorial will show you how to add a custom shipping engine by implementing 
 
 Shipping engines process shipping options to determine which of the available options will be shown to the user, for what price, and so on. Liferay Commerce provides three shipping engines out of the box: a [flat rate engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java), a [variable rate engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/ByWeightCommerceShippingEngine.java), and the [FedEx engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fedex/src/main/java/com/liferay/commerce/shipping/engine/fedex/internal/FedExCommerceShippingEngine.java).
 
+>The FedEx shipping engine is only available for Commerce Enterprise Subscribers.
+
 ![Out of the box shipping methods](./images/01.png "Out of the box shipping methods")
 
 ## Overview
@@ -52,7 +54,7 @@ In this section, we will get an example shipping engine up and running on your i
     STARTED com.acme.j6x8.internal.commerce.model_1.0.0
     ```
 
-1. Verify that the example shipping engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Shipping Methods_. On this screen, the new shipping method ("Discounted Rate") representing our shipping engine will be present.
+1. Verify that the example shipping engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Shipping Methods_. On this screen, the new shipping method ("Discounted Rate") representing our shipping engine will be available.
 
 ![New shipping method](./images/02.png "New shipping method")
 
@@ -102,7 +104,7 @@ public String getDescription(Locale locale);
 public String getName(Locale locale);
 ```
 
-To better understand each of the required methods mentioned above, let's look at [J6X8CommerceShippingEngine.java](./liferay-j6x8.zip/j6x8-impl/src/main/java/com/acme/j6x8/internal/commerce/shipping/engine/J6X8CommerceShippingEngine.java). We will review the implementation of each required method in sequence.
+To better understand each of the required methods mentioned above, let's look at [J6X8CommerceShippingEngine.java](./liferay-j6x8.zip/j6x8-impl/src/main/java/com/acme/j6x8/internal/commerce/model/J6X8CommerceShippingEngine.java). We will review the implementation of each required method in sequence.
 
 1. `public String getCommerceShippingOptionLabel(String name, Locale locale);`
 
@@ -128,11 +130,11 @@ To better understand each of the required methods mentioned above, let's look at
             CommerceContext commerceContext, CommerceOrder commerceOrder,
             Locale locale)
         throws CommerceShippingEngineException {
-        
+
         // ...
     }
     ```
-    
+
     > This will be where the business logic is added for our custom shipping engine. It will need to fetch a list of available options, then perform the processing necessary to present them to the customer.
 
 1. `public String getDescription(Locale locale);`
@@ -147,7 +149,7 @@ To better understand each of the required methods mentioned above, let's look at
             resourceBundle, "ship-for-a-discounted-price");
     }
     ```
-    
+
     > This returns the description of our shipping engine to briefly explain what it does. It works similarly to the `getCommerceShippingOptionLabel` method.
 
 1. `public String getName(Locale locale);`
@@ -161,12 +163,12 @@ To better understand each of the required methods mentioned above, let's look at
         return LanguageUtil.get(resourceBundle, "discounted-rate");
     }
     ```
-    
+
     > This returns the name of our shipping engine. It also works similarly to the `getCommerceShippingOptionLabel` and `getDescription` methods.
 
 ### Create the Logic to Process Shipping Options
 
-To implement the shipping engine itself, we need to add our business logic to the `getCommerceShippingOptions` method of our class. We will first need to do several steps of processing to prepare the list of shipping options to be shown. Then, in our simple example, we will simply add an extra step to apply a discounted rate to the price of the options.
+To implement the shipping engine itself, we need to add our business logic to the `getCommerceShippingOptions` method of our class. We will first need to do several steps of processing to prepare the list of shipping options to be shown. Then, in our simple example, we will add an extra step to apply a discounted rate to the price of the options.
 
 Liferay Commerce's [fixed rate shipping engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java) is a good reference to see what processing steps are a good baseline to start with. Our example will closely follow those same steps.
 
@@ -281,7 +283,7 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
 
 > Finally, all we need to do to complete our processing logic is call our `_getCommerceShippingOptions` helper method, and handle any possible errors that may have occurred.
 
-As a last step, we will also need to add the language keys for our engine's name and description. Add the keys and their values to a [Language.properties](./liferay-j6x8/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
+As a last step, we will also need to add the language keys for our engine's name and description. Add the keys and their values to a [Language.properties](./liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 discounted-rate=Discounted Rate
@@ -294,5 +296,5 @@ Congratulations! You now know the basics for implementing the `CommerceShippingE
 
 ## Additional Information
 
-* [Applying Shipping Method Restrictions](../../../user-guide/sales/shipping/applying-shipping-method-restrictions)
+* [Applying Shipping Method Restrictions](../../../user-guide/sales/shipping/applying-shipping-method-restrictions/README.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
