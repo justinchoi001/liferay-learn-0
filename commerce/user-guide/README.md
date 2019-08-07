@@ -129,7 +129,7 @@
 
 #### Commerce Storefront Pages
 
-* Catalog Page
+* [Catalog Page](./content/pages/catalog/README.md)
 * Product Detail Page
 * Pending Orders Page
 * Placed Orders Page
