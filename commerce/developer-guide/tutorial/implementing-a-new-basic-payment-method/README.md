@@ -198,7 +198,7 @@ The following methods are necessary to define our custom payment method logic. T
 		}
     ```
 
-    >This is where custom payment logic will be implemented.  `CommercePaymentResult` is a simple container that should store information relevant to the completion of a payment process. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java).
+    >This is where custom payment logic will be implemented.  `CommercePaymentResult` is a simple container that stores information relevant to the completion of a payment process. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java).
 
 1. `public boolean isProcessPaymentEnabled()`
 
