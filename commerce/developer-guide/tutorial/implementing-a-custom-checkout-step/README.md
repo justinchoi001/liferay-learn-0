@@ -109,7 +109,7 @@ public void render(
 
 To better understand each of the required methods mentioned above, let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/main/java/com/acme/n8n6/internal/commerce/util/N8N6CommerceCheckoutStep.java). We will review the implementation of each required method in sequence.
 
-1. `public String getName();`
+1. `...`
 
     ```java
     @Override
@@ -122,7 +122,7 @@ To better understand each of the required methods mentioned above, let's look at
     >
     > Note that, for a language key to work correctly when used for this method, we will need to add it ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
-1. `public void processAction(ActionRequest actionRequest, ActionResponse actionResponse) throws Exception;`
+1. `...`
 
     ```java
     @Override
@@ -136,7 +136,7 @@ To better understand each of the required methods mentioned above, let's look at
     >
     > Note that, if no special processing is necessary for this checkout step, then nothing needs to be added into this method.
 
-1. `public void render(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception;`
+1. `...`
 
     ```java
     public void render(
