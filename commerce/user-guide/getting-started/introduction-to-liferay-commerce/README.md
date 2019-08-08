@@ -1,6 +1,6 @@
 # Introduction to Liferay Commerce
 
-Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Built on the enterprise foundation of Liferay DXP, Liferay Commerce also has the power and flexibility of fully integrated web content management and industry leading portal capabilities. To learn more about Liferay DXP see this [article](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction).
+Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform built from the ground up to meet the challenging and complex needs of any B2B organization. Using the enterprise foundation of Liferay DXP, Liferay Commerce has the power and flexibility of fully integrated web content management and industry leading portal capabilities. To learn more about Liferay DXP see this [article](https://help.liferay.com/hc/en-us/articles/360028818552-Introduction-to-The-Liferay-Distinction).
 
 ## Overview
 
@@ -12,7 +12,7 @@ Welcome to Liferay Commerce!  Liferay Commerce is a digital commerce platform bu
 * [APIs and Integrations](#apis-and-integrations)
 * [Next Steps](#next-steps)
 
-Just want to get started? Launch Liferay Commerce in five minutes or less with our [Quick Start Guide](../../../installation-and-upgrades/quick-start-guide/README.md).
+Just want to get started? Launch Liferay Commerce _fast_ with our [Quick Start Guide](../../../installation-and-upgrades/quick-start-guide/README.md).
 
 ## Modern Storefront Pages and Content Management
 
@@ -22,7 +22,7 @@ Liferay Commerce includes a wide range of tools for setting up a storefront. New
 
 ## Multi-Channel Catalog and Product Information Management
 
-Liferay Commerce contains a catalog management system that supports a variety of [product types](../../catalog/creating-and-managing-products/product-types/introduction-to-product-types/README.md) and stores a wide range of product data. [Product options](../../catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md), [pricing](../../catalog/managing-price/introduction-to-product-pricing-methods/README.md), [images](../../catalog/creating-and-managing-products/product-information/product-images/README.md), and [specifications](../../catalog/creating-and-managing-products/product-information/specifications/README.md) are a few examples. Products then are readily available to a distribution channel of choice.
+Liferay Commerce contains a catalog management system that supports a variety of [product types](../../catalog/creating-and-managing-products/product-types/introduction-to-product-types/README.md) and stores a wide range of product data. [Product options](../../catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md), [pricing](../../catalog/managing-price/introduction-to-product-pricing-methods/README.md), [images](../../catalog/creating-and-managing-products/product-information/product-images/README.md), and [specifications](../../catalog/creating-and-managing-products/product-information/specifications/README.md) are a few examples. Products are then readily available to a distribution channel of choice.
 
 <img src="./images/02.png" width="700px">
 
@@ -44,7 +44,7 @@ Liferay Commerce is optimized for business-to-business transactions with feature
 
 ## Order Management and Sales
 
-Liferay Commerce offers Order Management that enables buyers and sellers to prepare, place, approve, transmit, and approve orders.
+Liferay Commerce offers Order Management that enables buyers and sellers to prepare, place, approve, transmit, and fulfill orders.
 
 Payments for orders may be completed with several different [payment methods](../../getting-started/payments/managing-payment-methods/README.md) available out of the box. Integration with more payment processors may be accomplished with additional customization.
 
