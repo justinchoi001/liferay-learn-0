@@ -49,7 +49,7 @@ In this section, we will get an example checkout step up and running on your ins
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.n8n6.internal.commerce.util_1.0.0
+    STARTED com.acme.n8n6.impl_1.0.0
     ```
 
 1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add any item to the cart, and then click on the cart, and then click "Checkout". In the list of checkout steps shown on the screen, the new "Example Step" will be present.
@@ -172,7 +172,7 @@ public void render(
 For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name of our bundle, like the following:
 
 ```java
-@Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.internal.commerce.util)")
+@Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.impl)")
 private ServletContext _servletContext;
 ```
 
