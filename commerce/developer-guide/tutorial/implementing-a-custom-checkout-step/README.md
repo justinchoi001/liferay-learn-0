@@ -170,7 +170,7 @@ private ServletContext _servletContext;
 
 > The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to look in the proper location for the JSP.
 >
-> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file. In our example, we have that set to the value `/commerce-checkout-step`. For a reference on these values, see [the bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for this example.
+> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file. In our example, we have that set to `/commerce-checkout-step`. For a reference on these values, see [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd).
 
 Next, define the JSP for our checkout step's screen in the UI. In our simple example, we are adding placeholder text for some generic messages; you can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
 
