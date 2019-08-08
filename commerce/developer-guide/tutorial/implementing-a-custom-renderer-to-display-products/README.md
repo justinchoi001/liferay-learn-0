@@ -111,9 +111,7 @@ public void render(
 
 To better understand each of the methods above, let's look at [Q4F7CPContentRenderer.java](./liferay-q4f7.zip/q4f7-impl/src/main/java/com/acme/q4f7/internal/commerce/product/content/renderer/Q4F7CPContentRenderer.java). We will review the implementation of each required method in sequence.
 
-1. `public String getKey();`
-
-    ```java
+1. ```java
     @Override
     public String getKey() {
         return KEY;
@@ -122,9 +120,7 @@ To better understand each of the methods above, let's look at [Q4F7CPContentRend
     
     > This method provides a unique identifier for the product content renderer in the registry. The key can be used to fetch the renderer from the registry programmatically. Reusing a key that is already in use will override the existing associated renderer.
 
-1. `public String getLabel(Locale locale);`
-
-    ```java
+1. ```java
     @Override
     public String getLabel(Locale locale) {
         ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
@@ -138,9 +134,7 @@ To better understand each of the methods above, let's look at [Q4F7CPContentRend
     >
     > Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
-1. `public void render(CPCatalogEntry cpCatalogentry, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception;`
-
-    ```java
+1. ```java
     @Override
     public void render(
             CPCatalogEntry cpCatalogEntry,
@@ -158,8 +152,6 @@ To create the product content renderer itself, we need to implement the `render`
 
 Note that there are several options to define the view, including using a JSP, Freemarker template, or Soy template. In our simple example, we will use a JSP.
 
-`public void render(CPCatalogEntry cpCatalogentry, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception`
-
 ```java
 @Override
 public void render(
@@ -174,7 +166,7 @@ public void render(
 }
 ```
 
-> We use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp)). We also give it a `ServletContext` to give a context for where to find our JSP.
+> We use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp)). We also give it a `ServletContext` to allow it to find our JSP.
 
 For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name of our bundle, like the following:
 
@@ -197,16 +189,7 @@ example=Example
 
 ### Create the Custom View
 
-Defining our product content renderer's custom view is the biggest step of creating our custom renderer. In our example, we will be using a JSP, which you can see at [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp).
-
-
-
-
-
-
-
-
-While there are unlimited ways to define the view for the renderer, there are some basic elements most product content renderers should have. Let's walk through the basic features we will want for our renderer in our JSP.
+The last step to create our product content renderer is to define our custom view. In our example, we will be using a JSP for this step, which you can see at [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp).
 
 ```jsp
 <%
@@ -215,6 +198,8 @@ CPContentHelper cpContentHelper = (CPContentHelper)request.getAttribute(CPConten
 CPCatalogEntry cpCatalogEntry = cpContentHelper.getCPCatalogEntry(request);
 
 CPSku cpSku = cpContentHelper.getDefaultCPSku(cpCatalogEntry);
+
+long cpDefinitionId = cpCatalogEntry.getCPDefinitionId();
 %>
 ```
 
@@ -225,50 +210,24 @@ CPSku cpSku = cpContentHelper.getDefaultCPSku(cpCatalogEntry);
 > [CPCatalogEntry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/catalog/CPCatalogEntry.java) will represent the displayed product itself, and to get more information, we also use the default SKU for the product, contained in a [CPSKU](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/catalog/CPSkuImpl.java). 
 
 ```jsp
-<div class="col-lg-10 col-md-9 col-xs-10 full-image">
-    <c:if test="<%= Validator.isNotNull(cpCatalogEntry.getDefaultImageFileUrl()) %>">
-        <img class="center-block img-responsive" id="<portlet:namespace />full-image" src="<%= cpCatalogEntry.getDefaultImageFileUrl() %>" />
-    </c:if>
-</div>
+<h1><%= "Example Product Renderer" %></h1>
+
+<c:if test="<%= cpSku != null %>">
+    <h3><%= "SKU: " + cpSku.getSku() %></h3>
+
+    <h3><%= "Price: " + cpSku.getPrice().toString() %></h3>
+
+    <h3><%= "Availability: " + cpContentHelper.getAvailabilityLabel(request) %></h3>
+
+    <h3><%= "Stock Quantity: " + cpContentHelper.getStockQuantityLabel(request) %></h3>
+</c:if>
+
+<liferay-util:dynamic-include key="com.liferay.commerce.product.content.web#/add_to_cart#" />
 ```
 
-> To display the full image for the selected product, we get the URL for the image from our [CPCatalogEntry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/catalog/CPCatalogEntry.java), and then use it as a parameter in the `img` tag. {Placeholder: explain anything more about the image? The class? The div?}
-
-```jsp
-<h1><%= HtmlUtil.escape(cpCatalogEntry.getName()) %></h1>
-
-    <c:choose>
-        <c:when test="<%= cpSku != null %>">
-            <h4 class="sku"><%= HtmlUtil.escape(cpSku.getSku()) %></h4>
-
-            <div class="price"><liferay-commerce:price CPDefinitionId="<%= cpDefinitionId %>" CPInstanceId="<%= cpSku.getCPInstanceId() %>" /></div>
-
-            <div class="subscription-info"><liferay-commerce:subscription-info CPInstanceId="<%= cpSku.getCPInstanceId() %>" /></div>
-
-            <div class="availability"><%= cpContentHelper.getAvailabilityLabel(request) %></div>
-
-            <div class="availabilityEstimate"><%= cpContentHelper.getAvailabilityEstimateLabel(request) %></div>
-
-            <div class="stockQuantity"><%= cpContentHelper.getStockQuantityLabel(request) %></div>
-        </c:when>
-        <c:otherwise>
-            ...
-        </c:otherwise>
-```
-
-> These are some of the basic details about the displayed product that we want to include in our view; this includes the product name, and if possible, the default SKU and several more details about it. In this example, we are using pre-defined div classes to render this product information. {Placeholder: explain anything else about the divs, classes, tags, or  other implementation details?}
-
-```jsp
-{Placeholder for main implementation}
-```
-
-> We will want to have elements in place to allow a customer to select a quantity and add the product to the cart. {Placeholder: Explain these elements with a bit more detail}
-
-Lastly, define the language key for our engine's name and description. Add the key and its value to a [Language.properties](./liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
-
-```
-example=Example
-```
+> For our simple example, we use basic HTML headers to display the information for the product's SKU.
+>
+> Note that we use Liferay Commerce's [add_to_cart_button.jsp](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-cart-content-web/src/main/resources/META-INF/resources/dynamic_include/add_to_cart_button.jsp) to add this functionality to our view.
 
 ## Conclusion
 
