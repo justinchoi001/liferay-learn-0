@@ -99,10 +99,7 @@ public String getName(Locale locale);`
 
 To better understand each of the required methods mentioned above, let's look at [Q4B9CommerceTaxEngine.java](./liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/Q4B9CommerceTaxEngine.java). We will review the implementation of each required method in sequence.
 
-1. `public CommerceTaxValue getCommerceTaxValue(CommerceTaxCalculateRequest commerceTaxCalculateRequest) throws CommerceTaxEngineException;`
-
-    ```java
-    @Override
+1. @Override
     public CommerceTaxValue getCommerceTaxValue(
             CommerceTaxCalculateRequest commerceTaxCalculateRequest)
         throws CommerceTaxEngineException {
@@ -115,9 +112,7 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This method will be where the business logic is implemented for our tax engine.
 
-1. `public String getDescription(Locale locale);`
-
-    ```java
+1. ```java
     @Override
     public String getDescription(Locale locale) {
         ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
@@ -131,9 +126,7 @@ To better understand each of the required methods mentioned above, let's look at
     >
     > Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
-1. `public String getName(Locale locale);`
-
-    ```java
+1. ```java
     @Override
     public String getName(Locale locale) {
         ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
@@ -148,8 +141,6 @@ To better understand each of the required methods mentioned above, let's look at
 ### Create the Tax Calculation
 
 To implement the main logic of the tax engine, we need to add our business logic to the `getCommerceTaxValue` method of our class. In our simple example, we will use a hard-coded rate as our flat value, although this will have limited use in a real world case.
-
-`public CommerceTaxValue getCommerceTaxValue(CommerceTaxCalculateRequest commerceTaxCalculateRequest) throws CommerceTaxEngineException`
 
 ```java
 @Override

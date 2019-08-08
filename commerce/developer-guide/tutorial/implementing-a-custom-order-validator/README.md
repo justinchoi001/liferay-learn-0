@@ -100,9 +100,7 @@ public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem co
 
 To better understand each of the required methods mentioned above, let's look at [N9B2CommerceOrderValidator.java](./liferay-n9b2.zip/n9b2-impl/src/main/java/com/acme/n9b2/internal/commerce/order/N9B2CommerceOrderValidator.java). We will review the implementation of each required method in sequence.
 
-1. `public String getKey();`
-
-    ```java
+1. ```java
     @Override
     public String getKey() {
         return KEY;
@@ -111,11 +109,7 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This method provides a unique identifier for the order validator in the registry. The key can be used to fetch the validator from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated validator.
 
-1. `public CommerceOrderValidatorResult validate(
-            Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity)
-        throws PortalException;`
-
-    ```java
+1. ```java
     @Override
     public CommerceOrderValidatorResult validate(
             Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance,
@@ -134,9 +128,7 @@ To better understand each of the required methods mentioned above, let's look at
     >
     > Note that this dummy implementation only has a simple check for a null value, which is a standard first step for this method.
 
-1. `public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem) throws PortalException;`
-
-    ```java
+1. ```java
     @Override
     public CommerceOrderValidatorResult validate(
             Locale locale, CommerceOrderItem commerceOrderItem)
@@ -152,67 +144,63 @@ To better understand each of the required methods mentioned above, let's look at
 
 The two `validate` methods are where we define the custom validation logic for our order validator. In our simple example, we will add logic to reject orders with more than ten of an item over a certain price.
 
-1. `public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity)`
+```java
+@Override
+public CommerceOrderValidatorResult validate(
+        Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance,
+        int quantity)
+    throws PortalException {
 
-    ```java
-    @Override
-    public CommerceOrderValidatorResult validate(
-            Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance,
-            int quantity)
-        throws PortalException {
-
-        if (cpInstance == null) {
-            return new CommerceOrderValidatorResult(false);
-        }
-
-        BigDecimal price = cpInstance.getPrice();
-
-        if ((price.doubleValue() > 100.0) && (quantity > 10)) {
-            ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
-                "content.Language", locale, getClass());
-
-            return new CommerceOrderValidatorResult(
-                false,
-                LanguageUtil.get(
-                    resourceBundle, "this-item-has-a-maximum-quantity-of-10"));
-        }
-
-        return new CommerceOrderValidatorResult(true);
+    if (cpInstance == null) {
+        return new CommerceOrderValidatorResult(false);
     }
-    ```
 
-    > After a standard null check for this method, the main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the CPInstance, which contains information about the order the customer has added; to find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
-    >
-    > Note that, for the main validation checks, it is best practice to include a localized message explaining why the validation failed. For this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
+    BigDecimal price = cpInstance.getPrice();
 
-1. `public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem)`
+    if ((price.doubleValue() > 100.0) && (quantity > 10)) {
+        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+            "content.Language", locale, getClass());
 
-    ```java
-    @Override
-    public CommerceOrderValidatorResult validate(
-            Locale locale, CommerceOrderItem commerceOrderItem)
-        throws PortalException {
-
-        BigDecimal price = commerceOrderItem.getUnitPrice();
-
-        if ((price.doubleValue() > 100.0) &&
-            (commerceOrderItem.getQuantity() > 10)) {
-
-            ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
-                "content.Language", locale, getClass());
-
-            return new CommerceOrderValidatorResult(
-                false,
-                LanguageUtil.get(
-                    resourceBundle,
-                    "expensive-items-have-a-maximum-quantity-of-10"));
-        }
-
-        return new CommerceOrderValidatorResult(true);
+        return new CommerceOrderValidatorResult(
+            false,
+            LanguageUtil.get(
+                resourceBundle, "this-item-has-a-maximum-quantity-of-10"));
     }
-    ```
 
-    > We can add the same validation logic to this method, since it will be called for the items in the customer's cart. The main difference in this case is we get the information from a `CommerceOrderItem` object; to find more methods you can use with a `CommerceOrderItem`, see [CommerceOrderItem](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java).
+    return new CommerceOrderValidatorResult(true);
+}
+```
+
+> After a standard null check for this method, the main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the CPInstance, which contains information about the order the customer has added; to find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
+>
+> Note that, for the main validation checks, it is best practice to include a localized message explaining why the validation failed. For this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
+
+```java
+@Override
+public CommerceOrderValidatorResult validate(
+        Locale locale, CommerceOrderItem commerceOrderItem)
+    throws PortalException {
+
+    BigDecimal price = commerceOrderItem.getUnitPrice();
+
+    if ((price.doubleValue() > 100.0) &&
+        (commerceOrderItem.getQuantity() > 10)) {
+
+        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
+            "content.Language", locale, getClass());
+
+        return new CommerceOrderValidatorResult(
+            false,
+            LanguageUtil.get(
+                resourceBundle,
+                "expensive-items-have-a-maximum-quantity-of-10"));
+    }
+
+    return new CommerceOrderValidatorResult(true);
+}
+```
+
+> We can add the same validation logic to this method, since it will be called for the items in the customer's cart. The main difference in this case is we get the information from a `CommerceOrderItem` object; to find more methods you can use with a `CommerceOrderItem`, see [CommerceOrderItem](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java).
 
 Lastly, define the language keys for our validator's error messages. Add the keys and their values to a [Language.properties](./liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) file within our module:
 

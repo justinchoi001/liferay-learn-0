@@ -102,9 +102,7 @@ public String getLabel(Locale locale);
 
 To better understand each of the required methods mentioned above, let's look at [J1E4CommerceLowStockActivity.java](./liferay-j1e4.zip/j1e4-impl/src/main/java/com/acme/j1e4/internal/commerce/stock/activity/J1E4CommerceLowStockActivity.java). We will review the implementation of each required method in sequence.
 
-1. `public void execute(CPInstance cpInstance) throws PortalException;`
-
-    ```java
+1. ```java
     @Override
     public void execute(CPInstance cpInstance) throws PortalException {
         // ...
@@ -113,9 +111,7 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This method will be where the business logic is implemented for the custom activity.
 
-2. `public String getKey();`
-
-    ```java
+2. ```java
     @Override
     public String getKey() {
         return KEY;
@@ -124,9 +120,7 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This provides a unique identifier for the low stock activity in the registry. The key can be used to fetch the low stock activity from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated activity.
 
-3. `public String getLabel(Locale locale);`
-
-    ```java
+3.  ```java
     @Override
     public String getLabel(Locale locale) {
         ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
@@ -143,8 +137,6 @@ To better understand each of the required methods mentioned above, let's look at
 ### Create the Low Stock Activity
 
 To implement the low stock activity itself, we only need to add our business logic to the `execute` method of our class. In our simple example, we will add a warning message that is added to Liferay's logs.
-
-`public void execute(CPInstance cpInstance)`
 
 ```java
     @Override

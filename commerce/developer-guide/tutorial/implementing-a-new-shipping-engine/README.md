@@ -106,9 +106,7 @@ public String getName(Locale locale);
 
 To better understand each of the required methods mentioned above, let's look at [J6X8CommerceShippingEngine.java](./liferay-j6x8.zip/j6x8-impl/src/main/java/com/acme/j6x8/internal/commerce/model/J6X8CommerceShippingEngine.java). We will review the implementation of each required method in sequence.
 
-1. `public String getCommerceShippingOptionLabel(String name, Locale locale);`
-
-    ```java
+1. ```java
     @Override
     public String getCommerceShippingOptionLabel(String name, Locale locale) {
         ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
@@ -122,9 +120,7 @@ To better understand each of the required methods mentioned above, let's look at
     >
     > Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
-1. `public List<CommerceShippingOption> getCommerceShippingOptions(CommerceContext commerceContext, CommerceOrder commerceOrder, Locale locale) throws CommerceShippingEngineException;`
-
-    ```java
+1. ```java
     @Override
     public List<CommerceShippingOption> getCommerceShippingOptions(
             CommerceContext commerceContext, CommerceOrder commerceOrder,
@@ -137,9 +133,7 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This will be where the business logic is added for our custom shipping engine. It will fetch a list of available options, then perform the processing necessary to present them to the customer.
 
-1. `public String getDescription(Locale locale);`
-
-    ```java
+1. ```java
     @Override
     public String getDescription(Locale locale) {
         ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
@@ -152,9 +146,7 @@ To better understand each of the required methods mentioned above, let's look at
 
     > This returns the description of our shipping engine to briefly explain what it does. It works similarly to the `getCommerceShippingOptionLabel` method.
 
-1. `public String getName(Locale locale);`
-
-    ```java
+1. ```java
     @Override
     public String getName(Locale locale) {
         ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
