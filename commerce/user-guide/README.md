@@ -133,11 +133,11 @@
 * BOM / Spare Parts Finder
 * [Catalog](./content/pages/catalog/README.md)
 * Cart
-* Checkout
+* [Checkout](./content/pages/checkout/README.md)
 * [Compare](./content/pages/compare/README.md)
 * [List](./content/pages/list/README.md)
 * Pending Orders
-* Placed Orders
+* [Placed Orders](./content/pages/placed-orders/README.md)
 * [Product Details Page](./content/pages/product-details/README.md)
 * Search
 
