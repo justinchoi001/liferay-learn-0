@@ -170,7 +170,7 @@ public CommerceTaxValue getCommerceTaxValue(
 }
 ```
 
-> The `CommerceTaxCalculateRequest` parameter contains useful information that we will need when making our calculation. For this example, we make use of the price from the request, as well as the value telling us whether to apply the rate as a percentage. To see more methods you can use, see [CommerceTaxCalculateRequest.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java).
+> The `CommerceTaxCalculateRequest` parameter contains information needed for making our calculation. For this example, we make use of the price from the request, as well as the value telling us whether to apply the rate as a percentage. To see more methods you can use, see [CommerceTaxCalculateRequest.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java).
 
 ## Conclusion
 

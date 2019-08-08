@@ -135,7 +135,7 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
 
-    > This will be where the business logic is added for our custom shipping engine. It will need to fetch a list of available options, then perform the processing necessary to present them to the customer.
+    > This will be where the business logic is added for our custom shipping engine. It will fetch a list of available options, then perform the processing necessary to present them to the customer.
 
 1. `public String getDescription(Locale locale);`
 
@@ -168,7 +168,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Logic to Process Shipping Options
 
-To implement the shipping engine itself, we need to add our business logic to the `getCommerceShippingOptions` method of our class. We will first need to do several steps of processing to prepare the list of shipping options to be shown. Then, in our simple example, we will add an extra step to apply a discounted rate to the price of the options.
+To implement the shipping engine itself, we need to add our business logic to the `getCommerceShippingOptions` method of our class. We will first do several steps of processing to prepare the list of shipping options to be shown. Then, in our simple example, we will add an extra step to apply a discounted rate to the price of the options.
 
 Liferay Commerce's [fixed rate shipping engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java) is a good reference to see what processing steps are a good baseline to start with. Our example will follow those same steps.
 
@@ -281,9 +281,9 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
 }
 ```
 
-> Finally, all we need to do to complete our processing logic is call our `_getCommerceShippingOptions` helper method, and handle any possible errors that may have occurred.
+> Finally, we complete our processing logic by calling our `_getCommerceShippingOptions` helper method, and handling any possible errors that may have occurred.
 
-We will also need to add the language keys for our engine's name and description. Add the keys and their values to a [Language.properties](./liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
+Lastly, define the language keys for our engine's name and description. Add the keys and their values to a [Language.properties](./liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 discounted-rate=Discounted Rate
