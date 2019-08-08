@@ -64,7 +64,7 @@ Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CPContentRenderer` interface; and third, we will implement the rendering logic and our custom style in a JSP.
+In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CPContentRenderer` interface; and third, we will implement the rendering logic and create our custom view in a JSP.
 
 ### Annotate the Class for OSGi Registration
 
@@ -83,11 +83,11 @@ public class Q4F7CPContentRenderer implements CPContentRenderer {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for our low stock activity so that Liferay Commerce can distinguish the new activity from others in the [product content renderer registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-content-web/src/main/java/com/liferay/commerce/product/content/web/internal/render/CPContentRendererRegistryImpl.java). Reusing a key that is already in use will override the existing associated renderer.
+> It is important to provide a distinct key for our product content renderer so that Liferay Commerce can distinguish the new renderer from others in the [product content renderer registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-content-web/src/main/java/com/liferay/commerce/product/content/web/internal/render/CPContentRendererRegistryImpl.java). Reusing a key that is already in use will override the existing associated renderer.
 >
-> The order property determines where in the list of similar renderers this renderer will appear in the UI; for example, the [SimpleCPContentRenderer](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPContentRenderer.java) has an order of the minimum integer value, so any other "Simple" type renderers will appear after it in the list.
+> The `order` property determines where in the list of similar renderers this renderer will appear in the UI; for example, the [SimpleCPContentRenderer](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPContentRenderer.java) has this property set to the minimum integer value, so any other "Simple" type renderers will appear after it in the list.
 >
-> The type property decides what type of product this renderer can be used for. In our example, we use a "Simple" type, so the renderer will only appear under the Simple category in the UI.
+> The `type` property decides what type of product this renderer can be used for. In our example, we use a "Simple" type, so the renderer will only appear under the Simple category in the UI.
 
 ### Implement the `CPContentRenderer` Interface
 
@@ -120,7 +120,7 @@ To better understand each of the methods above, let's look at [Q4F7CPContentRend
     }
     ```
     
-    > This method provides a unique identifier for the product content renderer in the registry. The key can be used to fetch the renderer from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated renderer.
+    > This method provides a unique identifier for the product content renderer in the registry. The key can be used to fetch the renderer from the registry programmatically. Reusing a key that is already in use will override the existing associated renderer.
 
 1. `public String getLabel(Locale locale);`
 
@@ -154,9 +154,9 @@ To better understand each of the methods above, let's look at [Q4F7CPContentRend
 
 ### Create the Renderer
 
-To implement the product content renderer itself, we need to add the implementation for the `render` method, and then add the custom view as another file.
+To create the product content renderer itself, we need to implement the `render` method, and then add a custom view.
 
-Note that there are several options to define the view, including using a JSP, Freemarker template, or Soy template. In our simple example, we will use a JSP, similar to that of the [SimpleCPContentRenderer](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPContentRenderer.java).
+Note that there are several options to define the view, including using a JSP, Freemarker template, or Soy template. In our simple example, we will use a JSP.
 
 `public void render(CPCatalogEntry cpCatalogentry, HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) throws Exception`
 
@@ -174,7 +174,7 @@ public void render(
 }
 ```
 
-> We use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp)). We also give it a `ServletContext` parameter to give a context for where to find the JSP we have created.
+> We use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp)). We also give it a `ServletContext` to give a context for where to find our JSP.
 
 For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name of our bundle, like the following:
 
@@ -187,9 +187,9 @@ private ServletContext _servletContext;
 
 > The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-q4f7.zip/q4f7-impl/bnd.bnd). These values must match for the `ServletContext` to look in the proper location for the JSP.
 >
-> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file. In our example, we have that set to the value `/commerce-product-content-renderer`. For a reference on these values, see [the bnd.bnd file](./liferay-q4f7.zip/q4f7-impl/bnd.bnd) for this example.
+> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file. In our example, we have that set to `/commerce-product-content-renderer`. For a reference on these values, see [bnd.bnd](./liferay-q4f7.zip/q4f7-impl/bnd.bnd).
 
-We will also need to add the language key for our new product content renderer's label. Add the key and its value to a [Language.properties](./liferay-q4f7.zip/q4f7-impl/src/main/resources/content/Language.properties) file within our module:
+Lastly, define the language key for our new product content renderer's label. Add the key and its value to a [Language.properties](./liferay-q4f7.zip/q4f7-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example=Example
@@ -198,6 +198,13 @@ example=Example
 ### Create the Custom View
 
 Defining our product content renderer's custom view is the biggest step of creating our custom renderer. In our example, we will be using a JSP, which you can see at [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp).
+
+
+
+
+
+
+
 
 While there are unlimited ways to define the view for the renderer, there are some basic elements most product content renderers should have. Let's walk through the basic features we will want for our renderer in our JSP.
 
