@@ -32,7 +32,7 @@ This article details how to configure then enable FedEx as a shipping method.
 1. Click the _Details_ tab.
 1. Switch the _Active_ toggle to _YES_.
 
-Your store is now configured to use FedEx as a shipping method. Note that your store can have multiple shipping methods enabled and as long as your credentials are valid, vendors may now select FedEx specific shipping options.
+The store is now configured to use FedEx as a shipping method. Note that the store can have multiple shipping methods enabled and as long as credentials are valid, sellers may now select FedEx specific shipping options.
 
 ## Additional Information
 

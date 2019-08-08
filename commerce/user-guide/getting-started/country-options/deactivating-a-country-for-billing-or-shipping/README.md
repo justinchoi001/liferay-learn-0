@@ -1,6 +1,6 @@
 # Deactivating a Country for Billing or Shipping
 
-In certain situations, it may be necessary to deactivate a country for shipping or billing purposes.
+Some stores may need to deactivate a country for shipping or billing purposes.
 
 This article documents how to deactivate a country in the Control Panel.
 
