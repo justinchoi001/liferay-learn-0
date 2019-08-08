@@ -62,7 +62,7 @@ Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommerceCheckoutStep` interface; and third, we will implement the rendering logic and a JSP for the new screen.
+In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommerceCheckoutStep` interface; and third, we will implement the rendering logic and add a JSP for the new screen.
 
 ### Annotate the Class for OSGi Registration
 
@@ -86,7 +86,7 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
 
 ### Implement the `CommerceCheckoutStep` Interface
 
-To simplify our work in implementing this interface, we can extend a base class to give us some basic functionality to build on top of: [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java).
+To simplify our work in implementing this interface, we can extend a base class to give us functionality to build on top of: [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java).
 
 After we extend the base class, only the following three methods are still required:
 
@@ -97,7 +97,7 @@ public String getName();
 ```java
 public void processAction(
         ActionRequest actionRequest, ActionResponse actionResponse)
-    throws Exception
+    throws Exception;
 ```
 
 ```java
