@@ -15,7 +15,7 @@ Welcome to the Liferay Commerce Developer Guide.
 ### Content
 
 * [Implementing a Sample File Download to Product Details (TODO)](./tutorial/implementing-a-sample-file-download-to-product-details/README.md)
-* [Implementing a Custom Renderer to Display Products (TODO)](./tutorial/implementing-a-custom-renderer-to-display-products/README.md)
+* [Implementing a Custom Renderer to Display Products](./tutorial/implementing-a-custom-renderer-to-display-products/README.md)
 
 ### Managing Inventory
 
