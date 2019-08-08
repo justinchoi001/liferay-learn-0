@@ -174,7 +174,7 @@ public void render(
 }
 ```
 
-> We simply use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp)). We also give it a `ServletContext` parameter to give a context for where to find the JSP we have created.
+> We use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp)). We also give it a `ServletContext` parameter to give a context for where to find the JSP we have created.
 
 For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name of our bundle, like the following:
 
