@@ -52,7 +52,7 @@ In this section, we will get an example checkout step up and running on your ins
     STARTED com.acme.n8n6.impl_1.0.0
     ```
 
-1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add any item to the cart, and then click on the cart, and then click "Checkout". In the list of checkout steps shown on the screen, the new "Example Step" will be present.
+1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add an item to the cart, view the cart, and then click "Checkout". In the list of checkout steps shown, the new "Example Step" will be present.
 
 ![New checkout step](./images/02.png "New checkout step")
 
@@ -82,13 +82,13 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
 
 > We must give the checkout step a name, which should be a unique value so that Liferay Commerce can distinguish our new checkout step from other existing checkout steps.
 >
-> The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20; giving our checkout step a value of 21, then, will ensure that it appears immediately after the shipping method step.
+> The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20. Giving our checkout step a value of 21 will ensure that it appears immediately after the shipping method step.
 
 ### Implement the `CommerceCheckoutStep` Interface
 
 To simplify our work in implementing this interface, we can extend a base class to give us functionality to build on top of: [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java).
 
-After we extend the base class, only the following three methods are still required:
+After we extend the base class, the following three methods are required:
 
 ```java
 public String getName();
@@ -109,14 +109,14 @@ public void render(
 
 To better understand each of the required methods mentioned above, let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/main/java/com/acme/n8n6/internal/commerce/util/N8N6CommerceCheckoutStep.java). We will review the implementation of each required method in sequence.
 
-1.  ```java
+1. ```java
     @Override
     public String getName() {
         return NAME;
     }
-    ```
+   ```
 
-    > This method returns the name of our checkout step. This name may be a language key that corresponds to the actual name that will appear in the UI.
+    > This method returns the name of our checkout step. This name may be a language key that corresponds to the name that will appear in the UI.
     >
     > Note that, for a language key to work correctly when used for this method, we will need to add it ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
@@ -126,11 +126,11 @@ To better understand each of the required methods mentioned above, let's look at
             ActionRequest actionRequest, ActionResponse actionResponse)
         throws Exception {
     }
-    ```
+   ```
 
-    > This will be called to take care of any special backend processing that may be needed for our checkout step. If any backend processing is required, then the business logic will be implemented here, using information passed in through the `ActionRequest`.
+    > This will be called to handle any special backend processing that may be needed for our checkout step. If backend processing is required, then the business logic will be implemented here, using information passed in through the `ActionRequest`.
     >
-    > Note that, if no special processing is necessary for this checkout step, then nothing needs to be added into this method.
+    > If no special processing is necessary for this checkout step, then nothing needs to be added into this method.
 
 1. ```java
     public void render(
@@ -138,13 +138,13 @@ To better understand each of the required methods mentioned above, let's look at
             HttpServletResponse httpServletResponse)
         throws Exception {
     }
-    ```
+   ```
 
     > This will be where we add the code to render a customized screen for our checkout step.
 
 ### Create the Checkout Step
 
-To implement the checkout step itself, we need to add the implementation for the `processAction` and `render` methods, and then add a JSP to render the screen for the new checkout step. In our simple example, we will only display some text on our custom screen, so we do not need any special backend processing in our `processAction` implementation.
+To implement the checkout step itself, we need to add the implementation for the `processAction` and `render` methods, and then add a JSP to render the screen for the new checkout step. In our example, we will only display some text on a custom screen, so we do not need any special backend processing in the `processAction` implementation.
 
 ```java
 @Override
@@ -161,7 +161,7 @@ public void render(
 
 > We use a `JSPRenderer` to render the JSP for our checkout step (in this case, [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). We also give it a `ServletContext` parameter to give a context for where to find the JSP we have created.
 
-For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name of our bundle, like the following:
+For the JSP to be able to properly use the `ServletContext` to find the JSP in our module, we need to define it using the correct symbolic name of our bundle:
 
 ```java
 @Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.impl)")
@@ -170,9 +170,9 @@ private ServletContext _servletContext;
 
 > The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to look in the proper location for the JSP.
 >
-> Note that, for the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file. In our example, we have that set to `/commerce-checkout-step`. For a reference on these values, see [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd).
+> For the `ServletContext` to be properly generated, we also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file. In our example, we have that set to `/commerce-checkout-step`. For a reference on these values, see [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd).
 
-Next, define the JSP for our checkout step's screen in the UI. In our simple example, we are adding placeholder text for some generic messages; you can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
+Next, define the JSP for our checkout step's screen in the UI. In our example, we are adding placeholder text for some generic messages; you can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
 
 Lastly, define the language key for the name of our new checkout step. Add the key and its value to a [Language.properties](./liferay-n8n6.zip/n8n6-impl/src/main/resources/content/Language.properties) file within our module:
 
