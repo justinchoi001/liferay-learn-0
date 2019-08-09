@@ -49,7 +49,7 @@ In this section, we will get an example tax engine up and running on your instan
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.q4b9.internal.commerce.tax_1.0.0
+    STARTED com.acme.q4b9.impl_1.0.0
     ```
 
 1. Verify that the example tax engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Taxes_ → _Tax Calculations_. The new tax engine ("Flat Tax") will be present in the list shown.

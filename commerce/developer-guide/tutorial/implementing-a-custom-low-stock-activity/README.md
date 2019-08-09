@@ -49,7 +49,7 @@ In this section, we will get an example low stock activity up and running on you
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.j1e4.internal.commerce.stock.activity_1.0.0
+    STARTED com.acme.j1e4.impl_1.0.0
     ```
 
 1. Verify that the example new low stock activity was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, for any product, click _Edit_ within its menu. If necessary, you can add a product to do this with (see [Creating a Simple Product](../../../user-guide/catalog/creating-and-managing-products/product-types/creating-a-simple-product/README.md) for help).

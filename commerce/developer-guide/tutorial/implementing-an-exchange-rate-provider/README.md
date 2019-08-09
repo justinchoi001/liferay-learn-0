@@ -49,7 +49,7 @@ In this section, we will get an example exchange rate provider up and running on
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.f2y1.internal.commerce.currency.util_1.0.0
+    STARTED com.acme.f2y1.impl_1.0.0
     ```
 
 1. Verify that the example exchange rate provider was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Settings_ → _Currencies_ → _Exchange Rate_.

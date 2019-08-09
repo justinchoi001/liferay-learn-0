@@ -49,7 +49,7 @@ In this section, we will get an example product content renderer up and running 
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.q4f7.internal.commerce.product.content.renderer_1.0.0
+    STARTED com.acme.q4f7.impl_1.0.0
     ```
 
 1. Verify that the example product content renderer was added. Open your browser to `https://localhost:8080` and navigate to any catalog with products in Liferay Commerce. Click on the product to see the Product Details widget, then click _Configuration_ for the widget.
@@ -170,7 +170,7 @@ To allow the `ServletContext` to find the JSP in our module, we define it using 
 
 ```java
 @Reference(
-    target = "(osgi.web.symbolicname=com.acme.q4f7.internal.commerce.product.content.renderer)"
+    target = "(osgi.web.symbolicname=com.acme.q4f7.impl)"
 )
 private ServletContext _servletContext;
 ```

@@ -51,7 +51,7 @@ In this section, we will get an example shipping engine up and running on your i
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.j6x8.internal.commerce.model_1.0.0
+    STARTED com.acme.j6x8.impl_1.0.0
     ```
 
 1. Verify that the example shipping engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Shipping Methods_. On this screen, the new shipping method ("Discounted Rate") representing our shipping engine will be present.

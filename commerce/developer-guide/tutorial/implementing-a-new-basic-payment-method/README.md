@@ -49,7 +49,7 @@ In this section, we will get an example payment method up and running on your in
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.b1c3.internal.commerce.payment.method_1.0.0
+    STARTED com.acme.b1c3.impl_1.0.0
     ```
 
 1. Verify that the example new basic payment method was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Settings_ → _Payment Methods_.
