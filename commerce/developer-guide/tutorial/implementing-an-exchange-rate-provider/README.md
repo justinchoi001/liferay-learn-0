@@ -138,3 +138,4 @@ Congratulations! You now know the basics for implementing the `ExchangeRateProvi
 ## Additional Information
 
 * [Currencies](../../../user-guide/getting-started/currencies/README.md)
+* [Managing Exchange Rates](../../../user-guide/getting-started/currencies/managing-exchange-rates)

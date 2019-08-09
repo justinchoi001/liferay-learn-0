@@ -170,4 +170,4 @@ Congratulations! You now know the basics for implementing the `CommerceTaxEngine
 ## Additional Information
 
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
-* [Taxes](https://commerce.liferay.dev/user-guide/-/knowledge_base/user/taxes)
+* [Setting Tax Rate by Fixed Rate](../../../user-guide/operations/taxes/setting-tax-rate-by-fixed-rate/README.md)

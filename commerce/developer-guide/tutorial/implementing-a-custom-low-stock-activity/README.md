@@ -161,5 +161,6 @@ Congratulations! You now know the basics for implementing the `CommerceLowStockA
 
 ## Additional Information
 
-* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
 * [Creating a Simple Product](../../../user-guide/catalog/creating-and-managing-products/product-types/creating-a-simple-product/README.md)
+* [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
+* [Low Stock Activity](../../../user-guide/catalog/managing-inventory/low-stock-activity)
