@@ -4,7 +4,7 @@ This article documents how to deploy Liferay Commerce to an existing Liferay DXP
 
 To begin using Liferay Commerce:
 
-1. Download the latest `LPKG`.
+1. Download the latest Liferay Commerce `LPKG`.
     * Enterprise subscribers can download the latest `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
       * Subscribers also need an order number or activation key for Liferay Commerce.
     * The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Site](https://commerce.liferay.dev/download).
@@ -14,7 +14,7 @@ To begin using Liferay Commerce:
 1. (_Subscribers only_) Deploy the activation key to the `${liferay.home}/deploy` folder.
 1. Verify that that the following message appears in the application server console:
 
-    ```bash
+    ```
     2019-08-09 00:25:10.662 INFO  [fileinstall-/../../liferay-dxp-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-dxp-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
     2019-08-09 00:25:10.664 INFO  [fileinstall-/../..//liferay-dxp-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/C:/Users/Liferay/dwarves/bombur/liferay-dxp-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
     ```
@@ -23,13 +23,13 @@ To begin using Liferay Commerce:
 1. Start the application server.
 1. Verify that the `LPKG` has begun installation, look for this message:
 
-    ```bash
+    ```
     2019-08-09 00:32:48.850 INFO  [main][BaseDeployer:877] Deploying minium-theme.war
     ```
 
 1. On the **first** deployment, there are a series of commands followed by this message:
 
-    ```bash
+    ```
     2019-08-09 00:34:51.753 INFO  [main][ThemeHotDeployListener:108] 1 theme for minium-theme is available for use
     ```
 
