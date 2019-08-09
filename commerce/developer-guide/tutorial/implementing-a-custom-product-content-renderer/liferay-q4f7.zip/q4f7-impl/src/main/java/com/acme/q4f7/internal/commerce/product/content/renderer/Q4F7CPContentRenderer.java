@@ -59,7 +59,7 @@ public class Q4F7CPContentRenderer implements CPContentRenderer {
 	private JSPRenderer _jspRenderer;
 
 	@Reference(
-		target = "(osgi.web.symbolicname=com.acme.q4f7.internal.commerce.product.content.renderer)"
+		target = "(osgi.web.symbolicname=com.acme.q4f7.impl)"
 	)
 	private ServletContext _servletContext;
 
