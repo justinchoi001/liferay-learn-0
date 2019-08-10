@@ -186,5 +186,5 @@ Congratulations! You now know the basics for implementing the `CommerceCheckoutS
 
 ## Additional Information
 
-* [Checkout](../../../user-guide/content/pages/checkout)
+* [Checkout](../../../user-guide/content/pages/checkout/README.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
