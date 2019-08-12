@@ -17,24 +17,22 @@
 * Admin Log In
 * Admin Account
 * Liferay Commerce Control Panel
-* Store Setup Basics
-* Store Information
+* Store Setup Overview
 * Locale Options
 * Store Notifications
 * Store Email Addresses
-* [Deactivating a Country for Billing or Shipping](./getting-started/country-options/deactivating-a-country-for-billing-or-shipping/README.md)
-* [Adding Regions](./getting-started/country-options/adding-regions/README.md)
-* [Adding a New Currency](./getting-started/currencies/adding-a-new-currency/README.md)
-* [Managing Exchange Rates](./getting-started/currencies/managing-exchange-rates/README.md)
 * [Introduction to Payments](./getting-started/payments/README.md)
 * [Managing Payment Methods](./getting-started/payments/managing-payment-methods/README.md)
+* [Adding Regions](./getting-started/country-options/adding-regions/README.md)
+* [Adding a New Currency](./getting-started/currencies/adding-a-new-currency/README.md)
+* [Deactivating a Country for Billing or Shipping](./getting-started/country-options/deactivating-a-country-for-billing-or-shipping/README.md)
+* [Managing Exchange Rates](./getting-started/currencies/managing-exchange-rates/README.md)
+* Shipping Methods
 
 #### Store Branding Basics
 
 * Logo
 * Favicon
-* Welcome Message
-* Copyright Notice
 
 #### Site Management Basics
 
@@ -65,13 +63,12 @@
 * [Organizing Your Catalog With Product Categories](./catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md)
 * Subscriptions
 * [Related Products, Up-sells, and Cross-sells](./catalog/creating-and-managing-products/product-information/related-products-up-sells-and-cross-sells/README.md)
-* Product Folders
-* Other Configurations
 
 ### Managing Inventory
 
+* Introduction to Managing Inventory
 * [Adding a New Warehouse](./catalog/managing-inventory/adding-a-new-warehouse/README.md)
-* Setting up Multiple Warehouses
+* Setting Inventory by Warehouse
 * [Low Inventory Activity](./catalog/managing-inventory/low-stock-activity/README.md)
 * Availability Estimates
 
@@ -85,21 +82,18 @@
 
 #### Other Settings
 
-* Catalog Visibility
+* Suggested Product Groups
 
 ## Marketing
 
 ### Communications
 
 * [Automating Store Emails by Using Notification Templates](./marketing/email-notifications/automating-store-emails-by-using-notification-templates/README.md)
-* Supported Email Clients
-* Logo
-* Templates
 
 ### Promotions
 
 * [Adding Discounts by Product](./marketing/promotions/adding-discounts-by-product/README.md)
-* [Adding Discount to the Subtotal](./marketing/promotions/adding-discounts-to-the-subtotal/README.md)
+* [Adding Discounts to the Subtotal](./marketing/promotions/adding-discounts-to-the-subtotal/README.md)
 
 ### SEO
 
@@ -146,6 +140,7 @@
 * Using Page Fragments
 * Widget Templates
 * Navigation Menus
+* Application Display Templates
 
 #### Design and Theme
 
