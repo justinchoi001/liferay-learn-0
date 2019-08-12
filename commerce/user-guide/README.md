@@ -126,14 +126,14 @@
 * [Account Management](./content/pages/account-management/README.md)
 * BOM / Spare Parts Finder
 * [Catalog](./content/pages/catalog/README.md)
-* Cart
+* [Cart](./content/cart/README.md)
 * [Checkout](./content/pages/checkout/README.md)
 * [Compare](./content/pages/compare/README.md)
 * [List](./content/pages/list/README.md)
-* Pending Orders
+* [Pending Orders](./content/pending-orders/README.md)
 * [Placed Orders](./content/pages/placed-orders/README.md)
 * [Product Details Page](./content/pages/product-details/README.md)
-* Search
+* [Search](./content/search/README.md)
 
 #### Using Modern Site Building
 
