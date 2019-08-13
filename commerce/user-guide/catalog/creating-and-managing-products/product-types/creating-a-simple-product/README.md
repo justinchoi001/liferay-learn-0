@@ -63,13 +63,7 @@ To set product prices and quantities:
 The _Inventory_ menu is where store administrators manage the number of products available for sale in each warehouse.
 >If you had used the Minium Accelerator to create the store with sample data, there are three warehouses already created.
 
-1. Click _Inventory_ on the left menu.
-1. Enter a quantity for the corresponding warehouses.
-
-    <img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
-
-1. Click _Save_.
-1. Repeat these steps for the all the other product variants (SKUs) associated with this product.
+See the article [Setting Inventory by Warehouse](../../../managing-inventory/setting-inventory-by-warehouse/README.md). Click _Inventory_ on the left menu to specify the product's quantity for each warehouse.
 
 ### Configure Product Specifications
 
@@ -94,3 +88,4 @@ Store administrators can also add attachments that are associated with a particu
 * [Introduction to Product Types](../introduction-to-product-types/README.md)
 * [Creating a Grouped Product](../creating-a-grouped-product/README.md)
 * [Creating a Virtual Product](../creating-a-virtual-product/README.md)
+* [Setting Inventory by Warehouse](../../../managing-inventory/setting-inventory-by-warehouse/README.md)
