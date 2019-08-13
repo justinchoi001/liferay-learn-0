@@ -62,7 +62,7 @@ Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second, we will implement the `CommerceCheckoutStep` interface; and third, we will implement the rendering logic and add a JSP for the new screen.
+In this section, we will review the example we deployed. First, we will annotate the class for OSGi registration; second, we will implement the `CommerceCheckoutStep` interface; and third, we will implement the rendering logic and add a JSP for the new screen.
 
 ### Annotate the Class for OSGi Registration
 
@@ -80,9 +80,9 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
     public static final String NAME = "example-step";
 ```
 
-> We must give the checkout step a name, which should be a unique value so that Liferay Commerce can distinguish our new checkout step from existing checkout steps.
+> The checkout step name should be a unique value so that Liferay Commerce can distinguish our new checkout step from existing checkout steps.
 >
-> The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20. Giving our checkout step a value of 21 will ensure that it appears immediately after the shipping method step.
+> The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20. Giving our checkout step a value of 21 ensures that it will appear immediately after the shipping method step.
 
 ### Implement the `CommerceCheckoutStep` Interface
 
@@ -144,7 +144,7 @@ Let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/m
 
 ### Create the Checkout Step
 
-To implement the checkout step itself, we need to add the implementation for the `processAction` and `render` methods, and then add a JSP to render the screen for the new checkout step. In our example, we will only display some text on a custom screen, so we do not need any special backend processing in the `processAction` implementation.
+To implement the checkout step itself, we need to add the implementation for the `processAction` and `render` methods, and then add a JSP to render the screen for the new checkout step. In our example, we will display text on a custom screen, so we do not need any special backend processing in the `processAction` implementation.
 
 ```java
 @Override
@@ -161,7 +161,7 @@ public void render(
 
 > We use a `JSPRenderer` to render the JSP for our checkout step (in this case, [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). We also give it a `ServletContext` parameter to give a context for where to find the JSP we have created.
 
-Define the `ServletContext` using the correct symbolic name of our bundle so that it can properly find the JSP in our module:
+Define the `ServletContext` using the symbolic name of our bundle so that it can find the JSP in our module:
 
 ```java
 @Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.impl)")
