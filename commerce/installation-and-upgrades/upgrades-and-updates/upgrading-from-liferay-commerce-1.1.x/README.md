@@ -2,6 +2,12 @@
 
 This article documents how to upgrade Liferay Commerce to the latest maintenance version. Store administrators should upgrade regularly because the latest versions contain the critical fixes and new features. Because Liferay Commerce is built on Liferay DXP, it is necessary to have an existing DXP 7.1 instance running.
 
+## Roadmap
+
+1. Download the latest Liferay Commerce `LPKG`.
+1. Delete the `osgi/state` Folder.
+1. Execute Post Upgrade Reindex
+
 To upgrade Liferay Commerce:
 
 1. Download the latest Liferay Commerce `LPKG`.
@@ -19,6 +25,9 @@ To upgrade Liferay Commerce:
     ```
 
 1. Shut down the application server.
+
+### Delete osgi/state Folder
+
 1. Navigate to the `${liferay.home}/osgi` folder.
 1. Delete the `${liferay.home}/osgi/state` folder.
     > To learn more about OSGi folders, see [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps).
@@ -53,7 +62,7 @@ To upgrade Liferay Commerce:
 
 The Liferay Commerce instance has been upgraded.
 
-### Post-Upgrade
+### Execute Post-Upgrade Reindex
 
 After upgrading from Liferay Commerce 1.1.x to the latest version, it is necessary to execute a reindex because of the changes in the index caused by the upgrade. This is because during the upgrade process, the _Breccia_ Accelerator was removed and many Liferay Commerce features and functions were migrated. Furthermore, the new Commerce _Products_ menu initially does not display products.
 
