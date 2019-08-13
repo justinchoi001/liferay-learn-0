@@ -1,18 +1,17 @@
 # Upgrading from 1.1.x
 
-This article documents how to upgrade Liferay Commerce to the latest maintenance version. Store administrators should upgrade regularly because the latest versions contain the critical fixes and new features. Because Liferay Commerce is built on Liferay DXP, it is necessary to have an existing DXP 7.1 instance running.
+This article documents how to upgrade Liferay Commerce to the latest maintenance version. Store administrators should consider regularly updating to the latest available maintenance version to receive bug fixes and new features.
 
 ## Roadmap
 
-1. Download the latest Liferay Commerce `LPKG`.
-1. Delete the `osgi/state` Folder.
-1. Execute Post Upgrade Reindex
+1. Download and Deploy.
+1. Clear Stale Data and Verify the Upgrade Process.
+1. Execute Post-Upgrade Reindex.
 
-To upgrade Liferay Commerce:
+## Download and Deploy
 
-1. Download the latest Liferay Commerce `LPKG`.
-    * Enterprise subscribers can download the latest `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
-    * The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Site](https://commerce.liferay.dev/download).
+1. Download the latest Liferay Commerce `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
+    >The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Download Page](https://commerce.liferay.dev/download).
 
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
     > To learn more about deploying applications to Liferay DXP, see [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home).
@@ -26,13 +25,12 @@ To upgrade Liferay Commerce:
 
 1. Shut down the application server.
 
-### Delete osgi/state Folder
+## Clear Stale Data and Verify the Upgrade Process
 
-1. Navigate to the `${liferay.home}/osgi` folder.
 1. Delete the `${liferay.home}/osgi/state` folder.
     > To learn more about OSGi folders, see [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps).
 1. Start the application server.
-1. Verify that the `LPKG` has begun the upgrade process by looking for messages similar to this:
+1. Verify that the the upgrade process has begun by looking for messages similar to this in your application server console logs:
 
     ```
     2019-08-13 18:26:26.082 INFO  [main][UpgradeProcess:93] Upgrading com.liferay.commerce.account.internal.upgrade.v1_2_0.CommerceAccountGroupCommerceAccountRelUpgradeProcess
@@ -49,7 +47,6 @@ To upgrade Liferay Commerce:
     2019-08-13 18:26:26.346 INFO  [main][BaseDB:812] Dropping stale indexes
     2019-08-13 18:26:26.400 INFO  [main][BaseDB:84] Adding indexes
     ```
-    and then...
     ```
     2019-08-13 18:28:19.439 INFO  [main][VerifyProcess:65] Verifying com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess
     2019-08-13 18:28:19.443 INFO  [main][LoggingTimer:83] Starting com.liferay.commerce.product.internal.verify.CommerceCatalogServiceVerifyProcess#verifyMasterCommerceCatalog
@@ -62,11 +59,11 @@ To upgrade Liferay Commerce:
 
 The Liferay Commerce instance has been upgraded.
 
-### Execute Post-Upgrade Reindex
+## Execute Post-Upgrade Reindex
 
-After upgrading from Liferay Commerce 1.1.x to the latest version, it is necessary to execute a reindex because of the changes in the index caused by the upgrade. This is because during the upgrade process, the _Breccia_ Accelerator was removed and many Liferay Commerce features and functions were migrated. Furthermore, the new Commerce _Products_ menu initially does not display products.
+After upgrading from Liferay Commerce 1.1.x to the latest version, it is necessary to execute a full search reindex because of product changes between major versions.
 
-To resolve this issue:
+To execute a search reindex:
 
 1. Navigate to the _Control Panel_ → _Configuration_ → _Search_.
 1. Click _Execute_ next to _Reindex all search indexes_.
@@ -78,6 +75,6 @@ Once reindexing is complete, the new Liferay Commerce instance is ready for use.
 
 ## Additional Information
 
-* What's New in Liferay Commerce 2.0
+* What's New in Liferay Commerce 2.0.2
 * [Installing Apps Manually](https://help.liferay.com/hc/en-us/articles/360017895412-Installing-Apps-Manually#using-your-file-system-to-install-apps)
 * [Liferay Commerce Fix Delivery Method](../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method/README.md)
