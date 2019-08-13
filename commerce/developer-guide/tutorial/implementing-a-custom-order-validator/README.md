@@ -125,8 +125,6 @@ To better understand each of the required methods mentioned above, let's look at
     ```
 
     > This is one of the two validation methods where we will add our custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to determine whether or not the result passes validation; see this class at [CommerceOrderValidatorResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java).
-    >
-    > Note that this dummy implementation only has a simple check for a null value, which is a standard first step for this method.
 
 1. ```java
     @Override
@@ -142,7 +140,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Validation Steps
 
-The two `validate` methods are where we define the custom validation logic for our order validator. In our simple example, we will add logic to reject orders with more than ten of an item over a certain price.
+The two `validate` methods are where we define the custom validation logic for our order validator. In our example, we will add logic to reject orders with more than ten of an item over a certain price.
 
 ```java
 @Override

@@ -52,9 +52,7 @@ In this section, we will get an example exchange rate provider up and running on
     STARTED com.acme.f2y1.impl_1.0.0
     ```
 
-1. Verify that the example exchange rate provider was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Settings_ → _Currencies_ → _Exchange Rate_.
-
-    On this screen, under the Exchange Rate Provider dropdown, the new exchange rate provider ("Example") will be present.
+1. Verify that the example exchange rate provider was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Settings_ → _Currencies_ → _Exchange Rate_. On this screen, under the Exchange Rate Provider dropdown, the new exchange rate provider ("Example") will be present.
 
 ![New exchange rate provider](./images/02.png "New exchange rate provider")
 
@@ -98,7 +96,7 @@ public BigDecimal getExchangeRate(
 
 > This method is called to calculate the exchange rate between currencies. The chosen data source for the rates must be able to handle any of the currencies that may be used in your instance of Liferay Commerce.
 
-In our simple example, we will just use a data file with a static list of exchange rates as our data source, [f2y1-exchange-rates.json](./liferay-f2y1.zip/f2y1-impl/src/main/resources/com/acme/f2y1/internal/commerce/exchange/rates/f2y1-exchange-rates.json). Note that for a real world use case, though, an exchange rate provider with a static data source will have limited use, compared to an exchange rate provider like `ECBExchangeRateProvider`.
+In our example, we will use a data file with a static list of exchange rates as our data source, [f2y1-exchange-rates.json](./liferay-f2y1.zip/f2y1-impl/src/main/resources/com/acme/f2y1/internal/commerce/exchange/rates/f2y1-exchange-rates.json). Note that for a real world use case, an exchange rate provider with a static data source will have limited use, compared to an exchange rate provider like [ECBExchangeRateProvider](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java).
 
 ```java
 @Override

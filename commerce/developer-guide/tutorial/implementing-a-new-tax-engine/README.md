@@ -140,7 +140,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Tax Calculation
 
-To implement the main logic of the tax engine, we need to add our business logic to the `getCommerceTaxValue` method of our class. In our simple example, we will use a hard-coded rate as our flat value, although this will have limited use in a real world case.
+To implement the main logic of the tax engine, we need to add our business logic to the `getCommerceTaxValue` method of our class. In our example, we will use a hard-coded rate as our flat value, although this will have limited use in a real world case.
 
 ```java
 @Override
@@ -161,7 +161,7 @@ public CommerceTaxValue getCommerceTaxValue(
 }
 ```
 
-> The `CommerceTaxCalculateRequest` parameter contains information needed for making our calculation. For this example, we make use of the price from the request, as well as the value telling us whether to apply the rate as a percentage. To see more methods you can use, see [CommerceTaxCalculateRequest.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java).
+> The `CommerceTaxCalculateRequest` parameter contains information needed for making our calculation. For this example, we use the price from the `CommerceTaxCalculateRequest`, as well as a value indicating whether to apply the rate as a percentage. To see more methods you can use, see [CommerceTaxCalculateRequest.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java).
 
 ## Conclusion
 

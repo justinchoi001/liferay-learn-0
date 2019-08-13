@@ -116,7 +116,7 @@ To better understand each of the required methods mentioned above, let's look at
 	}
     ```
 
-    >Populates the "Description" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
+    >This method populates the "Description" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 1. ```java
 	@Override
@@ -125,7 +125,7 @@ To better understand each of the required methods mentioned above, let's look at
 	}
     ```
 
-    >Provides a unique identifier for the payment method in the registry. The key can be used to fetch the payment method from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated payment method.
+    >This provides a unique identifier for the payment method in the registry. The key can be used to fetch the payment method from the registry programmatically if necessary. Reusing a key that is already in use will override the existing associated payment method.
 
 1. ```java
 	@Override
@@ -138,7 +138,7 @@ To better understand each of the required methods mentioned above, let's look at
 	}
     ```
 
-    >Populates the "Name" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
+    >This populates the "Name" column in the Payment Methods administration page. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales. Visit [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 1. ```java
 	@Override
@@ -147,7 +147,7 @@ To better understand each of the required methods mentioned above, let's look at
 	}
     ```
 
-    >Identifies the way in which the payment engine will use a given payment method. In this example, `COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE` informs the payment engine that there are no online processing requirements for this payment method. There are two other payment type constants available out of the box: `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_STANDARD` and `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_REDIRECT`. For more information see [Implementing a New Online Payment Method](../implementing-a-new-online-payment-method/README.md).
+    >This identifies how the payment engine will use a given payment method. In this example, `COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE` informs the payment engine that there are no online processing requirements for this payment method. There are two other payment type constants available out of the box: `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_STANDARD` and `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_REDIRECT`. For more information see [Implementing a New Online Payment Method](../implementing-a-new-online-payment-method/README.md).
 
 1. ```java
 	@Override
@@ -160,7 +160,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Payment Method
 
-The following methods are necessary to define our custom payment method logic. There are many more methods that can be implemented that provide additional functionality - such as subscriptions, recurring payments, and refunds. These can be seen in [CommercePaymentMethod.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java). These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
+The following methods are necessary to define our custom payment method logic. There are many more methods that can be implemented that provide additional functionality, such as subscriptions, recurring payments, and refunds. These can be seen in [CommercePaymentMethod.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java). These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
 
 ```java
 @Override
@@ -169,7 +169,7 @@ public boolean isCompleteEnabled() {
 }
 ```
 
->For the payment method to complete payments, this must return true. `completePayment` is invoked when the payment is fulfilled. In this way we are indicating to the payment engine what functionality is supported by our payment method.
+>For the payment method to complete payments, this must return true. `completePayment` is invoked when the payment is fulfilled. This informs the payment engine what functionality is supported by our payment method.
 
 ```java
 @Override
@@ -184,7 +184,7 @@ public CommercePaymentResult completePayment(
 }
 ```
 
->This is where custom payment logic will be implemented.  `CommercePaymentResult` is a simple container that stores information relevant to the completion of a payment process. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java).
+>This is where custom payment logic will be implemented.  `CommercePaymentResult` is a container that stores information relevant to the completion of a payment process. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java).
 
 ```java
 @Override
@@ -193,7 +193,7 @@ public boolean isProcessPaymentEnabled() {
 }
 ```
 
->For the payment method to process payments, this must return true. `processPayment` is the initial step that is executed when a customer submits an order. In this way we are indicating to the payment engine what functionality is supported by our payment method.
+>For the payment method to process payments, this must return true. `processPayment` is the initial step that is executed when a customer submits an order. This informs the payment engine what functionality is supported by our payment method.
 
 ```java
 @Override
