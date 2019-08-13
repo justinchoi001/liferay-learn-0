@@ -40,12 +40,12 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 			"content.Language", locale, getClass());
 
 		return LanguageUtil.get(
-			resourceBundle, "b1c3-commerce-payment-method-description");
+			resourceBundle, "this-is-the-example-payment-method");
 	}
 
 	@Override
 	public String getKey() {
-		return "b1c3-commerce-payment-method-registry-key";
+		return KEY;
 	}
 
 	@Override
@@ -54,7 +54,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 			"content.Language", locale, getClass());
 
 		return LanguageUtil.get(
-			resourceBundle, "b1c3-commerce-payment-method-name");
+			resourceBundle, "example");
 	}
 
 	@Override

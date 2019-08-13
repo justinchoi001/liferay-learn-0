@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a new basic payment method by implementing  the `CommercePaymentMethod` interface.
 
-Liferay Commerce provides several out of the box payment methods including _Authorize.Net_, _Mercanet_, _Money Order_, and _PayPal_.
+Payment methods represent various ways customers can pay for orders. Liferay Commerce provides several out of the box payment methods including [Authorize.Net](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java), [Mercanet](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java), [Money Order](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java), and [PayPal](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java).
 
 ![Out of the box payment methods](./images/01.png "Out of the box payment methods")
 
@@ -52,9 +52,9 @@ In this section, we will get an example payment method up and running on your in
     STARTED com.acme.b1c3.impl_1.0.0
     ```
 
-1. Verify that the example new basic payment method was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Settings_ → _Payment Methods_.
+1. Verify that the example new basic payment method was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Payment Methods_.
 
-   ![Acme Commerce Payment Method Added](./images/02.png "Acme Commerce Payment Method Added")
+   ![New basic payment method](./images/02.png "New basic payment method")
 
 Congratulations, you've successfully built and deployed a new basic payment method that implements `CommercePaymentMethod`.
 
@@ -112,7 +112,7 @@ To better understand each of the required methods mentioned above, let's look at
 			"content.Language", locale, getClass());
 
 		return LanguageUtil.get(
-			resourceBundle, "b1c3-commerce-payment-method-description");
+			resourceBundle, "this-is-the-example-payment-method");
 	}
     ```
 
@@ -121,7 +121,7 @@ To better understand each of the required methods mentioned above, let's look at
 1. ```java
 	@Override
 	public String getKey() {
-		return "b1c3-commerce-payment-method-registry-key";
+		return KEY;
 	}
     ```
 
@@ -134,7 +134,7 @@ To better understand each of the required methods mentioned above, let's look at
 			"content.Language", locale, getClass());
 
 		return LanguageUtil.get(
-			resourceBundle, "b1c3-commerce-payment-method-name");
+			resourceBundle, "example-payment-method");
 	}
     ```
 
@@ -213,8 +213,8 @@ public CommercePaymentResult processPayment(
 Lastly, define the language key for our payment method's name and description. Add the keys and their values to a [Language.properties](./liferay-b1c3.zip/b1c3-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
-b1c3-commerce-payment-method-description=This is the Acme Commerce Payment Method.
-b1c3-commerce-payment-method-name=Acme Commerce Payment Method
+example=Example
+this-is-the-example-payment-method=This is the Example Payment Method.
 ```
 
 ## Conclusion
