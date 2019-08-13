@@ -16,12 +16,12 @@ To begin using Liferay Commerce:
 
     ```
     2019-08-09 00:25:10.662 INFO  [fileinstall-/../../liferay-dxp-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-dxp-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
-    2019-08-09 00:25:10.664 INFO  [fileinstall-/../..//liferay-dxp-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/C:/Users/Liferay/dwarves/bombur/liferay-dxp-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
+    2019-08-09 00:25:10.664 INFO  [fileinstall-/../..//liferay-dxp-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-dxp-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20-%20Impl.lpkg
     ```
 
 1. Shut down the application server completely.
 1. Start the application server.
-1. Verify that the `LPKG` has begun installation, look for this message:
+1. Verify that the `LPKG` has begun installation by looking for this message:
 
     ```
     2019-08-09 00:32:48.850 INFO  [main][BaseDeployer:877] Deploying minium-theme.war

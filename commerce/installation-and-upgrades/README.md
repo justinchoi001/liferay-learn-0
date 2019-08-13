@@ -6,7 +6,7 @@ Want to kick the tires? Get started [here](./installation-and-deployment/quick-s
 
 ## Installation Guide
 
-* System Requirements
+* [System Requirements](https://help.liferay.com/hc/en-us/articles/360029167132)
 * Installation Overview
 * Installing Liferay Commerce Using Docker
 * [Deploying Liferay Commerce to an Existing Liferay Installation](./installation-guide/deploying-liferay-commerce-to-an-existing-liferay-installation/README.md)
@@ -15,9 +15,8 @@ Want to kick the tires? Get started [here](./installation-and-deployment/quick-s
 
 ## Upgrades and Updates
 
-* Upgrades
+* [Upgrading from Liferay Commerce 1.1.x](./upgrades-and-updates/upgrading-from-liferay-commerce-1.1.x/README.md)
 * Maintenance Versions
-* Hotfixes
 * Migrations
 
 ## Deploying to Liferay DXP Cloud
