@@ -160,7 +160,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Logic to Process Shipping Options
 
-To implement the shipping engine itself, we need to add our business logic to the `getCommerceShippingOptions` method of our class. We will first do several steps of processing to prepare the list of shipping options to be shown. Then, in our example, we will add an extra step to apply a discounted rate to the price of the options.
+To implement the shipping engine itself, we need to add our business logic to the `getCommerceShippingOptions` method of our class. We will first implement several steps of processing to prepare the list of shipping options to be shown. Then, in our example, we will add an extra step to apply a discounted rate to the price of the options.
 
 Liferay Commerce's [fixed rate shipping engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java) is a good reference to see what processing steps are a good baseline to start with. Our example will follow the same steps.
 
@@ -183,7 +183,7 @@ private List<CommerceShippingFixedOption> _getCommerceShippingFixedOptions(
 }
 ```
 
-> Because there are many steps needed to properly process the shipping options, it is helpful to create helper methods to break the logic into smaller pieces. In our example, we start off by creating this helper method to fetch an initial list of shipping options to work with.
+> Because there are several steps needed to properly process the shipping options, it is helpful to create helper methods to break the logic into smaller pieces. In our example, we start off by creating this helper method to fetch an initial list of shipping options to work with.
 >
 > We first use the [CommerceShippingMethodLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/service/impl/CommerceShippingMethodLocalServiceImpl.java) to get the method (representing our shipping engine), and then use the [CommerceShippingFixedOptionLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-shipping-engine-fixed-service/src/main/java/com/liferay/commerce/shipping/engine/fixed/service/impl/CommerceShippingFixedOptionLocalServiceImpl.java) to get all of the options available for it.
 
@@ -202,7 +202,7 @@ private boolean _shippingOptionIsAddressRestricted(
 }
 ```
 
-> Our next helper method in our example determines whether a particular shipping option is restricted for the order's shipping address. A restricted option will be filtered out, so it is not presented as an option to choose from.
+> Our next helper method in our example determines whether a particular shipping option is restricted for the order's shipping address. A restricted option will not presented as an option to choose from.
 >
 > We use the [CommerceAddressRestrictionLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/service/impl/CommerceAddressRestrictionLocalServiceImpl.java) to determine if the option is restricted for the order's address. We must also use our `CommerceOrder` object, which represents all kinds of information about the order being shipped. To see more methods you can use with a `CommerceOrder`, see [CommerceOrder.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrder.java) and [CommerceOrderModel.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderModel.java).
 
@@ -245,7 +245,7 @@ private List<CommerceShippingOption> _getCommerceShippingOptions(
 }
 ```
 
-> Our last helper method in our example does most of the work in processing, so we can more easily call it from the `getCommerceShippingOptions` method. First, after initializing a list to use for our finalized options, we use our `_getCommerceShippingFixedOptions` helper method to get our initial list of shipping options. Then, for each option, we either skip it (if the option is address restricted), add it with a price of zero (if shipping should be free), or add it normally at the end of the loop. We use a [CommerceShippingHelper](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceShippingHelperImpl.java) to more easily determine if the order should be free.
+> The last helper method in our example does most of the work in processing, so we can more easily call it from the `getCommerceShippingOptions` method. First, after initializing a list to use for our finalized options, we use our `_getCommerceShippingFixedOptions` helper method to get our initial list of shipping options. Then, for each option, we either skip it (if the option is address restricted), add it with a price of zero (if shipping should be free), or add it normally at the end of the loop. We use a [CommerceShippingHelper](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceShippingHelperImpl.java) to more easily determine if the order should be free.
 >
 > In our example, we also add an extra step at the end of the loop to multiply the amount for normally charged shipping options by a discounted rate.
 
