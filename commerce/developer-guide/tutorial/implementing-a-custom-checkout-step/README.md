@@ -86,7 +86,7 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
 
 ### Implement the `CommerceCheckoutStep` Interface
 
-We can extend a base class to give us functionality to build on top of: [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java). This simplifies our work to implement this interface.
+We can extend [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java) to give us functionality to build on top of. This simplifies our work to implement this interface.
 
 The following three methods are required in addition to extending the base class:
 
