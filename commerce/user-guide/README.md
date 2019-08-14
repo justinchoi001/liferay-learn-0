@@ -68,7 +68,7 @@
 
 * Introduction to Managing Inventory
 * [Adding a New Warehouse](./catalog/managing-inventory/adding-a-new-warehouse/README.md)
-* Setting Inventory by Warehouse
+* [Setting Inventory by Warehouse](./catalog/managing-inventory/setting-inventory-by-warehouse/README.md)
 * [Low Inventory Activity](./catalog/managing-inventory/low-stock-activity/README.md)
 * Availability Estimates
 

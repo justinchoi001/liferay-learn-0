@@ -1,20 +1,20 @@
-# Setting Inventory by Warehouses
+# Setting Inventory by Warehouse
 
-This article documents how to set inventory by warehouses. Some stores may have more than one warehouse and store managers can set the quantity for each location. The _Inventory_ menu is where store administrators manage the number of products available for sale in each warehouse. If you had used the [Minium Accelerator](../../../getting-started/accelerators/using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md) to create the store with sample data, there are three warehouses already created.
+This article documents how to set inventory by warehouse. Some stores may have more than one warehouse and store managers can set product quantity per location. The _Inventory_ menu is where store administrators manage the number of products available for sale in each warehouse. If the [Minium Accelerator](../../../getting-started/accelerators/using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md) was used to create the store, there are three warehouses already created.
 
-To set inventory by warehouses:
+To set inventory by warehouse:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product (for example _U-Joint_).
 1. Click the _SKUs_ sub-tab.
-1. Click on the product ID (_MIN-55861_).
+1. Click on the SKU ID (_MIN-55861_).
 1. Click _Inventory_ on the left menu.
-1. Enter a quantity for the corresponding warehouses.
+1. Enter a quantity for the corresponding warehouse(s).
 
     <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
 1. Click _Save_ for each warehouse.
-1. Repeat these steps for the all the other product variants (SKUs) associated with this product.
+1. Repeat these steps for all the other product variants (SKUs) associated for a product.
 
 Each warehouse now has the correct quantity available for sale.
 

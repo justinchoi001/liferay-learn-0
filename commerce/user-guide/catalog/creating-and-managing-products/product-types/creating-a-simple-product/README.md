@@ -27,7 +27,7 @@ A Simple Product is any physical product for which inventory is tracked. This ar
    * **Meta Description**:
    * **Meta Keywords**:
 
-    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+      <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
 1. Click _Publish_.
 
@@ -39,7 +39,7 @@ The initial product entry has been created. Continue on to learn about further c
 
 ### Generate SKUs
 
-Once you have applied product options to the product, SKUs have to be generated. For more information about how to generate SKUs, see the article [Adding SKUs to Your Products](../../adding-skus-to-your-products/README.md). Click the _SKUs_ sub-tab to generate the SKUs.
+Once you have applied product options to the product, SKUs have to be generated. For more information about how to generate SKUs, see [Adding SKUs to Your Products](../../adding-skus-to-your-products/README.md). Click the _SKUs_ sub-tab to generate the SKUs.
 
 ### Set Prices and Quantities in the Inventory
 
@@ -56,14 +56,14 @@ To set product prices and quantities:
     * **Promo Price**:
     * **Cost**:
 1. Click _Save_. (If Promo Price and Cost fields are left as 00, no discounts or promotions are applied at this point.)
-1. Click _Price List_ to apply this product to any existing [Price Lists](../../../managing-price/price-lists/adding-products-to-a-price-list/README.md).
+1. Click _Price List_ to apply this product to any existing [price lists](../../../managing-price/price-lists/adding-products-to-a-price-list/README.md).
 
 >To learn more about pricing see: [Introduction to Product Pricing Methods](../../../managing-price/introduction-to-product-pricing-methods/README.md)
 
 The _Inventory_ menu is where store administrators manage the number of products available for sale in each warehouse.
 >If you had used the Minium Accelerator to create the store with sample data, there are three warehouses already created.
 
-See the article [Setting Inventory by Warehouse](../../../managing-inventory/setting-inventory-by-warehouse/README.md). Click _Inventory_ on the left menu to specify the product's quantity for each warehouse.
+See [Setting Inventory by Warehouse](../../../managing-inventory/setting-inventory-by-warehouse/README.md). Click _Inventory_ on the left menu to specify the product's quantity for each warehouse.
 
 ### Configure Product Specifications
 
