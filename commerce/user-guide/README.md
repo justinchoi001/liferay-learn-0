@@ -181,6 +181,7 @@
 
 * [Order Life Cycle](./sales/order-management/order-life-cycle/README.md)
 * [Order Workflows](./sales/order-management/order-workflows/README.md)
+* [Orders Menu](./sales/order-management/orders-menu/README.md)
 * Processing an Order
 * Order Status
 * Subscription Management
