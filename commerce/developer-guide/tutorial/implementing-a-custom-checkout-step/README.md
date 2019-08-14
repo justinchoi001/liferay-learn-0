@@ -142,7 +142,7 @@ Let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/m
 
 ### Create the Checkout Step
 
-First add the implementation for the `processAction` and `render` methods and then add a JSP to render the screen for the new checkout step. Our example will display text on a custom screen, so we do not need any backend processing in the `processAction` implementation.
+Add the implementation for the `processAction` and `render` methods and add a JSP to render the screen for the new checkout step. Our example will display text on a custom screen, so we do not need any backend processing in the `processAction` implementation.
 
 ```java
 @Override
