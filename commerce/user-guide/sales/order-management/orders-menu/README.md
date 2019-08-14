@@ -10,7 +10,7 @@ This article gives an overview of the _Open_, _Pending_, and _Transmitted_ tabs.
 
 In this tab, the order activity is exclusively on the buyer's side. A new order is created in the _Open_ tab when a buyer adds products to their cart. The order remains in this tab until the buyer places the order.
 
-> **Note**: If _Approval Workflow_ is enabled, orders remain in the _Open_ tab until being approved and placed by the designated Order Manager.
+> **Note**: If _Approval Workflow_ is enabled, orders remain in the _Open_ tab until the workflow process has completed.
 
    <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
 
@@ -18,7 +18,7 @@ In this tab, the order activity is exclusively on the buyer's side. A new order 
 
 The _Pending_ tab serves as a holding place for orders – this is helpful for business contexts where not all placed orders are immediately transmitted. When a buyer places an order, the order moves to the _Pending_ tab. Here, the seller can modify, cancel or transmit the order.
 
-> **Note**: If _Transmission Workflow_ is enabled, orders remain in the _Pending_ tab throughout this workflow process, even if the seller rejects an order, sending it back to the buyer.
+> **Note**: If _Transmission Workflow_ is enabled, orders remain in the _Pending_ tab throughout the workflow process, even if the seller rejects an order, sending it back to the buyer.
 
    <img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
 
@@ -29,8 +29,6 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
    <img src="./images/04.png" width="700px" style="border: #000000 1px solid;">
 
 ## Additional Information
-
-The order information on the _Orders_ menu can also be presented to other users – particularly buyers – using the _Open Carts_ widget (for orders on the _Open_ tab) and the _Orders_ widget (for orders on the _Pending_ or _Transmitted_ tabs).
 
 * Order Information
 * Order Management Statuses
