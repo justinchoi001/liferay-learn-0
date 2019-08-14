@@ -15,6 +15,7 @@ There are two possible ways to create an account: 1) using the _Account Manageme
 * Using the Control Panel
   * Create a new Account
   * Add Users to the Account
+  * Assign Account Roles
   * Add Addresses
 
 ## Using the Account Management Widget
@@ -114,11 +115,30 @@ Alternately, users who have store or omni-administrator privileges can create an
 
 1. Click _Save_.
 
+### Add Users to the Account
+
+To add users to the account:
+
+1. Click _Users_ in the left menu.
+1. Click the (+) button to add a new user.
+1. Chcck the boxes for all the users to be added.
+1. Click _Add_.
+
+The users have been added to the account. Note that the roles have not been assigned yet.
+
+<img src="./images/10.png" width="700px" style="border: #000000 1px solid;">
+
+### Assign Account Roles
+
+The Account Roles can be added through the _Account Management_ widget (see above).
+
 ### Add Addresses to the Account
 
 To add the default shipping and billing addresses:
 
-1. Click the _Address_ link.
+1. Navigate to the _Control Panel_ → _Users_ → _Accounts_.
+1. Click the account (for example, _Acme International_)
+1. Click _Address_ in the left menu.
 1. Fill the address fields.
 
     <img src="./images/07.png" width="700px" style="border: #000000 1px solid;>
