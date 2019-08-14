@@ -80,13 +80,13 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
     public static final String NAME = "example-step";
 ```
 
-> The checkout step name should be a unique value so that Liferay Commerce can distinguish our new checkout step from existing checkout steps.
+> The checkout step name should be a unique value so that Liferay Commerce can distinguish our checkout step from existing checkout steps.
 >
 > The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20. Giving our checkout step a value of 21 ensures that it will appear immediately after the shipping method step.
 
 ### Implement the `CommerceCheckoutStep` Interface
 
-We can extend a base class to give us functionality to build on top of: [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java). This will simplify our work to implement this interface.
+We can extend a base class to give us functionality to build on top of: [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java). This simplifies our work to implement this interface.
 
 The following three methods are required in addition to extending the base class:
 
@@ -118,7 +118,7 @@ Let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/m
 
     > This method returns the name of our checkout step. This name may be a language key that corresponds to the name that will appear in the UI.
     >
-    > We will need to add the language key ourselves for it to work correctly. See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
+    > We need to add the language key for the name to display correctly. See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 1. ```java
     @Override
@@ -128,9 +128,7 @@ Let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/m
     }
    ```
 
-    > This will be called to handle any special backend processing that may be needed for our checkout step. If backend processing is required, then the business logic will be implemented here, using information passed in through the `ActionRequest`.
-    >
-    > If no special processing is necessary for this checkout step, then nothing needs to be added into this method.
+    > If backend processing is required, use the `processAction` method to implement business logic with the information passed through the `ActionRequest`.
 
 1. ```java
     public void render(
@@ -144,7 +142,7 @@ Let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/m
 
 ### Create the Checkout Step
 
-To implement the checkout step itself, we need to add the implementation for the `processAction` and `render` methods, and then add a JSP to render the screen for the new checkout step. In our example, we will display text on a custom screen, so we do not need any special backend processing in the `processAction` implementation.
+First add the implementation for the `processAction` and `render` methods and then add a JSP to render the screen for the new checkout step. Our example will display text on a custom screen, so we do not need any backend processing in the `processAction` implementation.
 
 ```java
 @Override
@@ -168,11 +166,11 @@ Define the `ServletContext` using the symbolic name of our bundle so that it can
 private ServletContext _servletContext;
 ```
 
-> The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to look in the proper location for the JSP.
+> The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
 >
-> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is properly generated. In our example, we have that set to `/commerce-checkout-step`. See [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for a reference on these values.
+> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/commerce-checkout-step`. See [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for a reference on these values.
 
-Next, define the JSP for our checkout step's screen in the UI. In our example, we are adding placeholder text for some generic messages; you can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
+Next, define the JSP for our checkout step's screen in the UI. In our example, we are adding placeholder text; you can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
 
 Lastly, define the language key for the name of our new checkout step. Add the key and its value to a [Language.properties](./liferay-n8n6.zip/n8n6-impl/src/main/resources/content/Language.properties) file within our module:
 
