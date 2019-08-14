@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a custom checkout step by implementing the `CommerceCheckoutStep` interface.
 
-A checkout step represents one screen of the checkout process for a customer. Liferay Commerce provides several checkout steps out of the box, including essential steps like [the payment method step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/PaymentMethodCommerceCheckoutStep.java) and the [order confirmation step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/OrderConfirmationCommerceCheckoutStep.java).
+A checkout step represents one screen of the checkout process for a customer. Liferay Commerce provides several checkout steps out of the box, including essential steps like [the payment method step](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/PaymentMethodCommerceCheckoutStep.java) and the [order confirmation step](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/OrderConfirmationCommerceCheckoutStep.java).
 
 ![Out of the box checkout steps](./images/01.png "Out of the box checkout steps")
 
@@ -19,7 +19,7 @@ In this section, we will get an example checkout step up and running on your ins
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.2
+    docker run -it -p 8080:8080 liferay/commerce:2.0.3
     ```
 
 1. Download and unzip [Acme Commerce Checkout Step](./liferay-n8n6.zip).
@@ -82,11 +82,11 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
 
 > The checkout step name should be a unique value so that Liferay Commerce can distinguish our checkout step from existing checkout steps.
 >
-> The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20. Giving our checkout step a value of 21 ensures that it will appear immediately after the shipping method step.
+> The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20. Giving our checkout step a value of 21 ensures that it will appear immediately after the shipping method step.
 
 ### Implement the `CommerceCheckoutStep` Interface
 
-We can extend a base class to give us functionality to build on top of: [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java). This simplifies our work to implement this interface.
+We can extend a base class to give us functionality to build on top of: [BaseCommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/util/BaseCommerceCheckoutStep.java). This simplifies our work to implement this interface.
 
 The following three methods are required in addition to extending the base class:
 

@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a custom exchange rate provider by implementing the `ExchangeRateProvider` interface.
 
-An exchange rate provider uses a data source to perform the exchange calculation between currencies. Liferay Commerce provides one exchange rate provider out of the box, [ECBExchangeRateProvider](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java).
+An exchange rate provider uses a data source to perform the exchange calculation between currencies. Liferay Commerce provides one exchange rate provider out of the box, [ECBExchangeRateProvider](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java).
 
 ![Out of the box exchange rate provider](./images/01.png "Out of the box exchange rate provider")
 
@@ -19,7 +19,7 @@ In this section, we will get an example exchange rate provider up and running on
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.2
+    docker run -it -p 8080:8080 liferay/commerce:2.0.3
     ```
 
 1. Download and unzip [Acme Commerce Exchange Rate Provider](./liferay-f2y1.zip).
@@ -77,7 +77,7 @@ public class F2Y1ExchangeRateProvider implements ExchangeRateProvider {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for our exchange rate provider so that Liferay Commerce can distinguish the new exchange rate provider from others in the [exchange rate provider registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java). Reusing a key that is already in use will override the existing associated exchange rate provider.
+> It is important to provide a distinct key for our exchange rate provider so that Liferay Commerce can distinguish the new exchange rate provider from others in the [exchange rate provider registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ExchangeRateProviderRegistryImpl.java). Reusing a key that is already in use will override the existing associated exchange rate provider.
 
 ### Implement the `ExchangeRateProvider` Interface and Exchange Logic
 
@@ -96,7 +96,7 @@ public BigDecimal getExchangeRate(
 
 > This method is called to calculate the exchange rate between currencies. The chosen data source for the rates must be able to handle any of the currencies that may be used in your instance of Liferay Commerce.
 
-In our example, we will use a data file with a static list of exchange rates as our data source, [f2y1-exchange-rates.json](./liferay-f2y1.zip/f2y1-impl/src/main/resources/com/acme/f2y1/internal/commerce/exchange/rates/f2y1-exchange-rates.json). Note that for a real world use case, an exchange rate provider with a static data source will have limited use, compared to an exchange rate provider like [ECBExchangeRateProvider](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java).
+In our example, we will use a data file with a static list of exchange rates as our data source, [f2y1-exchange-rates.json](./liferay-f2y1.zip/f2y1-impl/src/main/resources/com/acme/f2y1/internal/commerce/exchange/rates/f2y1-exchange-rates.json). Note that for a real world use case, an exchange rate provider with a static data source will have limited use, compared to an exchange rate provider like [ECBExchangeRateProvider](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-currency-service/src/main/java/com/liferay/commerce/currency/internal/util/ECBExchangeRateProvider.java).
 
 ```java
 @Override
@@ -127,7 +127,7 @@ public BigDecimal getExchangeRate(
 
 > We identify the currencies by their currency codes, which we then compare to a JSON array of currencies to get their respective rates. Finally we perform the calculation and return the result as a `BigDecimal`. While they are less important details for this example, you can also see `_getStaticExchangeRates` and `_getRateForCode` by visiting [F2Y1ExchangeRateProvider.java](./liferay-f2y1.zip/f2y1-impl/src/main/java/com/acme/f2y1/internal/commerce/currency/util/F2Y1ExchangeRateProvider.java).
 >
-> We use the `CommerceCurrency` object for the two currencies to get the information we need, like their currency codes. To find more methods you can use with a `CommerceCurrency` object, see [CommerceCurrency.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrency.java) and [CommerceCurrencyModel.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrencyModel.java).
+> We use the `CommerceCurrency` object for the two currencies to get the information we need, like their currency codes. To find more methods you can use with a `CommerceCurrency` object, see [CommerceCurrency.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrency.java) and [CommerceCurrencyModel.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-currency-api/src/main/java/com/liferay/commerce/currency/model/CommerceCurrencyModel.java).
 
 ## Conclusion
 

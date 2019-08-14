@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a custom order validator by implementing the `CommerceOrderValidator` interface.
 
-An order validator is a class that validates items in a customer's cart when proceeding through checkout. Liferay Commerce provides multiple out of the box order validators, including a [default](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java), as well as validators to check [item versions](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) and [recurring items (subscriptions)](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java).
+An order validator is a class that validates items in a customer's cart when proceeding through checkout. Liferay Commerce provides multiple out of the box order validators, including a [default](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java), as well as validators to check [item versions](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) and [recurring items (subscriptions)](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java).
 
 ## Overview
 
@@ -17,7 +17,7 @@ In this section, we will get an example order validator up and running on your i
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.2
+    docker run -it -p 8080:8080 liferay/commerce:2.0.3
     ```
 
 1. Download and unzip [Acme Commerce Order Validator](./liferay-n9b2.zip).
@@ -80,7 +80,7 @@ public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for our order validator so that Liferay Commerce can distinguish the new order validator from others in the [order validator registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use will override the existing associated validator.
+> It is important to provide a distinct key for our order validator so that Liferay Commerce can distinguish the new order validator from others in the [order validator registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use will override the existing associated validator.
 
 ### Implement the `CommerceOrderValidator` Interface
 
@@ -124,7 +124,7 @@ To better understand each of the required methods mentioned above, let's look at
     }
     ```
 
-    > This is one of the two validation methods where we will add our custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to determine whether or not the result passes validation; see this class at [CommerceOrderValidatorResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java).
+    > This is one of the two validation methods where we will add our custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to determine whether or not the result passes validation; see this class at [CommerceOrderValidatorResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java).
 
 1. ```java
     @Override
@@ -169,7 +169,7 @@ public CommerceOrderValidatorResult validate(
 }
 ```
 
-> After a standard null check for this method, the main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the CPInstance, which contains information about the order the customer has added; to find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
+> After a standard null check for this method, the main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the CPInstance, which contains information about the order the customer has added; to find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
 >
 > Note that, for the main validation checks, it is best practice to include a localized message explaining why the validation failed. For this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
 
@@ -198,7 +198,7 @@ public CommerceOrderValidatorResult validate(
 }
 ```
 
-> We can add the same validation logic to this method, since it will be called for the items in the customer's cart. The main difference in this case is we get the information from a `CommerceOrderItem` object; to find more methods you can use with a `CommerceOrderItem`, see [CommerceOrderItem](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java).
+> We can add the same validation logic to this method, since it will be called for the items in the customer's cart. The main difference in this case is we get the information from a `CommerceOrderItem` object; to find more methods you can use with a `CommerceOrderItem`, see [CommerceOrderItem](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java).
 
 Lastly, define the language keys for our validator's error messages. Add the keys and their values to a [Language.properties](./liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) file within our module:
 

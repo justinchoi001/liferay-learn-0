@@ -4,7 +4,7 @@
 
 ## Quick Tour
 
-## What's New in Liferay Commerce 2.0.2
+## What's New in Liferay Commerce 2.0.3
 
 ## Basic Configuration
 

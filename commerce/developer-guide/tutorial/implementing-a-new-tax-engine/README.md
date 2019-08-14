@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a custom tax engine by implementing the `CommerceTaxEngine` interface.
 
-A tax engine performs the calculation for taxes when a transaction is made. Liferay Commerce provides two default tax engines: the [FixedCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/FixedCommerceTaxEngine.java) for fixed rates, and the [ByAddressCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/ByAddressCommerceTaxEngine.java) for calculating taxes by address.
+A tax engine performs the calculation for taxes when a transaction is made. Liferay Commerce provides two default tax engines: the [FixedCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/FixedCommerceTaxEngine.java) for fixed rates, and the [ByAddressCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/ByAddressCommerceTaxEngine.java) for calculating taxes by address.
 
 ![Out of the box tax engines](./images/01.png "Out of the box tax engines")
 
@@ -19,7 +19,7 @@ In this section, we will get an example tax engine up and running on your instan
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.2
+    docker run -it -p 8080:8080 liferay/commerce:2.0.3
     ```
 
 1. Download and unzip [Acme Commerce Tax Engine](./liferay-q4b9.zip).
@@ -77,7 +77,7 @@ public class Q4B9CommerceTaxEngine implements CommerceTaxEngine {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for our tax engine so that Liferay Commerce can distinguish the new engine from others in the [tax engine registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated tax engine.
+> It is important to provide a distinct key for our tax engine so that Liferay Commerce can distinguish the new engine from others in the [tax engine registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceTaxEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated tax engine.
 
 ### Implement the `CommerceTaxEngine` Interface
 
@@ -161,7 +161,7 @@ public CommerceTaxValue getCommerceTaxValue(
 }
 ```
 
-> The `CommerceTaxCalculateRequest` parameter contains information needed for making our calculation. For this example, we use the price from the `CommerceTaxCalculateRequest`, as well as a value indicating whether to apply the rate as a percentage. To see more methods you can use, see [CommerceTaxCalculateRequest.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.2/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java).
+> The `CommerceTaxCalculateRequest` parameter contains information needed for making our calculation. For this example, we use the price from the `CommerceTaxCalculateRequest`, as well as a value indicating whether to apply the rate as a percentage. To see more methods you can use, see [CommerceTaxCalculateRequest.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java).
 
 ## Conclusion
 
