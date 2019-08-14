@@ -1,6 +1,6 @@
 # Implementing a Custom Checkout Step
 
-This tutorial will show you how to add a custom checkout step by implementing the `CommerceCheckoutStep` interface.
+This tutorial will show you how to add a custom checkout step by implementing the [CommerceCheckoutStep](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/util/CommerceCheckoutStep.java) interface.
 
 A checkout step represents one screen of the checkout process for a customer. Liferay Commerce provides several checkout steps out of the box, including essential steps like [the payment method step](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/PaymentMethodCommerceCheckoutStep.java) and the [order confirmation step](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/OrderConfirmationCommerceCheckoutStep.java).
 
@@ -131,6 +131,7 @@ Let's look at [N8N6CommerceCheckoutStep.java](./liferay-n8n6.zip/n8n6-impl/src/m
     > If backend processing is required, use the `processAction` method to implement business logic with the information passed through the `ActionRequest`.
 
 1. ```java
+    @Override
     public void render(
             HttpServletRequest httpServletRequest,
             HttpServletResponse httpServletResponse)
