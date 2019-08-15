@@ -104,7 +104,7 @@ public void processAction(
     throws Exception;
 ```
 
-> The `processAction` method may be used to implement business logic with the information passed through the `ActionRequest`, if backend processing is required.
+> The `processAction` method may be used to implement business logic with the information passed through the `ActionRequest` if backend processing is required.
 
 ```java
 public void render(
