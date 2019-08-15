@@ -44,9 +44,9 @@ In this section, we will get an example checkout step up and running on your ins
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    >Note: This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+    >**Note:** This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
-1. Confirm the deployment in the Liferay Docker container console.
+1. Confirm the deployment in the Docker container console.
 
     ```bash
     STARTED com.acme.n8n6.impl_1.0.0
@@ -82,7 +82,7 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
     public static final String NAME = "example-step";
 ```
 
-> The checkout step name should be a unique value so that Liferay Commerce can distinguish our checkout step from existing checkout steps.
+> The checkout step name must be a unique value so that Liferay Commerce can distinguish our checkout step from existing checkout steps.
 >
 > The `commerce.checkout.step.order` value indicates how far into the checkout process the checkout step will appear. For example, the [shipping method checkout step](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/ShippingMethodCommerceCheckoutStep.java) has a value of 20. Giving our checkout step a value of 21 ensures that it will appear immediately after the shipping method step.
 
@@ -119,11 +119,11 @@ public void render(
 
 The checkout step is comprised of a custom screen and backend logic to process any input. Do the following:
 
-* [Configure the `ServletContext` for the module.](#configure-the-`ServletContext`-for-the-Module)
-* [Implement the `render` method.](#implement-the-`render`-method)
-* [Add business logic to `processAction`.](#add-business-logic-to-`processAction`)
+* [Configure the `ServletContext` for the module.](#configure-the-servletcontext-for-the-module)
+* [Implement the `render` method.](#implement-the-render-method)
+* [Add business logic to `processAction`.](#add-business-logic-to-processaction)
 * [Add a JSP to render the custom screen.](#add-a-jsp-to-render-the-custom-screen)
-* [Add the language key to `Language.properties`.](#add-the-language-key-to-`language.properties`)
+* [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
 
 #### Configure the `ServletContext` for the Module
 
