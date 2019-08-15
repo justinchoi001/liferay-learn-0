@@ -6,7 +6,7 @@ To begin using Liferay Commerce:
 
 1. Download the latest Liferay Commerce `LPKG`.
     * Enterprise subscribers can download the latest `LPKG` from [Help Center](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118190997&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191001).
-      * Subscribers also need an order number or activation key for Liferay Commerce.
+      * Subscribers also need an order number or activation key for Liferay Commerce. See [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391).
     * The latest open source `LPKG` may be obtained from the [Liferay Commerce Community Site](https://commerce.liferay.dev/download).
 
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
@@ -39,7 +39,7 @@ Liferay Commerce has been deployed and is ready for use. Store administrators ca
 
 Note that if the application server is restarted, Liferay Commerce will not execute the `VerifyProcess` commands a second time.
 
-* System Requirements
+* [System Requirements]()
 * Installation Overview
 * Installing the Commerce Bundle
 * Deploying to Liferay DXP Cloud
