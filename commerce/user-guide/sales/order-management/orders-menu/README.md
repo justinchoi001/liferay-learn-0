@@ -10,7 +10,7 @@ This article gives an overview of the _Open_, _Pending_, and _Transmitted_ tabs.
 
 In this tab, the order activity is exclusively on the buyer's side. A new order is created in the _Open_ tab when a buyer adds products to their cart. The order remains in this tab until the buyer places the order.
 
-> **Note**: If _Approval Workflow_ is enabled, orders remain in the _Open_ tab until the workflow process has completed.
+> **Note**: If _Approval Workflow_ is enabled, orders remain in the _Open_ tab until the workflow process has completed and the order is placed.
 
    <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
 
@@ -30,10 +30,10 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
 
 ## Additional Information
 
-* Order Information
-* Order Management Statuses
 * [Order Life Cycle](../order-life-cycle/README.md)
-* Advancing an Order to Transmitted
+* [Order Information](../order-information/README.md)
 * [Order Workflows](../order-workflows/README.md)
+* Order Management Statuses
+* Advancing an Order to Transmitted
 * Enabling Order Workflows
 * Approving/Rejecting Orders in Order Workflows

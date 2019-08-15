@@ -26,8 +26,10 @@ The seller completes the remaining steps to deliver the ordered products to the 
 
 **Note 1**: [Order Workflows](../order-workflows/README.md) may be implemented that alter or add additional steps to the workflow outlined above.
 
-* Enabling Order Workflows
-* Approving/Rejecting Orders in Order Workflows
 * [Orders Menu](../orders-menu/README.md)
+* [Order Information](../order-information/README.md)
+* [Order Workflows](../order-workflows/README.md)
 * Order Management Statuses
 * Advancing an Order to Transmitted
+* Enabling Order Workflows
+* Approving/Rejecting Orders in Order Workflows
