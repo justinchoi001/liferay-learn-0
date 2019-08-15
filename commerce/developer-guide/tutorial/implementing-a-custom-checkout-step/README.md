@@ -62,9 +62,9 @@ Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will review the example we deployed. First, we will annotate the class for OSGi registration; second, we will implement the `CommerceCheckoutStep` interface; and third, we will implement the rendering logic and add a JSP for the new screen.
+In this section, we will review the example we deployed. First, we will annotate the class for OSGi registration; second, we will review the `CommerceCheckoutStep` interface; and third, we will complete our implementation of `CommerceCheckoutStep`.
 
-> **Note:** To simplify implementing `CommereCheckoutStep`, we extend `BaseCommerceCheckoutStep` for its base functionality.
+> **Note:** To simplify implementing `CommerceCheckoutStep`, we extend `BaseCommerceCheckoutStep` for its base functionality.
 
 ### Annotate the Class for OSGi Registration
 
@@ -104,7 +104,7 @@ public void processAction(
     throws Exception;
 ```
 
-> If backend processing is required, use the `processAction` method to implement business logic with the information passed through the `ActionRequest`.
+> The `processAction` method may be used to implement business logic with the information passed through the `ActionRequest`, if backend processing is required.
 
 ```java
 public void render(
@@ -115,17 +115,17 @@ public void render(
 
 > This will be where we add the code to render a customized screen for our checkout step.
 
-### Create the Checkout Step
+### Complete the Checkout Step
 
-The checkout step is comprised of a custom screen and backend logic to process any input. Follow these steps:
+The checkout step is comprised of a custom screen and backend logic to process any input. Do the following:
 
-1. Configure the `ServletContext` for the module.
-2. Implement the `render`method.
-3. Add business logic to `processAction`.
-4. Add a JSP to render the custom screen.
-5. Add the language key to `Language.properties`.
+* [Configure the `ServletContext` for the module.](#configure-the-`ServletContext`-for-the-Module)
+* [Implement the `render` method.](#implement-the-`render`-method)
+* [Add business logic to `processAction`.](#add-business-logic-to-`processAction`)
+* [Add a JSP to render the custom screen.](#add-a-jsp-to-render-the-custom-screen)
+* [Add the language key to `Language.properties`.](#add-the-language-key-to-`language.properties`)
 
-#### 1. Configure the `ServletContext` for the Module
+#### Configure the `ServletContext` for the Module
 
 Define the `ServletContext` using the symbolic name of our bundle so that it can find the JSP in our module:
 
@@ -134,11 +134,11 @@ Define the `ServletContext` using the symbolic name of our bundle so that it can
 private ServletContext _servletContext;
 ```
 
-> The value we have set here for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
+> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
 >
 > We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/commerce-checkout-step`. See [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for a reference on these values.
 
-#### 2. Implement the `render` Method
+#### Implement the `render` Method
 
 ```java
 @Override
@@ -155,15 +155,15 @@ public void render(
 
 > Use a `JSPRenderer` to render the JSP for our checkout step (in this case, [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
 
-#### 3. Add Business Logic to `processAction`
+#### Add Business Logic to `processAction`
 
 Our example will display text on a custom screen and does not require backend processing in the `processAction` implementation.
 
-#### 4. Add a JSP to Render the Custom Screen
+#### Add a JSP to Render the Custom Screen
 
 In our example, we are adding placeholder text; you can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
 
-#### 5. Add the Language Key to `Language.properties`
+#### Add the Language Key to `Language.properties`
 
 Add the language key and its value to a [Language.properties](./liferay-n8n6.zip/n8n6-impl/src/main/resources/content/Language.properties) file within our module:
 
