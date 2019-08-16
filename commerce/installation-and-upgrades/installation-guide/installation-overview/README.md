@@ -1,21 +1,24 @@
 # Installation Overview
 
-This Installation Overview article provides a roadmap on how to install Liferay Commerce.
+This Installation Overview article is a reference for how to install Liferay Commerce. The article details prerequisites, information about required software, installation and deployment, and how to maintain Liferay Commerce.
 
 Liferay Commerce is built on Liferay DXP 7.1. Therefore, it is necessary to install Liferay Digital Experience Platform first before installing Liferay Commerce.
 
+## Prerequisites
 
-## System Requirements
+Before installing, consult the systems requirements and the Liferay DXP deployment documentation.
 
-See the [Liferay Commerce 2.0 Compatibility Matrix](https://help.liferay.com/hc/en-us/articles/360029167132?flash_digest=a2eb82f2ee45d8b42fdb1bd532d39f5f63959f30) to view the list of supported technologies.
+### System Requirements
 
-## Deployment Checklist
+See the [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f) to view the list of supported technologies.
 
-Here is the [Liferay Digital Experience Platform 7.1 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513) whitepaper about Liferay DXP's architecture, environments, and performance tuning.
+### Liferay DXP Deployment Checklist
 
-## Installation Roadmap
+See the [Liferay Digital Experience Platform 7.1 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513). This checklist contains information about Liferay DXP's architecture, environments, and performance tuning.
 
-Liferay offers several methods of installing Liferay DXP and Commerce.
+## Installing Liferay Commerce
+
+Liferay offers several methods of installing Liferay Commerce.
 
 ### Using a Bundle
 
@@ -25,7 +28,7 @@ The latest version of Liferay Commerce (Open Source) is available for download a
 
 If there is an existing installation, download and deploy the latest `LPKG`. See the article [Deploying Liferay Commerce to an Existing Installation](../deploying-liferay-commerce-to-an-existing-liferay-installation/README.md).
 
-## Post Installation
+## Maintaining Liferay Commerce
 
 ### Upgrades and updates
 
