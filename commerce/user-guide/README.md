@@ -154,8 +154,11 @@
 
 * [Introduction to Accounts](./customers/account-management/introduction-to-accounts/README.md)
 * [Creating a New Account](./customers/account-management/creating-a-new-account/README.md)
-* [Creating a New Account Group](./customers/account-management/creating-a-new-account-group/README.md)
+* [Inviting Users to an Account](../inviting-users-to-an-account/README.md)
+* [Adding Addresses to an Account](../adding-addresses-to-an-account/README.md)
 * [Account Roles](./customers/account-management/account-roles/README.md)
+* [Assigning Account Roles](../assigning-account-roles/README.md)
+* [Creating a New Account Group](./customers/account-management/creating-a-new-account-group/README.md)
 * Organizations and Accounts
 
 ## Sales
