@@ -6,12 +6,12 @@ This article documents how to invite users to an account. Corporate accounts can
 
 The _Members_ tab is where administrators can add additional users to an account. By default, accounts have one account administrator that is assigned during initial creation.
 
-   <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+   ![image01](./images/01.png)
 
 1. Click _Invite User_.
 1. Enter a valid email address or existing user (for example, Mike Smith)
 
-    <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
+   ![image02](./images/02.png)
 
 1. Click _Invite User_.
 
@@ -28,7 +28,7 @@ This user has been added to the account.
 
 The users have been added to the account.
 
-<img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
+![image03](./images/03.png)
 
 ## Additional Information
 

@@ -21,7 +21,7 @@ To give a sales agent access to accounts:
 1. Group your accounts in organizations using the Accounts Widget.
 1. Associate sales agents with the same organizations.
 
-<img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+![image01](./images/01.png)
 
 Sales agents can access any account within any of their associated organizations.
 
