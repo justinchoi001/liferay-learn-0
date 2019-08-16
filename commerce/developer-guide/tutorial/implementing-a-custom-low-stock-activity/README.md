@@ -19,7 +19,7 @@ In this section, we will get an example low stock activity up and running on you
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.3
+    docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
 1. Download and unzip [Acme Commerce Low Stock Activity](./liferay-j1e4.zip).
@@ -82,7 +82,7 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for our low stock activity so that Liferay Commerce can distinguish the new activity from others in the [low stock activity registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
+> It is important to provide a distinct key for our low stock activity so that Liferay Commerce can distinguish the new activity from others in the [low stock activity registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
 
 ### Implement the `CommerceLowStockActivity` Interface
 
@@ -147,7 +147,7 @@ To implement the low stock activity itself, we only need to add our business log
     }
 ```
 
-> The `cpInstance` object contains information about the item with low stock, that we can use. In our example, we are using it to get the SKU for the item to add to our warning message. To find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
+> The `cpInstance` object contains information about the item with low stock, that we can use. In our example, we are using it to get the SKU for the item to add to our warning message. To find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
 
 Lastly, define the language key for our activity's label. Add the key and its value to a [Language.properties](./liferay-j1e4.zip/j1e4-impl/src/main/resources/content/Language.properties) file within our module:
 

@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a new basic payment method by implementing  the `CommercePaymentMethod` interface.
 
-Payment methods represent various ways customers can pay for orders. Liferay Commerce provides several out of the box payment methods including [Authorize.Net](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java), [Mercanet](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java), [Money Order](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java), and [PayPal](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java).
+Payment methods represent various ways customers can pay for orders. Liferay Commerce provides several out of the box payment methods including [Authorize.Net](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java), [Mercanet](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java), [Money Order](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java), and [PayPal](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java).
 
 ![Out of the box payment methods](./images/01.png "Out of the box payment methods")
 
@@ -19,7 +19,7 @@ In this section, we will get an example payment method up and running on your in
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.3
+    docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
 1. Download and unzip [Acme Commerce Payment Method](./liferay-b1c3.zip).
@@ -77,7 +77,7 @@ public class B1C3CommercePaymentMethod implements CommercePaymentMethod {
 	public static final String KEY = "Example";
 ```
 
->It is important to provide a distinct key for our payment method so that Liferay Commerce can distinguish our new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated payment method.
+>It is important to provide a distinct key for our payment method so that Liferay Commerce can distinguish our new payment method from others in the [payment method registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-service/src/main/java/com/liferay/commerce/payment/internal/method/CommercePaymentMethodRegistryImpl.java). Reusing a key that is already in use will override the existing associated payment method.
 
 ### Implement the `CommercePaymentMethod` Interface
 
@@ -160,7 +160,7 @@ To better understand each of the required methods mentioned above, let's look at
 
 ### Create the Payment Method
 
-The following methods are necessary to define our custom payment method logic. There are many more methods that can be implemented that provide additional functionality, such as subscriptions, recurring payments, and refunds. These can be seen in [CommercePaymentMethod.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java). These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
+The following methods are necessary to define our custom payment method logic. There are many more methods that can be implemented that provide additional functionality, such as subscriptions, recurring payments, and refunds. These can be seen in [CommercePaymentMethod.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java). These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
 
 ```java
 @Override
@@ -184,7 +184,7 @@ public CommercePaymentResult completePayment(
 }
 ```
 
->This is where custom payment logic will be implemented.  `CommercePaymentResult` is a container that stores information relevant to the completion of a payment process. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java).
+>This is where custom payment logic will be implemented.  `CommercePaymentResult` is a container that stores information relevant to the completion of a payment process. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java).
 
 ```java
 @Override
@@ -208,7 +208,7 @@ public CommercePaymentResult processPayment(
 }
 ```
 
->This is where custom payment logic will be implemented. This `CommercePaymentResult` should store information relevant to the processing of a payment. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.3/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java)
+>This is where custom payment logic will be implemented. This `CommercePaymentResult` should store information relevant to the processing of a payment. For more information see [CommercePaymentResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/payment/result/CommercePaymentResult.java)
 
 Lastly, define the language key for our payment method's name and description. Add the keys and their values to a [Language.properties](./liferay-b1c3.zip/b1c3-impl/src/main/resources/content/Language.properties) file within our module:
 
