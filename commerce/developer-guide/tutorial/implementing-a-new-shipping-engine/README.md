@@ -1,6 +1,6 @@
 # Implementing a New Shipping Engine
 
-This tutorial will show you how to add a custom shipping engine by implementing the `CommerceShippingEngine` interface.
+This tutorial will show you how to add a custom shipping engine by implementing the [CommerceShippingEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceShippingEngine.java) interface.
 
 Shipping engines process shipping options to determine which of the available options will be shown to the user, for what price, and so on. Liferay Commerce provides three shipping engines out of the box: a [flat rate engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java), a [variable rate engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/ByWeightCommerceShippingEngine.java), and the [FedEx engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-shipping-engine-fedex/src/main/java/com/liferay/commerce/shipping/engine/fedex/internal/FedExCommerceShippingEngine.java).
 
@@ -46,15 +46,15 @@ In this section, we will get an example shipping engine up and running on your i
     ./gradlew deploy -Ddeploy.docker.container.id=$(docker ps -lq)
     ```
 
-    >Note: This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
+    >**Note:** This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
-1. Confirm the deployment in the Liferay Docker container console.
+1. Confirm the deployment in the Docker container console.
 
     ```bash
     STARTED com.acme.j6x8.impl_1.0.0
     ```
 
-1. Verify that the example shipping engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Shipping Methods_. On this screen, the new shipping method ("Discounted Rate") representing our shipping engine will be present.
+1. Verify that the example shipping engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Shipping Methods_. The new shipping method ("Discounted Rate") representing our shipping engine will be present on this screen.
 
 ![New shipping method](./images/02.png "New shipping method")
 
@@ -64,7 +64,7 @@ Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will take a more in-depth review of the example we deployed. First, we will annotate the class for OSGi registration; second we will implement the `CommerceShippingEngine` interface; and third, we will implement the logic for processing the shipping options.
+In this section, we will review the example we deployed. First, we will annotate the class for OSGi registration. Second, we will review the `CommerceShippingEngine` interface. And third, we will complete our implementation of `CommerceShippingEngine`.
 
 ### Annotate the Class for OSGi Registration
 
@@ -79,15 +79,17 @@ public class J6X8CommerceShippingEngine implements CommerceShippingEngine {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for our shipping engine so that Liferay Commerce can distinguish the new engine from others in the [shipping engine registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceShippingEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated engine.
+> It is important to provide a distinct key for the shipping engine so that Liferay Commerce can distinguish the new engine from others in the [shipping engine registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceShippingEngineRegistryImpl.java). Reusing a key that is already in use will override the existing associated engine.
 
-### Implement the `CommerceShippingEngine` Interface
+### Review the `CommerceShippingEngine` Interface
 
-The following four methods are required:
+Implement the following methods:
 
 ```java
 public String getCommerceShippingOptionLabel(String name, Locale locale);
 ```
+
+> This method returns a text label used for shipping options. See the implementation in [J6X8CommerceShippingEngine.java](./liferay-j6x8.zip/j6x8-impl/src/main/java/com/acme/j6x8/internal/commerce/model/J6X8CommerceShippingEngine.java) for a reference in retrieving the description with a language key.
 
 ```java
 public List<CommerceShippingOption> getCommerceShippingOptions(
@@ -96,73 +98,33 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
     throws CommerceShippingEngineException;
 ```
 
+> This will be where we add the business logic for our custom shipping engine. It must fetch a list of available options, then perform the processing necessary to present them to the customer.
+
 ```java
 public String getDescription(Locale locale);
 ```
+
+> This returns a brief description of our shipping engine. It works similarly to the `getCommerceShippingOptionLabel` method.
 
 ```java
 public String getName(Locale locale);
 ```
 
-To better understand each of the required methods mentioned above, let's look at [J6X8CommerceShippingEngine.java](./liferay-j6x8.zip/j6x8-impl/src/main/java/com/acme/j6x8/internal/commerce/model/J6X8CommerceShippingEngine.java). We will review the implementation of each required method in sequence.
+> This returns the name of our shipping engine to display in the UI. It also works similarly to the `getCommerceShippingOptionLabel` and `getDescription` methods.
 
-1. ```java
-    @Override
-    public String getCommerceShippingOptionLabel(String name, Locale locale) {
-        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
-            "content.Language", locale, getClass());
+### Complete the Shipping Engine
 
-        return LanguageUtil.get(resourceBundle, name);
-    }
-    ```
+The shipping engine is comprised of backend logic preparing the list of shipping options to be shown to the customer. This logic is best implemented by splitting it into multiple steps. Do the following:
 
-    > This method returns a text label used for shipping options. `ResourceBundleUtil` is a Liferay class that provides support for multiple locales.
-    >
-    > Note that, for this to work correctly using `LanguageUtil`, we will need to add the language key ourselves. For more information, see [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application).
-
-1. ```java
-    @Override
-    public List<CommerceShippingOption> getCommerceShippingOptions(
-            CommerceContext commerceContext, CommerceOrder commerceOrder,
-            Locale locale)
-        throws CommerceShippingEngineException {
-
-        // ...
-    }
-    ```
-
-    > This will be where the business logic is added for our custom shipping engine. It will fetch a list of available options, then perform the processing necessary to present them to the customer.
-
-1. ```java
-    @Override
-    public String getDescription(Locale locale) {
-        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
-            "content.Language", locale, getClass());
-
-        return LanguageUtil.get(
-            resourceBundle, "ship-for-a-discounted-price");
-    }
-    ```
-
-    > This returns the description of our shipping engine to briefly explain what it does. It works similarly to the `getCommerceShippingOptionLabel` method.
-
-1. ```java
-    @Override
-    public String getName(Locale locale) {
-        ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
-            "content.Language", locale, getClass());
-
-        return LanguageUtil.get(resourceBundle, "discounted-rate");
-    }
-    ```
-
-    > This returns the name of our shipping engine. It also works similarly to the `getCommerceShippingOptionLabel` and `getDescription` methods.
-
-### Create the Logic to Process Shipping Options
-
-To implement the shipping engine itself, we need to add our business logic to the `getCommerceShippingOptions` method of our class. We will first implement several steps of processing to prepare the list of shipping options to be shown. Then, in our example, we will add an extra step to apply a discounted rate to the price of the options.
+* [Implement getting the available shipping options.](#implement-getting-the-available-shipping-options)
+* [Implement address restriction checking.](#implement-address-restriction-checking)
+* [Implement a loop to process the options.](#implement-a-loop-to-process-the-options)
+* [Call processing logic from `getCommerceShippingOptions`.](#call-processing-logic-from-getcommerceshippingoptions)
+* [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
 
 Liferay Commerce's [fixed rate shipping engine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-shipping-engine-fixed-web/src/main/java/com/liferay/commerce/shipping/engine/fixed/web/internal/FixedCommerceShippingEngine.java) is a good reference to see what processing steps are a good baseline to start with. Our example will follow the same steps.
+
+#### Implement Getting the Available Shipping Options
 
 ```java
 private List<CommerceShippingFixedOption> _getCommerceShippingFixedOptions(
@@ -183,9 +145,9 @@ private List<CommerceShippingFixedOption> _getCommerceShippingFixedOptions(
 }
 ```
 
-> Because there are several steps needed to properly process the shipping options, it is helpful to create helper methods to break the logic into smaller pieces. In our example, we start off by creating this helper method to fetch an initial list of shipping options to work with.
->
-> We first use the [CommerceShippingMethodLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/service/impl/CommerceShippingMethodLocalServiceImpl.java) to get the method (representing our shipping engine), and then use the [CommerceShippingFixedOptionLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-shipping-engine-fixed-service/src/main/java/com/liferay/commerce/shipping/engine/fixed/service/impl/CommerceShippingFixedOptionLocalServiceImpl.java) to get all of the options available for it.
+> First, use the [CommerceShippingMethodLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/service/impl/CommerceShippingMethodLocalServiceImpl.java) to get the "shipping method" (representing our shipping engine), and then use the [CommerceShippingFixedOptionLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-shipping-engine-fixed-service/src/main/java/com/liferay/commerce/shipping/engine/fixed/service/impl/CommerceShippingFixedOptionLocalServiceImpl.java) to get all of the options available for it.
+
+#### Implement Address Restriction Checking
 
 ```java
 private boolean _shippingOptionIsAddressRestricted(
@@ -202,9 +164,11 @@ private boolean _shippingOptionIsAddressRestricted(
 }
 ```
 
-> Our next helper method in our example determines whether a particular shipping option is restricted for the order's shipping address. A restricted option will not presented as an option to choose from.
+> The next step determines whether a particular shipping option is restricted for the order's shipping address. A restricted option will not presented as an option to choose from.
 >
-> We use the [CommerceAddressRestrictionLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/service/impl/CommerceAddressRestrictionLocalServiceImpl.java) to determine if the option is restricted for the order's address. We must also use our `CommerceOrder` object, which represents all kinds of information about the order being shipped. To see more methods you can use with a `CommerceOrder`, see [CommerceOrder.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrder.java) and [CommerceOrderModel.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderModel.java).
+> Use the [CommerceAddressRestrictionLocalService](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/service/impl/CommerceAddressRestrictionLocalServiceImpl.java) to determine if the option is restricted for the order's address. Use the `CommerceOrder` to get the address information; the `CommerceOrder` object represents all kinds of information about the order being shipped. See [CommerceOrder.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrder.java) and [CommerceOrderModel.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderModel.java) to find more methods you can use with a `CommerceOrder`.
+
+#### Implement a Loop to Process the Options
 
 ```java
 private List<CommerceShippingOption> _getCommerceShippingOptions(
@@ -245,9 +209,11 @@ private List<CommerceShippingOption> _getCommerceShippingOptions(
 }
 ```
 
-> The last helper method in our example does most of the work in processing, so we can more easily call it from the `getCommerceShippingOptions` method. First, after initializing a list to use for our finalized options, we use our `_getCommerceShippingFixedOptions` helper method to get our initial list of shipping options. Then, for each option, we either skip it (if the option is address restricted), add it with a price of zero (if shipping should be free), or add it normally at the end of the loop. We use a [CommerceShippingHelper](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceShippingHelperImpl.java) to more easily determine if the order should be free.
+> The next step is to do most of the work in processing (using our previously defined helper methods), so we can more easily call it from the `getCommerceShippingOptions` method. In our example, we add an extra step at the end of the processing loop to multiply the amount for normally charged shipping options by a discounted rate.
 >
-> In our example, we also add an extra step at the end of the loop to multiply the amount for normally charged shipping options by a discounted rate.
+> Use the [CommerceShippingHelper](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/util/CommerceShippingHelperImpl.java) to more easily determine if the order should be free.
+
+#### Call Processing Logic from `getCommerceShippingOptions`
 
 ```java
 @Override
@@ -273,7 +239,9 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
 }
 ```
 
-> Finally, we complete our processing logic by calling our `_getCommerceShippingOptions` helper method, and handling any possible errors.
+> Finally, call the processing logic defined previously from `getCommerceShippingOptions`, and handle any possible errors.
+
+#### Add the Language Keys to `Language.properties`
 
 Lastly, define the language keys for our engine's name and description. Add the keys and their values to a [Language.properties](./liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
 
@@ -281,6 +249,8 @@ Lastly, define the language keys for our engine's name and description. Add the 
 discounted-rate=Discounted Rate
 ship-for-a-discounted-price=Ship for a discounted price.
 ```
+
+> See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 ## Conclusion
 
