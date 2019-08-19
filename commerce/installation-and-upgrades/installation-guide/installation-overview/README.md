@@ -1,6 +1,6 @@
 # Installation Overview
 
-This Installation Overview article is a reference for how to install Liferay Commerce. The article details prerequisites, information about required software, installation and deployment, and how to maintain Liferay Commerce.
+The article details prerequisites, information about required software, installation and deployment, and how to maintain Liferay Commerce.
 
 Liferay Commerce is built on Liferay DXP 7.1. Therefore, it is necessary to install Liferay Digital Experience Platform first before installing Liferay Commerce.
 
@@ -14,7 +14,7 @@ See the [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/docu
 
 ### Liferay DXP Deployment Checklist
 
-See the [Liferay Digital Experience Platform 7.1 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513). This checklist contains information about Liferay DXP's architecture, environments, and performance tuning.
+See the [Liferay Digital Experience Platform 7.1 Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513) for information about Liferay DXP architecture and performance tuning guidelines.
 
 ## Installing Liferay Commerce
 
@@ -22,15 +22,15 @@ Liferay offers several methods of installing Liferay Commerce.
 
 ### Using a Bundle
 
-The latest version of Liferay Commerce (Open Source) is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page.
+The latest version of Liferay Commerce (Open Source) is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page. See Using a Liferay Commerce Bundle for more information.
 
 ### Using an Existing Liferay DXP Installation
 
-If there is an existing installation, download and deploy the latest `LPKG`. See the article [Deploying Liferay Commerce to an Existing Installation](../deploying-liferay-commerce-to-an-existing-liferay-installation/README.md).
+If using an existing Liferay DXP installation, users may deploy Liferay Commerce using the `LPKG`. See [Deploying Liferay Commerce to an Existing Installation](../deploying-liferay-commerce-to-an-existing-liferay-installation/README.md) for more information.
 
 ## Maintaining Liferay Commerce
 
-### Upgrades and updates
+### Upgrades and Updates
 
 There are periodic updates and upgrades that contain the latest features and bug fixes.
 
@@ -39,6 +39,6 @@ There are periodic updates and upgrades that contain the latest features and bug
 
 ## Additional Information
 
-* [Liferay Digital Exprience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be) Whitepaper
-* [Deploying Liferay DXP Using Docker ](https://www.liferay.com/documents/10182/1645493/Deploying%20Liferay%20DXP%20Using%20Docker)
+* [Liferay Digital Exprience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
+* [Deploying Liferay DXP Using Docker](https://www.liferay.com/documents/10182/1645493/Deploying%20Liferay%20DXP%20Using%20Docker)
 * [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)
