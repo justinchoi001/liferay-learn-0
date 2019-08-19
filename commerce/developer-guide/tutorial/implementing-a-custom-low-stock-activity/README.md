@@ -106,9 +106,7 @@ public String getKey();
 public String getLabel(Locale locale);
 ```
 
-> This returns a text label that describes the low stock activity.
->
-> See the implementation in [J1E4CommerceLowStockActivity.java](./liferay-j1e4.zip/j1e4-impl/src/main/java/com/acme/j1e4/internal/commerce/stock/activity/J1E4CommerceLowStockActivity.java) for a reference in retrieving the label with a language key.
+> This returns a text label that describes the low stock activity. See the implementation in [J1E4CommerceLowStockActivity.java](./liferay-j1e4.zip/j1e4-impl/src/main/java/com/acme/j1e4/internal/commerce/stock/activity/J1E4CommerceLowStockActivity.java) for a reference in retrieving the label with a language key.
 
 ### Complete the Low Stock Activity
 
@@ -134,7 +132,7 @@ The low stock activity is comprised of backend logic to perform the activity its
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./liferay-j1e4.zip/j1e4-impl/src/main/resources/content/Language.properties) file within our module:
+Lastly, define the language key for our low stock activity's label. Add the key and its value to a [Language.properties](./liferay-j1e4.zip/j1e4-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 log-a-warning-message=Log a Warning Message
