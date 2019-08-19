@@ -7,13 +7,13 @@ There are two ways to create an account: 1) using the _Account Management_ widge
 1. Click the left _Navigation Menu_ → _Account Management_.
 1. Click the _Add Account_ button.
 
-    ![image01](./images/01.png)
+    ![Add Account Button](./images/01.png)
 
 1. Enter the following:
     * **Account Name**: South Bay Auto Parts Distributors
     * **Administrator's Email**: (Enter a valid email address or select from an existing one.)
 
-    ![image02](./images/02.png)
+    ![Creating a New Account with the Widget](./images/02.png)
 
 1. Click _Create Account_.
 
@@ -31,7 +31,7 @@ Users who have administrative permissions for the store or installation may crea
     * **Type**: _Business_
     * **VAT Number**: _your VAT number*_
 
-    ![image03](./images/03.png)
+    ![Creating a New Account in the Control Panel](./images/03.png)
 
 1. Click _Save_.
 
