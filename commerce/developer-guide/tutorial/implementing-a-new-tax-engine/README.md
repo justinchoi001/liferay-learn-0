@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a custom tax engine by implementing the [CommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxEngine.java) interface.
 
-A tax engine performs the calculation for taxes when a transaction is made. Liferay Commerce provides two default tax engines: the [FixedCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/FixedCommerceTaxEngine.java) for fixed rates, and the [ByAddressCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/ByAddressCommerceTaxEngine.java) for calculating taxes by address.
+A tax engine performs the calculation for taxes when a transaction is made. Liferay Commerce provides two default tax engines: [FixedCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/FixedCommerceTaxEngine.java) for fixed rates, and [ByAddressCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/ByAddressCommerceTaxEngine.java) for calculating taxes by address.
 
 ![Out of the box tax engines](./images/01.png "Out of the box tax engines")
 
@@ -89,7 +89,7 @@ public CommerceTaxValue getCommerceTaxValue(
     throws CommerceTaxEngineException;`
 ```
 
-> This method will be where the business logic is implemented for our tax engine. (Add note talking about the return type?)
+> This method will be where the business logic is implemented for our tax engine. See [`CommerceTaxValue`](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) for more information.
 
 ```java
 public String getDescription(Locale locale);`
