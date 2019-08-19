@@ -50,7 +50,7 @@ In this section, we will get an example order validator up and running on your i
     STARTED com.acme.n9b2.impl_1.0.0
     ```
 
-1. Verify that the example order validator was added by viewing the failure message. Open your browser to `https://localhost:8080` and navigate to a catalog with at least one item priced over $100. If no such product exists yet, add it yourself; see [Creating a Simple Product](../../../user-guide/catalog/creating-and-managing-products/product-types/creating-a-simple-product) for more information on this.
+1. Verify that the example order validator was added by viewing the failure message. Open your browser to `https://localhost:8080` and navigate to a catalog with at least one item priced over $100. If no such product exists yet, add it yourself; see [Creating a Simple Product](../../../user-guide/catalog/creating-and-managing-products/product-types/creating-a-simple-product) for more information.
 
     From the catalog, find the item with this price, then click "Add to Cart". Increase the quantity to 11 or more, then click the arrow to continue. The error message that appears shows that the custom order validator successfully rejected adding the item.
 
@@ -98,7 +98,7 @@ public String getKey();
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity) throws PortalException;
 ```
 
-> This is one of the two validation methods where we will add our custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to signal whether or not the result passes validation; see this class at [CommerceOrderValidatorResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java).
+> This is one of the two validation methods where we will add our custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to signal whether or not the result passes validation; see [CommerceOrderValidatorResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java).
 
 ```java
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem) throws PortalException;
