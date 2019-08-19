@@ -46,7 +46,7 @@ In this section, we will get an example product content renderer up and running 
 
     >**Note:** This command is the same as copying the deployed jars to /opt/liferay/osgi/modules on the Docker container.
 
-1. Confirm the deployment in theDocker container console.
+1. Confirm the deployment in the Docker container console.
 
     ```bash
     STARTED com.acme.q4f7.impl_1.0.0
