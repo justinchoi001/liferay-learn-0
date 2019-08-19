@@ -2,7 +2,7 @@
 
 ## [Quick Start Guide](./quick-start-guide/README.md)
 
-Want to kick the tires? Get started [here](./installation-and-deployment/quick-start-guide/README.md)!
+Want to kick the tires? Get started [here](./quick-start-guide/README.md)!
 
 ## Installation Guide
 

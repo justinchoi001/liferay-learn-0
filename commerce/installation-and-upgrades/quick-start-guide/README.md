@@ -20,7 +20,7 @@ Follow these steps to download the latest release of Liferay Commerce and get st
 
     > Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds`
 
-1. Open Liferay Commerce. Open your browser to `https://localhost:8080`
+1. Open your browser to `https://localhost:8080`
 
 ## What's Next
 
