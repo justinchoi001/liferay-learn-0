@@ -10,7 +10,7 @@ CPSku cpSku = cpContentHelper.getDefaultCPSku(cpCatalogEntry);
 long cpDefinitionId = cpCatalogEntry.getCPDefinitionId();
 %>
 
-<h1><%= "Example Product Renderer" %></h1>
+<h1>Example Product Renderer</h1>
 
 <c:if test="<%= cpSku != null %>">
 	<h3><%= "SKU: " + cpSku.getSku() %></h3>
