@@ -7,7 +7,7 @@ Want to kick the tires? Get started [here](./quick-start-guide/README.md)!
 ## Installation Guide
 
 * [Installation Overview](./installation-guide/installation-overview/README.md)
-* [System Requirements](https://help.liferay.com/hc/en-us/articles/360029167132)
+* [System Requirements](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f)
 * [Deploying Liferay Commerce to an Existing Liferay Installation](./installation-guide/deploying-liferay-commerce-to-an-existing-liferay-installation/README.md)
 * Deploying to Liferay DXP Cloud
 * Deploying and Configuring Addons
