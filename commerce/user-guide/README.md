@@ -14,8 +14,7 @@
 
 #### Store Administration Basics
 
-* Admin Log In
-* Admin Account
+* [Introduction to the Admin Account](./getting-started/introduction-to-the-admin-account/README.md)
 * Liferay Commerce Control Panel
 * Store Setup Overview
 * Locale Options
