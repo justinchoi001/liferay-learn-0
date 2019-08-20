@@ -2,7 +2,7 @@
 
 The Admin user is created by default in any new installation of Liferay Commerce and has full permissions to modify every facet of a Liferay Commerce instance. The Admin user can create, modify, and delete sites, pages, users, accounts, catalogs and products, and perform all store and site administrative tasks.
 
-## Accessing Liferay Commerce as the Administrator
+## Accessing Liferay Commerce as the Admin User
 
 1. Open a browser to `http://localhost:8080`.
 1. Click the _Sign In_ link.
