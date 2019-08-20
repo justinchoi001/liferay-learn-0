@@ -1,8 +1,8 @@
 # Introduction to Managing Inventory
 
-Liferay Commerce provides the tools to manage the product inventory. Liferay Commerce can scale for merchants with just a single store to those with multiple warehouses and stores. Store administrators can use these features to maintain quantities for sales and handle shipments to complete order.
+Liferay Commerce provides the tools to manage the product inventory and has the ability to scale for merchants with just a single store to those with multiple warehouses and stores. Store administrators can use these features to maintain quantities for sales and handle shipments to complete order.
 
-To manage inventory, there are several key features that store administrators use: Warehouses, Availability Estimates, Low Stock Activity, Shipping, and the ability to set inventory by warehouse.
+To manage inventory, there are several key features that store administrators use: Warehouses, Availability Estimates, Low Stock Activity and the ability to set inventory by warehouse.
 
 ## Warehouses
 
@@ -36,4 +36,4 @@ To learn more, read the [Setting Inventory by Warehouse](../setting-inventory-by
 
 Managing inventory is closely tied to Shipping. See the separate Shipping related articles for more information.
 
-* Shipping
+* Shipping - Creating a New Shipment (TODO)
