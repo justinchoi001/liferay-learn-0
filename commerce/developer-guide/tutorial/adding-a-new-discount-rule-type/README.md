@@ -1,4 +1,4 @@
-# Adding a New Discount Rule
+# Adding a New Discount Rule Type
 
 This tutorial will show you how to add ... by implementing the `Foo` interface.
 
