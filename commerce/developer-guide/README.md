@@ -30,7 +30,7 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ### Promotions
 
-* [Adding a New Discount Rule Type (TODO)](./tutorial/adding-a-new-discount-rule-type/README.md)
+* [Adding a New Discount Rule Type](./tutorial/adding-a-new-discount-rule-type/README.md)
 * [Implementing a Custom Promotion Code Field (TODO)](./tutorial/implementing-a-custom-promotion-code-field/README.md)
 
 ### Sales
