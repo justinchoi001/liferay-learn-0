@@ -10,7 +10,7 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ### Catalog
 
-* [Adding a New Product Type (TODO)](./tutorial/adding-a-new-product-type/README.md)
+* [Adding a New Product Type](./tutorial/adding-a-new-product-type/README.md)
 
 ### Content
 
