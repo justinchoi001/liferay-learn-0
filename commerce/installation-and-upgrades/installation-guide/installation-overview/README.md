@@ -22,11 +22,13 @@ Liferay offers several methods of installing Liferay Commerce.
 
 ### Using a Bundle
 
-The latest version of Liferay Commerce (Open Source) is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page. See Using a Liferay Commerce Bundle for more information.
+The latest version of Liferay Commerce (Open Source) is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](../using-the-liferay-commerce-tomcat-bundle/README.md) for more information.
 
 ### Using an Existing Liferay DXP Installation
 
 If using an existing Liferay DXP installation, users may deploy Liferay Commerce using the `LPKG`. See [Deploying Liferay Commerce to an Existing Installation](../deploying-liferay-commerce-to-an-existing-liferay-installation/README.md) for more information.
+
+### Activating Commerce Enterprise
 
 ## Maintaining Liferay Commerce
 
@@ -39,6 +41,6 @@ There are periodic updates and upgrades that contain the latest features and bug
 
 ## Additional Information
 
-* [Liferay Digital Exprience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
+* [Liferay Digital Experience Platform Performance](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Performance+-+Benchmark+Study+of+Liferay+DXP+7.1/fe7d4cd2-2efc-b5cc-9680-825ec9bad5be)
 * [Deploying Liferay DXP Using Docker](https://www.liferay.com/documents/10182/1645493/Deploying%20Liferay%20DXP%20Using%20Docker)
 * [Activating a Marketplace App Through a Proxy Server](https://help.liferay.com/hc/en-us/articles/360018427391)

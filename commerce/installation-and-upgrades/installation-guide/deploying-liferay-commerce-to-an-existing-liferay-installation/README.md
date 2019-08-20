@@ -12,7 +12,7 @@ To begin using Liferay Commerce:
 1. Deploy the `LPKG` to the `${liferay.home}/deploy` folder.
     > To learn more about deploying applications to Liferay DXP, see [Liferay Home](https://help.liferay.com/hc/en-us/articles/360028712272-Liferay-Home).
 1. (_Subscribers only_) Deploy the activation key to the `${liferay.home}/deploy` folder.
-1. Verify that that the following message appears in the application server console:
+1. Verify the following message appears in the application server console:
 
     ```
     2019-08-09 00:25:10.662 INFO  [fileinstall-/../../liferay-dxp-7.1.10.1-sp1/osgi/marketplace][LPKGArtifactInstaller:202] The portal instance needs to be restarted to complete the installation of file:/../../liferay-dxp-7.1.10.1-sp1/osgi/marketplace/Liferay%20Commerce%20-%20API.lpkg
@@ -39,8 +39,8 @@ Liferay Commerce has been deployed and is ready for use. Store administrators ca
 
 Note that if the application server is restarted, Liferay Commerce will not execute the `VerifyProcess` commands a second time.
 
-* [System Requirements]()
-* Installation Overview
-* Installing the Commerce Bundle
+* [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f)
+* [Installation Overview](../installation-overview/README.md)
+* [Using the Liferay Commerce Tomcat Bundle](../using-the-liferay-commerce-tomcat-bundle/README.md)
 * Deploying to Liferay DXP Cloud
 * Deploying and Configuring Addons

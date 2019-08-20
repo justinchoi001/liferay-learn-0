@@ -13,10 +13,9 @@ To use the Liferay Commerce bundle, follow these steps:
 1. Unzip the bundle to the target location.
 
 1. Start the Tomcat bundle
-    * Navigate to
-      ```$CATALINA_HOME/bin```.
+    * Navigate to `$CATALINA_HOME/bin`.
     * Execute `./catalina.sh run`.
-      > For Windows users: `catalina run`
+      > For Windows users, run: `catalina run`
     > Wait until you see `org.apache.catalina.startup.Catalina.start Server startup in [x] milliseconds`
 
 1. Open your browser to `https://localhost:8080`.
@@ -25,11 +24,6 @@ To use the Liferay Commerce bundle, follow these steps:
 
 ## Additional Information
 
-By default the Liferay Commerce bundle is configured for demonstration purposes. This includes the following non-production ready configurations:
-
-* Embedded Elastic Search as a [search engine](https://help.liferay.com/hc/en-us/articles/360018175951-Introduction-to-Installing-a-Search-Engine)
-* HSQL as database
-
-See the [Deployment Checklist](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+7.1+Deployment+Checklist/cacaac23-9e02-411a-dcc9-adf86f95c513) for more information.
-
-See [Installing Liferay DXP on Tomcat](https://help.liferay.com/hc/en-us/articles/360017896692-Installing-Liferay-DXP-on-Tomcat) for more information about deploying Liferay DXP on Tomcat.
+* [Installation Overview](../installation-overview/README.md)
+* [Installing Liferay DXP](https://help.liferay.com/hc/en-us/articles/360028711012-Installing-Liferay-DXP)
+* [Liferay Commerce 2.0 Compatibility Matrix](https://web.liferay.com/documents/14/21598941/Liferay+Commerce+2.0+Compatibility+Matrix/0ed97477-f5a7-40a6-b5ab-f00d5e01b75f)
