@@ -171,6 +171,8 @@ Add the language key and its value to a [Language.properties](./liferay-n8n6.zip
 example-step=Example Step
 ```
 
+> See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
+
 ## Conclusion
 
 Congratulations! You now know the basics for implementing the `CommerceCheckoutStep` interface, and have added a new checkout step to Liferay Commerce.

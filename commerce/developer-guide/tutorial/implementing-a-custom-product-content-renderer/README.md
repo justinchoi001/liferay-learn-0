@@ -197,7 +197,7 @@ long cpDefinitionId = cpCatalogEntry.getCPDefinitionId();
 
 #### Add the Language Key to `Language.properties`
 
-Lastly, define the language key for our new product content renderer's label. Add the key and its value to a [Language.properties](./liferay-q4f7.zip/q4f7-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](./liferay-q4f7.zip/q4f7-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example=Example

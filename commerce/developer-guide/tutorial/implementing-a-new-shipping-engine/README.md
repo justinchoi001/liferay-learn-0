@@ -245,12 +245,14 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
 
 #### Add the Language Keys to `Language.properties`
 
-Add the keys and their values to a [Language.properties](./liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language keys and their values to a [Language.properties](./liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 discounted-rate=Discounted Rate
 ship-for-a-discounted-price=Ship for a discounted price.
 ```
+
+> See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 ## Conclusion
 

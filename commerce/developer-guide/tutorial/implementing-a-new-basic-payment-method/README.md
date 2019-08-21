@@ -184,7 +184,7 @@ Our example does not override any of these optional methods.
 
 #### Add the Language Keys to `Language.properties`
 
-Lastly, define the language key for our payment method's name and description. Add the keys and their values to a [Language.properties](./liferay-b1c3.zip/b1c3-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language keys and their values to a [Language.properties](./liferay-b1c3.zip/b1c3-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example=Example
