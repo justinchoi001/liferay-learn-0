@@ -56,17 +56,24 @@ In this section, we will get an example product type up and running on your inst
 
 ![New product type](./images/02.png "New product type")
 
+Congratulations, you've successfully built and deployed a new product type that implements `CPType`.
+
 Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will review the example we deployed. First, we will annotate two classes for OSGi registration. Second, we will implement the three interfaces: `CPType`, `ScreenNavigationCategory`, and `ScreenNavigationEntry`. And third, we will complete our implementation of these interfaces.
+In this section, we will review the example we deployed. We will create two classes: a class for the product type itself, and a screen navigation entry class for a custom screen. Walk through the following:
 
-### Annotate the Classes for OSGi Registration
+* [Annotate the Product Type Class for OSGi Registration](#annotate-the-product-type-class-for-osgi-registration)
+* [Review the `CPType` Interface](#review-the-cptype-interface)
+* [Annotate the Screen Navigation Entry Class for OSGi Registration](#annotate-the-screen-navigation-entry-class-for-osgi-registration)
+* [Review the `ScreenNavigationCategory` Interface](#review-the-screennavigationcategory-interface)
+* [Review the `ScreenNavigationEntry` Interface](#review-the-screennavigationentry-interface)
+* [Complete the Product Type](#complete-the-product-type)
 
-We will create two classes: a class for the product type itself, and a screen navigation entry class for a custom screen.
+### Annotate the Product Type Class for OSGi Registration
 
-#### Annotate the Product Type Class
+Our product type class implements the `CPType` interface:
 
 ```java
 @Component(
@@ -82,39 +89,11 @@ public class C1N4CPType implements CPType {
     public static final String NAME = "Example";
 ```
 
-> Our product type class implements the `CPType` interface.
->
 > The product type name must be a unique value so that Liferay Commerce can distinguish our product type from existing product types.
 >
 > The `commerce.product.type.display.order` value indicates how far into the list of product types our product type will appear in the UI.
 
-#### Annotate the Screen Navigation Entry Class
-
-```java
-@Component(
-    property = {
-        "screen.navigation.category.order:Integer=11",
-        "screen.navigation.entry.order:Integer=11"
-    },
-    service = {ScreenNavigationCategory.class, ScreenNavigationEntry.class}
-)
-public class C1N4ScreenNavigationEntry
-    implements ScreenNavigationCategory, ScreenNavigationEntry<CPDefinition> {
-
-    public static final String KEY = "Example";
-```
-
-> Our screen navigation entry class implements both the `ScreenNavigationCategory` and `ScreenNavigationEntry` interfaces.
->
-> It is important to provide a distinct key for the navigation screen class so that Liferay Commerce can distinguish it as a separate screen from the existing screens. Reusing a key that is already in use will override the existing associated navigation screen.
->
-> The `screen.navigation.category.order` and `screen.navigation.entry.order` values together determine what position in the product type screens this screen will appear. For example, [the Details screen class](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-definitions-web/src/main/java/com/liferay/commerce/product/definitions/web/internal/servlet/taglib/ui/CPDefinitionDetailsScreenNavigationEntry.java) has these values set to 10; setting them to 11 will ensure that our custom screen appears after it in the list.
-
-### Review the Interfaces for the Two Classes
-
-[Preamble?]
-
-#### Review the `CPType` Interface
+### Review the `CPType` Interface
 
 Implement the following methods of `CPType` in the product type class:
 
@@ -136,7 +115,29 @@ public String getName();
 
 > This returns the name of our product type. This name may be a language key that corresponds to the name that will appear in the UI.
 
-#### Review the `ScreenNavigationCategory` Interface
+### Annotate the Screen Navigation Entry Class for OSGi Registration
+
+Our screen navigation entry class implements both the `ScreenNavigationCategory` and `ScreenNavigationEntry` interfaces:
+
+```java
+@Component(
+    property = {
+        "screen.navigation.category.order:Integer=11",
+        "screen.navigation.entry.order:Integer=11"
+    },
+    service = {ScreenNavigationCategory.class, ScreenNavigationEntry.class}
+)
+public class C1N4ScreenNavigationEntry
+    implements ScreenNavigationCategory, ScreenNavigationEntry<CPDefinition> {
+
+    public static final String KEY = "Example";
+```
+
+> It is important to provide a distinct key for the navigation screen class so that Liferay Commerce can distinguish it as a separate screen from the existing screens. Reusing a key that is already in use will override the existing associated navigation screen.
+>
+> The `screen.navigation.category.order` and `screen.navigation.entry.order` values determine what position in the product type screens this screen will appear. For example, [the Details screen class](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-definitions-web/src/main/java/com/liferay/commerce/product/definitions/web/internal/servlet/taglib/ui/CPDefinitionDetailsScreenNavigationEntry.java) has these values set to 10; setting them to 11 will ensure that our custom screen appears after it in the list.
+
+### Review the `ScreenNavigationCategory` Interface
 
 Implement the following methods in the screen navigation entry class:
 
@@ -150,7 +151,7 @@ String getCategoryKey();
 String getLabel(Locale var1);
 ```
 
-> This returns a text label for the screen navigation entry that will be displayed in the UI. See the implementation in [C1N4CPTypeScreenNavigationEntry.java](./liferay-c1n4.zip/c1n4-impl/src/main/java/com/acme/c1n4/internal/commerce/product/type/C1N4CPTypeScreenNavigationEntry.java) for a reference in retrieving the label with a language key.
+> This returns a text label for the screen navigation entry that will be displayed in the UI. See the implementation in [C1N4ScreenNavigationEntry.java](./liferay-c1n4.zip/c1n4-impl/src/main/java/com/acme/c1n4/internal/commerce/product/type/C1N4ScreenNavigationEntry.java) for a reference in retrieving the label with a language key.
 
 ```java
 String getScreenNavigationKey();
@@ -158,7 +159,7 @@ String getScreenNavigationKey();
 
 > This returns a key to indicate where our screen should appear in Liferay. Return the value `cp.definition.general` so it properly appears among the other screens for products.
 
-#### Review the `ScreenNavigationEntry` Interface
+### Review the `ScreenNavigationEntry` Interface
 
 Implement the following methods in the screen navigation entry class:
 
@@ -172,13 +173,13 @@ String getCategoryKey();
 String getEntryKey();
 ```
 
-> This returns a unique identifier for the screen navigation entry. It may return the same value as `getCategoryKey`.
+> This returns a unique identifier for the screen navigation entry. It returns the same value as `getCategoryKey`.
 
 ```java
 String getScreenNavigationKey();
 ```
 
-> This is the same method as `getScreenNavigationKey` for the `ScreenNavigationCategory` interface. We have already implemented this method by returning `cp.definition.general`.
+> This is the same method as `getScreenNavigationKey` for the `ScreenNavigationCategory` interface. We implemented this method by returning `cp.definition.general`.
 
 ```java
 void render(
@@ -186,7 +187,7 @@ void render(
     throws IOException;
 ```
 
-> This will be where we add the code to render a customized screen for our product type.
+> This is where we add the code to render a customized screen for our product type.
 
 ### Complete the Product Type
 
@@ -210,7 +211,7 @@ private ServletContext _servletContext;
 
 > The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-c1n4.zip/c1n4-impl/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
 >
-> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/commerce-product-type`. See [bnd.bnd](./liferay-c1n4.zip/c1n4-impl/bnd.bnd) for a reference on these values.
+> We declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/commerce-product-type`. See [bnd.bnd](./liferay-c1n4.zip/c1n4-impl/bnd.bnd) for a reference on these values.
 
 #### Implement the `ScreenNavigationEntry`'s `render` Method
 
@@ -248,7 +249,7 @@ public boolean isVisible(User user, CPDefinition context) {
 }
 ```
 
-> Implement logic here to determine when to show the custom screen is visible. In our example, we only check whether the product type from the `CPDefinition` matches our example product type.
+> Implement logic here to determine when to show the custom screen. In our example, we only check whether the product type from the `CPDefinition` matches our example product type.
 
 #### Add the Product Type Deletion Logic to `deleteCPDefinition`
 
@@ -256,7 +257,7 @@ Our example does not require any logic to be added to `deleteCPDefinition`.
 
 #### Add a JSP to Render the Custom Screen
 
-In our example, we are adding a JSP with only a text field.
+In our example, we are adding a JSP with a text field.
 
 ```jsp
 <%@ taglib uri="http://liferay.com/tld/aui" prefix="aui" %>
@@ -264,7 +265,7 @@ In our example, we are adding a JSP with only a text field.
 <aui:input name="exampleInput" type="text" />
 ```
 
-> Implement any other inputs or actions desired on the custom screen here, such as a form or MVC action command. See [MVC Action Command](https://portal.liferay.dev/docs/7-1/tutorials/-/knowledge_base/t/mvc-action-command) for more information on adding an MVC action command that can be accessed from the JSP.
+> Implement any other inputs or actions desired on the custom screen here, such as a form or MVC action command. See [MVC Action Command](https://help.liferay.com/hc/en-us/articles/360018165091-MVC-Action-Command) for more information on adding an MVC action command that can be accessed from the JSP.
 
 #### Add the Language Key to `Language.properties`
 
@@ -282,5 +283,5 @@ Congratulations! You now know the basics for implementing the `CPType` interface
 
 ## Additional Information
 
-* [Introduction to Product Types](../../../user-guide/catalog/creating-and-managing-products/product-types/introduction-to-product-types)
+* [Introduction to Product Types](../../../user-guide/catalog/creating-and-managing-products/product-types/introduction-to-product-types/README.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)
