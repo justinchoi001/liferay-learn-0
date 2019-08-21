@@ -130,10 +130,10 @@
 * [Checkout](./content/pages/checkout/README.md)
 * [Compare](./content/pages/compare/README.md)
 * [List](./content/pages/list/README.md)
-* [Pending Orders](./content/pending-orders/README.md)
+* [Pending Orders](./content/pages/pending-orders/README.md)
 * [Placed Orders](./content/pages/placed-orders/README.md)
 * [Product Details Page](./content/pages/product-details/README.md)
-* [Search](./content/search/README.md)
+* [Search](./content/pages/search/README.md)
 
 #### Using Modern Site Building
 

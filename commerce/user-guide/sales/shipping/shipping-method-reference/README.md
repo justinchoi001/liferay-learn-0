@@ -4,8 +4,21 @@
 
 **Flat Rate**: This shipping method applies the same shipping price to every order.
 
+**Primary Unit**: This determines the system of measurement used in the store, as well as the default measurements displayed in the catalog.
+
 **Shipping Method**: This feature provides a process for calculating the cost of a given shipping option.
+
+**Shipping Method Restriction**: This feature restricts the specified countries from receiving shipments.
 
 **Shipping Option**: This feature determines how an order is shipped.
 
 **Variable Rate**: This shipping method uses a formula to calculate a unique rate for each order by weight, product price, or other factors you determine.
+
+## Additional Information
+
+* [Applying Shipping Method Restrictions](../applying-shipping-method-restrictions/README.md)
+* [Measurement Units](../measurement-units/README.md)
+* [Using Fedex as a Carrier Method](../using-fedex-as-a-carrier-method/README.md)
+* [Using the Flat Rate Shipping Method](../using-the-flat-rate-shipping-method/README.md)
+* [Using a Variable Rate Shipping Method](../using-the-variable-rate-shipping-method/README.md)
+  
