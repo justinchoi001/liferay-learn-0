@@ -88,8 +88,7 @@ Implement the following method:
 public BigDecimal getExchangeRate(
         CommerceCurrency primaryCommerceCurrency,
         CommerceCurrency secondaryCommerceCurrency)
-    throws Exception {
-}
+    throws Exception;
 ```
 
 > This method is called to calculate the exchange rate between currencies. The chosen data source for the rates must be able to handle any of the currencies that may be used in your instance of Liferay Commerce.
