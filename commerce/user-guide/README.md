@@ -65,11 +65,12 @@
 
 ### Managing Inventory
 
-* Introduction to Managing Inventory
+* [Introduction to Managing Inventory](./catalog/managing-inventory/introduction-to-managing-inventory/README.md)
 * [Adding a New Warehouse](./catalog/managing-inventory/adding-a-new-warehouse/README.md)
 * [Setting Inventory by Warehouse](./catalog/managing-inventory/setting-inventory-by-warehouse/README.md)
 * [Low Inventory Activity](./catalog/managing-inventory/low-stock-activity/README.md)
-* Availability Estimates
+* [Availability Estimates](./catalog/managing-inventory/availability-estimates/README.md)
+* [Product Inventory Configuration Reference](./catalog/managing-inventory/product-inventory-configuration-reference/README.md)
 
 ### Managing Price
 

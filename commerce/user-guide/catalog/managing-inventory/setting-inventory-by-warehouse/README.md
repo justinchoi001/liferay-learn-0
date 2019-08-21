@@ -11,7 +11,7 @@ To set inventory by warehouse:
 1. Click _Inventory_ on the left menu.
 1. Enter a quantity for the corresponding warehouse(s).
 
-    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+    ![Setting Inventory Quantity by Warehouse](./images/01.png "Setting Inventory Quantity by Warehouse")
 
 1. Click _Save_ for each warehouse.
 1. Repeat these steps for all the other product variants (SKUs) associated for a product.

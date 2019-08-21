@@ -1,8 +1,12 @@
 # Warehouse Reference Guide
 
-Warehouses are the physical locations where product inventory is managed and shipped for order fulfillment. Store administrators can allocate inventory quantities to the warehouse(s) and Liferay Commerce automatically aggregates the total salable products. Liferay Commerce allows multiple warehouses for different geographic locations by city and country.
+Warehouses represent physical locations where product inventory is managed and shipped for order fulfillment. Store administrators set inventory quantities per warehouse. Available inventory is then calculated by Liferay Commerce to determine the total available inventory for sale across warehouses.
+
+Liferay Commerce allows multiple warehouses across geographic locations.
 
 To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _Settings_. Click the _Warehouses_ tab.
+
+![Adding a Warehouse](./images/01.png)
 
 | Field | Description |
 | --- | --- |
@@ -11,7 +15,7 @@ To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _S
 | Active | Toggle to designate warehouse as active |
 | Channels | List of checkboxes for all channels this warehouse serves |
 
-![Adding a Warehouse](./images/01.png)
+![Adding the Warehouse's Address](./images/02.png)
 
 | Field | Description |
 | --- | --- |
@@ -23,14 +27,12 @@ To manage your warehouses, navigate to the _Control Panel_ → _Commerce_ → _S
 | Postal Code | Field to enter the postal code |
 | City | City where the warehouse is located |
 
-![Adding the Warehouse's Address](./images/02.png)
+![Setting the warehouse's geolocation](./images/03.png)
 
 | Field | Description |
 | --- | --- |
 | Latitude | Warehouse's Latitude |
 | Longitude | Warehouse's Longitude |
-
-![Setting the warehouse's geolocation](./images/03.png)
 
 If there are more than one warehouse, repeat these steps to add the others.
 

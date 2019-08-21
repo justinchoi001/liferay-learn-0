@@ -1,10 +1,10 @@
 # Availability Estimates
 
-This article documents how to configure Availablity Estimates. If a product becomes unavailable, store owners can inform customers how long before a product is available again. There are three default time periods in Liferay Commerce.
+This article documents how to configure Availability Estimates. If a product becomes unavailable, store owners can provide customers with an estimate for when a product will be restocked. There are three default time periods in Liferay Commerce.
 
 ![Managing Availability Estimates](./images/01.png)
 
-To manage the Availability Estimates:
+To manage Availability Estimates:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Settings_.
 1. Click the _Availability Estimates_ tab.
@@ -25,4 +25,4 @@ When configuring the low stock threshold, this Availability Estimate option is d
 ## Additional Information
 
 * [Introduction to Managing Inventory](../introduction-to-managing-inventory/README.md)
-* [Inventory Reference Guide](../inventory-reference-guide/README.md)
+* [Product Inventory Configuration Reference](../product-inventory-configuration-reference/README.md)

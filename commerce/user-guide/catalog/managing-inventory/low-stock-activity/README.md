@@ -1,6 +1,6 @@
 # Low Stock Activity
 
-This article documents steps on how to set up automatic actions whenever product inventory falls below a certain threshold. Setting up these steps in advance has the benefit of communicating quickly to customers that an order may not be able to be fulfilled due to low stock while assuring users that the product might be available again in sufficient quantities in the near future. Store owners can also configure the catalog to display product quantity remaining in inventory.
+This article documents how to set up automated actions whenever product inventory falls below a certain threshold. Setting up Low Stock Activities quickly communicates to customers that an order may not be able to be fulfilled due to low available inventory. Store owners can also configure the catalog to display remaining product quantity in inventory.
 
 To configure a Low Stock Activity:
 
@@ -20,14 +20,13 @@ To configure a Low Stock Activity:
     * **Allowed Order Quantities**: 1
     * **Multiple Order Quantity**: 1
 
-    <img src="./images/01.png" width="700px" style="borders: #000000 1px solid;">
+    ![Product Configuration for Low Stock Activity](./images/01.png "Product Configuration for Low Stock Activity")
 
 1. Click _Save_.
 
-The Low Stock Activity for this product has been configured. In the future, should the number of stock fall below the specified number, the automatic rules will be triggered.
+The Low Stock Activity for this product has been configured. In the future, should the number of stock fall below _5_, the "U-Joint" product will be unpublished.
 
 ## Additional Information
 
-Developers can implement a custom extension point to add additional types of behaviors when a product's inventory falls below the threshold.
-
+* [Low Stock Activity Reference](../product-inventory-configuration-reference/README.md)
 * [Implementing a Custom Low Stock Activity](../../../../developer-guide/tutorial/implementing-a-custom-low-stock-activity/README.md)
