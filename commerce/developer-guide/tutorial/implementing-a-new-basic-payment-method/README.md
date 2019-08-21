@@ -32,10 +32,10 @@ In this section, we will get an example payment method up and running on your in
     unzip liferay-b1c3.zip
     ```
 
-1. Go to `b1c3-impl`.
+1. Go to `liferay-b1c3`.
 
     ```bash
-    cd b1c3-impl
+    cd liferay-b1c3
     ```
 
 1. Build and deploy the example.

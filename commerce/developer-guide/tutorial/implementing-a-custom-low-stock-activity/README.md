@@ -32,10 +32,10 @@ In this section, we will get an example low stock activity up and running on you
     unzip liferay-j1e4.zip
     ```
 
-1. Go to `j1e4-impl`.
+1. Go to `liferay-j1e4`.
 
     ```bash
-    cd j1e4-impl
+    cd liferay-j1e4
     ```
 
 1. Build and deploy the example.

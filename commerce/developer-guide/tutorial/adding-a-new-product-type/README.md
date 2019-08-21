@@ -32,10 +32,10 @@ In this section, we will get an example product type up and running on your inst
     unzip liferay-c1n4.zip
     ```
 
-1. Go to `c1n4-impl`.
+1. Go to `liferay-c1n4`.
 
     ```bash
-    cd c1n4-impl
+    cd liferay-c1n4
     ```
 
 1. Build and deploy the example.

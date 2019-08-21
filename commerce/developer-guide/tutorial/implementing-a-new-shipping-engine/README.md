@@ -34,10 +34,10 @@ In this section, we will get an example shipping engine up and running on your i
     unzip liferay-j6x8.zip
     ```
 
-1. Go to `j6x8-impl`.
+1. Go to `liferay-j6x8`.
 
     ```bash
-    cd j6x8-impl
+    cd liferay-j6x8
     ```
 
 1. Build and deploy the example.

@@ -32,10 +32,10 @@ In this section, we will get an example exchange rate provider up and running on
     unzip liferay-f2y1.zip
     ```
 
-1. Go to `f2y1-impl`.
+1. Go to `liferay-f2y1`.
 
     ```bash
-    cd f2y1-impl
+    cd liferay-f2y1
     ```
 
 1. Build and deploy the example.

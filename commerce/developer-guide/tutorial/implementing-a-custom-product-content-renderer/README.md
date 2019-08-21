@@ -32,10 +32,10 @@ In this section, we will get an example product content renderer up and running 
     unzip liferay-q4f7.zip
     ```
 
-1. Go to `q4f7-impl`.
+1. Go to `liferay-q4f7`.
 
     ```bash
-    cd q4f7-impl
+    cd liferay-q4f7
     ```
 
 1. Build and deploy the example.

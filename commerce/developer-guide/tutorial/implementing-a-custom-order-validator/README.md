@@ -30,10 +30,10 @@ In this section, we will get an example order validator up and running on your i
     unzip liferay-n9b2.zip
     ```
 
-1. Go to `n9b2-impl`.
+1. Go to `liferay-n9b2`.
 
     ```bash
-    cd n9b2-impl
+    cd liferay-n9b2
     ```
 
 1. Build and deploy the example.

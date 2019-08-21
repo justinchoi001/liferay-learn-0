@@ -32,10 +32,10 @@ In this section, we will get an example checkout step up and running on your ins
     unzip liferay-n8n6.zip
     ```
 
-1. Go to `n8n6-impl`.
+1. Go to `liferay-n8n6`.
 
     ```bash
-    cd n8n6-impl
+    cd liferay-n8n6
     ```
 
 1. Build and deploy the example.

@@ -32,10 +32,10 @@ In this section, we will get an example tax engine up and running on your instan
     unzip liferay-q4b9.zip
     ```
 
-1. Go to `q4b9-impl`.
+1. Go to `liferay-q4b9`.
 
     ```bash
-    cd q4b9-impl
+    cd liferay-q4b9
     ```
 
 1. Build and deploy the example.
