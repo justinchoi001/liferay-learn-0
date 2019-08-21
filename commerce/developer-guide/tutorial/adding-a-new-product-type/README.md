@@ -2,15 +2,15 @@
 
 This tutorial will show you how to add a new product type by implementing three interfaces: [CPType](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/type/CPType.java), [ScreenNavigationCategory](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationCategory.java), and [ScreenNavigationEntry](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationEntry.java).
 
-A product type is a categorization of products that may have different types of information, and may even need to be presented differently. Liferay Commerce provides three product types out of the box: [Simple](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [Grouped](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java), and [Virtual](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java).
+Product types can be used to group products that share similar characteristics. Liferay Commerce provides three product types out of the box: [Simple](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [Grouped](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java), and [Virtual](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java).
 
 ![Out of the box product types](./images/01.png "Out of the box product types")
 
 ## Overview
 
-1. **Deploy an Example**
-1. **Walk Through the Example**
-1. **Additional Information**
+1. [**Deploy an Example**](#deploy-an-example)
+1. [**Walk Through the Example**](#walk-through-the-example)
+1. [**Additional Information**](#additional-information)
 
 ## Deploy an Example
 
@@ -52,7 +52,7 @@ In this section, we will get an example product type up and running on your inst
     STARTED com.acme.c1n4.impl_1.0.0
     ```
 
-1. Verify that the example product type was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, click on the + icon to add a new product. The new product type ("Example") will be present in the list of types to choose from.
+1. Verify that the example product type was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, click on the (+) icon to add a new product. The new product type ("Example") will be present in the list of types to choose from.
 
 ![New product type](./images/02.png "New product type")
 
@@ -62,7 +62,7 @@ Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will review the example we deployed. We will create two classes: a class for the product type itself, and a screen navigation entry class for a custom screen. Walk through the following:
+In this section, we will review the example we deployed. We will create two classes: a product type class, and a screen navigation entry class for a custom screen. Walk through the following:
 
 * [Annotate the Product Type Class for OSGi Registration](#annotate-the-product-type-class-for-osgi-registration)
 * [Review the `CPType` Interface](#review-the-cptype-interface)
@@ -161,7 +161,7 @@ String getScreenNavigationKey();
 
 ### Review the `ScreenNavigationEntry` Interface
 
-Implement the following methods in the screen navigation entry class:
+Continue to build on the screen navigation entry class with the following methods:
 
 ```java
 String getCategoryKey();
@@ -198,7 +198,7 @@ The product type is comprised of backend logic for deleting the product, logic t
 * [Override the `ScreenNavigationEntry`'s `isVisible` method.](#override-the-screennavigationentrys-isvisible-method)
 * [Add the product type deletion logic to `deleteCPDefinition`.](#add-the-product-type-deletion-logic-to-deletecpdefinition)
 * [Add a JSP to render the custom screen.](#add-a-jsp-to-render-the-custom-screen)
-* [Add the language key to `Language.properties`](#add-the-language-key-to-languageproperties)
+* [Add the language key to `Language.properties`.](#add-the-language-key-to-languageproperties)
 
 #### Configure the `ServletContext` for the Module
 
