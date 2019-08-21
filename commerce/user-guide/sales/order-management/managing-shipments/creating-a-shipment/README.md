@@ -13,7 +13,7 @@ This article describes how to create a shipment once an order has been received.
     ![Select an Order](./images/02.png)
 
 1. Click _Save_.
-1. Enter the quanity from the corresponding warehouse.
+1. Enter the quantity from the corresponding warehouse.
 
     ![Entering Quantity from US NE Warehouse](./images/03.png)
 
@@ -26,7 +26,7 @@ This article describes how to create a shipment once an order has been received.
 
 The new shipment has been created.
 
-There are several things an order manager can do at this time.
+Once a shipment has been created, there are several further actions an order manager may do with a shipment.
 
 ### Verify the Items
 
@@ -42,7 +42,7 @@ There are several things an order manager can do at this time.
 1. Select a status from the _Status_ dropdown menu (for example: _Ready to be Shipped_).
 1. Click _Save_.
 
-The order manager can update the status (_Shipped_ and _Delivered_) until the order is completed.
+The order manager can update the status of the shipment as needed, until the order is completed.
 
 ![Shipped Items](./images/06.png)
 
@@ -52,4 +52,3 @@ The order manager can update the status (_Shipped_ and _Delivered_) until the or
 * [Setting Inventory by Warehouse](../../../../catalog/managing-inventory/setting-inventory-by-warehouse/README.md)
 * [Order Life Cycle](../../order-life-cycle/README.md)
 * [Order Information](../../order-information/README.md)
-  
