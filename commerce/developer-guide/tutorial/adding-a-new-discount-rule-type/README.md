@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a new discount rule type by implementing the [CommerceDiscountRuleType](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-api/src/main/java/com/liferay/commerce/discount/rule/type/CommerceDiscountRuleType.java) interface.
 
-Discount rule types define conditions for evaluating when discount rules will be applied to products. Liferay Commerce provides three discount rule types out of the box: [AddedAllCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-rule-added-all/src/main/java/com/liferay/commerce/discount/rule/added/all/internal/AddedAllCommerceDiscountRuleTypeImpl.java), [AddedAnyCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-rule-added-any/src/main/java/com/liferay/commerce/discount/rule/added/any/internal/AddedAnyCommerceDiscountRuleTypeImpl.java), and [CartTotalCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-rule-cart-total/src/main/java/com/liferay/commerce/discount/rule/cart/total/internal/CartTotalCommerceDiscountRuleTypeImpl.java).
+Discount rule types define conditions for evaluating when discounts will be applied to an order. Liferay Commerce provides three discount rule types out of the box: [AddedAllCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-rule-added-all/src/main/java/com/liferay/commerce/discount/rule/added/all/internal/AddedAllCommerceDiscountRuleTypeImpl.java), [AddedAnyCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-rule-added-any/src/main/java/com/liferay/commerce/discount/rule/added/any/internal/AddedAnyCommerceDiscountRuleTypeImpl.java), and [CartTotalCommerceDiscountRuleTypeImpl](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-rule-cart-total/src/main/java/com/liferay/commerce/discount/rule/cart/total/internal/CartTotalCommerceDiscountRuleTypeImpl.java).
 
 ![Out of the box discount rule types](./images/01.png "Out of the box discount rule types")
 
@@ -22,7 +22,7 @@ In this section, we will get an example discount rule type up and running on you
     docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
-1. Download and unzip [Acme Commerce Discount Rule Type].
+1. Download and unzip [Acme Commerce Discount Rule Type]().
 
     ```bash
     curl liferay-m6a8.zip
@@ -32,10 +32,10 @@ In this section, we will get an example discount rule type up and running on you
     unzip liferay-m6a8.zip
     ```
 
-1. Go to `m6a8-impl`.
+1. Go to `liferay-m6a8`.
 
     ```bash
-    cd m6a8-impl
+    cd liferay-m6a8
     ```
 
 1. Build and deploy the example.
@@ -53,7 +53,7 @@ In this section, we will get an example discount rule type up and running on you
     ```
 
 1. Verify that the example discount rule type was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Discounts_. Click _Edit_ within the menu for any discount, then navigate to _Rules_ at the top of the screen.
-   
+
     From there, click the + icon to add a new discount rule. The new discount rule type ("Has at least ten products total") will be present under the _Type_ dropdown.
 
 ![New discount rule type](./images/02.png "New discount rule type")
@@ -144,16 +144,16 @@ public boolean evaluate(
 }
 ```
 
-> Implement any conditions here that must be true for a discount rule to be applied. In our example, we check for whether the order contains at least ten items.
+> Implement any conditions here that must be true for a discount rule to be applied. In our example, we check that the order contains at least ten items.
 >
-> The `CommerceOrder` object represents all kinds of information about the order being evaluated. See [CommerceOrder.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrder.java) and [CommerceOrderModel.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderModel.java) to find more information you can get from a `CommerceOrder`.
+> The `CommerceOrder` object represents a variety of information about the order being evaluated. See [CommerceOrder.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrder.java) and [CommerceOrderModel.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderModel.java) to find more information you can get from a `CommerceOrder`.
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./liferay-j1e4.zip/j1e4-impl/src/main/resources/content/Language.properties) file within the module:
+Add the language key and its value to a [Language.properties](./liferay-m6a8.zip/m6a8-impl/src/main/resources/content/Language.properties) file within the module:
 
 ```
-has-at-least-ten-products-total=Has at least ten products total
+has-at-least-ten-products-total=Has at least ten products total.
 ```
 
 > See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
