@@ -86,19 +86,19 @@ Implement the following methods:
 ```java
 public CommerceTaxValue getCommerceTaxValue(
         CommerceTaxCalculateRequest commerceTaxCalculateRequest)
-    throws CommerceTaxEngineException;`
+    throws CommerceTaxEngineException;
 ```
 
 > This method will be where the business logic is implemented for our tax engine. See [`CommerceTaxValue`](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) for more information.
 
 ```java
-public String getDescription(Locale locale);`
+public String getDescription(Locale locale);
 ```
 
 > This returns a brief description of our tax engine. See the implementation in [Q4B9CommerceTaxEngine.java](./liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/Q4B9CommerceTaxEngine.java) for a reference in retrieving the description with a language key.
 
 ```java
-public String getName(Locale locale);`
+public String getName(Locale locale);
 ```
 
 > This returns the name of our tax engine. It works similarly to the `getDescription` method.
@@ -108,6 +108,7 @@ public String getName(Locale locale);`
 The tax engine is comprised of logic to perform the tax calculation. Do the following:
 
 * [Add business logic to `getCommerceTaxValue`.](#add-business-logic-to-getcommercetaxvalue)
+* [Add the language keys to `Language.properties`.](#add-the-language-keys-to-languageproperties)
 
 #### Add Business Logic to `getCommerceTaxValue`
 
@@ -131,6 +132,17 @@ public CommerceTaxValue getCommerceTaxValue(
 ```
 
 > The `CommerceTaxCalculateRequest` parameter contains information needed for making our calculation. For this example, we use the price from the `CommerceTaxCalculateRequest`, as well as a value indicating whether to apply the rate as a percentage. See [CommerceTaxCalculateRequest.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxCalculateRequest.java) to find more methods you can use with a `CommerceTaxCalculateRequest`.
+
+#### Add the Language Keys to `Language.properties`
+
+Add the language keys and their values to a [Language.properties](./liferay-q4b9.zip/q4b9-impl/src/main/resources/content/Language.properties) file within our module:
+
+```
+a-flat-tax-rate-that-does-not-adjust=A flat tax rate that does not adjust.
+flat-tax=Flat Tax
+```
+
+> See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 ## Conclusion
 
