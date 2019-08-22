@@ -95,8 +95,6 @@ public String getName();
 ```
 
 > This method returns the name of our checkout step. This name may be a language key that corresponds to the name that will appear in the UI.
->
-> We need to add the language key for the name to display correctly. See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
 ```java
 public void processAction(
