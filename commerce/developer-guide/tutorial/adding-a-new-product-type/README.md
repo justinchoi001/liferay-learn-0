@@ -142,19 +142,19 @@ public class C1N4ScreenNavigationEntry
 Implement the following methods in the screen navigation entry class:
 
 ```java
-String getCategoryKey();
+public String getCategoryKey();
 ```
 
 > This returns a unique identifier for the category used for the screen navigation entry.
 
 ```java
-String getLabel(Locale var1);
+public String getLabel(Locale var1);
 ```
 
 > This returns a text label for the screen navigation entry that will be displayed in the UI. See the implementation in [C1N4ScreenNavigationEntry.java](./liferay-c1n4.zip/c1n4-impl/src/main/java/com/acme/c1n4/internal/commerce/product/type/C1N4ScreenNavigationEntry.java) for a reference in retrieving the label with a language key.
 
 ```java
-String getScreenNavigationKey();
+public String getScreenNavigationKey();
 ```
 
 > This returns a key to indicate where our screen should appear in Liferay. Return the string value `"cp.definition.general"` so it properly appears among the other screens for products.
