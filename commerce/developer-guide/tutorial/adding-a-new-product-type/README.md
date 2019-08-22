@@ -62,7 +62,7 @@ Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will review the example we deployed. We will create two classes: a product type class, and a screen navigation entry class for a custom screen. Walk through the following:
+In this section, we will review the example we deployed. We will create two classes: a product type class and a screen navigation entry class for a custom screen. Walk through the following:
 
 * [Annotate the Product Type Class for OSGi Registration](#annotate-the-product-type-class-for-osgi-registration)
 * [Review the `CPType` Interface](#review-the-cptype-interface)
@@ -179,7 +179,7 @@ String getEntryKey();
 String getScreenNavigationKey();
 ```
 
-> This is the same method as `getScreenNavigationKey` for the `ScreenNavigationCategory` interface. We implemented this method by returning `cp.definition.general`.
+> This is the same method as `getScreenNavigationKey` for the `ScreenNavigationCategory` interface. We implemented this method by returning `"cp.definition.general"`.
 
 ```java
 void render(
