@@ -153,7 +153,7 @@ public boolean evaluate(
 Add the language key and its value to a [Language.properties](./liferay-m6a8.zip/m6a8-impl/src/main/resources/content/Language.properties) file within the module:
 
 ```
-has-at-least-ten-products-total=Has at least ten products total.
+has-at-least-ten-products-total=Has at least ten products total
 ```
 
 > See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
