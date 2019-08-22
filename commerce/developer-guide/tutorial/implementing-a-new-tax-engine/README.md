@@ -89,7 +89,7 @@ public CommerceTaxValue getCommerceTaxValue(
     throws CommerceTaxEngineException;
 ```
 
-> This method will be where the business logic is implemented for our tax engine. See [`CommerceTaxValue`](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) for more information.
+> This method will be where the business logic is implemented for our tax engine. See [CommerceTaxValue](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/tax/CommerceTaxValue.java) for more information.
 
 ```java
 public String getDescription(Locale locale);
