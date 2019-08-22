@@ -5,6 +5,8 @@ import com.liferay.commerce.product.catalog.CPQuery;
 import com.liferay.commerce.product.constants.CPWebKeys;
 import com.liferay.commerce.product.data.source.CPDataSource;
 import com.liferay.commerce.product.data.source.CPDataSourceResult;
+import com.liferay.commerce.product.model.CPDefinition;
+import com.liferay.commerce.product.service.CPDefinitionLocalService;
 import com.liferay.commerce.product.util.CPDefinitionHelper;
 import com.liferay.petra.string.StringPool;
 import com.liferay.portal.kernel.language.LanguageUtil;
@@ -14,6 +16,8 @@ import com.liferay.portal.kernel.util.Portal;
 import com.liferay.portal.kernel.util.ResourceBundleUtil;
 import com.liferay.portal.kernel.workflow.WorkflowConstants;
 
+import javax.servlet.http.HttpServletRequest;
+
 import java.io.Serializable;
 
 import java.util.ArrayList;
@@ -22,10 +26,6 @@ import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
-
-import javax.portlet.RenderRequest;
-
-import javax.servlet.http.HttpServletRequest;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -44,7 +44,8 @@ public class M5X7CPDataSource implements CPDataSource {
 		ResourceBundle resourceBundle = ResourceBundleUtil.getBundle(
 			"content.Language", locale, getClass());
 
-		return LanguageUtil.get(resourceBundle, "products-created-by-you");
+		return LanguageUtil.get(
+			resourceBundle, "products-ending-in-the-same-word");
 	}
 
 	@Override
@@ -76,7 +77,6 @@ public class M5X7CPDataSource implements CPDataSource {
 		LinkedHashMap<String, Object> params = new LinkedHashMap<>();
 
 		params.put("keywords", StringPool.STAR);
-		params.put("userId", _getUserId(httpServletRequest));
 
 		attributes.put("params", params);
 
@@ -84,27 +84,31 @@ public class M5X7CPDataSource implements CPDataSource {
 
 		searchContext.setCompanyId(_portal.getCompanyId(httpServletRequest));
 
-		searchContext.setKeywords(StringPool.STAR);
+		searchContext.setKeywords(
+			StringPool.STAR + _getLastWordOfName(cpCatalogEntry));
 
 		return _cpDefinitionHelper.search(
 			_portal.getScopeGroupId(httpServletRequest), searchContext,
 			new CPQuery(), start, end);
 	}
 
-	private long _getUserId(HttpServletRequest httpServletRequest) {
-		RenderRequest renderRequest =
-			(RenderRequest)httpServletRequest.getAttribute(
-				"javax.portlet.request");
+	private String _getLastWordOfName(CPCatalogEntry cpCatalogEntry) throws Exception {
+		CPDefinition cpDefinition = _cpDefinitionLocalService.getCPDefinition(
+			cpCatalogEntry.getCPDefinitionId());
 
-		String userPrincipal = renderRequest.getRemoteUser();
+		String cpDefinitionName = cpDefinition.getName();
 
-		return Long.valueOf(userPrincipal);
+		String[] nameTokens = cpDefinitionName.split(" ");
+
+		return nameTokens[nameTokens.length - 1];
 	}
 
 	@Reference
 	private CPDefinitionHelper _cpDefinitionHelper;
 
 	@Reference
-	private Portal _portal;
+	private CPDefinitionLocalService _cpDefinitionLocalService;
 
+	@Reference
+	private Portal _portal;
 }
