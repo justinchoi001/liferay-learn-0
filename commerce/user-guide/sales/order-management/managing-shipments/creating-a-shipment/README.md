@@ -1,4 +1,4 @@
-# Managing Shipments
+# Creating a Shipment
 
 This article describes how to create a shipment once an order has been received.
 
