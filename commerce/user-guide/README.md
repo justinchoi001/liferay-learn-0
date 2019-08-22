@@ -126,7 +126,7 @@
 * [Account Management](./content/pages/account-management/README.md)
 * BOM / Spare Parts Finder
 * [Catalog](./content/pages/catalog/README.md)
-* [Cart](./content/cart/README.md)
+* [Cart](./content/pages/cart/README.md)
 * [Checkout](./content/pages/checkout/README.md)
 * [Compare](./content/pages/compare/README.md)
 * [List](./content/pages/list/README.md)
@@ -174,11 +174,12 @@
 
 ### Shipping
 
-* [Shipping Method Reference](./sales/shipping/shipping-method-reference/README.md)
-* [Measurement Units](./sales/shipping/measurement-units/README.md)
 * [Using FedEx as a Carrier Method](./sales/shipping/using-fedex-as-a-carrier-method/README.md)
 * [Using the Flat Rate Shipping Method](./sales/shipping/using-the-flat-rate-shipping-method/README.md)
+* [Using a Variable Rate Shipping Method](./sales/shipping/using-the-variable-rate-shipping-method/README.md)
 * [Applying Shipping Method Restrictions](./sales/shipping/applying-shipping-method-restrictions/README.md)
+* [Measurement Units](./sales/shipping/measurement-units/README.md)
+* [Shipping Method Reference](./sales/shipping/shipping-method-reference/README.md)
 
 ### Order Management
 
