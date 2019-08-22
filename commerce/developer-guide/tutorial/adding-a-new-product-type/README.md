@@ -157,7 +157,7 @@ String getLabel(Locale var1);
 String getScreenNavigationKey();
 ```
 
-> This returns a key to indicate where our screen should appear in Liferay. Return the value `cp.definition.general` so it properly appears among the other screens for products.
+> This returns a key to indicate where our screen should appear in Liferay. Return the string value `"cp.definition.general"` so it properly appears among the other screens for products.
 
 ### Review the `ScreenNavigationEntry` Interface
 
