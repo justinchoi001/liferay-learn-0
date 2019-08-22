@@ -6,9 +6,9 @@ An order validator is a class that validates items in a customer's cart when pro
 
 ## Overview
 
-1. **Deploy an Example**
-1. **Walk Through the Example**
-1. **Additional Information**
+1. [**Deploy an Example**](#deploy-an-example)
+1. [**Walk Through the Example**](#walk-through-the-example)
+1. [**Additional Information**](#additional-information)
 
 ## Deploy an Example
 
