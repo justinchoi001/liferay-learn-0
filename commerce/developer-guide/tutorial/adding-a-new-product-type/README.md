@@ -179,7 +179,7 @@ String getEntryKey();
 String getScreenNavigationKey();
 ```
 
-> This is the same method as `getScreenNavigationKey` for the `ScreenNavigationCategory` interface. We implemented this method by returning `"cp.definition.general"`.
+> This is the same method as `getScreenNavigationKey` for the `ScreenNavigationCategory` interface. We implemented this method by returning the string value `"cp.definition.general"`.
 
 ```java
 void render(
