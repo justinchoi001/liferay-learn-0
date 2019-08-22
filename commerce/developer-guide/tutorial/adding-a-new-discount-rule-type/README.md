@@ -64,7 +64,7 @@ Next, let's dive deeper to learn more.
 
 ## Walk Through the Example
 
-In this section, we will review the example we deployed. First, we will annotate the class for OSGi registration; second we will review the `CommerceDiscountRuleType` interface; and third, we will complete our implementation of `CommerceDiscountRuleType`.
+In this section, we will review the example we deployed. First, we will annotate the class for OSGi registration. Second, we will review the `CommerceDiscountRuleType` interface. And third, we will complete our implementation of `CommerceDiscountRuleType`.
 
 ### Annotate Your Class for OSGi Registration
 
