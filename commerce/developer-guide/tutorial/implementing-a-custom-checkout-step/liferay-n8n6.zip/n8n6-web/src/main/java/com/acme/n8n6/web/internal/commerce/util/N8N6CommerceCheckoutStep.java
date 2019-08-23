@@ -1,4 +1,4 @@
-package com.acme.n8n6.internal.commerce.util;
+package com.acme.n8n6.web.internal.commerce.util;
 
 import com.liferay.commerce.util.BaseCommerceCheckoutStep;
 import com.liferay.commerce.util.CommerceCheckoutStep;
@@ -52,7 +52,7 @@ public class N8N6CommerceCheckoutStep extends BaseCommerceCheckoutStep {
 	private JSPRenderer _jspRenderer;
 
 	@Reference(
-		target = "(osgi.web.symbolicname=com.acme.n8n6.impl)"
+		target = "(osgi.web.symbolicname=com.acme.n8n6.web)"
 	)
 	private ServletContext _servletContext;
 

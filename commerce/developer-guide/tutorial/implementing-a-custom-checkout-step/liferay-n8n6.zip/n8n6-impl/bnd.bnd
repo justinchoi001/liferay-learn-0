@@ -1,4 +1,0 @@
-Bundle-Name: Acme N8N6 Commerce Checkout Step
-Bundle-SymbolicName: com.acme.n8n6.impl
-Bundle-Version: 1.0.0
-Web-ContextPath: /commerce-checkout-step

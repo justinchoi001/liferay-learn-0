@@ -49,7 +49,7 @@ In this section, we will get an example checkout step up and running on your ins
 1. Confirm the deployment in the Docker container console.
 
     ```bash
-    STARTED com.acme.n8n6.impl_1.0.0
+    STARTED com.acme.n8n6.web_1.0.0
     ```
 
 1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add an item to the cart, view the cart, and then click "Checkout". The new "Example Step" will be present in the list of checkout steps.
@@ -128,13 +128,13 @@ The checkout step is comprised of a custom screen and backend logic to process a
 Define the `ServletContext` using the symbolic name of our bundle so that it can find the JSP in our module:
 
 ```java
-@Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.impl)")
+@Reference(target = "(osgi.web.symbolicname=com.acme.n8n6.web)")
 private ServletContext _servletContext;
 ```
 
-> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-impl/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
+> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
 >
-> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/commerce-checkout-step`. See [bnd.bnd](./liferay-n8n6.zip/n8n6-impl/bnd.bnd) for a reference on these values.
+> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/n8n6-web`. See [bnd.bnd](./liferay-n8n6.zip/n8n6-web/bnd.bnd) for a reference on these values.
 
 #### Implement the `render` Method
 
@@ -151,7 +151,7 @@ public void render(
 }
 ```
 
-> Use a `JSPRenderer` to render the JSP for our checkout step (in this case, [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
+> Use a `JSPRenderer` to render the JSP for our checkout step (in this case, [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
 
 #### Add Business Logic to `processAction`
 
@@ -159,11 +159,11 @@ Our example will display text on a custom screen and does not require backend pr
 
 #### Add a JSP to Render the Custom Screen
 
-In our example, we are adding placeholder text. You can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-impl/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
+In our example, we are adding placeholder text. You can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./liferay-n8n6.zip/n8n6-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](./liferay-n8n6.zip/n8n6-web/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example-step=Example Step
