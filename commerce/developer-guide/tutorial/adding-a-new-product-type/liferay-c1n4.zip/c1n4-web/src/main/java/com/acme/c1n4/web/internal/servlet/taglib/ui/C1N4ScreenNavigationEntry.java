@@ -1,4 +1,4 @@
-package com.acme.c1n4.internal.commerce.product.type;
+package com.acme.c1n4.web.internal.servlet.taglib.ui;
 
 import com.liferay.commerce.product.model.CPDefinition;
 import com.liferay.frontend.taglib.servlet.taglib.ScreenNavigationCategory;
@@ -84,7 +84,7 @@ public class C1N4ScreenNavigationEntry
 	@Reference
 	private JSPRenderer _jspRenderer;
 
-	@Reference(target = "(osgi.web.symbolicname=com.acme.c1n4.impl)")
+	@Reference(target = "(osgi.web.symbolicname=com.acme.c1n4.web)")
 	private ServletContext _servletContext;
 
 }

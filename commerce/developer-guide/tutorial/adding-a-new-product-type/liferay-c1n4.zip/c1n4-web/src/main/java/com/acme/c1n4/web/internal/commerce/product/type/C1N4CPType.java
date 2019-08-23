@@ -1,4 +1,4 @@
-package com.acme.c1n4.internal.commerce.product.type;
+package com.acme.c1n4.web.internal.commerce.product.type;
 
 import com.liferay.commerce.product.type.CPType;
 import com.liferay.portal.kernel.exception.PortalException;
