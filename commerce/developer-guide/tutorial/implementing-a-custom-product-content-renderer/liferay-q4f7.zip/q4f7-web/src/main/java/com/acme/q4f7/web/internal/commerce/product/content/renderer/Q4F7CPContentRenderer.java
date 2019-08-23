@@ -1,4 +1,4 @@
-package com.acme.q4f7.internal.commerce.product.content.renderer;
+package com.acme.q4f7.web.internal.commerce.product.content.renderer;
 
 import com.liferay.commerce.product.catalog.CPCatalogEntry;
 import com.liferay.commerce.product.content.render.CPContentRenderer;
@@ -59,7 +59,7 @@ public class Q4F7CPContentRenderer implements CPContentRenderer {
 	private JSPRenderer _jspRenderer;
 
 	@Reference(
-		target = "(osgi.web.symbolicname=com.acme.q4f7.impl)"
+		target = "(osgi.web.symbolicname=com.acme.q4f7.web)"
 	)
 	private ServletContext _servletContext;
 

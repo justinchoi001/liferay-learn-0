@@ -49,7 +49,7 @@ In this section, we will get an example product content renderer up and running 
 1. Confirm the deployment in the Docker container console.
 
     ```bash
-    STARTED com.acme.q4f7.impl_1.0.0
+    STARTED com.acme.q4f7.web_1.0.0
     ```
 
 1. Verify that the example product content renderer was added. Open your browser to `https://localhost:8080` and navigate to any catalog with products in Liferay Commerce. Click on the product to see the Product Details widget, then click _Configuration_ for the widget.
@@ -103,7 +103,7 @@ public String getKey();
 public String getLabel(Locale locale);
 ```
 
-> This returns a text label that describes the product content renderer. See the implementation in [Q4F7CPContentRenderer.java](./liferay-q4f7.zip/q4f7-impl/src/main/java/com/acme/q4f7/internal/commerce/product/content/renderer/Q4F7CPContentRenderer.java) for a reference in retrieving the label with a language key.
+> This returns a text label that describes the product content renderer. See the implementation in [Q4F7CPContentRenderer.java](./liferay-q4f7.zip/q4f7-web/src/main/java/com/acme/q4f7/web/internal/commerce/product/content/renderer/Q4F7CPContentRenderer.java) for a reference in retrieving the label with a language key.
 
 ```java
 public void render(
@@ -132,14 +132,14 @@ Define the `ServletContext` using the symbolic name of our bundle so that it can
 
 ```java
 @Reference(
-    target = "(osgi.web.symbolicname=com.acme.q4f7.impl)"
+    target = "(osgi.web.symbolicname=com.acme.q4f7.web)"
 )
 private ServletContext _servletContext;
 ```
 
-> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-q4f7.zip/q4f7-impl/bnd.bnd). These values must match for the `ServletContext` to locate the JSP
+> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-q4f7.zip/q4f7-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP
 >
-> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/commerce-product-content-renderer`. See [bnd.bnd](./liferay-q4f7.zip/q4f7-impl/bnd.bnd) for a reference on these values.
+> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/q4f7-web`. See [bnd.bnd](./liferay-q4f7.zip/q4f7-web/bnd.bnd) for a reference on these values.
 
 #### Implement the `render` Method
 
@@ -157,7 +157,7 @@ public void render(
 }
 ```
 
-> Use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-impl/src/main/resources/META-INF/resources/view.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
+> Use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-web/src/main/resources/META-INF/resources/view.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
 
 #### Add a JSP for the Custom View
 
@@ -197,7 +197,7 @@ long cpDefinitionId = cpCatalogEntry.getCPDefinitionId();
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./liferay-q4f7.zip/q4f7-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](./liferay-q4f7.zip/q4f7-web/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example=Example
