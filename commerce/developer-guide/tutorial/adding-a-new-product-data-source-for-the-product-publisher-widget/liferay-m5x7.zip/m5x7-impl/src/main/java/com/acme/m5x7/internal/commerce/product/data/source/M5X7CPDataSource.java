@@ -16,16 +16,15 @@ import com.liferay.portal.kernel.util.Portal;
 import com.liferay.portal.kernel.util.ResourceBundleUtil;
 import com.liferay.portal.kernel.workflow.WorkflowConstants;
 
-import javax.servlet.http.HttpServletRequest;
-
 import java.io.Serializable;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.Locale;
 import java.util.Map;
 import java.util.ResourceBundle;
+
+import javax.servlet.http.HttpServletRequest;
 
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
@@ -74,12 +73,6 @@ public class M5X7CPDataSource implements CPDataSource {
 		attributes.put(
 			"excludedCPDefinitionId", cpCatalogEntry.getCPDefinitionId());
 
-		LinkedHashMap<String, Object> params = new LinkedHashMap<>();
-
-		params.put("keywords", StringPool.STAR);
-
-		attributes.put("params", params);
-
 		searchContext.setAttributes(attributes);
 
 		searchContext.setCompanyId(_portal.getCompanyId(httpServletRequest));
@@ -92,7 +85,9 @@ public class M5X7CPDataSource implements CPDataSource {
 			new CPQuery(), start, end);
 	}
 
-	private String _getLastWordOfName(CPCatalogEntry cpCatalogEntry) throws Exception {
+	private String _getLastWordOfName(CPCatalogEntry cpCatalogEntry)
+		throws Exception {
+
 		CPDefinition cpDefinition = _cpDefinitionLocalService.getCPDefinition(
 			cpCatalogEntry.getCPDefinitionId());
 
@@ -111,4 +106,5 @@ public class M5X7CPDataSource implements CPDataSource {
 
 	@Reference
 	private Portal _portal;
+
 }
