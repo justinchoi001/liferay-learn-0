@@ -1,4 +1,4 @@
-# Adding Related Products to the Product Relations Widget
+# Adding a New Product Data Source for the Product Publisher Widget
 
 This tutorial will show you how to add ... by implementing the `Foo` interface.
 
