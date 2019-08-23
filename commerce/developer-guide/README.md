@@ -26,7 +26,7 @@ Welcome to the Liferay Commerce Developer Guide.
 ### Marketing
 
 * [Adding a New Notification Template Type (TODO)](./tutorial/adding-a-new-notification-template-type/README.md)
-* [Adding a New Product Data Source for the Product Publisher Widget (TODO)](./tutorial/adding-a-new-product-data-source-for-the-product-publisher-widget/README.md)
+* [Adding a New Product Data Source for the Product Publisher Widget](./tutorial/adding-a-new-product-data-source-for-the-product-publisher-widget/README.md)
 
 ### Promotions
 
