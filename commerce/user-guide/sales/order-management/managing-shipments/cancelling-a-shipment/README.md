@@ -1,6 +1,6 @@
-# Canceling a Shipment
+# Cancelling a Shipment
 
-This article documents how to cancel a shipment. If a buyer cancels an order but before it is shipped, the seller can cancel the shipment in Liferay Commerce. Note that cancelling a shipment does **not** does not mean the order is closed. Managing an order's ultimate status is done on the _Orders_ menu in the Control Panel.
+If a buyer cancels an order before it is shipped, the seller may cancel the shipment in Liferay Commerce. Note that cancelling a shipment does **not** close an order. Managing an order's status is done on the _Orders_ menu in the Control Panel.
 
 To cancel a shipment:
 
