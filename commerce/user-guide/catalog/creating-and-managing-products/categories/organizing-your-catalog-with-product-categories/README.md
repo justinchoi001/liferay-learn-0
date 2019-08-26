@@ -14,7 +14,7 @@ Navigate to the _Control Panel_ → <img src="./images/05.png" width="25px" styl
 
 <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 
-All Categories require a Vocabulary which is the parent container. [Create a Vocabulary _first_](LINK-TO-CROSS-REFERENCE) before creating Categories. Click the (+) button to create a Vocabulary.
+All Categories require a Vocabulary which is the parent container. [Create a Vocabulary](https://help.liferay.com/hc/en-us/articles/360018171951-Defining-Categories-for-Content) _first_ before creating Categories. Click the (+) button to create a Vocabulary.
 
 | Field | Description |
 | ------ | ------- |
