@@ -21,11 +21,11 @@ In the image above, the two related products are displayed in the Product Publis
 More Product Relation types may be added as necessary. This includes intangibles such as warranties. To add a new Product Relation:
 
 1. Navigate to the _Control Panel_ → _Configuration_ → _System Settings_.
-2. Click _Catalog_ in the _Commerce_ section.
-3. Click _Product Relations_ on the left menu.
-4. Click the _Add_ button.
-5. Enter the new Product Relation in the _Type_ field: Warranties.
-6. Click _Save_.
+1. Click _Catalog_ in the _Commerce_ section.
+1. Click _Product Relations_ on the left menu.
+1. Click the _Add_ button.
+1. Enter the new Product Relation in the _Type_ field: Warranties.
+1. Click _Save_.
 
     ![Creating a New Product Relation](./images/01.png)
 
@@ -34,14 +34,14 @@ The new Product Relation Type has been added.
 ## Creating Relationships Between Products
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-2. Select any product; for example, _Brake Pads_.
-3. Click on the _Product Relations_ sub-tab.
-4. Click on _Related_ in the left menu.
+1. Select any product; for example, _Brake Pads_.
+1. Click on the _Product Relations_ sub-tab.
+1. Click on _Related_ in the left menu.
 
     ![Related Menu](./images/02.png)
 
-5. Click the (+) button to add one or more relationships. In this example, select _Brake Rotors_ and _Brake Fluid_.
-6. Click _Add_.
+1. Click the (+) button to add one or more relationships. In this example, select _Brake Rotors_ and _Brake Fluid_.
+1. Click _Add_.
 
     ![Adding Two Products](./images/04.png)
 
