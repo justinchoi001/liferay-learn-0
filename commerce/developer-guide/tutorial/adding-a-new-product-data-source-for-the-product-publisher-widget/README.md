@@ -2,7 +2,7 @@
 
 This tutorial will show you how to add a new product data source by implementing the `CPDataSource` interface.
 
-Product data sources provide unique ways to search for products related in some way. Liferay Commerce provides several product data sources out of the box, including ones that search [by product relations](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) and [by categories](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java).
+Product data sources provide unique ways to search for products that are related. Liferay Commerce provides several product data sources out of the box, including ones that search [by product relations](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) and [by categories](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java).
 
 ![Out of the box product data sources](./images/01.png "Out of the box product data sources")
 
@@ -149,9 +149,9 @@ public CPDataSourceResult getResult(
 }
 ```
 
-> We use a [CPDefinitionHelper](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/util/CPDefinitionHelperImpl.java) to perform the search. The `CPDefinitionHelper` itself combines logic specific to product definitions with `BaseIndexer`'s search functionality; see the [BaseIndexer.java](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/portal-kernel/src/com/liferay/portal/kernel/search/BaseIndexer.java) for more information.
-
-> It is important to add the product definition's ID as the value for the `"excludedCPDefinitionId"` attribute to the `SearchContext` in order to omit the original product from the results. In our example, we also specify the last name of the product to search for. See the implementation of `_getLastWordOfName` by visiting [M5X7CPDataSource](./liferay-m5x7.zip/m5x7-impl/src/main/java/com/acme/m5x7/internal/commerce/product/data/source/M5X7CPDataSource.java).
+> We use a [CPDefinitionHelper](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/util/CPDefinitionHelperImpl.java) to perform the search. The `CPDefinitionHelper` combines logic specific to product definitions with `BaseIndexer`'s search functionality; see [BaseIndexer.java](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/portal-kernel/src/com/liferay/portal/kernel/search/BaseIndexer.java) for more information.
+>
+> Add the product definition's ID as the value for the `"excludedCPDefinitionId"` attribute to the `SearchContext`. This will omit the original product from the results. In our example, we also specify the last word of product name to search for. See the implementation of `_getLastWordOfName` by visiting [M5X7CPDataSource](./liferay-m5x7.zip/m5x7-impl/src/main/java/com/acme/m5x7/internal/commerce/product/data/source/M5X7CPDataSource.java).
 
 #### Add the Language Key to `Language.properties`
 
