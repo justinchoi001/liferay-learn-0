@@ -155,7 +155,7 @@ public CPDataSourceResult getResult(
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](.liferay-m5x7.zip/m5x7-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](./liferay-m5x7.zip/m5x7-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 products-ending-in-the-same-word=Products Ending in the Same Word
