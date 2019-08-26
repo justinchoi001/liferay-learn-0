@@ -195,7 +195,7 @@
 
 * Shipment Workflow
 * [Creating a Shipment](./sales/order-management/managing-shipments/creating-a-shipment/README.md)
-* Cancelling a Shipment
+* [Cancelling a Shipment](./sales/order-management/managing-shipments/cancelling-a-shipment/README.md)
 
 ## Operations
 
