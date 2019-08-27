@@ -82,7 +82,7 @@ public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
 
 > It is important to provide a distinct key for the order validator so that Liferay Commerce can distinguish the new order validator from others in the [order validator registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use will override the existing associated validator.
 >
-> The `commerce.order.validator.priority` value indicates how far into the list of order validators the new validator will appear in the UI.
+> The `commerce.order.validator.priority` value indicates when the order validator will perform its validation in sequence with other validators. For example, the [default order validator](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) has a value of 10. Giving our order validator a value of 9 ensures that it will perform its validation immediately before the default validator.
 
 ### Review the `CommerceOrderValidator` Interface
 
