@@ -79,7 +79,7 @@ Our product type class implements the `CPType` interface:
 @Component(
     immediate = true,
     property = {
-        "commerce.product.type.display.order:Integer=21",
+        "commerce.product.type.display.order:Integer=16",
         "commerce.product.type.name=" + C1N4CPType.NAME
     },
     service = CPType.class
@@ -91,7 +91,7 @@ public class C1N4CPType implements CPType {
 
 > The product type name must be a unique value so that Liferay Commerce can distinguish our product type from existing product types.
 >
-> The `commerce.product.type.display.order` value indicates how far into the list of product types our product type will appear in the UI.
+> The `commerce.product.type.display.order` value indicates how far into the list of product types our product type will appear in the UI. For example, the [virtual product type](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java) has a value of 15. Giving our product type a value of 16 ensures that it will appear immediately after the virtual type.
 
 ### Review the `CPType` Interface
 

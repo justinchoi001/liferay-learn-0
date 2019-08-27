@@ -84,7 +84,7 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
 
 > It is important to provide a distinct key for the low stock activity so that Liferay Commerce can distinguish the new activity from others in the [low stock activity registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
 >
-> The `commerce.low.stock.activity.priority` value indicates how far into the list of low stock activities our activity will appear in the UI.
+> The `commerce.low.stock.activity.priority` value indicates how far into the list of low stock activities our activity will appear in the UI. For example, the ["set as unpublished" activity](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java) has a value of 10. Giving our low stock activity a value of 9 ensures that it will appear immediately before the "set as unpublished" activity.
 
 ### Review the `CommerceLowStockActivity` Interface
 

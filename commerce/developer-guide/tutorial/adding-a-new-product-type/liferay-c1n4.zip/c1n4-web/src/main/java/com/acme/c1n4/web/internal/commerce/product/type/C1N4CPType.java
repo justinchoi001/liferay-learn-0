@@ -13,7 +13,7 @@ import org.osgi.service.component.annotations.Component;
 @Component(
 	immediate = true,
 	property = {
-		"commerce.product.type.display.order:Integer=21",
+		"commerce.product.type.display.order:Integer=16",
 		"commerce.product.type.name=" + C1N4CPType.NAME
 	},
 	service = CPType.class
