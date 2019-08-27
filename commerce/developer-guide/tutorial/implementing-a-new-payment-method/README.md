@@ -1,4 +1,4 @@
-# Implementing a New Basic Payment Method
+# Implementing a New Payment Method
 
 This tutorial will show you how to add a new payment method by implementing the [CommercePaymentMethod](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) interface.
 
