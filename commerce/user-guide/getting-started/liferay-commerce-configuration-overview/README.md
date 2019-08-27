@@ -49,4 +49,4 @@ The following site settings are found here:
 * Product Display Pages
 * [Shipping Methods](../../sales/shipping/README.md)
 * [Site Types](../site-management-basics/sites-and-site-types/README.md)
-* [Taxes](../../operations/taxes/README.md)
+* Taxes
