@@ -39,10 +39,15 @@ public class M6A8CommerceDiscountRuleType implements CommerceDiscountRuleType {
 			return false;
 		}
 
+		String settingsProperty = commerceDiscountRule.getSettingsProperty(
+			commerceDiscountRule.getType());
+
+		int minimumProducts = Integer.valueOf(settingsProperty);
+
 		List<CommerceOrderItem> commerceOrderItems =
 			commerceOrder.getCommerceOrderItems();
 
-		if (commerceOrderItems.size() >= 10) {
+		if (commerceOrderItems.size() >= minimumProducts) {
 			return true;
 		}
 
@@ -60,7 +65,7 @@ public class M6A8CommerceDiscountRuleType implements CommerceDiscountRuleType {
 			"content.Language", locale, getClass());
 
 		return LanguageUtil.get(
-			resourceBundle, "has-at-least-ten-products-total");
+			resourceBundle, "has-a-minimum-number-of-products");
 	}
 
 }
