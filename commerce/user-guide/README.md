@@ -15,8 +15,7 @@
 #### Store Administration Basics
 
 * [Introduction to the Admin Account](./getting-started/introduction-to-the-admin-account/README.md)
-* [Liferay Commerce Control Panel](./getting-started/liferay-commerce-control-panel/README.md)
-* [Liferay Commerce System Settings Reference](./getting-started/liferay-commerce-system-settings-reference/README.md)
+* [Liferay Commerce Configuration Overview](./getting-started/liferay-commerce-configuration-overview/README.md)
 * Store Setup Overview
 * Locale Options
 * Store Notifications
