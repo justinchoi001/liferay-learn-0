@@ -217,7 +217,7 @@ public boolean evaluate(
 }
 ```
 
-> Implement any conditions here that must be true for a discount rule to be applied. In our example, we check that the order contains at least a minimum number of items. We use a minimum value defined by a custom UI input (stored as a settings property).
+> Implement any conditions here that must be true for a discount rule to be applied. In our example, we check that the order contains at least a minimum number of items. We use a minimum value defined by a custom UI input (stored as a String within the [CommerceDiscountRule](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-service/src/main/java/com/liferay/commerce/discount/model/impl/CommerceDiscountRuleImpl.java)).
 >
 > The `CommerceOrder` object represents a variety of information about the order being evaluated. See [CommerceOrder.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrder.java) and [CommerceOrderModel.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderModel.java) to find more information you can get from a `CommerceOrder`.
 
@@ -234,7 +234,7 @@ In our example, we add a JSP with a numeric input for a minimum number of produc
 </aui:input>
 ```
 
-> Implement any UI elements to present when defining a discount rule. These will appear immediately after selecting the discount rule type is selected. Defining an input will cause the saved value to be stored in the discount rule type's settings properties.
+> Implement any UI elements to present when defining a discount rule. These will appear immediately after selecting the discount rule type is selected. Defining an input will cause the saved value to be stored in the discount rule's settings properties.
 >
 > See [Using AUI Taglibs](https://help.liferay.com/hc/en-us/articles/360020189212-Using-AUI-Taglibs) for more information on using AUI inputs.
 
