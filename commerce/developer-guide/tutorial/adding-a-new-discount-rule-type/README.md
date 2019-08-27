@@ -79,7 +79,7 @@ In this section, we will review the example we deployed. We will create two clas
     immediate = true,
     property = {
         "commerce.discount.rule.type.key=" + M6A8CommerceDiscountRuleType.KEY,
-        "commerce.discount.rule.type.order:Integer=55"
+        "commerce.discount.rule.type.order:Integer=51"
     },
     service = CommerceDiscountRuleType.class
 )
@@ -90,7 +90,7 @@ public class M6A8CommerceDiscountRuleType implements CommerceDiscountRuleType {
 
 > It is important to provide a distinct key for the discount rule type so that Liferay Commerce can distinguish the new type from others in the [discount rule type registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-service/src/main/java/com/liferay/commerce/discount/internal/rule/type/CommerceDiscountRuleTypeRegistryImpl.java). Reusing a key that is already in use will override the existing associated type.
 >
-> The `commerce.discount.rule.type.order` value indicates how far in the list of available discount rule types this type will appear.
+> The `commerce.discount.rule.type.order` value indicates how far in the list of available discount rule types this type will appear. For example, the ["added all" discount rule type](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-discount-rule-added-all/src/main/java/com/liferay/commerce/discount/rule/added/all/internal/AddedAllCommerceDiscountRuleTypeImpl.java) has a value of 50. Giving our discount rule type a value of 51 ensures that it will appear immediately after the "added all" type.
 
 ### Review the `CommerceDiscountRuleType` Interface
 

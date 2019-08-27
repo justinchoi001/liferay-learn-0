@@ -19,7 +19,7 @@ import org.osgi.service.component.annotations.Component;
 	immediate = true,
 	property = {
 		"commerce.discount.rule.type.key=" + M6A8CommerceDiscountRuleType.KEY,
-		"commerce.discount.rule.type.order:Integer=55"
+		"commerce.discount.rule.type.order:Integer=51"
 	},
 	service = CommerceDiscountRuleType.class
 )
