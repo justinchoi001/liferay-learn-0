@@ -1,4 +1,4 @@
-package com.acme.m6a8.internal.commerce.discount.rule.type;
+package com.acme.m6a8.web.internal.commerce.discount.rule.type;
 
 import com.liferay.commerce.context.CommerceContext;
 import com.liferay.commerce.discount.model.CommerceDiscountRule;

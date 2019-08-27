@@ -49,7 +49,7 @@ In this section, we will get an example discount rule type up and running on you
 1. Confirm the deployment in the Liferay Docker container console.
 
     ```bash
-    STARTED com.acme.m6a8.impl_1.0.0
+    STARTED com.acme.m6a8.web_1.0.0
     ```
 
 1. Verify that the example discount rule type was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Discounts_. Click _Edit_ within the menu for any discount, then navigate to _Rules_ at the top of the screen.
@@ -109,7 +109,7 @@ public String getKey();
 public String getLabel(Locale locale);
 ```
 
-> This returns a text label that describes how the discount rule is applied. See the implementation in [M6A8CommerceDiscountRuleType.java](./liferay-m6a8.zip/m6a8-impl/src/main/java/com/acme/m6a8/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleType.java) for a reference in retrieving the label with a language key.
+> This returns a text label that describes how the discount rule is applied. See the implementation in [M6A8CommerceDiscountRuleType.java](./liferay-m6a8.zip/m6a8-web/src/main/java/com/acme/m6a8/web/internal/commerce/discount/rule/type/M6A8CommerceDiscountRuleType.java) for a reference in retrieving the label with a language key.
 
 ### Complete the Discount Rule Type
 
@@ -150,7 +150,7 @@ public boolean evaluate(
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./liferay-m6a8.zip/m6a8-impl/src/main/resources/content/Language.properties) file within the module:
+Add the language key and its value to a [Language.properties](./liferay-m6a8.zip/m6a8-web/src/main/resources/content/Language.properties) file within the module:
 
 ```
 has-at-least-ten-products-total=Has at least ten products total
