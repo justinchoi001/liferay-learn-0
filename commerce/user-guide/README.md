@@ -18,7 +18,7 @@
 * [Liferay Commerce Configuration Overview](./getting-started/liferay-commerce-configuration-overview/README.md)
 * Store Setup Overview
 * [Locale Options](./getting-started/locale-options/README.md)
-* Store Notifications
+* [Store Notifications](./marketing/email-notifications/automating-store-emails-by-using-notification-templates/README.md)
 * Store Email Addresses
 * [Introduction to Payments](./getting-started/payments/README.md)
 * [Managing Payment Methods](./getting-started/payments/managing-payment-methods/README.md)
@@ -38,6 +38,8 @@
 * [Sites and Site Types](./getting-started/site-management-basics/sites-and-site-types/README.md)
 
 ## Catalog
+
+* [Creating a Catalog](./catalog/creating-a-catalog/README.md)
 
 ### Creating and Managing Products
 
