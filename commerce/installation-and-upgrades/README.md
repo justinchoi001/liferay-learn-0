@@ -16,7 +16,7 @@ Want to kick the tires? Get started [here](./quick-start-guide/README.md)!
 ## Upgrades and Updates
 
 * [Upgrading from Liferay Commerce 1.1.x](./upgrades-and-updates/upgrading-from-liferay-commerce-1.1.x/README.md)
-* [Maintenance Versions](../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method/README.md)
+* [Maintenance Versions](./upgrades-and-updates/maintenance-versions/README.md)
 * Migrations
 
 ## Deploying to Liferay DXP Cloud
