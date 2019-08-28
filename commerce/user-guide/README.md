@@ -186,9 +186,11 @@
 ### Order Management
 
 * [Order Life Cycle](./sales/order-management/order-life-cycle/README.md)
-* [Order Workflows](./sales/order-management/order-workflows/README.md)
 * [Orders Menu](./sales/order-management/orders-menu/README.md)
 * [Order Information](./sales/order-management/order-information/README.md)
+* [Order Workflows](./sales/order-management/order-workflows/README.md)
+* [Enabling or Disabling Order Workflows](./sales/order-management/order-workflows/enabling-or-disabling-order-workflows/README.md)
+* [Approving or Rejecting Orders in Order Workflows](./sales/order-management/order-workflows/approving-or-rejecting-orders-in-order-workflows/README.md)
 * Order Status
 * Processing an Order
 * Subscription Management
