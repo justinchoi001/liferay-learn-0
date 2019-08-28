@@ -1,6 +1,6 @@
 # Adding a New Currency
 
-Liferay Commerce offers multiple currencies as payment options. Furthermore, any currency may function as the primary currency depending on business needs.
+Liferay Commerce supports multiple currencies out of the box. However, not all global currencies are configured and available out of the box.
 
 This article details how to add a new currency to your store.
 
