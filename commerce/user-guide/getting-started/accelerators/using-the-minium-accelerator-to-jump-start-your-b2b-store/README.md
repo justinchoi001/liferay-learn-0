@@ -1,6 +1,6 @@
 # Using the Minium Accelerator to Jump Start Your B2B Store
 
-Minium is a Liferay Commerce Accelerator that quickly creates a business-to-business store intended to meet the needs of a wholesale distributor. The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium highlights Liferay Commerce's B2B Account Management functionality—enabling streamlined account management and self-service through the use of [Account Roles](../../../customers/account-management/account-roles/README.md), [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md), and Order Workflows.
+Minium is a Liferay Commerce [Accelerator](../README.md) that quickly and easily sets up a business-to-business (B2B) store designed to meet the needs of a wholesale distributor. The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium also highlights Liferay Commerce's B2B Account Management functionality—enabling streamlined account management and self-service through the use of [Account Roles](../../../customers/account-management/account-roles/README.md), [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md), and [Order Workflows](../../../sales/order-management/order-workflows/).
 
 This article serves as a walk through for the main features of the Minium Accelerator.
 
@@ -10,17 +10,17 @@ This article serves as a walk through for the main features of the Minium Accele
 
 Minium populates a site with several pages and widgets, providing a complete user experience for buyers. To see the full list of pages created, go to *Site Menu → Build → Pages*.
 
-<img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+![Minium Pages](./images/01.png)
 
 In general, these pages work as described here, with some differences. For example, instead of using a dedicated categories page, the site's homepage displays the entire contents of the catalog. To display products of a single category, select a checkbox in the Category Facet widget.
 
-<img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
+![Catalog Page](./images/02.png)
 
 ### Design
 
 The Minium theme includes a number of embedded features, including pop-up navigation and cart menus, and an Account & Order selector. The navigation menu provides links to the catalog, pending and past orders, and account management, while the cart menu displays the current order.
 
-<img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
+![Minium Theme](./images/03.png)
 
 Minium does not use a conventional cart page. Instead, a link to the checkout page is included in the theme-embedded cart menu.
 
@@ -30,13 +30,13 @@ The Account & Order selector displays accounts that the current user can access 
 
 Minium's sample catalog includes a range of sample products organized into several pre-defined categories:
 
-<img src="./images/04.png" width="700px" style="border: #000000 1px solid;">
+![Pre-set Categories](./images/04.png)
 
 > Note that Categories are defined at the _Global_ scope level. For more information see [Product Categories](../../../catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md).
 
 Sample products also come with pre-set with [Options](../../../catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md), [Specifications](../../../catalog/creating-and-managing-products/product-information/specifications/README.md), and Images.
 
-<img src="./images/05.png" width="700px" style="border: #000000 1px solid;">
+![Product Specifications](./images/05.png)
 
 ## Other Configurations
 

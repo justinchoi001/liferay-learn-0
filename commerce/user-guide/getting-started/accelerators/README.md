@@ -1,18 +1,20 @@
 # Accelerators
 
-Liferay Commerce Accelerators make building stores and learning about Liferay Commerce fast and easy. Users who want to build their store from scratch are recommended to walk through the [Getting Started](../../README.md) portion of the User Guide.
+Liferay Commerce Accelerators make building stores and exploring Liferay Commerce fast and easy.
 
-Stores in Liferay Commerce are comprised of an interrelated hierarchy of components: Sites, Catalogs, Channels, Products, Pages, and Widgets—all of which may be configured as needed. An Accelerator is a type of Site Template that establishes this base hierarchy of store components and adds a theme, sample configurations, and sample data to create a functional store.
+> **Note**: Users who want to build their store from scratch are recommended to walk through [Getting Started](../../README.md).
 
-Liferay Commerce ships with Minium, a B2B site accelerator.
+Stores in Liferay Commerce are comprised of an interrelated hierarchy of components: Sites, Channels, Catalogs, Products, Pages, and Widgets. An Accelerator quickly and easily sets up a functional store by providing a pre-configured Site Template with a hierarchy of store components, a theme, pre-set store configurations, and sample data.
+
+Liferay Commerce comes with Minium, a B2B site accelerator, out of the box.
 
 To use an Accelerator:
 
 1. Go to _Control Panel_ → _Sites_ → _Sites_.
 1. Click the (+) button to add a new site.
-1. Choose an Accelerator (Minium or Speedwell)
+1. Choose an Accelerator (Minium).
 
-    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+    ![Selecting a Site Template](./images/01.png)
 
 1. Enter a name: _Your Site_.
 1. Click _Save_.
@@ -21,7 +23,5 @@ To use an Accelerator:
 Your accelerated site has been created.
 
 ## Additional Information
-
-To learn more about specific Accelerators see the following articles:
 
 * [Using the Minium Accelerator to Jump Start Your B2B Store](./using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md)
