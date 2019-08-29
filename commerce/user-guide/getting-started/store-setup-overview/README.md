@@ -172,7 +172,7 @@ Once an order has been received, the order has to be tracked by transmission to 
 
 ## Integrating your Commerce Instance with External Resources
 
-Liferay Commerce has the ability to integrate with external resources such as Saleforce, Talend, and CRMs. To learn more, see the following articles 
+Liferay Commerce has the ability to integrate with external resources such as Saleforce, Talend, and CRMs. To learn more, see the following articles:
 
 1. Salesforce
 1. ERP
