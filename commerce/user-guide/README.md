@@ -39,7 +39,7 @@
 
 ## Catalog
 
-* [Creating a Catalog](./catalog/creating-a-catalog/README.md)
+* [Creating a New Catalog](./catalog/creating-a-new-catalog/README.md)
 
 ### Creating and Managing Products
 
