@@ -1,8 +1,8 @@
 # Maintenance Versions
 
-Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. These updates contain bug fixes and resolves any security issues. Applying a new maintenance version is very similar to upgrading to a newer version of Liferay Commerce.
+Periodically, Liferay will release updates (maintenance versions) to Liferay Commerce for both open source and enterprise subscribers. These updates contain bug fixes and resolves any security issues. Updating to a new maintenance version is very similar to upgrading to a new major version of Liferay Commerce.
 
-To apply the latest update:
+To update to a new maintenance version:
 
 ## Download and Deploy
 
@@ -58,7 +58,7 @@ The Liferay Commerce instance has been updated. There is no need to reindex and 
 
 ## Additional Information
 
-Because Liferay Commerce is built on Liferay DXP 7.1, occasionally, it is necessary to update the foundational platform. However, fixes to Liferay Commerce are independent from Liferay.
+Liferay Commerce is built on Liferay DXP 7.1. Occasionally, it is necessary to update the core Liferay DXP platform, are a requirement to updating to the latest maintenance version. Fixes to Liferay Commerce are independent from Liferay.
 
 * [Liferay Commerce Fix Delivery Method](../../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method/README.md)
 * [Upgrading from Liferay Commerce 1.1.x](../upgrading-from-liferay-commerce-1.1.x/README.md)
