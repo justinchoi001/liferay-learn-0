@@ -10,11 +10,11 @@ The following Account Roles are available for use:
 
 * **Order Manager**: Order Managers have all the permissions of buyers, and can also manage, delete and approve orders.
 
-These roles can be used to enable a full purchasing workflow on your site. Roles may be created and customized as needed to achieve a workflow that meets specific business needs. For more information see [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) for more information.
+These roles can be used to enable a full purchasing workflow on your site. Roles may also be created and customized as needed to achieve a workflow that meets specific business needs. See [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) for more information.
 
 ## Seller-side Account Management Roles
 
-Accounts can also be managed by Administrators and Sales Agents. The Sales Agent is a role that allows a user to manage any account assigned to him without granting him administrative permissions.
+Accounts can also be managed by Administrators and Sales Agents. The Sales Agent allows a user to manage any account assigned to the role without granting administrative permissions.
 
 To give a sales agent access to accounts:
 
