@@ -98,9 +98,7 @@ There are several ways to price products and these methods are related to one an
 
 #### Managing Inventory
 
-Words
-
-* [Inventory](../../catalog/managing-inventory/introduction-to-managing-inventory/README.md)
+* [Introduction to Managing Inventory](../../catalog/managing-inventory/introduction-to-managing-inventory/README.md)
 * Subscriptions (if applicable)
 
 ## Creating the Storefront

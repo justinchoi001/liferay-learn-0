@@ -16,7 +16,7 @@
 
 * [Introduction to the Admin Account](./getting-started/introduction-to-the-admin-account/README.md)
 * [Liferay Commerce Configuration Overview](./getting-started/liferay-commerce-configuration-overview/README.md)
-* Store Setup Overview
+* [Store Setup Overview](./getting-started/store-setup-overview/README.md)
 * [Locale Options](./getting-started/locale-options/README.md)
 * [Store Notifications](./marketing/email-notifications/automating-store-emails-by-using-notification-templates/README.md)
 * Store Email Addresses
