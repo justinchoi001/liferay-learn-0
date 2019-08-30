@@ -1,6 +1,6 @@
 # Using FedEx as a Carrier Method
 
->(**Subscribers only**) Liferay Commerce includes the FedEx method as an option for you to integrate your system with this multinational courier.
+>(**Subscribers only**)
 
 ## Prerequisites
 
