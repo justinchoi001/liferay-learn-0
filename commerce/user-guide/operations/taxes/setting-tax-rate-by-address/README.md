@@ -4,7 +4,7 @@ Liferay Commerce supports two types of tax calculations: fixed rates and by addr
 
 Calculating taxes by address sets rates for geographical areas independently. You can apply several by address rates to a single tax category. When a product from that category is purchased, the tax rate appropriate to the buyer’s location is used.
 
-1. Go to the _Control Panel_ → _Commerce Site_ → _Commerce_ → _Settings_.
+1. Go to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Taxes_ tab and then the _Tax Calculations_ sub-tab.
 1. Click _By Address_.
 1. Switch the _Percentage_ toggle to _YES_ if you want the tax to be defined as a percentage of the purchase price. Leave the toggle disabled to define the tax as a fixed amount.

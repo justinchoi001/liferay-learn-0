@@ -13,7 +13,7 @@ Before configuring your store to use FedEX, it is necessary to have the followin
 
 This article details how to configure then enable FedEx as a shipping method.
 
-1. Navigate to the _Control Panel_ → _(your site)_ → _Commerce_ → _Settings_.
+1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Shipping Methods_ tab.
 1. Click _FedEx_.
 1. Click the _Configurations_ tab.

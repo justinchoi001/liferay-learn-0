@@ -31,7 +31,7 @@ _Euro_ is now set as the primary currency.
 
 ## Activate Mercanet as a payment method
 
-1. Navigate to _(your Commerce site) → Commerce → Settings → Payment Methods_.
+1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
 1. Click _Payment Methods_.
 1. Click _Mercanet_.
 1. Click _Configuration_.

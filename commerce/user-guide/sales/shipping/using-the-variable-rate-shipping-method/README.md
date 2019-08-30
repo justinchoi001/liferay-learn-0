@@ -12,7 +12,7 @@ Variable-rate shipping costs are determined by the following formula:
 
 To create a new Variable Rate shipping option:
 
-1. Navigate to the _Control Panel_ → _(your site)_ → _Commerce_ → _Settings_.
+1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Shipping Methods_ tab.
 1. Click _Variable Rate_.
 1. Click the _Shipping Options_ tab.

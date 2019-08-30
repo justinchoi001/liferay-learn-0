@@ -4,7 +4,7 @@ This article details how to enable PayPal as a payment method.
 
 Before configuring your store to use PayPal, it is necessary to generate a PayPal Client ID and a Client Secret number. Visit the [PayPal Developer Dashboard](https://developer.paypal.com/developer/applications/create) for more information.
 
-1. Navigate to _(your Commerce site) → Commerce → Settings → Payment Methods_.
+1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
 1. Click _PayPal_.
 1. Click _Configuration_.
 1. Enter the following:

@@ -16,7 +16,7 @@ Note that if the buyer checks the _Use shipping address as billing address_, thi
 
 <img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
 
-Shipping methods available to a buyer are configured by changing _Shipping Methods_ in _Control Panel_ → _(your site)_ → _Commerce_ → _Settings_ -> _Shipping Methods_. See [Using the Flat Rate Shipping Method](../../../sales/shipping/using-the-flat-rate-shipping-method/README.md) for more information.
+Shipping methods available to a buyer are configured by changing _Shipping Methods_ in _Site Administration_ → _Commerce_ → _Settings_ -> _Shipping Methods_. See [Using the Flat Rate Shipping Method](../../../sales/shipping/using-the-flat-rate-shipping-method/README.md) for more information.
 
 ## Entering a Billing Address
 

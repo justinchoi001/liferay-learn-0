@@ -4,7 +4,7 @@ This article details how to enable Authorize.Net as a payment method. [Authorize
 
 Before configuring your store to use Authorize.Net, it is necessary to generate [an API Login ID and a Transaction Key](https://support.authorize.net/s/article/How-do-I-obtain-my-API-Login-ID-and-Transaction-Key).
 
-1. Navigate to _(your Commerce site) → Commerce → Settings → Payment Methods_.
+1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
 2. Click _Authorize.Net_.
 3. Click _Configuration_.
 4. Enter the following:

@@ -8,14 +8,13 @@ By default, the Flat Rate shipping method is enabled.
 
 To add a new Flat Rate Shipping Option:
 
-1. Navigate to the _Control Panel_ → _(your site)_ → _Commerce_ → _Settings_.
+1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Shipping Methods_ tab.
 1. Click _Flat Rate_.
 1. Click the _Shipping Options_ tab. (If using the Minium accelerator, the _Standard Delivery_ and _Expedited Delivery_ are created by default.)
 1. Click the (+) button to add a new Shipping option:
 1. Enter the following:
     * **Name**: 7-Day Shipping
-    * **Description**:  
     * **Amount**: 3.95
     * **Priority**: 0.0
 1. Click _Save_.

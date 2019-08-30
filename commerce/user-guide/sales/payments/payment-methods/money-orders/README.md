@@ -6,7 +6,7 @@ Besides activating Money Orders in the site settings, sellers can also create an
 
 To start creating an article:
 
-1. Navigate to _(your Commerce site) → Commerce → Settings → Payment Methods_.
+1. Navigate to _Site Administration → Commerce → Settings → Payment Methods_.
 1. In the _Message_ field, create an optional note about any specific policies on money orders.
 1. Click the (+) sign at the left side of the _Message_ field. The menu gives editors the option to add an image, insert a link to a video, or insert a table, or a horizontal line break.
 

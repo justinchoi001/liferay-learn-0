@@ -24,7 +24,7 @@ The following site types are available:
 
 It is best practice to set a site's type as soon as you create it and avoid changing it in the future.
 
-To set your site's type, navigate to the _Control Panel_ → _(your site)_ → _Commerce_ → __Settings_ and select the Site Type tab. Select a type from the dropdown menu and click _Save_.
+To set your site's type, navigate to _Site Administration_ → _Commerce_ → __Settings_ and select the Site Type tab. Select a type from the dropdown menu and click _Save_.
 
 <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 

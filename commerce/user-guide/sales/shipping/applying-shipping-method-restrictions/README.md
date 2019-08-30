@@ -4,7 +4,7 @@ You may need to apply a shipping restriction for your store to specific countrie
 
 To apply a restriction:
 
-1. Navigate to the _Control Panel_ → _(your store)_ → _Commerce_ → _Settings_.
+1. Navigate to the _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Shipping Methods_ tab.
 1. Click any Shipping Method; in this example, _Flat Rate_.
 1. Click the _Restrictions_ tab.

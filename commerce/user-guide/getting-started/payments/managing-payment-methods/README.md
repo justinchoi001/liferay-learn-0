@@ -1,6 +1,6 @@
 # Managing Payment Methods
 
-To manage payment methods, navigate to the _Control Panel_ → _(your site)_ → _Commerce_ → _Settings_ and select the Payment Methods tab. Select a method to edit it.
+To manage payment methods, navigate to _Site Administration_ → _Commerce_ → _Settings_ and select the Payment Methods tab. Select a method to edit it.
 
 <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
 

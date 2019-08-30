@@ -6,7 +6,7 @@ A fixed tax method sets rates for each tax category independently. The tax colle
 
 First, enable the _Fixed Tax Rate_ function:
 
-1. Go to the _Control Panel_ → _Commerce Site_ → _Commerce_ → _Settings_.
+1. Go to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Taxes_ tab and then the _Tax Calculations_ sub-tab.
 1. Click on _Fixed Tax Rate_.
 1. Switch the _Percentage_ toggle to _YES_ if the tax should be defined as a percentage of the purchase price. Disable to define the tax as a fixed amount.

@@ -2,7 +2,7 @@
 
 Tax Categories are containers for one or more tax calculations in your store. Tax categories have to be created _first_ before applying any type of taxes.  Products can be taxed differently by assigning different tax categories to them.
 
-1. Go to the _Control Panel_ → _your Commerce Site_ → _Commerce_ → _Settings_.
+1. Go to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Taxes_ tab.
 1. Click the _Tax Categories_ sub-tab.
 1. Click the _Add Tax Category_ button.
