@@ -18,8 +18,8 @@ The hierarchy consists of these levels:
 
 **Discount**: A discount _operates outside the price hierarchy and modifies a price_ rather than superseding it. Unlike a price list, a discount always reduces the base price. There are two types of discounts: a flat amount or a percentage. A discount can be applied in the following ways:
 
-* By product (individually, by category, or the entire catalog),
-* To an order’s subtotal, shipping costs, or to an order total.
+* By product (individually, by category, or the entire catalog)
+* To an order’s subtotal, shipping costs, or to an order total
 * To all buyers, or buyers in selected Accounts and Account Groups
 * To a select group of customers that meet certain qualifications such as minimum order total or purchase of a required product.
 
@@ -33,9 +33,9 @@ The pricing hierarchy can be visualized in the following diagram:
 | --- | --- | :---: | --- | --- | :---: |
 | Base Price | The base price | n/a | Product SKU | All buyers | Product SKU |
 | Base Promo | Marked down price | Yes | Product SKU | All buyers | Product SKU |
-| Price List (List Price, List Promo) | Special pricing (or currencies) per product and buyer | Yes | Price Lists | Selected Buyers (Accounts & Account Groups) | Individual product SKUs |
-| Tiered Price List (Tiered Price, Tiered Promo) | Special pricing (or currencies) per product and buyer _at bulk quantities_ | Yes | Price Lists | Selected Buyers (Accounts & Account Groups) | Individual product SKUs |
-| Discount | Modifies price for a group of products or buyers (Can limit quantity & use coupon codes) | No | Discounts | Selected Buyers (Accounts & Account Groups or those who meet certain qualifications) | Groups of products (or Individual product SKUs) |
+| Price List (List Price, List Promo) | Special pricing (or currencies) per product and buyer | Yes | Price Lists | Selected buyers (Accounts & Account Groups) | Individual product SKUs |
+| Tiered Price List (Tiered Price, Tiered Promo) | Special pricing (or currencies) per product and buyer _at bulk quantities_ | Yes | Price Lists | Selected buyers (Accounts & Account Groups) | Individual product SKUs |
+| Discount | Modifies price for a group of products or buyers (Can limit quantity and use coupon codes) | No | Discounts | Selected Buyers (Accounts & Account Groups or those who meet certain qualifications) | Groups of products (or Individual product SKUs) |
 
 ## Additional Information
 
