@@ -1,6 +1,6 @@
 # Introduction to Product Types
 
-The catalog supports three product types: Simple, Grouped and Virtual.
+The catalog supports three product types: Simple, Grouped, and Virtual.
 
 **[Simple Product](../creating-a-simple-product/README.md)**: Any physical product for which inventory is tracked.
 
