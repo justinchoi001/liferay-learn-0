@@ -180,7 +180,7 @@ public CommercePaymentResult completePayment(
 
 There are additional methods that may be implemented to provide additional functionality, such as subscriptions, recurring payments, and refunds. These can be seen in [CommercePaymentMethod.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java). These methods come in pairs: one method to enable and the other to implement a given piece of functionality.
 
-Many of these methods are important for payment methods using an online API. See [PayPalCommercePaymentMethod](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java) for an example of an online payment method.
+Many of these methods are important for payment methods using online APIs. See [PayPalCommercePaymentMethod](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java) for an example of an online payment method.
 
 Our example does not override any of these optional methods.
 
