@@ -12,7 +12,7 @@ A new order is created when a buyer places products into the cart. At this start
 
 ## Step 2: Order Placed
 
-After providing information - such as shipping address and payment method - to the seller and viewing an order summary, the buyer places the order.
+After providing information -- such as shipping address and payment method -- to the seller and viewing an order summary, the buyer places the order.
 
 ## Step 3: Order Transmitted
 
