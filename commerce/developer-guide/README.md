@@ -48,6 +48,13 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ## Leveraging Liferay Commerce APIs
 
+## Resources for Liferay Beginners
+
+* [Building a Site with Liferay Web Experience](https://help.liferay.com/hc/en-us/articles/360018171171-Building-a-site-with-Liferay-Web-Experience)
+* [Liferay Commerce User Guide](../../user-guide/README.md)
+* [OSGi and Modularity](https://help.liferay.com/hc/en-us/articles/360018162431-OSGi-and-Modularity)
+* [Overriding OSGi Services](https://help.liferay.com/hc/en-us/articles/360017889552-Overriding-OSGi-Services)
+
 ## Reference Materials
 
 * Javadocs
