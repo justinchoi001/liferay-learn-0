@@ -4,7 +4,7 @@ If a buyer cancels an order before it is shipped, the seller may cancel the ship
 
 To cancel a shipment:
 
-1. Navigate to the _Control Panel_ _Commerce_ _Shipments_.
+1. Navigate to the _Control Panel_ → _Commerce_ → _Shipments_.
 2. Click the _3-dot icon_ next to the shipment to be canceled (for example, _42498_).
 
     ![Delete Button](./images/01.png)
