@@ -1,8 +1,8 @@
 # Automating Store Emails by Using Notification Templates
 
-Notifications are automated emails sent to buyers. By default, notifications can only be sent to inform buyers when an order has been received. Notifications require a Notification Template. Notification Templates define the notification sender, trigger, and content of the an email notification. To use Liferay Commerce's Notifications feature, system administrators _first_ have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See [User Subscriptions and Mailing Lists](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP#configuring-mail) for more information.
+Notifications are automated emails sent to buyers. By default, notifications can only be sent to inform buyers when an order has been received. Notifications require a Notification Template. Notification Templates define the notification sender, trigger, and content of an email notification. To use Liferay Commerce's Notifications feature, system administrators _first_ have to configure the Mail settings for Liferay Digital Experience Platform (DXP). See [User Subscriptions and Mailing Lists](https://help.liferay.com/hc/en-us/articles/360017896652-Installing-Liferay-DXP#configuring-mail) for more information.
 
-Once the Mail settings have been configured, follow these steps create a notification for a received order:
+Once the Mail settings have been configured, follow these steps to create a notification for a received order:
 
 1. Navigate to the _Control Panel_ → _(your store)_ → _Commerce_ → _Settings_.
 2. Click the _Notifications_ tab.
@@ -14,7 +14,7 @@ Once the Mail settings have been configured, follow these steps create a notific
     * **Account Groups**: US East Coast
     * **From Address**: Your store's email address (for example: _orders@yourstore.com_)
     * **From Name**: Name of the store or a customer service representative
-    * **Type**: Ordered Placed
+    * **Type**: Order Placed
     * **Enabled**: Switch the Toggle to _YES_
     * **Subject**: Email subject (for example: _Your order has been received._)
     * **Body**: Email body \*
@@ -32,9 +32,9 @@ The new Notification Template has been saved and your store will send an automat
 * \[%ORDER_CREATOR%\] inserts the user who created the order
 * \[%ORDER_CREATOR%\] inserts the Order ID
 
-**Note 2**: As noted above, the only out of the box notification function is to send an email when an order has been received but an extension point lets you implement other notifications: for a shipped order, a restocked product, a carrier exception, or any other event.
+**Note 2**: As noted above, the only out-of-the-box notification function is to send an email when an order has been received but an extension point lets you implement other notifications: for a shipped order, a restocked product, a carrier exception, or any other event.
 
-**Note 3**: To change the interval when Liferay Commerce checks for unsent notifications, navigate to the _Control Menu_ → _Configuration_ → _System Settings_. Click _Orders_ then the _Commerce Notification Queue_. The default values are listed in minutes. Change the values for the Check Interval and the Delete Interval if necessary.
+**Note 3**: To change the interval for when Liferay Commerce checks for unsent notifications, navigate to the _Control Menu_ → _Configuration_ → _System Settings_. Click _Orders_ then the _Commerce Notification Queue_. The default values are listed in minutes. Change the values for the Check Interval and the Delete Interval if necessary.
 
 <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
 
