@@ -4,9 +4,9 @@ This article details how to enable Mercanet as a payment method. Because Mercane
 
 ## Mercanet Guide
 
-1. Review prerequisites.
-1. Set EUR as the primary store currency.
-1. Activate Mercanet as a Payment Method.
+1. [Review prerequisites.](#prerequisites)
+1. [Set EUR as the primary store currency.](#set-eur-as-the-primary-store-currency)
+1. [Activate Mercanet as a Payment Method.](#activate-mercanet-as-a-payment-method)
 
 ## Prerequisites
 
