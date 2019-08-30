@@ -4,11 +4,11 @@ Welcome to the Liferay Commerce Developer Guide.
 
 This guide is divided into several sections, including tutorials for customizing Liferay Commerce, API documentation, and more helpful resources. Jump to the section below most relevant to you for an introduction to the section.
 
-* [**Architectural Overview**](#architectural-overview)
+* [**Getting Started**](#getting-started)
 * [**Tutorials for Customizing Liferay Commerce**](#tutorials-for-customizing-liferay-commerce)
 * [**Leveraging Liferay Commerce APIs**](#leveraging-liferay-commerce-apis)
 
-## Architectural Overview
+## Getting Started
 
 (TODO)
 
