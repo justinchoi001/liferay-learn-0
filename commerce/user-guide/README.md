@@ -26,7 +26,7 @@
 * [Adding a New Currency](./getting-started/currencies/adding-a-new-currency/README.md)
 * [Deactivating a Country for Billing or Shipping](./getting-started/country-options/deactivating-a-country-for-billing-or-shipping/README.md)
 * [Managing Exchange Rates](./getting-started/currencies/managing-exchange-rates/README.md)
-* Shipping Methods
+* [Shipping Methods](./getting-started/shipping-methods/README.md)
 
 #### Store Branding Basics
 
@@ -198,6 +198,7 @@
 #### Managing Shipments
 
 * Shipment Workflow
+* [Introduction to Shipments](./sales/order-management/managing-shipments/introduction-to-shipments/README.md)
 * [Creating a Shipment](./sales/order-management/managing-shipments/creating-a-shipment/README.md)
 * [Cancelling a Shipment](./sales/order-management/managing-shipments/cancelling-a-shipment/README.md)
 
