@@ -4,7 +4,7 @@
 
 Liferay Commerce deployments consist of a hierarchy of Sites, Pages, Widgets, and Accounts. Creating and configuring a site in Liferay Commerce is one of the first steps to launching a store. You may use an [Accelerator]() to jump start your site, or create a blank site and add the Commerce widgets and pages you require.
 
-Liferay Commerce is built on Liferay DXP; For more information about how Liferay DXP Sites work, see "[Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)".
+Liferay Commerce is built on Liferay DXP. For more information about how Liferay DXP Sites work, see [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site).
 
 For a complete walk through of creating a B2B or B2C store from scratch see [User Guide Tutorials]().
 
