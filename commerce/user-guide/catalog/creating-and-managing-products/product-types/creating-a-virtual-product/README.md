@@ -4,13 +4,14 @@ A virtual product is any non-physical product. For example, the product is downl
 
 ## Roadmap
 
-* Create a Virtual Product
-* Set Virtual Product Details
-* Apply Product Options
-* Set Prices and Quantities
-* Upload Product Images and Attachments
-* Organize with Categories
-* Associate with Related Products
+* [Create a Virtual Product](#create-a-virtual-product)
+* [Set Virtual Product Details](#set-virtual-product-details)
+* [Apply Product Options](#apply-product-options)
+* [Set Prices and Quantities](#set-prices-and-quantities)
+* [Add Product Specifications](#add-product-specifications)
+* [Upload Product Images and Attachments](#upload-product-images-and-attachments)
+* [Organize with Categories](#organize-with-categories)
+* [Associate with Related Products](#associate-with-related-products)
 
 ### Create a Virtual Product
 
@@ -55,7 +56,7 @@ You can apply [Product Options](../../customizing-your-product-with-product-opti
 
 Click the _Options_ sub-tab to continue.
 
-### Set Price and Quantities
+### Set Prices and Quantities
 
 To set product prices and quantities:
 
@@ -63,8 +64,8 @@ To set product prices and quantities:
 1. Click _Pricing_ on the left menu.
 1. Enter the following:
     * **Price**: 12.00
-    * **Promo Price**:
-    * **Cost**:
+    * **Promo Price**: 0.00
+    * **Cost**: 0.00
 1. Click _Save_. (If Promo Price and Cost fields are left as 0.00, no discounts or promotions are applied at this point.)
 1. Click _Price List_ to apply this product to any existing [Price Lists](../../../managing-price/price-lists/adding-products-to-a-price-list/README.md).
 

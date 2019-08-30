@@ -8,9 +8,9 @@ An option template can be applied to any product in the catalog. This makes it e
 
 ## Roadmap
 
-* Creating an Option Template
-* Adding Option Values
-* Applying an Option Template to a Product
+* [Creating an Option Template](#creating-an-option-template)
+* [Adding Option Values](#adding-option-values)
+* [Applying an Option Template to a Product](#applying-an-option-template-to-a-product)
 
 ## Creating an Option Template
 

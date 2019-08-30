@@ -6,8 +6,8 @@ This article documents how to add images to a product.
 
 ## Roadmap
 
-1. Adding a single product image.
-2. Adding multiple product images.
+1. [Adding a single product image.](#adding-a-single-product-image)
+2. [Adding multiple product images.](#adding-multiple-product-images)
 
 ## Adding a Single Product Image
 

@@ -14,16 +14,16 @@ Before creating a Grouped Product, ensure that the following conditions have bee
 
 ## Roadmap
 
-* Create a Grouped Product
-* Associate Products in Group
-* Apply Product Options
-* Generate SKUs
-* Set Prices and Quantities in the Inventory
-* Configure Product Specifications
-* Upload Product Images and Attachments
-* Organize with Categories
-* Associate with Related Products
-* Selling Grouped Products
+* [Create a Grouped Product](#create-a-grouped-product)
+* [Associate Products in Group](#associate-products-in-group)
+* [Apply Product Options](#apply-product-options)
+* [Generate SKUs](#generate-skus)
+* [Set Prices and Quantities in the Inventory](#set-prices-and-quantities-in-the-inventory)
+* [Configure Product Specifications](#configure-product-specifications)
+* [Upload Product Images and Attachments](#upload-product-images-and-attachments)
+* [Organize with Categories](#organize-with-categories)
+* [Associate with Related Products](#associate-with-related-products)
+* [Selling Grouped Products](#setting-grouped-products)
 
 ### Create a Grouped Product
 
@@ -33,11 +33,8 @@ Before creating a Grouped Product, ensure that the following conditions have bee
     * **Catalog**: Sahara.com
     * **Name**: Dog Grooming Kit
     * **Short Description**: Max's Dog Grooming Kit
-    * **Full Description**:
     * **Friendly URL**: (auto-generated)
     * **Meta Title**: Dog Grooming Kit
-    * **Meta Description**:
-    * **Meta Keywords**:
 1. Click _Publish_.
 
 Once the Grouped Product entity has been initially created, store administrators will need to associate the individual products to the grouped product entry.
@@ -80,8 +77,8 @@ To set product prices and quantities:
 1. Click _Pricing_ on the left menu.
 1. Enter the following:
     * **Price**: 21.00
-    * **Promo Price**:
-    * **Cost**:
+    * **Promo Price**: 0.00
+    * **Cost**: 0.00
 
         <img src="./images/06.png" width="700px" style="border: #000000 1px; solid;">
 

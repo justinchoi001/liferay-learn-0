@@ -6,9 +6,9 @@ This article documents how to create a product category.
 
 ## Roadmap
 
-1. Create a Vocabulary
-1. Create a Category
-1. Associate Categories with Products
+1. [Create a Vocabulary](#creating-a-vocabulary)
+1. [Create a Category](#creating-a-category)
+1. [Associate Categories with Products](#associating-categories-with-products)
 
 ## Creating a Vocabulary
 
