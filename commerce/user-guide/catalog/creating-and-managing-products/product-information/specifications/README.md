@@ -10,7 +10,7 @@ To organize specifications and make them easy to display and maintain, specifica
 | [Specification Label](#specification-labels) | Names a specification. |
 | [Specification Value](#specification-values) | Provides product-specific information. |
 
-## [Specification Groups](#specification-groups)
+## Specification Groups
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click the _Specifications_ tab.
@@ -29,7 +29,7 @@ To add a new Specification Group, click the (+) button.
 
 <img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
 
-## [Specification Labels](#specification-labels)
+## Specification Labels
 
 To create a specification label:
 
@@ -54,7 +54,7 @@ To add a new Specification Group, click the (+) button.
 
 The label has been created, but assigning a value to it must be done on the product level.
 
-## [Specification Values](#specification-values)
+## Specification Values
 
  Specification values are more limited in scope than groups and labels. Groups and labels are scoped to the catalog, which means that once they are created, they can be assigned to any product in the catalog. Values, however, are scoped to the product, and have no impact anywhere but on the product to which they are assigned.
 
