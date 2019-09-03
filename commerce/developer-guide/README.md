@@ -4,6 +4,7 @@ Welcome to the Liferay Commerce Developer Guide.
 
 ## Getting Started
 
+* [Introduction to the Liferay Commerce Developer Guide](./introduction-to-the-liferay-commerce-developer-guide/README.md)
 * Technical Architecture Overview
 
 ## Extending and Customizing Liferay Commerce
