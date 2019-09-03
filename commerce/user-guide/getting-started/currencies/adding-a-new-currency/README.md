@@ -1,6 +1,6 @@
 # Adding a New Currency
 
-Liferay Commerce pre-configures multiple currencies to be available for use, out of the box. Currencies that are not available by default may be easily added.
+Liferay Commerce pre-configures multiple currencies to be available for use, out-of-the-box. Currencies that are not available by default may be easily added.
 
 This article details how to add a new currency to your store.
 

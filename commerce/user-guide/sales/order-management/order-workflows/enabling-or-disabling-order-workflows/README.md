@@ -33,7 +33,7 @@ To disable an order workflow, simply navigate to the _Order Workflows_ tab, sele
 
 ## Additional Information
 
-**Note**: Out of the box, _Single Approver (Version 1)_ is the available order workflow. [Custom workflows](https://help.liferay.com/hc/en-us/articles/360018174111-Introduction-to-Workflow) can be created and may then be selected in the _Order Workflows_ tab.
+**Note**: Out-of-the-box, _Single Approver (Version 1)_ is the available order workflow. [Custom workflows](https://help.liferay.com/hc/en-us/articles/360018174111-Introduction-to-Workflow) can be created and may then be selected in the _Order Workflows_ tab.
 
 * [Order Workflows](../README.md)
 * [Approving or Rejecting Orders](../approving-or-rejecting-orders/README.md)

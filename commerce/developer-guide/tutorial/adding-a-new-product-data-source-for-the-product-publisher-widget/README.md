@@ -2,9 +2,9 @@
 
 This tutorial will show you how to add a new product data source by implementing the `CPDataSource` interface.
 
-Product data sources provide unique ways to search for products that are related. Liferay Commerce provides several product data sources out of the box, including ones that search [by product relations](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) and [by categories](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java).
+Product data sources provide unique ways to search for products that are related. Liferay Commerce provides several product data sources out-of-the-box, including ones that search [by product relations](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceDefinitionLinkTypeImpl.java) and [by categories](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-service/src/main/java/com/liferay/commerce/product/internal/data/source/CPDataSourceAssetCategoriesImpl.java).
 
-![Out of the box product data sources](./images/01.png "Out of the box product data sources")
+![Out-of-the-box product data sources](./images/01.png "Out-of-the-box product data sources")
 
 ## Overview
 

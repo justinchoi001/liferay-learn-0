@@ -6,7 +6,7 @@ Liferay Commerce Accelerators make building stores and exploring Liferay Commerc
 
 Stores in Liferay Commerce are comprised of an interrelated hierarchy of components: Sites, Channels, Catalogs, Products, Pages, and Widgets. An Accelerator quickly and easily sets up a functional store by providing a pre-configured Site Template with a hierarchy of store components, a theme, pre-set store configurations, and sample data.
 
-Liferay Commerce comes with Minium, a B2B site accelerator, out of the box.
+Liferay Commerce comes with Minium, a B2B site accelerator, out-of-the-box.
 
 To use an Accelerator:
 

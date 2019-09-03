@@ -40,7 +40,7 @@ Sample products also come with pre-set with [Options](../../../catalog/creating-
 
 ## Other Configurations
 
-Minium applies a number of other site configurations that are not set out of the box for a blank site. The following table provides a list of notable additions or configurations that Minium makes to jump start a B2B store:
+Minium applies a number of other site configurations that are not set out-of-the-box for a blank site. The following table provides a list of notable additions or configurations that Minium makes to jump start a B2B store:
 
 | Feature | Details |
 | --- | --- |

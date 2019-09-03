@@ -2,9 +2,9 @@
 
 This tutorial will show you how to add a new product type by implementing three interfaces: [CPType](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/type/CPType.java), [ScreenNavigationCategory](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationCategory.java), and [ScreenNavigationEntry](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationEntry.java).
 
-Product types can be used to group products that share similar characteristics. Liferay Commerce provides three product types out of the box: [Simple](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [Grouped](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java), and [Virtual](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java).
+Product types can be used to group products that share similar characteristics. Liferay Commerce provides three product types out-of-the-box: [Simple](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [Grouped](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java), and [Virtual](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java).
 
-![Out of the box product types](./images/01.png "Out of the box product types")
+![Out-of-the-box product types](./images/01.png "Out-of-the-box product types")
 
 ## Overview
 

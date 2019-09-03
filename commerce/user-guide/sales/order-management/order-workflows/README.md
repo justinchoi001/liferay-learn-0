@@ -8,7 +8,7 @@ _Order Workflows_ are a site-specific setting that, if enabled, require the buye
 
 > **Figure 1**. Order Life Cycle with both _Approval Workflow_ and _Transmission Workflow_
 
-With two _Order Workflows_ to choose from, _Approval Workflow_ and _Transmission Workflow_, there are four order workflow options available out of the box.
+With two _Order Workflows_ to choose from, _Approval Workflow_ and _Transmission Workflow_, there are four order workflow options available out-of-the-box.
 
 1. **No _Order Workflows_**
 

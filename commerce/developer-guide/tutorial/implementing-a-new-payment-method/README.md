@@ -2,9 +2,9 @@
 
 This tutorial will show you how to add a new payment method by implementing the [CommercePaymentMethod](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/payment/method/CommercePaymentMethod.java) interface.
 
-Payment methods represent various ways customers can pay for orders. Liferay Commerce provides several out of the box payment methods including [Authorize.Net](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java), [Mercanet](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java), [Money Order](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java), and [PayPal](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java).
+Payment methods represent various ways customers can pay for orders. Liferay Commerce provides several out-of-the-box payment methods including [Authorize.Net](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-authorize-net/src/main/java/com/liferay/commerce/payment/method/authorize/net/internal/AuthorizeNetCommercePaymentMethod.java), [Mercanet](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-mercanet/src/main/java/com/liferay/commerce/payment/method/mercanet/internal/MercanetCommercePaymentMethod.java), [Money Order](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-money-order/src/main/java/com/liferay/commerce/payment/method/money/order/internal/MoneyOrderCommercePaymentMethod.java), and [PayPal](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-payment-method-paypal/src/main/java/com/liferay/commerce/payment/method/paypal/internal/PayPalCommercePaymentMethod.java).
 
-![Out of the box payment methods](./images/01.png "Out of the box payment methods")
+![Out-of-the-box payment methods](./images/01.png "Out-of-the-box payment methods")
 
 ## Overview
 
@@ -107,7 +107,7 @@ Implement the following methods:
 
 >This identifies how the payment engine will use a given payment method.
 >
-> We use the value `COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE` to inform the payment engine that there are no online processing requirements for this payment method. There are two other payment type constants available out of the box: `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_STANDARD` and `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_REDIRECT`. See [Implementing a New Online Payment Method](../implementing-a-new-online-payment-method/README.md) for more information.
+> We use the value `COMMERCE_PAYMENT_METHOD_TYPE_OFFLINE` to inform the payment engine that there are no online processing requirements for this payment method. There are two other payment type constants available out-of-the-box: `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_STANDARD` and `COMMERCE_PAYMENT_METHOD_TYPE_ONLINE_REDIRECT`. See [Implementing a New Online Payment Method](../implementing-a-new-online-payment-method/README.md) for more information.
 
 ```java
 	public String getServletPath();

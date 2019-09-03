@@ -4,7 +4,7 @@ This tutorial will show you how to add a new tax engine by implementing the [Com
 
 A tax engine performs the calculation for taxes when a transaction is made. Liferay Commerce provides two default tax engines: [FixedCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/FixedCommerceTaxEngine.java) for fixed rates, and [ByAddressCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/ByAddressCommerceTaxEngine.java) for calculating taxes by address.
 
-![Out of the box tax engines](./images/01.png "Out of the box tax engines")
+![Out-of-the-box tax engines](./images/01.png "Out-of-the-box tax engines")
 
 ## Overview
 
