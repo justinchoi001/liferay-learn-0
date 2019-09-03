@@ -1,6 +1,6 @@
 # Introduction to Shipments
 
-The _Shipments_ menu is where store managers can create and track a shipment after receiving an order. 
+The _Shipments_ menu is where store managers can create and track a shipment after receiving an order.
 
 Navigate to the _Control Panel_ → _Commerce_ → _Shipments_.
 

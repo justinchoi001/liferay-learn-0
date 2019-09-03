@@ -59,6 +59,7 @@ In order to collect the applicable taxes, Liferay Commerce has the ability to cr
 
 Liferay Commerce has several options to calculate shipping rates. Commerce Enterprise subscribers receive FedEx carrier integration out of the box.
 
+* [Shipping Methods](../shipping-methods/README.md)
 * [Variable Rate](../../sales/shipping/using-the-variable-rate-shipping-method/README.md)
 * [Flat Rate](../../sales/shipping/using-the-flat-rate/shipping-method/README.md)
 * [Using FedEx as a Carrier](../../sales/shipping/using-fedex-as-a-carrier-method/README.md)
@@ -124,6 +125,7 @@ To learn more about how accounts, inviting users accounts, account roles, and mo
 When an order has been received, the order may be transmitted to an ERP and optionally to a CRM. Once the requested goods are available for shipping, the store's inventory specialists may track the shipment. See the following articles to learn about the life cycle of an order and the shipment processes.
 
 * [Order Life Cycle](../../sales/order-management/order-life-cycle/README.md)
+* [Introduction to Shipments](../../sales/order-management/managing-shipments/introduction-to-shipments/README.md)
 * [Creating a shipment](../../sales/order-management/managing-shipments/creating-a-shipment/README.md)
 * [Cancelling a Shipment](../../sales/order-management/managing-shipments/cancelling-a-shipment/README.md)
 * Shipping Override
