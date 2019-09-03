@@ -25,7 +25,7 @@ The hierarchy consists of these levels:
 
 The pricing hierarchy can be visualized in the following diagram:
 
-   <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+   ![Pricing hierarchy](./images/01.png)
 
 ## Pricing Method Reference
 
