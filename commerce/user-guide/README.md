@@ -139,14 +139,15 @@
 
 #### Using Modern Site Building
 
-* Using Page Fragments
-* Widget Templates
-* Navigation Menus
-* Application Display Templates
+* [Creating Page Fragments](https://help.liferay.com/hc/en-us/articles/360018171331-Creating-Page-Fragments)
+* [Building Content Pages from Fragments](https://help.liferay.com/hc/en-us/articles/360018171351-Building-Content-Pages-from-Fragments-)
+* [Creating and Managing Navigation Menus](https://help.liferay.com/hc/en-us/articles/360018171531-Creating-and-Managing-Navigation-Menus)
+* [Using Application Display Templates](https://help.liferay.com/hc/en-us/articles/360017892632-Styling-Widgets-with-Application-Display-Templates)
 
 #### Design and Theme
 
-* Page Setup and Layout
+* [Understanding the Page Layout](https://help.liferay.com/hc/en-us/articles/360022488271-Understanding-the-Page-Layout-)
+* [Theme Reference Guide](https://help.liferay.com/hc/en-us/articles/360017901512-Theme-Reference-Guide)
 
 ## Customers
 
