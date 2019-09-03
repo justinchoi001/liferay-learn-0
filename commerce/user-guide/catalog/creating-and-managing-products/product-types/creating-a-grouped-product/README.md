@@ -43,21 +43,21 @@ Once the Grouped Product entity has been initially created, store administrators
 
 1. Click the _Grouped_ sub-tab.
 
-   <img src="./images/01.png" width="700px" style="border: #000000 1px; solid;">
+   ![Details Sub-Tab](./images/01.png)
 
 1. Click the (+) button to add a Grouped Entry.
 1. Select the following products: _Dog Hair Brush_, _Dog Nail File_, and _Dog Shampoo_.
 1. Click _Add_.
 
-    <img src="./images/02.png" width="700px" style="border: #000000 1px; solid;">
+    ![Grouped Sub-Tab](./images/02.png)
 
 Next, specify the priority (the order in which they are displayed), and the quantity sold in each package. Click the _3-dot_ icon then _Edit_ next to any of the products.
 
-<img src="./images/03.png" width="700px" style="border: #000000 1px; solid;">
+![Adding a Product to a Grouped Product](./images/03.png)
 
 In the image above, the product has been given priority 1.0 which means it will be listed first. Assign incremental values to the other products.
 
-<img src="./images/04.png" width="700px" style="border: #000000 1px; solid;">
+![Grouped Product Priority](./images/04.png)
 
 ### Apply Product Options
 
@@ -80,7 +80,7 @@ To set product prices and quantities:
     * **Promo Price**: 0.00
     * **Cost**: 0.00
 
-        <img src="./images/06.png" width="700px" style="border: #000000 1px; solid;">
+        ![Grouped Product Pricing](./images/06.png)
 
 1. Click _Save_. (If Promo Price and Cost fields are left as 0.00, no discounts or promotions are applied at this point.)
 1. Click _Price List_ to apply this product to any existing [Price Lists](../../../managing-price/price-lists/adding-products-to-a-price-list/README.md).
@@ -111,7 +111,7 @@ Store administrators can also add attachments that are associated with a particu
 
 The new Grouped Product appears in the catalog. As long as each individual product has enough stock in the inventory, buyers can select the Grouped Product for purchase.
 
-<img src="./images/05.png" width="700px" style="border: #000000 1px; solid;">
+![Dog Grooming Kit](./images/05.png)
 
 ## Additional Information
 

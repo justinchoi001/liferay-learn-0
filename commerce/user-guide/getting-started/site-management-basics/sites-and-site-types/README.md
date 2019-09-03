@@ -2,11 +2,11 @@
 
 ## Sites
 
-Liferay Commerce deployments consist of a hierarchy of Sites, Pages, Widgets, and Accounts. Creating and configuring a site in Liferay Commerce is one of the first steps to launching a store. You may use an [Accelerator]() to jump start your site, or create a blank site and add the Commerce widgets and pages you require.
+Liferay Commerce deployments consist of a hierarchy of Sites, Pages, Widgets, and Accounts. Creating and configuring a site in Liferay Commerce is one of the first steps to launching a store. You may use an [Accelerator](../../accelerators/README.md) to jump start your site, or create a blank site and add the Commerce widgets and pages you require.
 
 Liferay Commerce is built on Liferay DXP. For more information about how Liferay DXP Sites work, see [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site).
 
-For a complete walk through of creating a B2B or B2C store from scratch see [User Guide Tutorials]().
+See the [Store Setup Overview](../../store-setup-overview/README.md) for more information on creating a store site.
 
 ## Site Types
 
@@ -26,12 +26,12 @@ It is best practice to set a site's type as soon as you create it and avoid chan
 
 To set your site's type, navigate to _Site Administration_ → _Commerce_ → __Settings_ and select the Site Type tab. Select a type from the dropdown menu and click _Save_.
 
-<img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+![Site Type](./images/01.png)
 
 Changing a site's type also changes which accounts appear in its Accounts widget. If an instance contains business accounts but a site's type is set to B2C, those accounts still exist in the database but do not appear in the Accounts widget and are inaccessible to users.
 
 ## Additional Information
 
+* [Store Setup Overview](../../store-setup-overview/README.md)
 * [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)
 * [Introduction to Accounts](../../../customers/account-management/introduction-to-accounts/README.md)
-* [User Guide Tutorials]()
