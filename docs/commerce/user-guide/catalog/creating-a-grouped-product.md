@@ -116,5 +116,5 @@ The new Grouped Product appears in the catalog. As long as each individual produ
 ## Additional Information
 
 * [Introduction to Product Types](../introduction-to-product-types/README.md)
-* [Creating a Simple Product](../creating-a-simple-product/README.md)
+* [Creating a Simple Product](../catalog/creating-a-simple-product.md)
 * [Creating a Virtual Product](../creating-a-virtual-product/README.md)

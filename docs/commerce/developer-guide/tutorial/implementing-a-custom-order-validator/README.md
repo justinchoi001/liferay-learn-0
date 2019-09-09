@@ -194,5 +194,5 @@ Congratulations! You now know the basics for implementing the `CommerceOrderVali
 
 ## Additional Information
 
-* [Creating a Simple Product](../../../user-guide/catalog/creating-and-managing-products/product-types/creating-a-simple-product/README.md)
+* [Creating a Simple Product](../catalog/creating-a-simple-product.md)
 * [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application)

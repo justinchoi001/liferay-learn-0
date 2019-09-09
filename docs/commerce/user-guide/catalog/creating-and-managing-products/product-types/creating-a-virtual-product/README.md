@@ -95,5 +95,5 @@ Store administrators can also add attachments that are associated with a particu
 
 * [Introduction to Product Types](../introduction-to-product-types/README.md)
 * [Creating a Grouped Product](../catalog/creating-a-grouped-product.md)
-* [Creating a Simple Product](../creating-a-simple-product/README.md)
+* [Creating a Simple Product](../catalog/creating-a-simple-product.md)
 * [Virtual Product Reference](../virtual-product-reference/README.md)
