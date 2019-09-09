@@ -4,7 +4,7 @@ The catalog supports three product types: Simple, Grouped, and Virtual.
 
 **[Simple Product](../creating-a-simple-product/README.md)**: Any physical product for which inventory is tracked.
 
-**[Grouped Product](../creating-a-grouped-product/README.md)**: Two or more products from the catalog, packaged together to be sold as a single item. Grouped products are not tracked in inventory. Instead, the catalog tracks all of the products contained in the group individually. A grouped product can contain Simple Products, other Grouped Products, or Virtual Products.
+**[Grouped Product](../catalog/creating-a-grouped-product.md)**: Two or more products from the catalog, packaged together to be sold as a single item. Grouped products are not tracked in inventory. Instead, the catalog tracks all of the products contained in the group individually. A grouped product can contain Simple Products, other Grouped Products, or Virtual Products.
 
 **[Virtual Products](../creating-a-virtual-product/README.md)**: A virtual product is any non-physical product. Typically, a virtual product’s inventory is not tracked. This may mean that the product is downloaded rather than shipped. Music files, electronic publications, services, and warranties can all be considered virtual goods.
 
@@ -40,6 +40,6 @@ The catalog supports three product types: Simple, Grouped, and Virtual.
 ## Additional Information
 
 * [Creating a Simple Product](../creating-a-simple-product/README.md)
-* [Creating a Grouped Product](../creating-a-grouped-product/README.md)
+* [Creating a Grouped Product](../catalog/creating-a-grouped-product.md)
 * [Creating a Virtual Product](../creating-a-virtual-product/README.md)
 * [Virtual Product Reference](../virtual-product-reference/README.md)

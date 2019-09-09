@@ -43,21 +43,21 @@ Once the Grouped Product entity has been initially created, store administrators
 
 1. Click the _Grouped_ sub-tab.
 
-   ![Details Sub-Tab](./images/01.png)
+   ![Details Sub-Tab](./creating-a-grouped-product/images/01.png)
 
 1. Click the (+) button to add a Grouped Entry.
 1. Select the following products: _Dog Hair Brush_, _Dog Nail File_, and _Dog Shampoo_.
 1. Click _Add_.
 
-    ![Grouped Sub-Tab](./images/02.png)
+    ![Grouped Sub-Tab](./creating-a-grouped-product/images/02.png)
 
 Next, specify the priority (the order in which they are displayed), and the quantity sold in each package. Click the _3-dot_ icon then _Edit_ next to any of the products.
 
-![Adding a Product to a Grouped Product](./images/03.png)
+![Adding a Product to a Grouped Product](./creating-a-grouped-product/images/03.png)
 
 In the image above, the product has been given priority 1.0 which means it will be listed first. Assign incremental values to the other products.
 
-![Grouped Product Priority](./images/04.png)
+![Grouped Product Priority](./creating-a-grouped-product/images/04.png)
 
 ### Apply Product Options
 
@@ -111,7 +111,7 @@ Store administrators can also add attachments that are associated with a particu
 
 The new Grouped Product appears in the catalog. As long as each individual product has enough stock in the inventory, buyers can select the Grouped Product for purchase.
 
-![Dog Grooming Kit](./images/05.png)
+![Dog Grooming Kit](./creating-a-grouped-product/images/05.png)
 
 ## Additional Information
 
