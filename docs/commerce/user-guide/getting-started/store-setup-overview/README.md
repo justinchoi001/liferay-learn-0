@@ -77,7 +77,7 @@ When adding a product, there are three product types: **Simple**, **Grouped**, a
 The Liferay Commerce Catalog supports storing and managing a wide variety of product information. The following articles cover some of the available options:
 
 * [Product Options](../../catalog/creating-and-managing-products/customizing-your-product-with-product-options)
-* [Product Specifications](../../catalog/creating-and-managing-products/product-information/specifications/README.md)
+* [Product Specifications](../catalog/specifications.md)
 * [Product Images](../catalog/product-images.md)
 * Product Attachments
 * [Product Relations](../catalog/related-products-up-sells-and-cross-sells.md)

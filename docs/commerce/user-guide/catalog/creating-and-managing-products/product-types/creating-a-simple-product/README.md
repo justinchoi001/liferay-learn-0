@@ -60,7 +60,7 @@ To learn how to configure inventory for your product, see: [Setting Inventory by
 
 ### Configure Product Specifications
 
-[Product specifications](../../product-information/specifications/README.md) contain useful pieces of product information about the product, such as dimensions, color, weight, capacity, or almost any other attribute. Click the _Specifications_ sub-tab to add specifications.
+[Product specifications](../catalog/specifications.md) contain useful pieces of product information about the product, such as dimensions, color, weight, capacity, or almost any other attribute. Click the _Specifications_ sub-tab to add specifications.
 
 ### Upload Product Images and Attachments
 
