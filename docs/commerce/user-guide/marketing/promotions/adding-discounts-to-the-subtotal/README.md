@@ -64,4 +64,4 @@ After selecting the applicable products, customers will receive a discount for t
 * [Adding Discounts by Product](../adding-discounts-by-product/README.md)
 * Adding Discounts by Shipment
 * Adding Discounts by Total
-* [Creating a New Account Group](../../../customers/account-management/creating-a-new-account-group/README.md)
+* [Creating a New Account Group](../customers/creating-a-new-account-group.md)

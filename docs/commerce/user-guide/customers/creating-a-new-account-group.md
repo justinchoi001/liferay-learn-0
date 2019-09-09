@@ -10,12 +10,12 @@ To create an account group:
 1. Click _Save_.
 1. The _Accounts_ link appears. Click the _Accounts_ link.
 
-    ![Entering the Account Group Name](./images/01.png)
+    ![Entering the Account Group Name](./creating-a-new-account-group/images/01.png)
 
 1. Click the _Add Entry_ button.
 1. Check the boxes for every Account to be included in the _US East Coast_ Account Group. (In this example, there is only one account (Acme International) that was created in the [Creating a New Account](../customers/creating-a-new-account.md) article.)
 
-    ![Assigning an Account to the Group](./images/02.png)
+    ![Assigning an Account to the Group](./creating-a-new-account-group/images/02.png)
 
 1. Click _Add_.
 

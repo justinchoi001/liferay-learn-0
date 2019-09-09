@@ -10,7 +10,7 @@ The hierarchy consists of these levels:
 
 **Base Price**: This is the starting price of the product which is [set](../base-price/setting-a-products-base-price/README.md) in the product SKU sub-tab.
 
-**Price List**: This price applies to specific products for buyers in selected [Accounts](../customers/creating-a-new-account.md) and [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md). Prices in the price list can be _higher_ or _lower_ than the base price. If a price list applies to a transaction, it supersedes the base price.
+**Price List**: This price applies to specific products for buyers in selected [Accounts](../customers/creating-a-new-account.md) and [Account Groups](../customers/creating-a-new-account-group.md). Prices in the price list can be _higher_ or _lower_ than the base price. If a price list applies to a transaction, it supersedes the base price.
 
 **Tiered Price**: This price applies to orders that meet specified minimum quantity requirements (bulk orders). It is only available in the context of a [price list](../catalog/creating-a-price-list.md) and it supersedes the list's price.
 

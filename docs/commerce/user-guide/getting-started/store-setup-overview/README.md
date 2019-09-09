@@ -118,7 +118,7 @@ To learn more about how accounts, inviting users accounts, account roles, and mo
 * [Adding Addresses to an Account](../customers/adding-addresses-to-an-account.md)
 * [Account Roles](../customers/account-roles.md)
 * [Assigning Account Roles](../customers/assigning-account-roles.md)
-* [Creating a New Account Group](../../customers/account-management/creating-a-new-account-group/README.md)
+* [Creating a New Account Group](../customers/creating-a-new-account-group.md)
 
 ## Managing Orders and Shipments
 

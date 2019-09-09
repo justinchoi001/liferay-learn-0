@@ -22,7 +22,7 @@ There are two ways to manage accounts: 1) using the _Account Management_ widget 
 
 > Accounts and their associated users may also be managed through the _Accounts_ widget in the _Control Panel_.
 
-Accounts may also be grouped together as needed to facilitate account management or marketing needs. See [Creating a New Account Group](../creating-a-new-account-group/README.md) for more information.
+Accounts may also be grouped together as needed to facilitate account management or marketing needs. See [Creating a New Account Group](../customers/creating-a-new-account-group.md) for more information.
 
 ![List of Account Groups in the Control Panel](./images/02.png)
 
@@ -38,7 +38,7 @@ See the following articles to learn more about common Account Management actions
 * [Inviting Users to an Account](../inviting-users-to-an-account/README.md)
 * [Assigning Account Roles](../customers/assigning-account-roles.md)
 * [Adding Addresses to an Account](../customers/adding-addresses-to-an-account.md)
-* [Creating a New Account Group](../creating-a-new-account-group/README.md)
+* [Creating a New Account Group](../customers/creating-a-new-account-group.md)
 
 ## Additional Information
 

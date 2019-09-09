@@ -36,4 +36,4 @@ The users have been added to the account.
 * [Managing Users and Accounts](../README.md)
 * [Creating a New Account](../customers/creating-a-new-account.md)
 * [Assigning Account Roles](../customers/assigning-account-roles.md)
-* [Creating a New Account Group](../creating-a-new-account-group/README.md)
+* [Creating a New Account Group](../customers/creating-a-new-account-group.md)
