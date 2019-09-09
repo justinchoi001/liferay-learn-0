@@ -24,11 +24,11 @@ The seller completes the remaining steps to deliver the ordered products to the 
 
 ## Additional Information
 
-**Note 1**: [Order Workflows](../order-workflows/README.md) may be implemented that alter or add additional steps to the workflow outlined above.
+**Note 1**: [Order Workflows](../sales/order-workflows.md) may be implemented that alter or add additional steps to the workflow outlined above.
 
 * [Orders Menu](../sales/orders-menu.md)
 * [Order Information](../sales/order-information.md)
-* [Order Workflows](../order-workflows/README.md)
+* [Order Workflows](../sales/order-workflows.md)
 * Order Management Statuses
 * Advancing an Order to Transmitted
 * Enabling Order Workflows

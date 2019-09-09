@@ -66,7 +66,7 @@ The *Payment Status* gives information about whether payment has been made and r
 
 ## Workflow Status
 
-The *Workflow Status* gives information about where an order is in one of the two [order workflows](../order-workflows/README.md). (../sales/orders-menu.md) it is found.)
+The *Workflow Status* gives information about where an order is in one of the two [order workflows](../sales/order-workflows.md). (../sales/orders-menu.md) it is found.)
 
 ### Open Tab
 
@@ -96,6 +96,6 @@ The *Workflow Status* gives information about where an order is in one of the tw
 * [Orders Menu](../sales/orders-menu.md)
 * [Order Information](../sales/order-information.md)
 * [Order Life Cycle](../sales/order-life-cycle.md)
-* [Order Workflows](../order-workflows/README.md)
+* [Order Workflows](../sales/order-workflows.md)
 * [Enabling or Disabling Order Workflows](../sales/enabling-or-disabling-order-workflows.md)
 * [Approving or Rejecting Orders in Order Workflows](../sales/approving-or-rejecting-orders-in-order-workflows.md)

@@ -43,7 +43,7 @@ The following site settings are found here:
 * Category Display Pages
 * Health Check
 * [Notifications](../marketing/automating-store-emails-by-using-notification-templates.md)
-* [Order Workflows](../../sales/order-management/order-workflows/README.md)
+* [Order Workflows](../sales/order-workflows.md)
 * Order Fields
 * [Payment Methods](../getting-started/payments.md)
 * Product Display Pages

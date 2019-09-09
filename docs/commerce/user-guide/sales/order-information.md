@@ -41,7 +41,7 @@ The *Notes* tab displays notes that have been previously added to an order and a
 
 * [Order Life Cycle](../sales/order-life-cycle.md)
 * [Orders Menu](../sales/orders-menu.md)
-* [Order Workflows](../order-workflows/README.md)
+* [Order Workflows](../sales/order-workflows.md)
 * Order Management Statuses
 * Advancing an Order to Transmitted
 * [Enabling or Disabling Order Workflows](../sales/enabling-or-disabling-order-workflows.md)

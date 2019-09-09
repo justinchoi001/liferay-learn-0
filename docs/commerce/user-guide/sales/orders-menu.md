@@ -34,7 +34,7 @@ Order information in the *Orders* menu can also be presented to other users – 
 
 * [Order Life Cycle](../sales/order-life-cycle.md)
 * [Order Information](../sales/order-information.md)
-* [Order Workflows](../order-workflows/README.md)
+* [Order Workflows](../sales/order-workflows.md)
 * Order Management Statuses
 * Advancing an Order to Transmitted
 * Enabling Order Workflows
