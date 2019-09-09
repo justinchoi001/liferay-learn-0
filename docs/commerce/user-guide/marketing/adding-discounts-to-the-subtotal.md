@@ -19,7 +19,7 @@ To create this type of discount:
 1. Enter the _Level_: 1.00
 1. Switch the _Active_ toggle to _YES_.
 
-    ![New discount](./images/01.png)
+    ![New discount](./adding-discounts-to-the-subtotal/images/01.png)
 
 1. Click _Publish_.
 
@@ -39,7 +39,7 @@ These rules may be combined as needed to meet your sales and marketing goals.
 
 1. Once the discount has been created, there are 2 tabs: _Detail_, and _Rules_. Click on the _Rules_ tab.
 
-    ![Discount rules tab](./images/02.png)
+    ![Discount rules tab](./adding-discounts-to-the-subtotal/images/02.png)
 
 1. Click (+) button to add a new Discount Rule.
 1. Select _Cart Total_ from the _Type_ drop down menu.
@@ -50,11 +50,11 @@ In this example, a Discount Rule has been applied to this particular Discount. C
 
 The other two options (**Has all of these products** and **Has one of these products**) function by allowing the seller to select which products in the catalog are eligible for the discount.
 
-   ![Discount rule types dropdown](./images/03.png)
+   ![Discount rule types dropdown](./adding-discounts-to-the-subtotal/images/03.png)
 
    Select which products are to be included:
 
-   ![Product selection for the discount](./images/04.png)
+   ![Product selection for the discount](./adding-discounts-to-the-subtotal/images/04.png)
 
 After selecting the applicable products, customers will receive a discount for these goods depending on which of these rules has been chosen.
 
