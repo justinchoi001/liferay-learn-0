@@ -2,31 +2,31 @@
 
 ## Getting Started
 
-* [Introduction to Liferay Commerce](./getting-started/introduction-to-liferay-commerce/README.md)
+* [Introduction to Liferay Commerce](./getting-started/introduction-to-liferay-commerce.md)
 * What's New in Liferay Commerce 2.0.4
 
 ### Basic Configuration
 
 #### Accelerators
 
-* [Accelerators](./getting-started/accelerators/README.md)
-* [Using the Minium Accelerator to Jump Start Your B2B Store](./getting-started/accelerators/using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md)
+* [Accelerators](./getting-started/accelerators.md)
+* [Using the Minium Accelerator to Jump Start Your B2B Store](./getting-started/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
 
 #### Store Administration Basics
 
-* [Store Setup Overview](./getting-started/store-setup-overview/README.md)
-* [Introduction to the Admin Account](./getting-started/introduction-to-the-admin-account/README.md)
-* [Liferay Commerce Configuration Overview](./getting-started/liferay-commerce-configuration-overview/README.md)
-* [Locale Options](./getting-started/locale-options/README.md)
-* [Store Notifications](./marketing/email-notifications/automating-store-emails-by-using-notification-templates/README.md)
+* [Store Setup Overview](./getting-started/store-setup-overview.md)
+* [Introduction to the Admin Account](./getting-started/introduction-to-the-admin-account.md)
+* [Liferay Commerce Configuration Overview](./getting-started/liferay-commerce-configuration-overview.md)
+* [Locale Options](./getting-started/locale-options.md)
+* [Store Notifications](./marketing/automating-store-emails-by-using-notification-templates.md)
 * Store Email Addresses
-* [Introduction to Payments](./getting-started/payments/README.md)
-* [Managing Payment Methods](./getting-started/payments/managing-payment-methods/README.md)
-* [Adding Regions](./getting-started/country-options/adding-regions/README.md)
-* [Adding a New Currency](./getting-started/currencies/adding-a-new-currency/README.md)
-* [Deactivating a Country for Billing or Shipping](./getting-started/country-options/deactivating-a-country-for-billing-or-shipping/README.md)
-* [Managing Exchange Rates](./getting-started/currencies/managing-exchange-rates/README.md)
-* [Shipping Methods](./getting-started/shipping-methods/README.md)
+* [Introduction to Payments](./getting-started/payments.md)
+* [Managing Payment Methods](./getting-started/managing-payment-methods.md)
+* [Adding Regions](./getting-started/adding-regions.md)
+* [Adding a New Currency](./getting-started/adding-a-new-currency.md)
+* [Deactivating a Country for Billing or Shipping](./getting-started/deactivating-a-country-for-billing-or-shipping.md)
+* [Managing Exchange Rates](./getting-started/managing-exchange-rates.md)
+* [Shipping Methods](./getting-started/shipping-methods.md)
 
 #### Store Branding Basics
 
@@ -35,52 +35,52 @@
 
 #### Site Management Basics
 
-* [Sites and Site Types](./getting-started/site-management-basics/sites-and-site-types/README.md)
+* [Sites and Site Types](./getting-started/sites-and-site-types.md)
 
 ## Catalog
 
-* [Creating a New Catalog](./catalog/creating-a-new-catalog/README.md)
+* [Creating a New Catalog](./catalog/creating-a-new-catalog.md)
 
 ### Creating and Managing Products
 
 #### Channels
 
-* [Introduction to Channels](./catalog/creating-and-managing-products/channels/introduction-to-channels/README.md)
-* [Managing Channels](./catalog/creating-and-managing-products/channels/managing-channels/README.md)
-* [Managing Product Visibility by Site Using Channels](./catalog/creating-and-managing-products/channels/configuring-product-visibility-by-site-using-channels/README.md)
+* [Introduction to Channels](./catalog/introduction-to-channels.md)
+* [Managing Channels](./catalog/managing-channels.md)
+* [Managing Product Visibility by Site Using Channels](./catalog/configuring-product-visibility-by-site-using-channels.md)
 
 #### Products
 
-* [Introduction to Product Types](./catalog/creating-and-managing-products/product-types/introduction-to-product-types/README.md)
-* [Creating a Simple Product](./catalog/creating-and-managing-products/product-types/creating-a-simple-product/README.md)
-* [Creating a Grouped Product](./catalog/creating-and-managing-products/product-types/creating-a-grouped-product/README.md)
-* [Creating a Virtual Product](./catalog/creating-and-managing-products/product-types/creating-a-virtual-product/README.md)
-* [Virtual Product Reference](./catalog/creating-and-managing-products/product-types/virtual-product-reference/README.md)
-* [Customizing Your Product With Product Options](./catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md)
-* [Adding SKUs to Your Products](./catalog/creating-and-managing-products/adding-skus-to-your-products/README.md)
-* [Product Images](./catalog/creating-and-managing-products/product-information/product-images/README.md)
-* [Product Specifications](./catalog/creating-and-managing-products/product-information/specifications/README.md)
-* [Creating a New Product Category](./catalog/creating-and-managing-products/categories/creating-a-new-product-category/README.md)
-* [Organizing Your Catalog With Product Categories](./catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md)
+* [Introduction to Product Types](./catalog/introduction-to-product-types.md)
+* [Creating a Simple Product](./catalog/creating-a-simple-product.md)
+* [Creating a Grouped Product](./catalog/creating-a-grouped-product.md)
+* [Creating a Virtual Product](./catalog/creating-a-virtual-product.md)
+* [Virtual Product Reference](./catalog/virtual-product-reference.md)
+* [Customizing Your Product With Product Options](./catalog/customizing-your-product-with-product-options.md)
+* [Adding SKUs to Your Products](./catalog/adding-skus-to-your-products.md)
+* [Product Images](./catalog/product-images.md)
+* [Product Specifications](./catalog/specifications.md)
+* [Creating a New Product Category](./catalog/creating-a-new-product-category.md)
+* [Organizing Your Catalog With Product Categories](./catalog/organizing-your-catalog-with-product-categories.md)
 * Subscriptions
-* [Related Products, Up-sells, and Cross-sells](./catalog/creating-and-managing-products/product-information/related-products-up-sells-and-cross-sells/README.md)
+* [Related Products, Up-sells, and Cross-sells](./catalog/related-products-up-sells-and-cross-sells.md)
 
 ### Managing Inventory
 
-* [Introduction to Managing Inventory](./catalog/managing-inventory/introduction-to-managing-inventory/README.md)
-* [Adding a New Warehouse](./catalog/managing-inventory/adding-a-new-warehouse/README.md)
-* [Setting Inventory by Warehouse](./catalog/managing-inventory/setting-inventory-by-warehouse/README.md)
-* [Low Inventory Activity](./catalog/managing-inventory/low-stock-activity/README.md)
-* [Availability Estimates](./catalog/managing-inventory/availability-estimates/README.md)
-* [Product Inventory Configuration Reference](./catalog/managing-inventory/product-inventory-configuration-reference/README.md)
+* [Introduction to Managing Inventory](./catalog/introduction-to-managing-inventory.md)
+* [Adding a New Warehouse](./catalog/adding-a-new-warehouse.md)
+* [Setting Inventory by Warehouse](./catalog/setting-inventory-by-warehouse.md)
+* [Low Inventory Activity](./catalog/low-stock-activity.md)
+* [Availability Estimates](./catalog/availability-estimates.md)
+* [Product Inventory Configuration Reference](./catalog/product-inventory-configuration-reference.md)
 
 ### Managing Price
 
-* [Introduction to Product Pricing Methods](./catalog/managing-price/introduction-to-product-pricing-methods/README.md)
-* [Setting a Product's Base Price](./catalog/managing-price/base-price/setting-a-products-base-price/README.md)
-* [Creating a Price List](./catalog/managing-price/price-lists/creating-a-price-list/README.md)
-* [Adding Products to a Price List](./catalog/managing-price/price-lists/adding-products-to-a-price-list/README.md)
-* [Adding Tiered Pricing](./catalog/managing-price/price-lists/adding-tiered-pricing/README.md)
+* [Introduction to Product Pricing Methods](./catalog/introduction-to-product-pricing-methods.md)
+* [Setting a Product's Base Price](./catalog/setting-a-products-base-price.md)
+* [Creating a Price List](./catalog/creating-a-price-list.md)
+* [Adding Products to a Price List](./catalog/adding-products-to-a-price-list.md)
+* [Adding Tiered Pricing](./catalog/adding-tiered-pricing.md)
 
 #### Other Settings
 
@@ -90,12 +90,12 @@
 
 ### Communications
 
-* [Automating Store Emails by Using Notification Templates](./marketing/email-notifications/automating-store-emails-by-using-notification-templates/README.md)
+* [Automating Store Emails by Using Notification Templates](./marketing/automating-store-emails-by-using-notification-templates.md)
 
 ### Promotions
 
-* [Adding Discounts by Product](./marketing/promotions/adding-discounts-by-product/README.md)
-* [Adding Discounts to the Subtotal](./marketing/promotions/adding-discounts-to-the-subtotal/README.md)
+* [Adding Discounts by Product](./marketing/adding-discounts-by-product.md)
+* [Adding Discounts to the Subtotal](./marketing/adding-discounts-to-the-subtotal.md)
 
 ### SEO
 
@@ -120,22 +120,22 @@
 
 ### Pages
 
-* [Creating Your Storefront](./content/pages/creating-your-storefront/README.md)
-* [Widget Reference Guide](./content/pages/widget-reference/README.md)
+* [Creating Your Storefront](./content/creating-your-storefront.md)
+* [Widget Reference Guide](./content/widget-reference.md)
 
 #### Commerce Storefront Pages
 
-* [Account Management](./content/pages/account-management/README.md)
+* [Account Management](./content/account-management.md)
 * BOM / Spare Parts Finder
-* [Catalog](./content/pages/catalog/README.md)
-* [Cart](./content/pages/cart/README.md)
-* [Checkout](./content/pages/checkout/README.md)
-* [Compare](./content/pages/compare/README.md)
-* [List](./content/pages/list/README.md)
-* [Pending Orders](./content/pages/pending-orders/README.md)
-* [Placed Orders](./content/pages/placed-orders/README.md)
-* [Product Details Page](./content/pages/product-details/README.md)
-* [Search](./content/pages/search/README.md)
+* [Catalog](./content/catalog.md)
+* [Cart](./content/cart.md)
+* [Checkout](./content/checkout.md)
+* [Compare](./content/compare.md)
+* [List](./content/list.md)
+* [Pending Orders](./content/pending-orders.md)
+* [Placed Orders](./content/placed-orders.md)
+* [Product Details Page](./content/product-details.md)
+* [Search](./content/search.md)
 
 #### Using Modern Site Building
 
@@ -155,13 +155,13 @@
 
 ### Account Management
 
-* [Introduction to Accounts](./customers/account-management/introduction-to-accounts/README.md)
-* [Creating a New Account](./customers/account-management/creating-a-new-account/README.md)
-* [Inviting Users to an Account](../inviting-users-to-an-account/README.md)
-* [Adding Addresses to an Account](../adding-addresses-to-an-account/README.md)
-* [Account Roles](./customers/account-management/account-roles/README.md)
-* [Assigning Account Roles](../assigning-account-roles/README.md)
-* [Creating a New Account Group](./customers/account-management/creating-a-new-account-group/README.md)
+* [Introduction to Accounts](./customers/introduction-to-accounts.md)
+* [Creating a New Account](./customers/creating-a-new-account.md)
+* [Inviting Users to an Account](../inviting-users-to-an-account.md)
+* [Adding Addresses to an Account](../adding-addresses-to-an-account.md)
+* [Account Roles](./customers/account-management/account-roles.md)
+* [Assigning Account Roles](../assigning-account-roles.md)
+* [Creating a New Account Group](./customers/creating-a-new-account-group.md)
 * Organizations and Accounts
 
 ## Sales
@@ -170,28 +170,28 @@
 
 #### Payment Methods
 
-* [Authorize.net](./sales/payments/payment-methods/authorize.net/README.md)
-* [Mercanet](./sales/payments/payment-methods/mercanet/README.md)
-* [Money Orders](./sales/payments/payment-methods/money-orders/README.md)
-* [PayPal](./sales/payments/payment-methods/paypal/README.md)
+* [Authorize.net](./sales/authorize.net.md)
+* [Mercanet](./sales/mercanet.md)
+* [Money Orders](./sales/money-orders.md)
+* [PayPal](./sales/paypal.md)
 
 ### Shipping
 
-* [Using FedEx as a Carrier Method](./sales/shipping/using-fedex-as-a-carrier-method/README.md)
-* [Using the Flat Rate Shipping Method](./sales/shipping/using-the-flat-rate-shipping-method/README.md)
-* [Using a Variable Rate Shipping Method](./sales/shipping/using-the-variable-rate-shipping-method/README.md)
-* [Applying Shipping Method Restrictions](./sales/shipping/applying-shipping-method-restrictions/README.md)
-* [Measurement Units](./sales/shipping/measurement-units/README.md)
-* [Shipping Method Reference](./sales/shipping/shipping-method-reference/README.md)
+* [Using FedEx as a Carrier Method](./sales/using-fedex-as-a-carrier-method.md)
+* [Using the Flat Rate Shipping Method](./sales/using-the-flat-rate-shipping-method.md)
+* [Using a Variable Rate Shipping Method](./sales/using-the-variable-rate-shipping-method.md)
+* [Applying Shipping Method Restrictions](./sales/applying-shipping-method-restrictions.md)
+* [Measurement Units](./sales/measurement-units.md)
+* [Shipping Method Reference](./sales/shipping-method-reference.md)
 
 ### Order Management
 
-* [Order Life Cycle](./sales/order-management/order-life-cycle/README.md)
-* [Orders Menu](./sales/order-management/orders-menu/README.md)
-* [Order Information](./sales/order-management/order-information/README.md)
-* [Order Workflows](./sales/order-management/order-workflows/README.md)
-* [Enabling or Disabling Order Workflows](./sales/order-management/order-workflows/enabling-or-disabling-order-workflows/README.md)
-* [Approving or Rejecting Orders in Order Workflows](./sales/order-management/order-workflows/approving-or-rejecting-orders-in-order-workflows/README.md)
+* [Order Life Cycle](./sales/order-life-cycle.md)
+* [Orders Menu](./sales/orders-menu.md)
+* [Order Information](./sales/order-information.md)
+* [Order Workflows](./sales/order-workflows.md)
+* [Enabling or Disabling Order Workflows](./sales/enabling-or-disabling-order-workflows.md)
+* [Approving or Rejecting Orders in Order Workflows](./sales/approving-or-rejecting-orders-in-order-workflows.md)
 * Order Status
 * Processing an Order
 * Subscription Management
@@ -199,14 +199,14 @@
 #### Managing Shipments
 
 * Shipment Workflow
-* [Introduction to Shipments](./sales/order-management/managing-shipments/introduction-to-shipments/README.md)
-* [Creating a Shipment](./sales/order-management/managing-shipments/creating-a-shipment/README.md)
-* [Cancelling a Shipment](./sales/order-management/managing-shipments/cancelling-a-shipment/README.md)
+* [Introduction to Shipments](./sales/introduction-to-shipments.md)
+* [Creating a Shipment](./sales/creating-a-shipment.md)
+* [Cancelling a Shipment](./sales/cancelling-a-shipment.md)
 
 ## Operations
 
 ### Taxes
 
-* [Creating Tax Categories](./operations/taxes/creating-tax-categories/README.md)
-* [Setting Tax Rate by Address](./operations/taxes/setting-tax-rate-by-address/README.md)
-* [Setting Tax Rate by Fixed Rate](./operations/taxes/setting-tax-rate-by-fixed-rate/README.md)
+* [Creating Tax Categories](./operations/creating-tax-categories.md)
+* [Setting Tax Rate by Address](./operations/setting-tax-rate-by-address.md)
+* [Setting Tax Rate by Fixed Rate](./operations/setting-tax-rate-by-fixed-rate.md)
