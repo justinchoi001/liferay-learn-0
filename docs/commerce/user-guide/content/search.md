@@ -4,7 +4,7 @@ The Search page may be used to search for content that may be available on a Lif
 
 If using the [Minium Accelerator](../../../getting-started/accelerators/using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md) to build a site with sample data, the Search page contains the _Search Bar_, _Search Results_, _Type Facet_, _Tag_, _Category_, _Site_, _Folder_, _User_, and the _Modified Facet_ widgets.
 
-![Minium Search page](./images/01.png)
+![Minium Search page](./search/images/01.png)
 
 In this example, the sample Search page contains Knowledge Base articles.
 
