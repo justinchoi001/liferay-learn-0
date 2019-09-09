@@ -1,6 +1,6 @@
 # Introduction to Product Pricing Methods
 
-Liferay Commerce allows store managers to set different prices for the same product using a pricing hierarchy. Each type of pricing method is interrelated and work together to allow managers to offer different pricing methods based on specific sets of conditions. This article explains the pricing hierarchy and each pricing method.
+Liferay Commerce allows store managers to set different prices for the same product using a pricing hierarchy. Each type of pricing method works together to allow managers to offer different pricing methods based on specific sets of conditions. This article explains the pricing hierarchy and each pricing method.
 
 ## Pricing Hierarchy
 
