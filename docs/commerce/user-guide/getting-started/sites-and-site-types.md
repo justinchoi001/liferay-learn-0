@@ -26,7 +26,7 @@ It is best practice to set a site's type as soon as you create it and avoid chan
 
 To set your site's type, navigate to _Site Administration_ → _Commerce_ → __Settings_ and select the Site Type tab. Select a type from the dropdown menu and click _Save_.
 
-![Site Type](./images/01.png)
+![Site Type](./sites-and-site-types/images/01.png)
 
 Changing a site's type also changes which accounts appear in its Accounts widget. If an instance contains business accounts but a site's type is set to B2C, those accounts still exist in the database but do not appear in the Accounts widget and are inaccessible to users.
 

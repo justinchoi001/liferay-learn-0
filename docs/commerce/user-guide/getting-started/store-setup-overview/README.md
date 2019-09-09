@@ -28,7 +28,7 @@ Global configurations for Liferay Commerce include setting the store timezone, a
 
 ### Create a Store Site
 
-Liferay Commerce supports B2B, B2C, and B2C-B2B stores. [Site Types](../site-management-basics/sites-and-site-types/README.md) designate a store's business model and will determine how the storefront works with Accounts.
+Liferay Commerce supports B2B, B2C, and B2C-B2B stores. [Site Types](../getting-started/sites-and-site-types.md) designate a store's business model and will determine how the storefront works with Accounts.
 
 Liferay Commerce is built on Liferay DXP; For more information about how Liferay DXP Sites work, see [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site).
 

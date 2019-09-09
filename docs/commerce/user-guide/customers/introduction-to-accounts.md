@@ -1,6 +1,6 @@
 # Introduction to Accounts
 
-In Liferay Commerce, accounts store information about customers and are used to manage and empower business representatives to provide great customer service experiences. Accounts store information including but not limited to: billing address, shipping address, payment information, order information, VAT number (as applicable). There are two types of accounts: Business and Personal. How these accounts function in a store will vary depending on the configured [Site Type](../../../getting-started/site-management-basics/sites-and-site-types/README.md).
+In Liferay Commerce, accounts store information about customers and are used to manage and empower business representatives to provide great customer service experiences. Accounts store information including but not limited to: billing address, shipping address, payment information, order information, VAT number (as applicable). There are two types of accounts: Business and Personal. How these accounts function in a store will vary depending on the configured [Site Type](../getting-started/sites-and-site-types.md).
 
 ## Account Types
 
@@ -42,5 +42,5 @@ See the following articles to learn more about common Account Management actions
 
 ## Additional Information
 
-* [Sites and Site Types](../../../getting-started/site-management-basics/sites-and-site-types/README.md)
+* [Sites and Site Types](../getting-started/sites-and-site-types.md)
 * [Account Roles](../customers/account-roles.md)

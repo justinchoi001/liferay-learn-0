@@ -48,5 +48,5 @@ The following site settings are found here:
 * [Payment Methods](../getting-started/payments.md)
 * Product Display Pages
 * [Shipping Methods](../../sales/shipping/README.md)
-* [Site Types](../site-management-basics/sites-and-site-types/README.md)
+* [Site Types](../getting-started/sites-and-site-types.md)
 * Taxes
