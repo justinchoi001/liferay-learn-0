@@ -1,6 +1,6 @@
 # Using the Minium Accelerator to Jump-Start Your B2B Store
 
-Minium is a Liferay Commerce [Accelerator](../README.md) that quickly and easily sets up a business-to-business (B2B) store designed to meet the needs of a manufacturer. it is meant to showcase a modern B2B digital commerce experience. It is designed with features that make the experience as smooth as possible by having elements that are both functional and elegant.
+Minium is a Liferay Commerce [Accelerator](../README.md) that quickly and easily sets up a business-to-business (B2B) store designed to meet the needs of a manufacturer, showcasing a modern B2B digital commerce experience. It is designed with features that make the experience as smooth as possible by having elements that are both functional and elegant.
 
 The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium also highlights Liferay Commerce's B2B Account Management functionality, enabling streamlined account management and self-service through the use of [Account Roles](../../../customers/account-management/account-roles/README.md), [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md), and [Order Workflows](../../../sales/order-management/order-workflows/).
 
@@ -30,7 +30,7 @@ The Account selector displays accounts that the current user can access (adminis
 
 ## Catalog Data
 
-Minium's sample catalog includes a range of sample products organized into several pre-defined categories:
+Minium's catalog includes a range of sample products organized into several pre-defined categories:
 
 ![Pre-set Categories](./images/04.png)
 
@@ -40,11 +40,11 @@ Sample products also come with pre-set [Options](../../../catalog/creating-and-m
 
 ![Product Specifications](./images/05.png)
 
-_The sample data exists as a demonstration purpose and thus can be deleted safely if a store administrator plan to use Minium to jump-start their store site._
+_The sample data is added for demonstration purposes and can be deleted safely if a store administrator plan to use Minium as a basis for their store site._
 
 ## Search
 
-Minium makes it easy for buyers to search the catalog quickly. In addition to the omni-search bar, Minium has a special keyboard shortcut to open the search bar. On the _Catalog_ main page, enter the forward slash (/) which opens the Search bar.
+Minium makes it easy for buyers to search the catalog quickly. In addition to the omni-search bar, Minium has a special keyboard shortcut to open the search bar. On the _Catalog_ main page, pressing forward slash (/) will open and focus the Search bar.
 
 ![Search using forward slash](./images/06.png)
 
