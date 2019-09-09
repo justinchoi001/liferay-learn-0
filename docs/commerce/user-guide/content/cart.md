@@ -14,5 +14,5 @@ The Cart page is a required page that allows users to manage the contents of the
 
 ## Additional Information
 
-* [Widget Reference Guide](../widget-reference/README.md)
+* [Widget Reference Guide](../content/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)

@@ -36,7 +36,7 @@ When an order is confirmed, the order is ready for processing by the seller. See
 
 ## Additional Information
 
-* [Widget Reference Guide](../widget-reference/README.md)
+* [Widget Reference Guide](../content/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
 * [Implementing a Custom Checkout Step](../../../../developer-guide/tutorial/implementing-a-custom-checkout-step/README.md)
 * [Using the Flat Rate Shipping Method](../../../sales/shipping/using-the-flat-rate-shipping-method/README.md)

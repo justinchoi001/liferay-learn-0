@@ -6,5 +6,5 @@ The Compare Page is a page where buyers can view two or more products side by si
 
 ## Additional Information
 
-* [Widget Reference Guide](../widget-reference/README.md)
+* [Widget Reference Guide](../content/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
