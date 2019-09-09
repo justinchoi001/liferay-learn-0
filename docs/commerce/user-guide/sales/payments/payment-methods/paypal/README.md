@@ -23,7 +23,7 @@ PayPal is now enabled for your store.
 
 Here is more information about adding other payment methods:
 
-* [Authorize.net](../authorize.net/README.md)
+* [Authorize.net](../sales/authorize.net.md)
 * [Mercanet](../mercanet/README.md)
 * [Currencies](../../../../getting-started/currencies/)
 * [Reattempt failed recurring payments with Subscribe buttons](https://developer.paypal.com/docs/classic/paypal-payments-standard/integration-guide/reattempt-failed-payment/)

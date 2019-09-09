@@ -18,7 +18,7 @@ Before configuring your store to use Authorize.Net, it is necessary to generate 
 7. Check the following options to enable to display the following:
     * _Require CAPTCHA_
     * _Require Card Code Verification_
-       ![Authorize.Net Settings](./images/01.png)
+       ![Authorize.Net Settings](./authorize.net/images/01.png)
 8. Click _Save_.
 9. Click the _3-dot icon_ next to _Authorize.Net_ then _Activate_.
 
