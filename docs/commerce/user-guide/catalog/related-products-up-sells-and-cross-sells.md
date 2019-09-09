@@ -12,7 +12,7 @@ Note: If your site was built using an accelerator, then a number of product rela
 * **Accessories**: Display add-on products for use in conjunction with the featured products.
 * **Cross-Sell**: Display products complementary to the featured product.
 
-![Product Relations: Brake Rotors and Fluid](./images/05.png)
+![Product Relations: Brake Rotors and Fluid](./related-products-up-sells-and-cross-sells/images/05.png)
 
 In the image above, the two related products are displayed in the Product Publisher widget at the bottom. You have the option to add more Product Publisher widgets configured with other types of Product Relations.
 
@@ -27,7 +27,7 @@ More Product Relation types may be added as necessary. This includes intangibles
 1. Enter the new Product Relation in the _Type_ field: Warranties.
 1. Click _Save_.
 
-    ![Creating a New Product Relation](./images/01.png)
+    ![Creating a New Product Relation](./related-products-up-sells-and-cross-sells/images/01.png)
 
 The new Product Relation Type has been added.
 
@@ -38,12 +38,12 @@ The new Product Relation Type has been added.
 1. Click on the _Product Relations_ sub-tab.
 1. Click on _Related_ in the left menu.
 
-    ![Related Menu](./images/02.png)
+    ![Related Menu](./related-products-up-sells-and-cross-sells/images/02.png)
 
 1. Click the (+) button to add one or more relationships. In this example, select _Brake Rotors_ and _Brake Fluid_.
 1. Click _Add_.
 
-    ![Adding Two Products](./images/04.png)
+    ![Adding Two Products](./related-products-up-sells-and-cross-sells/images/04.png)
 
 These two products are now associated with _Brake Pads_. Note that this relationship is unidirectional; in other words, when viewing _Brake Pads_ the new product relations will be visible but when viewing the _Brake Rotors_ or _Brake Fluid_ products, _Brake Pads_ will _not_ be listed as as a related product.
 
@@ -57,15 +57,15 @@ You can display product relations on a product display page by configuring a Pro
 1. Click _Brake Pads_ to view the Product Details.
 1. Scroll to the bottom of the page to view the related products listed in the _Product Publisher_ widget.
 
-   ![Configuration Menu](./images/06.png)
+   ![Configuration Menu](./related-products-up-sells-and-cross-sells/images/06.png)
 
 1. Click the _3-dot_ icon (Options) → _Configuration_.
 1. Select _Product Relations related_ from the _Data Source_ dropdown menu.
 
-    ![Choosing a Data Source](./images/03.png)
+    ![Choosing a Data Source](./related-products-up-sells-and-cross-sells/images/03.png)
 
 1. Click _Save_ and close the dialog box.
 
-    ![Product Relations: Brake Rotors and Fluid](./images/05.png)
+    ![Product Relations: Brake Rotors and Fluid](./related-products-up-sells-and-cross-sells/images/05.png)
 
 The example above shows how different products could be related, ensuring that customers can see the full range of products that may also be potentially useful.
