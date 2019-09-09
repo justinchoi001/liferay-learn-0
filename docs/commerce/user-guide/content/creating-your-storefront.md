@@ -13,7 +13,7 @@ The following types of pages may be created:
 | [Cart](../content/cart.md) | Displays all items in the shopping cart | _Cart_, _Cart Summary_, _Mini Cart_ |
 | [Checkout](../content/checkout.md) | Displays a summary of all selected goods for purchase | _Checkout_ |
 | [Compare](../content/compare.md) | Displays a side by side comparison of the different selected products | _Cart_ |
-| [List](../list/README.md) | Displays the customer's Wish Lists | _Wish Lists_ and _Wish List Contents_ |
+| [List](../content/list.md) | Displays the customer's Wish Lists | _Wish Lists_ and _Wish List Contents_ |
 | [Pending Orders](../pending-orders/README.md) | Displays a list of all pending orders | _Open Carts_ |
 | [Placed Orders](../placed-orders/README.md) | Displays a list of all orders in all statuses | _Orders_ |
 | [Product Details](../product-details/README.md) | Displays information about the product and related products | _Product Details_ and _Product Publisher_ |

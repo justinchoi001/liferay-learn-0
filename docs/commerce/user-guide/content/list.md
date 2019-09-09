@@ -6,4 +6,4 @@ The _Wish Lists_ widget shows a list of all created wish lists created by an aut
 
 Note that wish lists are scoped to be **site** specific; if a Liferay Commerce instance has more than one store site, wish lists are not transferred or saved across sites.
 
-![Wish List widget](./images/01.png)
+![Wish List widget](./list/images/01.png)
