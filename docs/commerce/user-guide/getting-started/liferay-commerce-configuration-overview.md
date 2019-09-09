@@ -6,7 +6,7 @@ Liferay Commerce configurations are divided into several locations in the Lifera
 
 Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the follow configurations will apply across the store sites.
 
-![Global Commerce Settings](./images/01.png)
+![Global Commerce Settings](./liferay-commerce-configuration-overview/images/01.png)
 
 * [Channels](../catalog/managing-channels.md)
 * Catalogs
@@ -20,7 +20,7 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 
 The Commerce Global Settings menu contains the following tabs:
 
-![Commerce Global Settings Tab](./images/02.png)
+![Commerce Global Settings Tab](./liferay-commerce-configuration-overview/images/02.png)
 
 * [Availability Estimates](../catalog/availability-estimates.md)
 * [Countries](../getting-started/country-options.md)
@@ -36,7 +36,7 @@ The following configurations are scoped to the selected store site. Changes here
 
 Navigate to the _Control Panel_ → _Store Site_ → _Commerce_.
 
-![Minium Full Site Settings](./images/03.png)
+![Minium Full Site Settings](./liferay-commerce-configuration-overview/images/03.png)
 
 The following site settings are found here:
 
