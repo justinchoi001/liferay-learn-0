@@ -48,7 +48,7 @@ Once this virtual product has been created, store administrators need to associa
 
 1. Click _Save_.
 
-For more information about each field, see the [Virtual Product Reference](../virtual-product-reference/README.md) article.
+For more information about each field, see the [Virtual Product Reference](../catalog/virtual-product-reference.md) article.
 
 ### Apply Product Options
 
@@ -96,4 +96,4 @@ Store administrators can also add attachments that are associated with a particu
 * [Introduction to Product Types](../catalog/introduction-to-product-types.md)
 * [Creating a Grouped Product](../catalog/creating-a-grouped-product.md)
 * [Creating a Simple Product](../catalog/creating-a-simple-product.md)
-* [Virtual Product Reference](../virtual-product-reference/README.md)
+* [Virtual Product Reference](../catalog/virtual-product-reference.md)

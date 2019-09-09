@@ -1,6 +1,6 @@
 # Virtual Product Reference
 
-![Virtual product details](./images/01.png)
+![Virtual product details](./virtual-product-reference/images/01.png)
 
 |Field | Description |
 | --- | --- |

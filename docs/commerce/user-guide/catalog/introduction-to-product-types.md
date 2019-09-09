@@ -42,4 +42,4 @@ The catalog supports three product types: Simple, Grouped, and Virtual.
 * [Creating a Simple Product](../catalog/creating-a-simple-product.md)
 * [Creating a Grouped Product](../catalog/creating-a-grouped-product.md)
 * [Creating a Virtual Product](../catalog/creating-a-virtual-product.md)
-* [Virtual Product Reference](../virtual-product-reference/README.md)
+* [Virtual Product Reference](../catalog/virtual-product-reference.md)
