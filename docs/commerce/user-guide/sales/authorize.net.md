@@ -28,4 +28,4 @@ Once finished, Authorize.Net is now enabled.
 
 * [Currencies](../getting-started/currencies.md)
 * [Mercanet](../sales/mercanet.md)
-* [PayPal](../paypal/README.md)
+* [PayPal](../sales/mercanet.md)

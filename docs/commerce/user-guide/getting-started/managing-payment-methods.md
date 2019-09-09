@@ -29,4 +29,4 @@ The _Edit Payment Method_ UI has three tabs: _Details_, _Configuration_ and _Res
 * [Authorize.net](../sales/authorize.net.md)
 * [Mercanet](../sales/mercanet.md)
 * [Money Orders](../sales/mercanet.md)
-* [PayPal](../../../sales/payments/payment-methods/paypal/README.md)
+* [PayPal](../sales/mercanet.md)

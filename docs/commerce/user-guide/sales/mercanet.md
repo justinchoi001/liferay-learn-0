@@ -50,4 +50,4 @@ Mercanet is now enabled for your store.
 
 * [Currencies](../getting-started/currencies.md)
 * [Authorize.Net](../sales/authorize.net.md)
-* [PayPal](../paypal/README.md)
+* [PayPal](../sales/mercanet.md)
