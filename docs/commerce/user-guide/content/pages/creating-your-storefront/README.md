@@ -12,7 +12,7 @@ The following types of pages may be created:
 | [Catalog](../content/catalog.md) | Main page where customers can search for products and refine their search results. | _Search_, _Option Facet_, _Specification Facet_, _Category Facet_ and _Search Results_.|
 | [Cart](../content/cart.md) | Displays all items in the shopping cart | _Cart_, _Cart Summary_, _Mini Cart_ |
 | [Checkout](../content/checkout.md) | Displays a summary of all selected goods for purchase | _Checkout_ |
-| [Compare](../compare/README.md) | Displays a side by side comparison of the different selected products | _Cart_ |
+| [Compare](../content/compare.md) | Displays a side by side comparison of the different selected products | _Cart_ |
 | [List](../list/README.md) | Displays the customer's Wish Lists | _Wish Lists_ and _Wish List Contents_ |
 | [Pending Orders](../pending-orders/README.md) | Displays a list of all pending orders | _Open Carts_ |
 | [Placed Orders](../placed-orders/README.md) | Displays a list of all orders in all statuses | _Orders_ |

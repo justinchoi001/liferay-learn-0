@@ -2,7 +2,7 @@
 
 The Compare Page is a page where buyers can view two or more products side by side for comparison. The Compare Page uses the _Product Comparison Table_ widget which is populated only when a buyer has selected two or more products on the Catalog page.
 
-![Product comparison](./images/01.png)
+![Product comparison](./compare/images/01.png)
 
 ## Additional Information
 
