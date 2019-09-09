@@ -106,7 +106,7 @@ There are several ways to price products and these methods are related to one an
 
 Building a store in Liferay Commerce requires more than a complete catalog. Store administrators building a storefront from scratch will need to add a series of pages to display and sell their products.
 
-See [Creating Your Storefront](../../content/pages/creating-your-storefront/README.md) to learn more.
+See [Creating Your Storefront](../content/creating-your-storefront.md) to learn more.
 
 ## Managing Customer Accounts
 
