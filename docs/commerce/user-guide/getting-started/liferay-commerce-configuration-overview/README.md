@@ -8,7 +8,7 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 
 ![Global Commerce Settings](./images/01.png)
 
-* [Channels](../../catalog/creating-and-managing-products/channels/managing-channels/README.md)
+* [Channels](../catalog/managing-channels.md)
 * Catalogs
 * Products
 * [Price Lists](../../catalog/managing-price/price-lists/creating-a-price-list/README.md)

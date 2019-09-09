@@ -34,4 +34,4 @@ The product will be visible only in the selected Channels.
 ## Additional Information
 
 * [Introduction to Channels](../catalog/introduction-to-channels.md)
-* [Managing Channels](../managing-channels/README.md)
+* [Managing Channels](../catalog/managing-channels.md)

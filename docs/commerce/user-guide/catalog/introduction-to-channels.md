@@ -24,5 +24,5 @@ Liferay Commerce Channels makes managing products, sales, and fulfillment on a s
 
 ## Additional Information
 
-* [Managing Channels](../managing-channels/README.md)
+* [Managing Channels](../catalog/managing-channels.md)
 * [Configuring Product Visibility by Site Using Channels](../catalog/configuring-product-visibility-by-site-using-channels.md)
