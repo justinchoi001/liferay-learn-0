@@ -6,7 +6,7 @@ Notifications are automated emails sent to users. To send email notifications, f
 
 Once the Mail settings have been configured, follow these steps to create a notification for a received order:
 
-1. Navigate to the _Control Panel_ → _(your store)_ → _Commerce_ → _Settings_.
+1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
 2. Click the _Notifications_ tab.
 3. Click the _Notification Templates_ sub-tab.
 4. Click the (+) button to create a new Notification Template.
