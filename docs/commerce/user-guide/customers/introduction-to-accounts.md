@@ -14,21 +14,21 @@ In Liferay Commerce, accounts store information about customers and are used to 
 
 There are two ways to manage accounts: 1) using the _Account Management_ widget and 2) through the _Control Panel_. Access to the _Control Panel_ is typically restricted to those with administrative permissions for the store or installation.
 
-![List of Accounts in the Account Management Widget](./images/04.png)
+![List of Accounts in the Account Management Widget](./introduction-to-accounts/images/04.png)
 
 > Accounts and their associated users may be managed through the _Account Management_ widget.
 
-![List of Accounts in the Control Panel](./images/01.png)
+![List of Accounts in the Control Panel](./introduction-to-accounts/images/01.png)
 
 > Accounts and their associated users may also be managed through the _Accounts_ widget in the _Control Panel_.
 
 Accounts may also be grouped together as needed to facilitate account management or marketing needs. See [Creating a New Account Group](../customers/creating-a-new-account-group.md) for more information.
 
-![List of Account Groups in the Control Panel](./images/02.png)
+![List of Account Groups in the Control Panel](./introduction-to-accounts/images/02.png)
 
 Finally, individual users associated with a given Business Account may be given _Account Roles_ to delegate and self-service their accounts for their business. For more information see [Account Roles](../customers/account-roles.md)
 
-![Assigning User Roles in the Account Management Widget](./images/03.png)
+![Assigning User Roles in the Account Management Widget](./introduction-to-accounts/images/03.png)
 
 ## Common Account Management Actions
 

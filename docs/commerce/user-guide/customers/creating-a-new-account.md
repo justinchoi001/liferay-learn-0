@@ -39,7 +39,7 @@ The new account has been created using the Control Panel. Click _Addresses_ to u
 
 ## Additional Information
 
-* [Introduction to Accounts](../introduction-to-accounts/README.md)
+* [Introduction to Accounts](../customers/introduction-to-accounts.md)
 * [Assigning User Roles](../customers/assigning-account-roles.md)
 * [Inviting Users to an Account](../inviting-users-to-an-account/README.md)
 * [Adding Addresses to an Account](../customers/adding-addresses-to-an-account.md)

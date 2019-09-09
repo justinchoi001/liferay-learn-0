@@ -32,7 +32,7 @@ The users have been added to the account.
 
 ## Additional Information
 
-* [Introduction to Accounts](../introduction-to-accounts/README.md)
+* [Introduction to Accounts](../customers/introduction-to-accounts.md)
 * [Managing Users and Accounts](../README.md)
 * [Creating a New Account](../customers/creating-a-new-account.md)
 * [Assigning Account Roles](../customers/assigning-account-roles.md)
