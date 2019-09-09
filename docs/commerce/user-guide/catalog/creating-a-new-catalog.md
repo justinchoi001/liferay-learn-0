@@ -22,4 +22,4 @@ The new catalog has been created and will be selectable when adding a new produc
 ## Additional Information
 
 * [Locale Options](../../getting-started/locale-options/README.md)
-* [Adding a New Currency](../../getting-started/currencies/adding-a-new-currency/README.md)
+* [Adding a New Currency](../getting-started/adding-a-new-currency.md)

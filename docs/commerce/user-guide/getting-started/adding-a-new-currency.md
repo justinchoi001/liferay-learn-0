@@ -18,7 +18,7 @@ This article details how to add a new currency to your store.
     * *Priority:* 11
 1. Leave the _Primary_ toggle to _NO_.
 
-    ![Adding a currency](./images/01.png)
+    ![Adding a currency](./adding-a-new-currency/images/01.png)
 
 1. Switch the _Active_ toggle to _Yes_.
 1. Click _Save_.

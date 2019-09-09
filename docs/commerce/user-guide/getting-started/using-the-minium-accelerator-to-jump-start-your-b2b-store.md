@@ -59,7 +59,7 @@ Minium applies a number of other site configurations that are not set out-of-the
 | [Shipping Method Options](../../../sales/shipping/using-the-flat-rate-shipping-method/README.md) | Standard Delivery, Expedited Delivery |
 | Channels | Minium Portal |
 | [Countries](../getting-started/country-options.md) | France, China, United States, and 245 more |
-| [Currencies](../../../getting-started/currencies/adding-a-new-currency/README.md) | USD, AUD, GBP, and 7 more |
+| [Currencies](../getting-started/adding-a-new-currency.md) | USD, AUD, GBP, and 7 more |
 | Default Image | &#10003; |
 | [Measurement Units](../../../sales/shipping/measurement-units/README.md) - Dimensions | inches, millimeters, feet, meters |
 | [Measurement Units](../../../sales/shipping/measurement-units/README.md) - Weight | ounces, pounds, kilograms, grams |

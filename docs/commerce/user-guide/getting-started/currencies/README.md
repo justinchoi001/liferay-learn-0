@@ -1,4 +1,4 @@
 # Currencies
 
-* [Adding a New Currency](./adding-a-new-currency/README.md)
+* [Adding a New Currency](../getting-started/adding-a-new-currency.md)
 * [Managing Exchange Rates](./managing-exchange-rates/README.md)
