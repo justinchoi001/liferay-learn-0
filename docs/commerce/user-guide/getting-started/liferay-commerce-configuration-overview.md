@@ -45,7 +45,7 @@ The following site settings are found here:
 * [Notifications](../../marketing/email-notifications/automating-store-emails-by-using-notification-templates/README.md)
 * [Order Workflows](../../sales/order-management/order-workflows/README.md)
 * Order Fields
-* [Payment Methods](../payments/README.md)
+* [Payment Methods](../getting-started/payments.md)
 * Product Display Pages
 * [Shipping Methods](../../sales/shipping/README.md)
 * [Site Types](../site-management-basics/sites-and-site-types/README.md)
