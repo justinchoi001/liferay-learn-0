@@ -2,7 +2,7 @@
 
 This article documents how to configure Availability Estimates. If a product becomes unavailable, store owners can provide customers with an estimate for when a product will be restocked. There are three default time periods in Liferay Commerce.
 
-![Managing Availability Estimates](./images/01.png)
+![Managing Availability Estimates](./availability-estimates/images/01.png)
 
 To manage Availability Estimates:
 
@@ -16,11 +16,11 @@ To manage Availability Estimates:
 
 The new Availability Estimate has been added. Note that because the priority is set to _4.0_, this means this time period is displayed last in the menu.
 
-![New Availability Estimate](./images/02.png)
+![New Availability Estimate](./availability-estimates/images/02.png)
 
 When configuring the low stock threshold, this Availability Estimate option is displayed in the _Product Configuration_ → _Inventory_ menu.
 
-![Availability Estimates in Inventory Dropdown](./images/03.png)
+![Availability Estimates in Inventory Dropdown](./availability-estimates/images/03.png)
 
 ## Additional Information
 

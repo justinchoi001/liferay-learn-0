@@ -82,7 +82,7 @@ The Liferay Commerce Catalog supports storing and managing a wide variety of pro
 * Product Attachments
 * [Product Relations](../catalog/related-products-up-sells-and-cross-sells.md)
 * [Product Categorization](../catalog/organizing-your-catalog-with-product-categories.md)
-* [Availability Estimates](../../catalog/managing-inventory/availability-estimates/README.md)
+* [Availability Estimates](../catalog/availability-estimates.md)
 * [Low Stock Activity](../../catalog/managing-inventory/low-stock-activity/README.md)
 * Applicable Tax Category
 * Associated Channels

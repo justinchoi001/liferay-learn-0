@@ -22,7 +22,7 @@ The Commerce Global Settings menu contains the following tabs:
 
 ![Commerce Global Settings Tab](./images/02.png)
 
-* [Availability Estimates](../../catalog/managing-inventory/availability-estimates/README.md)
+* [Availability Estimates](../catalog/availability-estimates.md)
 * [Countries](../country-options/README.md)
 * [Currencies](../currencies/README.md)
 * Default Images

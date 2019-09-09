@@ -16,7 +16,7 @@ Warehouses must be associated for at least one channel. See the [Introduction to
 
 Store owners may configure Availability Estimates to inform customers when an out of stock product will be available again.
 
-See the [Availability Estimates](../availability-estimates/README.md) for more information.
+See the [Availability Estimates](../catalog/availability-estimates.md) for more information.
 
 ## Low Stock Activity
 
