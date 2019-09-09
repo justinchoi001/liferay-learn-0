@@ -2,5 +2,5 @@
 
 * [Authorize.net](../sales/authorize.net.md)
 * [Mercanet](../sales/mercanet.md)
-* [Money Orders](./money-orders/README.md)
+* [Money Orders](../sales/mercanet.md)
 * [Paypal](./paypal/README.md)

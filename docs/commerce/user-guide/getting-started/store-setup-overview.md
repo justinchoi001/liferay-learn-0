@@ -45,7 +45,7 @@ Liferay Commerce provides support for several third party payment processors and
 * [Authorize.net](../sales/authorize.net.md)
 * [PayPal](../../sales/payments/payment-methods/paypal/README.md)
 * [Mercanet](../sales/mercanet.md)
-* [Money Orders](../../sales/payments/payment-methods/money-orders/README.md)
+* [Money Orders](../sales/mercanet.md)
 
 #### Collecting Applicable Taxes
 

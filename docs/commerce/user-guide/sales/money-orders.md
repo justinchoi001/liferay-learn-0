@@ -10,7 +10,7 @@ To start creating an article:
 1. In the _Message_ field, create an optional note about any specific policies on money orders.
 1. Click the (+) sign at the left side of the _Message_ field. The menu gives editors the option to add an image, insert a link to a video, or insert a table, or a horizontal line break.
 
-    ![Article Display Options](./images/01.png)
+    ![Article Display Options](./money-orders/images/01.png)
 
 1. Click _Save_.
 1. Toggle the _Active_ button to _Yes_.
