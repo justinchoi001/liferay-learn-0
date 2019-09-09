@@ -22,11 +22,11 @@ Do the following to activate FedEx as a shipping method for your site:
 1. Click _FedEx_.
 1. Click the _Configurations_ tab.
 1. Enter the following:
-    * **URL**:
-    * **Key**:
-    * **Password**:
-    * **Account Number**:
-    * **Meter Number**:
+    * **URL**
+    * **Key**
+    * **Password**
+    * **Account Number**
+    * **Meter Number**
 1. Select the Dropoff Type.
 1. Check any of the _Service Types_ options applicable to your business needs.
 1. Select the Packing Type.
