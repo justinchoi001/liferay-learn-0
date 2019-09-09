@@ -2,7 +2,7 @@
 
 >(**Subscribers only**)
 
-This article details how to configure then enable FedEx as a shipping method.
+This article details how to configure and enable FedEx as a shipping method.
 
 ## Prerequisites
 
