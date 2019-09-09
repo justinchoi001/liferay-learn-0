@@ -21,7 +21,7 @@ Initial store setup is done with the [Admin account](../getting-started/introduc
 
 Global configurations for Liferay Commerce include setting the store timezone, available languages, adding regions and region specific measurement units, and more. Learn more from the following articles:
 
-* [Setting Locale Options](../locale-options/README.md)
+* [Setting Locale Options](../getting-started/locale-options.md)
 * [Adding Regions](../getting-started/adding-regions.md)
 * [Setting up Warehouses](../../catalog/managing-inventory/warehouse-reference-guide/README.md)
 * [Creating Channels](../catalog/introduction-to-channels.md)
