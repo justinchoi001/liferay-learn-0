@@ -6,19 +6,19 @@ In Liferay Commerce, Channels connect Catalogs and Products to any place product
 
 In a simple store example, all of a company's products are managed in one catalog and those products are distributed through a single channel: the company store site.
 
-<img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+![Simple store structure](./images/01.png)
 
 >A simple commerce store example.
 
 In a more complex multi-channel scenario, a company may choose to customize the availability and marketing of certain products in its catalog for each of its various channels.
 
-<img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
+![Multi-channel store structure](./images/02.png)
 
 >A more complex use case using multiple Channels.
 
 Liferay Commerce Channels makes managing products, sales, and fulfillment on a single platform simple. See [Configuring Product Visibility by Site Using Channels](./configuring-product-visibility-by-site-using-channels/README.md) for more information.
 
-<img src="./images/03.png" width="700px" style="border: #000000 1px solid;">
+![Configuring channels for a product](./images/03.png)
 
 >Product level configurations to scope product visibility to specific Channels.
 

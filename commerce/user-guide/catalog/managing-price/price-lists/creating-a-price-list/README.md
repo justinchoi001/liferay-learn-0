@@ -23,7 +23,7 @@ This article describes how to create a price list.
 1. Click _Add_.
 1. Choose a Schedule for the price list. (Leave the _Never Expire_checkbox checked in this example. Alternatively, you can set a date range for when the price list is active.)
 
-    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+    ![Adding a price list](./images/01.png)
 
 1. Click _Publish_.
 

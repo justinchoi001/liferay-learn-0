@@ -12,7 +12,7 @@ First, enable the _Fixed Tax Rate_ function:
 1. Switch the _Percentage_ toggle to _YES_ if the tax should be defined as a percentage of the purchase price. Disable to define the tax as a fixed amount.
 1. Switch the toggle to _YES_.
 
-    <img src="./images/01.png" width="700px">
+    ![Enabling fixed tax rates](./images/01.png)
 
 1. Click _Save_.
 
@@ -21,7 +21,7 @@ Next, set the tax rate for the tax category:
 1. Click the _Tax Rates_ sub-tab.
 1. Enter the tax rate in the _Rate_ field for each tax category.
 
-    <img src="./images/02.png" width="700px">
+    ![Setting a tax rate](./images/02.png)
 
 1. Click _Save_.
 

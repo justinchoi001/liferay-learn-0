@@ -21,7 +21,7 @@ To add a new Flat Rate Shipping Option:
 
 The new Shipping Option has been added and is available during the checkout process.
 
-   <img src="./images/01.png" width="700px" style="border: #E9EBF0 1px solid;">
+   ![Adding a flat rate shipping option](./images/01.png)
 
 ## Additional Information
 

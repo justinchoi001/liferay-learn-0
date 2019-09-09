@@ -1,6 +1,6 @@
 # Virtual Product Reference
 
-<img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+![Virtual product details](./images/01.png)
 
 |Field | Description |
 | --- | --- |

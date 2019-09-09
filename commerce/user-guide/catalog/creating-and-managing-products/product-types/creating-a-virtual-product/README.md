@@ -34,7 +34,7 @@ Once this virtual product has been created, store administrators need to associa
 
 1. Click the _Virtual_ sub-tab to continue.
 
-   <img src="./images/01.png" width="700px" style="border: #000000 1px; solid;">
+   ![Virtual sub-tab](./images/01.png)
 
 1. Enter the following:
     * **Insert the URL or select a file of your virtual product.**: Upload warranty.pdf
@@ -44,7 +44,7 @@ Once this virtual product has been created, store administrators need to associa
     * **Enable Sample**: unchecked
     * **Enable Terms of Use**: No
 
-   <img src="./images/02.png" width="700px" style="border: #000000 1px; solid;">
+   ![Adding virtual product details](./images/02.png)
 
 1. Click _Save_.
 

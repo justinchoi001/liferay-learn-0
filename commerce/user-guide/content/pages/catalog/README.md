@@ -4,11 +4,11 @@ The Catalog page is the primary entry point for users to browse and navigate thr
 
 If using the Minium Accelerator to create sample data, all of the widgets have been added to the page.
 
-<img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+![Minium demo catalog](./images/01.png)
 
 Otherwise, the page without any sample data but using the same layout might look like this:
 
-<img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
+![Empty catalog](./images/02.png)
 
 ## Additional Information
 

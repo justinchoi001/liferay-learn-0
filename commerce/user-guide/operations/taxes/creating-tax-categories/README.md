@@ -8,7 +8,7 @@ Tax Categories are containers for one or more tax calculations in your store. Ta
 1. Click the _Add Tax Category_ button.
 1. Enter a name and a description.
 
-    <img src="./images/01.png" width="700px">
+    ![Adding a tax category](./images/01.png)
 
 1. Click _Save_.
 

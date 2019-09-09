@@ -10,7 +10,7 @@ Calculating taxes by address sets rates for geographical areas independently. Yo
 1. Switch the _Percentage_ toggle to _YES_ if you want the tax to be defined as a percentage of the purchase price. Leave the toggle disabled to define the tax as a fixed amount.
 1. Switch the _Active_ toggle to _YES_.
 
-    <img src="./images/01.png" width="700px">
+    ![Enabling tax rates by address](./images/01.png)
 
 1. Click _Save_.
 
@@ -21,7 +21,7 @@ Next, set the Tax Rate by Category and by Address:
 1. Enter the tax rate in the _Rate_ field.
 1. Select the country, region, enter the Zip code.
 
-    <img src="./images/02.png" width="700px">
+    ![Configuring tax rate settings](./images/02.png)
 
 1. Click _Save_.
 

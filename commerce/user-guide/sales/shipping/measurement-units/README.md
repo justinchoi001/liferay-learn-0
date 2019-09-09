@@ -20,7 +20,7 @@ To enter a new dimension measurement unit (for example, centimeters):
     * **Ratio to inches**: 2.54
     * **Priority**: 4.0
 
-    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+    ![Adding a measurement unit](./images/01.png)
 
 1. Click _Save_.
 

@@ -10,7 +10,7 @@ To enable automatic currency conversion:
 1. Select _European Central Bank_ from the _Exchange Rate Provider_ dropdown menu.
 1. Toggle the _Enable Auto-Update_ radio button to _Yes_.
 
-    <img src="./images/01.png" width="700px" alt="Setting ECB as the Exchange Rate Provider">
+    ![Enabling European Central Bank conversion](./images/01.png)
 
 1. Click _Save_.
 
@@ -24,7 +24,7 @@ To change the update interval:
 1. Enter a value in minutes: 120 (every 2 hours).
 1. Check the _Enable Auto-Update_ checkbox.
 
-    <img src="./images/02.png" width="700px" alt="Set Update Interval">
+    ![Changing currency update interval](./images/02.png)
 
 1. Click _Save_.
 

@@ -17,7 +17,7 @@ When adding a large number of existing products to a new price list, populate th
     * **Price**: 100
     * **Promo Price**: 95
 
-        <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+        ![Adding a product to a price list](./images/01.png)
 
 1. Click _Save_.
 
@@ -40,7 +40,7 @@ When creating a new product, you can easily add it to an existing price list usi
     * **Price**: 100
     * **Promo Price**: 95
 
-    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+    ![Adding a product to a price list](./images/01.png)
 
 1. Click Save.
 

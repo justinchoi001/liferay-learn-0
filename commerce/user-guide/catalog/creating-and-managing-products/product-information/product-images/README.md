@@ -19,7 +19,7 @@ This article documents how to add images to a product.
 1. Enter a title: _Microfiber Cloth_.
 1. Set a priority: _1.0_.
 
-    <img src="./images/01.png" width="700px" style="border: #000000 1px solid;">
+    ![Adding a product image](./images/01.png)
 
 1. Click _Publish_.
 
@@ -27,7 +27,7 @@ The new product image has been added to the product. Note that under _Options_, 
 
 To view the image in the catalog, go to the store site and then search for the product (_Microfiber Cloth_).
 
-<img src="./images/02.png" width="700px" style="border: #000000 1px solid;">
+![Viewing product](./images/02.png)
 
 ## Adding Multiple Product Images
 
@@ -49,13 +49,13 @@ Once you have created Product Options and generated the corresponding SKUs, you 
 6. Click on the existing image.
 7. Select _6_ under the _Package Quantity_ drop down.
 
-    <img src="./images/04.png" width="700px" style="border: #000000 1px solid;">
+    ![Adding an image](./images/04.png)
 
 8. Click _Publish_.
 
 The product image has been updated with the respective Product Option. Repeat these steps as desired for all other available SKUs, such as another package quantity. In this example, different images may be used for the different package quantities. When searching for a product, you can see that all images have been included inside the Product Detail widget.
 
-<img src="./images/05.png" width="700px" style="border: #000000 1px solid;">
+![Images in Product Detail widget](./images/05.png)
 
 ## Additional Information
 

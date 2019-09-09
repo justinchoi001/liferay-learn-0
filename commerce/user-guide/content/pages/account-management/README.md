@@ -4,28 +4,28 @@ The Account Management page is where Store administrators and Account Managers m
 
 If using Minium Accelerator to create sample data, there is a site Navigation Menu where the _Account Management_ widget is located:
 
-<img src="./images/01.png" width="700px" style="borders: #000000 1px solid;">
+![Minium Site Navigation](./images/01.png)
 
 Once deployed to the page, the _Account Management_ widget lists all the accounts.
 
-<img src="./images/02.png" width="700px" style="borders: #000000 1px solid;">
+![Account Management](./images/02.png)
 
 New accounts may be created and users may be assigned to accounts.
 
-<img src="./images/03.png" width="700px" style="borders: #000000 1px solid;">
+![New account creation](./images/03.png)
 
 Account information like address, email address, and VAT number may also be added through the Account Management page.
 
-<img src="./images/07.png" width="700px" style="borders: #000000 1px solid;">
+![Account information](./images/07.png)
 
 Besides individual users, relationed organizations may be added to accounts.
 
-<img src="./images/06.png" width="700px" style="borders: #000000 1px solid;">
+![Adding organizations to an account](./images/06.png)
 
 Account specific roles may be assigned to users.
 
-<img src="./images/04.png" width="700px" style="borders: #000000 1px solid;">
+![User role selection](./images/04.png)
 
 New shipping or billing addresses may also be added to accounts using the Account Management page.
 
-<img src="./images/05.png" width="700px" style="borders: #000000 1px solid;">
+![Adding addresses to an account](./images/05.png)
