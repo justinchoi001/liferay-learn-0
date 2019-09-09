@@ -6,7 +6,7 @@ Liferay Commerce deployments consist of a hierarchy of Sites, Pages, Widgets, an
 
 Liferay Commerce is built on Liferay DXP. For more information about how Liferay DXP Sites work, see [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site).
 
-See the [Store Setup Overview](../../store-setup-overview/README.md) for more information on creating a store site.
+See the [Store Setup Overview](../getting-started/store-setup-overview.md) for more information on creating a store site.
 
 ## Site Types
 
@@ -32,6 +32,6 @@ Changing a site's type also changes which accounts appear in its Accounts widget
 
 ## Additional Information
 
-* [Store Setup Overview](../../store-setup-overview/README.md)
+* [Store Setup Overview](../getting-started/store-setup-overview.md)
 * [Building a Site](https://help.liferay.com/hc/en-us/articles/360018171231-Building-a-Site)
 * [Introduction to Accounts](../customers/introduction-to-accounts.md)
