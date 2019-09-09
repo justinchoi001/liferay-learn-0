@@ -12,17 +12,17 @@ This article serves as a walk-through for the main features of the Minium Accele
 
 Minium populates a site with several pages and widgets, providing a complete user experience for buyers. To see the full list of pages created, go to *Site Menu → Build → Pages*.
 
-![Minium Pages](./images/01.png)
+![Minium Pages](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/01.png)
 
 In general, these pages work as their names suggest, with some differences. For example, instead of using a dedicated categories page, the site's homepage displays the entire contents of the catalog. To display products of a single category, select a checkbox in the Category Facet widget.
 
-![Catalog Page](./images/02.png)
+![Catalog Page](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/02.png)
 
 ### Design
 
 The Minium accelerator includes a number of embedded features, including pop-up navigation and cart menus, and an Account selector. The navigation menu provides links to the catalog, pending and past orders, and account management, while the cart menu displays the current order. Lastly, an omni-search bar allows users to find quickly the products they are looking for.
 
-![Minium Theme](./images/03.png)
+![Minium Theme](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/03.png)
 
 Minium uses a link to the checkout page which is included in the theme-embedded cart menu.
 
@@ -32,13 +32,13 @@ The Account selector displays accounts that the current user can access (adminis
 
 Minium's catalog includes a range of sample products organized into several pre-defined categories:
 
-![Pre-set Categories](./images/04.png)
+![Pre-set Categories](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/04.png)
 
 > Note that Categories are defined at the _Global_ scope level. For more information see [Product Categories](../catalog/organizing-your-catalog-with-product-categories.md).
 
 Sample products also come with pre-set [Options](../catalog/customizing-your-product-with-product-options.md), [Specifications](../catalog/specifications.md), and Images.
 
-![Product Specifications](./images/05.png)
+![Product Specifications](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/05.png)
 
 _The sample data is added for demonstration purposes and can be deleted safely if a store administrator plan to use Minium as a basis for their store site._
 
@@ -46,7 +46,7 @@ _The sample data is added for demonstration purposes and can be deleted safely i
 
 Minium makes it easy for buyers to search the catalog quickly. In addition to the omni-search bar, Minium has a special keyboard shortcut to open the search bar. On the _Catalog_ main page, pressing forward slash (/) will open and focus the Search bar.
 
-![Search using forward slash](./images/06.png)
+![Search using forward slash](./using-the-minium-accelerator-to-jump-start-your-b2b-store/images/06.png)
 
 ## Other Configurations
 

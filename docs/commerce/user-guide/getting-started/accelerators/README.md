@@ -24,4 +24,4 @@ Your accelerated site has been created.
 
 ## Additional Information
 
-* [Using the Minium Accelerator to Jump Start Your B2B Store](./using-the-minium-accelerator-to-jump-start-your-b2b-store/README.md)
+* [Using the Minium Accelerator to Jump Start Your B2B Store](../getting-started/using-the-minium-accelerator-to-jump-start-your-b2b-store.md)
