@@ -12,7 +12,7 @@ To enable an approval workflow on the buyer's side, follow these steps:
 2. Click on the _Order Workflows_ tab.
 3. Click on _Approval Workflow_ field and select from the available options in the drop down.
 
-   ![Approval Workflow](./images/01.png)
+   ![Approval Workflow](./enabling-or-disabling-order-workflows/images/01.png)
 
 4. Click *Save*.
 
@@ -23,7 +23,7 @@ To enable a transmission workflow on the seller's side, follow these steps:
 1. Navigate to the _Order Workflows_ tab (per above).
 2. Click on the _Transmission Workflow_ field and select from the available options in the drop down.
 
-   ![Transmission Workflow](./images/02.png)
+   ![Transmission Workflow](./enabling-or-disabling-order-workflows/images/02.png)
 
 3. Click _Save_.
 

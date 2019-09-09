@@ -39,7 +39,7 @@ The order has been approved (or rejected). To review additional orders, return t
 ## Additional Information
 
 * [Order Workflows](../README.md)
-* [Enabling or Disabling Order Workflows](../enabling-or-disabling-order-workflows/README.md)
+* [Enabling or Disabling Order Workflows](../sales/enabling-or-disabling-order-workflows.md)
 * [Order Life Cycle](../sales/order-life-cycle.md)
 * [Orders Menu](../sales/orders-menu.md)
 * Order Management Statuses
