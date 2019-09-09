@@ -23,4 +23,4 @@ This product SKU’s base price, promo price (optional), and cost (optional) hav
 **Note 1**: To modify the price of a product SKU, you can use promo prices, price lists and discounts.
 
 * [Creating a Price List](../catalog/creating-a-price-list.md)
-* [Adding Discounts by Product](../../../../marketing/promotions/adding-discounts-by-product/README.md)
+* [Adding Discounts by Product](../marketing/adding-discounts-by-product.md)

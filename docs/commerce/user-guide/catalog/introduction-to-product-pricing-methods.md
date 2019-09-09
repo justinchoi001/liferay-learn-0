@@ -43,4 +43,4 @@ The pricing hierarchy can be visualized in the following diagram:
 * [Creating a Price List](../catalog/creating-a-price-list.md)
 * [Adding Products to a Price List](../price-lists/adding-products-to-a-price-list/README.md)
 * [Adding Tiered Pricing](../catalog/adding-products-to-a-price-list.md)
-* [Adding Discounts by Product](../../../marketing/promotions/adding-discounts-by-product/README.md)
+* [Adding Discounts by Product](../marketing/adding-discounts-by-product.md)
