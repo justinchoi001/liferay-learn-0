@@ -114,7 +114,7 @@ To learn more about how accounts, inviting users accounts, account roles, and mo
 
 * [Introduction to Accounts](../customers/introduction-to-accounts.md)
 * [Creating a New Account](../customers/creating-a-new-account.md)
-* [Inviting Users to an Account](../../customers/account-management/inviting-users-to-an-account/README.md)
+* [Inviting Users to an Account](../customers/inviting-users-to-an-account.md)
 * [Adding Addresses to an Account](../customers/adding-addresses-to-an-account.md)
 * [Account Roles](../customers/account-roles.md)
 * [Assigning Account Roles](../customers/assigning-account-roles.md)
