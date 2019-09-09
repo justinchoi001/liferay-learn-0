@@ -10,7 +10,7 @@ The catalog supports three product types: Simple, Grouped, and Virtual.
 
 ## Product Detail Reference
 
-![Product Details](./images/01.png)
+![Product Details](./introduction-to-product-types/images/01.png)
 
 | Field | Description |
 | --- | --- |

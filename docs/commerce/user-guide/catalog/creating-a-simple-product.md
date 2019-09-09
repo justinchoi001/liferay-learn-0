@@ -78,7 +78,7 @@ Store administrators can also add attachments that are associated with a particu
 
 ## Additional Information
 
-* [Introduction to Product Types](../introduction-to-product-types/README.md)
+* [Introduction to Product Types](../catalog/introduction-to-product-types.md)
 * [Creating a Grouped Product](../catalog/creating-a-grouped-product.md)
 * [Creating a Virtual Product](../catalog/creating-a-virtual-product.md)
 * [Setting Inventory by Warehouse](../../../managing-inventory/setting-inventory-by-warehouse/README.md)

@@ -70,7 +70,7 @@ After setting up the store, begin [creating a catalog](../../catalog/creating-a-
 
 ### Adding Products to a Catalog
 
-When adding a product, there are three product types: **Simple**, **Grouped**, and **Virtual**. See the [Introduction to Product Types](../../catalog/creating-and-managing-products/product-types/introduction-to-product-types/README.md) for more information.
+When adding a product, there are three product types: **Simple**, **Grouped**, and **Virtual**. See the [Introduction to Product Types](../catalog/introduction-to-product-types.md) for more information.
 
 #### Adding Product Information
 
