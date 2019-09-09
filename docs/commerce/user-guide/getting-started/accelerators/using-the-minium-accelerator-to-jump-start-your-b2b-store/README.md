@@ -34,7 +34,7 @@ Minium's catalog includes a range of sample products organized into several pre-
 
 ![Pre-set Categories](./images/04.png)
 
-> Note that Categories are defined at the _Global_ scope level. For more information see [Product Categories](../../../catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md).
+> Note that Categories are defined at the _Global_ scope level. For more information see [Product Categories](../catalog/organizing-your-catalog-with-product-categories.md).
 
 Sample products also come with pre-set [Options](../../../catalog/creating-and-managing-products/customizing-your-product-with-product-options/README.md), [Specifications](../../../catalog/creating-and-managing-products/product-information/specifications/README.md), and Images.
 

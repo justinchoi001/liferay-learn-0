@@ -30,7 +30,7 @@ Liferay Commerce contains a catalog management system that supports a variety of
 
 ![Channels enabled for a product](./images/03.png)
 
-[Categories](../../catalog/creating-and-managing-products/categories/organizing-your-catalog-with-product-categories/README.md) and [Product Relationships](../../catalog/creating-and-managing-products/product-information/related-products-up-sells-and-cross-sells/README.md) simplify store navigation and increase revenue generating opportunities.
+[Categories](../catalog/organizing-your-catalog-with-product-categories.md) and [Product Relationships](../../catalog/creating-and-managing-products/product-information/related-products-up-sells-and-cross-sells/README.md) simplify store navigation and increase revenue generating opportunities.
 
 ![Product details and related products](./images/04.png)
 

@@ -85,7 +85,7 @@ Store administrators can also add attachments that are associated with a particu
 
 ### Organize with Categories
 
-[Product Categories](../../categories/creating-a-new-product-category/README.md) are used to organize products. Product categories may be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group.
+[Product Categories](../catalog/creating-a-new-product-category.md) are used to organize products. Product categories may be used to apply discounts or other offers to a set of products, to assist buyers in finding products, or to promote certain products to a specified account or account group.
 
 ### Associate with Related Products
 
