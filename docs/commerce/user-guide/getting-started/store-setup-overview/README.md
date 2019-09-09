@@ -41,7 +41,7 @@ The following sections cover configurations that are store site specific.
 Liferay Commerce provides support for several third party payment processors and also allows for the use of money orders to accept payment. See:
 
 * [Payments](../payments/README.md)
-* [Managing Payment Methods](../payments/managing-payment-methods/README.md)
+* [Managing Payment Methods](../getting-started/managing-payment-methods.md)
 * [Authorize.net](../../sales/payments/payment-methods/authorize.net/README.md)
 * [PayPal](../../sales/payments/payment-methods/paypal/README.md)
 * [Mercanet](../../sales/payments/payment-methods/mercanet/README.md)

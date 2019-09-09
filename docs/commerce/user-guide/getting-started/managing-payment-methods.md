@@ -2,11 +2,11 @@
 
 To manage payment methods, navigate to _Site Administration_ → _Commerce_ → _Settings_ and select the Payment Methods tab. Select a method to edit it.
 
-![Payment Methods page](./images/01.png)
+![Payment Methods page](./managing-payment-methods/images/01.png)
 
 The _Edit Payment Method_ UI has three tabs: _Details_, _Configuration_ and _Restrictions_. The _Details_ and _Restrictions_ tabs share the same fields across the different payment methods. However, each payment method has a unique configuration screen.
 
-![Configuring a payment method](./images/02.png)
+![Configuring a payment method](./managing-payment-methods/images/02.png)
 
 **Details**: Each details screen contains fields that determine how the payment method is rendered in the Checkout widget.
 
@@ -22,7 +22,7 @@ The _Edit Payment Method_ UI has three tabs: _Details_, _Configuration_ and _Res
 
 **Restrictions**: A restriction deactivates a payment method for buyers in specified countries.
 
-![Setting payment method restrictions](./images/03.png)
+![Setting payment method restrictions](./managing-payment-methods/images/03.png)
 
 ## Additional Information
 
