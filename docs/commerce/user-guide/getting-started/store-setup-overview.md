@@ -127,5 +127,5 @@ When an order has been received, the order may be transmitted to an ERP and opti
 * [Order Life Cycle](../../sales/order-management/order-life-cycle/README.md)
 * [Introduction to Shipments](../../sales/order-management/managing-shipments/introduction-to-shipments/README.md)
 * [Creating a shipment](../../sales/order-management/managing-shipments/creating-a-shipment/README.md)
-* [Cancelling a Shipment](../../sales/order-management/managing-shipments/cancelling-a-shipment/README.md)
+* [Cancelling a Shipment](../sales/cancelling-a-shipment.md)
 * Shipping Override
