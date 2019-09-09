@@ -2,7 +2,7 @@
 
 Minium is a Liferay Commerce [Accelerator](../README.md) that quickly and easily sets up a business-to-business (B2B) store designed to meet the needs of a manufacturer, showcasing a modern B2B digital commerce experience. It is designed with features that make the experience as smooth as possible by having elements that are both functional and elegant.
 
-The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium also highlights Liferay Commerce's B2B Account Management functionality, enabling streamlined account management and self-service through the use of [Account Roles](../../../customers/account-management/account-roles/README.md), [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md), and [Order Workflows](../../../sales/order-management/order-workflows/).
+The accelerator accomplishes this by providing the base hierarchy of site pages and design, sample data, and configurations for a site in a single action. Minium also highlights Liferay Commerce's B2B Account Management functionality, enabling streamlined account management and self-service through the use of [Account Roles](../customers/account-roles.md), [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md), and [Order Workflows](../../../sales/order-management/order-workflows/).
 
 This article serves as a walk-through for the main features of the Minium Accelerator.
 
@@ -63,6 +63,6 @@ Minium applies a number of other site configurations that are not set out-of-the
 | Default Image | &#10003; |
 | [Measurement Units](../../../sales/shipping/measurement-units/README.md) - Dimensions | inches, millimeters, feet, meters |
 | [Measurement Units](../../../sales/shipping/measurement-units/README.md) - Weight | ounces, pounds, kilograms, grams |
-| [Account Roles](../../../customers/account-management/account-roles/README.md) | Buyer, Account Manager, Sales Agent
+| [Account Roles](../customers/account-roles.md) | Buyer, Account Manager, Sales Agent
 | Availability Estimates | 3-5 days, 5-7 days, 7-14 days |
 | [Product Relation Type](../catalog/related-products-up-sells-and-cross-sells.md) | Up-Sell, Spare, Related, Accessories, Cross-Sell  |

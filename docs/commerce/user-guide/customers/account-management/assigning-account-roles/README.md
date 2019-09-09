@@ -19,4 +19,4 @@ This user has been assigned to the _Buyer_ role.
 
 ## Additional Information
 
-* [Account Roles](../account-roles/README.md)
+* [Account Roles](../customers/account-roles.md)

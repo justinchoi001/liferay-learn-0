@@ -4,7 +4,7 @@ In Liferay Commerce, accounts store information about customers and are used to 
 
 ## Account Types
 
-* **Business Accounts**: For the _B2B_ site type, an individual customer _must_ be assigned to a _Business_ account in order to make a purchase. Multiple users may be associated with a single business account and these users can be assigned unique [Account Roles](../account-roles/README.md).
+* **Business Accounts**: For the _B2B_ site type, an individual customer _must_ be assigned to a _Business_ account in order to make a purchase. Multiple users may be associated with a single business account and these users can be assigned unique [Account Roles](../customers/account-roles.md).
 
 * **Personal Accounts**: For the _B2C_ site type, individual authenticated customers will automatically be associated with a _Personal_ account and be able to make purchases.
 
@@ -26,7 +26,7 @@ Accounts may also be grouped together as needed to facilitate account management
 
 ![List of Account Groups in the Control Panel](./images/02.png)
 
-Finally, individual users associated with a given Business Account may be given _Account Roles_ to delegate and self-service their accounts for their business. For more information see [Account Roles](../account-roles/README.md)
+Finally, individual users associated with a given Business Account may be given _Account Roles_ to delegate and self-service their accounts for their business. For more information see [Account Roles](../customers/account-roles.md)
 
 ![Assigning User Roles in the Account Management Widget](./images/03.png)
 
@@ -43,4 +43,4 @@ See the following articles to learn more about common Account Management actions
 ## Additional Information
 
 * [Sites and Site Types](../../../getting-started/site-management-basics/sites-and-site-types/README.md)
-* [Account Roles](../account-roles/README.md)
+* [Account Roles](../customers/account-roles.md)

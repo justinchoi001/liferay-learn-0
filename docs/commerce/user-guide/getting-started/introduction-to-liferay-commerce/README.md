@@ -38,7 +38,7 @@ Managing product pricing is flexible through the use of [Price Lists](../catalog
 
 ## B2B Focused Account Management and Purchasing Workflow
 
-Liferay Commerce is optimized for business-to-business transactions with features designed to address B2B needs. [Accounts](../../customers/account-management/introduction-to-accounts/README.md), [Account Groups](../../customers/account-management/creating-a-new-account-group/README.md), and [Account Roles](../../customers/account-management/account-roles/README.md) work together to ensure that customer needs are met with tailored experiences, self-service, and purchasing workflows.
+Liferay Commerce is optimized for business-to-business transactions with features designed to address B2B needs. [Accounts](../../customers/account-management/introduction-to-accounts/README.md), [Account Groups](../../customers/account-management/creating-a-new-account-group/README.md), and [Account Roles](../customers/account-roles.md) work together to ensure that customer needs are met with tailored experiences, self-service, and purchasing workflows.
 
 ![User role selection](./images/05.png)
 
