@@ -12,7 +12,7 @@ The hierarchy consists of these levels:
 
 **Price List**: This price applies to specific products for buyers in selected [Accounts](../../../customers/account-management/creating-a-new-account/README.md) and [Account Groups](../../../customers/account-management/creating-a-new-account-group/README.md). Prices in the price list can be _higher_ or _lower_ than the base price. If a price list applies to a transaction, it supersedes the base price.
 
-**Tiered Price**: This price applies to orders that meet specified minimum quantity requirements (bulk orders). It is only available in the context of a [price list](../price-lists/creating-a-price-list/README.md) and it supersedes the list's price.
+**Tiered Price**: This price applies to orders that meet specified minimum quantity requirements (bulk orders). It is only available in the context of a [price list](../catalog/creating-a-price-list.md) and it supersedes the list's price.
 
 **Promo Price**: This price can be applied to a base price, a price list price, and to a tiered price. Once applied, the promo price supersedes each of them. When a base price is superseded by a price list or tiered price, its promo price is superseded as well. _The applicable price and promo price appear together on the product page so that buyers see the markdown._
 
@@ -40,7 +40,7 @@ The pricing hierarchy can be visualized in the following diagram:
 ## Additional Information
 
 * [Setting a Product's Base Price](../base-price/setting-a-products-base-price/README.md)
-* [Creating a Price List](../price-lists/creating-a-price-list/README.md)
+* [Creating a Price List](../catalog/creating-a-price-list.md)
 * [Adding Products to a Price List](../price-lists/adding-products-to-a-price-list/README.md)
 * [Adding Tiered Pricing](../catalog/adding-products-to-a-price-list.md)
 * [Adding Discounts by Product](../../../marketing/promotions/adding-discounts-by-product/README.md)

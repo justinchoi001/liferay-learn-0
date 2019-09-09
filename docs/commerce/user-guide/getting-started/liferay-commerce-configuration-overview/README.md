@@ -11,7 +11,7 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 * [Channels](../catalog/managing-channels.md)
 * Catalogs
 * Products
-* [Price Lists](../../catalog/managing-price/price-lists/creating-a-price-list/README.md)
+* [Price Lists](../catalog/creating-a-price-list.md)
 * Discounts
 * [Orders](../../sales/order-management/orders-menu/README.md)
 * Shipments
