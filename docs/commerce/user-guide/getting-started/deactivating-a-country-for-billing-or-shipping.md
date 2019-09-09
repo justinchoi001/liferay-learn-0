@@ -10,7 +10,7 @@ This article documents how to deactivate a country in the Control Panel.
 1. Switch the _Billing Allowed_ toggle to _No_.
 1. Switch the _Shipping Allowed_ toggle to _No_.  
 
-    ![Deactivating a country](./images/01.png)
+    ![Deactivating a country](./deactivating-a-country-for-billing-or-shipping/images/01.png)
 
 1. Click _Save_.
 
