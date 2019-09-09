@@ -29,5 +29,5 @@ Your store will now collect a fixed rate for all orders that fall under this tax
 
 ## Additional Information
 
-* [Setting Tax Rates by Address](../setting-tax-rate-by-address/README.md)
+* [Setting Tax Rates by Address](../operations/setting-tax-rate-by-address.md)
 * [Creating Tax Categories](../operations/creating-tax-categories.md)
