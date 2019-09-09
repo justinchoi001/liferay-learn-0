@@ -2,7 +2,7 @@
 
 Building a store in Liferay Commerce requires more than a complete catalog. Store administrators building a storefront from scratch will need to add a series of pages to display and sell their products. This article serves as a reference for pages that may be created for a functional storefront.
 
-Using an [Accelerator](../../../getting-started/accelerators/README.md), such as Minium will create these pages for the user. Liferay Commerce is built on Liferay DXP - click to learn more about [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages).
+Using an [Accelerator](../getting-started/accelerators.md), such as Minium will create these pages for the user. Liferay Commerce is built on Liferay DXP - click to learn more about [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages).
 
 The following types of pages may be created:
 

@@ -14,7 +14,7 @@ To use an Accelerator:
 1. Click the (+) button to add a new site.
 1. Choose an Accelerator (Minium).
 
-    ![Selecting a Site Template](./images/01.png)
+    ![Selecting a Site Template](./accelerators/images/01.png)
 
 1. Enter a name: _Your Site_.
 1. Click _Save_.
