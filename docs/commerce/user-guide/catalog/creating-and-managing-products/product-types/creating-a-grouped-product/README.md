@@ -95,7 +95,7 @@ To learn how to configure inventory for your product, see: [Setting Inventory by
 
 ### Upload Product Images and Attachments
 
-[Product images](../../product-information/product-images/README.md) help to ensure that customers know what they are buying. Each product variant (SKU) can have their own associated product image. Click the _Images_ sub-tab to add all product images.
+[Product images](../catalog/product-images.md) help to ensure that customers know what they are buying. Each product variant (SKU) can have their own associated product image. Click the _Images_ sub-tab to add all product images.
 
 Store administrators can also add attachments that are associated with a particular product. Click the _Attachments_ sub-tab to add documents.
 

@@ -22,7 +22,7 @@ Liferay Commerce includes a wide range of tools for setting up a storefront. New
 
 ## Multi-Channel Catalog and Product Information Management
 
-Liferay Commerce contains a catalog management system that supports a variety of [product types](../../catalog/creating-and-managing-products/product-types/introduction-to-product-types/README.md) and stores a wide range of product data. [Product options](../catalog/customizing-your-product-with-product-options.md), [pricing](../../catalog/managing-price/introduction-to-product-pricing-methods/README.md), [images](../../catalog/creating-and-managing-products/product-information/product-images/README.md), and [specifications](../../catalog/creating-and-managing-products/product-information/specifications/README.md) are a few examples. Products are then readily available to a distribution channel of choice.
+Liferay Commerce contains a catalog management system that supports a variety of [product types](../../catalog/creating-and-managing-products/product-types/introduction-to-product-types/README.md) and stores a wide range of product data. [Product options](../catalog/customizing-your-product-with-product-options.md), [pricing](../../catalog/managing-price/introduction-to-product-pricing-methods/README.md), [images](../catalog/product-images.md), and [specifications](../../catalog/creating-and-managing-products/product-information/specifications/README.md) are a few examples. Products are then readily available to a distribution channel of choice.
 
 ![Product catalog](./images/02.png)
 
