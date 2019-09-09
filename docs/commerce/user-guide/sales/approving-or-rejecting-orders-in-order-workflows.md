@@ -8,15 +8,15 @@ Once the buyer has submitted his cart for pre-approval, or placed an order for s
 
 1. Navigate to *User Administration* → *My Account* → *Notifications*.
 
-   ![Notifications](./images/01.png)
+   ![Notifications](./approving-or-rejecting-orders-in-order-workflows/images/01.png)
 
 1. Click on the order workflow notification.
 
-   ![Notifications List](./images/02.png)
+   ![Notifications List](./approving-or-rejecting-orders-in-order-workflows/images/02.png)
 
 1. Click the _3-dot icon_ in the upper-right corner → *Assign to Me*.
 
-   ![Review](./images/03.png)
+   ![Review](./approving-or-rejecting-orders-in-order-workflows/images/03.png)
 
     > **Note:** Alternatively, click _Assign to..._ and select another user to review the Commerce Order.
 
@@ -24,15 +24,15 @@ Once the buyer has submitted his cart for pre-approval, or placed an order for s
 
 1. Click the _3-dot icon_ in the upper-right corner → *Approve* (or *Reject*).
 
-   ![Review Drop Down](./images/04.png)
+   ![Review Drop Down](./approving-or-rejecting-orders-in-order-workflows/images/04.png)
 
 1. Add a comment (optionally) and click *Done*.
 
-   ![Adding a Comment](./images/05.png)
+   ![Adding a Comment](./approving-or-rejecting-orders-in-order-workflows/images/05.png)
 
     The reviewed order is then displayed in _My Workflow Tasks_.
 
-   ![Order Approved](./images/06.png)
+   ![Order Approved](./approving-or-rejecting-orders-in-order-workflows/images/06.png)
 
 The order has been approved (or rejected). To review additional orders, return to the *Notifications* page and repeat the steps outlined above.
 
