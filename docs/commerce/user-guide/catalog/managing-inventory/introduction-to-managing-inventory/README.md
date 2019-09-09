@@ -10,7 +10,7 @@ Warehouses represent the physical locations where product inventory is managed a
 
 See the [Warehouse Reference Guide](../warehouse-reference-guide/README.md) and the [Adding a New Warehouse](../adding-a-new-warehouse/README.md) article for more information about how to manage warehouses.
 
-Warehouses must be associated for at least one channel. See the [Introduction to Channels](../../creating-and-managing-products/channels/introduction-to-channels/README.md) article on how channels work.
+Warehouses must be associated for at least one channel. See the [Introduction to Channels](../catalog/introduction-to-channels.md) article on how channels work.
 
 ## Availability Estimates
 

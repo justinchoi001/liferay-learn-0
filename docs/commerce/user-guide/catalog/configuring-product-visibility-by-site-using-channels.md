@@ -6,7 +6,7 @@ For the purpose of this example, we will consider a scenario of a multi-region s
 
 ![Catalog organization](./configuring-product-visibility-by-site-using-channels/images/01.png)
 
-To learn more about the using Channels in Liferay Commerce, see: [Introduction to Channels](../introduction-to-channels/README.md).
+To learn more about the using Channels in Liferay Commerce, see: [Introduction to Channels](../catalog/introduction-to-channels.md).
 
 ## Prerequisites
 
@@ -33,5 +33,5 @@ The product will be visible only in the selected Channels.
 
 ## Additional Information
 
-* [Introduction to Channels](../introduction-to-channels/README.md)
+* [Introduction to Channels](../catalog/introduction-to-channels.md)
 * [Managing Channels](../managing-channels/README.md)

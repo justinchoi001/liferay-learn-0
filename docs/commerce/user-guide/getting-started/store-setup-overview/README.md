@@ -24,7 +24,7 @@ Global configurations for Liferay Commerce include setting the store timezone, a
 * [Setting Locale Options](../locale-options/README.md)
 * [Adding Regions](../country-options/adding-regions/README.md)
 * [Setting up Warehouses](../../catalog/managing-inventory/warehouse-reference-guide/README.md)
-* [Creating Channels](../../catalog/creating-and-managing-products/channels/introduction-to-channels/README.md)
+* [Creating Channels](../catalog/introduction-to-channels.md)
 
 ### Create a Store Site
 
