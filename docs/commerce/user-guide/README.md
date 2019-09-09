@@ -70,7 +70,7 @@
 * [Introduction to Managing Inventory](../catalog/introduction-to-managing-inventory.md)
 * [Adding a New Warehouse](./catalog/adding-a-new-warehouse.md)
 * [Setting Inventory by Warehouse](./catalog/setting-inventory-by-warehouse.md)
-* [Low Inventory Activity](./catalog/low-stock-activity.md)
+* [Low Inventory Activity](../catalog/low-stock-activity.md)
 * [Availability Estimates](./catalog/availability-estimates.md)
 * [Product Inventory Configuration Reference](./catalog/product-inventory-configuration-reference.md)
 

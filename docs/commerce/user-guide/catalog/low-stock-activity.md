@@ -20,7 +20,7 @@ To configure a Low Stock Activity:
     * **Allowed Order Quantities**: 1
     * **Multiple Order Quantity**: 1
 
-    ![Product Configuration for Low Stock Activity](./images/01.png "Product Configuration for Low Stock Activity")
+    ![Product Configuration for Low Stock Activity](./low-stock-activity/images/01.png "Product Configuration for Low Stock Activity")
 
 1. Click _Save_.
 
