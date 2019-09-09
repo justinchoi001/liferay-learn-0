@@ -4,7 +4,7 @@ The _Shipments_ menu is where store managers can create and track a shipment aft
 
 Navigate to the _Control Panel_ → _Commerce_ → _Shipments_.
 
-![Shipments Menu](./images/01.png)
+![Shipments Menu](./introduction-to-shipments/images/01.png)
 
 The _Shipments_ menu displays all created shipments in all statuses. Click the (+) button to add a new shipment.
 
@@ -14,7 +14,7 @@ Clicking on a particular shipment number (for example, _41250_) displays the Shi
 
 The _Shipment Details_ tab contains the following information:
 
-![Shipment Details Menu](./images/02.png)
+![Shipment Details Menu](./introduction-to-shipments/images/02.png)
 
 | Field | Description |
 | --- | --- |
@@ -37,7 +37,7 @@ The _Shipment Details_ tab contains the following information:
 
 The _Shipment Items_ Tab contains the following information:
 
-![Shipment Items Tab](./images/03.png)
+![Shipment Items Tab](./introduction-to-shipments/images/03.png)
 
 | Field | Description |
 | --- | --- |

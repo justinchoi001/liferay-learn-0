@@ -14,4 +14,4 @@ Shipping methods may be restricted by country or region. To learn more, see [App
 
 ## Additional Information
 
-* [Introduction to Shipments](../../sales/order-management/managing-shipments/introduction-to-shipments/README.md)
+* [Introduction to Shipments](../sales/introduction-to-shipments.md)
