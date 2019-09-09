@@ -6,11 +6,11 @@ The Cart page is a required page that allows users to manage the contents of the
 
 **Cart Summary** displays the cart's subtotal, any applicable taxes, the total amount, and the _Checkout_ button.
 
-![Cart Summary](./images/01.png)
+![Cart Summary](./cart/images/01.png)
 
 **Mini Cart** displays the cart’s contents and an _Edit Cart_ button that links to the Commerce _Cart_ widget. The _Mini Cart_ widget has to be deployed on the same page with the _Cart_ widget.
 
-![Mini Cart](./images/02.png)
+![Mini Cart](./cart/images/02.png)
 
 ## Additional Information
 
