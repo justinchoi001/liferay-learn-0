@@ -28,7 +28,7 @@ With two _Order Workflows_ to choose from, _Approval Workflow_ and _Transmission
 
 ## Additional Information
 
-* [Order Life Cycle](../order-life-cycle/README.md)
+* [Order Life Cycle](../sales/order-life-cycle.md)
 * Enabling Order Workflows
 * Approving/Rejecting Orders in Order Workflows
 * [Orders Menu](../orders-menu/README.md)

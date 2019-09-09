@@ -2,7 +2,7 @@
 
 An Order stores data regarding a potential or past transaction. This article provides an overview of the order life cycle from open cart to fulfilled order.
 
-![Order life cycle](./images/01.png)
+![Order life cycle](./order-life-cycle/images/01.png)
 
 >**Figure 1**. Order Life Cycle
 

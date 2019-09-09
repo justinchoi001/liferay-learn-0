@@ -8,7 +8,7 @@ This article gives a brief overview of the three order management status types â
 
 ## Order Status
 
-The *Order Status* gives more precise information about where an order is in the [order life cycle](../order-life-cycle/README.md). Each order status appears on only one tab on the [*Orders* Menu](../orders-menu/README.md): either the [*Open*](../orders-menu/README.md#open), [*Pending*](../orders-menu/README.md#pending), or [*Transmitted*](../orders-menu/README.md#transmitted) tab.
+The *Order Status* gives more precise information about where an order is in the [order life cycle](../sales/order-life-cycle.md). Each order status appears on only one tab on the [*Orders* Menu](../orders-menu/README.md): either the [*Open*](../orders-menu/README.md#open), [*Pending*](../orders-menu/README.md#pending), or [*Transmitted*](../orders-menu/README.md#transmitted) tab.
 
 ### Open Tab
 
@@ -95,7 +95,7 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 * [Orders Menu](../orders-menu/README.md)
 * [Order Information](../sales/order-information.md)
-* [Order Life Cycle](../order-life-cycle/README.md)
+* [Order Life Cycle](../sales/order-life-cycle.md)
 * [Order Workflows](../order-workflows/README.md)
 * [Enabling or Disabling Order Workflows](../order-workflows/enabling-or-disabling-order-workflows/README.md)
 * [Approving or Rejecting Orders in Order Workflows](../order-workflows/approving-or-rejecting-orders-in-order-workflows/README.md)

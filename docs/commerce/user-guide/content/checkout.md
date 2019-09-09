@@ -32,7 +32,7 @@ As noted above, this page appears only if the buyer's billing address is differe
 
 ![Order Confirmation step](./checkout/images/06.png)
 
-When an order is confirmed, the order is ready for processing by the seller. See [Order Life Cycle](../../../sales/order-management/order-life-cycle/README.md) for more information.
+When an order is confirmed, the order is ready for processing by the seller. See [Order Life Cycle](../sales/order-life-cycle.md) for more information.
 
 ## Additional Information
 

@@ -1,6 +1,6 @@
 # Orders Menu
 
-All orders in Liferay Commerce can be viewed and managed by an administrator in the _Orders_ menu. Here, orders are displayed in the _Open_, _Pending_, and _Transmitted_ tabs according to the order’s progress through the [order life cycle](../order-life-cycle/README.md).
+All orders in Liferay Commerce can be viewed and managed by an administrator in the _Orders_ menu. Here, orders are displayed in the _Open_, _Pending_, and _Transmitted_ tabs according to the order’s progress through the [order life cycle](../sales/order-life-cycle.md).
 
    ![Orders Menu Overview](./images/01.png "Orders Menu Overview")
 
@@ -32,7 +32,7 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
 
 Order information in the *Orders* menu can also be presented to other users – particularly buyers – using the *Open Carts* widget (for orders on the *Open* tab) and the *Orders* widget (for orders on the *Pending* or *Transmitted* tabs). See [Pending Orders](../content/pending-orders.md) and [Placed Orders](../content/placed-orders.md) for details.
 
-* [Order Life Cycle](../order-life-cycle/README.md)
+* [Order Life Cycle](../sales/order-life-cycle.md)
 * [Order Information](../sales/order-information.md)
 * [Order Workflows](../order-workflows/README.md)
 * Order Management Statuses

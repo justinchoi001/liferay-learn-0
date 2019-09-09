@@ -37,6 +37,6 @@ To disable an order workflow, simply navigate to the _Order Workflows_ tab, sele
 
 * [Order Workflows](../README.md)
 * [Approving or Rejecting Orders](../approving-or-rejecting-orders/README.md)
-* [Order Life Cycle](../../order-life-cycle/README.md)
+* [Order Life Cycle](../sales/order-life-cycle.md)
 * [Orders Menu](../../orders-menu/README.md)
 * Order Management Statuses

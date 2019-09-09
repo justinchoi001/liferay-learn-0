@@ -39,7 +39,7 @@ The *Notes* tab displays notes that have been previously added to an order and a
 
 ## Additional Information
 
-* [Order Life Cycle](../order-life-cycle/README.md)
+* [Order Life Cycle](../sales/order-life-cycle.md)
 * [Orders Menu](../orders-menu/README.md)
 * [Order Workflows](../order-workflows/README.md)
 * Order Management Statuses
