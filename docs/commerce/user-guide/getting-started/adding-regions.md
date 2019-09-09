@@ -13,7 +13,7 @@ This article describes to how to add states, provinces, or other administrative 
     * **Priority**: 6.0
 1. Switch the toggle to _Active_.
 
-    ![Adding the Grand-Est Region](./images/01.png)
+    ![Adding the Grand-Est Region](./adding-regions/images/01.png)
 1. Click _Save_.
 
 The French region _Grand-Est_ is now added to the list of regions. _Grand-Est_ will appear in the Region list if France is chosen in the _Country_ field on the _Shipping Address_ page. Repeat these steps as necessary.
