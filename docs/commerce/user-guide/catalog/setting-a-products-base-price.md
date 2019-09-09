@@ -12,7 +12,7 @@ Each product SKU must have at a set base price. To assign one price to one SKU:
     * **Promo Price**: (leave it blank) (If you enter this field, then both the price above and promo price will appear on the product page so that buyers can see the markdown.)
     * **Cost**: 20.00
 
-    ![Setting a product's base price](./images/01.png)
+    ![Setting a product's base price](./setting-a-products-base-price/images/01.png)
 
 1. Click Save.
 
