@@ -4,7 +4,7 @@ Every order in Liferay Commerce contains important [order information](../sales/
 
 This article gives a brief overview of the three order management status types – *Order Status*, *Payment Status*, and *Workflow Status* –  found on the [*Orders* Menu](../orders-menu/README.md).
 
-   ![Order Management Statuses](./images/01.png)
+   ![Order Management Statuses](./order-management-statuses/images/01.png)
 
 ## Order Status
 
@@ -14,7 +14,7 @@ The *Order Status* gives more precise information about where an order is in the
 
 There are two order statuses available on the *Open* tab: *Open* and *In Progress*.
 
-   ![Order Status Open Tab](./images/02.png)
+   ![Order Status Open Tab](./order-management-statuses/images/02.png)
 
 | Order Status | Description |
 | --- | --- |
@@ -25,7 +25,7 @@ There are two order statuses available on the *Open* tab: *Open* and *In Progres
 
 There is one order status available on the *Pending* tab: *To Transmit*.
 
-   ![Order Status Pending Tab](./images/03.png)
+   ![Order Status Pending Tab](./order-management-statuses/images/03.png)
 
 | Order Status | Description |
 | --- | --- |
@@ -35,7 +35,7 @@ There is one order status available on the *Pending* tab: *To Transmit*.
 
 There are twelve order statuses available on the *Transmitted* tab, as listed below.
 
-   ![Order Status Transmitted Tab](./images/04.png)
+   ![Order Status Transmitted Tab](./order-management-statuses/images/04.png)
 
 | Order Status | Description |
 | --- | --- |
@@ -56,7 +56,7 @@ There are twelve order statuses available on the *Transmitted* tab, as listed be
 
 The *Payment Status* gives information about whether payment has been made and received for an order. On the *Pending* and *Transmitted* tabs on the [*Orders* Menu](../orders-menu/README.md), there are three payment statuses available: *Authorized*, *Paid*, and *Pending*. (On the *Open* tab, an order's payment status is always *Pending*.)
 
-   ![Payment Status](./images/05.png)
+   ![Payment Status](./order-management-statuses/images/05.png)
 
 | Payment Status | Description |
 | --- | --- |
@@ -72,7 +72,7 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 *Workflow Status* on the *Open* tab refers to the order's progress through the [*Approval Workflow*](../order-workflows/README.md#approval-workflow-buyer-side-cart-approval-only). For this order workflow, there are three workflow statuses available: *Draft*, *Pending*, and *Approved*.
 
-   ![Workflow Status Open Tab](./images/06.png)
+   ![Workflow Status Open Tab](./order-management-statuses/images/06.png)
 
 | Workflow Status | Description |
 | --- | --- |
@@ -84,7 +84,7 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 *Workflow Status* on the *Pending* tab refers to the order's progress through the [*Transmission Workflow*](../order-workflows/README.md#transmission-workflow-seller-side-order-approval-only). For this order workflow, there are two workflow statuses available: *Pending* and *Approved*.
 
-   ![Workflow Status Pending and Transmitted Tab](./images/07.png)
+   ![Workflow Status Pending and Transmitted Tab](./order-management-statuses/images/07.png)
 
 | Workflow Status | Description |
 | --- | --- |
