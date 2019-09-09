@@ -14,7 +14,7 @@ The following types of pages may be created:
 | [Checkout](../content/checkout.md) | Displays a summary of all selected goods for purchase | _Checkout_ |
 | [Compare](../content/compare.md) | Displays a side by side comparison of the different selected products | _Cart_ |
 | [List](../content/list.md) | Displays the customer's Wish Lists | _Wish Lists_ and _Wish List Contents_ |
-| [Pending Orders](../pending-orders/README.md) | Displays a list of all pending orders | _Open Carts_ |
+| [Pending Orders](../content/pending-orders.md) | Displays a list of all pending orders | _Open Carts_ |
 | [Placed Orders](../placed-orders/README.md) | Displays a list of all orders in all statuses | _Orders_ |
 | [Product Details](../product-details/README.md) | Displays information about the product and related products | _Product Details_ and _Product Publisher_ |
 | [Search](../search/README.md) | Allows users to search | _Search_, _Tag_, _Category Facet_, _Option Facet_, _Specification Facet_ |
