@@ -15,7 +15,7 @@ Before configuring your store to use FedEX, it is necessary to have the followin
 
 ## Activate the FedEx Shipping Method
 
-Do the following to activate FedEx as a carrier method for your site:
+Do the following to activate FedEx as a shipping method for your site:
 
 1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Shipping Methods_ tab.
