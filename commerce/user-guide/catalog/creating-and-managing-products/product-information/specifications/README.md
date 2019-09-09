@@ -35,7 +35,7 @@ To create a specification label:
 
 1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
 1. Click the _Specifications_ tab.
-1. Click the _Specifications Label_ sub-tab.
+1. Click the _Specifications Labels_ sub-tab.
 1. There are nine Specification Labels included by default:
 
     ![Specification Labels sub-tab](./images/03.png)
