@@ -8,7 +8,7 @@ There are several key features used in managing inventory: Warehouses, Availabil
 
 Warehouses represent the physical locations where product inventory is managed and sourced for order fulfillment.
 
-See the [Warehouse Reference Guide](../warehouse-reference-guide/README.md) and the [Adding a New Warehouse](../adding-a-new-warehouse/README.md) article for more information about how to manage warehouses.
+See the [Warehouse Reference Guide](../warehouse-reference-guide/README.md) and the [Adding a New Warehouse](../catalog/adding-a-new-warehouse.md) article for more information about how to manage warehouses.
 
 Warehouses must be associated for at least one channel. See the [Introduction to Channels](../catalog/introduction-to-channels.md) article on how channels work.
 

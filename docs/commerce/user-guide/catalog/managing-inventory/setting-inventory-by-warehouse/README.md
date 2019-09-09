@@ -20,4 +20,4 @@ Each warehouse now has the correct quantity available for sale.
 
 ## Additional Information
 
-* [Adding A New Warehouse](../adding-a-new-warehouse/README.md)
+* [Adding A New Warehouse](../catalog/adding-a-new-warehouse.md)

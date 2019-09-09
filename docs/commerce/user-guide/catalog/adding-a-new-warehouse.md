@@ -15,7 +15,7 @@ This article describes how to add warehouses to manage inventory.
     * *Latitude*: 36.282974
     * *Longitude*: -115.136
 
-    ![Adding a new warehouse](./images/01.png)
+    ![Adding a new warehouse](./adding-a-new-warehouse/images/01.png)
 1. Click _Save_.
 
 The new warehouse is now active and available as an option in the _Shipment_ tab.
