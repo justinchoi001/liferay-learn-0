@@ -33,5 +33,5 @@ Your store now applies this particular tax rate for all goods whose billing addr
 
 **Note 2**: If you assign multiple settings to a single tax category (but specify different geographical areas), the rate appropriate to the buyer’s location is used. If you assign both a by address rate and a fixed rate to a single tax category, both rates will be applied.
 
-* [Setting Tax Rates by Fixed Rate](../setting-tax-rate-by-fixed-rate/README.md)
+* [Setting Tax Rates by Fixed Rate](../operations/setting-tax-rate-by-fixed-rate.md)
 * [Creating Tax Categories](../operations/creating-tax-categories.md)

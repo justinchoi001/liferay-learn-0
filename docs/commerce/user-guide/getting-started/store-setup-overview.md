@@ -53,7 +53,7 @@ In order to collect the applicable taxes, Liferay Commerce has the ability to cr
 
 * [Creating Tax Categories](../operations/creating-tax-categories.md)
 * [Setting Tax Rate by Address](../operations/setting-tax-rate-by-address.md)
-* [Setting Tax Rate by Fixed Rate](../../operations/taxes/setting-tax-rate-by-fixed-rate/README.md)
+* [Setting Tax Rate by Fixed Rate](../operations/setting-tax-rate-by-fixed-rate.md)
 
 #### Shipping Products
 

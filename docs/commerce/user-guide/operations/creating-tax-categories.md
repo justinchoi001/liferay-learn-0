@@ -17,4 +17,4 @@ The Tax Category is now available for your store.
 ## Additional Information
 
 * [Setting Tax Rates by Address](../operations/setting-tax-rate-by-address.md)
-* [Setting Fixed Tax Rates](../setting-tax-rate-by-fixed-rate/README.md)
+* [Setting Fixed Tax Rates](../operations/setting-tax-rate-by-fixed-rate.md)
