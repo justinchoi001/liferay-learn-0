@@ -34,4 +34,4 @@ The price list (_VIP Customers_ in this example) has been created and applied to
 * [Creating a New Account Group](../../customers/account-management/creating-a-new-account-group/README.md)
 * [Creating a New Account](../../customers/account-management/creating-a-new-account/README.md)
 * [Adding Products to a Price List](../adding-products-to-a-price-list/README.md)
-* [Adding Tiered Pricing](../adding-tiered-pricing/README.md)
+* [Adding Tiered Pricing](../catalog/adding-products-to-a-price-list.md)

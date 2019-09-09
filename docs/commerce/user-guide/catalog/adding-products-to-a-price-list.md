@@ -49,4 +49,4 @@ The product (_Premium Brake Fluid_) is now added to the price list (_VIP Custome
 ## Additional Information
 
 * [Creating a Price List](../creating-a-price-list/README.md)
-* [Adding Tiered Pricing](../adding-tiered-pricing/README.md)
+* [Adding Tiered Pricing](../catalog/adding-products-to-a-price-list.md)

@@ -34,7 +34,7 @@ Liferay Commerce contains a catalog management system that supports a variety of
 
 ![Product details and related products](./images/04.png)
 
-Managing product pricing is flexible through the use of [Price Lists](../../catalog/managing-price/price-lists/creating-a-price-list/README.md) and [Tiered Pricing](../../catalog/managing-price/price-lists/adding-tiered-pricing/README.md) - all of which can be tailored to meet unique customer needs.
+Managing product pricing is flexible through the use of [Price Lists](../../catalog/managing-price/price-lists/creating-a-price-list/README.md) and [Tiered Pricing](../catalog/adding-products-to-a-price-list.md) - all of which can be tailored to meet unique customer needs.
 
 ## B2B Focused Account Management and Purchasing Workflow
 

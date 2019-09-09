@@ -15,7 +15,7 @@ To create a pricing tier for a product in a price list:
     * **Promo Price**: (leave it blank)
     * *Minimum Quantity*: 20 (This is the minimum quantity needed to receive the price for bulk quantity.)
 
-        ![Adding a tiered pricing entry](./images/01.png)
+        ![Adding a tiered pricing entry](./adding-tiered-pricing/images/01.png)
 
 1. Click Save.
 
