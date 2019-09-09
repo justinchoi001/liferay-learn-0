@@ -30,7 +30,7 @@ In this tab, the order activity is exclusively on the seller's side. The seller 
 
 ## Additional Information
 
-Order information in the *Orders* menu can also be presented to other users – particularly buyers – using the *Open Carts* widget (for orders on the *Open* tab) and the *Orders* widget (for orders on the *Pending* or *Transmitted* tabs). See [Pending Orders](../content/pending-orders.md) and [Placed Orders](../../../content/pages/placed-orders/README.md) for details.
+Order information in the *Orders* menu can also be presented to other users – particularly buyers – using the *Open Carts* widget (for orders on the *Open* tab) and the *Orders* widget (for orders on the *Pending* or *Transmitted* tabs). See [Pending Orders](../content/pending-orders.md) and [Placed Orders](../content/placed-orders.md) for details.
 
 * [Order Life Cycle](../order-life-cycle/README.md)
 * [Order Information](../order-information/README.md)
