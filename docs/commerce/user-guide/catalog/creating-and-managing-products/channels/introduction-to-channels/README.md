@@ -16,7 +16,7 @@ In a more complex multi-channel scenario, a company may choose to customize the 
 
 >A more complex use case using multiple Channels.
 
-Liferay Commerce Channels makes managing products, sales, and fulfillment on a single platform simple. See [Configuring Product Visibility by Site Using Channels](./configuring-product-visibility-by-site-using-channels/README.md) for more information.
+Liferay Commerce Channels makes managing products, sales, and fulfillment on a single platform simple. See [Configuring Product Visibility by Site Using Channels](../catalog/configuring-product-visibility-by-site-using-channels.md) for more information.
 
 ![Configuring channels for a product](./images/03.png)
 
@@ -25,4 +25,4 @@ Liferay Commerce Channels makes managing products, sales, and fulfillment on a s
 ## Additional Information
 
 * [Managing Channels](../managing-channels/README.md)
-* [Configuring Product Visibility by Site Using Channels](../configuring-product-visibility-by-site-using-channels/README.md)
+* [Configuring Product Visibility by Site Using Channels](../catalog/configuring-product-visibility-by-site-using-channels.md)

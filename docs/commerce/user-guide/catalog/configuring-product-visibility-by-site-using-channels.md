@@ -4,7 +4,7 @@ By default in Liferay Commerce Products added to any catalog are visible globall
 
 For the purpose of this example, we will consider a scenario of a multi-region seller providing products from a single catalog.
 
-![Catalog organization](./images/01.png)
+![Catalog organization](./configuring-product-visibility-by-site-using-channels/images/01.png)
 
 To learn more about the using Channels in Liferay Commerce, see: [Introduction to Channels](../introduction-to-channels/README.md).
 
@@ -25,7 +25,7 @@ To configure a product to be available in a specific channel, follow these steps
 1. Switch the _Enable filter channels_ toggle to _Yes_.
 1. Check the boxes for each Channel (in this case, the _NA Minium Store_) where the product should be visible.
 
-    ![Product configuration](./images/02.png)
+    ![Product configuration](./configuring-product-visibility-by-site-using-channels/images/02.png)
 
 1. Click _Save_.
 
