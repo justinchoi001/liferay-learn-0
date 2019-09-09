@@ -42,7 +42,7 @@ The following site settings are found here:
 
 * Category Display Pages
 * Health Check
-* [Notifications](../../marketing/email-notifications/automating-store-emails-by-using-notification-templates/README.md)
+* [Notifications](../marketing/automating-store-emails-by-using-notification-templates.md)
 * [Order Workflows](../../sales/order-management/order-workflows/README.md)
 * Order Fields
 * [Payment Methods](../getting-started/payments.md)

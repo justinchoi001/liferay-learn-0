@@ -21,7 +21,7 @@ Once the Mail settings have been configured, follow these steps to create a noti
     * **Subject**: Email subject (for example: _Your order has been received._)
     * **Body**: Email body \*
 
-    ![Notification Template](./images/01.png)
+    ![Notification Template](./automating-store-emails-by-using-notification-templates/images/01.png)
 
 6. Click _Save_.
 
@@ -38,7 +38,7 @@ The new Notification Template has been saved and your store will send an automat
 
 **Note 3**: To change the interval for when Liferay Commerce checks for unsent notifications, navigate to the _Control Menu_ → _Configuration_ → _System Settings_. Click _Orders_ then the _Commerce Notification Queue_. The default values are listed in minutes. Change the values for the Check Interval and the Delete Interval if necessary.
 
-![Changing Intervals](./images/02.png)
+![Changing Intervals](./automating-store-emails-by-using-notification-templates/images/02.png)
 
 ## Additional Information
 
