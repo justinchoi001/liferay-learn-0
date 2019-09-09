@@ -13,7 +13,7 @@ To create an account group:
     ![Entering the Account Group Name](./images/01.png)
 
 1. Click the _Add Entry_ button.
-1. Check the boxes for every Account to be included in the _US East Coast_ Account Group. (In this example, there is only one account (Acme International) that was created in the [Creating a New Account](../creating-a-new-account/README.md) article.)
+1. Check the boxes for every Account to be included in the _US East Coast_ Account Group. (In this example, there is only one account (Acme International) that was created in the [Creating a New Account](../customers/creating-a-new-account.md) article.)
 
     ![Assigning an Account to the Group](./images/02.png)
 

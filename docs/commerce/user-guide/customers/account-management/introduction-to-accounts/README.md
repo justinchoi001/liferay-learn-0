@@ -34,7 +34,7 @@ Finally, individual users associated with a given Business Account may be given 
 
 See the following articles to learn more about common Account Management actions:
 
-* [Creating a New Account](../creating-a-new-account/README.md)
+* [Creating a New Account](../customers/creating-a-new-account.md)
 * [Inviting Users to an Account](../inviting-users-to-an-account/README.md)
 * [Assigning Account Roles](../customers/assigning-account-roles.md)
 * [Adding Addresses to an Account](../customers/adding-addresses-to-an-account.md)

@@ -113,7 +113,7 @@ See [Creating Your Storefront](../content/creating-your-storefront.md) to learn 
 To learn more about how accounts, inviting users accounts, account roles, and more, read the following articles:
 
 * [Introduction to Accounts](../../customers/account-management/introduction-to-accounts/README.md)
-* [Creating a New Account](../../customers/account-management/creating-a-new-account/README.md)
+* [Creating a New Account](../customers/creating-a-new-account.md)
 * [Inviting Users to an Account](../../customers/account-management/inviting-users-to-an-account/README.md)
 * [Adding Addresses to an Account](../customers/adding-addresses-to-an-account.md)
 * [Account Roles](../customers/account-roles.md)

@@ -27,6 +27,6 @@ Sales agents can access any account within any of their associated organizations
 
 ## Additional Information
 
-* [Creating a New Account](../creating-a-new-account/README.md)
+* [Creating a New Account](../customers/creating-a-new-account.md)
 * [Creating a New Account Group](../creating-a-new-account-group/README.md)
 * [Introduction to Accounts](../introduction-to-accounts/README.md)
