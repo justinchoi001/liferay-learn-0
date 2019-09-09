@@ -13,7 +13,7 @@ Navigate to the _Control Panel_ → _Commerce_. Making changes to any of the fol
 * Products
 * [Price Lists](../catalog/creating-a-price-list.md)
 * Discounts
-* [Orders](../../sales/order-management/orders-menu/README.md)
+* [Orders](../sales/orders-menu.md)
 * Shipments
 * Subscription
 * Settings

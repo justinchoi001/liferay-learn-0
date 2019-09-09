@@ -2,13 +2,13 @@
 
 Every order in Liferay Commerce contains important [order information](../sales/order-information.md), including order management statuses.
 
-This article gives a brief overview of the three order management status types – *Order Status*, *Payment Status*, and *Workflow Status* –  found on the [*Orders* Menu](../orders-menu/README.md).
+This article gives a brief overview of the three order management status types – *Order Status*, *Payment Status*, and *Workflow Status* –  found on the [*Orders* Menu](../sales/orders-menu.md).
 
    ![Order Management Statuses](./order-management-statuses/images/01.png)
 
 ## Order Status
 
-The *Order Status* gives more precise information about where an order is in the [order life cycle](../sales/order-life-cycle.md). Each order status appears on only one tab on the [*Orders* Menu](../orders-menu/README.md): either the [*Open*](../orders-menu/README.md#open), [*Pending*](../orders-menu/README.md#pending), or [*Transmitted*](../orders-menu/README.md#transmitted) tab.
+The *Order Status* gives more precise information about where an order is in the [order life cycle](../sales/order-life-cycle.md). Each order status appears on only one tab on the [*Orders* Menu](../sales/orders-menu.md): either the [*Open*](../orders-menu/README.md#open), [*Pending*](../orders-menu/README.md#pending), or [*Transmitted*](../orders-menu/README.md#transmitted) tab.
 
 ### Open Tab
 
@@ -54,7 +54,7 @@ There are twelve order statuses available on the *Transmitted* tab, as listed be
 
 ## Payment Status
 
-The *Payment Status* gives information about whether payment has been made and received for an order. On the *Pending* and *Transmitted* tabs on the [*Orders* Menu](../orders-menu/README.md), there are three payment statuses available: *Authorized*, *Paid*, and *Pending*. (On the *Open* tab, an order's payment status is always *Pending*.)
+The *Payment Status* gives information about whether payment has been made and received for an order. On the *Pending* and *Transmitted* tabs on the [*Orders* Menu](../sales/orders-menu.md), there are three payment statuses available: *Authorized*, *Paid*, and *Pending*. (On the *Open* tab, an order's payment status is always *Pending*.)
 
    ![Payment Status](./order-management-statuses/images/05.png)
 
@@ -66,7 +66,7 @@ The *Payment Status* gives information about whether payment has been made and r
 
 ## Workflow Status
 
-The *Workflow Status* gives information about where an order is in one of the two [order workflows](../order-workflows/README.md). (The meaning of each workflow status differs depending on which tab on the [*Orders* Menu](../orders-menu/README.md) it is found.)
+The *Workflow Status* gives information about where an order is in one of the two [order workflows](../order-workflows/README.md). (../sales/orders-menu.md) it is found.)
 
 ### Open Tab
 
@@ -93,7 +93,7 @@ The *Workflow Status* gives information about where an order is in one of the tw
 
 ## Additional Information
 
-* [Orders Menu](../orders-menu/README.md)
+* [Orders Menu](../sales/orders-menu.md)
 * [Order Information](../sales/order-information.md)
 * [Order Life Cycle](../sales/order-life-cycle.md)
 * [Order Workflows](../order-workflows/README.md)

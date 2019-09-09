@@ -1,6 +1,6 @@
 # Order Information
 
-Administrators can view and edit order information by clicking an order in the [Orders Menu](../orders-menu/README.md).
+Administrators can view and edit order information by clicking an order in the [Orders Menu](../sales/orders-menu.md).
 
    ![Orders Menu](./order-information/images/01.png)
 
@@ -40,7 +40,7 @@ The *Notes* tab displays notes that have been previously added to an order and a
 ## Additional Information
 
 * [Order Life Cycle](../sales/order-life-cycle.md)
-* [Orders Menu](../orders-menu/README.md)
+* [Orders Menu](../sales/orders-menu.md)
 * [Order Workflows](../order-workflows/README.md)
 * Order Management Statuses
 * Advancing an Order to Transmitted
