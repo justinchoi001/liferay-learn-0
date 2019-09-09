@@ -15,7 +15,7 @@ This article is intended to provide a walk through for users who are new to buil
 
 > **Note**: An [Accelerator](../getting-started/accelerators.md) may be used to create the store site. Using an Accelerator to create the store site will configure many of the settings mentioned in this section, see [Using the Minium Accelerator to Jump Start Your B2B Store](../getting-started/using-the-minium-accelerator-to-jump-start-your-b2b-store.md) for further details.
 
-Initial store setup is done with the [Admin account](../introduction-to-the-admin-account/README.md). Read the [Liferay Commerce Configuration Overview](../liferay-commerce-configuration-overview/README.md) to become more familiar with the Liferay Commerce configuration layout and available options.
+Initial store setup is done with the [Admin account](../getting-started/introduction-to-the-admin-account.md). Read the [Liferay Commerce Configuration Overview](../liferay-commerce-configuration-overview/README.md) to become more familiar with the Liferay Commerce configuration layout and available options.
 
 ### Configure Global Commerce Settings
 
