@@ -2,7 +2,7 @@
 
 This article describes how to create a shipment once an order has been received.
 
-![Shipments](./images/01.png)
+![Shipments](./creating-a-shipment/images/01.png)
 
 ## Creating a New Shipment
 
@@ -10,17 +10,17 @@ This article describes how to create a shipment once an order has been received.
 1. Click the (+) button to add a new shipment.
 1. Select an order from the dropdown menu (for example, _41241_).
 
-    ![Select an Order](./images/02.png)
+    ![Select an Order](./creating-a-shipment/images/02.png)
 
 1. Click _Save_.
 1. Enter the quantity from the corresponding warehouse.
 
-    ![Entering Quantity from US NE Warehouse](./images/03.png)
+    ![Entering Quantity from US NE Warehouse](./creating-a-shipment/images/03.png)
 
 1. Click _Save_.
 1. Verify the shipping address.
 
-    ![Verify Shipping Address](./images/04.png)
+    ![Verify Shipping Address](./creating-a-shipment/images/04.png)
 
 1. Click _Save_.
 
@@ -32,7 +32,7 @@ Once a shipment has been created, there are several further actions an order man
 
 1. Click the _Items_ tab to verify that the items are correct.
 
-    ![Verify Items](./images/05.png)
+    ![Verify Items](./creating-a-shipment/images/05.png)
 
 ### Update the Shipping Status
 
@@ -44,7 +44,7 @@ Once a shipment has been created, there are several further actions an order man
 
 The order manager can update the status of the shipment as needed, until the order is completed.
 
-![Shipped Items](./images/06.png)
+![Shipped Items](./creating-a-shipment/images/06.png)
 
 ## Additional Information
 

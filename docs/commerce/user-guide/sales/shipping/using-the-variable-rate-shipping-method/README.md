@@ -66,4 +66,4 @@ The shipment method is now active.
 * [Applying Shipping Method Restrictions](../applying-shipping-method-restrictions/README.md)
 * [Measurement Units](../measurement-units/README.md)
 * [Shipping Method Reference](../shipping-method-reference/README.md)
-* [Creating a New Shipment](../../order-management/managing-shipments/creating-a-shipment/README.md)
+* [Creating a New Shipment](../sales/creating-a-shipment.md)
