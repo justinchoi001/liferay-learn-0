@@ -42,5 +42,5 @@ The new account has been created using the Control Panel. Click _Addresses_ to u
 * [Introduction to Accounts](../introduction-to-accounts/README.md)
 * [Assigning User Roles](../assigning-account-roles/README.md)
 * [Inviting Users to an Account](../inviting-users-to-an-account/README.md)
-* [Adding Addresses to an Account](../adding-addresses-to-an-account/README.md)
+* [Adding Addresses to an Account](../customers/adding-addresses-to-an-account.md)
 * [Creating a New Account Group](../creating-a-new-account-group/README.md)

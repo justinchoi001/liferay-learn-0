@@ -37,7 +37,7 @@ See the following articles to learn more about common Account Management actions
 * [Creating a New Account](../creating-a-new-account/README.md)
 * [Inviting Users to an Account](../inviting-users-to-an-account/README.md)
 * [Assigning Account Roles](../assigning-account-roles/README.md)
-* [Adding Addresses to an Account](../adding-addresses-to-an-account/README.md)
+* [Adding Addresses to an Account](../customers/adding-addresses-to-an-account.md)
 * [Creating a New Account Group](../creating-a-new-account-group/README.md)
 
 ## Additional Information
