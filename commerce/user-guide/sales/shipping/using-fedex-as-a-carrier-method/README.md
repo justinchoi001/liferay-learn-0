@@ -2,6 +2,8 @@
 
 >(**Subscribers only**)
 
+This article details how to configure then enable FedEx as a shipping method.
+
 ## Prerequisites
 
 Before configuring your store to use FedEX, it is necessary to have the following:
@@ -11,7 +13,9 @@ Before configuring your store to use FedEX, it is necessary to have the followin
 1. FedEx Web Services Developer Key (available from [FedEx Web Services](https://www.fedex.com/en-us/developer/web-services.html))
 1. FedEx Meter Number
 
-This article details how to configure then enable FedEx as a shipping method.
+## Activate the FedEx Shipping Method
+
+Do the following to activate FedEx as a carrier method for your site:
 
 1. Navigate to _Site Administration_ → _Commerce_ → _Settings_.
 1. Click the _Shipping Methods_ tab.
