@@ -65,7 +65,7 @@ In the image above, the product has been given priority 1.0 which means it will 
 
 ### Generate SKUs
 
-Once you have applied product options to the product, SKUs have to be generated. For more information about how to generate SKUs, see the article [Adding SKUs to Your Products](../../adding-skus-to-your-products/README.md). Click the _SKUs_ sub-tab to generate the SKUs.
+Once you have applied product options to the product, SKUs have to be generated. For more information about how to generate SKUs, see the article [Adding SKUs to Your Products](../catalog/adding-skus-to-your-products.md). Click the _SKUs_ sub-tab to generate the SKUs.
 
 ### Set Prices and Quantities in the Inventory
 

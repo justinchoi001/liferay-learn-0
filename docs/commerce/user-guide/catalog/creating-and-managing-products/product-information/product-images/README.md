@@ -36,7 +36,7 @@ As noted above, multiple product images can be associated with a single product.
 ### Prerequisites
 
 1. [Product Options](../../customizing-your-product-with-product-options/README.md) have been created for this product.
-2. [Multiple SKUs](../../adding-skus-to-your-products/README.md) have been generated for this product.
+2. [Multiple SKUs](../catalog/adding-skus-to-your-products.md) have been generated for this product.
 
 Once you have created Product Options and generated the corresponding SKUs, you can then associate different product images. To add multiple images to the different SKUs:
 

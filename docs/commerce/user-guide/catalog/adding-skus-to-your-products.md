@@ -25,7 +25,7 @@ Once your product options are created, here’s how to quickly and easily genera
 1. Click the (+) button.
 1. Click Generate All SKU Combinations.
 
-    ![SKUs tab](./images/01.png)
+    ![SKUs tab](./adding-skus-to-your-products/images/01.png)
 
 The SKUs for Black and Gray Product Options have been generated. Repeat the steps for other products as necessary.
 
@@ -42,7 +42,7 @@ To modify this SKU:
 1. Rename the SKU: _GRAY_.
 1. Leave the Purchasable toggle set to YES.
 
-    ![Editing a SKU](./images/02.png)
+    ![Editing a SKU](./adding-skus-to-your-products/images/02.png)
 
 1. Click _Publish_.
 
