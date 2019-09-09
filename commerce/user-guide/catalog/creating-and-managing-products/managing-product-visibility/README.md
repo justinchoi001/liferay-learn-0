@@ -1,10 +1,18 @@
 # Managing Product Visibility
 
-Liferay Commerce allows store managers to create a publication schedule for when a product is first published in a catalog. Conversely, store managers can schedule a time when the product is no longer available for sale by setting an expiration date.
+Liferay Commerce allows store managers to create a publication schedule for when a product is first appears in a catalog. Conversely, store managers can schedule a time when the product is no longer available for sale by setting an expiration date.
 
-Note that unpublishing (that is, reverting to a draft status) or expiring a product does not delete the product. The product information is still stored in the database. Instead, a search does not return the product on the main _Catalog_ page.
+Here are some important terms:
 
-Furthermore, unpublishing a product may be configured to happen automatically if the product's inventory falls below the minimum threshold; for more information, see the article on [Low Stock Activity](../../managing-inventory/low-stock-activity/README.md).
+* **Published**: The product is now live with all the necessary metadata already filled out in the _Products_ menu on the _Control Panel_. The product is immediately searchable and purchasable on the Catalog page.
+* **Unpublished**: The product is no longer searchable on the Catalog Page. This can be configured either manually or automatically if the product's inventory falls below the minimum threshold; for more information, see the article on [Low Stock Activity](../../managing-inventory/low-stock-activity/README.md).
+* **Draft**: The product and its associated metadata have not yet been finalized for publication. Thus, it is not searchable on the Catalog Page.
+* **Expired**: The product is not searchable after a certain date set by the store administrator. In the _Control Panel_'s _Products_ menu, the _Expired_ status appears in the _Status_ column.
+* **Display Date**: The date the product first appears on the Catalog page. This date can be the same day the product is published or a future date.
+
+Note 1: Unpublishing or expiring a product does _not_ delete the product. The product information is still stored in the database. Besides being unsearchable, using the product's bookmark or friendly URL will display a _The requested resource could not be found._ message.
+
+Note 2: If an item is _already_ in the Checkout cart and it is marked as Unpublished after it has already been placed in the cart, buyers can still proceed with the purchase.
 
 ## Unpublishing a Product
 
@@ -21,11 +29,11 @@ Furthermore, unpublishing a product may be configured to happen automatically if
 
 ![Unpublished U-Joint](./images/02.png)
 
-The product is not searchable in the catalog.
+The product is no longer searchable in the catalog.
 
 ## Expiring a Product
 
-Expiring a product works in a similar fashion. When a product has an expiration date, the product is no longer visible in the store's front page. To expire a product:
+To expire a product:
 
 1. Navigate to _Control Panel_ → _Commerce_ → _Products_.
 1. Click on a product (for example, _U-Joint_).
@@ -36,7 +44,7 @@ Expiring a product works in a similar fashion. When a product has an expiration 
 
 1. Click _Publish_.
 
-After the expiration date, the product will be not returned when searching on the _Catalog_ page. To make the product visible again, enter a new expiration date in the future and republish the product.
+After the expiration date, the product will be not searchable and displayed on the _Catalog_ page. To make the product visible again, enter a new expiration date in the future and click _Publish_ to display the product again.
 
 ## Additional Information
 
