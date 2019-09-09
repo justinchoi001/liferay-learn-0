@@ -51,4 +51,4 @@ The order manager can update the status of the shipment as needed, until the ord
 * [Adding a New Warehouse](../catalog/adding-a-new-warehouse.md)
 * [Setting Inventory by Warehouse](../../../../catalog/managing-inventory/setting-inventory-by-warehouse/README.md)
 * [Order Life Cycle](../../order-life-cycle/README.md)
-* [Order Information](../../order-information/README.md)
+* [Order Information](../sales/order-information.md)
