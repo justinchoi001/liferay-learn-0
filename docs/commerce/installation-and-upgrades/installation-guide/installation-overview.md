@@ -22,7 +22,7 @@ Liferay offers several methods of installing Liferay Commerce.
 
 ### Using a Bundle
 
-The latest version of Liferay Commerce (Open Source) is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](../using-the-liferay-commerce-tomcat-bundle/README.md) for more information.
+The latest version of Liferay Commerce (Open Source) is available for download as a bundle from the [Liferay Commerce Community Download](https://commerce.liferay.dev/download) page. See [Using the Liferay Commerce Tomcat Bundle](./using-the-liferay-commerce-tomcat-bundle.md) for more information.
 
 ### Using an Existing Liferay DXP Installation
 

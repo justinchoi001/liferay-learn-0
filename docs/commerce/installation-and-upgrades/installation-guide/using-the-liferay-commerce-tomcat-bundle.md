@@ -20,7 +20,7 @@ To use the Liferay Commerce bundle, follow these steps:
 
 1. Open your browser to `https://localhost:8080`.
 
-![Welcome Image](./images/01.png)
+![Welcome Image](./using-the-liferay-commerce-tomcat-bundle/images/01.png)
 
 ## Additional Information
 
