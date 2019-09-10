@@ -29,4 +29,4 @@ The Low Stock Activity for this product has been configured. In the future, shou
 ## Additional Information
 
 * [Product Inventory Configuration Reference](../product-inventory-configuration-reference/README.md)
-* [Implementing a Custom Low Stock Activity](../../../../developer-guide/tutorial/implementing-a-custom-low-stock-activity/README.md)
+* [Implementing a Custom Low Stock Activity](../../developer-guide/tutorial/implementing-a-custom-low-stock-activity.md)
