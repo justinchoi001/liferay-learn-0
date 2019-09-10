@@ -12,7 +12,7 @@ To apply a restriction:
 1. Check all the boxes for countries where you do not want to ship to; in this example; Antarctica and Bahrain.
 1. Click _Add_.
 
-    ![Apply a shipping method restriction](./images/01.png)
+    ![Apply a shipping method restriction](./applying-shipping-method-restrictions/images/01.png)
 
 Your store is now restricted from shipping to those countries. Repeat these steps for all the other shipping methods such as _Variable Rate_ and _FedEx_. If you are customizing Liferay Commerce by adding additional carrier shipping methods (UPS, DHL, and so forth) through an extension point, you may want to include the same function to restrict delivery by region.
 

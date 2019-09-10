@@ -10,7 +10,7 @@ Here are several shipping methods:
 
   > Note that FedEx is available only for Commerce Enterprise subscribers. For users interested in adding other carriers, see [Implementing a New Shipping Engine](../../../developer-guide/tutorial/implementing-a-new-shipping-engine/README.md).
 
-Shipping methods may be restricted by country or region. To learn more, see [Applying Shipping Method Restrictions](../../sales/shipping/applying-shipping-method-restrictions/README.md).
+Shipping methods may be restricted by country or region. To learn more, see [Applying Shipping Method Restrictions](../sales/applying-shipping-method-restrictions.md).
 
 ## Additional Information
 
