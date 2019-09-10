@@ -6,7 +6,7 @@ Shipping engines process shipping options to determine which of the available op
 
 >The FedEx shipping engine is only available for Commerce Enterprise Subscribers.
 
-![Out-of-the-box shipping methods](./images/01.png "Out-of-the-box shipping methods")
+![Out-of-the-box shipping methods](./implementing-a-new-shipping-engine/images/01.png "Out-of-the-box shipping methods")
 
 ## Overview
 
@@ -24,7 +24,7 @@ In this section, we will get an example shipping engine up and running on your i
     docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
-1. Download and unzip [Acme Commerce Shipping Engine](./liferay-j6x8.zip)
+1. Download and unzip [Acme Commerce Shipping Engine]()
 
     ```bash
     curl liferay-j6x8.zip
@@ -56,7 +56,7 @@ In this section, we will get an example shipping engine up and running on your i
 
 1. Verify that the example shipping engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Shipping Methods_. The new shipping method ("Discounted Rate") representing our shipping engine will be present on this screen.
 
-![New shipping method](./images/02.png "New shipping method")
+![New shipping method](./implementing-a-new-shipping-engine/images/02.png "New shipping method")
 
 Congratulations, you've successfully built and deployed a new shipping engine that implements `CommerceShippingEngine`.
 
@@ -89,7 +89,7 @@ Implement the following methods:
 public String getCommerceShippingOptionLabel(String name, Locale locale);
 ```
 
-> This method returns a text label used for shipping options. See the implementation in [J6X8CommerceShippingEngine.java](./liferay-j6x8.zip/j6x8-impl/src/main/java/com/acme/j6x8/internal/commerce/model/J6X8CommerceShippingEngine.java) for a reference in retrieving the description with a language key.
+> This method returns a text label used for shipping options. See the implementation in [J6X8CommerceShippingEngine.java](./implementing-a-new-shipping-engine/liferay-j6x8.zip/j6x8-impl/src/main/java/com/acme/j6x8/internal/commerce/model/J6X8CommerceShippingEngine.java) for a reference in retrieving the description with a language key.
 >
 > See [Localizing Your Application](https://help.liferay.com/hc/en-us/articles/360018168251-Localizing-Your-Application) for more information.
 
@@ -245,7 +245,7 @@ public List<CommerceShippingOption> getCommerceShippingOptions(
 
 #### Add the Language Keys to `Language.properties`
 
-Add the language keys and their values to a [Language.properties](./liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language keys and their values to a [Language.properties](./implementing-a-new-shipping-engine/liferay-j6x8.zip/j6x8-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 discounted-rate=Discounted Rate
