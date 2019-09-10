@@ -4,7 +4,7 @@ This tutorial will show you how to add a new product type by implementing three 
 
 Product types can be used to group products that share similar characteristics. Liferay Commerce provides three product types out-of-the-box: [Simple](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [Grouped](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java), and [Virtual](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java).
 
-![Out-of-the-box product types](./images/01.png "Out-of-the-box product types")
+![Out-of-the-box product types](./adding-a-new-product-type/images/01.png "Out-of-the-box product types")
 
 ## Overview
 
@@ -22,7 +22,7 @@ In this section, we will get an example product type up and running on your inst
     docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
-1. Download and unzip [Acme Commerce Product Type](./liferay-c1n4.zip).
+1. Download and unzip [Acme Commerce Product Type]().
 
     ```bash
     curl liferay-c1n4.zip
@@ -54,7 +54,7 @@ In this section, we will get an example product type up and running on your inst
 
 1. Verify that the example product type was added. Open your browser to `https://localhost:8080` and navigate to _Control Panel_ → _Commerce_ → _Products_. Then, click on the (+) icon to add a new product. The new product type ("Example") will be present in the list of types to choose from.
 
-![New product type](./images/02.png "New product type")
+![New product type](./adding-a-new-product-type/images/02.png "New product type")
 
 Congratulations, you've successfully built and deployed a new product type that implements `CPType`.
 
@@ -107,7 +107,7 @@ public void deleteCPDefinition(long cpDefinitionId) throws PortalException;
 public String getLabel(Locale locale);
 ```
 
-> This returns a text label that describes the product type. See the implementation in [C1N4CPType.java](./liferay-c1n4.zip/c1n4-web/src/main/java/com/acme/c1n4/web/internal/commerce/product/type/C1N4CPType.java) for a reference in retrieving the label with a language key.
+> This returns a text label that describes the product type. See the implementation in [C1N4CPType.java](./adding-a-new-product-type/liferay-c1n4.zip/c1n4-web/src/main/java/com/acme/c1n4/web/internal/commerce/product/type/C1N4CPType.java) for a reference in retrieving the label with a language key.
 
 ```java
 public String getName();
@@ -151,7 +151,7 @@ public String getCategoryKey();
 public String getLabel(Locale var1);
 ```
 
-> This returns a text label for the screen navigation entry that will be displayed in the UI. See the implementation in [C1N4ScreenNavigationEntry.java](./liferay-c1n4.zip/c1n4-web/src/main/java/com/acme/c1n4/web/internal/servlet/taglib/ui/C1N4ScreenNavigationEntry.java) for a reference in retrieving the label with a language key.
+> This returns a text label for the screen navigation entry that will be displayed in the UI. See the implementation in [C1N4ScreenNavigationEntry.java](./adding-a-new-product-type/liferay-c1n4.zip/c1n4-web/src/main/java/com/acme/c1n4/web/internal/servlet/taglib/ui/C1N4ScreenNavigationEntry.java) for a reference in retrieving the label with a language key.
 
 ```java
 public String getScreenNavigationKey();
@@ -209,9 +209,9 @@ Define the `ServletContext` in our `ScreenNavigationEntry` class using the symbo
 private ServletContext _servletContext;
 ```
 
-> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-c1n4.zip/c1n4-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
+> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./adding-a-new-product-type/liferay-c1n4.zip/c1n4-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
 >
-> We declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/c1n4-web`. See [bnd.bnd](./liferay-c1n4.zip/c1n4-web/bnd.bnd) for a reference on these values.
+> We declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/c1n4-web`. See [bnd.bnd](./adding-a-new-product-type/liferay-c1n4.zip/c1n4-web/bnd.bnd) for a reference on these values.
 
 #### Implement the `ScreenNavigationEntry`'s `render` Method
 
@@ -228,7 +228,7 @@ public void render(
 }
 ```
 
-> Use a `JSPRenderer` to render the JSP for our product type's custom screen (in our example, [edit_product.jsp](./liferay-c1n4.zip/c1n4-web/src/main/resources/META-INF/resources/edit_product.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
+> Use a `JSPRenderer` to render the JSP for our product type's custom screen (in our example, [edit_product.jsp](./adding-a-new-product-type/liferay-c1n4.zip/c1n4-web/src/main/resources/META-INF/resources/edit_product.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
 
 #### Override the `ScreenNavigationEntry`'s `isVisible` Method
 
@@ -269,7 +269,7 @@ In our example, we are adding a JSP with a text field.
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./liferay-c1n4.zip/c1n4-web/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](./adding-a-new-product-type/liferay-c1n4.zip/c1n4-web/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example=Example
