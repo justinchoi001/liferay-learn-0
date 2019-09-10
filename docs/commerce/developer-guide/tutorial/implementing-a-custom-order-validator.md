@@ -20,7 +20,7 @@ In this section, we will get an example order validator up and running on your i
     docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
-1. Download and unzip [Acme Commerce Order Validator](./liferay-n9b2.zip).
+1. Download and unzip [Acme Commerce Order Validator]().
 
     ```bash
     curl liferay-n9b2.zip
@@ -54,7 +54,7 @@ In this section, we will get an example order validator up and running on your i
 
     From the catalog, find the item with this price, then click "Add to Cart". Increase the quantity to 11 or more, then click the arrow to continue. The error message that appears shows that the custom order validator successfully rejected adding the item.
 
-    ![New order validation error message](./images/01.png "New order validation error message")
+    ![New order validation error message](./implementing-a-custom-order-validator/images/01.png "New order validation error message")
 
 Congratulations, you've successfully built and deployed a new order validator that implements `CommerceOrderValidator`.
 
@@ -179,7 +179,7 @@ public CommerceOrderValidatorResult validate(
 
 #### Add the Language Keys to `Language.properties`
 
-Add the language keys and their values to a [Language.properties](./liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language keys and their values to a [Language.properties](./implementing-a-custom-order-validator/liferay-n9b2.zip/n9b2-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 expensive-items-have-a-maximum-quantity-of-10=Expensive items have a maximum quantity of 10.
