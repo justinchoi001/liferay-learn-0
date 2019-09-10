@@ -4,7 +4,7 @@ This tutorial will show you how to add a custom checkout step by implementing th
 
 A checkout step represents one screen of the checkout process for a customer. Liferay Commerce provides several checkout steps out-of-the-box, including essential steps like [the payment method step](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/PaymentMethodCommerceCheckoutStep.java) and the [order confirmation step](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-checkout-web/src/main/java/com/liferay/commerce/checkout/web/internal/util/OrderConfirmationCommerceCheckoutStep.java).
 
-![Out-of-the-box checkout steps](./images/01.png "Out-of-the-box checkout steps")
+![Out-of-the-box checkout steps](./implementing-a-custom-checkout-step/images/01.png "Out-of-the-box checkout steps")
 
 ## Overview
 
@@ -22,7 +22,7 @@ In this section, we will get an example checkout step up and running on your ins
     docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
-1. Download and unzip [Acme Commerce Checkout Step](./liferay-n8n6.zip).
+1. Download and unzip [Acme Commerce Checkout Step]().
 
     ```bash
     curl liferay-n8n6.zip
@@ -54,7 +54,7 @@ In this section, we will get an example checkout step up and running on your ins
 
 1. Verify that the example checkout step was added. Open your browser to `https://localhost:8080` and navigate to a catalog on any Liferay Commerce site. Add an item to the cart, view the cart, and then click "Checkout". The new "Example Step" will be present in the list of checkout steps.
 
-![New checkout step](./images/02.png "New checkout step")
+![New checkout step](./implementing-a-custom-checkout-step/images/02.png "New checkout step")
 
 Congratulations, you've successfully built and deployed a new checkout step that implements `CommerceCheckoutStep`.
 
@@ -132,9 +132,9 @@ Define the `ServletContext` using the symbolic name of our bundle so that it can
 private ServletContext _servletContext;
 ```
 
-> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-n8n6.zip/n8n6-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
+> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./implementing-a-custom-checkout-step/liferay-n8n6.zip/n8n6-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP.
 >
-> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/n8n6-web`. See [bnd.bnd](./liferay-n8n6.zip/n8n6-web/bnd.bnd) for a reference on these values.
+> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/n8n6-web`. See [bnd.bnd](./implementing-a-custom-checkout-step/liferay-n8n6.zip/n8n6-web/bnd.bnd) for a reference on these values.
 
 #### Implement the `render` Method
 
@@ -151,7 +151,7 @@ public void render(
 }
 ```
 
-> Use a `JSPRenderer` to render the JSP for our checkout step (in this case, [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
+> Use a `JSPRenderer` to render the JSP for our checkout step (in this case, [terms_and_conditions.jsp](./implementing-a-custom-checkout-step/liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
 
 #### Add Business Logic to `processAction`
 
@@ -159,11 +159,11 @@ Our example will display text on a custom screen and does not require backend pr
 
 #### Add a JSP to Render the Custom Screen
 
-In our example, we are adding placeholder text. You can see the implementation at [terms_and_conditions.jsp](./liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
+In our example, we are adding placeholder text. You can see the implementation at [terms_and_conditions.jsp](./implementing-a-custom-checkout-step/liferay-n8n6.zip/n8n6-web/src/main/resources/META-INF/resources/terms_and_conditions.jsp).
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./liferay-n8n6.zip/n8n6-web/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](./implementing-a-custom-checkout-step/liferay-n8n6.zip/n8n6-web/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example-step=Example Step
