@@ -21,7 +21,7 @@ To add a new Flat Rate Shipping Option:
 
 The new Shipping Option has been added and is available during the checkout process.
 
-   ![Adding a flat rate shipping option](./images/01.png)
+   ![Adding a flat rate shipping option](./using-the-flat-rate-shipping-method/images/01.png)
 
 ## Additional Information
 

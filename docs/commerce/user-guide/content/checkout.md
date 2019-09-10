@@ -16,7 +16,7 @@ Note that if the buyer checks the _Use shipping address as billing address_, thi
 
 ![Shipping Method step](./checkout/images/03.png)
 
-Shipping methods available to a buyer are configured by changing _Shipping Methods_ in _Site Administration_ → _Commerce_ → _Settings_ -> _Shipping Methods_. See [Using the Flat Rate Shipping Method](../../../sales/shipping/using-the-flat-rate-shipping-method/README.md) for more information.
+Shipping methods available to a buyer are configured by changing _Shipping Methods_ in _Site Administration_ → _Commerce_ → _Settings_ -> _Shipping Methods_. See [Using the Flat Rate Shipping Method](../sales/using-the-flat-rate-shipping-method.md) for more information.
 
 ## Entering a Billing Address
 
@@ -39,4 +39,4 @@ When an order is confirmed, the order is ready for processing by the seller. See
 * [Widget Reference Guide](../content/widget-reference.md)
 * [Creating Pages](https://help.liferay.com/hc/en-us/articles/360018171291-Creating-Pages)
 * [Implementing a Custom Checkout Step](../../../../developer-guide/tutorial/implementing-a-custom-checkout-step/README.md)
-* [Using the Flat Rate Shipping Method](../../../sales/shipping/using-the-flat-rate-shipping-method/README.md)
+* [Using the Flat Rate Shipping Method](../sales/using-the-flat-rate-shipping-method.md)

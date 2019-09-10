@@ -5,7 +5,7 @@ Liferay Commerce supports several shipping methods and carriers. Before choosing
 Here are several shipping methods:
 
 * [Variable Rate](../../sales/shipping/using-the-variable-rate-shipping-method/README.md)
-* [Flat Rate](../../sales/shipping/using-the-flat-rate-shipping-method/README.md)
+* [Flat Rate](../sales/using-the-flat-rate-shipping-method.md)
 * [FedEx](../sales/using-fedex-as-a-carrier-method.md)
 
   > Note that FedEx is available only for Commerce Enterprise subscribers. For users interested in adding other carriers, see [Implementing a New Shipping Engine](../../../developer-guide/tutorial/implementing-a-new-shipping-engine/README.md).

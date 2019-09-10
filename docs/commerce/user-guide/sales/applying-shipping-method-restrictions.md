@@ -18,6 +18,6 @@ Your store is now restricted from shipping to those countries. Repeat these step
 
 ## Additional Information
 
-* [Using the Flat Rate Shipping Method](../using-the-flat-rate-shipping-method/README.md)
+* [Using the Flat Rate Shipping Method](../sales/using-the-flat-rate-shipping-method.md)
 * [Variable Rate]()
 * [Using FedEx as a Carrier Method](../sales/using-fedex-as-a-carrier-method.md)
