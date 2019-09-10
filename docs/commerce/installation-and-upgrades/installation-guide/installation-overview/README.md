@@ -26,7 +26,7 @@ The latest version of Liferay Commerce (Open Source) is available for download a
 
 ### Using an Existing Liferay DXP Installation
 
-If using an existing Liferay DXP installation, users may deploy Liferay Commerce using the `LPKG`. See [Deploying Liferay Commerce to an Existing Installation](../deploying-liferay-commerce-to-an-existing-liferay-installation/README.md) for more information.
+If using an existing Liferay DXP installation, users may deploy Liferay Commerce using the `LPKG`. See [Deploying Liferay Commerce to an Existing Installation](./deploying-liferay-commerce-to-an-existing-liferay-installation.md) for more information.
 
 ### Activating Commerce Enterprise
 
