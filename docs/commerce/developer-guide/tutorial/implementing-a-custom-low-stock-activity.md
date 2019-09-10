@@ -1,8 +1,8 @@
 # Implementing a Custom Low Stock Activity
 
-This tutorial will show you how to add a custom low stock activity by implementing the [CommerceLowStockActivity](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivity.java) interface.
+This tutorial will show you how to add a custom low stock activity by implementing the [CommerceLowStockActivity](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-api/src/main/java/com/liferay/commerce/stock/activity/CommerceLowStockActivity.java) interface.
 
-Low stock activities are actions that are automatically taken if products fall below their configured Minimum Stock Quantities. Liferay Commerce provides one [default low stock activity](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java), which is to unpublish the product.
+Low stock activities are actions that are automatically taken if products fall below their configured Minimum Stock Quantities. Liferay Commerce provides one [default low stock activity](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java), which is to unpublish the product.
 
 ![Out-of-the-box low stock activity](./implementing-a-custom-low-stock-activity/images/01.png "Out-of-the-box low stock activity")
 
@@ -19,7 +19,7 @@ In this section, we will get an example low stock activity up and running on you
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.4
+    docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
 1. Download and unzip [Acme Commerce Low Stock Activity]().
@@ -82,9 +82,9 @@ public class J1E4CommerceLowStockActivity implements CommerceLowStockActivity {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for the low stock activity so that Liferay Commerce can distinguish the new activity from others in the [low stock activity registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
+> It is important to provide a distinct key for the low stock activity so that Liferay Commerce can distinguish the new activity from others in the [low stock activity registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityRegistryImpl.java). Reusing a key that is already in use will override the existing associated activity.
 >
-> The `commerce.low.stock.activity.priority` value indicates how far into the list of low stock activities our activity will appear in the UI. For example, the ["set as unpublished" activity](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java) has a value of 10. Giving our low stock activity a value of 9 ensures that it will appear immediately before the "set as unpublished" activity.
+> The `commerce.low.stock.activity.priority` value indicates how far into the list of low stock activities our activity will appear in the UI. For example, the ["set as unpublished" activity](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-service/src/main/java/com/liferay/commerce/internal/stock/activity/CommerceLowStockActivityImpl.java) has a value of 10. Giving our low stock activity a value of 9 ensures that it will appear immediately before the "set as unpublished" activity.
 
 ### Review the `CommerceLowStockActivity` Interface
 
@@ -128,7 +128,7 @@ The low stock activity is comprised of backend logic to perform the activity its
 
 > In our example, we add a warning message that is added to Liferay's logs.
 >
-> The `cpInstance` object contains information that we can use about the item with low stock. In our example, we use it to get the SKU for the item to add to our warning message. See [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) to find more methods you can use with a `CPInstance`.
+> The `cpInstance` object contains information that we can use about the item with low stock. In our example, we use it to get the SKU for the item to add to our warning message. See [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java) to find more methods you can use with a `CPInstance`.
 
 #### Add the Language Key to `Language.properties`
 

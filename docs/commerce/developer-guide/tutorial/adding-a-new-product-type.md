@@ -1,8 +1,8 @@
 # Adding a New Product Type
 
-This tutorial will show you how to add a new product type by implementing three interfaces: [CPType](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/type/CPType.java), [ScreenNavigationCategory](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationCategory.java), and [ScreenNavigationEntry](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationEntry.java).
+This tutorial will show you how to add a new product type by implementing three interfaces: [CPType](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-api/src/main/java/com/liferay/commerce/product/type/CPType.java), [ScreenNavigationCategory](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationCategory.java), and [ScreenNavigationEntry](https://github.com/liferay/liferay-portal/blob/7.1.3-ga4/modules/apps/frontend-taglib/frontend-taglib/src/main/java/com/liferay/frontend/taglib/servlet/taglib/ScreenNavigationEntry.java).
 
-Product types can be used to group products that share similar characteristics. Liferay Commerce provides three product types out-of-the-box: [Simple](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [Grouped](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java), and [Virtual](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java).
+Product types can be used to group products that share similar characteristics. Liferay Commerce provides three product types out-of-the-box: [Simple](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPType.java), [Grouped](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-type-grouped-web/src/main/java/com/liferay/commerce/product/type/grouped/web/internal/GroupedCPType.java), and [Virtual](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java).
 
 ![Out-of-the-box product types](./adding-a-new-product-type/images/01.png "Out-of-the-box product types")
 
@@ -19,7 +19,7 @@ In this section, we will get an example product type up and running on your inst
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.4
+    docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
 1. Download and unzip [Acme Commerce Product Type]().
@@ -91,7 +91,7 @@ public class C1N4CPType implements CPType {
 
 > The product type name must be a unique value so that Liferay Commerce can distinguish our product type from existing product types.
 >
-> The `commerce.product.type.display.order` value indicates how far into the list of product types our product type will appear in the UI. For example, the [virtual product type](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java) has a value of 15. Giving our product type a value of 16 ensures that it will appear immediately after the virtual type.
+> The `commerce.product.type.display.order` value indicates how far into the list of product types our product type will appear in the UI. For example, the [virtual product type](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-type-virtual-web/src/main/java/com/liferay/commerce/product/type/virtual/web/internal/VirtualCPType.java) has a value of 15. Giving our product type a value of 16 ensures that it will appear immediately after the virtual type.
 
 ### Review the `CPType` Interface
 
@@ -135,7 +135,7 @@ public class C1N4ScreenNavigationEntry
 
 > It is important to provide a distinct key for the navigation screen class so that Liferay Commerce can distinguish it as a separate screen from the existing screens. Reusing a key that is already in use will override the existing associated navigation screen.
 >
-> The `screen.navigation.category.order` and `screen.navigation.entry.order` values determine what position in the product type screens this screen will appear. For example, [the Details screen class](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-definitions-web/src/main/java/com/liferay/commerce/product/definitions/web/internal/servlet/taglib/ui/CPDefinitionDetailsScreenNavigationEntry.java) has these values set to 10; setting them to 11 will ensure that our custom screen appears after it in the list.
+> The `screen.navigation.category.order` and `screen.navigation.entry.order` values determine what position in the product type screens this screen will appear. For example, [the Details screen class](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-definitions-web/src/main/java/com/liferay/commerce/product/definitions/web/internal/servlet/taglib/ui/CPDefinitionDetailsScreenNavigationEntry.java) has these values set to 10; setting them to 11 will ensure that our custom screen appears after it in the list.
 
 ### Review the `ScreenNavigationCategory` Interface
 

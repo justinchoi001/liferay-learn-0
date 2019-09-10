@@ -1,8 +1,8 @@
 # Implementing a Custom Order Validator
 
-This tutorial will show you how to add a custom order validator by implementing the [CommerceOrderValidator](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) interface.
+This tutorial will show you how to add a custom order validator by implementing the [CommerceOrderValidator](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidator.java) interface.
 
-An order validator is a class that validates items in a customer's cart when proceeding through checkout. Liferay Commerce provides multiple out-of-the-box order validators, including a [default](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java), as well as validators to check [item versions](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) and [recurring items (subscriptions)](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java).
+An order validator is a class that validates items in a customer's cart when proceeding through checkout. Liferay Commerce provides multiple out-of-the-box order validators, including a [default](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java), as well as validators to check [item versions](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-service/src/main/java/com/liferay/commerce/internal/order/VersionCommerceOrderValidatorImpl.java) and [recurring items (subscriptions)](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-service/src/main/java/com/liferay/commerce/internal/order/SubscriptionCommerceOrderValidatorImpl.java).
 
 ## Overview
 
@@ -17,7 +17,7 @@ In this section, we will get an example order validator up and running on your i
 1. Start Liferay Commerce.
 
     ```bash
-    docker run -it -p 8080:8080 liferay/commerce:2.0.4
+    docker run -it -p 8080:8080 liferay/commerce:2.0.5
     ```
 
 1. Download and unzip [Acme Commerce Order Validator]().
@@ -80,9 +80,9 @@ public class N9B2CommerceOrderValidator implements CommerceOrderValidator {
     public static final String KEY = "Example";
 ```
 
-> It is important to provide a distinct key for the order validator so that Liferay Commerce can distinguish the new order validator from others in the [order validator registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use will override the existing associated validator.
+> It is important to provide a distinct key for the order validator so that Liferay Commerce can distinguish the new order validator from others in the [order validator registry](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-service/src/main/java/com/liferay/commerce/internal/order/CommerceOrderValidatorRegistryImpl.java). Reusing a key that is already in use will override the existing associated validator.
 >
-> The `commerce.order.validator.priority` value indicates when the order validator will perform its validation in sequence with other validators. For example, the [default order validator](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) has a value of 10. Giving our order validator a value of 9 ensures that it will perform its validation immediately before the default validator.
+> The `commerce.order.validator.priority` value indicates when the order validator will perform its validation in sequence with other validators. For example, the [default order validator](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-service/src/main/java/com/liferay/commerce/internal/order/DefaultCommerceOrderValidatorImpl.java) has a value of 10. Giving our order validator a value of 9 ensures that it will perform its validation immediately before the default validator.
 
 ### Review the `CommerceOrderValidator` Interface
 
@@ -98,7 +98,7 @@ public String getKey();
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrder commerceOrder, CPInstance cpInstance, int quantity) throws PortalException;
 ```
 
-> This is one of the two validation methods where we will add our custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to signal whether or not the result passes validation; see [CommerceOrderValidatorResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java).
+> This is one of the two validation methods where we will add our custom validation logic. This method is called whenever a customer adds an item to their cart. It does this by returning a `CommerceOrderValidatorResult`, which uses a boolean to signal whether or not the result passes validation; see [CommerceOrderValidatorResult.java](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-api/src/main/java/com/liferay/commerce/order/CommerceOrderValidatorResult.java).
 
 ```java
 public CommerceOrderValidatorResult validate(Locale locale, CommerceOrderItem commerceOrderItem) throws PortalException;
@@ -144,7 +144,7 @@ public CommerceOrderValidatorResult validate(
 }
 ```
 
-> The main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the `CPInstance`, which contains information about the order the customer has added. To find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
+> The main validation check for our example is to check if both the price (stored as a `BigDecimal`) is more than $100, and the quantity is greater than ten. We get the price information from the `CPInstance`, which contains information about the order the customer has added. To find more methods you can use with a `CPInstance`, see [CPInstance](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstance.java) and [CPInstanceModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-product-api/src/main/java/com/liferay/commerce/product/model/CPInstanceModel.java).
 >
 > Note that it is best practice to include a localized message explaining why the validation failed for the main validation checks.
 
@@ -175,7 +175,7 @@ public CommerceOrderValidatorResult validate(
 }
 ```
 
-> Add the same validation logic to this method, since it will be called for the items in the customer's cart. The main difference in this case is we get the information from a `CommerceOrderItem` object; see [CommerceOrderItem](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) to find more methods you can use with a `CommerceOrderItem`.
+> Add the same validation logic to this method, since it will be called for the items in the customer's cart. The main difference in this case is we get the information from a `CommerceOrderItem` object; see [CommerceOrderItem](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItem.java) and [CommerceOrderItemModel](https://github.com/liferay/com-liferay-commerce/blob/2.0.5/commerce-api/src/main/java/com/liferay/commerce/model/CommerceOrderItemModel.java) to find more methods you can use with a `CommerceOrderItem`.
 
 #### Add the Language Keys to `Language.properties`
 
