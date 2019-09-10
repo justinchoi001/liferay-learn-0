@@ -65,5 +65,5 @@ The shipment method is now active.
 * [Using FedEx as a Carrier Method](../using-fedex-as-a-carrier-method/README.md)
 * [Applying Shipping Method Restrictions](../sales/applying-shipping-method-restrictions.md)
 * [Measurement Units](../sales/measurement-units.md)
-* [Shipping Method Reference](../shipping-method-reference/README.md)
+* [Shipping Method Reference](../sales/shipping-method-reference.md)
 * [Creating a New Shipment](../sales/creating-a-shipment.md)
