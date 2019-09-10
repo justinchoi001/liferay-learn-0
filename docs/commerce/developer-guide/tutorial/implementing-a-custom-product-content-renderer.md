@@ -4,7 +4,7 @@ This tutorial will show you how to add a custom product content renderer by impl
 
 A product content renderer provides a style of displaying product details for a specific [product type](../../user-guide/catalog/introduction-to-product-types.md), in a variety of widgets that can display products. Liferay Commerce provides product content renderers for each out-of-the-box product type, such as [SimpleCPContentRenderer](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-product-type-simple/src/main/java/com/liferay/commerce/product/type/simple/internal/SimpleCPContentRenderer.java) for Simple products.
 
-![Out-of-the-box product content renderers](./images/01.png "Out-of-the-box product content renderers")
+![Out-of-the-box product content renderers](./implementing-a-custom-product-content-renderer/images/01.png "Out-of-the-box product content renderers")
 
 ## Overview
 
@@ -22,7 +22,7 @@ In this section, we will get an example product content renderer up and running 
     docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
-1. Download and unzip [Acme Commerce Product Content Renderer](./liferay-q4f7.zip).
+1. Download and unzip [Acme Commerce Product Content Renderer]().
 
     ```bash
     curl liferay-q4f7.zip
@@ -56,7 +56,7 @@ In this section, we will get an example product content renderer up and running 
 
     Under the _Custom Renderer_ section, select _Simple_. Below the _Simple Commerce Product Type Renderer Key_ dropdown, the new renderer ("Example") will be present.
 
-![New product content renderer](./images/02.png "New product content renderer")
+![New product content renderer](./implementing-a-custom-product-content-renderer/images/02.png "New product content renderer")
 
 Congratulations, you've successfully built and deployed a new custom product content renderer that implements `CPContentRenderer`.
 
@@ -103,7 +103,7 @@ public String getKey();
 public String getLabel(Locale locale);
 ```
 
-> This returns a text label that describes the product content renderer. See the implementation in [Q4F7CPContentRenderer.java](./liferay-q4f7.zip/q4f7-web/src/main/java/com/acme/q4f7/web/internal/commerce/product/content/renderer/Q4F7CPContentRenderer.java) for a reference in retrieving the label with a language key.
+> This returns a text label that describes the product content renderer. See the implementation in [Q4F7CPContentRenderer.java](./implementing-a-custom-product-content-renderer/liferay-q4f7.zip/q4f7-web/src/main/java/com/acme/q4f7/web/internal/commerce/product/content/renderer/Q4F7CPContentRenderer.java) for a reference in retrieving the label with a language key.
 
 ```java
 public void render(
@@ -137,9 +137,9 @@ Define the `ServletContext` using the symbolic name of our bundle so that it can
 private ServletContext _servletContext;
 ```
 
-> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./liferay-q4f7.zip/q4f7-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP
+> The value we set for `osgi.web.symbolicname` matches the value for `Bundle-SymbolicName` in our [bnd.bnd file](./implementing-a-custom-product-content-renderer/liferay-q4f7.zip/q4f7-web/bnd.bnd). These values must match for the `ServletContext` to locate the JSP
 >
-> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/q4f7-web`. See [bnd.bnd](./liferay-q4f7.zip/q4f7-web/bnd.bnd) for a reference on these values.
+> We also need to declare a unique value for `Web-ContextPath` in our bnd.bnd file so the `ServletContext` is correctly generated. In our example, `Web-ContextPath` is set to `/q4f7-web`. See [bnd.bnd](./implementing-a-custom-product-content-renderer/liferay-q4f7.zip/q4f7-web/bnd.bnd) for a reference on these values.
 
 #### Implement the `render` Method
 
@@ -157,7 +157,7 @@ public void render(
 }
 ```
 
-> Use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./liferay-q4f7.zip/q4f7-web/src/main/resources/META-INF/resources/view.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
+> Use a `JSPRenderer` to render the JSP for our product content renderer (in this case, [view.jsp](./implementing-a-custom-product-content-renderer/liferay-q4f7.zip/q4f7-web/src/main/resources/META-INF/resources/view.jsp)). Provide the `ServletContext` as a parameter to find the JSP we have created.
 
 #### Add a JSP for the Custom View
 
@@ -197,7 +197,7 @@ long cpDefinitionId = cpCatalogEntry.getCPDefinitionId();
 
 #### Add the Language Key to `Language.properties`
 
-Add the language key and its value to a [Language.properties](./liferay-q4f7.zip/q4f7-web/src/main/resources/content/Language.properties) file within our module:
+Add the language key and its value to a [Language.properties](./implementing-a-custom-product-content-renderer/liferay-q4f7.zip/q4f7-web/src/main/resources/content/Language.properties) file within our module:
 
 ```
 example=Example
