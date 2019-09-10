@@ -4,7 +4,7 @@ This tutorial will show you how to add a new tax engine by implementing the [Com
 
 A tax engine performs the calculation for taxes when a transaction is made. Liferay Commerce provides two default tax engines: [FixedCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/FixedCommerceTaxEngine.java) for fixed rates, and [ByAddressCommerceTaxEngine](https://github.com/liferay/com-liferay-commerce/blob/2.0.4/commerce-tax-engine-fixed-service/src/main/java/com/liferay/commerce/tax/engine/fixed/internal/engine/ByAddressCommerceTaxEngine.java) for calculating taxes by address.
 
-![Out-of-the-box tax engines](./images/01.png "Out-of-the-box tax engines")
+![Out-of-the-box tax engines](./implementing-a-new-tax-engine/images/01.png "Out-of-the-box tax engines")
 
 ## Overview
 
@@ -22,7 +22,7 @@ In this section, we will get an example tax engine up and running on your instan
     docker run -it -p 8080:8080 liferay/commerce:2.0.4
     ```
 
-1. Download and unzip [Acme Commerce Tax Engine](./liferay-q4b9.zip).
+1. Download and unzip [Acme Commerce Tax Engine]().
 
     ```bash
     curl liferay-q4b9.zip
@@ -54,7 +54,7 @@ In this section, we will get an example tax engine up and running on your instan
 
 1. Verify that the example tax engine was added. Open your browser to `https://localhost:8080` and navigate to _Site Administration_ → _Commerce_ → _Settings_ → _Taxes_ → _Tax Calculations_. The new tax engine ("Flat Tax") will be present in the list shown.
 
-![New tax engine](./images/02.png "New tax engine")
+![New tax engine](./implementing-a-new-tax-engine/images/02.png "New tax engine")
 
 Congratulations, you've successfully built and deployed a new tax engine that implements `CommerceTaxEngine`.
 
@@ -95,7 +95,7 @@ public CommerceTaxValue getCommerceTaxValue(
 public String getDescription(Locale locale);
 ```
 
-> This returns a brief description of our tax engine. See the implementation in [Q4B9CommerceTaxEngine.java](./liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/Q4B9CommerceTaxEngine.java) for a reference in retrieving the description with a language key.
+> This returns a brief description of our tax engine. See the implementation in [Q4B9CommerceTaxEngine.java](./implementing-a-new-tax-engine/liferay-q4b9.zip/q4b9-impl/src/main/java/com/acme/q4b9/internal/commerce/tax/Q4B9CommerceTaxEngine.java) for a reference in retrieving the description with a language key.
 
 ```java
 public String getName(Locale locale);
@@ -135,7 +135,7 @@ public CommerceTaxValue getCommerceTaxValue(
 
 #### Add the Language Keys to `Language.properties`
 
-Add the language keys and their values to a [Language.properties](./liferay-q4b9.zip/q4b9-impl/src/main/resources/content/Language.properties) file within our module:
+Add the language keys and their values to a [Language.properties](./implementing-a-new-tax-engine/liferay-q4b9.zip/q4b9-impl/src/main/resources/content/Language.properties) file within our module:
 
 ```
 a-flat-tax-rate-that-does-not-adjust=A flat tax rate that does not adjust.
