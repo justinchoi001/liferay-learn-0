@@ -42,4 +42,4 @@ The new Notification Template has been saved and your store will send an automat
 
 ## Additional Information
 
-* [Adding a New Notification Type](../../../../developer-guide/tutorial/adding-a-new-notification-template-type/README.md)
+* [Adding a New Notification Type](../../developer-guide/tutorial/adding-a-new-notification-template-type.md)
