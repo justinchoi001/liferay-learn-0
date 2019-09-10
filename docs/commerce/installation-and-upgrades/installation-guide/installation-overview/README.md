@@ -36,7 +36,7 @@ If using an existing Liferay DXP installation, users may deploy Liferay Commerce
 
 There are periodic updates and upgrades that contain the latest features and bug fixes.
 
-* [Maintenance Versions](../../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method/README.md)
+* [Maintenance Versions](../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
 * [Upgrading from Liferay Commerce 1.1.x](../../upgrades-and-updates/upgrading-from-liferay-commerce-1.1.x/README.md)
 
 ## Additional Information

@@ -60,5 +60,5 @@ The Liferay Commerce instance has been updated. There is no need to reindex and 
 
 Liferay Commerce is built on Liferay DXP 7.1. Occasionally, it is necessary to update the core Liferay DXP platform, are a requirement to updating to the latest maintenance version. Fixes to Liferay Commerce are independent from Liferay.
 
-* [Liferay Commerce Fix Delivery Method](../../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method/README.md)
+* [Liferay Commerce Fix Delivery Method](../../get-help/commerce-enterprise-support/liferay-commerce-fix-delivery-method.md)
 * [Upgrading from Liferay Commerce 1.1.x](../upgrading-from-liferay-commerce-1.1.x/README.md)
