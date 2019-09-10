@@ -1,8 +1,8 @@
 # Installation and Upgrade
 
-## [Quick Start Guide](./quick-start-guide/README.md)
+## [Quick Start Guide](./quick-start-guide/quick-start-guide.md)
 
-Want to kick the tires? Get started [here](./quick-start-guide/README.md)!
+Want to kick the tires? Get started [here](./quick-start-guide/quick-start-guide.md)!
 
 ## Installation Guide
 

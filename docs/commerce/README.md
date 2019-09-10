@@ -1,8 +1,8 @@
 # Liferay Commerce
 
-## [Getting Started](./installation-and-upgrades/quick-start-guide/README.md)
+## [Getting Started](./installation-and-upgrades/quick-start-guide/quick-start-guide.md)
 
-Want to kick the tires? Get started [here](./installation-and-upgrades/quick-start-guide/README.md)!
+Want to kick the tires? Get started [here](./installation-and-upgrades/quick-start-guide/quick-start-guide.md)!
 
 ## [Installation and Upgrades](./installation-and-upgrades/README.md)
 
