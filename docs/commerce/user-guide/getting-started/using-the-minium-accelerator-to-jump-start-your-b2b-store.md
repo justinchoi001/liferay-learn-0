@@ -61,8 +61,8 @@ Minium applies a number of other site configurations that are not set out-of-the
 | [Countries](../getting-started/country-options.md) | France, China, United States, and 245 more |
 | [Currencies](../getting-started/adding-a-new-currency.md) | USD, AUD, GBP, and 7 more |
 | Default Image | &#10003; |
-| [Measurement Units](../../../sales/shipping/measurement-units/README.md) - Dimensions | inches, millimeters, feet, meters |
-| [Measurement Units](../../../sales/shipping/measurement-units/README.md) - Weight | ounces, pounds, kilograms, grams |
+| [Measurement Units](../sales/measurement-units.md) - Dimensions | inches, millimeters, feet, meters |
+| [Measurement Units](../sales/measurement-units.md) - Weight | ounces, pounds, kilograms, grams |
 | [Account Roles](../customers/account-roles.md) | Buyer, Account Manager, Sales Agent
 | Availability Estimates | 3-5 days, 5-7 days, 7-14 days |
 | [Product Relation Type](../catalog/related-products-up-sells-and-cross-sells.md) | Up-Sell, Spare, Related, Accessories, Cross-Sell  |

@@ -26,7 +26,7 @@ The Commerce Global Settings menu contains the following tabs:
 * [Countries](../getting-started/country-options.md)
 * [Currencies](../getting-started/currencies.md)
 * Default Images
-* [Measurement Units](../../sales/shipping/measurement-units/README.md)
+* [Measurement Units](../sales/measurement-units.md)
 * Health Check
 * [Warehouses](../../catalog/managing-inventory/warehouse-reference-guide/README.md)
 
