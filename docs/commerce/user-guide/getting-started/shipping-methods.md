@@ -4,7 +4,7 @@ Liferay Commerce supports several shipping methods and carriers. Before choosing
 
 Here are several shipping methods:
 
-* [Variable Rate](../../sales/shipping/using-the-variable-rate-shipping-method/README.md)
+* [Variable Rate](../sales/using-the-variable-rate-shipping-method.md)
 * [Flat Rate](../sales/using-the-flat-rate-shipping-method.md)
 * [FedEx](../sales/using-fedex-as-a-carrier-method.md)
 

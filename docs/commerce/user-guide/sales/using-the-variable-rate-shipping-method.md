@@ -22,7 +22,7 @@ To create a new Variable Rate shipping option:
     * **Description**: 2 Day Ground
     * **Priority**: 3.0
 
-    ![New 2 Day Ground Shipping Option](./images/01.png)
+    ![New 2 Day Ground Shipping Option](./using-the-variable-rate-shipping-method/images/01.png)
 
 1. Click _Save_.
 
@@ -45,7 +45,7 @@ The new shipping option has been created. To finish configuring this shipping op
     * **Rate Unit Weight Price**: An entry in this field imposes a cost per weight. It can be left blank.
     * **Rate Percentage**: An entry in this field imposes a shipping cost based on a percentage of the order subtotal. It can be left blank.
 
-      ![2 Day Ground Settings](./images/02.png)
+      ![2 Day Ground Settings](./using-the-variable-rate-shipping-method/images/02.png)
 
 1. Click _Save_.
 

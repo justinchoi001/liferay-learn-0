@@ -60,7 +60,7 @@ In order to collect the applicable taxes, Liferay Commerce has the ability to cr
 Liferay Commerce has several options to calculate shipping rates. Commerce Enterprise subscribers receive FedEx carrier integration out-of-the-box.
 
 * [Shipping Methods](../getting-started/shipping-methods.md)
-* [Variable Rate](../../sales/shipping/using-the-variable-rate-shipping-method/README.md)
+* [Variable Rate](../sales/using-the-variable-rate-shipping-method.md)
 * [Flat Rate](../../sales/shipping/using-the-flat-rate/shipping-method/README.md)
 * [Using FedEx as a Carrier](../sales/using-fedex-as-a-carrier-method.md)
 
