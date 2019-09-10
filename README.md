@@ -4,7 +4,7 @@ Welcome to Liferay Help. This repository represents an initiative to organize, c
 
 ## Analytics Cloud
 
-## [Commerce](./commerce/README.md)
+## [Commerce](./docs/commerce/README.md)
 
 ## DXP
 
