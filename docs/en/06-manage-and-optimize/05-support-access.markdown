@@ -4,37 +4,34 @@ header-id: support-access
 
 # Support Access
 
-When customers open tickets via Help Center, the Liferay support team typically 
-resolves the issues by asking questions and interacting with customers. Some 
-cases, however, require Liferay support members to access the customer's 
-environment to analyze and diagnose issues in more detail. Customers can enable 
-or disable this access on an environment-by-environment basis. 
+In order to resolve a customer's issues quickly, it might be necessary to allow Liferay Customer Support Engineers to access the environment directly. DXP Cloud administrators are able to enable and disable access to a specific environment. Note that by default, this feature is set to _Enabled_.
 
-| **Note:** Support access is enabled by default in each environment. 
+When Support Access is enabled, the support engineer is able to view the following:
 
-## Changing the Support Access Setting
+* Project Console
+* Logs for each service
+* Control Panel Settings
+* DXP Cloud Region where the services are hosted
+* Team Members and their associated roles
+* Members' Activities
 
-You can enable or disable support access on an environment-by-environment basis. 
-Support access is enabled by default in each environment, but you can disable it 
-at any time. For example, you can choose to enable support access on the 
-development environment but have this option disabled on the production 
-environment. 
+Note that only the administrator has the ability to grant or deny support access. If granted access, Support Engineers will _not_ be able to deploy assets or perform other actions.
 
-| **Note:** Only administrators can change the support access setting. 
+To manage Support Access:
 
-Follow these steps to change the support access setting: 
+1. Navigate to _Settings_.
 
-1.  Navigate to *Settings* &rarr; *Support access*. 
+![Contributor Access](./support-access/images/01.png)
 
-2.  Set the toggle switch to your desired setting (*Enabled* or *Disabled*). 
+1. Switch the toggle to _Enabled_.
 
-![Figure 1: Administrators can enable or disable support access.](../../images/support-access.png)
+_Support access_ has been enabled. Changes to the settings such as enabling or disabling support access are logged as an activity. To review the changes:
 
-## Monitoring Changes to Support Access
+1. Navigate to _Activities_.
+1. Verify the site's Support access is disabled.
 
-Any change to support access registers a new activity that lists who made that 
-change and when. These activities appear in *Activities* &rarr; *General*. DXP 
-Cloud also sends an email to all team members when the support access setting 
-changes. 
+    ![Disabled Support Access](./support-access/images/02.png)
 
-![Figure 2: The general activities panel shows any changes to support access.](../../images/support-access-activities.png)
+1. Furthermore, an email is sent to all members in the group.
+
+    ![Email verification](./support-access/images/03.png)
