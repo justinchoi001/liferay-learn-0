@@ -1,8 +1,8 @@
 # Creating a Catalog Page
 
-The [Catalog](../catalog/README.md) page is the primary entry point for users to browse products that are being offered in a store. It includes the following widgets: _Search Bar_, _Options Facets_, _Specification Facet_, _Category Facet_ and _Search Results_. To learn more about Commerce widgets see the [Widget Reference](../widget-reference/README.md).
+The [Catalog](./catalog.md) page is the primary entry point for users to browse products that are being offered in a store. It includes the following widgets: _Search Bar_, _Options Facets_, _Specification Facet_, _Category Facet_ and _Search Results_. To learn more about Commerce widgets see the [Widget Reference](./widget-reference.md).
 
-This article documents how to build a Catalog page without the use of an [accelerator](../getting-started/accelerators.md).
+This article documents an example of how to build a Catalog page without the use of an [accelerator](../getting-started/accelerators.md).
 
 ## Overview
 
@@ -10,7 +10,7 @@ This article documents how to build a Catalog page without the use of an [accele
 1. Add and Configure the Page.
 1. Add the Widgets to the Page.
 1. Configure the _Search Bar_ Widget.
-1. Display Full Catalog Without a Search (Optional).
+1. Displaying the Full Catalog Without a Search (Optional).
 1. Configure Product Channel Filters (Optional).
 
 ## Prerequisites
@@ -24,17 +24,13 @@ See the following links to learn more about Site and Page Creation:
 
 ## Add and Configure the Page
 
- > Tips and Suggestions
-
 1. Create a Page using the _Widget_ template.
 1. The _30-70 Column_ Layout is the default selection. This layout has a narrower left column for the widgets that refine the search and a wider right column for the _Search Results_ widget. Storefront designers can choose different layouts for a different style.
 
 ## Add the Widgets to the Page
 
- > Tips and Suggestions
-
-1. Drag and drop the widgets into position after they appear on the page.
-1. Click the _3-dot icon_ then _Look and Feel Configurations_ to add or remove the widget's title.
+1. Drag and drop the widgets into the desired positions.
+1. Click the _3-dot icon_ then _Look and Feel Configurations_ to add or remove the widget titles.
 
 After creating and configuring the page with the widgets, a basic Catalog page might look like this:
 
@@ -42,7 +38,7 @@ After creating and configuring the page with the widgets, a basic Catalog page m
 
 ## Configure the _Search Bar_ Widget
 
-The _Search Bar_ widget must be configured to display data from the Global scope. This is because all products are stored at the global level and not the site level.
+The _Search Bar_ widget must be configured to display data from the Global site scope. This is because all products are stored at the global level and not the site level.
 
 1. Click the _3-dot icon_ then _Configuration_ on the _Search Bar_ widget.
 
@@ -57,7 +53,7 @@ The _Search Bar_ widget must be configured to display data from the Global scope
 
 The _Search Bar_ widget is now configured to display the content from the entire instance.
 
-## Display Full Catalog Without a Search (Optional)
+## Displaying the Full Catalog Without a Search (Optional)
 
 Liferay Commerce allows store managers to display all the products in a catalog in the _Search Results_ widget without having buyers first enter a search query. This is done by configuring the _Search Options_ widget.
 
@@ -72,22 +68,6 @@ Once this option has been enabled, all the products in this catalog are displaye
 
 ## Configure Product Channel Filters (Optional)
 
-If there are more than one store site that is housed on the Liferay Commerce instance, the entire catalog becomes searchable on every store site.
+If there is more than one store site that is housed on the Liferay Commerce instance, the entire catalog becomes searchable on every store site.
 
-To restrict a product so that it is found only on one site, enable the filter [channels](../../../catalog/creating-and-managing-products/channels/introduction-to-channels/README.md) for each product.
-
-1. Navigate to the _Control Panel_ → _Commerce_ → _Products_.
-1. Click on the product from the catalog associated with this store.
-1. Click _Configuration_.
-1. Click _Channels_ in the left menu.
-
-    ![Channels](./creating-a-catalog-page/images/05.png)
-
-1. Click _YES_ to enable the _Filter Channels_.
-1. Check the boxes for each channel this product appears in.
-
-    ![Selected Channel](./creating-a-catalog-page/images/06.png)
-
-1. Click _Save_.
-
-This product appears only in the selected channels and sites scoped to this channel. This process can be scaled by updating all the products programmatically using the `CommerceChannelRelLocalService` to pass in the definitions.
+To scope product to specific sites, see [Configuring Product Visibility by Site using Channels](../catalog/configuring-product-visibility-by-site-using-channels.md).
