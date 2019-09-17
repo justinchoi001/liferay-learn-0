@@ -4,30 +4,40 @@ header-id: real-time-alerts
 
 # Real-Time Alerts
 
-Alerts inform you of any unexpected behavior in your project. You can therefore 
-respond to problems quickly. You can choose which alerts to receive and how you 
-receive them. 
+Liferay DXP Cloud can alert system administrators of unexpected behaviors in a project. Unexpected behaviors include (but not limited to) auto-scaling, higher than expected consumption of memory, the CPU has reached its alloted quota, or database connections issues. This article documents how to set up alerts on the console and receive email notifications.
 
-## Alert Preferences
+## Managing Alert Preferences
 
-You can configure your alerts by clicking your profile photo at the top-right 
-corner of the console page and selecting *Alerts Preferences*. This takes you to 
-the Alerts Preferences page, where you can configure which alerts you receive 
-and how you receive them. For each alert, select the checkbox for how you wish 
-to receive it. To disable an alert, unselect all its checkboxes. Click 
-*Save Alerts Preferences* when you're finished. 
+1. Click on the profile photo at the top-right corner of the navigation bar.
+1. Click _Alerts Preferences_.
 
-![Figure 1: Access your alert preferences via your user menu.](../../images/alerts-prefs-menu.png)
+   ![Real Time Alerts](./real-time-alerts/images/01.png)
 
-![Figure 2: Select your alert preferences.](../../images/alerts-prefs-page.png)
+1. Check the boxes on the status alerts notifications.
+1. Click _Save Alerts Preferences_.
+
+The Alerts preferences have now been configured. To view the alerts notifications and the information found, see the Alerts Page section below.
 
 ## Alerts Page
 
-Alerts delivered to your console are accessible from the bell icon on the top 
-bar. There, you can filter alerts by environment and mark them as read. Each 
-alert is triggered by a specific event. If the event is still happening, its 
-alert status is *Ongoing*. If the event is finished, its alert status is 
-*Resolved*. The table also contains *Started at* and *Duration* columns that 
-tell you when the event started and how long it lasted, respectively. 
+The _Alerts_ page contains a list of unexpected behaviors in the various environments. The number and types of alerts the system administrators received are configured in the _Alerts Preference_ page.
 
-![Figure 3: Each alert appears in a table. Use the selector menus to filter the alerts and mark them as read.](../../images/alerts-page.png)
+1. To access the _Alerts_ page, click the _Alerts_ icon on the top navigation bar.
+
+    ![Real Time Alerts](./real-time-alerts/images/02.png)
+
+The following table describes the top level buttons
+
+| Button | Description |
+| --- | --- |
+| Unread alerts / All alerts | Dropdown menu to display only unread statuses or all statuses |
+| All environments | Dropdown menu to select an environment |
+| Mark All as Read | Button to mark all alerts as read |
+
+The following table describes the information found in each column.
+
+| Status | Description |
+| --- | --- |
+| Status | _Ongoing_ or _Resolved_ describes current state of the event |
+| Started at | The time the event began |
+| Duration | Length of time the event lasted |
