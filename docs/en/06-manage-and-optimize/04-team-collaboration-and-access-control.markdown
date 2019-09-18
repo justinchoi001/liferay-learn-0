@@ -30,12 +30,6 @@ Administrators are able to:
 
 ![Figure 2: Use the Actions button to manage each team member.](./team-collaboration-and-access-control/images/02.png)
 
-## Team Activities
-
-To see the team members' activities, click _Activities_ on the left menu. Each activity lists the person who performed it and the date it occurred.
-
-![Figure 3: The Activities tab](./team-collaboration-and-access-control/images/03.png)
-
 ## Defining Team Roles
 
 **Admin:** Has full control over the environment and its members. They have exclusive permissions to:
