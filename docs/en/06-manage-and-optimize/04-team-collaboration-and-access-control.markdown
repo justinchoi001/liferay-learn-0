@@ -4,73 +4,59 @@ header-id: team-collaboration-access-control
 
 # Team Collaboration & Access Control
 
-You can use DXP Cloud's team collaboration features to manage access to your 
-environments. Each environment can have unique members, and each member can have 
-a role that matches their job's access level in the environment. 
+This article documents how to manage teams members and roles in each DXP Cloud environment or project (dev, infra, UAT or prod). Each environment can be distinct and system administrators can invite people and assign member roles. It is possible for a person to have different roles in different environments.
 
 ## Managing Team Members
 
-You can manage teams from your environment's *Team* tab in the menu on the left. 
+To add a new member:
 
-Follow these steps to invite a user to your team: 
+1. Click on _Team_ in the left tab.
+1. Enter the new member's email in the *Email* field.
+1. Select a role from the the *Role* dropdown menu to be assigned to the user.
+1. Click *Send Invite*.
 
-1.  Search for the user's email in the *Email* field. 
+These roles set the user's access level in the environment. For more information, see [Defining Team Roles](#defining-team-roles).
 
-2.  Use the *Role* menu to select the role to assign to the user. These roles 
-    set the user's access level in the environment. For more information, see 
-    [Understanding Team Roles](#understanding-team-roles). 
+![Figure 1: The Team tab](./team-collaboration-and-access-control/images/01.png)
 
-3.  Click *Send Invite*. 
+Current and invited team members appear in the _Members_ table. To manage team members, click the _Actions_ button.
 
-Current and invited team members appear in the *Members* table, in separate 
-tabs. You can manage team members via the *Actions* button for each, which lets 
-you change the team member's role and remove the member from the team. 
+Administrators are able to:
 
-![Figure 1: The Team tab shows your team members and lets you invite new ones.](../../images/invite-member.png)
+* Change another administrator to be a contributor or guest.
+* Change a contributor to be a guest.
+* Promote a contributor to become an administrator.
+* Leave the environment.
 
-![Figure 2: Use the Actions button to manage each team member.](../../images/manage-members.png)
+![Figure 2: Use the Actions button to manage each team member.](./team-collaboration-and-access-control/images/02.png)
 
 ## Team Activities
 
-To see your team members' activities, click your environment's *Activities* tab 
-in the menu on the left. Each activity lists the person who performed it and the 
-date it occurred. This way, you always know who is doing what in your 
-environment. 
+To see the team members' activities, click _Activities_ on the left menu. Each activity lists the person who performed it and the date it occurred.
 
-![Figure 3: The Activities tab shows your team's activities.](../../images/team-activities.png)
+![Figure 3: The Activities tab](./team-collaboration-and-access-control/images/03.png)
 
-## Understanding Team Roles
+## Defining Team Roles
 
-You can assign these roles to team members: 
+**Admin:** Has full control over the environment and its members. They have exclusive permissions to:
 
-**Admin:** Has full control over the environment and its members. They have 
-exclusive permission to: 
+* Enable/disable auto scaling
+* Manually downscale a service
+* Restore from a backup
+* Change user roles
+* Invite members to the environment
+* Remove members from the environment
+* Enable/disable support access
+* Delete a service
 
--   Enable/disable auto scaling
--   Manually downscale a service
--   Restore from a backup
--   Change user role
--   Invite members to the environment
--   Remove members from the environment
--   Enable/disable support access
--   Delete a service
+**Contributor:** Can handle application management and most of the development life cycle, but can not manage team members or perform other Admin-exclusive actions. Permissions include:
 
-Admins also have the permissions that Contributors have. 
+* Start a backup
+* Change VPN settings
+* Restart a service
+* Deploy a build
+* Remove themselves from the environment
 
-**Contributor:** Can handle application management and most of the development 
-lifecycle, but can't manage team members or perform other Admin-exclusive 
-actions. They have permission to: 
+**Guest:** Has view-only access. Guests can see what is happening in the environment but can not perform actions or make any changes. They only have permission to:
 
--   Start a backup
--   Change VPN settings
--   Restart a service
--   Deploy a build
--   Remove themselves from the environment
-
-**Guest:** Has view-only access. Guests can see what's happening in the 
-environment but can't perform actions or make any changes. This includes not 
-having access to service features such as using shell access to run commands, 
-changing/creating environment variables, or specifying custom domains. They only 
-have permission to: 
-
--   Remove themselves from the environment
+* Remove themselves from the environment
