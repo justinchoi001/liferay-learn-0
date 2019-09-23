@@ -4,6 +4,8 @@ This article outlines the path developers will take when deploying their changes
 
 Although there are multiple paths for deploying to an environment, all paths begin with adding changes to the repository.
 
+**Contents:**
+
 * [Adding Changes to the Repository](#adding-changes-to-the-repository)
 * [CI Testing](#ci-testing)
 * [Deploying Services](#deploying-services)
