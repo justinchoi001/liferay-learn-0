@@ -10,7 +10,7 @@ Although there are multiple paths for deploying to an environment, all paths beg
 
 ## Adding Changes to the Repository
 
-Begin the deployment life cycle by adding a change into the GitHub repository. See []() for more information on setting up the Workspace on your local system.
+Begin the deployment life cycle by adding a change into the GitHub repository. See [Configuring Your GitHub Repository]() for more information on setting up the Workspace on your local system.
 
 The source for new code additions must be added into folders at the root of the repository: the `modules` folder for new modules, the `themes` folder for custom themes, and the `wars` folder for WARs. Code changes added to any of these locations will be automatically built and then deployed to the Liferay service after the build is deployed.
 
@@ -26,7 +26,7 @@ There are two main ways to deploy to a Liferay instance on DXP: deploying throug
 
 ### Option 1: Deploying Through the Command Line Interface
 
-The quickest way to deploy services from a repository locally is by using the Command Line Interface (CLI). See []() for more information on setting up the CLI.
+The quickest way to deploy services from a repository locally is by using the Command Line Interface (CLI). See [Using the Command Line Interface]() for more information on setting up the CLI.
 
 First, log in to the CLI:
 
@@ -59,3 +59,9 @@ Next, navigate to the `Builds` tab for the desired environment. The option to de
 Click "Deploy Build to..." for any successful build to deploy to the environment of your choice. Normally, a new build will first be deployed to the `dev` environment. However, developers can directly deploy to any environment as long as they have permissions to do so.
 
 ![Choosing an environment for deployment](./walking-through-the-development-life-cycle/03.png)
+
+# Additional Information
+
+* [Configuring Your GitHub Repository]()
+* [Environments](../05-build-and-deploy/02-environments.markdown)
+* [Using the Command Line Interface]()
