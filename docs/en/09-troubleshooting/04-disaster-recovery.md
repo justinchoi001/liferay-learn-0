@@ -4,9 +4,9 @@
 
 DXP Cloud provides two ways for customers to take advantage of the Disaster Recovery (DR) procedure in the case of major incidents.
 
-* Automatic Disaster Recovery: DXP Cloud already performs automatic disaster recovery protocols by replicating services between three Availability Zones in different geographic locations within the same Region. In case any of the Availability Zones become unavailable, the Load Balancer automatically routes to the remaining Availability Zone without requiring DNS changes on the customer side. In this situation, _no action is required from the customer during an incident_.
+* **Automatic Disaster Recovery**: DXP Cloud performs automatic disaster recovery protocols by replicating services between three Availability Zones in different geographic locations within the same Region. In case any of the Availability Zones become unavailable, the Load Balancer will automatically route to the remaining Availability Zones without requiring DNS changes on the customer side. In this situation, _no action is required from the customer during an incident_.
 
-* Cross-Region Disaster Recovery: The Disaster Recovery procedure as explained in this document is only necessary when there is a compromise in all three Availability Zones in the same region at the same time, which is extremely unlikely to occur. In this situation, customers will use the DR environment and follow the instructions explained in this document.
+* **Cross-Region Disaster Recovery**: The Disaster Recovery procedure as explained in this document is only necessary when there is a compromise in all three Availability Zones in the same region at the same time. In this situation, customers will use the DR environment and follow the instructions explained in this document.
 
 ## Initial Setup
 
