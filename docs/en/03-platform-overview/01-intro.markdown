@@ -10,7 +10,7 @@ DXP Cloud contains several built-in services that provide its functionality and 
 
 **Backup Service:** Creates regular backups of the Liferay DXP database and Document Library.
 
-**Liferay DXP Service:** Runs the application's Liferay DXP instance.
+**Liferay DXP Service:** Runs the Liferay DXP instance.
 
 **Web Server Service:** Handles all traffic from users and acts as a high-performance web server.
 
@@ -24,4 +24,4 @@ Check the [services changelog](https://help.liferay.com/hc/en-us/categories/3600
 
 After finding the latest images, update the DXP Cloud workspace's `gradle.properties`.
 
-Several services use third-party images as a foundation (e.g., Elasticsearch, NGINX, and Jenkins). Although these images get regular updates from their maintainers, Liferay updates only the corresponding service when necessary for a feature or security. This ensures stability. To update an image's version, open a ticket [here](https://liferay-support.zendesk.com) and work with Liferay Support. The [services changelog](https://help.liferay.com/hc/en-us/categories/360001192512-Liferay-DXP-Cloud-Announcements) lists any such image updates.
+Several services use third-party images as a foundation (e.g., Elasticsearch, NGINX, and Jenkins). Although these images get regular updates from their maintainers, Liferay updates only the corresponding service when necessary for a feature or security. This ensures stability. To update an image's version, [open a ticket with our Support team](https://liferay-support.zendesk.com) and we will review all requests. The [services changelog](https://help.liferay.com/hc/en-us/categories/360001192512-Liferay-DXP-Cloud-Announcements) lists any related image updates.

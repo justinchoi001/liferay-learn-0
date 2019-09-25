@@ -18,7 +18,7 @@ To install themes, portlets, or OSGi modules, place a WAR or JAR file in the `/d
     │   └── com.liferay.apio.samples.portlet-1.0.0.jar
     └── LCP.json
 
-Under the hood, such files are copied to the `$LIFERAY_HOME/deploy` folder and deployed on startup.
+On the DXP Service, such files are copied to the `$LIFERAY_HOME/deploy` folder and deployed on startup.
 
 ## Licenses
 
@@ -61,14 +61,14 @@ There is also a set of files used to configure the environment. The portal reads
 
 `portal-ext.properties`: Contains the final changes to the Liferay DXP configuration. Since most properties are configured in `portal-all.properties` and `portal-env.properties`, this file is typically empty or missing altogether. It may still be useful for testing purposes.
 
-Note that portal properties can be defined as environment variables; see [Liferay DXP's documentation](https://help.liferay.com/hc/en-us/articles/360017877312-Environment-Variables).
+Note that portal properties can be defined as environment variables; see [DXP Environment Variables](https://help.liferay.com/hc/en-us/articles/360017877312-Environment-Variables).
 
 ## Environment Variables
 
 Name                                  | Default Value | Description  |
 ------------------------------------- | ------------- | ------------ |
 `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` | `false`       | Whether to enable clustering and communication between nodes. |
-`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |               | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS product. |
+`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |               | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account. |
 `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |               | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
 
 ## Advanced Monitoring with Dynatrace
@@ -126,7 +126,7 @@ To apply hotfixes, add the hotfix ZIP file to the `hotfix` folder. Use the follo
 
 ## Scripts
 
-Developers can use scripts for more extensive customizations. However, use caution when doing so. This is the most powerful way to customize Liferay DXP and can cause undesired side effects.
+Scripts may be used for more extensive customizations. However, use caution when doing so. This is the most powerful way to customize Liferay DXP and can cause undesired side effects.
 
 Any `.sh` files found in the `script` folder are run prior to starting a service. For example, to include a script that removes all log files, place it in the following directory structure:
 
