@@ -45,12 +45,14 @@ Run this command to invoke the API and upload the zipped files:
 
 ```bash
 curl -X POST /
-  http://<HOST-NAME>/backup/upload /
+  http://<HOST-NAME>/projects/<PROJECT-NAME>/services/backup/upload /
   -H 'Content-Type: multipart/form-data' /
   -F 'database=@/my-folder/database.tgz' /
   -F 'volume=@/my-folder/volume.tgz' /
   -u user@domain.com:password
 ```
+
+> Substitute `<HOST-NAME>` and `<PROJECT-NAME>` with the appropriate names for your DXP Cloud host name and project, respectively. Substitute `/my-folder` with the correct path to the zipped files.
 
 Once these are uploaded, the backup service can initialize a backup with the necessary data. At this point, the biggest step of the migration into DXP Cloud is complete.
 
