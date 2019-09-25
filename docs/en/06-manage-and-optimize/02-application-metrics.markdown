@@ -19,9 +19,7 @@ While logged into the web console:
 
 ## Advanced Application Metrics On Production
 
-To conduct deeper and more advanced monitoring on the production environment, click the *Advanced* tab to access your [Dynatrace](https://www.dynatrace.com/) dashboard. There you can check things like log trails and create custom dashboards.
-
-The following requirements have to be met first:
+Before using the Dynatrace advanced monitoring features, the following requirements have to be met first:
 
 1. A Dynatrace account has been created.
 1. The Dynatrace secret `token` and `tenant` values have been generated.
@@ -37,6 +35,18 @@ The following requirements have to be met first:
   }
 }
 ```
+
+Once those required steps have been completed;
+
+1. Navigate to <https://console.liferay.cloud/projects>.
+1. Click on the production environment.
+1. Click _Monitoring_ on the left menu.
+1. Click the *Advanced* tab.
+1. Click the _Go to Dynatrace Dashboard_ to access your [Dynatrace](https://www.dynatrace.com/) dashboard.
+
+![Dynatrace dashboard](./application-metrics/images/02.png)
+
+Here, you will be directed to the Dynatrace site. Sign in with your Dynatrace credentials to check things like log trails and create custom dashboards.
 
 ## Additional Information
 
