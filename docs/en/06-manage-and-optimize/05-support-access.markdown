@@ -17,7 +17,7 @@ When Support Access is enabled, Support Engineers are able to _read_ the followi
 
 Note that only the project administrator has the ability to configure support access. Support Access does _not_ allow Support Engineers to deploy assets or perform other _write_ actions to your project.
 
-To manage Support Access, while logged into to the Liferay Cloud Management Console:
+To manage Support Access, while logged into to the DXP Cloud Management Console:
 :
 
 1. Navigate to _Settings_.

@@ -8,7 +8,7 @@ Liferay DXP Cloud can alert system administrators of unexpected behaviors in a p
 
 ## Managing Alert Preferences
 
-While logged into to the Liferay Cloud Management Console:
+While logged into to the Liferay DXP Cloud Management Console:
 
 1. Click on the profile photo at the top-right corner of the navigation bar.
 1. Click _Alerts Preferences_.
