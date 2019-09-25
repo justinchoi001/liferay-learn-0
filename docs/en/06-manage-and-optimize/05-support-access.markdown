@@ -4,9 +4,9 @@ header-id: support-access
 
 # Support Access
 
-In order to resolve a customer's issues quickly, it might be necessary to allow Liferay Customer Support Engineers to access the environment directly. DXP Cloud administrators are able to enable and disable access to a specific environment. Note that by default, this feature is set to _Enabled_.
+Support Access is an _optional_ setting for a DXP project that allows Liferay Engineers to directly access a project to expedite project troubleshooting. DXP Cloud administrators are able to enable and disable access per environment. By default, this feature is set to _Enabled_.
 
-When Support Access is enabled, the support engineer is able to view the following:
+When Support Access is enabled, Support Engineers are able to _read_ the following information:
 
 * Project Console
 * Logs for each service
@@ -15,7 +15,7 @@ When Support Access is enabled, the support engineer is able to view the followi
 * Team Members and their associated roles
 * Members' Activities
 
-Note that only the administrator has the ability to grant or deny support access. If granted access, Support Engineers will _not_ be able to deploy assets or perform other actions.
+Note that only the project administrator has the ability to configure support access. Support Access does _not_ allow Support Engineers to deploy assets or perform other _write_ actions to your project.
 
 To manage Support Access:
 
