@@ -2,7 +2,7 @@
 
 To see the team members' activities, click _Activities_ on the left menu. The page is divided into two sections:  _Builds and Deployments_ and _General_.
 
-The _General_ section on the _Activities_ lists each event, the person who performed it, and the time stamp. There is nothing actionable in this section.
+The _General_ section on the _Activities_ lists each event, the person who performed it, and the time stamp.
 
 ![Figure 1: The Activities tab](./team-activities/images/01.png)
 
