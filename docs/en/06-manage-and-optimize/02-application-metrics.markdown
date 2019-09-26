@@ -10,7 +10,7 @@ With DXP Cloud's built-in monitoring, administrators can track the following inf
 * Memory usage
 * Transfer data
 
-While logged into the web console:
+To view the application metrics, while logged into the DXP Cloud Management Console:
 
 1. Click *Monitoring* tab.
 1. Data is displayed for the past 30 days. To change the time period, click the time selector dropdown menu.
@@ -23,7 +23,7 @@ Before using the Dynatrace advanced monitoring features, the following requireme
 
 1. A Dynatrace account has been created.
 1. The Dynatrace secret `token` and `tenant` values have been generated.
-1. Dynatrace environment variables have been added to the `LCP.json` file in the DXP's production instance. Example:
+1. Dynatrace environment variables have been added to the `LCP.json` file in the DXP Service's production environment. For example:
 
 ```
 "environments": {
@@ -35,6 +35,11 @@ Before using the Dynatrace advanced monitoring features, the following requireme
   }
 }
 ```
+
+| Name | Description |
+| --- | --- |
+`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` | A string with eight characters. It is part of the URL (prefix) of your Dynatrace SaaS account. |
+`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
 
 Once those required steps have been completed;
 
