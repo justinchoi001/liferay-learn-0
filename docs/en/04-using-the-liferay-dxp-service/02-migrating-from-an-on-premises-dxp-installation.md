@@ -37,6 +37,8 @@ Add the document library to a zip file with this command:
 cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 ```
 
+> If you are currently using the [Amazon S3](https://help.liferay.com/hc/en-us/articles/360028810172-Using-Amazon-Simple-Storage-Service), [CMIS](https://help.liferay.com/hc/en-us/articles/360018176171-Using-the-CMIS-Store), or [DBStore](https://help.liferay.com/hc/en-us/articles/360018176191-Using-the-DBStore) storage methods, you will need to first [migrate to using File System Store](https://help.liferay.com/hc/en-us/articles/360017649452-Migrating-File-System-Stores-) first.
+
 ### Invoke Backup Service API
 
 Once you have the database dump and document library both zipped and ready, invoke the backup service API to upload both of them to the backup service simultaneously.
@@ -54,22 +56,34 @@ curl -X POST /
 
 > Substitute `<HOST-NAME>` and `<PROJECT-NAME>` with the appropriate names for your DXP Cloud host name and project, respectively. Substitute `/my-folder` with the correct path to the zipped files.
 
-Once these are uploaded, the backup service can initialize a backup with the necessary data. At this point, the biggest step of the migration into DXP Cloud is complete.
+Once these are uploaded, the backup service will initialize a DXP Cloud backup. At this point, the biggest step of the migration to DXP Cloud is complete.
 
 ## Copy Liferay DXP Configurations
 
 Portal properties and OSGi configurations can be copied over to DXP Cloud by putting them into the appropriate folder per environment (`dev`, `uat`, or `prd`, or `common` to apply to all) inside of `lcp/liferay/config/`.
 
-Any portal properties of the form `portal-*.properties` placed in one of the appropriate folders will be automatically copied over to the `$LIFERAY_HOME` within the Liferay service for the applicable service(s). OSGi properties (.cfg or .config files) will instead be copied over to the `osgi/configs` folder within the Liferay service.
+```
+    |-- lcp
+        |-- liferay
+            |-- LCP.json
+            |-- config
+                |-- common
+                |-- dev
+                |-- local
+                |-- prd
+                |-- uat
+```
+
+Any portal properties of the form `portal-*.properties` placed in one of the appropriate folders will be automatically copied over to the `$LIFERAY_HOME` within the Liferay DXP service for the applicable environment(s). OSGi properties (.cfg or .config files) will be copied over to the `osgi/configs` folder within the Liferay DXP service for the applicable environment(s).
 
 ## Add Service Configurations
 
 Remaining configurations will primarily be handled through the services provided in DXP Cloud. It may take some planning to determine how to translate web server and search configurations, since these configurations must all now be done through the services DXP Cloud is using.
 
-Web server configurations will be done through webserver service, using Nginx. See [Web Server Service]() for more information on adding configurations to this service; see the [official Nginx documentation](https://docs.nginx.com/) for more information on the configurations themselves.
+Web server configurations will be done through webserver service, using Nginx. See [Web Server Service](../07-platform-services/02-web-server-service.markdown) for more information on adding configurations to this service; see the [official Nginx documentation](https://docs.nginx.com/) for more information on the configurations themselves.
 
-Search configurations will be done through the search service, using Elasticsearch. See [Search Service]() for more information on adding configurations to this service; see the [official Elasticsearch documentation](https://www.elastic.co/guide/index.html) for more information on the configurations themselves.
+Search configurations will be done through the search service, using Elasticsearch. See [Search Service](../07-platform-services/03-search-service.markdown) for more information on adding configurations to this service; see the [official Elasticsearch documentation](https://www.elastic.co/guide/index.html) for more information on the configurations themselves.
 
 ## Use a VPN to Connect External Services
 
-External services that do not readily map to the existing services in DXP Cloud (like SSO or LDAP integrations) may be connected using a VPN. This feature is built-in to DXP Cloud, and it will allow you to set up communication with external infrastructure. See [VPN Connection]() for more information on configuring the VPN.
+External services that do not readily map to existing services in DXP Cloud (like SSO or LDAP integrations) may be connected using a VPN. See [VPN Connection](../08-infrastructure-and-operations/04-vpn-connection.markdown) for more information on configuring the VPN.
