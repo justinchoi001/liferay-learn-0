@@ -4,28 +4,23 @@ header-id: private-network
 
 # Private Network
 
-Every environment has its own private network. This lets services from the 
-same environment communicate through multiple secure communication protocols 
-without having to interact with the public Internet. 
+This article documents how private networks work in DXP Cloud and facilitating secure communications between the various services. Customers should evaluate which services they wish to expose and which ones to remain hidden for security reasons.
 
-For example, your project by default only exposes your web server service to 
-public connections. Connections between other services (e.g., Liferay DXP, 
-database, etc.) are routed through the private network. 
+Every environment has its own private network. This lets services from the same environment communicate through multiple secure communication protocols without having to interact with the public Internet.
 
-For every connection configured in this private network, you must specify these 
-variables: 
+For example, by default, the project only exposes the web server service to public connections. Connections between other services (e.g., Liferay DXP, database, etc.) are routed through the private network.
 
-`targetPort`: The internal port of the service to expose. 
+For every connection configured in this private network, specify these variables:
 
-`port`: The external port of the service to connect to. 
+`targetPort`: The internal port of the service to expose.
 
-`protocol`: The type of connection to create (TCP and UDP are supported). 
+`port`: The external port of the service to connect to.
 
-`external`: Whether your connection is available to external connections. The 
-default value `false` restricts the connection to internal DXP Cloud 
-connections. 
+`protocol`: The type of connection to create (TCP and UDP are supported).
 
-Here's an example configuration: 
+`external`: Whether the connection is available to external connections. The default value `false` restricts the connection to internal DXP Cloud connections.
+
+Here is an example configuration:
 
 ```json
 {
