@@ -1,6 +1,10 @@
 # Authentication
 
-There are two main ways authentication requests are handled in Liferay DXP Cloud: basic authentication or a user access token. Note that token authentication is required if SSO is enabled. The token from the cookie `access_token` is retrieved and then used with the `dxpcloud-authorization` header.
+This article documents the two types of authentication requests used by Liferay DXP Cloud.
+
+The first method is [basic authentication](https://swagger.io/docs/specification/authentication/basic-authentication/) which is a HTTP protocol in the Authorization Header encoded when the server requests authentication from a client.
+
+The second is by a user access token. Note that token authentication is required if SSO is enabled. The token from the cookie `access_token` is retrieved and then used with the `dxpcloud-authorization` header.
 
 Here is an example that uses token authentication with the upload API:
 

@@ -8,7 +8,49 @@ Using SAML to execute SSO requires three agents, the Client, the Service Provide
 
 In this scenario, DXP Cloud is configured as the Service Provider; the customer trying to log into DXP Cloud is the client; and the Identity Provider is an enterprise directory solution managed by the customer.
 
-## Using SAML
+## SSO Configurations
+
+This article documents the required configurations before a customer can use the Single Sign-On (SSO) features to log into DXP Cloud. Note: Using the SSO feature is **optional**.
+
+### Setting up the Identity Provider (IdP)
+
+As noted above, using SAML requires an IdP and a SP who share metadata and authentication requests to connect to each other. In the general, the **IdP** metadata must include the following information:
+
+| Field | Description |
+| --- | --- |
+| IdP Issuer | The name of the identity issuer; usually the `EntityID` attribute of the `EntityDescriptor` Metadata |
+| IdP Single Sign-On URL | Request endpoint that will receive the SAML Authentication Request (example: <http://adfs.customer.com/saml/sso)> |
+| IdP Signature Certificate | Public Key Certificate of the IdP to the SAML message and assertion signatures |
+| IdP Single Sign-On HTTP Method (Request Binding) | The HTTP method supported by the customer’s Identity Provider to receive the Authentication Requests; the only valid answers are `POST` (the default) and `GET` |
+| Sign Requests | Set to `TRUE` if the SAML requests sent to the Customer’s Identity Provider should be signed; otherwise set to `FALSE` |
+| Request Signature Algorithm (RSA) | If the `Sign Requests` is set to `TRUE`, provide the algorithm used to sign the requests. At the moment we support SHA-1 (not recommended) and SHA-256. If the request signing is disabled, this configuration is unnecessary. |
+
+### Setting up the Service Provider (SP)
+
+As noted above, Liferay DXP Cloud acts as the Service Provider (SP) and its metadata has to be generated and imported into the IdP. The Liferay DXP Cloud Support Team is responsible for this part.
+
+Once the Liferay DXP Cloud Support Team has received the IdP metadata and other required values, they will provide the following information to complete the setup process:
+
+| Field | Description |
+| --- | --- |
+| Assertion Consumer Service (ACS) URL | The SAML response received by DXP Cloud. This will always be an address server from <https://auth.liferay.cloud> |
+| Audience URL | The URL Liferay Cloud used to access the customer’s Identity Provider |
+
+### ADFS-Specific Information
+
+Subscribers using Microsoft ADFS should pay attention to the following settings which are required to setup SSO using SAML:
+
+| Field | Description |
+| --- | --- |
+| IdP Issuer URI |Located in the General tab's _Federation Service identifier_ and has a default value of <http://domain/adfs/services/trust> |
+| IdP Single Sign-On URL | Default setting is `/adfs/ls`. Example: <http://adfs.example.com/adfs/ls/> |
+| IdP Signing Certificate | A DER encoded binary X.509 certificate file |
+
+## Using SSO
+
+Once the IdP and the SP have been connected, it is a best practice to verify that the users in the directory services (IdP) matches with those in the SP. Otherwise, SSO will fail.
+
+To log into DXP Cloud using SSO:
 
 1. Navigate to <https://console.liferay.cloud/login>.
 1. Click _Login via SSO_.
@@ -24,33 +66,3 @@ In this scenario, DXP Cloud is configured as the Service Provider; the customer 
 Once logged in, the user should see all of his or her projects and environments.
 
 ![projects page](./sso-using-saml/images/02.png)
-
-## Required IdP Values
-
-In order for the DXP Cloud SSO feature to be integrated with the company’s Identity Provider, the customer must provide the following required information:
-
-| Field | Description |
-| --- | --- |
-| IdP Issuer | The name of the identity issuer; usually the `EntityID` attribute of the `EntityDescriptor` Metadata |
-| IdP Single Sign-On URL | Request endpoint that will receive the SAML Authentication Request (example: <http://adfs.customer.com/saml/sso)> |
-| IdP Signature Certificate | Public Key Certificate of the IdP to the SAML message and assertion signatures |
-| IdP Single Sign-On HTTP Method (Request Binding) | The HTTP method supported by the customer’s Identity Provider to receive the Authentication Requests; the only valid answers are `POST` (the default) and `GET` |
-| Sign Requests | Set to `TRUE` if the SAML requests sent to the Customer’s Identity Provider should be signed; otherwise set to `FALSE` |
-| Request Signature Algorithm (RSA) | If the `Sign Requests` is set to `TRUE`, provide the algorithm used to sign the requests. At the moment we support SHA-1 (not recommended) and SHA-256. If the request signing is disabled, this configuration is unnecessary. |
-
-Once the Liferay DXP Cloud Support Team has received the information listed above, they will provide the following information to complete the setup process:
-
-| Field | Description |
-| --- | --- |
-| Assertion Consumer Service (ACS) URL | The SAML response received by DXP Cloud. This will always be an address server from <https://auth.liferay.cloud> |
-| Audience URL | The URL Liferay Cloud used to access the customer’s Identity Provider |
-
-## ADFS-Specific Information
-
-Subscribers using Microsoft ADFS should pay attention to the following settings which are required to setup SSO using SAML:
-
-| Field | Description |
-| --- | --- |
-| IdP Issuer URI |Located in the General tab's _Federation Service identifier_ and has a default value of <http://domain/adfs/services/trust> |
-| IdP Single Sign-On URL | Default setting is `/adfs/ls`. Example: <http://adfs.example.com/adfs/ls/> |
-| IdP Signing Certificate | A DER encoded binary X.509 certificate file |
