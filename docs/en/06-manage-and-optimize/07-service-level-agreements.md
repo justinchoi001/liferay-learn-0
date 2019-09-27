@@ -1,8 +1,10 @@
 # Service Level Agreements
 
-Liferay is committed to providing an excellent customer experience. As part of this commitment, we offer support for Liferay DXP Cloud subscriptions. Every Liferay DXP Cloud customer has access to the our Support knowledge Base, ticketing support on [Help Center](https://liferay-support.zendesk.com/agent/dashboard), and [phone support](https://help.liferay.com/hc/en-us/articles/360017784212) as outlined in our Support Channels. *This page is meant to be an overview of the general Support Policies, but details are _subject to your legal agreement with Liferay_.*
+Liferay is committed to providing an excellent customer experience. Every Liferay DXP Cloud customer has access to the our Support Knowledge Base, ticketing support on [Help Center](https://liferay-support.zendesk.com/agent/dashboard), and [phone support](https://help.liferay.com/hc/en-us/articles/360017784212)*.
 
-For more detailed information about legal agreements and services, please refer to [www.liferay.com/legal](http://www.liferay.com/legal) and locate the section “Liferay DXP Cloud Service Appendix.”
+> **Details subject to your legal agreement with Liferay.*
+
+For more detailed information about legal agreements and services, please refer to [www.liferay.com/legal](http://www.liferay.com/legal).
 
 ## Status Page
 
