@@ -7,7 +7,7 @@ This article will walk you through the steps to deploy a sample module similarly
 1. [Deploy the Sample to the `dev` Environment](#deploy-the-sample-to-the-dev-environment)
 1. [Test the Sample Deployment](#test-the-sample-deployment)
 1. [Deploy the Sample to the `uat` Environment](#deploy-the-sample-to-the-uat-environment)
-1. [Review the Deployment]
+1. [Review the Sample Deployment](#review-the-sample-deployment)
 
 ## Prerequisites
 
@@ -75,7 +75,7 @@ Click "Deploy Build to..." for any successful build to deploy to the environment
 
 ![Choosing an environment for deployment](./walking-through-the-development-life-cycle/03.png)
 
-## Review the Deployment
+## Review the Sample Deployment
 
 Navigate back to the DXP Cloud console, and this time navigate to the `uat` environment. Once the `webserver` service is up and running again, you can navigate to your DXP instance by again clicking the "webserver" link through this service.
 
@@ -86,4 +86,4 @@ Once you have verified the deployment was successful, you will have completed th
 * [Configuring Your GitHub Repository]()
 * [Environments](../05-build-and-deploy/02-environments.md)
 * [Overview of the DXP Cloud Development Workflow](./05-overview-of-the-dxp-cloud-development-workflow.md)
-* [Using the Command Line Interface]()
+* [Command-Line Tool](../10-reference/03-command-line-tool.md)
