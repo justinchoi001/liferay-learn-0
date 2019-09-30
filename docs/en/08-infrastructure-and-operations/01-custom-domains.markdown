@@ -4,7 +4,9 @@ header-id: custom-domains
 
 # Custom Domains
 
-Adding a custom domain to a DXP Cloud service requires the domain be registered with the dedicated environment IP as an `A` record. Administrators can use the domain name registrar of their choice.
+This article documents how to add a custom domain to a DXP Cloud service and then verify the new domain's status.
+
+New custom domains in a DXP Cloud service have to be registered with the dedicated environment IP as an `A` record. Administrators can use the domain name registrar of their choice.
 
 DNS propagation can take up to 24-48 hours to take effect, but in some cases takes only a few minutes. During this propagation process, depending on the DNS server that a device reaches out to, one device may be able to reach the domain at the updated address while another cannot. Eventually, the domain will be reachable from any device and return the standard `default backend - 404` error from the Ingress Load Balancer.
 
