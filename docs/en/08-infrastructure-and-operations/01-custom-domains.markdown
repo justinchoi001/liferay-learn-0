@@ -4,39 +4,38 @@ header-id: custom-domains
 
 # Custom Domains
 
-To add a custom domain to a DXP Cloud service, you must first register that 
-domain with the dedicated environment IP as an `A` record. Do this using the 
-domain name registrar of your choice. DNS propagation can take up to 24-48 hours 
-to take effect, but in some cases takes only a few minutes. During this 
-propagation process, depending on the DNS server that a device reaches out to, 
-one device may be able to reach the domain at the updated address while another 
-cannot. Eventually, the domain will be reachable from any device and return the 
-standard `default backend - 404` error from the Ingress Load Balancer. Now 
-you're ready for the next step. 
+Adding a custom domain to a DXP Cloud service requires the domain be registered with the dedicated environment IP as an `A` record. Administrators can use the domain name registrar of their choice.
 
-| **Note:** You can find the dedicated environment IP on a service's Custom 
-| Domains or the Network page. 
+DNS propagation can take up to 24-48 hours to take effect, but in some cases takes only a few minutes. During this propagation process, depending on the DNS server that a device reaches out to, one device may be able to reach the domain at the updated address while another cannot. Eventually, the domain will be reachable from any device and return the standard `default backend - 404` error from the Ingress Load Balancer.
 
-![Figure 1: This example uses Cloudflare as a domain name registrar to create DNS records.](../../images/dns-records.png)
+> **Note:** One can find the dedicated environment IP on a service's Custom Domains or the Network pages.
 
-## Adding Your Domain to Your Service
+ This example uses Cloudflare as a domain name registrar to create DNS records.
 
-Once the domain is reachable, you can add it to your service and Liferay DXP 
-Cloud will handle the routing for you. You can do this via the web console or 
-`LCP.json`. 
+![Figure 1: Cloudflare - DNS Records](./custom-domains/images/01.png)
 
-Follow these steps to add custom domains via the web console: 
+## Adding a Custom Domain to a DXP Cloud Service
 
-1.  Go to your environment page. 
+Once the domain is reachable, there are two ways to add it to the service: via the web console or configuring the  `LCP.json` file.
 
-2.  Select the service to which you want to add the custom domains. 
+### Via the Web Console
 
-3.  Click the *Custom Domains* tab and add your custom domains. 
+While logged into the DXP Cloud Management Console:
 
-![Figure 2: Use the service's Custom Domains tab to add your domains.](../../images/custom-domains.png)
+1. Navigate to the environment page (for example, *Prod*).
+1. Click _Services_ on the left menu.
+1. Select the service which will have the custom domains (for example: _webserver_).
+1. Click the _Custom Domains_ tab.
+1. Enter the custom domain name.
+1. Click _Update Custom Domains_ to.
 
-Alternatively, you can add your custom domains via the `customDomains` property 
-in the service's `LCP.json`: 
+![Figure 2: Use the service's Custom Domains tab to add the domains.](./custom-domains/images/02.png)
+
+To add more than one custom domain name, enter all the names on each new field created then click _Update Custom Domains_. The number of custom domains can be capped by the quotas set during the provisioning process.
+
+### Via the LCP.json File
+
+Navigate to the service's `LCP.json` file and enter the following:
 
 ```json
 {
@@ -47,28 +46,22 @@ in the service's `LCP.json`:
 }
 ```
 
-Note that DXP Cloud restricts its Ingress Load Balancer to 50 custom domains. 
+Note that DXP Cloud restricts its Ingress Load Balancer to 50 custom domains. When the configurations are complete, Liferay DXP Cloud will handle the routing.
 
 ## Verifying a Custom Domain's Status
 
-Once you have added a custom domain, you must wait until the service endpoint is 
-reachable and stops responding with a `default backend - 404` error. 
+Once a custom domain has been added, there are two ways to verify its status.
 
-Behind the scenes, a couple things occur. First, the route must be added to the 
-Ingress Load Balancer, which can take around 30 minutes depending on the region. 
-After this, Liferay DXP Cloud reaches out to 
-[Let's Encrypt](https://letsencrypt.org/) 
-for an SSL Server Certificate. Let's Encrypt responds with a challenge. Once the 
-challenge is passed, the Ingress Load Balancer is updated with the certificate 
-and the service is reachable and secure. If you try to reach the domain during 
-the challenge process, your browser will display security warnings. You can 
-safely ignore these warnings because the process is not yet complete. 
+1. Wait until the service endpoint is reachable and stops responding with a `default backend - 404` error.
+2. Navigate to the status on the Network page on the DXP Cloud Management Console.
+  ![Figure 3: View all your endpoints and custom domains on the Network page.](./custom-domains/images/03.png)
 
-Apart from trying to reach the service endpoint through a browser, you can 
-verify its status on the Network page. 
+To learn more about using SSL certificates in Liferay DXP Cloud, including how to set up a custom SSL certificate, see the [Load Balancer](./02-load-balancer.markdown) article.
 
-To learn more about using SSL certificates in Liferay DXP Cloud, including how 
-to set up your own custom SSL certificate, see 
-[Load Balancer](/docs/-/knowledge_base/dxp-cloud/load-balancer). 
+## Additional Information
 
-![Figure 3: View all your endpoints and custom domains on the Network page.](../../images/custom-domains-status.png)
+During the domain's verification process, the following events occur:
+
+1. The route must be added to the Ingress Load Balancer, which can take around 30 minutes depending on the region.
+1. Liferay DXP Cloud reaches out to [Let's Encrypt](https://letsencrypt.org/) for an SSL Server Certificate. The _Let's Encrypt_ site responds with a challenge.
+1. Once the challenge is passed, the Ingress Load Balancer is updated with the certificate and the service is reachable and secure. If someones try to reach the domain during the challenge process, the browser will display security warnings. These warnings can be ignored safely because the process is not yet complete.
