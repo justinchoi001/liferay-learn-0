@@ -71,7 +71,7 @@ Name                                  | Default Value | Description  |
 
 This is then expressed as the following in the `LCP.json` file:
 
-``` 
+```properties
 "env": {
     "LCP_PROJECT_LIFERAY_CLUSTER_ENABLED": "true"
   },
