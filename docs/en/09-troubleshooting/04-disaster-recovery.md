@@ -13,14 +13,14 @@ This article documents the steps required to help a customer recover data manual
 ## Roadmap
 
 * Initial Setup
-* During the Incident
+* During an Incident
 * Post-Incident Recovery Steps
 
 ## Initial Setup
 
-Liferay offers a fifth DXP Cloud environment to manage a _cross region_ disaster. In this scenario, assume that a production environment is stored in the *eu-west-2* region and that suddenly this region is compromised. To prevent downtime and data loss on the production environment, this environment has to be shifted to outside the region such as *us-west1*. This fifth Disaster Recovery (shortened to *DR*) environment thus serves as a backup to store new user data generated during the incident.
+Liferay offers a fifth DXP Cloud environment to manage a _cross region_ disaster. In this scenario, assume that a production environment is stored in the *eu-west-2* region and the region is compromised. To prevent downtime and data loss on the production environment, the Disaster Recovery environment should be shifted to outside the region of operation, such as *us-west1*. This fifth Disaster Recovery (shortened to *DR*) environment thus serves as a backup to store new user data generated during the incident.
 
-DXP Cloud customers wishing to use this Disaster Recovery environment must purchase this additional environment first by contacting their sales representatives. Liferay DXP Cloud engineers will create the disaster recovery environment. This new environment is listed with the other available environments (dev, infra, UAT, and prod).
+DXP Cloud customers wishing to set up a Disaster Recovery environment must first contact their sales representative in order for the DR environment to be provisioned. This new environment is listed with the other available environments (dev, infra, UAT, and prod).
 
 ![Creating a disaster recovery environment](./disaster-recovery/images/01.png)
 
@@ -58,7 +58,7 @@ Once the environment has been created, it must include the most recent stable bu
 
 1. Click _Deploy Build_.
 
-## During the Incident
+## During an Incident
 
 Continuing the example above, the production environment hosted in the *eu-west-2* region is scheduled to be backed up hourly at 2:00 PM local time and that the region is compromised at 2:30 PM local time. Because no backups have been generated in the intervening half hour, it is necessary to restore a backup of database and documents from the Production environment to the Disaster Recovery environment. The last stable environment is the version created at 2:00 PM.
 
@@ -85,11 +85,11 @@ The custom domain of the *DR* environment should match that of the original prod
 
 ## Post-Incident Recovery Steps
 
-Once the region has been recovered and the incident is over, there are some necessary steps if the production environment is to be shifted back to the original region (back to *eu-west2* in this example). To do so, perform a manual backup since new user data has been generated during the period the DR environment served as the production environment.
+Once the regional incident is over, there are some necessary steps to shift back to the original region production environment (*eu-west2* in this example). A manual backup must be performed since new user data has been generated during the period the DR environment served as the production environment.
 
 ### Create a Manual Backup in the DR environment
 
-During the incident, new data has been generated on the *DR* environment. This needs to be imported into the original production environment; therefore, a backup is created in the *DR* environment.
+During the incident, new data has been generated on the *DR* environment. This must be imported into the original production environment; therefore, a backup is created in the *DR* environment.
 
 1. Navigate to _Backups_ on the **DR** environment.
 1. Click _Backup Now_.
