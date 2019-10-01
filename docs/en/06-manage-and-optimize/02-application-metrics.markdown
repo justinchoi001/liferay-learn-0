@@ -21,11 +21,11 @@ To view the application metrics, while logged into the DXP Cloud Management Cons
 
 Before using the Dynatrace advanced monitoring features, the following requirements have to be met first:
 
-1. A Dynatrace account has been created.
-1. The Dynatrace secret `token` and `tenant` values have been generated.
-1. Dynatrace environment variables have been added to the `LCP.json` file in the DXP Service's production environment. For example:
+* A Dynatrace account has been created.
+* The Dynatrace secret `token` and `tenant` values have been generated.
+* Dynatrace environment variables have been added to the `LCP.json` file in the DXP Service's production environment. For example:
 
-```
+```properties
 "environments": {
   "prd": {
     "env": {
@@ -41,7 +41,7 @@ Before using the Dynatrace advanced monitoring features, the following requireme
 `LCP_PROJECT_MONITOR_DYNATRACE_TENANT` | A string with eight characters. It is part of the URL (prefix) of your Dynatrace SaaS account. |
 `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
 
-Once those required steps have been completed;
+Once those required steps have been completed:
 
 1. Navigate to <https://console.liferay.cloud/projects>.
 1. Click on the production environment.
@@ -51,7 +51,7 @@ Once those required steps have been completed;
 
 ![Dynatrace dashboard](./application-metrics/images/02.png)
 
-Here, you will be directed to the Dynatrace site. Sign in with your Dynatrace credentials to check things like log trails and create custom dashboards.
+Sign in with Dynatrace credentials to check log trails and create custom dashboards.
 
 ## Additional Information
 
