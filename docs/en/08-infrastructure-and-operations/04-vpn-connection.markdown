@@ -4,15 +4,13 @@ header-id: vpn-connection
 
 # VPN Connection
 
-This article documents how to use DXP Cloud's VPN feature to connect DXP Cloud services to external services on private networks. For example, DXP Cloud services is connected to directories or applications that are only accessible on a company VPN.
+This article documents how to use DXP Cloud's VPN feature to connect DXP Cloud to services on private networks.
 
 ## Connecting to a VPN
 
-Follow these steps to connect an environment to a VPN:
+While logged into the DXP Cloud Management Console:
 
-While logged into the DXP Cloud Management Console,
-
-1. Navigate to the environment's *Settings* tab.
+1. Navigate to an environment's *Settings* tab.
 1. In the _VPN_ section, enter the following:
     * **VPN Type**: OpenVPN
     * **Server Address**: (server address)
