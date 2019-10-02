@@ -1,12 +1,12 @@
 # Quotas
 
-Resource quotas are the maximum number of resources available for that DXP Cloud project. Usually, quotas are set during the initial sales process; customers can then allocate their resources according to their various needs. (For example, a production environment might be allocated more CPU cores and instances while a dev environment might have fewer cores.)
+Quotas are the maximum number of resources available for a given DXP Cloud project. Administrators may configure services and environments to use resources according to project need. (For example, a production environment may be allocated additional CPU cores while a dev environment might have fewer cores.)
 
-When a project reaches any of its resource quotas, it is important to note that _the production environment will not be affected_. However, there will be other *temporary* loss of some functionality depending on which resource. For example, reaching the quota for 20 custom domains means administrators cannot create a new domain, while reaching the memory quota could generate out of memory errors and a deployment might fail.
+When a project reaches any of its resource quotas, it is important to note that _the production environment will not be affected_. However, there will be *temporary* loss of some functionality depending on which resource has reached the pre-determined quota. For example, reaching the quota for 20 custom domains means administrators will be unable to create a new domain. Reaching the memory quota could generate out of memory errors and a deployment might fail. [Real-time Alerts](../06-manage-and-optimize/04-real-time-alerts.markdown) can be configured to to ensure that users are notified before they reach a resource quota.
 
-The only exception is when [auto-scaling](./03-auto-scaling.markdown) has been enabled. When auto-scaling is enabled, reaching certain thresholds are not counted against the set quota.
+When [Auto-scaling](./03-auto-scaling.markdown) is enabled, reaching certain thresholds will not count against pre-determined quotas.
 
-The following resources have set quotas:
+The following resources are governed by quotas:
 
 * CPU
 * Memory
@@ -21,6 +21,6 @@ The following resources have set quotas:
 * Scale per Service
 * Memory per Service
 
-Some of the quotas are found in each service's `lcp.json` file.
+Resource allocations for the above can be configured in each service's `lcp.json` file. See [Configuration via LCP.json](../10-reference/02-configuration-via-lcp-json.markdown).
 
-To request an increase in the quota of any type of resource, open a [Help Center ticket](https://liferay-support.zendesk.com/agent//).
+To request an increase in the quota of any type of resource, please open a [Help Center ticket](https://liferay-support.zendesk.com/agent/).
