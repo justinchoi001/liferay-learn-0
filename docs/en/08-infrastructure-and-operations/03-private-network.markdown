@@ -4,11 +4,9 @@ header-id: private-network
 
 # Private Network
 
-This article documents how private networks work in DXP Cloud and facilitating secure communications between the various services. Customers should evaluate which services they wish to expose and which ones to remain hidden for security reasons.
+Every environment on DXP Cloud operates within its own private network. This allows services within the same environment to communicate securely without having to interact with the public Internet.
 
-Every environment has its own private network. This lets services from the same environment communicate through multiple secure communication protocols without having to interact with the public Internet.
-
-For example, by default, the project only exposes the web server service to public connections. Connections between other services (e.g., Liferay DXP, database, etc.) are routed through the private network.
+For example, by default, a DXP Cloud project only exposes the web server service to public connections. Connections between other services (e.g., Liferay DXP, database, etc.) are routed through the private network.
 
 For every connection configured in this private network, specify these variables:
 
@@ -20,7 +18,7 @@ For every connection configured in this private network, specify these variables
 
 `external`: Whether the connection is available to external connections. The default value `false` restricts the connection to internal DXP Cloud connections.
 
-Here is an example configuration:
+Here is an example configuration for the Database service using `LCP.json`:
 
 ```json
 {
