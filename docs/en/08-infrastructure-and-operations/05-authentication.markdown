@@ -8,7 +8,7 @@ The second is by a user access token. Note that token authentication is required
 
 Here is an example that uses token authentication with the upload API:
 
-```
+```bash
 curl -X POST /
   http://<HOST-NAME>/backup/upload /
   -H 'Content-Type: multipart/form-data' /
@@ -17,4 +17,4 @@ curl -X POST /
   -F 'volume=@/my-folder/volume.tgz'
 ```
 
-**Important Note**: Passing the user token in the header `dxpcloud-authorization` only works for versions `3.2.0` or greater of the backup service. Previous versions should be upgraded to at least `3.2.0`. Requests to earlier versions must use the header `Authorization: Bearer <PROJECT_MASTER_TOKEN>`. To find the project master token, run the command `env grep LCP_PROJECT_MASTER_TOKEN` in any shell in the Liferay DXP Cloud console.
+> **Note**: Passing the user token in the header `dxpcloud-authorization` only works for versions `3.2.0` or greater of the backup service. Previous versions should be upgraded to at least `3.2.0`. Requests to earlier versions must use the header `Authorization: Bearer <PROJECT_MASTER_TOKEN>`. To find the project master token, run the command `env grep LCP_PROJECT_MASTER_TOKEN` in any shell on the Liferay DXP Cloud console.
