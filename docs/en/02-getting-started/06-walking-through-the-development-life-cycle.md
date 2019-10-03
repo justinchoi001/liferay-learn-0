@@ -41,7 +41,7 @@ lcp login
 
 Answer `y` at the prompt to open a browser tab to authenticate into DXP Cloud. The CLI will wait for authentication from the browser to complete the command.
 
-Next, deploy the services using any changes made in the local repository:
+Next, deploy the newly added module by running:
 
 ```bash
 lcp deploy
@@ -51,23 +51,23 @@ Choose an environment to deploy to when prompted in the CLI. You may also be pro
 
 ![Deploying through the CLI](./walking-through-the-development-life-cycle/01.png)
 
-Once the command finishes running, the services will be successfully deployed to the chosen environment.
+Once the command finishes running, the module will be successfully deployed to the chosen environment.
 
-## Test the Sample Deployment
+## Verify the Sample Deployment
 
-Test the deployment in the `dev` environment by navigating to your Liferay instance. Visit the DXP Cloud console for your project and navigate to the `Services` page (or go directly to `https://console.liferay.cloud/projects/<project-name>-dev/services`). You may see that one or more services are unavailable while the deployment is in progress. It may take some time before all of the services are ready.
+Verify that the module was deployed in the `dev` environment by navigating to your Liferay DXP instance. Visit the DXP Cloud console for your project and navigate to the `Services` page (or go directly to `https://console.liferay.cloud/projects/<project-name>-dev/services`). You may see that one or more services are unavailable while the deployment is in progress. It may take some time before all of the services are ready.
 
-When the `webserver` service is finally ready to use, navigate to it, and then click on the link on the word "webserver" near the top of the page. This will take you to your running Liferay DXP instance to confirm the module was deployed.
+When the `webserver` service is ready to use, navigate to it, and then click on the link on the word "webserver" near the top of the page. This will take you to your running Liferay DXP instance to confirm the module was deployed.
 
 ![Link from the webserver Service](./walking-through-the-development-life-cycle/02.png)
 
 ## Deploy the Sample to the `uat` Environment
 
-Rather than use the CLI to deploy to the `uat` environment, go back to the DXP Cloud console to use the build in CI that has already triggered from the previous steps.
+Rather than using the CLI to deploy to the `uat` environment, go back to the DXP Cloud console to use the build in CI that has already triggered from the previous steps.
 
-> **Note:** a realistic workflow may also include sending a pull request with the committed changes to the repository on GitHub. That pull request would then trigger CI testing that could be used for deployment. This tutorial will skip sending a pull request, since it is meant to be completed without a review process.
+> **Note:** a realistic workflow may also include sending a pull request with the committed changes to the repository on GitHub. That pull request would then trigger a CI build that could be used for deployment. This tutorial will skip sending a pull request, since it is meant to be completed without a review process.
 
-Navigate to the `Builds` tab for the desired environment. The option to deploy the build will appear when the tests complete successfully.
+Navigate to the `Builds` tab for the desired environment. The option to deploy the build will appear when the build completes successfully.
 
 ![Builds](./walking-through-the-development-life-cycle/03.png)
 
