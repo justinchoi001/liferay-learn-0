@@ -69,11 +69,11 @@ Rather than use the CLI to deploy to the `uat` environment, go back to the DXP C
 
 Navigate to the `Builds` tab for the desired environment. The option to deploy the build will appear when the tests complete successfully.
 
-![Builds](./walking-through-the-development-life-cycle/02.png)
+![Builds](./walking-through-the-development-life-cycle/03.png)
 
 Click "Deploy Build to..." for any successful build to deploy to the environment of your choice. Normally, a new build will first be deployed to the `dev` environment. However, developers can directly deploy to any environment as long as they have permissions to do so.
 
-![Choosing an environment for deployment](./walking-through-the-development-life-cycle/03.png)
+![Choosing an environment for deployment](./walking-through-the-development-life-cycle/04.png)
 
 ## Review the Sample Deployment
 
