@@ -4,7 +4,7 @@ header-id: shell-access
 
 # Shell Access
 
-This article documents how to use the shell access features in DXP Cloud. Shell access makes it simpler to see what's going on inside an application. Administrators and developers can use the shell to look for side effects not easily spotted in the logs, or call functions for data population or report generation that are meant to run only once.
+This article documents how to use the shell access features in DXP Cloud. Shell access simplifies monitoring an application. Administrators and developers can use the shell to look for side effects not easily spotted in the logs, or call functions for data population or report generation that are meant to run only once.
 
 | **Note:** The backup and database services do not provide shell access.
 
