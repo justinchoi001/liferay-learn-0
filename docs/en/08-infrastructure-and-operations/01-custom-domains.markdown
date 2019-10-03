@@ -18,7 +18,7 @@ DNS propagation can take up to 24-48 hours to take effect, but in some cases tak
 
 ## Adding a Custom Domain to a DXP Cloud Service
 
-Once the domain is reachable, there are two ways to add it to the service: via the web console or configuring the  `LCP.json` file.
+Once the domain is accessible, there are two ways to add it to a DXP Cloud service: via the web console or configuring the  `LCP.json` file.
 
 ### Via the Web Console
 
@@ -58,12 +58,14 @@ Once a custom domain has been added, there are two ways to verify its status.
 2. Navigate to the status on the Network page on the DXP Cloud Management Console.
   ![Figure 3: View all your endpoints and custom domains on the Network page.](./custom-domains/images/03.png)
 
-To learn more about using SSL certificates in Liferay DXP Cloud, including how to set up a custom SSL certificate, see the [Load Balancer](./02-load-balancer.markdown) article.
-
-## Additional Information
-
-During the domain's verification process, the following events occur:
+Once a Custom Domain is configured, it may take some time to be verifiable due to the following processes that occur on the backend:
 
 1. The route must be added to the Ingress Load Balancer, which can take around 30 minutes depending on the region.
 1. Liferay DXP Cloud reaches out to [Let's Encrypt](https://letsencrypt.org/) for an SSL Server Certificate. The _Let's Encrypt_ site responds with a challenge.
 1. Once the challenge is passed, the Ingress Load Balancer is updated with the certificate and the service is reachable and secure. If someones try to reach the domain during the challenge process, the browser will display security warnings. These warnings can be ignored safely because the process is not yet complete.
+
+To learn more about SSL certificates in Liferay DXP Cloud, including how to set up a custom SSL certificate, see the [Load Balancer](./02-load-balancer.markdown) article.
+
+## Additional Information
+
+* [Configuration Via LCP.json](../10-reference/02-configuration-via-lcp-json.markdown)
