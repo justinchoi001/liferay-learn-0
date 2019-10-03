@@ -4,42 +4,43 @@ header-id: real-time-alerts
 
 # Real-Time Alerts
 
-Liferay DXP Cloud can alert system administrators of unexpected behaviors in a project. Unexpected behaviors include (but are not limited to) auto-scaling, higher than expected consumption of memory, CPU reaching an alloted quota, or database connection issues. This article documents how to set up alerts on the console and receive email notifications.
+Liferay DXP Cloud can alert system administrators of unexpected behaviors in a 
+project. Unexpected behaviors include (but are not limited to) auto-scaling, 
+higher than expected memory consumption, CPU reaching an allotted quota, or 
+database connection issues. Here, you'll learn how to configure and view alerts. 
 
-## Managing Alert Preferences
+## Alert Preferences
 
-While logged into to the Liferay DXP Cloud Management Console:
+You can configure your alert preferences via the DXP Cloud management console. 
+Follow these steps to do so: 
 
-1. Click on the profile photo at the top-right corner of the navigation bar.
-1. Click _Alerts Preferences_.
+1.  Click your profile photo at the top-right corner of the navigation bar and 
+    select *Alerts Preferences*. 
 
-   ![Real Time Alerts](./real-time-alerts/images/01.png)
+2.  For each alert, select the checkbox for how you wish to receive it (console 
+    and/or email). To disable an alert, unselect all its checkboxes. 
 
-1. Check the relevant boxes for status alerts notifications.
-1. Click _Save Alerts Preferences_.
+3.  Click *Save Alerts Preferences* when you're finished. 
 
-The Alerts preferences have now been configured. To view the alerts notifications and the information found, see the Alerts Page section below.
+![Real Time Alerts](./real-time-alerts/images/01.png)
 
 ## Alerts Page
 
-The _Alerts_ page contains a list of behaviors that may occur in the various environments. The number and types of alerts that are sent can be configured in the _Alerts Preference_ page.
+You can access Alerts delivered to your console from the *Alerts* page. To 
+access this page, click the bell icon in the top navigation bar. A table shows 
+the following information for each alert: 
 
-1. To access the _Alerts_ page, click the _Alerts_ icon on the top navigation bar.
+-   **Status:** The alert's current state. Each alert is triggered by a specific 
+    event. If the event is still happening, its alert status is *Ongoing*. If 
+    the event is finished, the alert status is *Resolved*. 
+-   **Started at:** The time the alert began. 
+-   **Duration:** How long the alert lasted. 
 
-    ![Real Time Alerts](./real-time-alerts/images/02.png)
+You can perform the following actions via the buttons above the table: 
 
-The following tables describe the top level actions available:
+-   **Unread alerts/All alerts:** View only unread alerts, or all alerts.
+-   **All environments/other environments:** Filter alerts by environment.
+-   **Mark all as read:** Mark all alerts as read. 
+-   **Alerts Preferences:** Go to your alert preferences page. 
 
-| Button | Description |
-| --- | --- |
-| Unread alerts / All alerts | Filter to display only unread statuses or all statuses |
-| All environments | Filter to select alerts by environment |
-| Mark All as Read | Button to mark all alerts as read |
-
-The following table describes the information found in each column.
-
-| Status | Description |
-| --- | --- |
-| Status | _Ongoing_ or _Resolved_ describe the current state of an event |
-| Started at | The time an event began |
-| Duration | Length of time an event lasted |
+![Real Time Alerts](./real-time-alerts/images/02.png)

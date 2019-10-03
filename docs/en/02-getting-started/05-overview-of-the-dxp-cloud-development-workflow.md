@@ -1,32 +1,52 @@
 # Overview of the DXP Cloud Development Workflow
 
-This article outlines the path developers will take to develop for and deploy to a DXP Cloud project. The development process with DXP Cloud follows three stages:
+The development process with DXP Cloud follows three stages:
 
-* [Develop and Configure](#develop-and-configure)
-* [Build and Test](#build-and-test)
-* [Deploy](#deploy)
+-   [Develop and Configure](#develop-and-configure)
+-   [Build and Test](#build-and-test)
+-   [Deploy](#deploy)
 
 ## Develop and Configure
 
- Although there are multiple paths for deploying to an environment, all paths begin with adding changes to the provisioned Git repository. The Git repository is used as the basis for any custom additions to a DXP Cloud project, including the Liferay DXP service instance itself.
+Although there are multiple paths for deploying to an environment, all paths 
+begin with adding changes to the GitHub repository 
+[you configured](/docs/-/knowledge_base/dxp-cloud/configuring-your-github-repository) 
+with your DXP Cloud project. This repository is used as the basis for any custom 
+additions to a DXP Cloud project, including the Liferay DXP service instance 
+itself. 
 
 The repository provides the following:
 
-* Workspace for building Liferay DXP modules, themes, and extensions
-* Shared version control for configuration and customizations for DXP Cloud services
-* Single source of truth for DXP Cloud project deployments
+-   Workspace for building Liferay DXP modules, themes, and extensions. 
+-   Shared version control for configuration and customizations of DXP Cloud 
+    services. 
+-   Single source of truth for DXP Cloud project deployments. 
 
-See [Configuring Your GitHub Repository](./03-configuring-your-github-repository.md) for more information on setting up the workspace on your local system.
-
-With the exception of the `common/` directory, changes added to a given service's environment folder (`dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment.
+With the exception of the `common` folder, changes added to a given service's 
+environment folder (e.g., `dev`, `uat`, `prod`) are only propagated when 
+deploying to the corresponding environment. Changes added to `common` are always 
+deployed regardless of the target deployment environment. 
 
 ### Code Additions
 
-The source for new code additions must be added into folders at the root of the repository: the `modules` folder for new modules, the `themes` folder for custom themes, and the `wars` folder for exploded WARs. When the build is deployed, code changes added to any of these locations will be automatically compiled and then added to the Liferay service.
+The source for new code additions must be added to folders at the root of the
+repository: 
+
+-   The `modules` folder for new modules
+-   The `themes` folder for custom themes
+-   The `wars` folder for exploded WARs 
+
+When the build is deployed, code changes in any of these locations are 
+automatically compiled and added to the Liferay DXP service. 
 
 ### Compiled Additions
 
-Compiled additions, like pre-built JARs or LPKGs, may be added into a `deploy` directory for the relevant service. When the build is deployed to an environment, these files will be copied into the corresponding folder within `$LIFERAY_HOME` (depending on the type of file). For example, adding a JAR file to `lcp/liferay/deploy/common/` will result in the file being copied to `$LIFERAY_HOME/osgi/modules/` for any environment the build is deployed to.
+You can add compiled additions (e.g., pre-built JARs or LPKGs) to a service's 
+`deploy` folder. When the build deploys to an environment, these files are 
+copied to the corresponding folder within `$LIFERAY_HOME` (depending on the file 
+type). For example, adding a JAR file
+to `lcp/liferay/deploy/common/` will result in the file being copied to
+`$LIFERAY_HOME/osgi/modules/` for any environment the build is deployed to. 
 
 ### Configuration Files
 

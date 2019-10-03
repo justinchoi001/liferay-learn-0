@@ -63,29 +63,46 @@ There is also a set of files used to configure the environment. The portal reads
 
 Note that portal properties can be defined as environment variables; see [DXP Environment Variables](https://help.liferay.com/hc/en-us/articles/360017877312-Environment-Variables).
 
-Example:
+## Environment Variables
 
 Name                                  | Default Value | Description  |
 ------------------------------------- | ------------- | ------------ |
-| `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` | `false`       | Whether to enable clustering and communication between nodes. |
+`LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` | `false`       | Whether to enable clustering and communication between nodes. |
+`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |               | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account. |
+`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |               | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
 
-This is then expressed as the following in the `LCP.json` file:
+## Advanced Monitoring with Dynatrace
 
-```properties
-"env": {
-    "LCP_PROJECT_LIFERAY_CLUSTER_ENABLED": "true"
-  },
+To enable advanced monitoring with Dynatrace on Liferay DXP in production, set 
+the two `*_DYNATRACE_*` environment variables described in the above table. 
+Here's an example:
+
+```json
+"environments": {
+  "prd": {
+    "env": {
+      "LCP_PROJECT_MONITOR_DYNATRACE_TENANT": "tot02934",
+      "LCP_PROJECT_MONITOR_DYNATRACE_TOKEN": "dDKSowkdID8dKDkCkepW"
+    }
+  }
+}
 ```
 
 ## Clustering
 
-Clustering Liferay DXP on DXP Cloud is straightforward. Follow these steps to enable clustering:
+Clustering Liferay DXP on DXP Cloud is straightforward. Follow these steps to 
+enable clustering:
 
-1. Set the environment variable `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` to `true`. This instructs the image startup process to add the clustering configuration to Liferay DXP.
+1.  Set the environment variable `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` to 
+    `true`. This instructs the image startup process to add the clustering 
+    configuration to Liferay DXP. 
 
-1. Increase the scale in `LCP.json` to the desired number of nodes.
+2.  Increase the scale in `LCP.json` to the desired number of nodes. 
 
-Behind the scenes, the image startup process copies the files `portal-clu.properties` and `unicast.xml` to the Liferay Home folder. These files contain the configuration needed to run a Liferay DXP cluster on DXP Cloud.
+Behind the scenes, the image startup process copies the files 
+`portal-clu.properties` and `unicast.xml` to the Liferay Home folder. These 
+files contain the configuration needed to run a Liferay DXP cluster on DXP 
+Cloud. 
 
 ### Verify that Clustering is Working
 
