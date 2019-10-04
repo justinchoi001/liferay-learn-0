@@ -4,38 +4,53 @@ header-id: vpn-connection
 
 # VPN Connection
 
-This article documents how to use DXP Cloud's VPN feature to connect DXP Cloud to services on private networks.
+You can use DXP Cloud's VPN feature to connect your DXP Cloud services to 
+external services on private networks. For example, you may need to connect your 
+DXP Cloud services to directories or applications that are only accessible on a 
+company VPN. You'll learn how to do this here. 
 
 ## Connecting to a VPN
 
-While logged into the DXP Cloud Management Console:
+1.  Go to your environment's *Settings* tab. 
 
-1. Navigate to an environment's *Settings* tab.
-1. In the _VPN_ section, enter the following:
-    * **VPN Type**: OpenVPN
-    * **Server Address**: (server address)
-    * **Account Name**: (administrator's email address)
-    * **Password**: (administrator's password)
-    * **Certificate**: (Certificate code)
-    * **Forwarding IP**: (IP address)
-    * **Forwarding Port**: (port number)
-    * **Local Hostname**: (VPN)
-    * **Local Port**: (local port number)
-1. Click _Connect VPN_.
+2.  Choose the type of VPN connection. Here are the supported types: 
 
-![Figure 1: You can connect to a VPN from the Settings tab.](../../images/vpn-connection.png)
+    - OpenVPN
+    - IPSec
 
-To disconnect a service from a VPN after it is connected, click the *Disconnect* button.
+3.  Fill in the VPN's required fields: 
+
+    -   **Server Address**: The server's address.
+    -   **Account Name**: The administrator's email address.
+    -   **Password**: The administrator's password.
+    -   **Certificate**: The certificate code.
+    -   **Forwarding IP**: The IP address.
+    -   **Forwarding Port**: The port number.
+    -   **Local Hostname**: The VPN's local hostname.
+    -   **Local Port**: The VPN's local port number.
+
+4.  Click *Connect VPN*. 
+
+To disconnect your service from a VPN after it's connected, click the 
+*Disconnect* button. 
+
+![Figure 1: You can connect to a VPN from the Settings tab.](../../../images/vpn-connection.png)
 
 ## Port Configuration
 
-Once connected to a VPN, there is an option to choose which ports to forward requests to.
+Once connected to a VPN, you can choose which ports to forward requests to. 
+Follow these steps to do so: 
 
-1. On the same page, click *Add VPN Port*.
-1. Enter the local hostname and port for DXP Cloud.
-1. Enter the forwarding hostname and port for the VPN.
-1. Click *Add Port*.
+1. On the same page, click *Add VPN Port*. 
 
-To remove a port, click *Delete* button for the corresponding port.
+2. Enter the local hostname and port for DXP Cloud. 
 
-![Figure 2: You can also configure port forwarding.](../../images/vpn-ports.png)
+3. Enter the forwarding hostname and port for the VPN. 
+
+4. Click *Add Port* when you're finished. 
+
+To remove a port, click its *Actions* button 
+(![Actions](../../../images/icon-actions.png)) 
+and select *Remove*. 
+
+![Figure 2: You can also configure port forwarding.](../../../images/vpn-ports.png)
