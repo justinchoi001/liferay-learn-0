@@ -1,6 +1,6 @@
 # Walking Through the Deployment Life Cycle
 
-This article will walk you through the steps to deploy a sample module similarly to a normal development workflow. See [Overview of the DXP Cloud Development Workflow](./05-overview-of-the-dxp-cloud-deployment-workflow.md) for a more comprehensive explanation of the different steps of this workflow.
+This article will walk you through the steps to deploy a sample module similarly to a normal deployment workflow. See [Overview of the DXP Cloud Development Workflow](./05-overview-of-the-dxp-cloud-deployment-workflow.md) for a more comprehensive explanation of the different steps of this workflow.
 
 1. [Prerequisites](#prerequisites)
 1. [Add the Sample to the Repository](#add-the-sample-to-the-repository)
@@ -171,7 +171,7 @@ Finally, deploy the newly added module by running:
 lcp deploy --project=<project-name> --environment=dev
 ```
 
-![Deploying through the CLI](./walking-through-the-development-life-cycle/05.png)
+![Deploying through the CLI](./walking-through-the-deployment-life-cycle/05.png)
 
 Once the command finishes running, the module will be copied to the chosen environment. The affected services will need some time to restart and apply the new module to the Docker images.
 
