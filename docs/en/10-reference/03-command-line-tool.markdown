@@ -8,14 +8,14 @@ Liferay DXP's command-line interface (CLI) is a tool that helps you use and
 manage DXP Cloud. For example, you can use the CLI to create, manage, and scale 
 applications. 
 
--   [Installing the CLI](#installing-the-cli)
--   [Changing the CLI Remote](#changing-the-cli-remote)
--   [Showing the Service Logs](#showing-the-service-logs)
--   [Manage Custom Domains](#manage-custom-domains)
--   [Manage Environment Variables](#manage-environment-variables)
--   [List Projects or Services](#list-projects-or-services)
--   [Execute Commands in a Service Container](#execute-commands-in-a-service-container)
--   [Access a Service's Shell](#access-a-services-shell)
+* [Installing the CLI](#installing-the-cli)
+* [Changing the CLI Remote](#changing-the-cli-remote)
+* [Showing the Service Logs](#showing-the-service-logs)
+* [Manage Custom Domains](#manage-custom-domains)
+* [Manage Environment Variables](#manage-environment-variables)
+* [List Projects or Services](#list-projects-or-services)
+* [Execute Commands in a Service Container](#execute-commands-in-a-service-container)
+* [Access a Service's Shell](#access-a-services-shell)
 
 ## Installing the CLI
 
@@ -39,9 +39,9 @@ Download the latest version of the
 See the list of 
 [available builds](https://dl.equinox.io/wedeploy/we/stable). 
 
-| **Note:** To deploy services on DXP Cloud, you must have 
-| [Git](https://git-scm.com/) 
-| installed. 
+> **Note:** To deploy services on DXP Cloud, you must have 
+> [Git](https://git-scm.com/) 
+> installed. 
 
 ## Changing the CLI Remote
 
@@ -55,13 +55,13 @@ lcp remote
 
 Follow these steps to change the default remote: 
 
-1.  Add a new remote if necessary: 
+1. Add a new remote if necessary: 
 
     ```shell
     lcp remote add <remote-alias> <remote-url>
     ```
 
-2.  Run this command to set the default remote: 
+1. Run this command to set the default remote: 
 
     ```shell
     lcp remote default <remote-alias>

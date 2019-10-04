@@ -17,11 +17,9 @@ generation that are meant to run only once.
 
 Follow these steps to access the shell via the DXP Cloud web console: 
 
-1.  Go to your environment page. 
-
-2.  Click *Services* in the menu on the left. 
-
-3.  Select the service you want to access, then click the *Shell* tab. 
+1. Go to your environment page. 
+1. Click *Services* in the menu on the left. 
+1. Select the service you want to access, then click the *Shell* tab. 
 
 ![Figure 1: Access the shell via DXP Cloud's web console.](./shell-access/images/01.png)
 
@@ -29,12 +27,10 @@ Follow these steps to access the shell via the DXP Cloud web console:
 
 Follow these steps to access your service's shell via a terminal: 
 
-1.  [Install the Liferay Cloud command line tool](/docs/-/knowledge_base/dxp-cloud/command-line-tool), 
+1. [Install the Liferay Cloud command line tool](/docs/-/knowledge_base/dxp-cloud/command-line-tool), 
     if it's not already installed. 
-
-2.  Run the command `lcp shell`, then select the service to access. 
-
-3.  Run any command that you want. 
+1. Run the command `lcp shell`, then select the service to access. 
+1. Run any command that you want. 
 
 ![Figure 2: Access the shell via the command line.](./shell-access/images/02.png)
 
@@ -53,4 +49,3 @@ your service, all files not in a persistent volume are replaced by the new
 build. For the shell, this means every command you run on your service is 
 temporary and will reset when you redeploy or restart your service, unless you 
 make the changes within a volume. 
-

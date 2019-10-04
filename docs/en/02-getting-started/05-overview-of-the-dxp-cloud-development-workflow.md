@@ -1,10 +1,10 @@
 # Overview of the DXP Cloud Development Workflow
 
-The development process with DXP Cloud follows three stages:
+This article outlines the path developers will take to develop for and deploy to a DXP Cloud project. The development process with DXP Cloud follows three stages:
 
--   [Develop and Configure](#develop-and-configure)
--   [Build and Test](#build-and-test)
--   [Deploy](#deploy)
+* [Develop and Configure](#develop-and-configure)
+* [Build and Test](#build-and-test)
+* [Deploy](#deploy)
 
 ## Develop and Configure
 
@@ -17,10 +17,10 @@ itself.
 
 The repository provides the following:
 
--   Workspace for building Liferay DXP modules, themes, and extensions. 
--   Shared version control for configuration and customizations of DXP Cloud 
+* Workspace for building Liferay DXP modules, themes, and extensions. 
+* Shared version control for configuration and customizations of DXP Cloud 
     services. 
--   Single source of truth for DXP Cloud project deployments. 
+* Single source of truth for DXP Cloud project deployments. 
 
 With the exception of the `common` folder, changes added to a given service's 
 environment folder (e.g., `dev`, `uat`, `prod`) are only propagated when 
@@ -32,17 +32,17 @@ deployed regardless of the target deployment environment.
 The source for new code additions must be added to folders at the root of the
 repository: 
 
--   The `modules` folder for new modules
--   The `themes` folder for custom themes
--   The `wars` folder for exploded WARs 
+* The `modules` folder for new modules
+* The `themes` folder for custom themes
+* The `wars` folder for exploded WARs 
 
 When the build is deployed, code changes in any of these locations are 
 automatically compiled and added to the Liferay DXP service. 
 
 ### Compiled Additions
 
-You can add compiled additions (e.g., pre-built JARs or LPKGs) to a service's 
-`deploy` folder. When the build deploys to an environment, these files are 
+You can add compiled files (e.g., pre-built JARs or LPKGs) to a service's 
+`deploy` folder. When the build is deployed to an environment, these files are 
 copied to the corresponding folder within `$LIFERAY_HOME` (depending on the file 
 type). For example, adding a JAR file
 to `lcp/liferay/deploy/common/` will result in the file being copied to
@@ -82,5 +82,5 @@ Committed changes to the repository will automatically trigger a new build in CI
 
 * [Configuring Your GitHub Repository]()
 * [Environments](../05-build-and-deploy/02-environments.md)
-* [Using the Command Line Interface]()
-* [Walking Through the Development Life Cycle](./06-walking-through-the-development-life-cycle.md)
+* [Using the Command Line Interface](../10-reference/03-command-line-tool.markdown)
+* [Walking Through the Deployment Life Cycle](./06-walking-through-the-development-life-cycle.md)

@@ -4,7 +4,6 @@ header-id: custom-domains
 
 # Custom Domains
 
-
 To add a custom domain to a DXP Cloud service, you must first register that 
 domain with the dedicated environment IP as an `A` record. Do this using the 
 domain name registrar of your choice. DNS propagation can take up to 24-48 hours 
@@ -15,10 +14,10 @@ cannot. Eventually, the domain will be reachable from any device and return the
 standard `default backend - 404` error from the Ingress Load Balancer. Now 
 you're ready for the next step. 
 
-| **Note:** You can find the dedicated environment IP on a service's Custom 
-| Domains or the Network page. 
+> **Note:** You can find the dedicated environment IP on a service's Custom 
+> Domains or the Network page. 
 
-![Figure 1: This example uses Cloudflare as a domain name registrar to create DNS records.](../custom-domains/images/01.png)
+![Figure 1: This example uses Cloudflare as a domain name registrar to create DNS records.](./custom-domains/images/01.png)
 
 ## Adding a Custom Domain to a DXP Cloud Service
 
@@ -28,11 +27,9 @@ Cloud will handle the routing for you. You can do this via the web console or
 
 Follow these steps to add custom domains via the web console: 
 
-1.  Go to your environment page. 
-
-2.  Select the service to which you want to add the custom domains. 
-
-3.  Click the *Custom Domains* tab and add your custom domains. To add more than 
+1. Go to your environment page. 
+1. Select the service to which you want to add the custom domains. 
+1. Click the *Custom Domains* tab and add your custom domains. To add more than 
     one custom domain name, enter all the names on each new field created then 
     click *Update Custom Domains*. The number of custom domains can be capped by 
     the quotas set during the provisioning process. 
@@ -59,7 +56,7 @@ When the configurations are complete, DXP Cloud handles the routing.
 Once a custom domain has been added, there are two ways to verify its status.
 
 1. Wait until the service endpoint is reachable and stops responding with a `default backend - 404` error.
-2. Navigate to the status on the Network page on the DXP Cloud Management Console.
+1. Navigate to the status on the Network page on the DXP Cloud Management Console.
   ![Figure 3: View all your endpoints and custom domains on the Network page.](./custom-domains/images/03.png)
 
 Once a Custom Domain is configured, it may take some time to be verifiable due to the following processes that occur on the backend:

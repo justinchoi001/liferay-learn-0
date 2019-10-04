@@ -4,7 +4,6 @@ header-id: auto-scaling
 
 # Auto-scaling
 
-
 Liferay DXP Cloud's auto-scaling feature automatically creates and destroys 
 instances of the DXP service as needed to optimize performance. This addresses 
 sudden changes such as increased server traffic, memory leaks, or other issues. 
@@ -20,22 +19,20 @@ The `scale` property specifies the minimum number of instances to run:
   "scale": 2,
 ```
 
-| **Note:** Currently, auto-scaling is only available for the Liferay DXP 
-| service in production environments. 
+> **Note:** Currently, auto-scaling is only available for the Liferay DXP 
+> service in production environments. 
 
-| **Note:** For more information on how auto-scaling is charged, see 
-| [How Auto-scaling is Charged](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged-). 
+> **Note:** For more information on how auto-scaling is charged, see 
+> [How Auto-scaling is Charged](https://help.liferay.com/hc/en-us/articles/360030843592-How-Auto-Scaling-is-charged-). 
 
 ## Managing Auto-scaling
 
 Follow these steps to enable or disable auto-scaling in the DXP Cloud Management 
 Console: 
 
-1.  Navigate to the production environment. 
-
-2.  Navigate to *Services* &rarr; *Liferay* &rarr; *Scale*. 
-
-3.  If auto-scaling is disabled, click *Enable Auto Scaling* to enable it. If 
+1. Navigate to the production environment. 
+1. Navigate to *Services* &rarr; *Liferay* &rarr; *Scale*. 
+1. If auto-scaling is disabled, click *Enable Auto Scaling* to enable it. If 
     auto-scaling is already enabled, click *Disable Auto Scaling* to disable it. 
 
 With auto-scaling enabled, DXP Cloud monitors your service and scales it 

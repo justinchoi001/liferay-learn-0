@@ -59,7 +59,7 @@ To log into DXP Cloud using SSO:
 1. Navigate to <https://console.liferay.cloud/login>.
 1. Click _Login via SSO_.
 
-   ![Login Page](./sso-using-saml/images/01.png)
+   ![Login Page](./using-sso-with-dxp-cloud/images/01.png)
 
 1. Enter the **Company Name** in the _Organization ID_ field.
 1. Click _Continue_.
@@ -69,4 +69,4 @@ To log into DXP Cloud using SSO:
 
 Once logged in, the user should see all of his or her projects and environments.
 
-![projects page](../sso-using-saml/images/02.png)
+![projects page](./using-sso-with-dxp-cloud/images/02.png)

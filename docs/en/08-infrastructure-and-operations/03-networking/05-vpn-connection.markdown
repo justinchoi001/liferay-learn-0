@@ -11,30 +11,26 @@ company VPN. You'll learn how to do this here.
 
 ## Connecting to a VPN
 
-1.  Go to your environment's *Settings* tab. 
-
-2.  Choose the type of VPN connection. Here are the supported types: 
-
+1. Go to your environment's *Settings* tab. 
+1. Choose the type of VPN connection. Here are the supported types: 
     - OpenVPN
     - IPSec
+1. Fill in the VPN's required fields: 
+    - **Server Address**: The server's address.
+    - **Account Name**: The administrator's email address.
+    - **Password**: The administrator's password.
+    - **Certificate**: The certificate code.
+    - **Forwarding IP**: The IP address.
+    - **Forwarding Port**: The port number.
+    - **Local Hostname**: The VPN's local hostname.
+    - **Local Port**: The VPN's local port number.
 
-3.  Fill in the VPN's required fields: 
-
-    -   **Server Address**: The server's address.
-    -   **Account Name**: The administrator's email address.
-    -   **Password**: The administrator's password.
-    -   **Certificate**: The certificate code.
-    -   **Forwarding IP**: The IP address.
-    -   **Forwarding Port**: The port number.
-    -   **Local Hostname**: The VPN's local hostname.
-    -   **Local Port**: The VPN's local port number.
-
-4.  Click *Connect VPN*. 
+1. Click *Connect VPN*. 
 
 To disconnect your service from a VPN after it's connected, click the 
 *Disconnect* button. 
 
-![Figure 1: You can connect to a VPN from the Settings tab.](../../../images/vpn-connection.png)
+![Figure 1: You can connect to a VPN from the Settings tab.](./vpn-connection/images/vpn-connection.png)
 
 ## Port Configuration
 
@@ -50,7 +46,7 @@ Follow these steps to do so:
 4. Click *Add Port* when you're finished. 
 
 To remove a port, click its *Actions* button 
-(![Actions](../../../images/icon-actions.png)) 
+(![Actions](./vpn-connection/images/icon-actions.png)) 
 and select *Remove*. 
 
-![Figure 2: You can also configure port forwarding.](../../../images/vpn-ports.png)
+![Figure 2: You can also configure port forwarding.](./vpn-connection/images/vpn-ports.png)

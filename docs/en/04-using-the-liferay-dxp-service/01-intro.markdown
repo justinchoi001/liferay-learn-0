@@ -71,33 +71,16 @@ Name                                  | Default Value | Description  |
 `LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |               | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account. |
 `LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |               | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
 
-## Advanced Monitoring with Dynatrace
-
-To enable advanced monitoring with Dynatrace on Liferay DXP in production, set 
-the two `*_DYNATRACE_*` environment variables described in the above table. 
-Here's an example:
-
-```json
-"environments": {
-  "prd": {
-    "env": {
-      "LCP_PROJECT_MONITOR_DYNATRACE_TENANT": "tot02934",
-      "LCP_PROJECT_MONITOR_DYNATRACE_TOKEN": "dDKSowkdID8dKDkCkepW"
-    }
-  }
-}
-```
-
 ## Clustering
 
 Clustering Liferay DXP on DXP Cloud is straightforward. Follow these steps to 
 enable clustering:
 
-1.  Set the environment variable `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` to 
+1. Set the environment variable `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` to 
     `true`. This instructs the image startup process to add the clustering 
     configuration to Liferay DXP. 
 
-2.  Increase the scale in `LCP.json` to the desired number of nodes. 
+1. Increase the scale in `LCP.json` to the desired number of nodes. 
 
 Behind the scenes, the image startup process copies the files 
 `portal-clu.properties` and `unicast.xml` to the Liferay Home folder. These 

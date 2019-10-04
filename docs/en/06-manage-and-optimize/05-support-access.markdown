@@ -10,21 +10,21 @@ can enable and disable Support Access per environment. For example, an
 administrator can enable Support Access on the development environment but 
 disable it on the production environment. 
 
-| **Note:** Support access is enabled by default in each environment. 
+> **Note:** Support access is enabled by default in each environment. 
 
 When Support Access is enabled, Liferay Support engineers have read access 
 to the following information: 
 
--   Project console
--   Service logs
--   Control Panel settings
--   The region where the DXP Cloud services are hosted
--   Team members and their associated roles
--   Members' activities
+* Project console
+* Service logs
+* Control Panel settings
+* The region where the DXP Cloud services are hosted
+* Team members and their associated roles
+* Members' activities
 
-| **Note:** Only the project administrator can configure Support Access. Support 
-| Access **does not** allow Liferay Support engineers to deploy assets or 
-| perform other write actions in your project. 
+> **Note:** Only the project administrator can configure Support Access. Support 
+> Access **does not** allow Liferay Support engineers to deploy assets or 
+> perform write actions in your project. 
 
 ## Changing the Support Access Setting
 
@@ -33,9 +33,8 @@ disable it at any time.
 
 Follow these steps to change the support access setting: 
 
-1.  Navigate to *Settings* &rarr; *Support access*. 
-
-2.  Set the toggle switch to your desired setting (*Enabled* or *Disabled*). 
+1. Navigate to *Settings* &rarr; *Support access*. 
+1. Set the toggle switch to your desired setting (*Enabled* or *Disabled*). 
 
 ![Figure 1: Administrators can enable or disable support access.](./support-access/images/01.png)
 

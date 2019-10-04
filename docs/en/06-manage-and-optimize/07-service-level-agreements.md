@@ -7,7 +7,7 @@ ticketing support on
 and 
 [phone support](https://help.liferay.com/hc/en-us/articles/360017784212).
 
-| **Note:** Details are subject to your legal agreement with Liferay. 
+> **Note:** Details are subject to your legal agreement with Liferay. 
 
 For more detailed information about legal agreements and services, see 
 [liferay.com/legal](https://www.liferay.com/legal). 
@@ -24,14 +24,14 @@ is most convenient for you.
 
 The Status page lists the following services: 
 
--   Infrastructure Services
--   Database Services
--   Storage Services
--   Monitoring and Logging Services
--   Networking Services
--   Liferay Cloud Console
--   Liferay Cloud API
--   Past Incidents & Descriptions
+- Infrastructure Services
+- Database Services
+- Storage Services
+- Monitoring and Logging Services
+- Networking Services
+- Liferay Cloud Console
+- Liferay Cloud API
+- Past Incidents & Descriptions
 
 ## Related Topics
 

@@ -8,7 +8,7 @@ The Ingress Load Balancer gives Internet access to your environment's services
 via proxied HTTP(S) connections. Each load balancer has a static IP that can set 
 up custom domains. 
 
-![Figure 1: You can configure your environment's load balancer with a custom domain.](../../../images/load-balancer.png)
+![Figure 1: You can configure your environment's load balancer with a custom domain.](./load-balancer/images/load-balancer.png)
 
 Having a dedicated load balancer provides a myriad of enhanced features, such as 
 port configuration, custom SSL certificates, and a CDN. Here's an example 
@@ -41,7 +41,7 @@ This CDN is disabled by default but you can turn it on in your `LCP.json`:
 "cdn": true
 ```
 
-![Figure 2: The CDN's status is visible on the Network page.](../../../images/cdn-active.png)
+![Figure 2: The CDN's status is visible on the Network page.](./load-balancer/images/cdn-active.png)
 
 ## Port
 
@@ -54,7 +54,7 @@ services it provides.
 "targetPort": 3000
 ```
 
-![Figure 3: The load balancer shows your port configurations.](../../../images/load-balancer-port.png)
+![Figure 3: The load balancer shows your port configurations.](./load-balancer/images/load-balancer-port.png)
 
 ## Custom SSL
 
@@ -104,4 +104,4 @@ service.
 For more information, see 
 [Custom Domains](/docs/-/knowledge_base/dxp-cloud/custom-domains). 
 
-![Figure 4: DXP Cloud shows the status of SSL certificates that cover custom domains.](../../../images/load-balancer-ssl-cert.png)
+![Figure 4: DXP Cloud shows the status of SSL certificates that cover custom domains.](./load-balancer/images/load-balancer-ssl-cert.png)

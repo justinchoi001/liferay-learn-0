@@ -7,13 +7,10 @@ header-id: migrating-from-an-on-premises-dxp-installation
 This article will walk you through the essential steps for migrating your 
 existing Liferay DXP instance to DXP Cloud. 
 
-The following steps are essential for migrating an existing installation of 
-Liferay DXP:
-
-1.  [Migrate the Database and Document Library](#migrate-the-database-and-document-library)
-2.  [Copy Liferay DXP Configurations](#copy-liferay-dxp-configurations)
-3.  [Add Service Configurations](#add-service-configurations)
-4.  [Use a VPN to Connect External Services](#use-a-vpn-to-connect-external-services)
+1. [Migrate the Database and Document Library](#migrate-the-database-and-document-library)
+1. [Copy Liferay DXP Configurations](#copy-liferay-dxp-configurations)
+1. [Add Service Configurations](#add-service-configurations)
+1. [Use a VPN to Connect External Services](#use-a-vpn-to-connect-external-services)
 
 ## Migrate the Database and Document Library
 
@@ -35,8 +32,8 @@ accomplished using the following command:
 mysqldump -uroot -ppassword --databases --add-drop-database lportal | tar -czvf database.tgz
 ```
 
-| **Note:** The `databases` and `add-drop-database` options are necessary for 
-| backup restoration to work correctly.
+> **Note:** The `databases` and `add-drop-database` options are necessary for 
+> backup restoration to work correctly.
 
 Database dumps imported into DXP Cloud must be in MySQL format for the database 
 service to use it. If necessary, a tool like 
@@ -54,12 +51,12 @@ Add the document library to a zip file with this command:
 cd $LIFERAY_HOME/data && tar -czvf volume.tgz document_library
 ```
 
-| **Note:** If you are currently using the 
-| [Amazon S3](/docs/7-2/deploy/-/knowledge_base/d/using-amazon-simple-storage-service), 
-| [CMIS](/docs/7-1/deploy/-/knowledge_base/d/using-the-cmis-store), or 
-| [DBStore](/docs/7-2/deploy/-/knowledge_base/d/using-the-dbstore) 
-| storage methods, you must first 
-| [migrate to the File System Store](https://help.liferay.com/hc/en-us/articles/360017649452-Migrating-File-System-Stores-). 
+> **Note:** If you are currently using the 
+> [Amazon S3](/docs/7-2/deploy/-/knowledge_base/d/using-amazon-simple-storage-service), 
+> [CMIS](/docs/7-1/deploy/-/knowledge_base/d/using-the-cmis-store), or 
+> [DBStore](/docs/7-2/deploy/-/knowledge_base/d/using-the-dbstore) 
+> storage methods, you must first 
+> [migrate to the File System Store](https://help.liferay.com/hc/en-us/articles/360017649452-Migrating-File-System-Stores-). 
 
 ### Invoke Backup Service API
 
@@ -78,9 +75,9 @@ curl -X POST /
   -u user@domain.com:password
 ```
 
-| **Note:** Substitute `<HOST-NAME>` and `<PROJECT-NAME>` with the appropriate 
-| names for your DXP Cloud host name and project, respectively. Substitute 
-| `/my-folder` with the correct path to the zipped files. 
+> **Note:** Substitute `<HOST-NAME>` and `<PROJECT-NAME>` with the appropriate 
+> names for your DXP Cloud host name and project, respectively. Substitute 
+> `/my-folder` with the correct path to the zipped files. 
 
 Once these are uploaded, the backup service will initialize a DXP Cloud backup. 
 At this point, the biggest step of the migration to DXP Cloud is complete. 
@@ -111,7 +108,7 @@ folder within the Liferay DXP service for the applicable environment(s).
 
 ## Add Service Configurations
 
-DXP Cloud's services handle any remaining configurations. It may take some 
+Remaining configurations will primarily be handled through the services provided in DXP Cloud. It may take some 
 planning to determine how to translate the web server and search configurations, 
 since these must now be done through DXP Cloud's services. 
 
