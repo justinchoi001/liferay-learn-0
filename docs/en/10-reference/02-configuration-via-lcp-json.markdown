@@ -4,9 +4,11 @@ header-id: configuration-via-lcp-json
 
 # Configuration via LCP.json
 
-Each service in the DXP Cloud environments has an `LCP.json` file that can be used to configure the service. Configurable properties include the service ID, memory, number of CPUs, environment variables, volumes, and much more.
+Each service in your DXP Cloud environments has an `LCP.json` file that you can 
+use to configure the service. You can configure properties like the service ID, 
+memory, number of CPUs, environment variables, volumes, and much more. 
 
-This table lists the properties and their description in the `LCP.json` file:
+This table lists and describes the properties you can add in `LCP.json`: 
 
 | Field | Type | Default Value | Description |
 | --- | --- | --- | --- |
@@ -29,7 +31,7 @@ This table lists the properties and their description in the `LCP.json` file:
 
 ## Usage
 
-Here is an example `LCP.json` file that uses all the properties:
+Here's an example `LCP.json` file that uses all the properties: 
 
 ```json
 {
