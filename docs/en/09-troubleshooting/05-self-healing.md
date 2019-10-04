@@ -1,17 +1,29 @@
 # Self-Healing
 
-This article documents the self-healing processes in DXP Cloud. During the provisioning process, customers and the DXP Cloud Team work together to establish the configuration parameters for their project to diagnose itself and then restore the environments quickly and with minimal downtime. As part of this process, customers can specify how long a service can delay the verification process during initial startup, the amount of time before the next verification check is executed, and how many times the verification runs before it stops. An example is a clustered environment with multiple nodes that might take longer to start compared to a single instance environment. The self-healing process can be adjusted for such environments.
+This article documents the self-healing processes in DXP Cloud.
 
-To verify that a service is running or to help the service recover after some degradation, DXP Cloud offers two tools used in conjunction with each other to manage applications:
+## What is Self-Healing? 
+
+Self-healing is when the platform detects that a service or application has become stale or deadlocked and cannot be recovered without a restart. The platform uses one or more probes to monitor the services.
+
+## How does Self-Healing Work in DXP Cloud? 
+
+DXP Cloud offers two tools used in conjunction with each other to manage applications:
 
 * Liveness Probe: Indicates whether the service is running.
 * Readiness Probe: Indicates whether the service is ready to receive requests.
 
-For each probe, a URL request or an executable command can be used to validate the status:
+When a probe detects that a failure (not returning the success message in a status check), the probe will restart the application automatically. Each probe can be configured with the following options:
 
-## URL Request (path/port)
+* Number of times a probe runs
+* The time interval between each check
+* The amount of time the probe waits after starting an application before running the check (see the `initialDelaySeconds` value)
 
-In the service's `LCP.json` file, enter:
+### Liveness Probe
+
+A liveness probe uses a URL Request (path/port) to validate that a service is running. Often, it is a lightweight HTTP server inside the application to respond to the liveness probe. The probe pings a path and if it gets an HTTP response in the 200 or 300 range, it marks the application as healthy.
+
+Each service's `LCP.json` file contains the following:
 
 ```
 "livenessProbe": {
@@ -25,9 +37,11 @@ In the service's `LCP.json` file, enter:
 }
 ```
 
-## Executable Command
+### Readiness Probe
 
-Alternately, enter the following in the `LCP.json` file:
+A readiness probe uses an executable command. If the command returns with the correct exit code, then the container is marked as healthy. Otherwise, it is marked unhealthy.
+
+Each service's `LCP.json` file contains the following:
 
 ```
 "readinessProbe": {
@@ -38,6 +52,22 @@ Alternately, enter the following in the `LCP.json` file:
   "periodSeconds": 5,
 }
 ```
+Here is a sample log from the readiness probe has been deployed on the `webserver` service. The log shows the Google server hitting the specific path `nginx_status` continuously.
+
+```
+Oct 04 12:05:51.821 build-14 [webserver-5547c96447-hbrr6] 10.138.0.69 - - [04/Oct/2019:19:05:51 +0000] "GET /nginx_status HTTP/1.1" 200 117 "-" "kube-probe/1.12+" "-"
+Oct 04 12:05:53.001 build-14 [webserver-5547c96447-hbrr6] 10.138.15.249 - - [04/Oct/2019:19:05:53 +0000] "GET /nginx_status HTTP/1.1" 200 115 "-" "GoogleHC/1.0" "-"
+Oct 04 12:05:53.083 build-14 [webserver-5547c96447-hbrr6] 10.138.0.13 - - [04/Oct/2019:19:05:53 +0000] "GET /nginx_status HTTP/1.1" 200 115 "-" "GoogleHC/1.0" "-"
+Oct 04 12:05:53.293 build-14 [webserver-5547c96447-hbrr6] 10.138.15.251 - - [04/Oct/2019:19:05:53 +0000] "GET /nginx_status HTTP/1.1" 200 115 "-" "GoogleHC/1.0" "-"
+```
+
+## How does this affect me? 
+
+The liveness and readiness probes are already deployed to all services regardless of the environment. Typically, customers do not have to make any changes to the probes unless they would like to adjust their values based on their needs. For example, a system administrator may increase the `initialDelaySeconds` value to account for a longer startup process.
+
+To change the default values, modify the `lcp.json` file. See the [Configuration via LCP.json](../10-reference/02-configuration-via-lcp-json.markdown) article.
+
+## Reference
 
 | Property Name | Description |
 | --- | --- |
@@ -46,5 +76,3 @@ Alternately, enter the following in the `LCP.json` file:
 | `timeoutSeconds` | Number of seconds after which the probe times out. The default and minimum is 1. |
 | `successThreshold` | Minimum consecutive successes for the probe to be considered successful following a failure. The default and minimum is `1`. Must be `1` for liveness. |
 | `failureThreshold` | The number of times DXP Cloud repeats a failed probe before giving up. For a liveness probe, giving up means the service will restart. For a readiness probe, giving up means the probe will be marked as Failed. The default is `3`; the minimum is `1`. |
-
-Once the *customer* has configured their `LCS.json` files and deployed them in their environments, the DXP Cloud team can use the two probes to monitor the project's liveness and readiness. Customers can always open a [Help Center](https://liferay-support.zendesk.com/agent/) ticket to address any self-healing issues.
