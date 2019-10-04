@@ -69,4 +69,4 @@ To log into DXP Cloud using SSO:
 
 Once logged in, the user should see all of his or her projects and environments.
 
-![projects page](./sso-using-saml/images/02.png)
+![projects page](../sso-using-saml/images/02.png)
