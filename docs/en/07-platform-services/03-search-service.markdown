@@ -26,11 +26,12 @@ configuration. Here's an example folder structure of such a file inside the
 
 ## Environment Variables
 
-This service has no environment variables specific to DXP Cloud. All environment 
-variables and other forms of configuration for Elastisearch are in the 
-[official Elastisearch documentation](https://www.elastic.co/guide/index.html). 
-You can set such configurations and environment variables in the `config` 
-directory and `LCP.json`, respectively. 
+All environment variables and other forms of configuration for Elastisearch are in the [official Elastisearch documentation](https://www.elastic.co/guide/index.html).
+You can set such configurations and environment variables in the `config` directory and `LCP.json`, respectively. Examples include:
+
+| Name | Value | Description |
+| --- | --- | --- |
+| `ES_JAVA_OPTS` | `-Xms4g -Xmx4g` | Java settings for the ES instance |
 
 ## Scripts
 
@@ -51,3 +52,7 @@ place it in this directory structure:
 
 To deploy a license to the search service, you must create the path 
 `lcp/search/license/common` and put your license file there. 
+
+## Additional Information
+
+* [Configuration via LCP JSON](../10-reference/02-configuration-via-lcp-json.md)

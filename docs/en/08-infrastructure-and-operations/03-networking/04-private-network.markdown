@@ -45,3 +45,8 @@ Here's an example configuration:
   ]
 }
 ```
+
+
+## Additional Information
+
+* [Configuration via LCP JSON](../10-reference/02-configuration-via-lcp-json.md)
