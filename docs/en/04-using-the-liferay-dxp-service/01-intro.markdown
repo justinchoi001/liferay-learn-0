@@ -31,7 +31,7 @@ Use the new version from the release notes to replace the `liferay.workspace.lcp
 
 ## Deployment
 
-Deploying custom additions to Liferay DXP (such as new modules, licenses, or hotfixes) involves adding these to specific locations in the Git repository, and then pushing these changes to Git. See [Overview of the Deployment Workflow](./06-overview-of-the-deployment-workflow.md) for more information on how this works, and see [Deploying to the Liferay DXP Service](./04-deploying-to-the-liferay-dxp-service.md) for more information on the types of files you can deploy.
+Deploying custom additions to Liferay DXP (such as new modules, licenses, or hotfixes) involves adding these to specific locations in the Git repository, and then pushing these changes to Git. See [Overview of the Deployment Workflow](./06-overview-of-the-deployment-workflow.md) for more information on how this works, and see [Adding Files to Deploy to the Liferay DXP Service](./03-adding-files-to-deploy-to-the-liferay-dxp-service.md) for more information on the types of files you can deploy.
 
 ## Configuration
 

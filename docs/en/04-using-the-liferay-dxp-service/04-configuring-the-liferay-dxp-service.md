@@ -40,6 +40,7 @@ In an on-site Liferay DXP instance, these files belong in the `/osgi/configs` fo
 
 ## Additional Information
 
+* [Adding Files to Deploy to the Liferay DXP Service](./03-adding-files-to-deploy-to-the-liferay-dxp-service.md)
 * [Liferay DXP Service](./01-intro.md)
 * [Enabling Clustering in DXP Cloud](./05-setting-up-clustering-in-dxp-cloud.md)
 * [Documentation on DXP Portal properties link out to dxp docs]()

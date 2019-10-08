@@ -25,7 +25,7 @@ The repository provides the following:
 With the exception of the `common` folder, changes added to a given service's 
 environment folder (e.g., `dev`, `uat`, `prod`) are only propagated when 
 deploying to the corresponding environment. Changes added to `common` are always 
-deployed regardless of the target deployment environment. 
+deployed regardless of the target deployment environment.
 
 ### Code Additions
 
@@ -48,9 +48,7 @@ type). For example, adding a JAR file
 to `lcp/liferay/deploy/common/` will result in the file being copied to
 `$LIFERAY_HOME/osgi/modules/` for any environment the build is deployed to. 
 
-### Configuration Files
-
-Configuration files (portal properties or OSGi configuration files) may be added into a `config` directory for the relevant service. When the build is deployed to an environment, these files will be copied to the corresponding location within `$LIFERAY_HOME`. Portal properties files will be copied directly inside of `$LIFERAY_HOME`, whereas `.cfg` or `.config` files will be copied into `$LIFERAY_HOME/osgi/configs/`.
+See [Adding Files to Deploy to the Liferay DXP Service](./03-adding-files-to-deploy-to-the-liferay-dxp-service.md) for more information on where to add other kinds of files for deployment.
 
 ## Build and Test
 
