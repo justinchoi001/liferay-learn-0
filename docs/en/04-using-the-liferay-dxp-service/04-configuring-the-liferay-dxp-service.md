@@ -2,15 +2,15 @@
 
 Configuration files for your Liferay DXP instance in DXP Cloud are placed inside of one of the `config` folders in the Liferay DXP service directory in your repository.
 
-lcp
-└── liferay
-    ├── LCP.json
-    └── config
-        ├── common
-        ├── dev
-        ├── local
-        ├── prd
-        └── uat
+	lcp
+	└── liferay
+    	├── LCP.json
+    	└── config
+        	├── common
+        	├── dev
+        	├── local
+        	├── prd
+        	└── uat
 
 With the exception of the `common/` directory, changes added to a given service's environment folder (`dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to the `config`, `deploy`, `license`, and `script` directories within `lcp/liferay/`.
 
