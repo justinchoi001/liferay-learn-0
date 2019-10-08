@@ -11,6 +11,7 @@ With the exception of the `common/` directory, changes added to a given service'
 * [Themes, Portlets, OSGi Modules](#themes-portlets-osgi-modules)
 * [Hotfixes](#hotfixes)
 * [Licenses](#licenses)
+* [Configuration Files](#configuration-files)
 * [Hot Deploy](#hot-deploy)
 
 ## Themes, Portlets, OSGi Modules
@@ -59,6 +60,12 @@ You can add your own license by putting it into one of the folders in `license/`
 
 Behind the scenes, XML licenses are copied to `$LIFERAY_HOME/deploy`, and AATF licenses are copied to `$LIFERAY_HOME/data`.
 
+## Configuration Files
+
+Configuration files are also added to Liferay DXP by adding them into one of the folders in `config/` within the Liferay DXP service directory.
+
+See [Configuring the Liferay DXP Service](./04-configuring-the-liferay-dxp-service.md) for more information on adding configuration files.
+
 ## Hot Deploy
 
 Hot deploy can be done via the Liferay DXP UI. To do so, navigate to the Control Panel → Apps → App Manager. Then, click the dots in the upper-right corner, and click "Upload." From this screen, you can choose a file from your local file system to deploy and install.
@@ -67,5 +74,6 @@ Hot deploy can be done via the Liferay DXP UI. To do so, navigate to the Control
 
 ## Additional Information
 
+* [Configuring the Liferay DXP Service](./04-configuring-the-liferay-dxp-service.md)
 * [Liferay DXP Service](./01-intro.md)
 * [Overview of the DXP Cloud Deployment Workflow](./06-overview-of-the-dxp-cloud-deployment-workflow.md)
