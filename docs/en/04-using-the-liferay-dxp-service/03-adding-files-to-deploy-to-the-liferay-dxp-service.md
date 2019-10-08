@@ -16,7 +16,9 @@ With the exception of the `common/` directory, changes added to a given service'
 
 ## Themes, Portlets, OSGi Modules
 
-To install themes, portlets, or OSGi modules, include a WAR or JAR file in one of the folders in `/deploy` in your Liferay DXP service directory. For example, to deploy a custom JAR file to the dev environment (using the `/dev` folder), your Liferay DXP service directory could look like this:
+To install themes, portlets, or OSGi modules, include a WAR or JAR file in one of the folders in `/deploy` in your Liferay DXP service directory.
+
+For example, to deploy a custom JAR file to the dev environment (using the `/dev` folder), your Liferay DXP service directory could look like this:
 
     liferay
     ├── deploy
@@ -28,7 +30,9 @@ Behind the scenes, JAR files are copied to the `$LIFERAY_HOME/osgi/modules` fold
 
 ### Deploying Source Code
 
-The source code for new additions can also be included in a CI build. When the build starts, it will automatically compile the source code, and then treat the resulting files as though they were in the correct `deploy` folder. The following folders 
+The source code for new additions can also be included in a CI build. When the build starts, it will automatically compile the source code, and then treat the resulting files as though they were in the correct `deploy` folder.
+
+A CI build will compile source code within these folders:
 
 * The `modules` folder for new modules
 * The `themes` folder for custom themes
@@ -38,18 +42,23 @@ The source code for new additions can also be included in a CI build. When the b
 
 ## Hotfixes
 
-To apply hotfixes, add the hotfix ZIP file to the `hotfix` folder. When you deploy this change, the hotfix is applied to the Liferay DXP instance.
+To apply hotfixes, add the hotfix ZIP file to one of the folders in `hotfix/` within the Liferay DXP service directory. When you deploy this change, the hotfix is applied to the Liferay DXP instance.
+
+For example, you can deploy a hotfix to your dev environment with a structure like the following:
 
     liferay
     ├── hotfix
-    │ └── liferay-hotfix-2-7110.zip
+    │   └── dev
+    │       └── liferay-hotfix-2-7110.zip
     └── LCP.json
 
 Note that hotfixes will each need to be re-applied each time the server starts up. For this reason, updating to the latest Fix Pack or Service pack of the Liferay DXP Docker image in your `gradle.properties` file is better than adding many hotfixes into this folder for the long term; you can update the Docker version by replacing the `liferay.workspace.lcp.liferay.image` property in this file. The `gradle.properties` file can be found at the root of the repository.
 
 ## Licenses
 
-You can add your own license by putting it into one of the folders in `license/` within the Liferay DXP service directory. For example, you can add licenses to your `dev` environment with a structure like this in your Liferay DXP service directory:
+You can add your own license by putting it into one of the folders in `license/` within the Liferay DXP service directory.
+
+For example, you can add licenses to your `dev` environment with a structure like this in your Liferay DXP service directory:
 
     liferay
     ├── license
