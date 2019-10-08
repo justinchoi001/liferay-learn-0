@@ -1,4 +1,4 @@
-# Overview of the DXP Cloud Development Workflow
+# Overview of the DXP Cloud Deployment Workflow
 
 This article outlines the path developers will take to develop for and deploy to a DXP Cloud project. The development process with DXP Cloud follows three stages:
 
@@ -83,4 +83,4 @@ Committed changes to the repository will automatically trigger a new build in CI
 * [Configuring Your GitHub Repository]()
 * [Environments](../05-build-and-deploy/02-environments.md)
 * [Using the Command Line Interface](../10-reference/03-command-line-tool.markdown)
-* [Walking Through the Deployment Life Cycle](./06-walking-through-the-development-life-cycle.md)
+* [Walking Through the Deployment Life Cycle](./06-walking-through-the-deployment-life-cycle.md)

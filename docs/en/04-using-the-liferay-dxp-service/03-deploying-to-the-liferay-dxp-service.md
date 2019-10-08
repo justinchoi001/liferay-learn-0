@@ -1,6 +1,6 @@
 # Deploying to the Liferay DXP Service
 
-This article outlines all of the types of additions that can be included in a deployment to Liferay DXP in DXP Cloud. All of the types of changes in this article will be included in the CI build that is triggered from GitHub. For more information on how the deployment process starts, see [Overview of the DXP Cloud Deployment Workflow](../02-getting-started/05-overview-of-the-dxp-cloud-deployment-workflow.md).
+This article outlines all of the types of additions that can be included in a deployment to Liferay DXP in DXP Cloud. All of the types of changes in this article will be included in the CI build that is triggered from GitHub. For more information on how the deployment process starts, see [Overview of the DXP Cloud Deployment Workflow](./06-overview-of-the-dxp-cloud-deployment-workflow.md).
 
 Deploying to your Liferay DXP instance in DXP Cloud normally involves adding the files into the Liferay DXP service directory in your repository. This directory is located in `lcp/liferay/`.
 
@@ -68,4 +68,4 @@ Hot deploy can be done via the Liferay DXP UI. To do so, navigate to the Control
 ## Additional Information
 
 * [Liferay DXP Service](./01-intro.md)
-* [Overview of the DXP Cloud Deployment Workflow](../02-getting-started/05-overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Overview of the DXP Cloud Deployment Workflow](./06-overview-of-the-dxp-cloud-deployment-workflow.md)
