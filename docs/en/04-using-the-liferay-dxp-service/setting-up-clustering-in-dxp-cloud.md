@@ -11,15 +11,15 @@ This article will outline the steps necessary to configure clustering for your L
 
 ## Enable the Clustering Environment Variable
 
-Start from the desired environment in the DXP Cloud console. Then, under `Services`, navigate to `liferay`, and then click `Environment Variables`. Set the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` variable to `true`. This instructs the image startup process to add the clustering configuration to Liferay DXP.
+Start from the desired environment in the DXP Cloud console. Then, under `Services`, navigate to `liferay`, and then click `Environment Variables`. Ensure that the `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` variable is set to `true`. This instructs the image startup process to add the clustering configuration to Liferay DXP.
 
-![Setting LCP_PROJECT_LIFERAY_CLUSTER_ENABLED](./setting-up-clustering-in-dxp-cloud/01.png)
+![Setting LCP_PROJECT_LIFERAY_CLUSTER_ENABLED](./setting-up-clustering-in-dxp-cloud/images/01.png)
 
 ## Set the Clustering Scale
 
 Set the desired number of nodes for clustering by setting the `scale` property in `LCP.json` in the Liferay DXP service directory (`lcp/liferay/`).
 
-```
+```json
 {
   "kind": "Deployment",
   "id": "liferay",
@@ -30,7 +30,7 @@ Set the desired number of nodes for clustering by setting the `scale` property i
   ...
 ```
 
-> **Note:** increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum for your plan, then the deployment may fail.
+> **Note:** increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../06-manage-and-optimize/20-quotas.markdown) for your plan, then the deployment may fail.
 
 ### Auto-Scaling
 
@@ -38,9 +38,9 @@ Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-sc
 
 ## Add Clustering Portal Properties
 
-By default, no extra portal properties are needed to enable clustering in DXP Cloud. The necessary configuration to set up clustering will already be copied to a `portal-clu.properties` and `unicast.xml` files in the Docker image when the Liferay DXP service starts up.
+By default, no additional portal properties are required to enable clustering in DXP Cloud. The necessary configuration to set up clustering will already be copied to a `portal-clu.properties` and `unicast.xml` files in the Docker image when the Liferay DXP service starts up.
 
-However, if additional portal properties for clustering are needed, then they can still be added into the repository. You can override the clustering-specific portal properties by adding them into the `portal-clu.properties` file within the `config` folder appropriate to the chosen environment. See [Configuring the Liferay DXP Service](./04-configuring-the-liferay-dxp-service.md) for more information.
+However, if additional portal properties for clustering are desired, the properties may still be added to the repository. You can override the clustering-specific portal properties by adding them into the `portal-clu.properties` file within the `config` folder appropriate to the chosen environment. See [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md) for more information.
 
 ## Deploy and Verify
 
@@ -62,6 +62,6 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 ## Additional Information
 
 * [Auto-scaling](../06-manage-and-optimize/03-auto-scaling.md)
-* [Liferay DXP Service](./01-intro.md)
-* [Configuring the Liferay DXP Service](./04-configuring-the-liferay-dxp-service.md)
-* [Adding Files to Deploy to the Liferay DXP Service](./03-adding-files-to-deploy-to-the-liferay-dxp-service.md)
+* [Liferay DXP Service](././introduction-to-the-liferay-dxp-service.md)
+* [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
+* [Adding Files to Deploy to the Liferay DXP Service](./adding-files-to-deploy-to-the-liferay-dxp-service.md)
