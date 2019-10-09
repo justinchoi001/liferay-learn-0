@@ -46,6 +46,14 @@ Here's an example configuration:
 }
 ```
 
+## Environment Variables Reference
+
+| Name | Value | Description |
+| --- | --- | --- |
+| `port` | 3400 | The external port of the service to connect to. |
+| `targetPort` | 7000 | The internal port of the service to expose |
+| `protocol` | TCP | The type of connection to create (TCP and UDP are supported) |
+| `external` | true | Whether your connection is available to external connections. The default value `false` restricts the connection to internal DXP Cloud connections |
 
 ## Additional Information
 
