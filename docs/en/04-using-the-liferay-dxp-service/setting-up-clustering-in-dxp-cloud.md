@@ -62,6 +62,6 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 ## Additional Information
 
 * [Auto-scaling](../06-manage-and-optimize/03-auto-scaling.md)
-* [Liferay DXP Service](././introduction-to-the-liferay-dxp-service.md)
+* [Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
 * [Adding Files to Deploy to the Liferay DXP Service](./adding-files-to-deploy-to-the-liferay-dxp-service.md)
