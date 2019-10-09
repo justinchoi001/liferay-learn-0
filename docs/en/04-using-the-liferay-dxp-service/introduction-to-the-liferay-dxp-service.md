@@ -38,7 +38,7 @@ Use the new version from the release notes to update the `liferay.workspace.lcp.
 
 Deploying custom additions to Liferay DXP involves adding the new module, license, or hotfix to the appropriate locations in the Git repository.
 
-With the exception of the `common/` directory, changes added to a given service's environment folder (`dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to the `config`, `deploy`, `license`, and `script` directories within `lcp/liferay/`.
+With the exception of the `common/` directory, changes added to a given service's environment folder (`dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to the `config`, `deploy`, `hotfix`, `license`, and `script` directories within `lcp/liferay/`.
 
 See [Overview of the Deployment Workflow](./overview-of-the-deployment-workflow.md) for more information on how the deployment process starts.
 
@@ -74,7 +74,7 @@ To apply hotfixes, add the hotfix ZIP file to one of the folders in `hotfix/` wi
 For example, you can deploy a hotfix to your dev environment with a structure like the following:
 
 	lcp
-	└──	liferay
+    └──	liferay
     	├── hotfix
     	│   └── dev
     	│       └── liferay-hotfix-2-7110.zip
@@ -130,5 +130,6 @@ For example, to include a script that removes all log files, place it in the fol
     lcp
     └──liferay
         ├── script
-        │ └── remove-log-files.sh
+        │   └── dev
+        │       └── remove-log-files.sh
         └── LCP.json
