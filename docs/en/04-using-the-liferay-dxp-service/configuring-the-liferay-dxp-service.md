@@ -26,21 +26,21 @@ These are the types of portal properties files you may use in one of the `config
 
 * `portal-env.properties`: Contains the properties that only affect the current environment (for example, credentials and URL endpoints for external services that differ from environment to environment)
 
-* `portal-clu.properties`: Contains the pre-configured properties for clustering Liferay DXP on DXP Cloud; see [Setting Up Clustering in DXP Cloud](./05-setting-up-clustering-in-dxp-cloud.md) for more information
+* `portal-clu.properties`: Contains the pre-configured properties for clustering Liferay DXP on DXP Cloud; see [Setting Up Clustering in DXP Cloud](./setting-up-clustering-in-dxp-cloud.md) for more information
 
 * `portal-ext.properties`: Contains the final changes to the Liferay DXP configuration; since most properties are configured in `portal-all.properties` and `portal-env.properties`, this file is often empty or missing altogether
 
-Note that portal properties can also be defined as environment variables. See [the environment variables reference](./01-intro.md#environment-variables) for more information.
+> **Note**: Portal properties may also be defined as environment variables. See [the environment variables reference](./introduction-to-the-liferay-dxp-service.md#environment-variables) for more information.
 
 ## OSGi Configurations
 
 OSGi configurations (`.cfg` or `.config` files) are used to configure OSGi components in Liferay DXP.
 
-In an on-site Liferay DXP instance, these files belong in the `/osgi/configs` folder inside of `$LIFERAY_HOME`. When using Liferay DXP Cloud, place these files into the appropriate `config` folder(s) for them to be copied into `/osgi/configs` for the Liferay DXP instance on deployment.
+These configuration files belong in the `/osgi/configs` folder inside of `$LIFERAY_HOME`. When using Liferay DXP Cloud, place these files into the appropriate `config` folder(s) for them to be copied into `/osgi/configs` for the Liferay DXP instance on deployment.
 
 ## Additional Information
 
+* [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
 * [Adding Files to Deploy to the Liferay DXP Service](./03-adding-files-to-deploy-to-the-liferay-dxp-service.md)
-* [Liferay DXP Service](./01-intro.md)
 * [Enabling Clustering in DXP Cloud](./05-setting-up-clustering-in-dxp-cloud.md)
-* [Documentation on DXP Portal properties link out to dxp docs]()
+* [Portal Properties](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties)
