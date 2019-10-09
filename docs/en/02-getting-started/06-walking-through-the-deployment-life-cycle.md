@@ -17,19 +17,23 @@ In order to get started, we will need the following:
 
 ### Setting Up the Git Repository
 
+You must have your GitHub repository configured See [Configuring Your GitHub Repository](./04-configuring-your-github-repository.md) for more information on setting up the repository for the first time.
+
+If you have not yet configured your repository, you can quickly get started with the following steps.
+
 First, fork the repository for your DXP Cloud project on GitHub:
 
 ![Forking the repository](./walking-through-the-deployment-life-cycle/images/01.png)
 
 > This will give you your own fork of the repository that you can push to in your own development. You can also use this to send pull requests to the upstream repository.
 
-Next, clone your new fork of the repository on your local system:
+Then, clone your new fork of the repository on your local system:
 
 ```bash
 git clone https://github.com/<github-user-name>/<project-name>.git
 ```
 
-The repository will be copied into the current working directory and ready for use. See [Configuring Your GitHub Repository](./04-configuring-your-github-repository.md) for more information.
+The repository will be copied into the current working directory and ready for use.
 
 ### Installing the Command Line Interface (CLI)
 
@@ -45,31 +49,9 @@ curl https://cdn.liferay.cloud/cli/latest/lcp.sh -fsSL | bash
 
 ### Sample Module
 
-A sample module compiled into a JAR will be necessary for this tutorial. You can proceed through this walkthrough using any module.
+A sample module compiled into a JAR will be necessary for this tutorial. You can proceed through this walkthrough using any module. See [Starting Module Development](https://help.liferay.com/hc/en-us/articles/360017884192-Starting-Module-Development) for more information.
 
-This tutorial will demonstrate using the "JSP Portlet" from the [Liferay Blade Samples](https://github.com/liferay/liferay-blade-samples). Follow these steps to get the same module shown in the tutorial:
-
-First, clone the `liferay-blade-samples` repository:
-
-```bash
-git clone https://github.com/liferay/liferay-blade-samples.git
-```
-
-Next, navigate to the directory for the JSP Portlet:
-
-```bash
-cd liferay-blade-samples/liferay-workspace/apps/jsp-portlet
-```
-
-Finally, use the `gradlew` script from the root of the repository to compile the module:
-
-```bash
-../../../gradlew deploy
-```
-
-The module will be compiled into a JAR located in `liferay-blade-samples/liferay-workspace/bundles/osgi/modules`.
-
-See [Configuring Your GitHub Repository](./04-configuring-your-github-repository.md) for steps on setting up the repository. See [Command Line Tool](../10-reference/03-command-line-tool.md) for more information on installing the CLI.
+Develop or find your own module to deploy in this tutorial. Note that this tutorial will show using the "JSP Portlet" from the [Liferay Blade Samples](https://github.com/liferay/liferay-blade-samples).
 
 ## Add the Sample to the Repository
 
@@ -213,4 +195,5 @@ Once you have verified the deployment was successful, you will have completed th
 * [Configuring Your GitHub Repository](./04-configuring-your-github-repository.md)
 * [Environments](../05-build-and-deploy/02-environments.md)
 * [Overview of the DXP Cloud Development Workflow](./05-overview-of-the-dxp-cloud-development-workflow.md)
+* [Starting Module Development](https://help.liferay.com/hc/en-us/articles/360017884192-Starting-Module-Development)
 * [Command-Line Tool](../10-reference/03-command-line-tool.md)
