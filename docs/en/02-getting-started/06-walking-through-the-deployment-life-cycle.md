@@ -19,7 +19,7 @@ In order to get started, we will need the following:
 
 First, fork the repository for your DXP Cloud project on GitHub:
 
-![Forking the repository](./walking-through-the-deployment-life-cycle/01.png)
+![Forking the repository](./walking-through-the-deployment-life-cycle/images/01.png)
 
 > This will give you your own fork of the repository that you can push to in your own development. You can also use this to send pull requests to the upstream repository.
 
@@ -114,17 +114,17 @@ Then, push your branch to your fork of the repository:
 git push origin testing-branch
 ```
 
-![Pull request button](./walking-through-the-deployment-life-cycle/02.png)
+![Pull request button](./walking-through-the-deployment-life-cycle/images/02.png)
 
 Once you have sent the pull request to the upstream repository, the CI service will automatically begin a build that you will be able to use for your deployment.
 
 Navigate to the DXP Cloud console, and then go to the `Builds` tab for the desired environment. The option to deploy the build will appear when the build completes successfully; click the three dots to the right side of the build to see the option.
 
-![Builds](./walking-through-the-deployment-life-cycle/03.png)
+![Builds](./walking-through-the-deployment-life-cycle/images/03.png)
 
 Click "Deploy Build to..." for any successful build to deploy to the environment of your choice. Normally, a new build will first be deployed to the `dev` environment. However, developers can directly deploy to any environment as long as they have permissions to do so.
 
-![Choosing an environment for deployment](./walking-through-the-deployment-life-cycle/04.png)
+![Choosing an environment for deployment](./walking-through-the-deployment-life-cycle/images/04.png)
 
 ### Deploy Using the CLI
 
@@ -171,7 +171,7 @@ Finally, deploy the newly added module by running:
 lcp deploy --project=<project-name> --environment=dev
 ```
 
-![Deploying through the CLI](./walking-through-the-deployment-life-cycle/05.png)
+![Deploying through the CLI](./walking-through-the-deployment-life-cycle/images/05.png)
 
 Once the command finishes running, the module will be copied to the chosen environment. The affected services will need some time to restart and apply the new module to the Docker images.
 
@@ -187,7 +187,7 @@ From the DXP Cloud console, navigate to the `infra` environment â†’ CI service â
 
 From this screen, you can check the `JENKINS_CUSTOMER_USER_NAME` and `JENKINS_CUSTOMER_PASSWORD` variables for the login credentials for your web server:
 
-![Login credentials](./walking-through-the-deployment-life-cycle/06.png)
+![Login credentials](./walking-through-the-deployment-life-cycle/images/06.png)
 
 ### Accessing the Web Server
 
@@ -195,7 +195,7 @@ One or more services may be unavailable while the deployment is in progress; thi
 
 When the `webserver` service is ready to use, navigate to it, and then click on the link on the word "webserver" near the top of the page. This will take you to your running Liferay DXP instance through the web server.
 
-![Link from the webserver Service](./walking-through-the-deployment-life-cycle/07.png)
+![Link from the webserver Service](./walking-through-the-deployment-life-cycle/images/07.png)
 
 > **Note:** you can also go directly to `https://webserver-<project-name>-dev.lfr.cloud/` to get to the same location.
 
@@ -203,7 +203,7 @@ You can use the Gogo shell to easily confirm whether your module was deployed. N
 
 `lb | grep "my.module.name"`
 
-![Verifying module deployment](./walking-through-the-deployment-life-cycle/08.png)
+![Verifying module deployment](./walking-through-the-deployment-life-cycle/images/08.png)
 
 Once you have verified the deployment was successful, you will have completed this tutorial.
 
