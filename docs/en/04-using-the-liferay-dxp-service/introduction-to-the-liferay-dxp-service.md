@@ -11,8 +11,9 @@ The Liferay DXP service is the heartbeat of any project. It runs the application
 The Liferay DXP service in DXP Cloud can be used in many of the same ways as an on-premise instance of Liferay DXP. However, there are also several differences in configuration and development workflow when working with an instance in DXP Cloud.
 
 * [Choosing a Version](#choosing-a-version)
-* [Deployment](#deployment)
+* [Deployment (Customization, Patching, and Licensing)](#deployment-customization-patching-and-licensing)
 * [Configuration](#configuration)
+* [Hot Deploy](#hot-deploy)
 * [Enabling Clustering](#enabling-clustering)
 * [Environment Variables](#environment-variables)
 * [Running Scripts](#running-scripts)
@@ -33,13 +34,79 @@ Use the new version from the release notes to update the `liferay.workspace.lcp.
 
 > **Note:** if any `LCP.json` files in your repository directly reference the Docker image for a version of Liferay, then these will need to be updated as well when upgrading to a new Docker image.
 
-## Deployment
+## Deployment (Customization, Patching, and Licensing)
 
-Deploying custom additions to Liferay DXP involves adding the new module, license, or hotfix to the appropriate locations in the Git repository. See [Overview of the Deployment Workflow](./overview-of-the-deployment-workflow.md) for more information on how this works, and see [Adding Files to Deploy to the Liferay DXP Service](./adding-files-to-deploy-to-the-liferay-dxp-service.md) for more information on the types of files you can deploy.
+Deploying custom additions to Liferay DXP involves adding the new module, license, or hotfix to the appropriate locations in the Git repository.
+
+With the exception of the `common/` directory, changes added to a given service's environment folder (`dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to the `config`, `deploy`, `license`, and `script` directories within `lcp/liferay/`.
+
+See [Overview of the Deployment Workflow](./overview-of-the-deployment-workflow.md) for more information on how the deployment process starts.
+
+### Themes, Portlets, and OSGi Modules
+
+To install themes, portlets, or OSGi modules, include a WAR or JAR file in one of the folders in `/deploy` in your Liferay DXP service directory.
+
+For example, to deploy a custom JAR file to the dev environment (using the `/dev` folder), your Liferay DXP service directory could look like this:
+
+	lcp
+	└── liferay
+	    ├── deploy
+	    │ └── dev
+	    │   └── com.liferay.apio.samples.portlet-1.0.0.jar
+	    └── LCP.json
+
+### Source Code
+
+The source code for new additions can also be included in a CI build. When the build starts, it will automatically compile the source code. Then, behind the scenes, the build will copy the results to the correct `deploy` folder.
+
+A CI build will compile source code within these folders:
+
+* The `modules` folder for new modules
+* The `themes` folder for custom themes
+* The `wars` folder for exploded WARs
+
+> **Note:** source code will only be included in a deployment if it is deployed from a build in CI. 
+
+### Hotfixes
+
+To apply hotfixes, add the hotfix ZIP file to one of the folders in `hotfix/` within the Liferay DXP service directory. When you deploy this change, the hotfix is applied to the Liferay DXP instance.
+
+For example, you can deploy a hotfix to your dev environment with a structure like the following:
+
+	lcp
+	└──	liferay
+    	├── hotfix
+    	│   └── dev
+    	│       └── liferay-hotfix-2-7110.zip
+    	└── LCP.json
+
+Note that hotfixes will each need to be re-applied each time the server starts up. For this reason, updating to the latest Fix Pack or Service pack of the Liferay DXP Docker image in your `gradle.properties` file is better than adding many hotfixes into this folder for the long term; you can update the Docker version by replacing the `liferay.workspace.lcp.liferay.image` property in this file. The `gradle.properties` file can be found at the root of the repository.
+
+### Licenses
+
+You can add your own license by putting it into one of the folders in `license/` within the Liferay DXP service directory.
+
+For example, you can add licenses to your `dev` environment with a structure like this in your Liferay DXP service directory:
+
+	lcp
+    └── liferay
+    	├── license
+    	│   └── dev
+    	│       └── license.xml
+    	│       └── license.aatf
+    	└── LCP.json
+
+Behind the scenes, XML licenses are copied to `$LIFERAY_HOME/deploy`, and AATF licenses are copied to `$LIFERAY_HOME/data`.
 
 ## Configuration
 
 Applying configurations to the Liferay service, like `portal.properties` changes, requires adding them to the Git repository and pushing the changes to Git. For more information on adding these configuration files, see [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md).
+
+## Hot Deploy
+
+Hot deploy can be done via the Liferay DXP UI. To do so, navigate to the Control Panel → Apps → App Manager. Then, click the dots in the upper-right corner, and click "Upload." From this screen, you can choose a file from your local file system to deploy and install.
+
+> **Note:** using hot deploy in DXP Cloud is _not_ recommended because any customizations deployed with this method will be lost upon a subsequent DXP service deployment.
 
 ## Enabling Clustering
 
