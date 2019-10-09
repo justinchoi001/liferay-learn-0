@@ -14,14 +14,6 @@
   }
 ```
 
-| Name | Value | Description |
-| --- | --- | --- |
-| `cdn` | false | CDN is disabled by default; can be enabled by setting to `true` |
-| `customDomain` | ["example.com", "www.example.com"] | Name of the custom domain; can list more than one |
-| `targetPort` | 3000 | Port number for the load balancer |
-| `key` | | SSL certificate's key  |
-| `crt` | | SSL certificate's crt in Base64 format |
-
 ## Private Network Settings
 
 ```json

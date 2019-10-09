@@ -49,7 +49,6 @@ You can set which internal port (`targetPort`) the load balancer's service
 endpoint routes to. DXP Cloud automatically configures the correct port for the 
 services it provides. 
 
-
 ```json
 "targetPort": 3000
 ```
@@ -61,14 +60,14 @@ services it provides.
 When you specify the load balancer attribute for a service, it adds a service 
 endpoint named after this pattern: 
 
--   `<SERVICE-NAME>-<PROJECT-NAME>-<ENVIRONMENT-NAME>.lfr.cloud`
+- `<SERVICE-NAME>-<PROJECT-NAME>-<ENVIRONMENT-NAME>.lfr.cloud`
 
 Consider this example: 
 
--   Service: webserver
--   Project: acme
--   Environment: prd
--   Service endpoint name: `webserver-acme-prd.lfr.cloud`
+- Service: webserver
+- Project: acme
+- Environment: prd
+- Service endpoint name: `webserver-acme-prd.lfr.cloud`
 
 These domains created by DXP Cloud's infrastructure at `.lfr.cloud` are covered 
 by a wildcard certificate that will not display in the Network page's SSL 
@@ -99,9 +98,17 @@ custom certificate, provide a key and certificate in Base64 format:
 ```
 
 The Network page shows any custom certificates, with a maximum of one per 
-service. 
-
-For more information, see 
+service. For more information, see 
 [Custom Domains](/docs/-/knowledge_base/dxp-cloud/custom-domains). 
 
 ![Figure 4: DXP Cloud shows the status of SSL certificates that cover custom domains.](./load-balancer/images/load-balancer-ssl-cert.png)
+
+## Environment Variables Reference
+
+| Name | Value | Description |
+| --- | --- | --- |
+| `cdn` | false | CDN is disabled by default; can be enabled by setting to `true` |
+| `customDomain` | ["example.com", "www.example.com"] | Name of the custom domain; can list more than one |
+| `targetPort` | 3000 | Port number for the load balancer |
+| `key` | | SSL certificate's key  |
+| `crt` | | SSL certificate's crt in Base64 format |

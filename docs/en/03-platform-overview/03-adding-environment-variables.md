@@ -4,11 +4,13 @@ header-id: environment-variables
 
 # Adding Environment Variables
 
-Environment variables are a set of dynamic placeholders that can affect the way a service behaves within an environment. Connecting a Liferay DXP instance to a database is one example; pass the database's URL, user, and password as environment variables. Another example to enabling clustering.
+Environment variables are a set of dynamic placeholders that can affect the way a service behaves within an environment.
 
-There are two ways to add environment variables: via the DXP Cloud Management Console or configuring the `LCP.json` file for each service.
+There are two ways to define environment variables: via the DXP Cloud Management Console or configuring the `LCP.json` file for each service.
 
-## Adding Environment Variables via the DXP Cloud Management Console
+> **Note:** DXP Cloud will always apply the most recent changes to settings. If the latest changes are made in the LCP.json file, upon restart, the environment variables will be reflected in the web console. However, if the environment variables are changed in the web console, the container will be restarted with those new configurations.
+
+## Defining Environment Variables via the DXP Cloud Management Console
 
 While logged into the DXP Cloud Management Console:
 
@@ -16,7 +18,7 @@ While logged into the DXP Cloud Management Console:
 1. Click the *Environment Variables* tab.
 1. Enter each environment variable as a key-value pair (for example, to enable clustering):
     * **Key**: `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED`
-    * **Value**:  `true`
+    * **Value**:  `false`
 1. Click *Update Environment Variables*.
 
 The service now restarts with the updated environment variables.
