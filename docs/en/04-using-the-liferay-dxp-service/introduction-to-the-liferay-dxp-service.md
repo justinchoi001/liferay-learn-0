@@ -40,7 +40,7 @@ Deploying custom additions to Liferay DXP involves adding the new module, licens
 
 With the exception of the `common/` directory, changes added to a given service's environment folder (`dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to the `config`, `deploy`, `hotfix`, `license`, and `script` directories within `lcp/liferay/`.
 
-See [Overview of the Deployment Workflow](./overview-of-the-deployment-workflow.md) for more information on how the deployment process starts.
+See [Overview of the Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md) for more information on how the deployment process starts.
 
 ### Themes, Portlets, and OSGi Modules
 
@@ -65,7 +65,7 @@ A CI build will compile source code within these folders:
 * The `themes` folder for custom themes
 * The `wars` folder for exploded WARs
 
-> **Note:** source code will only be included in a deployment if it is deployed from a build in CI. 
+> **Note:** source code will only be included in a deployment if it is deployed from a build in CI.
 
 ### Hotfixes
 
@@ -112,15 +112,6 @@ Hot deploy can be done via the Liferay DXP UI. To do so, navigate to the Control
 
 Clustering Liferay DXP in DXP Cloud is a very simplified process compared to doing so in Liferay DXP. Support for clustering is available and enabled out-of-the-box in DXP Cloud. Additional configurations for clustering behavior and scale does require a few extra steps. See [Setting Up Clustering in DXP Cloud](./setting-up-clustering-in-dxp-cloud.md) for more information.
 
-## Environment Variables
-
-Name                                  | Default Value | Description  |
-------------------------------------- | ------------- | ------------ |
-`LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` | `true`       | Whether to enable clustering and communication between nodes. |
-`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |               | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account. |
-`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |               | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
-`LIFERAY_JAVA_OPTS` | | JVM options that will be appended to `CATALINA_OPTS` to override the default recommended options. |
-
 ## Scripts
 
 Any `.sh` files found in the `script` folder are automatically run prior to starting the service. Scripts may be used for more extensive customizations. However, use caution when doing so. This is the most powerful way to customize Liferay DXP and it can cause undesired side effects.
@@ -133,3 +124,12 @@ For example, to include a script that removes all log files, place it in the fol
         │   └── dev
         │       └── remove-log-files.sh
         └── LCP.json
+
+## Environment Variables Reference
+
+Name                                  | Default Value | Description  |
+------------------------------------- | ------------- | ------------ |
+`LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` | `true`       | Whether to enable clustering and communication between nodes. |
+`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |               | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account. |
+`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |               | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
+`LIFERAY_JAVA_OPTS` | | JVM options that will be appended to `CATALINA_OPTS` to override the default recommended options. |

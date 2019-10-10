@@ -48,8 +48,6 @@ type). For example, adding a JAR file
 to `lcp/liferay/deploy/common/` will result in the file being copied to
 `$LIFERAY_HOME/osgi/modules/` for any environment the build is deployed to. 
 
-See [Adding Files to Deploy to the Liferay DXP Service](./03-adding-files-to-deploy-to-the-liferay-dxp-service.md) for more information on where to add other kinds of files for deployment.
-
 ## Build and Test
 
 The CI service will automatically execute builds for any of the following events: commits are merged into the DXP Cloud repository, pull requests with changes are sent to the repository, or `lcp deploy` is invoked using the Command Line Interface (CLI) to deploy to a DXP Cloud environment. The `CI` service in the `infra` environment can be modified to include additional pipeline steps, including testing. See the article on [Builds]() for more information.
@@ -78,7 +76,7 @@ Committed changes to the repository will automatically trigger a new build in CI
 
 ## Additional Information
 
-* [Configuring Your GitHub Repository]()
+* [Configuring Your GitHub Repository](../02-getting-started/configuring-your-github-repository.md)
 * [Environments](../05-build-and-deploy/02-environments.md)
 * [Using the Command Line Interface](../10-reference/03-command-line-tool.markdown)
 * [Walking Through the Deployment Life Cycle](./06-walking-through-the-deployment-life-cycle.md)
