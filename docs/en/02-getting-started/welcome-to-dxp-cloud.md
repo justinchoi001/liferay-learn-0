@@ -10,9 +10,9 @@ deliver amazing applications on Liferay DXP.
 
 Worry less and build more with a platform that provides:
 
-- [Standards Compliant Security, Automated Backups, and Flexible Governance](#standards-compliant-security-automated-backups-and-flexible-governance)
-- [High Availability, Scalability, and Performance](#high-availability-scalability-and-performance)
-- [Real Time Alerts](#real-time-alerts)
+* [Standards Compliant Security, Automated Backups, and Flexible Governance](#standards-compliant-security-automated-backups-and-flexible-governance)
+* [High Availability, Scalability, and Performance](#high-availability-scalability-and-performance)
+* [Real Time Alerts](#real-time-alerts)
 
 All of which is designed, built, and supported by a dedicated team of 
 Liferay professionals with a over a decade of experience running 
@@ -23,9 +23,9 @@ complete DevOps CI/CD strategy, tools, and workflow.
 
 Every DXP Cloud project comes with: 
 
-- [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-cicd)
-- [Application Development Tools](#application-development-tools)
-- [Insightful Monitoring](#insightful-monitoring)
+* [Accelerated Development with Built-in CI/CD](#accelerated-development-with-built-in-cicd)
+* [Application Development Tools](#application-development-tools)
+* [Insightful Monitoring](#insightful-monitoring)
 
 ## Standards Compliant Security, Automated Backups, and Flexible Governance
 
@@ -40,14 +40,14 @@ ensure that data and documents are protected and ready for restoration in case
 of data corruption or failure. Encryption at rest ensures that sensitive data 
 saved on disks isn't readable by any user or application without a valid key. 
 
-![Figure 3: DXP Cloud's backup service preserves and protects your data.](../images/backups.png)
+![Figure 3: DXP Cloud's backup service preserves and protects your data.](./welcome-to-dxp-cloud/images/backups.png)
 
 Out-of-the-box 
 [role and team administration](./06-manage-and-optimize/06-team-collaboration-and-access-control.markdown) 
 allows administrators to deliver maximum productivity and security by adding or 
 removing people from teams and managing permissions per project environment.
 
-![Figure 4: Manage your project's team members, including their permissions.](../images/invite-member.png)
+![Figure 4: Manage your project's team members, including their permissions.](./welcome-to-dxp-cloud/images/invite-member.png)
 
 ## High Availability, Scalability, and Performance
 
@@ -65,7 +65,7 @@ scaled down during periods of lower activity. Teams receive automatic
 notifications and email alerts regarding instance usage so they can manage 
 resources with confidence. 
 
-![Figure 5: Auto-scale your servers to meet demand.](../images/auto-scaling.png)
+![Figure 5: Auto-scale your servers to meet demand.](./welcome-to-dxp-cloud/images/auto-scaling.png)
 
 ## Real Time Alerts
 
@@ -73,7 +73,7 @@ Administrators can configure
 [alerts](./06-manage-and-optimize/04-real-time-alerts.markdown) 
 per user to receive resource utilization updates in real-time.
 
-![Figure 6: Administrators can configure real-time alerts.](../images/alerts-prefs-page.png)
+![Figure 6: Administrators can configure real-time alerts.](./welcome-to-dxp-cloud/images/alerts-prefs-page.png)
 
 ## Accelerated Development with Built-in CI/CD
 
@@ -89,7 +89,7 @@ to meet organizations' unique needs and detect and repair common server
 problems as they occur. This helps prevent small programming errors from 
 accumulating and causing a server crash. 
 
-![Figure 7: View, manage, and deploy your builds from a central location.](../images/builds.png)
+![Figure 7: View, manage, and deploy your builds from a central location.](./welcome-to-dxp-cloud/images/builds.png)
 
 ## Application Development Tools
 
@@ -98,7 +98,7 @@ Keep track of application deployments and performance with real-time build and
 [accessing the shell](./09-troubleshooting/02-shell-access.markdown) 
 via the web console or terminal, and/or by downloading the logs. 
 
-![Figure 8: Real-time build and deployment logs help you solve problems with your applications.](../images/build-logs.png)
+![Figure 8: Real-time build and deployment logs help you solve problems with your applications.](./welcome-to-dxp-cloud/images/build-logs.png)
 
 ## Insightful Monitoring
 
@@ -109,10 +109,12 @@ over time. Administrators can also use out-of-the-box
 [Dynatrace integration](./06-manage-and-optimize/02-application-metrics.md#advanced-application-metrics-on-production) 
 to quickly understand CPU and memory usage, data transfer rates, and more. 
 
-![Figure 9: Use a variety of metrics to keep tabs on your DXP Cloud services, including your Liferay DXP instances.](../images/app-metrics.png)
+![Figure 9: Use a variety of metrics to keep tabs on your DXP Cloud services, including your Liferay DXP instances.](./welcome-to-dxp-cloud/images/app-metrics.png)
 
 ## Next Steps
 
-Ready to take the next step? See 
-[Walking through the Development Life Cycle](https://www.liferay.com/) 
-to learn more about the DXP Cloud development process. 
+* [Signing Up]()
+* [Setting up Your Environment]()
+* [Configuring Your Github Repository]()
+* [Overview of the DXP Cloud Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
+* [DXP Cloud Deployment Walk Through](../04-using-the-liferay-dxp-service/walking-through-the-deployment-life-cycle.md)
