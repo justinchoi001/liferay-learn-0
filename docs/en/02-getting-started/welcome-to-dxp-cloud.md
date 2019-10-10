@@ -113,7 +113,6 @@ to quickly understand CPU and memory usage, data transfer rates, and more.
 
 ## Next Steps
 
-* [Signing Up]()
 * [Setting up Your Environment]()
 * [Configuring Your Github Repository]()
 * [Overview of the DXP Cloud Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md)
