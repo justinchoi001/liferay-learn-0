@@ -192,8 +192,8 @@ Once you have verified the deployment was successful, you will have completed th
 ## Additional Information
 
 * [Deployment]()
-* [Configuring Your GitHub Repository](./04-configuring-your-github-repository.md)
+* [Configuring Your GitHub Repository](../02-getting-started/04-configuring-your-github-repository.md)
 * [Environments](../05-build-and-deploy/02-environments.md)
-* [Overview of the DXP Cloud Development Workflow](./05-overview-of-the-dxp-cloud-development-workflow.md)
+* [Overview of the DXP Cloud Development Workflow](./overview-of-the-dxp-cloud-development-workflow.md)
 * [Starting Module Development](https://help.liferay.com/hc/en-us/articles/360017884192-Starting-Module-Development)
 * [Command-Line Tool](../10-reference/03-command-line-tool.md)
