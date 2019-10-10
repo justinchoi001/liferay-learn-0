@@ -1,3 +1,0 @@
----
-header-id: First Steps
----
