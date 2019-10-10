@@ -30,7 +30,7 @@ These are the types of portal properties files you may use in one of the `config
 
 * `portal-ext.properties`: Contains the final changes to the Liferay DXP configuration; since most properties are configured in `portal-all.properties` and `portal-env.properties`, this file is often empty or missing altogether
 
-> **Note**: Portal properties may also be defined as environment variables. See [the environment variables reference](./introduction-to-the-liferay-dxp-service.md#environment-variables) for more information.
+> **Note**: Portal properties may also be defined as environment variables. See [the environment variables reference](./introduction-to-the-liferay-dxp-service.md#environment-variables-reference) for more information.
 
 ## OSGi Configurations
 
@@ -41,6 +41,5 @@ These configuration files belong in the `/osgi/configs` folder inside of `$LIFER
 ## Additional Information
 
 * [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
-* [Adding Files to Deploy to the Liferay DXP Service](./03-adding-files-to-deploy-to-the-liferay-dxp-service.md)
-* [Enabling Clustering in DXP Cloud](./05-setting-up-clustering-in-dxp-cloud.md)
+* [Enabling Clustering in DXP Cloud](./setting-up-clustering-in-dxp-cloud.md)
 * [Portal Properties](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties)

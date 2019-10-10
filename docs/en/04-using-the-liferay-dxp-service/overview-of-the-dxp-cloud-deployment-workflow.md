@@ -10,7 +10,7 @@ This article outlines the path developers will take to develop for and deploy to
 
 Although there are multiple paths for deploying to an environment, all paths 
 begin with adding changes to the GitHub repository 
-[you configured](/docs/-/knowledge_base/dxp-cloud/configuring-your-github-repository) 
+[you configured](../02-getting-started/configuring-your-github-repository.md) 
 with your DXP Cloud project. This repository is used as the basis for any custom 
 additions to a DXP Cloud project, including the Liferay DXP service instance 
 itself. 
@@ -50,7 +50,7 @@ to `lcp/liferay/deploy/common/` will result in the file being copied to
 
 ## Build and Test
 
-The CI service will automatically execute builds for any of the following events: commits are merged into the DXP Cloud repository, pull requests with changes are sent to the repository, or `lcp deploy` is invoked using the Command Line Interface (CLI) to deploy to a DXP Cloud environment. The `CI` service in the `infra` environment can be modified to include additional pipeline steps, including testing. See the article on [Builds]() for more information.
+The CI service will automatically execute builds for any of the following events: commits are merged into the DXP Cloud repository, pull requests with changes are sent to the repository, or `lcp deploy` is invoked using the Command Line Interface (CLI) to deploy to a DXP Cloud environment. The `CI` service in the `infra` environment can be modified to include additional pipeline steps, including testing. See the article on [Builds](../05-build-and-deploy/03-builds-deployments.markdown) for more information.
 
 Navigate to the `Builds` tab to see all builds that have been initiated. Pending, passed, or failed builds are all displayed. If the build passes CI, then the Cloud console will offer the option in the UI to deploy the passing build to any applicable environment.
 
@@ -70,13 +70,13 @@ After logging in through the CLI, use `lcp deploy` to deploy any additions prese
 
 Another way to deploy changes is to use a completed build in CI from the DXP Cloud console.
 
-Committed changes to the repository will automatically trigger a new build in CI any time a pull request is sent or merged. This allows changes to be deployed to a testing environment at any point of the review process. See [Deployments]() to learn more.
+Committed changes to the repository will automatically trigger a new build in CI any time a pull request is sent or merged. This allows changes to be deployed to a testing environment at any point of the review process. See [Deployments](../05-build-and-deploy/03-builds-deployments.markdown) to learn more.
 
 ![Deploying to Prod](./overview-of-the-dxp-cloud-development-workflow/01.png)
 
 ## Additional Information
 
 * [Configuring Your GitHub Repository](../02-getting-started/configuring-your-github-repository.md)
-* [Environments](../05-build-and-deploy/02-environments.md)
+* [Environments](../05-build-and-deploy/02-environments.markdown)
 * [Using the Command Line Interface](../10-reference/03-command-line-tool.markdown)
 * [Walking Through the Deployment Life Cycle](./06-walking-through-the-deployment-life-cycle.md)

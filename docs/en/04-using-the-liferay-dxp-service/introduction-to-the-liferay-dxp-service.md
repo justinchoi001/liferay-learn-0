@@ -15,7 +15,7 @@ The Liferay DXP service in DXP Cloud can be used in many of the same ways as an 
 * [Configuration](#configuration)
 * [Hot Deploy](#hot-deploy)
 * [Enabling Clustering](#enabling-clustering)
-* [Environment Variables](#environment-variables)
+* [Environment Variables](#environment-variables-reference)
 * [Running Scripts](#running-scripts)
 
 ## Choosing a Version

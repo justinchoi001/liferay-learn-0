@@ -30,7 +30,7 @@ Set the desired number of nodes for clustering by setting the `scale` property i
   ...
 ```
 
-> **Note:** increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../06-manage-and-optimize/20-quotas.markdown) for your plan, then the deployment may fail.
+> **Note:** increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../06-manage-and-optimize/08-quotas.markdown) for your plan, then the deployment may fail.
 
 ### Auto-Scaling
 
@@ -44,7 +44,7 @@ However, if additional portal properties for clustering are desired, the propert
 
 ## Deploy and Verify
 
-Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the DXP Cloud Deployment Workflow](./06-overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
+Deploy the configuration changes to the chosen environment to verify that clustering was enabled. See [Overview of the DXP Cloud Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md) for more information.
 
 To check if clustering is working correctly, check the logs of the Liferay DXP instances for the `Accepted View` message from the `JGroupsReceiver` class.
 
@@ -61,7 +61,6 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 
 ## Additional Information
 
-* [Auto-scaling](../06-manage-and-optimize/03-auto-scaling.md)
-* [Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
+* [Auto-scaling](../06-manage-and-optimize/03-auto-scaling.markdown)
+* [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
-* [Adding Files to Deploy to the Liferay DXP Service](./adding-files-to-deploy-to-the-liferay-dxp-service.md)
