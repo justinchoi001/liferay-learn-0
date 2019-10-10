@@ -54,7 +54,7 @@ The CI service will automatically execute builds for any of the following events
 
 Navigate to the `Builds` tab to see all builds that have been initiated. Pending, passed, or failed builds are all displayed. If the build passes CI, then the Cloud console will offer the option in the UI to deploy the passing build to any applicable environment.
 
-![Reviewing Builds](./overview-of-the-dxp-cloud-development-workflow/02.png)
+![Reviewing Builds](./overview-of-the-dxp-cloud-development-workflow/images/02.png)
 
 ## Deploy
 
@@ -72,7 +72,7 @@ Another way to deploy changes is to use a completed build in CI from the DXP Clo
 
 Committed changes to the repository will automatically trigger a new build in CI any time a pull request is sent or merged. This allows changes to be deployed to a testing environment at any point of the review process. See [Deployments](../05-build-and-deploy/03-builds-deployments.markdown) to learn more.
 
-![Deploying to Prod](./overview-of-the-dxp-cloud-development-workflow/01.png)
+![Deploying to Prod](./overview-of-the-dxp-cloud-development-workflow/images/01.png)
 
 ## Additional Information
 
