@@ -10,29 +10,14 @@ needs.
 
 ![Figure 1: The backup service is one of several services available in DXP Cloud.](../../images/services-backups.png)
 
-## Environment Variables
-
-Use the following environment variables in your `LCP.json` file to achieve your 
-data redundancy goals. 
-
-Name                          | Default Value              | Description |
------------------------------ | -------------------------- | ----------- |
-`LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`     | The cron schedule for creating a backup. In versions `3.2.1` and above of the backup service, if no value is specified then a random default will be created. |
-`LCP_BACKUP_FOLDER`           | `/opt/liferay/data`        | The Liferay folder to back up. |
-`LCP_BACKUP_RETENTION_PERIOD` | `30`                       | The number of days to retain your backups. The maximum retention period is 30 days, even if you set this to a longer period of time. |
-`LCP_DATABASE_SERVICE`        | `database`                 | The database service's ID. |
-`LCP_DBNAME`                  | `lportal`                  | The database name. |
-`LCP_MASTER_USER_NAME`        | `dxpcloud`                 | The master username. |
-`LCP_MASTER_USER_PASSWORD`    | `LCP_PROJECT_MASTER_TOKEN` | The master password. |
-
 ## Scheduling
 
 You can customize the backup service's scheduling via 
 [cron scheduling syntax](https://crontab.guru/). 
 Scheduling can be used for these variables: 
 
--   `LCP_BACKUP_CREATE_SCHEDULE`
--   `LCP_BACKUP_CLEANUP_SCHEDULE`
+* `LCP_BACKUP_CREATE_SCHEDULE`
+* `LCP_BACKUP_CLEANUP_SCHEDULE`
 
 ### Customizing Scheduling
 
@@ -78,10 +63,10 @@ environment name combine to make up the host name.
 
 Consider this example: 
 
--   Service name: `backup`
--   Project name: `lfrjoebloggs`
--   Environment name: `prd`
--   Host name: `backup-lfrjoebloggs-prd.lfr.cloud`
+* Service name: `backup`
+* Project name: `lfrjoebloggs`
+* Environment name: `prd`
+* Host name: `backup-lfrjoebloggs-prd.lfr.cloud`
 
 ### Authentication
 
@@ -101,13 +86,13 @@ curl -X POST \
   -F 'volume=@/my-folder/volume.tgz'
 ```
 
-| **Note:** Passing the user token in the header `dxpcloud-authorization` only 
-| works for versions `3.2.0` or greater of the backup service. Previous versions 
-| should be upgraded to at least `3.2.0`. Requests to earlier versions must use 
-| the header `Authorization: Bearer <PROJECT_MASTER_TOKEN>`. You can find the 
-| project master token by running the command 
-| `env | grep LCP_PROJECT_MASTER_TOKEN` in any shell in the Liferay DXP Cloud 
-| console. 
+> **Note:** Passing the user token in the header `dxpcloud-authorization` only 
+> works for versions `3.2.0` or greater of the backup service. Previous versions 
+> should be upgraded to at least `3.2.0`. Requests to earlier versions must use 
+> the header `Authorization: Bearer <PROJECT_MASTER_TOKEN>`. You can find the 
+> project master token by running the command 
+> `env | grep LCP_PROJECT_MASTER_TOKEN` in any shell in the Liferay DXP Cloud 
+> console. 
 
 ### Download Database API
 
@@ -160,9 +145,9 @@ curl -X POST \
 The upload backup API lets you upload a backup to DXP Cloud. To upload a backup, 
 you must follow these steps: 
 
-1.  [Create the database file](#creating-the-database-file). 
-2.  [Create the volume file](#creating-the-volume-file). 
-3.  [Invoke the backup API](#invoking-the-backup-api) 
+1. [Create the database file](#creating-the-database-file). 
+1. [Create the volume file](#creating-the-volume-file). 
+1. [Invoke the backup API](#invoking-the-backup-api) 
     with the database and volume files. 
 
 #### Creating the Database File
@@ -218,6 +203,18 @@ curl -X POST \
   -F 'volume=@/my-folder/volume.tgz' \
   -u user@domain.com:password
 ```
+
+## Environment Variables Reference
+
+Name                          | Default Value              | Description |
+----------------------------- | -------------------------- | ----------- |
+`LCP_BACKUP_CREATE_SCHEDULE`  | `[5-55][0-1] * * *`     | The cron schedule for creating a backup. In versions `3.2.1` and above of the backup service, if no value is specified then a random default will be created. |
+`LCP_BACKUP_FOLDER`           | `/opt/liferay/data`        | The Liferay folder to back up. |
+`LCP_BACKUP_RETENTION_PERIOD` | `30`                       | The number of days to retain your backups. The maximum retention period is 30 days, even if you set this to a longer period of time. |
+`LCP_DATABASE_SERVICE`        | `database`                 | The database service's ID. |
+`LCP_DBNAME`                  | `lportal`                  | The database name. |
+`LCP_MASTER_USER_NAME`        | `dxpcloud`                 | The master username. |
+`LCP_MASTER_USER_PASSWORD`    | `LCP_PROJECT_MASTER_TOKEN` | The master password. |
 
 ## Additional Information
 
