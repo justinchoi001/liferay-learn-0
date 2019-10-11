@@ -4,8 +4,7 @@ header-id: configuring-your-github-repository
 
 # Configuring Your Github Repository
 
-Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub 
-repository hosted in the `dxpcloud` organization. This repository should be used as a template for a team's separate private DXP Cloud development repository and is typically removed after 10 business days. Users are expected to:
+Upon receiving a DXP Cloud onboarding email, you're provisioned a GitHub repository hosted in the `dxpcloud` organization. This repository should be used as a template for a team's separate private DXP Cloud development repository and is typically removed after 10 business days. Users are expected to:
 
 1. Transfer the initial provisioned repository to their own private GitHub repository. 
 1. Integrate that repository with the Jenkins (CI) service in DXP Cloud using a Webhook. 
@@ -61,11 +60,10 @@ Jenkins service:
 Lastly, you must set two environment variables in the Jenkins service's 
 `LCP.json` to point to your new repository: 
 
-- `GITHUB_REPOSITORY`: Point to your new GitHub repository (remote). 
-- `GITHUB_TOKEN`: Point to a personal access token that you created for your 
-    GitHub organization. For instructions on creating and accessing this token, 
-    see 
-    [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line). 
+Name | Default Value | Description |
+| --- | --- | --- |
+| `GITHUB_REPOSITORY` |   | Point to your new GitHub repository (remote) |
+| `GITHUB_TOKEN` |   | Point to a personal access token that you created for your GitHub organization. For instructions on creating and accessing this token, see [GitHub's documentation](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line). |
 
 After updating these environment variables, deploy a new build with the changes. 
 Any pushed branches and pull requests in your new repository should now trigger 
