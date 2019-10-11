@@ -16,8 +16,8 @@
 
 ### Maintenance and Upgrades
 
-* Applying Patches
-* Activating Products
+* [Applying Patches](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#hotfixes)
+* [Activating Products](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#licenses)
 * Upgrading From Previous Versions of Liferay DXP
 
 ### Configuration
@@ -30,7 +30,8 @@
 
 ### Customizations
 
-* Deploying Apps, Themes, and Modules
+* [Deploying Apps, Themes, and Modules](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules)
+* [Deploying Customizations from Source](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#source-code)
 
 ### Migrations
 
@@ -43,6 +44,8 @@
 * Environments
 * Using the Persistent File System
 * Deployments
+* [Deploying Apps, Themes, and Modules](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules)
+* [Deploying Customizations from Source](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#source-code)
 * Local Development
 
 ## Manage and Optimize
