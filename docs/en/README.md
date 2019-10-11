@@ -3,11 +3,10 @@
 ## Getting Started
 
 * [Welcome to DXP Cloud](./getting-started/welcome-to-dxp-cloud.md)
-* [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
 * Before You Begin
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
 * Accessing Your Project
-* Walking through the Deployment Cycle
+* [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
 
 ## Platform Overview
 
@@ -15,6 +14,9 @@
 * DXP Cloud Management Console Overview
 
 ## Using the Liferay DXP Service
+
+* [Introduction to the Liferay DXP Service](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
+* [Walking through the Deployment Life Cycle](./using-the-liferay-dxp-service/walking-through-the-deployment-life-cycle.md)
 
 ### Maintenance and Upgrades
 
@@ -24,12 +26,11 @@
 
 ### Configuration
 
-* Deploying Configurations
-* Configuring the DXP Behavior with Properties
+* [Configuring the Liferay DXP Service](./using-the-liferay-dxp-service/configuring-the-liferay-dxp-service.md)
 
 ### Scalability and Performance
 
-* Enabling Clustering
+* [Setting up Clustering in DXP Cloud](./using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md)
 
 ### Customizations
 
@@ -37,7 +38,7 @@
 
 ### Migrations
 
-* Migrating From On Premises DXP to DXP Cloud
+* [Migrating from an on Premises DXP Installation](./using-the-liferay-dxp-service/migrating-from-an-on-premises-dxp-installation.md)
 
 ## Build and Deploy
 
