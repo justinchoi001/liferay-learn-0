@@ -57,9 +57,11 @@ can invoke these APIs using a command line tool such as `curl`.
 
 ### Getting the Host Name
 
-To invoke the backup APIs, you must have the backup service's host name, which 
-you can find on the Services page. The service name, project name, and 
-environment name combine to make up the host name. 
+To invoke the backup APIs, you must have the backup service's host name, which you can find on the Services page:
+
+![Backup service's host name](./backup-service/images/02.png)
+
+The service name, project name, and environment name combine to make up the host name. 
 
 Consider this example: 
 
