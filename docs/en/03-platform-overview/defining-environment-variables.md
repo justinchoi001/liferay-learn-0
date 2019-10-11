@@ -16,7 +16,7 @@ While logged into the DXP Cloud Management Console:
 
 1. Click _Services_ in the left menu on the environment (for example, UAT).  
 1. Click the *Environment Variables* tab.
-1. Enter each environment variable as a key-value pair (for example, to enable clustering):
+1. Enter each environment variable as a key-value pair (for example, to disable clustering):
     * **Key**: `LCP_PROJECT_LIFERAY_CLUSTER_ENABLED`
     * **Value**:  `false`
 1. Click *Update Environment Variables*.
@@ -44,4 +44,3 @@ Environment variables can be added by configuring the `LCP.json` by using the `e
 
 * [Configuration via LCP JSON](../10-reference/02-configuration-via-lcp-json.md)
 * [Database Service](../07-platform-services/01-database-service.md)
-* [Networking Environment Variables Reference](../08-infrastructure-and-operations/03-networking/06-networking-environment-variables-reference.md)
