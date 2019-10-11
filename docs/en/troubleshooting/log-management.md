@@ -31,11 +31,11 @@ log(s) to access. To access logs from a specific environment, you can enter its
 ID or run the `lcp log` command with that ID: 
 
 ```shell
-lcp log -p myenvironmentid
+lcp log -p <environment-id>
 ```
 
 You can also specify the service as part of the command: 
 
 ```shell
-lcp log -p myenvironmentid -s myserviceid
+lcp log -p <environment-id> -s <service-id>
 ```
