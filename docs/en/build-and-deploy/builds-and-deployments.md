@@ -4,10 +4,7 @@ header-id: builds-and-deployments
 
 # Builds and Deployments
 
-Your application must go through a build phase before it can be deployed to an 
-environment. This initial build phase is when DXP Cloud gets the Docker images 
-from your CI, creates your container environment, and runs all tasks and 
-build configurations specified in your image. 
+Your application must go through a build phase before it can be deployed to an environment. This initial build phase is when DXP Cloud gets the Docker images from your CI, creates your container environment, and runs all tasks and build configurations specified in your image. 
 
 You can check your environment's build process by clicking the *Builds* tab on 
 the top-right side of each environment page. 
@@ -130,9 +127,7 @@ is `3`; the minimum is `1`.
 
 ## Deploying to a Different Environment
 
-By default, a build deploys to the environment it was built in. To deploy to a 
-different environment, select *Deploy Build* to from the build's Actions button 
-(![Actions](../../images/icon-actions.png)). 
+To deploy to a completed build to any environment, select *Deploy Build* to from the build's Actions button (![Actions](../../images/icon-actions.png)). 
 
 ![Figure 3: You can also deploy builds to different environments.](../../images/builds-deploy-to.png)
 
