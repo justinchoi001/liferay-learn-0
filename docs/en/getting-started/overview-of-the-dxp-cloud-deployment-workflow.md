@@ -79,4 +79,4 @@ Committed changes to the repository will automatically trigger a new build in CI
 * [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
 * [Environments](../build-and-deploy/environments.md)
 * [Using the Command Line Interface](../reference/command-line-tool.md)
-* [Walking Through the Deployment Life Cycle](./walking-through-the-deployment-life-cycle.md)
+* [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)

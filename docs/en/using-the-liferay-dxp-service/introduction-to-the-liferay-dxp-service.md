@@ -40,7 +40,7 @@ Deploying custom additions to Liferay DXP involves adding the new module, licens
 
 With the exception of the `common/` directory, changes added to a given service's environment folder (`dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to the `config`, `deploy`, `hotfix`, `license`, and `script` directories within `lcp/liferay/`.
 
-See [Overview of the Deployment Workflow](./overview-of-the-dxp-cloud-deployment-workflow.md) for more information on how the deployment process starts.
+See [Overview of the Deployment Workflow](../getting-started/overview-of-the-dxp-cloud-deployment-workflow.md) for more information on how the deployment workflow. For a tutorial on deploying to DXP Cloud see, [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md).
 
 ### Themes, Portlets, and OSGi Modules
 
