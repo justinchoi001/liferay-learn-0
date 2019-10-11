@@ -18,8 +18,7 @@ the toolbar. To download the logs, click *Download Logs*.
 
 ## Accessing Logs from the Terminal
 
-| **Note:** To access logs via the terminal, you must be an administrator or 
-| developer. 
+> **Note:** To access logs via the terminal, you must be an administrator or developer. 
 
 Run this command to access logs from your terminal: 
 
