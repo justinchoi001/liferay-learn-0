@@ -63,6 +63,9 @@ To log into DXP Cloud using SSO:
 
 1. Enter the **Company Name** in the _Organization ID_ field.
 1. Click _Continue_.
+
+    > **Note:** If you have already authenticated on your organization's SSO, you may not need to proceed through the following steps.
+
 1. Enter the **Email Address** in the _Email Address_ field. This must be the same email address stored in the company's database or directory service (such as an LDAP or ADFS).
 1. Enter the **Password** in the _Password_ field. This must be the same password associated with the email address stored in the company's database or directory service.
 1. Click _Log in_.
