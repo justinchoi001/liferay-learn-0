@@ -23,9 +23,9 @@ While logged into the DXP Cloud Management Console:
 
 The service now restarts with the updated environment variables.
 
-![Figure 1: Adding environment variables via the web console.](./adding-environment-variables/images/01.png)
+![Figure 1: Defining environment variables via the web console.](./defining-environment-variables/images/01.png)
 
-## Adding Environment Variables via LCP.json
+## Defining Environment Variables via LCP.json
 
 Environment variables can be added by configuring the `LCP.json` by using the `env` property. This example adds the environment variables `MYSQL_ROOT_PASSWORD` and `MYSQL_ROOT_USER` with the values `pass` and `example`, respectively:
 
