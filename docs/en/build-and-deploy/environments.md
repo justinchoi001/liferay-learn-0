@@ -10,9 +10,7 @@ unique name that is the project ID plus the environment ID. For example, the
 staging and production environments for a project named *acme* can be named 
 *acme-uat* and *acme-prd*, respectively. 
 
-| **Note:** Once an environment name and location have been chosen, it's not 
-| possible to rename or change to a different location automatically. If you 
-| need to perform such actions, please contact support. 
+| **Note:** Once an environment name and location have been chosen, it's not possible to rename or change to a different location automatically. If you need to perform such actions, please contact support. 
 
 Despite this naming connection, each environment is independent. They're 
 segregated by a 
