@@ -92,7 +92,7 @@ Build commit: 59e244b342d7b119f8e77eb94c6486f8049ca2b3
 Build time: Wed Jul 10 01:59:00 UTC 2019
 ```
 
-If not, see the [Command Line Tool](../10-reference/03-command-line-tool.markdown) article for more information about installation and usage.
+If not, see the [Command Line Tool](../10-reference/03-command-line-tool.md) article for more information about installation and usage.
 
 Open the `gradle.properties` at the root of your repository, and find properties for the Docker image versions for each of your services, like the following:
 

@@ -35,7 +35,7 @@ certified. See our
 [security policy](https://www.liferay.com/documents/10182/3292406/Liferay+DXP+Cloud+Data+Security+and+Protection.pdf/78ce7065-9787-1fb2-9c7b-6d7c13f4a3e6?t=1564674972483) 
 for more information. 
 
-[Automated backups](../07-platform-services/04-backup-service.markdown) 
+[Automated backups](../07-platform-services/04-backup-service.md) 
 ensure that data and documents are protected and ready for restoration in case 
 of data corruption or failure. Encryption at rest ensures that sensitive data 
 saved on disks isn't readable by any user or application without a valid key. 
@@ -43,7 +43,7 @@ saved on disks isn't readable by any user or application without a valid key.
 ![Figure 3: DXP Cloud's backup service preserves and protects your data.](./welcome-to-dxp-cloud/images/backups.png)
 
 Out-of-the-box 
-[role and team administration](../06-manage-and-optimize/06-team-collaboration-and-access-control.markdown) 
+[role and team administration](../06-manage-and-optimize/06-team-collaboration-and-access-control.md) 
 allows administrators to deliver maximum productivity and security by adding or 
 removing people from teams and managing permissions per project environment.
 
@@ -53,12 +53,12 @@ removing people from teams and managing permissions per project environment.
 
 [Clustering](../04-using-the-liferay-dxp-service/setting-up-clustering-in-dxp-cloud.md) 
 and 
-[load-balancing](../08-infrastructure-and-operations/03-networking/03-load-balancer.markdown) 
+[load-balancing](../08-infrastructure-and-operations/03-networking/03-load-balancer.md) 
 deliver highly available, zero-downtime deployments to ensure that 
 mission-critical sites stay online. DXP Cloud delivers data through a 
 multi-region architecture to ensure high availability. 
 
-[Auto-scaling](../06-manage-and-optimize/03-auto-scaling.markdown) 
+[Auto-scaling](../06-manage-and-optimize/03-auto-scaling.md) 
 ensures that bandwidth and compute capacity is dynamically added to maintain 
 steady performance through unexpected traffic spikes. Similarly, unneeded resources can be 
 scaled down during periods of lower activity. Teams receive automatic 
@@ -70,7 +70,7 @@ resources with confidence.
 ## Real Time Alerts
 
 Administrators can configure 
-[alerts](../06-manage-and-optimize/04-real-time-alerts.markdown) 
+[alerts](../06-manage-and-optimize/04-real-time-alerts.md) 
 per user to receive resource utilization updates in real-time.
 
 ![Figure 6: Administrators can configure real-time alerts.](./welcome-to-dxp-cloud/images/alerts-prefs-page.png)
@@ -79,10 +79,10 @@ per user to receive resource utilization updates in real-time.
 
 Deliver your application faster with a fully-realized CI/CD strategy available 
 out-of-the-box. 
-[Github and Jenkins](../05-build-and-deploy/04-continuous-integration.markdown) 
+[Github and Jenkins](../05-build-and-deploy/04-continuous-integration.md) 
 integrations allow each new commit or pull request to trigger a build that 
 can be deployed to your 
-[QA, UAT, or production environments](../05-build-and-deploy/02-environments.markdown). 
+[QA, UAT, or production environments](../05-build-and-deploy/02-environments.md). 
 
 These robust systems enable the creation of fault tolerant processes 
 to meet organizations' unique needs and detect and repair common server 
@@ -94,8 +94,8 @@ accumulating and causing a server crash.
 ## Application Development Tools
 
 Keep track of application deployments and performance with real-time build and 
-[deployment logs](../09-troubleshooting/01-log-management.markdown). Teams can analyze stack traces and troubleshoot bugs by 
-[accessing the shell](../09-troubleshooting/02-shell-access.markdown) 
+[deployment logs](../09-troubleshooting/01-log-management.md). Teams can analyze stack traces and troubleshoot bugs by 
+[accessing the shell](../09-troubleshooting/02-shell-access.md) 
 via the web console or terminal, and/or by downloading the logs. 
 
 ![Figure 8: Real-time build and deployment logs help you solve problems with your applications.](./welcome-to-dxp-cloud/images/build-logs.png)

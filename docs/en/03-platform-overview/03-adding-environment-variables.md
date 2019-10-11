@@ -43,5 +43,5 @@ Environment variables can be added by configuring the `LCP.json` by using the `e
 ## Additional Information
 
 * [Configuration via LCP JSON](../10-reference/02-configuration-via-lcp-json.md)
-* [Database Service](../07-platform-services/01-database-service.markdown)
+* [Database Service](../07-platform-services/01-database-service.md)
 * [Networking Environment Variables Reference](../08-infrastructure-and-operations/03-networking/06-networking-environment-variables-reference.md)
