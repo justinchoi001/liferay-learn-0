@@ -13,7 +13,6 @@
 ## Using the Liferay DXP Service
 
 * [Introduction to the Liferay DXP Service](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md)
-* [Walking through the Deployment Life Cycle](./using-the-liferay-dxp-service/walking-through-the-deployment-life-cycle.md)
 
 ### Maintenance and Upgrades
 
@@ -39,6 +38,7 @@
 
 ## Build and Deploy
 
+* [Walking through the Deployment Life Cycle](./build-and-deploy/walking-through-the-deployment-life-cycle.md)
 * Builds
 * Environments
 * Using the Persistent File System
