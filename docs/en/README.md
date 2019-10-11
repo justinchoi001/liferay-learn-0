@@ -5,12 +5,9 @@
 * [Welcome to DXP Cloud](./getting-started/welcome-to-dxp-cloud.md)
 * Before You Begin
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
+* First Time Configuration
 * Accessing Your Project
 * [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
-
-## Platform Overview
-
-* Introduction to Services
 * DXP Cloud Management Console Overview
 
 ## Using the Liferay DXP Service
