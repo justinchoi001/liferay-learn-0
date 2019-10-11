@@ -21,7 +21,7 @@ Each probe can be configured with the following options:
 
 When a probe detects a failure (not returning the success message in a status check), the probe will restart the service automatically. The liveness and readiness probes are deployed to all services regardless of the environment. Typically, customers do not have to make any changes to the probes unless they would like to adjust their values based on their needs. For example, a system administrator may increase the `initialDelaySeconds` value to account for a longer startup process.
 
-To change the default values, modify the `lcp.json` file. See the [Configuration via LCP.json](../10-reference/02-configuration-via-lcp-json.md) article.
+To change the default values, modify the `lcp.json` file. See the [Configuration via LCP.json](../reference/configuration-via-lcp-json.md) article.
 
 ### Liveness Probe
 

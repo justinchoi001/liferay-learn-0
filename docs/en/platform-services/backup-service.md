@@ -218,4 +218,4 @@ Name                          | Default Value              | Description |
 
 ## Additional Information
 
-* [Configuration via LCP JSON](../10-reference/02-configuration-via-lcp-json.md)
+* [Configuration via LCP JSON](../reference/configuration-via-lcp-json.md)

@@ -27,7 +27,7 @@ This table lists and describes the properties you can add in `LCP.json`:
 | `ports` | Array | `[]` | Declaration of ports and protocols |
 | `environments` | Object | `{}` | Environment-specific configurations |
 | `deploy` | Boolean | `true` | Whether the service will be deployed for the specified environment. Only use this property inside the `environments` property; not at the root level. See the sample `LCP.json` file. |
-| `autoscale` | Object | `{ "cpu": 80, "memory": 80 }` | The target average utilization for CPU and memory in auto-scaling. For more information about how this works with auto-scaling, see [Auto-scaling](../06-manage-and-optimize/03-auto-scaling.md). |
+| `autoscale` | Object | `{ "cpu": 80, "memory": 80 }` | The target average utilization for CPU and memory in auto-scaling. For more information about how this works with auto-scaling, see [Auto-scaling](../manage-and-optimize/auto-scaling.md). |
 
 ## Usage
 

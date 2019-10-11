@@ -16,7 +16,7 @@ In order to get started, we will need the following:
 
 ### Setting Up the Git Repository
 
-You must have your GitHub repository configured. See [Configuring Your GitHub Repository](../02-getting-started/configuring-your-github-repository.md) for more information on setting up a DXP Cloud repository.
+You must have your GitHub repository configured. See [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md) for more information on setting up a DXP Cloud repository.
 
 ### Sample Module
 
@@ -92,7 +92,7 @@ Build commit: 59e244b342d7b119f8e77eb94c6486f8049ca2b3
 Build time: Wed Jul 10 01:59:00 UTC 2019
 ```
 
-If not, see the [Command Line Tool](../10-reference/03-command-line-tool.md) article for more information about installation and usage.
+If not, see the [Command Line Tool](../reference/command-line-tool.md) article for more information about installation and usage.
 
 Open the `gradle.properties` at the root of your repository, and find properties for the Docker image versions for each of your services, like the following:
 
@@ -164,8 +164,8 @@ Once you have verified the deployment was successful, you will have completed th
 ## Additional Information
 
 * [Deployment]()
-* [Configuring Your GitHub Repository](../02-getting-started/04-configuring-your-github-repository.md)
-* [Environments](../05-build-and-deploy/02-environments.md)
+* [Configuring Your GitHub Repository](../getting-started/configuring-your-github-repository.md)
+* [Environments](../build-and-deploy/environments.md)
 * [Overview of the DXP Cloud Development Workflow](./overview-of-the-dxp-cloud-development-workflow.md)
 * [Starting Module Development](https://help.liferay.com/hc/en-us/articles/360017884192-Starting-Module-Development)
-* [Command-Line Tool](../10-reference/03-command-line-tool.md)
+* [Command-Line Tool](../reference/command-line-tool.md)

@@ -65,8 +65,8 @@ Once a Custom Domain is configured, it may take some time to be verifiable due t
 1. Liferay DXP Cloud reaches out to [Let's Encrypt](https://letsencrypt.org/) for an SSL Server Certificate. The _Let's Encrypt_ site responds with a challenge.
 1. Once the challenge is passed, the Ingress Load Balancer is updated with the certificate and the service is reachable and secure. If someones try to reach the domain during the challenge process, the browser will display security warnings. These warnings can be ignored safely because the process is not yet complete.
 
-To learn more about SSL certificates in Liferay DXP Cloud, including how to set up a custom SSL certificate, see the [Load Balancer](./02-load-balancer.md) article.
+To learn more about SSL certificates in Liferay DXP Cloud, including how to set up a custom SSL certificate, see the [Load Balancer](./load-balancer.md) article.
 
 ## Additional Information
 
-* [Configuration Via LCP.json](../10-reference/02-configuration-via-lcp-json.md)
+* [Configuration Via LCP.json](../../reference/configuration-via-lcp-json.md)

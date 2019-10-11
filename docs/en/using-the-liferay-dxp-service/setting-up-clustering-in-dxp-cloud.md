@@ -30,11 +30,11 @@ Set the desired number of nodes for clustering by setting the `scale` property i
   ...
 ```
 
-> **Note:** increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../06-manage-and-optimize/08-quotas.md) for your plan, then the deployment may fail.
+> **Note:** increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../manage-and-optimize/quotas.md) for your plan, then the deployment may fail.
 
 ### Auto-Scaling
 
-Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-scaling is enabled, then the `scale` property will determine the initial number of instances. The number of instances will then increase according to demand. See [Auto-scaling](../06-manage-and-optimize/03-auto-scaling.md) for more information.
+Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-scaling is enabled, then the `scale` property will determine the initial number of instances. The number of instances will then increase according to demand. See [Auto-scaling](../manage-and-optimize/auto-scaling.md) for more information.
 
 ## Add Clustering Portal Properties
 
@@ -61,6 +61,6 @@ Aug 26 09:42:22.779 build-90 [liferay-68b8f6b48d-hdj9t] [dxp] INFO  [Incoming-1,
 
 ## Additional Information
 
-* [Auto-scaling](../06-manage-and-optimize/03-auto-scaling.md)
+* [Auto-scaling](../manage-and-optimize/auto-scaling.md)
 * [Introduction to the Liferay DXP Service](./introduction-to-the-liferay-dxp-service.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
