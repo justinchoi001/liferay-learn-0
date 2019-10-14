@@ -1,4 +1,4 @@
-# Service Level Agreements
+# Tracking DXP Cloud Status and Getting Help
 
 Liferay is committed to providing an excellent customer experience. Every 
 Liferay DXP Cloud customer has access to the our Support Knowledge Base, 
@@ -20,7 +20,7 @@ should subscribe to the
 page. Click on *Subscribe to Updates* and select the type of notification that 
 is most convenient for you. 
 
-![Status.Liferay.Com page](./service-level-agreements/images/01.png)
+![Status.Liferay.Com page](./tracking-dxp-cloud-status-and-getting-help/images/01.png)
 
 The Status page lists the following services: 
 

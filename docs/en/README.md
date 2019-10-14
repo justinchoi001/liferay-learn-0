@@ -8,6 +8,7 @@
 * Configuring Services for the First Time
 * [Logging Into Your Liferay DXP Instance](./getting-started/logging-into-your-liferay-dxp-instance.md)
 * [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
+* [Defining Environment Variables](./getting-started/defining-environment-variables.md)
 * DXP Cloud Management Console Overview
 
 ## Using the Liferay DXP Service
@@ -40,63 +41,62 @@
 ## Build and Deploy
 
 * [Walking through the Deployment Life Cycle](./build-and-deploy/walking-through-the-deployment-life-cycle.md)
-* Builds
-* Environments
-* Using the Persistent File System
-* Deployments
+* [Builds and Deployments](./build-and-deploy/builds-and-deployments.md)
+* [Environments](./build-and-deploy/environments.md)
+* [Continuous Integration](./build-and-deploy/continuous-integration.md)
+* [Using the Persistent File System](./build-and-deploy/persistent-file-system.md)
 * [Deploying Apps, Themes, and Modules](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules)
 * [Deploying Customizations from Source](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#source-code)
 * Local Development
 
 ## Manage and Optimize
 
-* Monitoring
+* [Monitoring Application Metrics](./manage-and-optimize/application-metrics.md)
 
 ### Managing Usage
 
-* Auto Scaling
-* Quotas
-* Usage Alerts
+* [Auto Scaling](./manage-and-optimize/auto-scaling.md)
+* [Quotas](./manage-and-optimize/quotas.md)
+* [Configuring Real-Time Alerts](./manage-and-optimize/real-time-alerts.md)
 
 ### Account and Team Management
 
-* Team Collaboration
-* Activities
-* Support Access
-* Service Level Agreement
+* [Team Collaboration](./manage-and-optimize/team-collaboration-and-access-control.md)
+* [Activities](./manage-and-optimize/team-activities.md)
 
 ## Platform Services
 
-* Using the Database Service
-* Using the Search Service
-* Using the Web Server Service
-* Using the Backup Service
+* [Using the Backup Service](./platform-services/backup-service.md)
+* [Using the Database Service](./platform-services/database-service.md)
+* [Using the Search Service](./platform-services/search-service.md)
+* [Using the Web Server Service](./platform-services/web-server-service.md)
 
 ## Infrastructure and Operations
 
 ### Security
 
-* Information Security and DXP Cloud
-* HTTPS Certificates
-* Using SSO With DXP Cloud
-* Understanding and Configuring the Web Application Firewall
+* [Information Security and DXP Cloud](./infrastructure-and-operations/security/information-security-and-dxp-cloud.md)
+* [Authentication](./infrastructure-and-operations/security/authentication.md)
+* [Using SSO With DXP Cloud](./infrastructure-and-operations/security/using-sso-with-dxp-cloud.md)
+* [Understanding and Configuring the Web Application Firewall](./infrastructure-and-operations/security/web-application-firewall.md)
 
 ### Networking
 
-* Configuring Custom Domains
-* Configuring the Load Balancer
-* Understanding and Using the DXP Cloud Private Network
-* Connecting a VPN to DXP Cloud
-* Environment Variables Reference
+* [Configuring Custom Domains](./infrastructure-and-operations/networking/custom-domains.md)
+* [Configuring the Load Balancer](./infrastructure-and-operations/networking/load-balancer.md)
+* [Understanding and Using the DXP Cloud Private Network](./infrastructure-and-operations/networking/private-network.md)
+* [Connecting a VPN to DXP Cloud](./infrastructure-and-operations/networking/connecting-a-vpn-to-dxp-cloud.md)
 
 ## Troubleshooting
 
-* Understanding DXP Cloud Logs
-* Using Shell With Services
-* Disaster Recovery Workflow
-* Understanding and Configuring Self-Healing
+* [Understanding DXP Cloud Logs](./troubleshooting/log-management.md)
+* [Using Shell With Services](./troubleshooting/shell-access.md)
+* [Disaster Recovery Workflow](./troubleshooting/disaster-recovery.md)
+* [Understanding and Configuring Self-Healing](./troubleshooting/self-healing.md)
 
 ## Reference
 
-* Configuring DXP Cloud Services With LCP.json
-* Using the LCP Command-line Tool
+* [Configuring DXP Cloud Services With LCP.json](./reference/configuration-via-lcp-json.md)
+* [Using the LCP Command-line Tool](./reference/command-line-tool.md)
+* [Support Access](./reference/support-access.md)
+* [Tracking DXP Cloud Status and Getting Help](./reference/tracking-dxp-cloud-status-and-getting-help.md)

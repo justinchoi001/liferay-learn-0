@@ -1,6 +1,6 @@
-# Information Security Policy
+# Information Security and DXP Cloud
 
-Liferay takes security on the cloud very seriously and has published the following documents on our compliance with the SOC 2 and ISO 27001:2013 standards:
+Liferay takes security on the cloud very seriously and has published the following documents on our compliance with the **SOC 2** and **ISO 27001:2013** standards:
 
 * [Statement on Processing of Customer Data for Cloud Services](https://www.liferay.com/legal/cloud-services-data)
 
