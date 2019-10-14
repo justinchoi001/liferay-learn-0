@@ -6,7 +6,7 @@
 * Before You Begin
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
 * Configuring Services for the First Time
-* Accessing Your Project
+* [Logging Into Your Liferay DXP Instance](./getting-started/logging-into-your-liferay-dxp-instance.md)
 * [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
 * DXP Cloud Management Console Overview
 

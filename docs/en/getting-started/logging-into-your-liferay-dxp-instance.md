@@ -11,22 +11,22 @@ By default, login is required to directly access the web interfaces for the DXP 
 1. Click _show_ icon next to `JENKINS_CUSTOMER_PASSWWORD` to retrieve the password.
 1. Click _show_ icon next to `JENKINS_CUSTOMER_USER_NAME` to retrieve the user name.
 
-![webserver](./accessing-your-dxp-instance-on-the-cloud/images/01.png)
+![webserver](./logging-into-your-liferay-dxp-instance/images/01.png)
 
 ## Logging In
 
 1. Navigate to the environment where the _webserver_ service is located.
 1. Click the _webserver_ logo at the top of the page.
 
-    ![webserver](./accessing-your-dxp-instance-on-the-cloud/images/02.png)
+    ![webserver](./logging-into-your-liferay-dxp-instance/images/02.png)
 
 1. Enter the DXP Cloud Jenkins user name and password when prompted.
 
-    ![authentication](./accessing-your-dxp-instance-on-the-cloud/images/03.png)
+    ![authentication](./logging-into-your-liferay-dxp-instance/images/03.png)
 
 1. This will redirect the user to the Liferay DXP 7.x instance (in this example, Liferay DXP 7.2 GA1).
 
-    ![DXP 7.2 GA1 Sign In](./accessing-your-dxp-instance-on-the-cloud/images/04.png)
+    ![DXP 7.2 GA1 Sign In](./logging-into-your-liferay-dxp-instance/images/04.png)
 
 Similar steps may be followed to access the Jenkins CI web interface.
 
