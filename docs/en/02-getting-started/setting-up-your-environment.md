@@ -5,13 +5,13 @@ Before beginning deployment in Liferay DXP Cloud, developers planning to create 
 In order to set up a local environment for development with DXP Cloud, the following are required:
 
 
-* [JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or later: required for running Liferay DXP locally
+* **[JDK 1.8](http://www.oracle.com/technetwork/java/javase/downloads/index.html) or later**: required for running Liferay DXP locally
 
-* [Gradle 4+](http://www.gradle.org/downloads): used to run any of various build commands for Liferay DXP and DXP Cloud
+* **[Gradle 4+](http://www.gradle.org/downloads)**: used to run any of various build commands for Liferay DXP and DXP Cloud
 
-* [Git](https://git-scm.com/): necessary for adding changes to deploy to DXP Cloud
+* **[Git](https://git-scm.com/)**: necessary for adding changes to deploy to DXP Cloud
 
-* A [Github Account](https://github.com/): required for pushing code changes to GitHub and sending pull requests
+* **A [Github Account](https://github.com/)**: required for pushing code changes to GitHub and sending pull requests
 
 The following tools may also be helpful for developers:
 
