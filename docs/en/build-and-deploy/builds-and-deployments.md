@@ -127,7 +127,7 @@ is `3`; the minimum is `1`.
 
 ## Deploying to a Different Environment
 
-To deploy to a completed build to any environment, select *Deploy Build* to from the build's Actions button (![Actions](../../images/icon-actions.png)). 
+To deploy a completed build to any environment, select *Deploy Build* from the build's Actions button (![Actions](../../images/icon-actions.png)). 
 
 ![Figure 3: You can also deploy builds to different environments.](../../images/builds-deploy-to.png)
 
