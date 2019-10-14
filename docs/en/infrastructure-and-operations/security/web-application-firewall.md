@@ -9,10 +9,10 @@ protecting applications against sophisticated Layer 7 attacks that might
 otherwise lead to loss of sensitive data, systems being hijacked by attackers, 
 and downtime. 
 
-Here, you'll learn how DXP Cloud's existing features work alongside WAF to 
-protect against common attacks. 
+Here, you'll learn how DXP Cloud's features form the WAF that protects against 
+common attacks. 
 
-![Figure 1: The Web Application Firewall protects DXP Cloud's private network.](./web-app-firewall/images/web-app-firewall.png)
+![Figure 1: The Web Application Firewall protects against common attacks.](./web-app-firewall/images/web-app-firewall.png)
 
 ## Private Network
 
