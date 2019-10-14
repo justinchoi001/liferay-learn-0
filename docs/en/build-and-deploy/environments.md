@@ -16,7 +16,7 @@ Despite this naming connection, each environment is independent. They're
 segregated by a 
 [private network](/docs/-/knowledge_base/dxp-cloud/private-network) 
 that allows services from the same environment to communicate in a secure 
-manner without having to access the public Internet. 
+manner without having to access the public internet. 
 
 You can access these environments from the selector menu at the upper left. 
 

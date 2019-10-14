@@ -6,7 +6,7 @@ header-id: search-service-elasticsearch
 
 The Elasticsearch service is the text search engine for your Liferay DXP 
 application. It's a private service that only communicates with the other 
-services in your application, not with the outside Internet. 
+services in your application, not with the outside internet. 
 
 ![Figure 1: The Elasticsearch service is one of several services available in DXP Cloud.](../../images/services-search.png)
 

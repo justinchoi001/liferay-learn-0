@@ -6,7 +6,7 @@ header-id: private-network
 
 Every environment has its own private network. This lets services from the 
 same environment communicate through multiple secure communication protocols 
-without having to interact with the public Internet. 
+without having to interact with the public internet. 
 
 For example, your project by default only exposes your web server service to 
 public connections. Connections between other services (e.g., Liferay DXP, 

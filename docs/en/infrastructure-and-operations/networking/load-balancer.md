@@ -4,7 +4,7 @@ header-id: load-balancer
 
 # Load Balancer
 
-The Ingress Load Balancer gives Internet access to your environment's services 
+The Ingress Load Balancer gives internet access to your environment's services 
 via proxied HTTP(S) connections. Each load balancer has a static IP that can set 
 up custom domains. 
 
