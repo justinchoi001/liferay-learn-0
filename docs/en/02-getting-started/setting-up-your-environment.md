@@ -1,8 +1,8 @@
 # Setting up Your Environment
 
-Before beginning development and deployment, developers planning to create modules to DXP Cloud should install the requisite environments first. There are various development tools and frameworks that developers can use but all  deployment is done via the Github project created during the provisioning process.
+Before beginning deployment in Liferay DXP Cloud, developers planning to create modules for DXP Cloud should install the prerequisite tools. There are various development tools and frameworks that developers can use to create their customizations, but deployment to DXP Cloud is done via the GitHub project created during the provisioning process.
 
-In order to set a DXP Cloud local environment for development, the following are required:
+In order to set up a local environment for development with DXP Cloud, the following are required:
 
 ## Personal Credentials
 
@@ -22,4 +22,4 @@ The following might be helpful:
 
 ## Additional Information
 
-Note that Liferay DXP Cloud has basically the same environment requirements as Liferay Workspace. Developers who are familiar with creating Liferay Workspace using [Liferay Dev Studio](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191007&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191038), [Maven](https://help.liferay.com/hc/en-us/articles/360017885592-Maven-Workspace), or [Liferay IntelliJ Plugin](https://plugins.jetbrains.com/plugin/10739-liferay-intellij-plugin) will have most of the environments already set up.
+Note that Liferay DXP Cloud has similar prerequisites to Liferay Workspace. Developers who are familiar with creating Liferay Workspace using [Liferay Dev Studio](https://customer.liferay.com/downloads?p_p_id=com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_productAssetCategoryId=118191007&_com_liferay_osb_customer_downloads_display_web_DownloadsDisplayPortlet_fileTypeAssetCategoryId=118191038), [Maven](https://help.liferay.com/hc/en-us/articles/360017885592-Maven-Workspace), or [Liferay IntelliJ Plugin](https://plugins.jetbrains.com/plugin/10739-liferay-intellij-plugin) will have most of the necessary tools already set up.
