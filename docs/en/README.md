@@ -3,7 +3,7 @@
 ## Getting Started
 
 * [Welcome to DXP Cloud](./getting-started/welcome-to-dxp-cloud.md)
-* Before You Begin
+* [Setting up Your Environment](./getting-started/setting-up-your-environment.md)
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
 * Configuring Services for the First Time
 * [Logging Into Your Liferay DXP Instance](./getting-started/logging-into-your-liferay-dxp-instance.md)
