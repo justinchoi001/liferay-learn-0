@@ -1,15 +1,10 @@
----
-header-id: persistent-file-system-volumes
----
-
 # Persistent File System (Volumes)
 
-When establishing your persistent file system (your volume), you must choose the 
-folders that contain the data you want to persist. For example, to persist files 
-from a Liferay DXP instance located at `/liferay/opt/data`, you must add the 
-`volumes` configuration to your `LCP.json`. This configuration must contain a 
-key for each volume. For example, the following configuration contains a `data` 
-key for `/liferay/opt/data`: 
+Administrators can configure the DXP Cloud service's volume depending on their application type (stateless or stateful). The volume can be either a persistent shared storage (NFS) or a persistent dedicated storage (SSD). This article documents how to configure the volume in the DXP Cloud service via the `LCP.json` file.
+
+1. Choose the folders that contain the data to be persisted (for example `/liferay/opt/data`).
+1. Navigate to the LCP.json file in the Github repository for the specific environment (for example, `[ProjectID])/lcp/liferay`).
+1. Add the `volumes` configuration to the `LCP.json`. This configuration must contain a key for each volume. For example, the following configuration contains a `data` key for `/liferay/opt/data`:
 
 ```json
 {
@@ -22,35 +17,8 @@ key for `/liferay/opt/data`:
 }
 ```
 
-## Sharing Volumes Between Different Services
+## Additional Information
 
-Because all volumes in an environment are shared, you can share content between 
-services. You do this by setting the service's ID and location (absolute path) 
-of the content to share, in in the service's `LCP.json`. For example, this 
-service (`service1`) shares photos from `/photos`: 
-
-```json
-{
-  "id": "service1",
-  "volumes": {
-    "photos": "/photos"
-  }
-}
-```
-
-This service (`service2`) shares photos from `/documents/images`: 
-
-```json
-{
-  "id": "service2",
-  "volumes": {
-    "photos": "/documents/images"
-  }
-}
-```
-
-In these examples, note the shared volume key `photos`. Both services can access
-the files within the volume via the key and declared file paths. 
-
-| **Note:** To delete your service volumes, you can delete the environment that 
-| your services belong to. 
+* [Configuring Your Github Repository](../getting-started/configuring-your-github-repository.md)
+* [Configuring via LCP.json](../reference/configuration-via-lcp-json.md)
+* [Sharing Volumes Between Different Services](./sharing-volumes-between-different-services.md)
