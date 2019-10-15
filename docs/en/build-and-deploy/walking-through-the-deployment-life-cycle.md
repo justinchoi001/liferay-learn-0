@@ -26,11 +26,13 @@ Develop or use an existing module to deploy in this tutorial. This tutorial will
 
 ## Add the Sample to the Repository
 
-Begin the deployment life cycle by adding your sample module into the Git repository. Add the JAR to the appropriate `deploy` folder within `lcp/liferay`. For this tutorial, choose the `dev` folder:
+Begin the deployment life cycle by adding your sample module into the Git repository. Add the JAR to the appropriate `deploy` folder within `lcp/liferay`. For this tutorial, choose the folder for a development environment (e.g., `dev`):
 
 ```bash
 cp path-to-module/my-module my-repository-path/lcp/liferay/deploy/dev
 ```
+
+> **Note:** this tutorial will assume your development environment is named `dev`, by default. If your development environment is named differently, substitute `dev` with the correct name.
 
 ## Deploy the Sample to the `dev` Environment
 

@@ -34,7 +34,7 @@ to store new user data generated during the incident.
 DXP Cloud customers wishing to set up a Disaster Recovery environment must first
 contact their sales representative in order for the DR environment to be
 provisioned. This new environment is listed with the other available
-environments (dev, infra, UAT, and prod).
+environments (e.g., `dev`, `infra`, `uat`, and `prd`).
 
 ![Figure 1: Once you have a disaster recovery environment, you can select it like you would any other environment.](./disaster-recovery/images/dr-environment.png)
 

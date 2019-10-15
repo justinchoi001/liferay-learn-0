@@ -38,7 +38,7 @@ Use the new version from the release notes to update the `liferay.workspace.lcp.
 
 Deploying custom additions to Liferay DXP involves adding the new module, license, or hotfix to the appropriate locations in the Git repository.
 
-With the exception of the `common/` directory, changes added to a given service's environment folder (`dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to the `config`, `deploy`, `hotfix`, `license`, and `script` directories within `lcp/liferay/`.
+With the exception of the `common/` directory, changes added to a given service's environment folder (e.g., `dev`, `uat`, `prod`) will _only_ be propagated when deploying to the corresponding environment. Changes added to the `common/` directory will _always_ be deployed, regardless of the target deployment environment. This applies to the `config`, `deploy`, `hotfix`, `license`, and `script` directories within `lcp/liferay/`.
 
 See [Overview of the Deployment Workflow](../getting-started/overview-of-the-dxp-cloud-deployment-workflow.md) for more information on how the deployment workflow. For a tutorial on deploying to DXP Cloud see, [Walking Through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md).
 
@@ -46,7 +46,7 @@ See [Overview of the Deployment Workflow](../getting-started/overview-of-the-dxp
 
 To install themes, portlets, or OSGi modules, include a WAR or JAR file in one of the folders in `/deploy` in your Liferay DXP service directory.
 
-For example, to deploy a custom JAR file to the dev environment (using the `/dev` folder), your Liferay DXP service directory could look like this:
+For example, to deploy a custom JAR file to your development environment (using the `/dev` folder), your Liferay DXP service directory could look like this:
 
 	lcp
 	└── liferay
@@ -71,7 +71,7 @@ A CI build will compile source code within these folders:
 
 To apply hotfixes, add the hotfix ZIP file to one of the folders in `hotfix/` within the Liferay DXP service directory. When you deploy this change, the hotfix is applied to the Liferay DXP instance.
 
-For example, you can deploy a hotfix to your dev environment with a structure like the following:
+For example, you can deploy a hotfix to your development environment with a structure like the following:
 
 	lcp
     └──	liferay
@@ -86,7 +86,7 @@ Note that hotfixes will each need to be re-applied each time the server starts u
 
 You can add your own license by putting it into one of the folders in `license/` within the Liferay DXP service directory.
 
-For example, you can add licenses to your `dev` environment with a structure like this in your Liferay DXP service directory:
+For example, you can add licenses to your development environment with a structure like this in your Liferay DXP service directory:
 
 	lcp
     └── liferay

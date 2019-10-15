@@ -85,7 +85,7 @@ At this point, the biggest step of the migration to DXP Cloud is complete.
 ## Copy Liferay DXP Configurations
 
 Portal properties and OSGi configurations can be copied over to DXP Cloud by 
-putting them into the appropriate folder per environment (`dev`, `uat`, or 
+putting them into the appropriate folder per environment (e.g., `dev`, `uat`, or 
 `prd`, or `common` to apply to all) inside of `lcp/liferay/config/`. 
 
 ```

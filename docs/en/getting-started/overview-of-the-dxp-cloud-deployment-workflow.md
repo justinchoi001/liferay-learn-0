@@ -23,7 +23,7 @@ The repository provides the following:
 * Single source of truth for DXP Cloud project deployments. 
 
 With the exception of the `common` folder, changes added to a given service's 
-environment folder (e.g., `dev`, `uat`, `prod`) are only propagated when 
+environment folder (e.g., `dev`, `uat`, `prd`) are only propagated when 
 deploying to the corresponding environment. Changes added to `common` are always 
 deployed regardless of the target deployment environment.
 
@@ -64,7 +64,7 @@ There are two main ways to deploy to services on DXP Cloud: deploying through th
 
 The quickest way to deploy services from a repository locally is by using the CLI. See [Using the Command Line Interface](../reference/command-line-tool.md) for more information on setting up the CLI.
 
-After logging in through the CLI, use `lcp deploy` to deploy any additions present in the local repository. The CLI will prompt you to choose one of the environments to deploy to (`dev`, `uat`, or `prd`). You must have permissions to deploy to the chosen environment for the deployment to be successful.
+After logging in through the CLI, use `lcp deploy` to deploy any additions present in the local repository. The CLI will prompt you to choose one of the environments to deploy to (e.g., `dev`, `uat`, or `prd`). You must have permissions to deploy to the chosen environment for the deployment to be successful.
 
 ### Option 2: Deploying From `Builds` in DXP Cloud
 
