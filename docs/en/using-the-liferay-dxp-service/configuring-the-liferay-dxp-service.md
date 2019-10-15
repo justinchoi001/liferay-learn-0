@@ -1,6 +1,6 @@
 # Configuring the Liferay DXP Service
 
-Configuration files for your Liferay DXP instance in DXP Cloud are placed inside of one of the `config` folders in the Liferay DXP service directory in your repository.
+There are several methods available to configure Liferay DXP: through the in [DXP System Settings](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings) and through the use of [config](https://help.liferay.com/hc/en-us/articles/360029131591-System-Settings) and [property files](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties).  DXP property and configuration files for your Liferay DXP instance in DXP Cloud are deployed by being placed inside of one of the `config` folders in the Liferay DXP service directory in your repository.
 
 ```
 	lcp
@@ -18,7 +18,7 @@ With the exception of the `common/` directory, changes added to a given service'
 
 ## Portal Properties
 
-Portal properties are files of the form `portal-*.properties` that are used to configure your Liferay DXP environment.
+[Portal properties](https://help.liferay.com/hc/en-us/articles/360028712292-Portal-Properties) are files of the form `portal-*.properties` that are used to configure your Liferay DXP environment.
 
 In an on-site Liferay DXP instance, these files belong inside of `$LIFERAY_HOME`. When using Liferay DXP Cloud, place these files into the appropriate `config` folder(s) for them to be copied into `$LIFERAY_HOME` for the Liferay DXP instance on deployment.
 
