@@ -44,7 +44,7 @@
 * [Builds and Deployments](./build-and-deploy/builds-and-deployments.md)
 * [Environments](./build-and-deploy/environments.md)
 * [Continuous Integration](./build-and-deploy/continuous-integration.md)
-* [Using the Persistent File System](./build-and-deploy/persistent-file-system.md)
+* [Configuring Persistent File System Volumes](./build-and-deploy/configuring-persistent-file-system-volumes.md)
 * [Deploying Apps, Themes, and Modules](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules)
 * [Deploying Customizations from Source](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#source-code)
 * Local Development
