@@ -40,7 +40,7 @@ Auto-scaling works together with the `scale` attribute in `LCP.json`. If auto-sc
 
 By default, no additional portal properties are required to enable clustering in DXP Cloud. The necessary configuration to set up clustering will already be copied to a `portal-clu.properties` and `unicast.xml` files in the Docker image when the Liferay DXP service starts up.
 
-However, if additional portal properties for clustering are desired, the properties may still be added to the repository. You can override the clustering-specific portal properties by adding them into the `portal-clu.properties` file within the `config` folder appropriate to the chosen environment. See [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md) for more information.
+However, if additional portal properties for clustering are desired, the properties may still be added to the repository. You can override the clustering-specific portal properties by adding them into the `portal-clu.properties` file within the `config` folder appropriate to the chosen environment. See [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md) for more about deploying configurations for the DXP service.
 
 ## Deploy and Verify
 
