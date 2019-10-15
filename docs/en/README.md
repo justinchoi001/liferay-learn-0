@@ -1,15 +1,15 @@
 # Liferay DXP Cloud
 
+* [Welcome to DXP Cloud](./getting-started/welcome-to-dxp-cloud.md)
+
 ## Getting Started
 
-* [Welcome to DXP Cloud](./getting-started/welcome-to-dxp-cloud.md)
 * [Setting up Your Environment](./getting-started/setting-up-your-environment.md)
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
-* Configuring Services for the First Time
-* [Logging Into Your Liferay DXP Instance](./getting-started/logging-into-your-liferay-dxp-instance.md)
+* [Logging Into Your DXP Cloud Services](./getting-started/logging-into-your-dxp-cloud-services.md)
 * [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
-* [Defining Environment Variables](./getting-started/defining-environment-variables.md)
-* DXP Cloud Management Console Overview
+* [Understanding DXP Cloud Environments](./getting-started/understanding-dxp-cloud-environments.md)
+* [Walking through the Deployment Life Cycle](./build-and-deploy/walking-through-the-deployment-life-cycle.md)
 
 ## Using the Liferay DXP Service
 
@@ -40,29 +40,36 @@
 
 ## Build and Deploy
 
-* [Walking through the Deployment Life Cycle](./build-and-deploy/walking-through-the-deployment-life-cycle.md)
-* [Builds and Deployments](./build-and-deploy/builds-and-deployments.md)
-* [Environments](./build-and-deploy/environments.md)
+* [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)
+
+### Using the CI Service
+
 * [Continuous Integration](./build-and-deploy/continuous-integration.md)
-* [Configuring Persistent File System Volumes](./build-and-deploy/configuring-persistent-file-system-volumes.md)
+* Using the Jenkinsfile
+
+### Deploying to DXP Cloud
+
+* Understanding Deployment Types
 * [Deploying Apps, Themes, and Modules](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules)
 * [Deploying Customizations from Source](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#source-code)
-* Local Development
+* [Walking through the Deployment Life Cycle](./build-and-deploy/walking-through-the-deployment-life-cycle.md)
 
 ## Manage and Optimize
 
+### Performance and Monitoring
+
+* [Auto Scaling](./manage-and-optimize/auto-scaling.md)
 * [Monitoring Application Metrics](./manage-and-optimize/application-metrics.md)
 
 ### Managing Usage
 
-* [Auto Scaling](./manage-and-optimize/auto-scaling.md)
-* [Quotas](./manage-and-optimize/quotas.md)
 * [Configuring Real-Time Alerts](./manage-and-optimize/real-time-alerts.md)
+* [Quotas](./manage-and-optimize/quotas.md)
 
 ### Account and Team Management
 
-* [Team Collaboration](./manage-and-optimize/team-collaboration-and-access-control.md)
-* [Activities](./manage-and-optimize/team-activities.md)
+* [Team Collaboration and Access Control](./manage-and-optimize/team-collaboration-and-access-control.md)
+* [Team Activities](./manage-and-optimize/team-activities.md)
 
 ## Platform Services
 
@@ -72,6 +79,8 @@
 * [Using the Web Server Service](./platform-services/web-server-service.md)
 
 ## Infrastructure and Operations
+
+* [Configuring Persistent File System Volumes](./build-and-deploy/configuring-persistent-file-system-volumes.md)
 
 ### Security
 
@@ -90,7 +99,7 @@
 ## Troubleshooting
 
 * [Understanding DXP Cloud Logs](./troubleshooting/log-management.md)
-* [Using Shell With Services](./troubleshooting/shell-access.md)
+* [Shell Access to Services](./troubleshooting/shell-access.md)
 * [Disaster Recovery Workflow](./troubleshooting/disaster-recovery.md)
 * [Understanding and Configuring Self-Healing](./troubleshooting/self-healing.md)
 
@@ -98,5 +107,6 @@
 
 * [Configuring DXP Cloud Services With LCP.json](./reference/configuration-via-lcp-json.md)
 * [Using the LCP Command-line Tool](./reference/command-line-tool.md)
+* [Defining Environment Variables](./reference/defining-environment-variables.md)
 * [Support Access](./reference/support-access.md)
 * [Tracking DXP Cloud Status and Getting Help](./reference/tracking-dxp-cloud-status-and-getting-help.md)
