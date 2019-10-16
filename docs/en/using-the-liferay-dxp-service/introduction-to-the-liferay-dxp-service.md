@@ -49,11 +49,11 @@ To install themes, portlets, or OSGi modules, include a WAR or JAR file in one o
 For example, to deploy a custom JAR file to your development environment (using the `/dev` folder), your Liferay DXP service directory could look like this:
 
 	lcp
-	└── liferay
-	    ├── deploy
-	    │ └── dev
-	    │   └── com.liferay.apio.samples.portlet-1.0.0.jar
-	    └── LCP.json
+    └── liferay
+    	├── deploy
+    	│   └── dev
+    	│       └── com.liferay.apio.samples.portlet-1.0.0.jar
+    	└── LCP.json
 
 ### Source Code
 
@@ -74,7 +74,7 @@ To apply hotfixes, add the hotfix ZIP file to one of the folders in `hotfix/` wi
 For example, you can deploy a hotfix to your development environment with a structure like the following:
 
 	lcp
-    └──	liferay
+    └── liferay
     	├── hotfix
     	│   └── dev
     	│       └── liferay-hotfix-2-7110.zip
@@ -129,13 +129,13 @@ For example, to include a script that removes all log files, place it in the fol
 
 Name                                  | Default Value | Description  |
 ------------------------------------- | ------------- | ------------ |
-`LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` | `true`       | Whether to enable clustering and communication between nodes. |
-`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |               | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account. |
-`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |               | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
+`LCP_PROJECT_LIFERAY_CLUSTER_ENABLED` | `true` | Whether to enable clustering and communication between nodes. |
+`LCP_PROJECT_MONITOR_DYNATRACE_TENANT` |  | A string with eight characters. It's part of the URL (prefix) of your Dynatrace SaaS account. |
+`LCP_PROJECT_MONITOR_DYNATRACE_TOKEN` |  | A string with 22 characters that you can find in your Dynatrace account at *Deploy Dynatrace* &rarr; *Start installation* &rarr; *Set up PaaS monitoring* &rarr; *Installer Download*. |
 `LIFERAY_JAVA_OPTS` | | JVM options that will be appended to `CATALINA_OPTS` to override the default recommended options. |
 
 ## Additional Information
 
-* Accessing Your Project
+* [Logging Into Your DXP Cloud Services](../getting-started/logging-into-your-dxp-cloud-services.md)
 * [Configuring the Liferay DXP Service](./configuring-the-liferay-dxp-service.md)
 * [Walking through the Deployment Life Cycle](../build-and-deploy/walking-through-the-deployment-life-cycle.md)
