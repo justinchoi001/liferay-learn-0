@@ -8,9 +8,9 @@ The backup service creates regular backups of your Liferay DXP database and
 Document Library. Here, you'll learn how to configure the backup service to your 
 needs: 
 
--   [Scheduling](#scheduling)
--   [Backup APIs](#backup-apis)
--   [Environment Variables Reference](#environment-variables-reference)
+* [Scheduling](#scheduling)
+* [Backup APIs](#backup-apis)
+* [Environment Variables Reference](#environment-variables-reference)
 
 For instructions on creating and restoring backups manually, see 
 [Backup and Restore](./backup-and-restore.md). 
