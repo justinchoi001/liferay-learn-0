@@ -159,7 +159,7 @@
 * [Creating a New Account](./customers/creating-a-new-account.md)
 * [Inviting Users to an Account](../inviting-users-to-an-account.md)
 * [Adding Addresses to an Account](../adding-addresses-to-an-account.md)
-* [Account Roles](./customers/account-management/account-roles.md)
+* [Account Roles](./customers/account-roles.md)
 * [Assigning Account Roles](../assigning-account-roles.md)
 * [Creating a New Account Group](./customers/creating-a-new-account-group.md)
 * Organizations and Accounts
