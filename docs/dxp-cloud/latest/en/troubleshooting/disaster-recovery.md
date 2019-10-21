@@ -36,7 +36,7 @@ contact their sales representative in order for the DR environment to be
 provisioned. This new environment is listed with the other available
 environments (e.g., `dev`, `infra`, `uat`, and `prd`).
 
-![Figure 1: Once you have a disaster recovery environment, you can select it like you would any other environment.](./disaster-recovery/images/dr-environment.png)
+![Figure 1: Once you have a disaster recovery environment, you can select it like you would any other environment.](./disaster-recovery/images/01.png)
 
 ### Verify VPN Settings in the DR environment
 
@@ -89,10 +89,10 @@ environment:
     production environment.
 1. For the latest stable backup in the production environment, click the
     *Actions* button
-    (![Actions](./disaster-recovery/images/icon-actions.png))
+    (![Actions](./disaster-recovery/images/02.png))
     then select *Restore*.
 
-![Figure 2: Restore the latest stable backup from the production environment to the DR environment.](./disaster-recovery/images/backup-restore-dr.png)
+![Figure 2: Restore the latest stable backup from the production environment to the DR environment.](./disaster-recovery/images/03.png)
 
 ### Direct Custom Domain Traffic to the DR Environment
 
@@ -111,7 +111,7 @@ from the production environment. Follow these steps to do so:
 
 This will result in all traffic being directed to the DR environment.
 
-![Figure 3: For the webserver service, configure the DR environment's custom domains to match those of the production environment.](./disaster-recovery/images/webserver-custom-domain-dr.png)
+![Figure 3: For the webserver service, configure the DR environment's custom domains to match those of the production environment.](./disaster-recovery/images/04.png)
 
 ## Post-incident Recovery
 
@@ -131,7 +131,7 @@ environment. Follow these steps to do so:
 1. In the DR environment, click *Backups* in the menu on the left.
 1. Click *Backup Now*.
 
-![Figure 4: Create a manual backup of the DR environment.](./disaster-recovery/images/backups-manual-dr.png)
+![Figure 4: Create a manual backup of the DR environment.](./disaster-recovery/images/05.png)
 
 ### Copy Latest DR Environment Data to Production
 
@@ -141,11 +141,11 @@ environment. Follow these steps to do so:
     DR environment.
 1. For the most recent backup (the one you just created), click the
     *Actions* button
-    (![Actions](../../images/icon-actions.png))
+    (![Actions](./disaster-recovery/images/02.png))
     then select *Restore*.
 1. Select the production environment and click *Deploy Build*.
 
-![Figure 5: Deploy the backup to the production environment.](./disaster-recovery/images/backup-restore-prod-dr.png)
+![Figure 5: Deploy the backup to the production environment.](./disaster-recovery/images/06.png)
 
 ### Restore Server Custom Traffic to Production
 
@@ -156,7 +156,7 @@ the the Production environment.
 1. Click on _webserver_ in the list of Services.
 1. Click the _Custom Domains_ tab.
 
-    ![Remove custom domain](./disaster-recovery/images/11.png)
+    ![Remove custom domain](./disaster-recovery/images/07.png)
 
 1. Remove the custom domain from the Production environment.
 1. Update the DNS records. For more information, see the [Custom Domain](https://help.liferay.com/hc/en-us/articles/360032856292) article.
