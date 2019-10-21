@@ -9,7 +9,7 @@ simplifies the setup, operation, and scaling of your applications. It's a
 private service inside your application environment and can only communicate 
 with your other services, not the public internet. 
 
-![Figure 1: The database service is one of several services available in DXP Cloud.](../../images/services-database.png)
+![Figure 1: The database service is one of several services available in DXP Cloud.](./database-service/images/01.png)
 
 ## Environment Variables
 

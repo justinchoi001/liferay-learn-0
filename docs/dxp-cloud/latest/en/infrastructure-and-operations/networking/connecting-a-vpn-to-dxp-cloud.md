@@ -30,7 +30,7 @@ company VPN. You'll learn how to do this here.
 To disconnect your service from a VPN after it's connected, click the 
 *Disconnect* button. 
 
-![Figure 1: You can connect to a VPN from the Settings tab.](./connecting-a-vpn-to-dxp-cloud/images/vpn-connection.png)
+![Figure 1: You can connect to a VPN from the Settings tab.](./connecting-a-vpn-to-dxp-cloud/images/01.png)
 
 ## Port Configuration
 
@@ -46,7 +46,7 @@ Follow these steps to do so:
 4. Click *Add Port* when you're finished. 
 
 To remove a port, click its *Actions* button 
-(![Actions](./connecting-a-vpn-to-dxp-cloud/images/icon-actions.png)) 
+(![Actions](./connecting-a-vpn-to-dxp-cloud/images/02.png)) 
 and select *Remove*. 
 
-![Figure 2: You can also configure port forwarding.](./connecting-a-vpn-to-dxp-cloud/images/vpn-ports.png)
+![Figure 2: You can also configure port forwarding.](./connecting-a-vpn-to-dxp-cloud/images/03.png)

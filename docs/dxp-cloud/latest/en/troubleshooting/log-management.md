@@ -14,7 +14,7 @@ so, select the environment and click the *Logs* tab in the left menu. To access
 a specific service's logs, select the service from the *All Services* menu in 
 the toolbar. To download the logs, click *Download Logs*. 
 
-![Figure 1: The web console also lets you view your logs.](./log-management/images/logs-web-console.png)
+![Figure 1: The web console also lets you view your logs.](./log-management/images/01.png)
 
 ## Accessing Logs from the Terminal
 
