@@ -1,8 +1,6 @@
 # Liferay DXP
 
-## [Getting Started](./installation-and-upgrades/quick-start-guide/quick-start-guide.md)
-
-Want to kick the tires? Get started [here](./installation-and-upgrades/quick-start-guide/quick-start-guide.md)!
+## Getting Started
 
 ## [Building Solutions on DXP](./solutions/README.md)
 
