@@ -5,10 +5,11 @@
 * OpenAPI/REST
   * Accessing
   * Delivering
-    * RESTBuilder
+    * REST Builder
 * GraphQL
   * Accessing
   * Delivering
+    * REST Builder
 * JSON-WS
   * Accessing
   * Delivering
@@ -20,10 +21,17 @@
 * Control Panel
 * Model Listeners
 * Product Navigation
+* Customizing JSPs
+* Creating Widget Templates
+* Form Storage Adapters
+* Dynamic Includes
+* Overriding MVC Commands
+* Creating Service Wrappers
+* Overriding Service Components
 
 ## Database
 
-* ServiceBuilder
+* Service Builder
 
 ## Apps
 
@@ -33,5 +41,11 @@
   * Vue
 * Java
   * MVC
-  * SpringMVC
+  * PortletMVC4Spring
   * JSF
+  * Bean Portlets
+
+## Frameworks and APIs
+
+* Application Security
+  * Permissions
