@@ -30,6 +30,8 @@ If using an existing Liferay DXP installation, users may deploy Liferay Commerce
 
 ### Activating Commerce Enterprise
 
+Subscribers who have purchased Liferay Commerce are required to activate the product. See [Activating Liferay Commerce Enterprise](./activating-liferay-commerce-enterprise.md)
+
 ## Maintaining Liferay Commerce
 
 ### Upgrades and Updates
