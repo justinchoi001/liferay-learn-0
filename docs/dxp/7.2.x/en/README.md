@@ -18,6 +18,6 @@ The authoritative guide to using Liferay DXP.
 
 Tutorials and guides to extend and customize your Liferay DXP experience.
 
-## [Get Help](./get-help/README.md)
+## Get Help
 
 Need more help? Liferay has training, consulting, and support resources for all your needs.
