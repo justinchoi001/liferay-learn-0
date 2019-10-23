@@ -10,13 +10,15 @@ Build something quick with DXP.
 
 Set up and maintain Liferay DXP for the long haul.
 
-## [User Guide](./user-guide/README.md)
+## [Features](./features/README.md)
+
+<!-- ## [User Guide](./user-guide/README.md)
 
 The authoritative guide to using Liferay DXP.
 
 ## [Developer Guide](./developer-guide/README.md)
 
-Tutorials and guides to extend and customize your Liferay DXP experience.
+Tutorials and guides to extend and customize your Liferay DXP experience. -->
 
 ## Get Help
 
