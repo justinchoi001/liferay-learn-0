@@ -1,6 +1,6 @@
 # Creating a Virtual Product
 
-A virtual product is any non-physical product. For example, the product is downloaded rather than shipped: a music file, a video, or an electronic publication. Virtual products could also include warranties and service contracts. Virtual products may be sold individually or in a Grouped Product.
+A virtual product is any downloadable product or has a set duration. Examples include a music file, a video, or an electronic publication. Virtual products could also include warranties and service contracts. Virtual products may be sold individually or in a Grouped Product.
 
 ## Roadmap
 

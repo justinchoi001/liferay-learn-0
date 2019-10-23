@@ -4,9 +4,9 @@ The catalog supports three product types: Simple, Grouped, and Virtual.
 
 **[Simple Product](../catalog/creating-a-simple-product.md)**: Any physical product for which inventory is tracked.
 
-**[Grouped Product](../catalog/creating-a-grouped-product.md)**: Two or more products from the catalog, packaged together to be sold as a single item. Grouped products are not tracked in inventory. Instead, the catalog tracks all of the products contained in the group individually. A grouped product can contain Simple Products, other Grouped Products, or Virtual Products.
+**[Grouped Product](../catalog/creating-a-grouped-product.md)**: Two or more products from the catalog, packaged together to be sold as a single item. Grouped products are tracked in inventory. A grouped product can contain Simple Products, other Grouped Products, or Virtual Products.
 
-**[Virtual Products](../catalog/creating-a-virtual-product.md)**: A virtual product is any non-physical product. Typically, a virtual product’s inventory is not tracked. This may mean that the product is downloaded rather than shipped. Music files, electronic publications, services, and warranties can all be considered virtual goods.
+**[Virtual Products](../catalog/creating-a-virtual-product.md)**: A virtual product is **downloadable** product or has a set duration. Examples include music files, electronic publications, services, and warranties. Otherwise, use a Simple product type.
 
 ## Product Detail Reference
 
@@ -32,8 +32,8 @@ The catalog supports three product types: Simple, Grouped, and Virtual.
 
 | Field | Description |
 | --- | --- |
-| Published | Checkbox to enable publication |
-| Display Date | Date the product is published to the Catalog |
+| Published | Checkbox to enable the product's visibility and availability for sale in the catalog |
+| Display Date | Date the product is first made available for sale in the Catalog |
 | Expiration Date | Determines when the product will no longer be available, if _Never Expire_ is unchecked |
 | Never Expire | Determines if a product can be scheduled for expiration |
 
