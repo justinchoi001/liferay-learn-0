@@ -12,7 +12,7 @@ and downtime.
 Here, you'll learn how DXP Cloud's features form the WAF that protects against 
 common attacks. 
 
-![Figure 1: The Web Application Firewall protects against common attacks.](./web-app-firewall/images/web-app-firewall.png)
+![Figure 1: The Web Application Firewall protects against common attacks.](./web-app-firewall/images/01.png)
 
 ## Private Network
 

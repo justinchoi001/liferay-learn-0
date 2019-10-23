@@ -8,7 +8,7 @@ The Nginx web server functions as a gateway from the open internet to your DXP
 Cloud services. It handles all traffic from your users and acts as a 
 high-performance web server. 
 
-![Figure 1: The web server is one of several services available in DXP Cloud.](../../images/services-nginx.png)
+![Figure 1: The web server is one of several services available in DXP Cloud.](./web-server-service/images/01.png)
 
 ## Configurations
 

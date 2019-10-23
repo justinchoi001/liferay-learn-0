@@ -6,7 +6,7 @@ header-id: using-the-liferay-dxp-service
 
 The Liferay DXP service is the heartbeat of any project. It runs the application's Liferay DXP instance and interacts with other services like the web server, Elasticsearch, and MySQL database.
 
-![Figure 1: The Liferay DXP service is one of several services available in DXP Cloud.](../../images/services-dxp.png)
+![Figure 1: The Liferay DXP service is one of several services available in DXP Cloud.](./introduction-to-the-liferay-dxp-service/images/01.png)
 
 The Liferay DXP service in DXP Cloud can be used in many of the same ways as an on-premise instance of Liferay DXP. However, there are also several differences in configuration and development workflow when working with an instance in DXP Cloud.
 

@@ -40,14 +40,14 @@ ensure that data and documents are protected and ready for restoration in case
 of data corruption or failure. Encryption at rest ensures that sensitive data 
 saved on disks isn't readable by any user or application without a valid key. 
 
-![Figure 3: DXP Cloud's backup service preserves and protects your data.](./welcome-to-dxp-cloud/images/backups.png)
+![Figure 3: DXP Cloud's backup service preserves and protects your data.](./welcome-to-dxp-cloud/images/01.png)
 
 Out-of-the-box 
 [role and team administration](../manage-and-optimize/team-collaboration-and-access-control.md) 
 allows administrators to deliver maximum productivity and security by adding or 
 removing people from teams and managing permissions per project environment.
 
-![Figure 4: Manage your project's team members, including their permissions.](./welcome-to-dxp-cloud/images/invite-member.png)
+![Figure 4: Manage your project's team members, including their permissions.](./welcome-to-dxp-cloud/images/02.png)
 
 ## High Availability, Scalability, and Performance
 
@@ -65,7 +65,7 @@ scaled down during periods of lower activity. Teams receive automatic
 notifications and email alerts regarding instance usage so they can manage 
 resources with confidence. 
 
-![Figure 5: Auto-scale your servers to meet demand.](./welcome-to-dxp-cloud/images/auto-scaling.png)
+![Figure 5: Auto-scale your servers to meet demand.](./welcome-to-dxp-cloud/images/03.png)
 
 ## Real Time Alerts
 
@@ -73,7 +73,7 @@ Administrators can configure
 [alerts](../manage-and-optimize/real-time-alerts.md) 
 per user to receive resource utilization updates in real-time.
 
-![Figure 6: Administrators can configure real-time alerts.](./welcome-to-dxp-cloud/images/alerts-prefs-page.png)
+![Figure 6: Administrators can configure real-time alerts.](./welcome-to-dxp-cloud/images/04.png)
 
 ## Accelerated Development with Built-in CI/CD
 
@@ -84,7 +84,7 @@ to meet organizations' unique needs and detect and repair common server
 problems as they occur. This helps prevent small programming errors from 
 accumulating and causing a server crash. 
 
-![Figure 7: View, manage, and deploy your builds from a central location.](./welcome-to-dxp-cloud/images/builds.png)
+![Figure 7: View, manage, and deploy your builds from a central location.](./welcome-to-dxp-cloud/images/05.png)
 
 ## Application Development Tools
 
@@ -93,7 +93,7 @@ Keep track of application deployments and performance with real-time build and
 [accessing the shell](../troubleshooting/shell-access.md) 
 via the web console or terminal, and/or by downloading the logs. 
 
-![Figure 8: Real-time build and deployment logs help you solve problems with your applications.](./welcome-to-dxp-cloud/images/build-logs.png)
+![Figure 8: Real-time build and deployment logs help you solve problems with your applications.](./welcome-to-dxp-cloud/images/06.png)
 
 ## Insightful Monitoring
 
@@ -104,7 +104,7 @@ over time. Administrators can also use out-of-the-box
 [Dynatrace integration](../manage-and-optimize/application-metrics.md#advanced-application-metrics-on-production) 
 to quickly understand CPU and memory usage, data transfer rates, and more. 
 
-![Figure 9: Use a variety of metrics to keep tabs on your DXP Cloud services, including your Liferay DXP instances.](./welcome-to-dxp-cloud/images/app-metrics.png)
+![Figure 9: Use a variety of metrics to keep tabs on your DXP Cloud services, including your Liferay DXP instances.](./welcome-to-dxp-cloud/images/07.png)
 
 ## Next Steps
 

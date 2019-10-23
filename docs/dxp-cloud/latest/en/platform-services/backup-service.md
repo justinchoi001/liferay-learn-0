@@ -15,7 +15,7 @@ needs:
 For instructions on creating and restoring backups manually, see 
 [Backup and Restore](./backup-and-restore.md). 
 
-![Figure 1: The backup service is one of several services available in DXP Cloud.](../../images/services-backups.png)
+![Figure 1: The backup service is one of several services available in DXP Cloud.](./backup-service/images/01.png)
 
 ## Scheduling
 
