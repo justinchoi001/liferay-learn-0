@@ -13,7 +13,7 @@ The **Deployment** type features the following:
 
 Meanwhile, the **StatefulSet** type features the following:
 
-* Access to a dedicated SSD for the service
+* Service is allocated a dedicated SSD
 * Network identifiers are stable and unique (e.g., `search-0`, `search-1`)
 * Deployment and scaling are ordered
 * Automated rolling updates are ordered
@@ -25,7 +25,7 @@ The following summarizes some distinguishing characteristics between the `Deploy
 | **Deployment** | Stateless applications with the use of NFS | Consumes less resources and starts up faster than `StatefulSet` type | X | ✓ | X |
 | **StatefulSet** | Stateful applications | Consumes more resources and starts up slower than `Deployment` type | ✓ | X | ✓ |
 
-In general, the `Deployment` type is more lightweight and allows for faster deployments, as well as shared, persisted volumes between services (for shared files, like the document library). The `StatefulSet` type is more costly for deployments and resource usage (including the total memory and CPUs allocated for your project), but persists data through deployments and gains speed accessing files by using a dedicated SSD.
+In general, the `Deployment` type is more lightweight and allows for faster deployments, as well as shared, persisted volumes between services (for shared files, like the document library). The `StatefulSet` type is more costly for deployments and resource usage (including the total memory and CPUs allocated for your project), but persists data through deployments and gains improved file access performance by using a dedicated SSD.
 
 ### Persisted Volumes (NFS) vs SSD Storage
 
@@ -39,7 +39,7 @@ The volumes stored in NFS are also available to all `Deployment` type services. 
 
 The following details how the services in DXP Cloud are pre-configured out-of-the-box:
 
-* The _Liferay_ and _Backup_ services use the **Deployment** type, so that they can share access to the document library, which is stored in NFS.
+* The _Liferay_ and _Backup_ services use the **Deployment** type, so that they can share access to the document library, which is stored in  NFS.
 
 * The _Database_ and _Web Server_ services also use the **Deployment** type, so that they can remain lightweight and start up quickly.
 
@@ -53,7 +53,7 @@ By default, the services in DXP Cloud are pre-configured in order to fit a major
 
 ```json
 {
-    "id": "dxp",
+    "id": "search",
     "kind": "StatefulSet"
 }
 ```

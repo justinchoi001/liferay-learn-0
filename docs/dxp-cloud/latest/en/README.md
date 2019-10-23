@@ -49,7 +49,7 @@
 
 ### Deploying to DXP Cloud
 
-* Understanding Deployment Types
+* [Understanding Deployment Types](./build-and-deploy/understanding-deployment-types.md)
 * [Deploying Apps, Themes, and Modules](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#themes-portlets-and-osgi-modules)
 * [Deploying Customizations from Source](./using-the-liferay-dxp-service/introduction-to-the-liferay-dxp-service.md#source-code)
 * [Walking through the Deployment Life Cycle](./build-and-deploy/walking-through-the-deployment-life-cycle.md)
