@@ -4,7 +4,7 @@
 
 ## Getting Started
 
-* [Setting up Your Environment](./getting-started/setting-up-your-environment.md)
+* [Development Requirements](./getting-started/development-requirements.md)
 * [Configuring Your Github Repository](./getting-started/configuring-your-github-repository.md)
 * [Logging Into Your DXP Cloud Services](./getting-started/logging-into-your-dxp-cloud-services.md)
 * [Overview of the DXP Cloud Deployment Workflow](./getting-started/overview-of-the-dxp-cloud-deployment-workflow.md)

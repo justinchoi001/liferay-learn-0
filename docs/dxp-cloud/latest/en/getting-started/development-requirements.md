@@ -1,4 +1,4 @@
-# Setting up Your Environment
+# Development Requirements
 
 Before beginning deployment in Liferay DXP Cloud, developers planning to create modules for DXP Cloud should install the required tools. There are various development tools and frameworks that developers can use to create their customizations, but deployment to DXP Cloud begins with the GitHub project created during the provisioning process.
 
