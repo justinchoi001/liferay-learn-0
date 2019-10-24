@@ -6,19 +6,25 @@
 
 Build something quick with DXP.
 
+## [Site Building](./site-building/README.md)
+
+## [Content Authoring and Management](./content-authoring-and-management/README.md)
+
+## [Process Automation](./process-automation/README.md)
+
+## [Search](./search/README.md)
+
+## [Collaboration and Social](./collaboration-and-social/README.md)
+
+## [User and System Management](./user-and-system-management/README.md)
+
 ## [Installation and Upgrades](./installation-and-upgrades/README.md)
 
 Set up and maintain Liferay DXP for the long haul.
 
-## [Features](./features/README.md)
+## [Platform Fundamentals](./platform-fundamentals/README.md)
 
-<!-- ## [User Guide](./user-guide/README.md)
-
-The authoritative guide to using Liferay DXP.
-
-## [Developer Guide](./developer-guide/README.md)
-
-Tutorials and guides to extend and customize your Liferay DXP experience. -->
+## [Headless Delivery](./headless-delivery/README.md)
 
 ## Get Help
 
