@@ -32,12 +32,12 @@ If you get a permissions error, try running the same command with `sudo`.
 **Windows Systems**
 
 Download the latest version of the 
-[CLI installer](https://cdn.wedeploy.com/cli/latest/we-installer-windows-amd64.msi). 
+[CLI installer](https://cdn.liferay.cloud/cli/latest/lcp-installer-windows-amd64.msi). 
 
 **Other Systems**
 
 See the list of 
-[available builds](https://dl.equinox.io/wedeploy/we/stable). 
+[available builds](https://dl.equinox.io/wedeploy/lcp/stable).
 
 > **Note:** To deploy services on DXP Cloud, you must have 
 > [Git](https://git-scm.com/) 
