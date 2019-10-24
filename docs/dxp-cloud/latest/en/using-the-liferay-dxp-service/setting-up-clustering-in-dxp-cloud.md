@@ -26,8 +26,8 @@ Set the desired number of nodes for clustering by setting the `scale` property i
   "image": "@liferay.workspace.lcp.liferay.image@",
   "memory": 8192,
   "cpu": 8,
-  **"scale": 3,**
-  ...
+  "scale": 3,
+}
 ```
 
 > **Note:** increasing the number of nodes for your Liferay DXP instance may increase the number of CPU cores allocated to your project. If the increased number of CPU cores exceeds the maximum [quota](../manage-and-optimize/quotas.md) for your plan, then the deployment may fail.
