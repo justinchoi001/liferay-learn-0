@@ -197,7 +197,7 @@ lcp exec --project <projectID> --service <serviceID> --instance <abc123> -- mkdi
 This runs a command in any instance of a service: 
 
 ```shell
-lcp delete --project <projectID> --service <serviceID> --instance any -- mkdir foo
+lcp exec --project <projectID> --service <serviceID> --instance any -- mkdir foo
 ```
 
 ## Access a Service's Shell
