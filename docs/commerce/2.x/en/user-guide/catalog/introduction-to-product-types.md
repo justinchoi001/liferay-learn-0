@@ -6,7 +6,7 @@ The catalog supports three product types: Simple, Grouped, and Virtual.
 
 **[Grouped Product](../catalog/creating-a-grouped-product.md)**: Two or more products from the catalog, packaged together to be sold as a single item. Grouped products are tracked in inventory. A grouped product can contain Simple Products, other Grouped Products, or Virtual Products.
 
-**[Virtual Products](../catalog/creating-a-virtual-product.md)**: A virtual product is **downloadable** product or has a set duration. Examples include music files, electronic publications, services, and warranties. Otherwise, use a Simple product type.
+**[Virtual Products](../catalog/creating-a-virtual-product.md)**: A Virtual Product is a non-tangible product that can be downloaded or have a specified duration. Examples include music files, electronic publications, services, and warranties. Otherwise, use a Simple product type.
 
 ## Product Detail Reference
 

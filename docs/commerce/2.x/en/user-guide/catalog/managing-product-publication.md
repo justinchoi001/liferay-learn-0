@@ -13,7 +13,7 @@ Scheduling product expiration is accomplished through the _Control Panel_. To sc
 1. Uncheck the _Never Expire_ checkbox.
 1. Enter an expiration date and time.
 
-    ![Setting a Product's Expiration Date](./managing-product-publication/images/03.png)
+    ![Setting a Product's Expiration Date](./managing-product-visibility/images/03.png)
 
 1. Click _Publish_.
 
@@ -25,20 +25,19 @@ After the expiration date, the product will be not returned when searching on th
 1. Click on a product (for example, _U-Joint_).
     > Expand the _Schedule_ section if necessary.
 1. Uncheck the _Published_ checkbox.
-    ![Unchecked Published box](./managing-product-publication/images/01.png)
+    ![Unchecked Published box](./managing-product-visibility/images/01.png)
 
 1. Click _Publish_.
 1. Navigate to the store site.
 1. Search for the product (_U-Joint_ in this example).
 
-![Unpublished U-Joint](./managing-product-publication/images/02.png)
+![Unpublished U-Joint](./managing-product-visibility/images/02.png)
 
 The product is not searchable in the catalog.
 
 ## Additional Information
 
 * [Introduction to Product Types](./introduction-to-product-types.md)
-* [Configuring Product Visibility by Site Using Channels](./configuring-product-visibility-by-site-using-channels.md)
 * [Creating a Simple Product](./creating-a-simple-product.md)
 * [Creating a Grouped Product](./creating-a-grouped-product.md)
 * [Creating a Virtual Product](./creating-a-virtual-product.md)

@@ -47,7 +47,7 @@
 
 * [Introduction to Channels](./catalog/introduction-to-channels.md)
 * [Managing Channels](./catalog/managing-channels.md)
-* [Managing Product Visibility by Site Using Channels](./catalog/configuring-product-visibility-by-site-using-channels.md)
+* [Configuring Product Visibility by Site Using Channels](./catalog/configuring-product-visibility-by-site-using-channels.md)
 
 #### Products
 
