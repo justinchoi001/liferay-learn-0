@@ -17,15 +17,15 @@ function check_utils {
 function generate_sphinx_input {
 	rm -fr build
 
-	for product_name in `find docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
+	for product_name in `find ../docs -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
 	do
-		for version_name in `find docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
+		for version_name in `find ../docs/${product_name} -maxdepth 1 -mindepth 1 -printf "%f\n" -type d`
 		do
 			mkdir -p build/input/${product_name}-${version_name}/docs
 
 			cp -R sphinx/docs/* build/input/${product_name}-${version_name}
 
-			cp -R docs/${product_name}/${version_name}/en/* build/input/${product_name}-${version_name}/docs
+			cp -R ../docs/${product_name}/${version_name}/en/* build/input/${product_name}-${version_name}/docs
 
 			#
 			# TODO Generate ZIP files and update links.
