@@ -19,7 +19,7 @@ Administrators can configure the volumes for their services in DXP Cloud dependi
 
 ## Sharing Volumes Between Different Services
 
-Volumes are shared between all instances within a single service, but only volumes in `Deployment` type services may be shared with other services in the same environment using NFS. Volumes shared in this way are persisted even if the services are deleted, because NFS
+Volumes are shared between all instances within a single service, but only volumes in `Deployment` type services may be shared with other services in the same environment using NFS. Volumes shared in this way are persisted even if the services are deleted, because they will be stored in NFS.
 
 To share a volume:
 
