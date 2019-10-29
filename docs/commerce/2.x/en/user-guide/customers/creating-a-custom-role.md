@@ -18,6 +18,8 @@ To add a new role:
 
 Once the new role has been created, it will be listed in the _Site Roles_ menu in the Control Panel and also the _Account Management_ widget.
 
+![New custom role](./creating-a-custom-role/images/01.png)
+
 ## Additional Information
 
 * See [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions) for more information.
