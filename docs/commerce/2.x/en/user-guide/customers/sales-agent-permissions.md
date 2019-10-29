@@ -4,7 +4,7 @@ The Sales Agent is a regular role in Liferay Commerce and assignees are able to 
 
 To view the permissions:
 
-1. Navigate to the _Control Panel_ > _Users_ > _Roles_.
+1. Navigate to the _Control Panel_ → _Users_ → _Roles_.
 1. Click the _Regular Roles_ tab.
 1. Click _Sales Agent_.
 1. Click the _Define Permissions_ tab.
@@ -20,14 +20,14 @@ To add more permissions, click the left navigation menu and select the new permi
 
 New permissions can added by clicking the _Site Administration_ in the left navigation.
 
-## Site Administration  > Commerce
+## Site Administration → Commerce
 
 Additional Commerce-specific permissions for Wish Lists and Commerce Settings are found in the following places. Granting permissions allow Buyers to perform additional functionalities or view administrative aspects of the platform.
 
 * Wish Lists
 * Settings
 
-## Site Administration > Applications
+## Site Administration → Applications
 
 * Accounts
 * Cart
@@ -53,3 +53,4 @@ To see how the other permissions are used by higher level roles, see the followi
 
 * [Order Manager Permissions](./order-manager-permissions.md)
 * [Account Administrator Permissions](./account-administrator-permissions.md)
+* [Account Roles](./account-roles.md)

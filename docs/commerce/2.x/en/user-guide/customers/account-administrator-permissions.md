@@ -1,12 +1,12 @@
 # Account Administrator Permissions
 
-Users can modify the account, invite and add users to join the account, and assign roles to other account members. These permissions are the minimum. Although they can be removed, this will cause some changes in user access and abilities to make transactions on the Commerce site. However, more permissions may be _added_.
+An Account Administrator can modify the account, invite and add users to join the account, and assign roles to other account members. These permissions are the minimum. Although they can be removed, this will cause some changes in user access and abilities to make transactions on the Commerce site. However, more permissions may be _added_.
 
 Note that a Liferay Commerce account administrator cannot create or delete an account. This permission is reserved for the store administrator.
 
 To view the permissions:
 
-1. Navigate to the _Control Panel_ > _Users_ > _Roles_.
+1. Navigate to the _Control Panel_ → _Users_ → _Roles_.
 1. Click the _Site Roles_ tab.
 1. Click _Account Administrator_.
 1. Click the _Define Permissions_ tab.
@@ -38,14 +38,14 @@ The following set of permissions pertain to the Account Administrator Role's abi
 
 New permissions can added by clicking the _Site Administration_ in the left navigation.
 
-## Site Administration  > Commerce
+## Site Administration → Commerce
 
 Additional Commerce-specific permissions for Wish Lists and Commerce Settings are found in the following places. Granting permissions allow Buyers to perform additional functionalities or view administrative aspects of the platform.
 
 * Wish Lists
 * Settings
 
-## Site Administration > Applications
+## Site Administration → Applications
 
 * Accounts
 * Cart
@@ -70,3 +70,4 @@ Additional Commerce-specific permissions for Wish Lists and Commerce Settings ar
 * [Buyer Permissions](./buyer-permissions.md)
 * [Sales Agent Permissions](./sales-agent-permissions.md)
 * [Order Manager Permissions](./order-manager-permissions.md)
+* [Account Roles](./account-roles.md)

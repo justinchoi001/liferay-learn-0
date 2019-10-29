@@ -164,6 +164,13 @@
 * [Creating a New Account Group](./customers/creating-a-new-account-group.md)
 * Organizations and Accounts
 
+### Account Roles and Permissions
+
+* [Account Administrator Permissions](./customers/account-administrator-permissions.md)
+* [Buyer Permissions](./customers/buyer-permissions.md)
+* [Order Manager Permissions](./customers/order-manager-permissions.md)
+* [Sales Agent Permissions](./customers/sales-agent-permissions.md)
+
 ## Sales
 
 ### Payments
