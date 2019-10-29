@@ -1,0 +1,28 @@
+{
+	"dependencies": {
+		"clay-css": "^2.18.1",
+		"node-sass": "^4.12.0",
+		"prettier": "^1.18.2"
+	},
+	"description": "Liferay Learn",
+	"license": "ISC",
+	"name": "liferay-learn",
+	"prettier": {
+		"bracketSpacing": false,
+		"endOfLine": "lf",
+		"jsxSingleQuote": true,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"useTabs": true
+	},
+	"private": true,
+	"scripts": {
+		"build": "npm run build-css && npm run propagate-img && npm run propagate-js && npm run propagate-template",
+		"build-css": "node-sass --include-path node_modules/clay-css/src/scss _static/scss/main.scss _static/main.css && cp _static/main.css ../docs/_static",
+		"css:watch": "node-sass -w --include-path node_modules/clay-css/src/scss _static/scss/main.scss _static/main.css",
+		"propagate-img": "cp _static/img/* ../docs/_static/img",
+		"propagate-js": "cp _static/js/* ../docs/_static/",
+		"propagate-template": "cp _templates/* ../docs/_templates"
+	},
+	"version": "1.0.0"
+}

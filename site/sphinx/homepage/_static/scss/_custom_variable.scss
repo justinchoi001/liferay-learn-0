@@ -1,0 +1,52 @@
+// Color Variables
+
+$alert: #D33A2F !default;
+$background-color: #F4F6F9 !default;
+$brand-primary: #0B5FFF !default;
+$brand-secondary: #184496 !default;
+$default-color: #30313F !default;
+$filter-color: #EFF3FD !default;
+$header-color: #09101D !default;
+$hr-color: #DADEE3 !default;
+$pre-text-color: #F8FAFF !default;
+$white: #FFF !default;
+
+// Variable Overrides
+
+$font-family-base: "Source Sans Pro", "Source Serif Pro", -apple-system,
+	BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+$font-weight-light: 200 !default;
+$font-weight-semi-bold: 600 !default;
+
+$small-font-size: 0.75rem !default; // 12px
+
+$h1-font-size: 2rem !default; // 32px
+$h2-font-size: 1.5rem !default; // 24px
+$h3-font-size: 1rem !default; // 16px
+$h4-font-size: 1rem !default; // 16px
+$h5-font-size: 0.875rem !default; // 14px
+$h6-font-size: $small-font-size !default; // 12px
+$code-font-size: 14px !default; // set pixel value to prevent nested <pre> and <code> from scaling down font size
+$mobile-font-size: 1.75rem !default; // 28px
+
+$breadcrumb-active-color: null !default;
+$breadcrumb-divider-color: null !default;
+
+// Custom Variables
+
+$h1-display-font-size: 3rem !default; // 48px
+
+$h6-line-height: 16px !default;
+$code-line-height: 24px !default; // set pixel value to prevent nested <pre> and <code> from scaling down line height
+$secondary-text-line-height: 1.429 !default;
+
+$breadcrumb-divider-svg-icon: clay-icon(angle-right, $breadcrumb-divider-color) !default;
+$breadcrumb-divider-svg-icon-height: 0.75em !default; // 12px
+$breadcrumb-divider-svg-icon-width: $breadcrumb-divider-svg-icon-height !default;
+
+$spacing-default: 1.5rem !default; // 24px
+$spacing-md: 1rem !default; // 16px
+$spacing-sm: 0.75rem !default; // 12px
+$spacing-xs: 0.5rem !default; // 8px

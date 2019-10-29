@@ -1,0 +1,57 @@
+header {
+	align-items: center;
+	background-color: $brand-secondary;
+	color: $white;
+	display: flex;
+	height: 3.5rem;
+	justify-content: space-between;
+
+	a {
+		color: $white;
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+	.brand {
+		align-items: center;
+		display: flex;
+
+		h2 {
+			margin: 0;
+		}
+	}
+
+	.company-logo {
+		margin-left: 1.125rem;
+		margin-right: $spacing-xs;
+	}
+
+	.header-links {
+		a {
+			font-size: $h5-font-size;
+			margin-right: 3.25rem;
+		}
+
+		@media (max-width: 576px) {
+			display: none;
+		}
+	}
+
+	.mobile-nav {
+		display: none;
+
+		svg {
+			cursor: pointer;
+			height: $spacing-md;
+			margin: $spacing-md;
+			margin-left: 0;
+			width: $spacing-md;
+		}
+
+		@media (max-width: 576px) {
+			display: block;
+		}
+	}
+}

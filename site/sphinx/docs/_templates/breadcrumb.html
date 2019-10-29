@@ -1,0 +1,11 @@
+<ul aria-label="breadcrumbs navigation" class="breadcrumbs" role="navigation">
+    <li>
+        <a href="https://www.learn.liferay.com" title="homepage">Liferay Learn</a>
+    </li>
+    {%- for docs in parents %}
+        <li>
+            <a href="{{ doc.link|e }}">{{ doc.title }}</a>
+        </li>
+    {%- endfor %}
+    <li>{{ title }}</li>
+</ul>

@@ -1,0 +1,84 @@
+{%- extends "layout.html" %}
+
+{% set title = _('Search') %}
+
+{% set script_files = script_files + ['_static/modified-search-tools.js'] %}
+
+{% block extrahead %}
+<script type="text/javascript">
+    jQuery(function () { Search.loadIndex("{{ pathto('searchindex.js', 1) }}"); });
+</script>
+{# this is used when loading the search index using $.ajax fails,
+     such as on Chrome for documents on localhost #}
+<script type="text/javascript" id="searchindexloader"></script>
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid search-page">
+    <div class="row">
+        <div class="admonition col-md-12 warning" id="fallback">
+            <script type="text/javascript">$('#fallback').hide();</script>
+
+            <div class="alert alert-danger" role="alert">
+                <span class="alert-indicator">
+                    <svg class="lexicon-icon lexicon-icon-exclamation-full" focusable="false" role="presentation"
+                        viewBox="0 0 512 512">
+                        <use xlink:href="#exclamation-full" />
+                    </svg>
+                </span>
+                {% trans %}Please activate JavaScript to enable the search
+                functionality.{% endtrans %}
+            </div>
+        </div>
+
+        <div class="col-md-2 offset-md-2">
+            <div class="search-filters">
+                <h3>
+                    {% trans %}Search{% endtrans %}
+                </h3>
+
+                {% include "searchbox.html" %}
+            </div>
+
+            <div class="search-filters">
+                <h4>{% trans %}Product{% endtrans %}</h4>
+
+                <div class="filter-input-container">
+                    <label>
+                        <input class="filter-input" name="productName" type="radio" value="dxp-cloud">
+                        <span class="filter-input-label">{% trans %}DXP Cloud{% endtrans %}</span>
+                    </label>
+
+                    <label>
+                        <input class="filter-input" name="productName" type="radio" value="commerce">
+                        <span class="filter-input-label">{% trans %}Commerce{% endtrans %}</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="no-results">
+                {% include "no-results.html" %}
+
+                <h4 id="noResultsMessage"></h4>
+            </div>
+
+            <div id="search-results">
+                {% if search_results %}
+                <ul>
+                    {% for href, caption, context in search_results %}
+                    <li>
+                        <a href="{{ pathto(item.href) }}">{{ caption }}</a>
+
+                        <div class="context">{{ context|e }}</div>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

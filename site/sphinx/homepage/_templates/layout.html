@@ -1,0 +1,62 @@
+{%- extends "basic/layout.html" %}
+
+{% block extrahead %}
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,400i,600,700|Source+Serif+Pro"
+    rel="stylesheet" />
+{% endblock %}
+
+{% block header %}
+{% include "svg.html" %}
+
+<header role="navigation">
+    <div class="brand">
+        {%- if logo %}
+
+        <a class="company-logo" href="https://www.learn.liferay.com" title="Home">
+            <img src="{{ pathto('_static/' + logo, 1) }}" alt="Logo" />
+        </a>
+        {%- endif %}
+
+        {%- block headertitle %}
+        <h2 class="header-title">
+            <a href="https://www.learn.liferay.com">{{ shorttitle|e }}</a>
+        </h2>
+        {%- endblock %}
+    </div>
+
+    <div class="header-links" role="navigation" aria-label="related navigation">
+        <a href="https://www.liferay.com">
+            {% trans %}Liferay.com{% endtrans %}
+        </a>
+        <a href="https://university.liferay.com/">
+            {% trans %}Training{% endtrans %}
+        </a>
+        <a href="https://liferay.dev">
+            {% trans %}Community{% endtrans %}
+        </a>
+        <a href="https://help.liferay.com">
+            {% trans %}Help Center{% endtrans %}
+        </a>
+
+        {% if pagename != 'index' and pagename != 'search' %}
+        {% include "searchbox.html" %}
+        {% endif %}
+    </div>
+
+    <div class="mobile-nav">
+        <svg>
+            <use xlink:href="#search" />
+        </svg>
+        <svg>
+            <use xlink:href="#hamburger" />
+        </svg>
+    </div>
+</header>
+{% endblock %}
+
+{# do not display relbar, sidebar, and footer #}
+{% block relbar1 %}{% endblock %}
+{% block relbar2 %}{% endblock %}
+{% block sidebar1 %}{% endblock %}
+{% block sidebar2 %}{% endblock %}
+{% block footer %}{% endblock %}

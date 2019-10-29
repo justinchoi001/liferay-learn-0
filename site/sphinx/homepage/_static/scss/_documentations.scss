@@ -1,0 +1,55 @@
+.documentations {
+	.article-body {
+		margin-bottom: 5rem;
+		padding-bottom: $spacing-default;
+		padding-top: $spacing-default;
+	}
+
+	.doc-body,
+	.product-version-selector {
+		padding: 0;
+	}
+
+	.doc-nav,
+	.product-version-selector {
+		background-color: $background-color;
+	}
+
+	.info-bar {
+		border-bottom: 1px solid $hr-color;
+		height: 77px;
+	}
+
+	.general-info {
+		display: flex;
+		justify-content: space-between;
+
+		.actions {
+			display: inline-block;
+
+			svg {
+				height: 1rem;
+				margin: 1.8rem 0;
+				width: 1rem;
+			}
+		}
+
+		@media (max-width: 576px) {
+			display: none;
+		}
+	}
+
+	.nav-link {
+		color: $default-color;
+
+		&.active {
+			color: $brand-primary;
+			font-weight: $font-weight-semi-bold;
+		}
+	}
+
+	.toc {
+		position: fixed;
+		margin-top: $spacing-default;
+	}
+}

@@ -1,0 +1,42 @@
+body .search-page .admonition {
+	margin-top: -5.25rem;
+	padding: 0;
+}
+
+div.body {
+	min-width: initial;
+}
+
+table {
+	font-size: $h5-font-size;
+
+	&.docutils {
+		td,
+		th {
+			padding: $spacing-sm;
+			padding-top: 0.8125rem;
+			vertical-align: middle;
+		}
+
+		th {
+			font-weight: 600;
+		}
+	}
+}
+
+ul.search {
+	list-style: none;
+	margin: $spacing-default 0 0;
+
+	li {
+		background: none;
+		padding: 0 0 $spacing-default;
+	}
+}
+
+.document {
+	.body {
+		color: $default-color;
+		max-width: initial;
+	}
+}
