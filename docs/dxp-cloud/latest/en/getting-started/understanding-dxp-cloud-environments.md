@@ -32,10 +32,10 @@ latency.
 
 Here's a list of the DXP Cloud regions currently available: 
 
--   Oregon, USA: `us-west1`
--   London, England: `europe-west2`
--   Frankfurt, Germany: `europe-west3`
--   São Paulo, Brazil: `southamerica-east1`
+* Oregon, USA: `us-west1`
+* London, England: `europe-west2`
+* Frankfurt, Germany: `europe-west3`
+* São Paulo, Brazil: `southamerica-east1`
 
 ![Figure 2: Your environments can be hosted in different locations.](./understanding-dxp-cloud-environments/images/02.png)
 
@@ -44,23 +44,22 @@ Here's a list of the DXP Cloud regions currently available:
 The environment type is a classification that distinguishes an environment
 configuration. There are two environment types: 
 
--   Production
--   Non-production
+* Production
+* Non-production
 
 Besides having different prices and computing power, these environment types 
 differ in how their backup and database services function. 
 
 **Production**
 
--   Backup: Data can be backed up and restored into any environment.
--   Database: Data is replicated in multiple availability zones and contains 
+* Backup: Data can be backed up and restored into any environment.
+* Database: Data is replicated in multiple availability zones and contains 
     enhanced IOPS.
 
 **Non-production**
 
--   Backup: Data can only be restored to these environments. 
--   Database: Data is present in a single availability zone and contains regular 
+* Backup: Data can only be restored to these environments. 
+* Database: Data is present in a single availability zone and contains regular 
     IOPS. 
 
-![Figure 3: Your environment's type appears in *Settings*.](./understanding-dxp-cloud-environments/images/03.png)
-
+![Figure 3: Your environment's type appears in Settings.](./understanding-dxp-cloud-environments/images/03.png)
