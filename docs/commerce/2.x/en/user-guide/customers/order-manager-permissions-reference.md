@@ -1,4 +1,4 @@
-# Order Manager Permissions
+# Order Manager Permissions Reference
 
 Order Managers have all the permissions of buyers, and can also manage, delete and approve orders. The following permissions have been assigned to the Order Manager role. These permissions are the minimum. Although they can be removed, this will cause some changes in user access and abilities to make transactions on the Commerce site. However, more permissions may be _added_.
 
@@ -9,11 +9,11 @@ To view the permissions:
 1. Click _Order Manager_.
 1. Click the _Define Permissions_ tab.
 
-![Order Manager permissions](./order-manager-permissions/images/01.png)
+![Order Manager permissions](./order-manager-permissions-reference/images/01.png)
 
 To add more permissions, click the left navigation menu and select the new permissions for this role.
 
-There are seven permissions set by default:
+The following permissions are set by default:
 
 | Permissions | Description |
 | --- | --- |
@@ -57,6 +57,6 @@ Additional Commerce-specific permissions for Wish Lists and Commerce Settings ar
 ## Additional Information
 
 * [Account Roles](./account-roles.md)
-* [Account Administrator Permissions](./account-administrator-permissions.md)
-* [Buyer Permissions](./buyer-permissions.md)
-* [Sales Agent Permissions](./sales-agent-permissions.md)
+* [Account Administrator Permissions Reference](./account-administrator-permissions-reference.md)
+* [Buyer Permissions Reference](./buyer-permissions-reference.md)
+* [Sales Agent Permissions Reference](./sales-agent-permissions-reference.md)

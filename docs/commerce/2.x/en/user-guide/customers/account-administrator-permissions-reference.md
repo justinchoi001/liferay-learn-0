@@ -11,7 +11,7 @@ To view the permissions:
 1. Click _Account Administrator_.
 1. Click the _Define Permissions_ tab.
 
-![Account Administrator Role Permissions](./account-administrator-permissions/images/01.png)
+![Account Administrator Role Permissions](./account-administrator-permissions-reference/images/01.png)
 
 The following set of permissions pertain to the Account Administrator Role's ability to modify accounts in a B2B setting.
 
@@ -67,7 +67,7 @@ Additional Commerce-specific permissions for Wish Lists and Commerce Settings ar
 
 ## Additional Information
 
-* [Buyer Permissions](./buyer-permissions.md)
-* [Sales Agent Permissions](./sales-agent-permissions.md)
-* [Order Manager Permissions](./order-manager-permissions.md)
+* [Buyer Permissions](./buyer-permissions-reference.md)
+* [Sales Agent Permissions](./sales-agent-permissions-reference.md)
+* [Order Manager Permissions](./order-manager-permissions-reference.md)
 * [Account Roles](./account-roles.md)

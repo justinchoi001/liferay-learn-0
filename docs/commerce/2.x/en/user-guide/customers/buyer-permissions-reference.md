@@ -9,7 +9,7 @@ To view the permissions:
 1. Click _Buyer_.
 1. Click the _Define Permissions_ tab.
 
-![Buyer permissions](./buyer-permissions/images/01.png)
+![Buyer permissions](./buyer-permissions-reference/images/01.png)
 
 There are four permissions set by default:
 
@@ -53,6 +53,7 @@ Additional Commerce-specific permissions for Wish Lists and Commerce Settings ar
 
 To see how the other permissions are used by higher level roles, see the following:
 
-* [Sales Agent Permissions](./sales-agent-permissions.md)
-* [Order Manager Permissions](./order-manager-permissions.md)
-* [Account Administrator Permissions](./account-administrator-permissions.md)
+* [Sales Agent Permissions](./sales-agent-permissions-reference.md)
+* [Order Manager Permissions](./order-manager-permissions-reference.md)
+* [Account Administrator Permissions](./account-administrator-permissions-reference.md)
+* [Account Roles](./account-roles.md)

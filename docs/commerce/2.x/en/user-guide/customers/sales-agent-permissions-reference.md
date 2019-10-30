@@ -1,4 +1,4 @@
-# Sales Agent Permissions
+# Sales Agent Permissions Reference
 
 The Sales Agent is a regular role in Liferay Commerce and assignees are able to manage any account assigned to the role without granting administrative permissions. The following permissions have been assigned to the Sales Agent role. These permissions are the minimum. Although they can be removed, this will cause some changes in user access and abilities to make transactions on the Commerce site. However, more permissions may be _added_.
 
@@ -9,7 +9,7 @@ To view the permissions:
 1. Click _Sales Agent_.
 1. Click the _Define Permissions_ tab.
 
-![Sales agent permissions](./sales-agent-permissions/images/01.png)
+![Sales agent permissions](./sales-agent-permissions-reference/images/01.png)
 
 | Permissions | Description |
 | --- | --- |
@@ -51,6 +51,7 @@ Additional Commerce-specific permissions for Wish Lists and Commerce Settings ar
 
 To see how the other permissions are used by higher level roles, see the following:
 
-* [Order Manager Permissions](./order-manager-permissions.md)
-* [Account Administrator Permissions](./account-administrator-permissions.md)
+* [Order Manager Permissions](./order-manager-permissions-reference.md)
+* [Account Administrator Permissions](./account-administrator-permissions-reference.md)
 * [Account Roles](./account-roles.md)
+* [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions)
