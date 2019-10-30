@@ -67,7 +67,7 @@ Additional Commerce-specific permissions for Wish Lists and Commerce Settings ar
 
 ## Additional Information
 
-* [Buyer Permissions](./buyer-permissions-reference.md)
-* [Sales Agent Permissions](./sales-agent-permissions-reference.md)
-* [Order Manager Permissions](./order-manager-permissions-reference.md)
+* [Buyer Permissions Reference](./buyer-permissions-reference.md)
+* [Sales Agent Permissions Reference](./sales-agent-permissions-reference.md)
+* [Order Manager Permissions Reference](./order-manager-permissions-reference.md)
 * [Account Roles](./account-roles.md)

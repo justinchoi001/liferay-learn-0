@@ -167,10 +167,10 @@
 
 #### Account Roles Permissions Reference
 
-* [Account Administrator](./customers/account-administrator.md)
+* [Account Administrator Permissions Reference](./customers/account-administrator-permissions-reference.md)
 * [Buyer Permissions Reference](./customers/buyer-permissions-reference.md)
-* [Order Manager Permissions](./customers/order-manager-permissions.md)
-* [Sales Agent Permissions](./customers/sales-agent-permissions.md)
+* [Order Manager Permissions Reference](./customers/order-manager-permissions-reference.md)
+* [Sales Agent Permissions Reference](./customers/sales-agent-permissions-reference.md)
 
 ## Sales
 

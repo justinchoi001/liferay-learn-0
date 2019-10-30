@@ -51,7 +51,7 @@ Additional Commerce-specific permissions for Wish Lists and Commerce Settings ar
 
 To see how the other permissions are used by higher level roles, see the following:
 
-* [Order Manager Permissions](./order-manager-permissions-reference.md)
-* [Account Administrator Permissions](./account-administrator-permissions-reference.md)
+* [Order Manager Permissions Reference](./order-manager-permissions-reference.md)
+* [Account Administrator Permissions Reference](./account-administrator-permissions-reference.md)
 * [Account Roles](./account-roles.md)
 * [Roles and Permissions](https://help.liferay.com/hc/articles/360017895212-Roles-and-Permissions)
