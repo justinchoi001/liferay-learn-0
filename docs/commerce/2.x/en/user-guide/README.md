@@ -160,9 +160,17 @@
 * [Inviting Users to an Account](../inviting-users-to-an-account.md)
 * [Adding Addresses to an Account](../adding-addresses-to-an-account.md)
 * [Account Roles](./customers/account-roles.md)
+* [Creating a Custom Role](./customers/creating-a-custom-role.md)
 * [Assigning Account Roles](../assigning-account-roles.md)
 * [Creating a New Account Group](./customers/creating-a-new-account-group.md)
 * Organizations and Accounts
+
+#### Account Roles Permissions Reference
+
+* [Account Administrator Permissions Reference](./customers/account-administrator-permissions-reference.md)
+* [Buyer Permissions Reference](./customers/buyer-permissions-reference.md)
+* [Order Manager Permissions Reference](./customers/order-manager-permissions-reference.md)
+* [Sales Agent Permissions Reference](./customers/sales-agent-permissions-reference.md)
 
 ## Sales
 
